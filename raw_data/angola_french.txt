@@ -24,7 +24,7 @@ Responsabilités de l'État
 (6) Il est de la responsabilité de l'État, à travers le gouvernement et dans le cadre de la politique environnementale, de définir et d'exécuter le programme de gestion de l'environnement, qui établira : a) les responsabilités de tous les organismes gouvernementaux dont le contrôle et/ou l'activité a une influence sur l'environnement, par l'utilisation des ressources naturelles, la production et l'émission de polluants et influençant les conditions socio-économiques des communautés ; b) les responsabilités de tous les agents non étatiques qui utilisent les ressources naturelles, influencent l'équilibre environnemental et les conditions socio-économiques des communautés ; c) les responsabilités des citoyens pour l'utilisation abusive des ressources naturelles, l'émission de polluants et les atteintes à la qualité de vie.
 
 Organismes centraux et locaux
-(7) (1) Le gouvernement devrait créer un organe central de coordination pour les activités du Programme national de gestion de l'environnement, qui peut être représenté aux niveaux régional, provincial, municipal et local.
+(7)(1) Le gouvernement devrait créer un organe central de coordination pour les activités du Programme national de gestion de l'environnement, qui peut être représenté aux niveaux régional, provincial, municipal et local.
 (7)(2) L'organe central de coordination du programme national de gestion de l'environnement peut également créer des organes spécialisés dans des activités spécifiques de gestion de l'environnement.
 (7)(3) La mission principale de l'organe de coordination des activités du Programme national de gestion de l'environnement est :
 mener et promouvoir avec les autres organes de l'appareil d'État et les organismes non étatiques, des activités qui conduisent au développement durable dans tous les aspects de la vie nationale.
@@ -41,14 +41,14 @@ Consultations publiques
 CHAPITRE III - Mesures de protection de l'environnement
 
 législation sur la gestion de l'environnement
-(11) (1) Il appartient au Gouvernement de publier les règlements nécessaires à l'exécution du Programme National de Gestion de l'Environnement, en chargeant les différents organismes qui y sont inclus de se conformer aux dispositions.
+(11)(1) Il appartient au Gouvernement de publier les règlements nécessaires à l'exécution du Programme National de Gestion de l'Environnement, en chargeant les différents organismes qui y sont inclus de se conformer aux dispositions.
 (11)(2) Les organes judiciaires doivent suivre et donner leur avis sur les propositions de réglementation résultant de la présente Loi fondamentale sur l'environnement, et doivent introduire dans le système des principes judiciaires, les notions d'Environnement et de Développement Durable nécessaires à leur activité .
 
 patrimoine environnemental
 (12) Le gouvernement doit veiller à ce que le patrimoine environnemental, à savoir naturel, historique et culturel, fasse l'objet de mesures permanentes de défense et de mise en valeur, par une implication appropriée des collectivités, notamment des associations de protection de l'environnement.
 
 protection de la biodiversité
-(13) (1) Toutes les activités qui menacent la biodiversité ou la conservation, la reproduction, la qualité et la quantité des ressources biologiques d'utilisation ou de valeur actuelles ou potentielles, notamment celles menacées d'extinction, sont interdites.
+(13)(1) Toutes les activités qui menacent la biodiversité ou la conservation, la reproduction, la qualité et la quantité des ressources biologiques d'utilisation ou de valeur actuelles ou potentielles, notamment celles menacées d'extinction, sont interdites.
 (13)(2) Le gouvernement devrait veiller à ce que des mesures adéquates soient prises en vue de : a) une protection spéciale des espèces végétales menacées d'extinction ou des spécimens botaniques isolés ou groupés qui, en raison de leur potentiel génétique, de leur taille, de leur âge, de leur rareté, valeur scientifique et culturelle, l'exiger ; b) le maintien et la régénération des espèces animales, la restauration des habitats endommagés, en particulier le contrôle des activités ou de l'utilisation de substances susceptibles de nuire aux espèces fauniques et à leurs habitats.
 
 Zones de protection de l'environnement
@@ -68,7 +68,7 @@ l'évaluation de l'impact environnemental
 (16)(3) L'étude d'impact environnemental est basée sur des études d'impact environnemental adaptées à chaque cas particulier et doit contenir au moins : a) un résumé non technique du projet ; b) une description des activités à réaliser ; c) une description générale de la situation environnementale sur le lieu de l'activité ; d) une synthèse des opinions et critiques résultant des consultations publiques ; e) une description des changements environnementaux et sociaux possibles causés par le projet ; f) indication des mesures envisagées pour éliminer ou minimiser les effets sociaux et environnementaux négatifs ; g) indication des systèmes prévus pour le contrôle et le suivi de l'activité.
 
 licence environnementale
-(17) (1) L'autorisation est l'enregistrement des activités qui, en raison de leur nature, de leur emplacement ou de leur dimension, sont susceptibles d'avoir un impact environnemental et social important, sont soumises à un régime et à une législation qui doivent être publiés par le gouvernement.
+(17)(1) L'autorisation est l'enregistrement des activités qui, en raison de leur nature, de leur emplacement ou de leur dimension, sont susceptibles d'avoir un impact environnemental et social important, sont soumises à un régime et à une législation qui doivent être publiés par le gouvernement.
 (17)(2) La délivrance de la licence environnementale est basée sur le résultat de l'étude d'impact environnemental de l'activité proposée et procède à la délivrance de toute autre licence légalement requise pour chaque cas.
 
 Audits environnementaux
@@ -82,7 +82,7 @@ pollution environnementale
 (19)(4) Il est expressément interdit l'importation de résidus ou de déchets dangereux, sauf ce qui peut être établi dans une législation spécifique, à approuver par l'Assemblée nationale.
 
 éducation environnementale
-(20) (1) L'éducation environnementale est la mesure de protection de l'environnement qui doit accélérer et faciliter la mise en œuvre du Programme national de gestion de l'environnement, par l'augmentation progressive des connaissances de la population sur les phénomènes écologiques, sociaux et économiques qui régissent la société humaine.
+(20)(1) L'éducation environnementale est la mesure de protection de l'environnement qui doit accélérer et faciliter la mise en œuvre du Programme national de gestion de l'environnement, par l'augmentation progressive des connaissances de la population sur les phénomènes écologiques, sociaux et économiques qui régissent la société humaine.
 (20)(2) L'éducation à l'environnement doit être organisée de manière permanente et par campagnes successives, principalement dirigées de deux manières : a) à travers le système éducatif formel ; b) via le système de communication sociale.
 (20)(3) Les campagnes d'éducation à l'environnement devraient toucher toutes les couches de la population et des projets spéciaux devraient être envisagés, notamment pour les forces armées, les dirigeants et les chefs de l'appareil d'État.
 
