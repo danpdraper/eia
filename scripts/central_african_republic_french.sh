@@ -16,24 +16,8 @@ function remove_page_headers_and_footers {
   echo "$stdin" | sed -E "s/${regular_expression}//g"
 }
 
-function replace_article_literal_with_number {
-  sed -E 's/Art\. ([0-9]+)(er)?: /\n\n(\1) /g'
-}
-
-function remove_er_suffix_from_headers {
-  sed -E 's/(TITRE|CHAPITRE) (1|I) -er/\1 I -/'
-}
-
-function replace_dash_colon_sequences_with_colons_in_headers {
-  sed -E 's/ -: / - /'
-}
-
 function remove_trailing_colons_from_lines {
   sed -E 's/: ?$//'
-}
-
-function replace_colon_with_dash_in_unique_chapter_header {
-  sed -E 's/(CHAPITRE UNIQUE):/\1 -/'
 }
 
 function remove_spaces_from_numbers {
@@ -52,10 +36,6 @@ function preprocess_state_and_language_input_file {
     remove_all_text_before_first_title_header | \
     remove_signatory_details | \
     remove_page_headers_and_footers | \
-    replace_article_literal_with_number | \
-    remove_er_suffix_from_headers | \
-    replace_dash_colon_sequences_with_colons_in_headers | \
     remove_trailing_colons_from_lines | \
-    replace_colon_with_dash_in_unique_chapter_header | \
     remove_spaces_from_numbers
 }

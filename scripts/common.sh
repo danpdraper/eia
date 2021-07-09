@@ -14,9 +14,34 @@ function replace_newlines_with_spaces {
   tr '\n' ' '
 }
 
-function add_newlines_before_headers {
-  local stdin=$(</dev/stdin)
+function get_header_and_article_regular_expression {
+  if [ "$#" -ne 1 ] ; then
+    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    return 1
+  fi
+  local language="$1"
 
+  local header_and_article_regular_expression
+  case "$language" in
+    french)
+      header_and_article_regular_expression="Titre|TITRE|Chapitre|CHAPITRE|"
+      header_and_article_regular_expression+="Section|SECTION|Article|ARTICLE|"
+      header_and_article_regular_expression+="Annexe|ANNEXE"
+      ;;
+    portugese)
+      header_and_article_regular_expression="Título|TÍTULO|Capítulo|CAPÍTULO|"
+      header_and_article_regular_expression+="Seção|SEÇÃO|Artigo|ARTIGO|"
+      header_and_article_regular_expression+="Anexo|ANEXO"
+      ;;
+    *)
+      echo_error "Language $language is not supported by ${FUNCNAME[0]}."
+      return 1
+  esac
+
+  echo "$header_and_article_regular_expression"
+}
+
+function get_header_regular_expression {
   if [ "$#" -ne 1 ] ; then
     echo_error "USAGE: ${FUNCNAME[0]} <language>"
     return 1
@@ -26,49 +51,108 @@ function add_newlines_before_headers {
   local header_regular_expression
   case "$language" in
     french)
-      header_regular_expression="Titre|TITRE|Chapitre|CHAPITRE|Section|SECTION|Article|ARTICLE|Annexe|ANNEXE"
+      header_regular_expression="Titre|TITRE|Chapitre|CHAPITRE|Section|SECTION|"
+      header_regular_expression+="Annexe|ANNEXE"
       ;;
     portugese)
-      header_regular_expression="Título|TÍTULO|Capítulo|CAPÍTULO|Seção|SEÇÃO|Artigo|ARTIGO|Anexo|ANEXO"
+      header_regular_expression="Título|TÍTULO|Capítulo|CAPÍTULO|Seção|SEÇÃO|"
+      header_regular_expression+="Anexo|ANEXO"
       ;;
     *)
       echo_error "Language $language is not supported by ${FUNCNAME[0]}."
       return 1
   esac
 
-  echo "$stdin" | sed -E "s/.(${header_regular_expression})/\n\n\1/g"
+  echo "$header_regular_expression"
+}
+
+function add_newlines_before_headers_and_articles {
+  local stdin=$(</dev/stdin)
+
+  if [ "$#" -ne 1 ] ; then
+    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    return 1
+  fi
+  local language="$1"
+
+  local header_and_article_regular_expression="$(get_header_and_article_regular_expression $language)"
+  local return_code="$?"
+  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
+
+  echo "$stdin" | sed -E "s/ (${header_and_article_regular_expression})/\n\n\1/g"
+}
+
+function get_ordinal_regular_expression {
+  if [ "$#" -ne 1 ] ; then
+    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    return 1
+  fi
+  local language="$1"
+
+  local ordinal_regular_expression
+  case "$language" in
+    french)
+      ordinal_regular_expression="([0-9IVX]+)(er|ère|ème)"
+      ;;
+    default)
+      ordinal_regular_expression="([0-9IVX]+)"
+      ;;
+  esac
+
+  echo "$ordinal_regular_expression"
+}
+
+function remove_ordinals_from_headers_and_articles {
+  local stdin=$(</dev/stdin)
+
+  if [ "$#" -ne 1 ] ; then
+    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    return 1
+  fi
+  local language="$1"
+
+  local header_and_article_regular_expression="$(get_header_and_article_regular_expression $language)"
+  local return_code="$?"
+  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
+
+  local ordinal_regular_expression="$(get_ordinal_regular_expression $language)"
+  local return_code="$?"
+  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
+
+  local regular_expression="^(${header_and_article_regular_expression}) +"
+  regular_expression+="${ordinal_regular_expression}"
+
+  echo "$stdin" | sed -E "s/${regular_expression}/\1 \2/"
 }
 
 function remove_dashes {
   sed -E 's/(-|—) //g'
 }
 
-function add_dash_to_headers_with_arabic_or_roman_numerals {
-  local stdin=$(</dev/stdin)
-
+function get_unique_regular_expression {
   if [ "$#" -ne 1 ] ; then
     echo_error "USAGE: ${FUNCNAME[0]} <language>"
     return 1
   fi
   local language="$1"
 
-  local header_regular_expression
+  local unique_in_language
   case "$language" in
     french)
-      header_regular_expression="Titre|TITRE|Chapitre|CHAPITRE|Section|SECTION|Annexe|ANNEXE"
+      unique_in_language="Unique|UNIQUE"
       ;;
     portugese)
-      header_regular_expression="Título|TÍTULO|Capítulo|CAPÍTULO|Seção|SEÇÃO|Anexo|ANEXO"
+      unique_in_language="Únic[o,a]|ÚNIC[O,A]"
       ;;
     *)
       echo_error "Language $language is not supported by ${FUNCNAME[0]}."
       return 1
   esac
 
-  echo "$stdin" | sed -E "s/((${header_regular_expression}) ([0-9]+|[I,V,X]+))/\1 -/g"
+  echo "$unique_in_language"
 }
 
-function remove_article_literal {
+function add_dash_to_headers {
   local stdin=$(</dev/stdin)
 
   if [ "$#" -ne 1 ] ; then
@@ -77,20 +161,18 @@ function remove_article_literal {
   fi
   local language="$1"
 
-  local article_regular_expression
-  case "$language" in
-    french)
-      article_regular_expression="Article|ARTICLE"
-      ;;
-    portugese)
-      article_regular_expression="Artigo|ARTIGO"
-      ;;
-    *)
-      echo_error "Language $language is not supported by ${FUNCNAME[0]}."
-      return 1
-  esac
+  local header_regular_expression="$(get_header_regular_expression $language)"
+  local return_code="$?"
+  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
 
-  echo "$stdin" | sed -E "s/${article_regular_expression} ([0-9]+)/(\1)/gi"
+  local unique_regular_expression="$(get_unique_regular_expression $language)"
+  local return_code="$?"
+  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
+
+  local regular_expression = "^(${header_regular_expression} "
+  regular_expression+="([0-9IVX]+|${unique_regular_expression}))"
+
+  echo "$stdin" | sed -E "s/${regular_expression}/\1 -/g"
 }
 
 function remove_space_before_colons_and_semicolons {
@@ -99,6 +181,22 @@ function remove_space_before_colons_and_semicolons {
 
 function replace_double_angle_quotation_marks_with_quotation_marks {
   sed -E 's/(« ?| ?»)/"/g'
+}
+
+function remove_colon_from_headers {
+  local stdin=$(</dev/stdin)
+
+  if [ "$#" -ne 1 ] ; then
+    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    return 1
+  fi
+  local language="$1"
+
+  local header_regular_expression="$(get_header_regular_expression $language)"
+  local return_code="$?"
+  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
+
+  echo "$stdin" | sed -E "s/^(${header_regular_expression}.*):/\1/"
 }
 
 function apply_common_transformations {
@@ -111,11 +209,13 @@ function apply_common_transformations {
 
   cat "$input_file_path" | \
     replace_newlines_with_spaces | \
-    add_newlines_before_headers "$language" | \
+    add_newlines_before_headers_and_articles "$language" | \
+    remove_ordinals_from_headers_and_articles "$language" | \
     remove_dashes | \
-    add_dash_to_headers_with_arabic_or_roman_numerals "$language" | \
+    add_dash_to_headers "$language" | \
     remove_space_before_colons_and_semicolons | \
-    replace_double_angle_quotation_marks_with_quotation_marks
+    replace_double_angle_quotation_marks_with_quotation_marks | \
+    remove_colon_from_headers "$language"
 }
 
 function rearrange_article_and_subarticle_numbers {

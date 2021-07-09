@@ -16,14 +16,6 @@ function amend_typo_in_title_header {
   sed -E 's/ TITIRE II/\n\nTITRE II -/'
 }
 
-function replace_article_literal_with_number {
-  sed -E 's/ARTICLE ([0-9]+)( er)? ?\./(\1) /g'
-}
-
-function add_dash_to_unique_chapter_header {
-  sed -E 's/(CHAPITRE UNIQUE) /\1 - /'
-}
-
 function preprocess_state_and_language_input_file {
   if [ "$#" -ne 2 ] ; then
     echo_error "USAGE: ${FUNCNAME[0]} <input_file_path> <language>"
@@ -37,7 +29,5 @@ function preprocess_state_and_language_input_file {
     remove_signatory_details | \
     remove_bullet_points | \
     amend_typo_in_title_header | \
-    replace_article_literal_with_number | \
-    rearrange_article_and_subarticle_numbers | \
-    add_dash_to_unique_chapter_header
+    rearrange_article_and_subarticle_numbers
 }
