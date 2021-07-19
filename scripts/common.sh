@@ -229,7 +229,7 @@ function remove_colon_from_headers {
   local return_code="$?"
   if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
 
-  echo "$stdin" | sed -E "s/^(${header_regular_expression})(.*):/\1\2/"
+  echo "$stdin" | sed -E "s/^(${header_regular_expression})([^-]+)(-):/\1\2\3/"
 }
 
 function replace_article_literals_with_numbers {
