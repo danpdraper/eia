@@ -38,11 +38,9 @@ function preprocess_state_and_language_input_file {
 
   apply_common_transformations "$input_file_path" "$language" | \
     remove_all_text_before_first_title_header | \
-    remove_bullet_points | \
     remove_signatory_details | \
+    remove_bullet_points | \
     remove_forward_slashes_colons_and_periods_from_headers | \
-    replace_article_literals_with_numbers | \
     remove_superfluous_newline_after_title_five_chapter_four_header | \
-    add_dash_to_unique_chapter_header | \
     format_definitions_article
 }

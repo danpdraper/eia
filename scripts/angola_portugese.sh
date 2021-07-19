@@ -18,7 +18,7 @@ function remove_degree_symbols {
 }
 
 function move_article_titles_above_article_bodies {
-  sed -E 's/ARTIGO ([0-9]+) \(([A-Za-z ]+)\)/\2\n(\1)/g'
+  sed -E 's/^(\([0-9]+\)) \(([A-Za-z ]+)\)/\2\n\1/g'
 }
 
 function remove_signatory_details {

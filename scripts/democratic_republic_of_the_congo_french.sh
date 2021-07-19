@@ -9,11 +9,11 @@ function remove_signatory_details {
 }
 
 function remove_all_text_after_last_article {
-  sed -E '/^Article 89/q'
+  sed -E '/^\(89\)/q'
 }
 
 function remove_page_headers_and_footers {
-  sed -E 's/ ?Journal officiel Numéro Spécial 16 juillet 2011 [0-9]+ //g'
+  sed -E 's/ ?Journal officiel Numéro Spécial 16 juillet 2011 [0-9]+//g'
 }
 
 function expand_ordinal_abbreviations {
@@ -36,8 +36,6 @@ function preprocess_state_and_language_input_file {
     remove_all_text_before_first_chapter_header | \
     remove_signatory_details | \
     remove_all_text_after_last_article | \
-    remove_colon_from_headers | \
-    replace_article_literals_with_number | \
     remove_page_headers_and_footers | \
     expand_ordinal_abbreviations | \
     format_definitions_article

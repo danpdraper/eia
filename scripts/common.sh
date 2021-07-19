@@ -10,35 +10,20 @@ function echo_info {
   echo "INFO: $1"
 }
 
+function tee_to_stderr {
+  tee /dev/fd/2
+}
+
 function replace_newlines_with_spaces {
   tr '\n' ' '
 }
 
-function get_header_and_article_regular_expression {
-  if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
-    return 1
-  fi
-  local language="$1"
+function replace_tabs_with_spaces {
+  tr '\t' ' '
+}
 
-  local header_and_article_regular_expression
-  case "$language" in
-    french)
-      header_and_article_regular_expression="Titre|TITRE|Chapitre|CHAPITRE|"
-      header_and_article_regular_expression+="Section|SECTION|Article|ARTICLE|"
-      header_and_article_regular_expression+="Annexe|ANNEXE"
-      ;;
-    portugese)
-      header_and_article_regular_expression="Título|TÍTULO|Capítulo|CAPÍTULO|"
-      header_and_article_regular_expression+="Seção|SEÇÃO|Artigo|ARTIGO|"
-      header_and_article_regular_expression+="Anexo|ANEXO"
-      ;;
-    *)
-      echo_error "Language $language is not supported by ${FUNCNAME[0]}."
-      return 1
-  esac
-
-  echo "$header_and_article_regular_expression"
+function remove_redundant_spaces {
+  sed -E 's/  +/ /g'
 }
 
 function get_header_regular_expression {
@@ -51,11 +36,15 @@ function get_header_regular_expression {
   local header_regular_expression
   case "$language" in
     french)
-      header_regular_expression="Titre|TITRE|Chapitre|CHAPITRE|Section|SECTION|"
-      header_regular_expression+="Annexe|ANNEXE"
+      header_regular_expression="Titre|TITRE|"
+      header_regular_expression+="Chapitre|CHAPITRE|"
+      header_regular_expression+="Section|SECTION|"
+      header_regular_expression+="Annexe?|ANNEXE?"
       ;;
     portugese)
-      header_regular_expression="Título|TÍTULO|Capítulo|CAPÍTULO|Seção|SEÇÃO|"
+      header_regular_expression="Título|TÍTULO|"
+      header_regular_expression+="Capítulo|CAPÍTULO|"
+      header_regular_expression+="Seção|SEÇÃO|"
       header_regular_expression+="Anexo|ANEXO"
       ;;
     *)
@@ -64,6 +53,50 @@ function get_header_regular_expression {
   esac
 
   echo "$header_regular_expression"
+}
+
+function get_article_regular_expression {
+  if [ "$#" -ne 1 ] ; then
+    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    return 1
+  fi
+  local language="$1"
+
+  local article_regular_expression
+  case "$language" in
+    french)
+      article_regular_expression="Art\.|Article|ARTICLE"
+      ;;
+    portugese)
+      article_regular_expression="Art\.|Artigo|ARTIGO"
+      ;;
+    *)
+      echo_error "Language $language is not supported by ${FUNCNAME[0]}."
+      return 1
+  esac
+
+  echo "$article_regular_expression"
+}
+
+function get_header_and_article_regular_expression {
+  if [ "$#" -ne 1 ] ; then
+    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    return 1
+  fi
+  local language="$1"
+
+  local header_regular_expression="$(get_header_regular_expression $language)"
+  local return_code="$?"
+  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
+
+  local article_regular_expression="$(get_article_regular_expression $language)"
+  return_code="$?"
+  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
+
+  local header_and_article_regular_expression="${header_regular_expression}|"
+  header_and_article_regular_expression+="$article_regular_expression"
+
+  echo "$header_and_article_regular_expression"
 }
 
 function add_newlines_before_headers_and_articles {
@@ -92,9 +125,9 @@ function get_ordinal_regular_expression {
   local ordinal_regular_expression
   case "$language" in
     french)
-      ordinal_regular_expression="([0-9IVX]+)(er|ère|ème)"
+      ordinal_regular_expression="([0-9IVX]+) ?(er|ER|ère|ÈRE|ème|ÈME)"
       ;;
-    default)
+    *)
       ordinal_regular_expression="([0-9IVX]+)"
       ;;
   esac
@@ -116,7 +149,7 @@ function remove_ordinals_from_headers_and_articles {
   if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
 
   local ordinal_regular_expression="$(get_ordinal_regular_expression $language)"
-  local return_code="$?"
+  return_code="$?"
   if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
 
   local regular_expression="^(${header_and_article_regular_expression}) +"
@@ -166,13 +199,13 @@ function add_dash_to_headers {
   if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
 
   local unique_regular_expression="$(get_unique_regular_expression $language)"
-  local return_code="$?"
+  return_code="$?"
   if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
 
-  local regular_expression = "^(${header_regular_expression} "
-  regular_expression+="([0-9IVX]+|${unique_regular_expression}))"
+  local regular_expression="^(${header_regular_expression}) "
+  regular_expression+="([0-9IVX]+|${unique_regular_expression})"
 
-  echo "$stdin" | sed -E "s/${regular_expression}/\1 -/g"
+  echo "$stdin" | sed -E "s/${regular_expression}/\1 \2 -/g"
 }
 
 function remove_space_before_colons_and_semicolons {
@@ -196,7 +229,23 @@ function remove_colon_from_headers {
   local return_code="$?"
   if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
 
-  echo "$stdin" | sed -E "s/^(${header_regular_expression}.*):/\1/"
+  echo "$stdin" | sed -E "s/^(${header_regular_expression})(.*):/\1\2/"
+}
+
+function replace_article_literals_with_numbers {
+  local stdin=$(</dev/stdin)
+
+  if [ "$#" -ne 1 ] ; then
+    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    return 1
+  fi
+  local language="$1"
+
+  local article_regular_expression="$(get_article_regular_expression $language)"
+  local return_code="$?"
+  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
+
+  echo "$stdin" | sed -E "s/^(${article_regular_expression}) ([0-9]+)[^A-Z0-9(]+/(\2) /"
 }
 
 function apply_common_transformations {
@@ -209,13 +258,16 @@ function apply_common_transformations {
 
   cat "$input_file_path" | \
     replace_newlines_with_spaces | \
+    replace_tabs_with_spaces | \
+    remove_redundant_spaces | \
     add_newlines_before_headers_and_articles "$language" | \
     remove_ordinals_from_headers_and_articles "$language" | \
     remove_dashes | \
     add_dash_to_headers "$language" | \
     remove_space_before_colons_and_semicolons | \
     replace_double_angle_quotation_marks_with_quotation_marks | \
-    remove_colon_from_headers "$language"
+    remove_colon_from_headers "$language" | \
+    replace_article_literals_with_numbers "$language"
 }
 
 function rearrange_article_and_subarticle_numbers {
