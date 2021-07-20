@@ -248,15 +248,16 @@ function replace_article_literals_with_numbers {
   echo "$stdin" | sed -E "s/^(${article_regular_expression}) ([0-9]+)[^A-Z0-9(]+/(\2) /"
 }
 
-function apply_common_transformations {
-  if [ "$#" -ne 2 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <input_file_path> <language>"
+function apply_common_transformations_to_stdin {
+  local stdin=$(</dev/stdin)
+
+  if [ "$#" -ne 1 ] ; then
+    echo_error "USAGE: ${FUNCNAME[0]} <language>"
     return 1
   fi
-  local input_file_path="$input_file_path"
-  local language="$language"
+  local language="$1"
 
-  cat "$input_file_path" | \
+  echo "$stdin" | \
     replace_newlines_with_spaces | \
     replace_tabs_with_spaces | \
     remove_redundant_spaces | \
@@ -268,6 +269,17 @@ function apply_common_transformations {
     replace_double_angle_quotation_marks_with_quotation_marks | \
     remove_colon_from_headers "$language" | \
     replace_article_literals_with_numbers "$language"
+}
+
+function apply_common_transformations {
+  if [ "$#" -ne 2 ] ; then
+    echo_error "USAGE: ${FUNCNAME[0]} <input_file_path> <language>"
+    return 1
+  fi
+  local input_file_path="$input_file_path"
+  local language="$language"
+
+  cat "$input_file_path" | apply_common_transformations_to_stdin "$language"
 }
 
 function rearrange_article_and_subarticle_numbers {
