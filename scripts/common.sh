@@ -2,12 +2,16 @@
 
 set -o pipefail
 
+GREEN='\033[1;32m'
+NO_COLOUR='\033[0m'
+RED='\033[1;31m'
+
 function echo_error {
-  >&2 echo "ERROR: $1"
+  >&2 echo -e "${RED}ERROR: $1${NC}"
 }
 
 function echo_info {
-  echo "INFO: $1"
+  echo -e "${GREEN}INFO: $1${NC}"
 }
 
 function tee_to_stderr {
@@ -192,9 +196,7 @@ function get_unique_regular_expression {
   echo "$unique_regular_expression"
 }
 
-function add_newlines_before_headers_and_articles {
-  local stdin=$(</dev/stdin)
-
+function get_line_prefix_regular_expression {
   if [ "$#" -ne 1 ] ; then
     echo_error "USAGE: ${FUNCNAME[0]} <language>"
     return 1
@@ -216,11 +218,55 @@ function add_newlines_before_headers_and_articles {
   return_code="$?"
   if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
 
-  local regular_expression="($header_and_article_regular_expression)"
-  regular_expression+=" ?([0-9IVX]+|${ordinal_regular_expression}|"
-  regular_expression+="${unique_regular_expression})"
+  local line_prefix_regular_expression="($header_and_article_regular_expression)"
+  line_prefix_regular_expression+=" ?([0-9IVX]+|${ordinal_regular_expression}|"
+  line_prefix_regular_expression+="${unique_regular_expression})"
 
-  echo "$stdin" | sed -E ":start;s/([^a-z,]) ${regular_expression}/\1\n\n\2 \3/;t start"
+  echo "$line_prefix_regular_expression"
+}
+
+function remove_unwanted_characters_prior_to_line_prefixes {
+  local stdin="$(</dev/stdin)"
+
+  if [ "$#" -ne 1 ] ; then
+    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    return 1
+  fi
+  local language="$1"
+
+  local line_prefix_regular_expression
+  line_prefix_regular_expression="$(get_line_prefix_regular_expression $language)"
+  local return_code="$?"
+  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
+
+  local first_regular_expression="([A-Za-z]+\.)[^A-Za-z]+"
+  first_regular_expression+="${line_prefix_regular_expression}"
+
+  local second_regular_expression="([A-Z][A-Za-z]+)[^A-Za-z,:.][^A-Za-z]+"
+  second_regular_expression+="${line_prefix_regular_expression}"
+
+  echo "$stdin" | \
+    sed -E "s/${first_regular_expression}/\1 \2 \3/g" | \
+    sed -E "s/${second_regular_expression}/\1 \2 \3/g"
+}
+
+function add_newlines_before_headers_and_articles {
+  local stdin="$(</dev/stdin)"
+
+  if [ "$#" -ne 1 ] ; then
+    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    return 1
+  fi
+  local language="$1"
+
+  local line_prefix_regular_expression
+  line_prefix_regular_expression="$(get_line_prefix_regular_expression $language)"
+  local return_code="$?"
+  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
+
+  local regular_expression="([A-Z][A-Za-z]+|\.) ${line_prefix_regular_expression}"
+
+  echo "$stdin" | sed -E ":start;s/${regular_expression}/\1\n\n\2 \3/;t start"
 }
 
 function get_abbreviated_ordinal_regular_expression {
@@ -345,6 +391,13 @@ function replace_article_literals_with_numbers {
   echo "$stdin" | sed -E "s/^(${article_regular_expression}) ([0-9]+)[^A-Z0-9(]+/(\2) /"
 }
 
+function wrap_list_item_leading_characters {
+  sed -E 's/ ([0-9]+)[\.)]([^0-9])/ [\1]\2/g' | \
+    sed -E 's/ ([a-z])[\.)](.)/ [\1]\2/g' | \
+    sed -E 's/ ([ivxIVX]+)[\.)](.)/ [\1]\2/g' | \
+    sed -E 's/ • / [•] /g'
+}
+
 function apply_common_transformations_to_stdin {
   local stdin=$(</dev/stdin)
 
@@ -358,6 +411,12 @@ function apply_common_transformations_to_stdin {
     replace_newlines_with_spaces | \
     replace_tabs_with_spaces | \
     remove_redundant_spaces | \
+    remove_unwanted_characters_prior_to_line_prefixes "$language" | \
+    add_newlines_before_headers_and_articles "$language" | \
+    # The replacement in remove_unwanted_characters_prior_to_line_prefixes does
+    # not capture the second match in successive matches that both match the
+    # same text.
+    remove_unwanted_characters_prior_to_line_prefixes "$language" | \
     add_newlines_before_headers_and_articles "$language" | \
     remove_abbreviated_ordinals_from_headers_and_articles "$language" | \
     remove_dashes | \
@@ -365,7 +424,8 @@ function apply_common_transformations_to_stdin {
     remove_space_before_colons_and_semicolons | \
     replace_double_angle_quotation_marks_with_quotation_marks | \
     remove_colon_from_headers "$language" | \
-    replace_article_literals_with_numbers "$language"
+    replace_article_literals_with_numbers "$language" | \
+    wrap_list_item_leading_characters
 }
 
 function apply_common_transformations {
@@ -377,6 +437,20 @@ function apply_common_transformations {
   local language="$language"
 
   cat "$input_file_path" | apply_common_transformations_to_stdin "$language"
+}
+
+function amend_typo_in_article {
+  local stdin="$(</dev/stdin)"
+
+  if [ "$#" -ne 3 ] ; then
+    echo_error "USAGE: ${FUNCNAME[0]} <article_number> <regular_expression> <replacement>"
+    return 1
+  fi
+  local article_number="$1"
+  local regular_expression="$2"
+  local replacement="$3"
+
+  echo "$stdin" | sed -E "s/^(\(${article_number}\).*)${regular_expression}/\1${replacement}/"
 }
 
 function rearrange_article_and_subarticle_numbers {

@@ -56,27 +56,6 @@ function remove_periods_from_headers {
   echo "$stdin" | sed -E "s/${regular_expression}/\1 \2\3/"
 }
 
-function wrap_list_item_leading_characters {
-  sed -E 's/ ([0-9]+)[\.)]([^0-9])/ [\1]\2/g' | \
-    sed -E 's/ ([a-z])[\.)]/ [\1]/g' | \
-    sed -E 's/ ([ivxIVX]+)[\.)]/ [\1]/g' | \
-    sed -E 's/ • / [•] /g'
-}
-
-function amend_typo_in_article {
-  local stdin="$(</dev/stdin)"
-
-  if [ "$#" -ne 3 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <article_number> <regular_expression> <replacement>"
-    return 1
-  fi
-  local article_number="$1"
-  local regular_expression="$2"
-  local replacement="$3"
-
-  echo "$stdin" | sed -E "s/^(\(${article_number}\).*)${regular_expression}/\1${replacement}/"
-}
-
 function amend_typos_in_articles {
   # Article 1
   amend_typo_in_article 1 'lograr:el' 'lograr el' | \
@@ -151,6 +130,7 @@ function amend_typos_in_articles {
     amend_typo_in_article 13 aplicárseres aplicárseles | \
     amend_typo_in_article 13 "articulo'\." 'artículo.' | \
     amend_typo_in_article 13 'apartado 3 \[e\]' 'apartado [3][e]' | \
+    amend_typo_in_article 13 ' \[•\] Artículo 14' '\n\n(14)' | \
     # Article 14
     amend_typo_in_article 14 '¡efiere el articulo' 'refiere el artículo' | \
     amend_typo_in_article 14 "con9'lituyendo" constituyendo | \
@@ -220,7 +200,7 @@ function amend_typos_in_articles {
     amend_typo_in_article 34 Silvestres silvestres | \
     amend_typo_in_article 34 artícu1037 'artículo 37' | \
     amend_typo_in_article 34 categorlas categorías | \
-    amend_typo_in_article 34 '\. lB' '.' | \
+    amend_typo_in_article 34 '\. lB Artículo 35' '.\n\n(35)' | \
     # Article 35
     amend_typo_in_article 35 preservacion preservación | \
     amend_typo_in_article 35 '\[e\] Conceder' '[c] Conceder' | \
@@ -329,7 +309,7 @@ function amend_typos_in_articles {
     amend_typo_in_article 51 'con\. éste' 'con éste' | \
     # Article 54
     amend_typo_in_article 54 'articulo 49' 'artículo 49' | \
-    amend_typo_in_article 54 '\. I I I I I I I I I I I I I' '.' | \
+    amend_typo_in_article 54 '\. I I I I I I I I I I I I I \[•\] Artículo 55' '.\n\n(55)' | \
     # Article 55
     amend_typo_in_article 55 'información\.de' 'información de' | \
     # Article 56
@@ -340,7 +320,7 @@ function amend_typos_in_articles {
     amend_typo_in_article 57 trasgresión transgresión | \
     # Article 58
     amend_typo_in_article 58 artterior anterior | \
-    amend_typo_in_article 58 '\. •' '.' | \
+    amend_typo_in_article 58 '\. \[•\]' '.' | \
     # Article 59
     amend_typo_in_article 59 'articulo 50' 'artículo 50' | \
     # Article 60
@@ -452,6 +432,7 @@ function amend_typos_in_articles {
     # Article 94
     amend_typo_in_article 94 exrstentes existentes | \
     # Articles 95 and 96
+    amend_typo_in_article 95 ': Artículo 96' ':\n\n(96)' | \
     amend_typo_in_article 96 contaminacion contaminación | \
     amend_typo_in_article 96 'futuro\. Los' 'futuro. [2] Los' | \
     amend_typo_in_article 96 'atmosférica\. Las' 'atmosférica. [3] Las' | \
@@ -478,7 +459,7 @@ function amend_typos_in_articles {
     amend_typo_in_article 102 biológícos biológicos | \
     # Article 103
     amend_typo_in_article 103 conservacion conservación | \
-    amend_typo_in_article 103 '\. I' '.' | \
+    amend_typo_in_article 103 '\. I \[•\] Artículo 104' '.\n\n(104)' | \
     # Article 104
     amend_typo_in_article 104 'Se prohiben' 'Se prohíben' | \
     # Article 105
@@ -579,7 +560,7 @@ function amend_typos_in_articles {
     amend_typo_in_article 132 '\. 11' '.' | \
     # Article 133
     amend_typo_in_article 133 juridico jurídico | \
-    amend_typo_in_article 133 '\. I I' '.' | \
+    amend_typo_in_article 133 '\. I I \[•\] Artículo 134' '.\n\n(134)' | \
     # Article 134
     amend_typo_in_article 134 'controlo de garantia' 'control o de garantía' | \
     amend_typo_in_article 134 'AUTORIZACiÓN' 'AUTORIZACIÓN' | \
@@ -595,7 +576,7 @@ function amend_typos_in_articles {
     # Article 137
     amend_typo_in_article 137 limites límites | \
     # Article 138
-    amend_typo_in_article 138 'anexo 111' 'anexo III' | \
+    amend_typo_in_article 138 'anexo \[111\] \[•\] Artículo 139' 'anexo III.\n\n(139)' | \
     # Article 139
     amend_typo_in_article 139 '1y 11' 'I y II' | \
     # Article 140
@@ -640,7 +621,7 @@ function amend_typos_in_articles {
     amend_typo_in_article 147 muygraves 'muy graves' | \
     amend_typo_in_article 147 siguienles siguientes | \
     amend_typo_in_article 147 "determinaciones'de" 'determinaciones de' | \
-    amend_typo_in_article 147 'anexo 111' 'anexo III' | \
+    amend_typo_in_article 147 'anexo \[111\] \[•\] Artículo 148' 'anexo III.\n\n(148)' | \
     # Article 148
     amend_typo_in_article 148 'fisicas y Jurídicas' 'físicas y jurídicas' | \
     # Article 149
@@ -662,6 +643,7 @@ function amend_typos_in_articles {
     # Article 156
     amend_typo_in_article 156 '\[•\] \[1\]' '[1]' | \
     amend_typo_in_article 156 'r \[2\]' '[2]' | \
+    amend_typo_in_article 156 ' \[•\] Artículo 157' '.\n\n(157)' | \
     # Article 157
     amend_typo_in_article 157 'FONAMA, Fomentar' 'FONAMA: [1] Fomentar' | \
     amend_typo_in_article 157 'Ambiente\. Apoyar' 'Ambiente. [2] Apoyar' | \
@@ -718,7 +700,6 @@ function amend_typos_in_headers {
     sed -E 's/^(SECCIÓN SEGUNDA.*)L1CENCIAMEº,OAIVIJLL\.ENTA!" /\1LICENCIA MEDIOAMBIENTAL\n\n/' | \
     sed -E 's/^(SECCIÓN TERCERA - RÉGIMEN DE )CQMUNICACIÓN/\1COMUNICACIÓN/' | \
     sed -E 's/^(CAPÍTULO SEXTO).*L (SISTEMA.*) (A\.)/\1\n\nI. \2\n\n\3/' | \
-    sed -E 's/^(TÍTULO CUARTO)/\1 -/' | \
     sed -E 's/^(TÍTULO QUINTO)\./\1 -/'
 }
 
@@ -807,7 +788,6 @@ function preprocess_state_and_language_input_file {
     apply_common_transformations_to_stdin "$language" | \
     remove_all_text_before_first_title_header | \
     remove_trailing_bullet_points | \
-    wrap_list_item_leading_characters | \
     amend_typos_in_articles | \
     split_article_96_into_articles_95_and_96 | \
     add_bis_suffix_to_article_140 | \

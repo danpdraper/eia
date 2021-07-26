@@ -28,13 +28,16 @@ function preprocess_legislation {
   source "$state_and_language_preprocessor_file_path"
 
   echo_info "Preprocessing file $input_file_path."
+  local start_time="$(date +%s%N)"
   preprocess_file "$input_file_path" "$output_file_path"
+  local execution_time="$((($(date +%s%N) - $start_time) / 1000000))"
 
   if [ "$?" -ne 0 ] ; then
     echo_error "Failed to preprocess $input_file_path."
     return 1
   fi
-  echo_info "Successfully preprocessed $input_file_path. Wrote result of preprocessing to $output_file_path."
+  echo_info "Successfully preprocessed $input_file_path in $execution_time milliseconds."
+  echo_info "Wrote result of preprocessing to $output_file_path."
 }
 
 function extract_state_and_language_from_script_file_name {
