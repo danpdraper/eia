@@ -55,7 +55,7 @@ function format_annex {
 
 function preprocess_state_and_language_input_file {
   if [ "$#" -ne 2 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <input_file_path> <language>"
+    echo_usage_error "$*" '<input_file_path> <language>'
     return 1
   fi
   local input_file_path="$1"

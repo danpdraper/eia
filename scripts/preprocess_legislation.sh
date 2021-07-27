@@ -4,7 +4,7 @@ common_file_name="common.sh"
 
 function preprocess_legislation {
   if [ "$#" -ne 4 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <state> <language> <raw_data_directory_path> <script_directory_path>"
+    echo_usage_error "$*" '<state> <language> <raw_data_directory_path> <script_directory_path>'
     return 1
   fi
   local state="$1"
@@ -30,9 +30,10 @@ function preprocess_legislation {
   echo_info "Preprocessing file $input_file_path."
   local start_time="$(date +%s%N)"
   preprocess_file "$input_file_path" "$output_file_path"
+  local return_code="$?"
   local execution_time="$((($(date +%s%N) - $start_time) / 1000000))"
 
-  if [ "$?" -ne 0 ] ; then
+  if [ "$return_code" -ne 0 ] ; then
     echo_error "Failed to preprocess $input_file_path."
     return 1
   fi
@@ -42,7 +43,7 @@ function preprocess_legislation {
 
 function extract_state_and_language_from_script_file_name {
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <script_file_name>"
+    echo_usage_error "$*" '<script_file_name>'
     return 1
   fi
   local script_file_name="$1"
@@ -57,7 +58,7 @@ function extract_state_and_language_from_script_file_name {
 
 function preprocess_all_legislation {
   if [ "$#" -ne 2 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <raw_data_directory_path> <script_directory_path>"
+    echo_usage_error "$*" '<raw_data_directory_path> <script_directory_path>'
     return 1
   fi
   local raw_data_directory_path="$1"
@@ -99,6 +100,7 @@ fi
 
 if [ "$#" -ne 0 ] && [ "$#" -ne 2 ] ; then
   echo_error "USAGE: $(basename $0) [state language]"
+  echo_error "PROVIDED: $(basename $0) $*"
   echo_error "Invoking $(basename $0) without any arguments will preprocess ALL legislation."
   exit 1
 fi

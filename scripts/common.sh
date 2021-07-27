@@ -10,6 +10,24 @@ function echo_error {
   >&2 echo -e "${RED}ERROR: $1${NC}"
 }
 
+function echo_usage_error {
+  if [ "$#" -lt 1 ] || [ "$#" -gt 2 ] ; then
+    echo_error "USAGE: ${FUNCNAME[0]} <provided_arguments> [expected_arguments]"
+    echo_error "PROVIDED: ${FUNCNAME[0]} $*"
+    return 1
+  fi
+  local provided_arguments="$1"
+  local expected_arguments="$2"
+
+  if [ "$#" -eq 1 ] ; then
+    echo_error "USAGE: ${FUNCNAME[1]}"
+  fi
+  if [ "$#" -eq 2 ] ; then
+    echo_error "USAGE: ${FUNCNAME[1]} $expected_arguments"
+  fi
+  echo_error "PROVIDED: ${FUNCNAME[1]} $provided_arguments"
+}
+
 function echo_info {
   echo -e "${GREEN}INFO: $1${NC}"
 }
@@ -32,7 +50,7 @@ function remove_redundant_spaces {
 
 function get_header_regular_expression {
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -67,7 +85,7 @@ function get_header_regular_expression {
 
 function get_article_regular_expression {
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -93,7 +111,7 @@ function get_article_regular_expression {
 
 function get_header_and_article_regular_expression {
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -116,7 +134,7 @@ function get_header_and_article_regular_expression {
 
 function get_ordinal_regular_expression {
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -172,7 +190,7 @@ function get_ordinal_regular_expression {
 
 function get_unique_regular_expression {
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -198,7 +216,7 @@ function get_unique_regular_expression {
 
 function get_line_prefix_regular_expression {
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -229,7 +247,7 @@ function remove_unwanted_characters_prior_to_line_prefixes {
   local stdin="$(</dev/stdin)"
 
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -254,7 +272,7 @@ function add_newlines_before_headers_and_articles {
   local stdin="$(</dev/stdin)"
 
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -271,7 +289,7 @@ function add_newlines_before_headers_and_articles {
 
 function get_abbreviated_ordinal_regular_expression {
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -293,7 +311,7 @@ function remove_abbreviated_ordinals_from_headers_and_articles {
   local stdin=$(</dev/stdin)
 
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -322,7 +340,7 @@ function add_dash_to_headers {
   local stdin=$(</dev/stdin)
 
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -361,7 +379,7 @@ function remove_colon_from_headers {
   local stdin=$(</dev/stdin)
 
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -378,7 +396,7 @@ function replace_article_literals_with_numbers {
   local stdin=$(</dev/stdin)
 
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -402,7 +420,7 @@ function apply_common_transformations_to_stdin {
   local stdin=$(</dev/stdin)
 
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -430,7 +448,7 @@ function apply_common_transformations_to_stdin {
 
 function apply_common_transformations {
   if [ "$#" -ne 2 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <input_file_path> <language>"
+    echo_usage_error "$*" '<input_file_path> <language>'
     return 1
   fi
   local input_file_path="$input_file_path"
@@ -443,7 +461,7 @@ function amend_typo_in_article {
   local stdin="$(</dev/stdin)"
 
   if [ "$#" -ne 3 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <article_number> <regular_expression> <replacement>"
+    echo_usage_error "$*" '<article_number> <regular_expression> <replacement>'
     return 1
   fi
   local article_number="$1"
@@ -453,15 +471,9 @@ function amend_typo_in_article {
   echo "$stdin" | sed -E "s/^(\(${article_number}\).*)${regular_expression}/\1${replacement}/"
 }
 
-function rearrange_article_and_subarticle_numbers {
-  sed -E 's/(\([0-9]+\)|\.|:) ([0-9]+)\./\1 (\2)/g' | \
-    sed -E 's/^(\([0-9]+\)) \(/\1(/' | \
-    sed -E ':start;s/^(\([0-9]+\))(.*\.) (\([0-9]+\))/\1\2\n\1\3/;t start'
-}
-
 function preprocess_file {
   if [ "$#" -ne 2 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <input_file_path> <output_file_path>"
+    echo_usage_error "$*" '<input_file_path> <output_file_path>'
     return 1
   fi
   local input_file_path="$1"

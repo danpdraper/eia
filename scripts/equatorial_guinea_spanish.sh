@@ -10,7 +10,7 @@ function capitalize_headers {
   local stdin="$(</dev/stdin)"
 
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -35,7 +35,7 @@ function remove_periods_from_headers {
   local stdin="$(</dev/stdin)"
 
   if [ "$#" -ne 1 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <language>"
+    echo_usage_error "$*" '<language>'
     return 1
   fi
   local language="$1"
@@ -777,7 +777,7 @@ function format_disposiciones_finales {
 
 function preprocess_state_and_language_input_file {
   if [ "$#" -ne 2 ] ; then
-    echo_error "USAGE: ${FUNCNAME[0]} <input_file_path> <language>"
+    echo_usage_error "$*" '<input_file_path> <language>'
     return 1
   fi
   local input_file_path="$1"
