@@ -308,7 +308,7 @@ function get_abbreviated_ordinal_regular_expression {
 }
 
 function remove_abbreviated_ordinals_from_headers_and_articles {
-  local stdin=$(</dev/stdin)
+  local stdin="$(</dev/stdin)"
 
   if [ "$#" -ne 1 ] ; then
     echo_usage_error "$*" '<language>'
@@ -332,13 +332,25 @@ function remove_abbreviated_ordinals_from_headers_and_articles {
   echo "$stdin" | sed -E "s/${regular_expression}/\1 \2/"
 }
 
-function remove_dashes {
-  sed -E 's/(-|—) //g'
+function replace_dashes_with_bullet_points_in_articles {
+  local stdin="$(</dev/stdin)"
+
+  if [ "$#" -ne 1 ] ; then
+    echo_usage_error "$*" '<language>'
+    return 1
+  fi
+  local language="$1"
+
+  local article_regular_expression
+  article_regular_expression="$(get_article_regular_expression $language)"
+  local return_code="$?"
+  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
+
+  echo "$stdin" | \
+    sed -E ":start;s/^(${article_regular_expression})(.* )(-|—) /\1\2• /;t start"
 }
 
-function add_dash_to_headers {
-  local stdin=$(</dev/stdin)
-
+function get_header_line_prefix_regular_expression {
   if [ "$#" -ne 1 ] ; then
     echo_usage_error "$*" '<language>'
     return 1
@@ -360,11 +372,22 @@ function add_dash_to_headers {
   return_code="$?"
   if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
 
-  local regular_expression="^($header_regular_expression)"
-  regular_expression+=" ?([0-9IVX]+|${ordinal_regular_expression}|"
-  regular_expression+="${unique_regular_expression})(.)"
+  local header_line_prefix_regular_expression="^($header_regular_expression)"
+  header_line_prefix_regular_expression+=" ?([0-9IVX]+|${ordinal_regular_expression}|"
+  header_line_prefix_regular_expression+="${unique_regular_expression})(.)"
 
-  echo "$stdin" | sed -E "s/${regular_expression}/\1 \2 -\3/"
+  echo "$header_line_prefix_regular_expression"
+}
+
+function add_dash_to_headers {
+  local stdin=$(</dev/stdin)
+
+  local header_line_prefix_regular_expression
+  header_line_prefix_regular_expression="$(get_header_line_prefix_regular_expression $language)"
+  local return_code="$?"
+  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
+
+  echo "$stdin" | sed -E "s/${header_line_prefix_regular_expression}/\1 \2 -\3/"
 }
 
 function remove_space_before_colons_and_semicolons {
@@ -437,7 +460,7 @@ function apply_common_transformations_to_stdin {
     remove_unwanted_characters_prior_to_line_prefixes "$language" | \
     add_newlines_before_headers_and_articles "$language" | \
     remove_abbreviated_ordinals_from_headers_and_articles "$language" | \
-    remove_dashes | \
+    replace_dashes_with_bullet_points_in_articles "$language" | \
     add_dash_to_headers "$language" | \
     remove_space_before_colons_and_semicolons | \
     replace_double_angle_quotation_marks_with_quotation_marks | \
