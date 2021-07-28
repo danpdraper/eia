@@ -19,16 +19,11 @@ function amend_typos_in_headers {
 
   echo "$stdin" | \
     sed -E "s/${header_line_prefix_regular_expression}(-)[^A-Z]+/\1 \2\3\4 /" | \
+    sed -E 's/(CHAPITRE [0-9] [^\[]+) (\[•\] )?Article ([0-9]+)\/-/\1\n\n(\3)/' | \
     sed -E 's/: (TITRE I - DISPOSITIONS GENERALES)/:\n\n\1/' | \
     sed -E 's/^(TITRE III .*)EDUCATION(.*)ETABLISSEMENTS/\1ÉDUCATION\2ÉTABLISSEMENTS/' | \
     sed -E 's/^(CHAPITRE) I(.*) \[•\] Article 9\/-/\1 1\2\n\n(9)/' | \
     sed -E 's/^(CHAPITRE 2.*)Etablissements/\1Établissements/' | \
-    sed -E 's/^(CHAPITRE 2 .*) Article 20\/-/\1\n\n(20)/' | \
-    sed -E 's/^(CHAPITRE 5 .*) Article 37\/-/\1\n\n(37)/' | \
-    sed -E 's/^(CHAPITRE 2 .*) Article 55\/-/\1\n\n(55)/' | \
-    sed -E 's/^(CHAPITRE 3 .*) Article 65\/-/\1\n\n(65)/' | \
-    sed -E 's/^(CHAPITRE 4 .*) \[•\] Article 68\/-/\1\n\n(68)/' | \
-    sed -E 's/^(CHAPITRE 5 .*) Article 76\/-/\1\n\n(76)/' | \
     sed -E 's/^(TITRE VI .*)EVALUATION ENVIRONNEMETALE/\1ÉVALUATION ENVIRONNEMENTALE/' | \
     sed -E 's/^(CHAPITRE 1 .*)Etudes/\1Études/' | \
     sed -E 's/^(CHAPITRE 4 .*)Etat/\1État/'
