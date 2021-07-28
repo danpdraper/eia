@@ -1,11 +1,8 @@
 #!/bin/bash
 
-function replace_number_abbreviations_with_complete_word {
-  sed -E 's/n.º/número/g'
-}
-
 function remove_degree_symbols {
-  sed -E 's/\.º//g'
+  sed -E 's/n.º/número/g' | \
+    sed -E 's/\.º//g'
 }
 
 function remove_all_text_before_first_chapter_header {
@@ -21,12 +18,13 @@ function amend_typos_in_articles {
   amend_typo_in_article 1 '1, 2 e 3' '[1], [2] e [3]' | \
     amend_typo_in_article 1 'número 2' 'número [2]' | \
     # Article 4
+    sed -E ':start;s/^(\(4\).*:) \[•\]/\1/;t start' | \
     amend_typo_in_article 4 'comuns\. \[g\]' 'comuns; [g]' | \
     # Article 5
     amend_typo_in_article 5 '358 DIÁRIO DA REPÚBLICA ' '' | \
     amend_typo_in_article 5 desiquilíbrios desequilíbrios | \
     # Article 12
-    amend_typo_in_article 12 ' I SÉRIE N 27.*$' '' | \
+    amend_typo_in_article 12 ' I SÉRIE.*$' '' | \
     # Article 14
     amend_typo_in_article 14 abrangir abranger | \
     # Article 19
@@ -36,7 +34,7 @@ function amend_typos_in_articles {
     # Article 27
     amend_typo_in_article 27 'e nvolvam' envolvam | \
     # Article 32
-    amend_typo_in_article 32 'I SÉRIE N 27 DE 19 DE JUNHO DE 1998 361 ' '' | \
+    amend_typo_in_article 32 'I SÉRIE \[•\] N 27 \[•\] DE 19 DE JUNHO DE 1998 361 ' '' | \
     # Article 37
     amend_typo_in_article 37 ' Anexo' '\n\nAnexo' | \
     amend_typo_in_article 37 ' Vista e aprovada.*$' ''
@@ -48,6 +46,7 @@ function format_annex {
   local line_prefix='Anexo à Lei de Bases do Ambiente'
 
   echo "$stdin" | \
+    sed -E ":start;s/^(${line_prefix}.*:) \[•\]/\1/;t start" | \
     sed -E "s/^(${line_prefix}.*)362 DIÁRIO DA REPÚBLICA /\1/" | \
     sed -E "s/^(${line_prefix}.*) O Presidente da Assembleia Nacional.*$/\1/" | \
     sed -E "s/^(${line_prefix}) /\1\n\n/"
@@ -62,7 +61,6 @@ function preprocess_state_and_language_input_file {
   local language="$2"
 
   cat "$input_file_path" | \
-    replace_number_abbreviations_with_complete_word | \
     remove_degree_symbols | \
     apply_common_transformations_to_stdin "$language" | \
     remove_all_text_before_first_chapter_header | \

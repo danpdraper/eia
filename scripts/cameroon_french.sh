@@ -21,6 +21,8 @@ function amend_typos_in_articles {
     amend_typo_in_article 12 'internationaux \[•\]' 'internationaux; [•]' | \
     # Article 13
     amend_typo_in_article 13 '\. ARITCLE \[14\]' '.\n\n(14) ' | \
+    # Article 14
+    amend_typo_in_article 14 '- \[1\]' '[1]' | \
     # Article 15
     amend_typo_in_article 15 'et tien ' 'et tient ' | \
     # Article 22

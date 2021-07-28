@@ -38,6 +38,7 @@ function amend_typos_in_articles {
     amend_typo_in_article 3 'EDUCATION ENVIRONNEMENTALE' 'ÉDUCATION ENVIRONNEMENTALE' | \
     amend_typo_in_article 3 ECOLOGIE ÉCOLOGIE | \
     amend_typo_in_article 3 ECOSYSTEME ECOSYSTÈME | \
+    amend_typo_in_article 3 'interac- tion' interaction | \
     amend_typo_in_article 3 'ELIMINATION DES DECHETS' 'ÉLIMINATION DES DÉCHETS' | \
     amend_typo_in_article 3 'EQUILIBRE ECOLOGIQUE' 'ÉQUILIBRE ÉCOLOGIQUE' | \
     amend_typo_in_article 3 ETABLISSEMENTS ÉTABLISSEMENTS | \
@@ -84,6 +85,9 @@ function amend_typos_in_articles {
     amend_typo_in_article 101 Evaluation Évaluation | \
     # Article 102
     amend_typo_in_article 102 standard standards | \
+    # Article 106
+    amend_typo_in_article 106 'procès \[•\] verbaux' 'procès - verbaux' | \
+    amend_typo_in_article 106 'procès \[•\] verbaux' 'procès - verbaux' | \
     # Article 108
     amend_typo_in_article 108 cidessus 'ci-dessus' | \
     # Article 116

@@ -104,11 +104,11 @@ function amend_typos_in_articles {
     amend_typo_in_article 10 'por, \[a\]' 'por: [a]' | \
     amend_typo_in_article 10 'pero sanas' personas | \
     amend_typo_in_article 10 'vegetalo los ecosistemas' 'vegetal o los ecosistemas' | \
-    amend_typo_in_article 10 ', el bienes41' ', el [41]' | \
+    amend_typo_in_article 10 ', el bienes- \[41\]' ', el [41].' | \
     amend_typo_in_article 10 'las duíces' 'las dulces' | \
     amend_typo_in_article 10 "\. , '\. \[50\]" '. [50]' | \
     amend_typo_in_article 10 caracterlsticas características | \
-    amend_typo_in_article 10 'medioambien\. tales' medioambientales | \
+    amend_typo_in_article 10 'medioambien- \. tales' medioambientales | \
     amend_typo_in_article 10 '\. " \[52\]' '. [52]' | \
     amend_typo_in_article 10 'Impida su renovación' 'impida su renovación' | \
     amend_typo_in_article 10 re~idente residente | \
@@ -166,10 +166,10 @@ function amend_typos_in_articles {
     amend_typo_in_article 25 torrnaciones formaciones | \
     # Article 27
     amend_typo_in_article 27 Cuandoproceda 'Cuando proceda' | \
-    amend_typo_in_article 27 '\[l\] ZONA RESTRINGIDA\.' '[I] ZONA RESTRINGIDA. ' | \
-    amend_typo_in_article 27 '\[11\] ZONA ABIERTA\.' '[II] ZONA ABIERTA. ' | \
-    amend_typo_in_article 27 '\[111\] ZONA TRADICIONAL\.' '[III] ZONA TRADICIONAL. ' | \
-    amend_typo_in_article 27 'ZONA ESPECIAL\.' 'ZONA ESPECIAL. ' | \
+    amend_typo_in_article 27 '\[l\] ZONA RESTRINGIDA\.-' '[I] ZONA RESTRINGIDA.' | \
+    amend_typo_in_article 27 '\[11\] ZONA ABIERTA\.-' '[II] ZONA ABIERTA.' | \
+    amend_typo_in_article 27 '\[111\] ZONA TRADICIONAL\.-' '[III] ZONA TRADICIONAL.' | \
+    amend_typo_in_article 27 'ZONA ESPECIAL\.-' 'ZONA ESPECIAL.' | \
     amend_typo_in_article 27 Amortiguamíento Amortiguamiento | \
     # Article 28
     amend_typo_in_article 28 deterrninaciones determinaciones | \
@@ -267,26 +267,26 @@ function amend_typos_in_articles {
     amend_typo_in_article 44 'aquell~¡;' aquellos | \
     amend_typo_in_article 44 "responsabilidades\. '" 'responsabilidades.' | \
     # Article 45
-    amend_typo_in_article 45 'Primera\.' 'Primera. ' | \
+    amend_typo_in_article 45 'Primera\.-' 'Primera.' | \
     amend_typo_in_article 45 quimicos químicos | \
-    amend_typo_in_article 45 'Segunda\.' 'Segunda. ' | \
-    amend_typo_in_article 45 'Tercera\.' 'Tercera. ' | \
-    amend_typo_in_article 45 'Cuarta\.' 'Cuarta. ' | \
-    amend_typo_in_article 45 'Quinta\.' 'Quinta. ' | \
+    amend_typo_in_article 45 'Segunda\.-' 'Segunda.' | \
+    amend_typo_in_article 45 'Tercera\.-' 'Tercera.' | \
+    amend_typo_in_article 45 'Cuarta\.-' 'Cuarta.' | \
+    amend_typo_in_article 45 'Quinta\.-' 'Quinta.' | \
     amend_typo_in_article 45 armonia armonía | \
-    amend_typo_in_article 46 'Sexta\.' 'Sexta. ' | \
+    amend_typo_in_article 45 'Sexta\.-' 'Sexta.' | \
     amend_typo_in_article 45 'asi como' 'así como' | \
-    amend_typo_in_article 45 'Séptima\.' 'Séptima. ' | \
+    amend_typo_in_article 45 'Séptima\.-' 'Séptima.' | \
     amend_typo_in_article 45 'extinción O vulnerables' 'extinción o vulnerables' | \
     amend_typo_in_article 45 'reposo, campo' 'reposo, campeo' | \
     amend_typo_in_article 45 'octave\.\.' 'Octava.' | \
     amend_typo_in_article 45 'asi como' 'así como' | \
-    amend_typo_in_article 45 'Novena\.' 'Novena. ' | \
+    amend_typo_in_article 45 'Novena\.-' 'Novena.' | \
     amend_typo_in_article 45 'reposo, campo' 'reposo, campeo' | \
-    amend_typo_in_article 45 'Décima\.' 'Décima. ' | \
-    amend_typo_in_article 45 'Undécima\.' 'Undécima. ' | \
-    amend_typo_in_article 45 'Duodécima\.' 'Duodécima\. ' | \
-    amend_typo_in_article 45 'Decimotercera\.' 'Decimotercera. ' | \
+    amend_typo_in_article 45 'Décima\.-' 'Décima.' | \
+    amend_typo_in_article 45 'Undécima\.-' 'Undécima.' | \
+    amend_typo_in_article 45 'Duodécima\.-' 'Duodécima.' | \
+    amend_typo_in_article 45 'Decimotercera\.-' 'Decimotercera.' | \
     # Article 46
     amend_typo_in_article 46 'asi como' 'así como' | \
     amend_typo_in_article 46 articulo artículo | \
@@ -384,7 +384,7 @@ function amend_typos_in_articles {
     # Article 78
     amend_typo_in_article 78 hubíere hubiere | \
     # Article 82
-    amend_typo_in_article 82 'hídri• COS' hídricos | \
+    amend_typo_in_article 82 'hídri- \[•\] COS' hídricos | \
     amend_typo_in_article 82 'podrás otorgar' 'podrán otorgar' | \
     # Article 84
     amend_typo_in_article 84 '\. , ' '.\n\n' | \
@@ -400,7 +400,7 @@ function amend_typos_in_articles {
     # Article 88
     amend_typo_in_article 88 yespecialmente 'y especialmente' | \
     amend_typo_in_article 88 perjuício perjuicio | \
-    amend_typo_in_article 88 'por razol' 'por razones de' | \
+    amend_typo_in_article 88 'por razo- I' 'por razones de' | \
     amend_typo_in_article 88 erniestablecidos 'emisión establecidos' | \
     amend_typo_in_article 88 'aplicables\. Cuando' 'aplicables. [5] Cuando' | \
     amend_typo_in_article 88 'sera vinculante' 'será vinculante' | \
@@ -438,7 +438,7 @@ function amend_typos_in_articles {
     amend_typo_in_article 96 'atmosférica\. Las' 'atmosférica. [3] Las' | \
     amend_typo_in_article 96 'emisores\. La' 'emisores. [4] La' | \
     amend_typo_in_article 96 'pública\. Para' 'pública. [5] Para' | \
-    amend_typo_in_article 96 ' 1: \[2\] ¡: \[3\] , 1; ~"t4\. \. li I \[5\] í; \[•\] 1 t ~\. ' '' | \
+    amend_typo_in_article 96 ' 1: \[2\] ¡: \[3\] , 1; ~"t- \[4\] \. li I \[5\] í; \[•\] 1 t ~\. ' '' | \
     amend_typo_in_article 96 'Subvenciones,' 'Subvenciones:' | \
     amend_typo_in_article 96 Pais País | \
     amend_typo_in_article 96 'quinquenio, \[a\]' 'quinquenio: [a]' | \
@@ -542,7 +542,7 @@ function amend_typos_in_articles {
     amend_typo_in_article 127 ': , \[a\]' ': [a]' | \
     amend_typo_in_article 127 'asi como' 'así como' | \
     # Article 129
-    amend_typo_in_article 129 '\[1\]La solicitud' '[1] La solicitud' | \
+    amend_typo_in_article 129 '\[1\]-' '[1]' | \
     amend_typo_in_article 129 'al Proyecto' '[a] Proyecto' | \
     amend_typo_in_article 129 '-con suficiente rnformación' 'con suficiente información' | \
     amend_typo_in_article 129 '\[e\] Certificado' '[c] Certificado' | \
@@ -709,24 +709,24 @@ function format_disposiciones_adicionales {
   local line_prefix='DISPOSICIONES ADICIONALES'
 
   echo "$stdin" |
-    sed -E "s/^(${line_prefix}.*\.) (Décima\.)/\1\n\2 /" | \
-    sed -E "s/^(${line_prefix}.*\.) (Novena\.)/\1\n\2 /" | \
+    sed -E "s/^(${line_prefix}.*\.) (Décima\.)-/\1\n\2/" | \
+    sed -E "s/^(${line_prefix}.*\.) (Novena\.)-/\1\n\2/" | \
     sed -E "s/^(${line_prefix}.*)especificamente/\1específicamente/" | \
-    sed -E "s/^(${line_prefix}.*\.) (Octava\.)/\1\n\2 /" | \
+    sed -E "s/^(${line_prefix}.*\.) (Octava\.)-/\1\n\2/" | \
     sed -E "s/^(${line_prefix}.*)las cuantias/\1las cuantías/" | \
-    sed -E "s/^(${line_prefix}.*\.) (Séptima\.)/\1\n\2 /" | \
+    sed -E "s/^(${line_prefix}.*\.) (Séptima\.)-/\1\n\2/" | \
     sed -E "s/^(${line_prefix}.*)mlnimas/\1mínimas/" | \
-    sed -E "s/^(${line_prefix}.*\.) (Sexta\.)/\1\n\2 /" | \
+    sed -E "s/^(${line_prefix}.*\.) (Sexta\.)-/\1\n\2/" | \
     sed -E "s/^(${line_prefix}.*)Sin ánimo/\1sin ánimo/" | \
     sed -E "s/^(${line_prefix}.)derechosreales/\1derechos reales/" | \
-    sed -E "s/^(${line_prefix}.*\.) (Quinta\.)/\1\n\2 /" | \
-    sed -E "s/^(${line_prefix}.*\.) (Cuarta\.)/\1\n\2 /" | \
-    sed -E "s/^(${line_prefix}.*\.) (Tercera\.)/\1\n\2 /" | \
+    sed -E "s/^(${line_prefix}.*\.) (Quinta\.)-/\1\n\2/" | \
+    sed -E "s/^(${line_prefix}.*\.) (Cuarta\.)-/\1\n\2/" | \
+    sed -E "s/^(${line_prefix}.*\.) (Tercera\.)-/\1\n\2/" | \
     sed -E "s/^(${line_prefix}.*)sea , parte,/\1sea parte,/" | \
     sed -E "s/^(${line_prefix}.*)üNG/\1ONG/" | \
-    sed -E "s/^(${line_prefix}.*\.) (Segunda\.)/\1\n\2 /" | \
+    sed -E "s/^(${line_prefix}.*\.) (Segunda\.)-/\1\n\2/" | \
     sed -E "s/^(${line_prefix}.*estatales )especificas/\1específicas/" | \
-    sed -E "s/^(${line_prefix}) •r (Primera\.)/\1\n\n\2 /"
+    sed -E "s/^(${line_prefix}) •r (Primera\.)-/\1\n\n\2/"
 }
 
 function format_disposicion_transitoria {
@@ -765,14 +765,14 @@ function format_disposiciones_finales {
     sed -E "s/^(${line_prefix}.*) Así lo dispongo.*$/\1/" | \
     sed -E "s/^(${line_prefix}.*)dia 10/\1día 10/" | \
     sed -E "s/^(${line_prefix}.*)Boletin/\1Boletín/" | \
-    sed -E "s/^(${line_prefix}.*\.) (Cuarta\.)/\1\n\2 /" | \
-    sed -E "s/^(${line_prefix}.*\.) (Tercera\.)/\1\n\2 /" | \
+    sed -E "s/^(${line_prefix}.*\.) (Cuarta\.)-/\1\n\2/" | \
+    sed -E "s/^(${line_prefix}.*\.) (Tercera\.)-/\1\n\2/" | \
     sed -E "s/^(${line_prefix}.*)\. oodrá llevar/\1, podrá llevar/" | \
     sed -E "s/^(${line_prefix}.*)mndifir-acionas\./\1modificaciones,/" | \
     sed -E "s/^(${line_prefix}.*)rpfllnrlirinnp,/\1refundiciones/" | \
     sed -E "s/^(${line_prefix}.*)v <:;llnrpc;innp, ,-jI\" f r 1 r/\1y supresiones de/" | \
-    sed -E "s/^(${line_prefix}.*\.) (Segunda\.)/\1\n\2 /" | \
-    sed -E "s/^(${line_prefix}): (Primera\.)/\1\n\n\2 /"
+    sed -E "s/^(${line_prefix}.*\.) (Segunda\.)-/\1\n\2/" | \
+    sed -E "s/^(${line_prefix}): (Primera\.)-/\1\n\n\2/"
 }
 
 function preprocess_state_and_language_input_file {

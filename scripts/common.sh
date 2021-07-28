@@ -440,7 +440,7 @@ function wrap_list_item_leading_characters {
 }
 
 function apply_common_transformations_to_stdin {
-  local stdin=$(</dev/stdin)
+  local stdin="$(</dev/stdin)"
 
   if [ "$#" -ne 1 ] ; then
     echo_usage_error "$*" '<language>'
