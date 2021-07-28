@@ -61,7 +61,7 @@ function get_header_regular_expression {
       header_regular_expression="Titre|TITRE|"
       header_regular_expression+="Chapitre|CHAPITRE|"
       header_regular_expression+="Section|SECTION|"
-      header_regular_expression+="Annexe?|ANNEXE?"
+      header_regular_expression+="Annexe|ANNEXE"
       ;;
     portuguese)
       header_regular_expression="Título|TÍTULO|"
