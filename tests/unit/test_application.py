@@ -3,10 +3,10 @@ import unittest.mock as mock
 
 import eia.application as application
 import eia.languages as languages
+import eia.tests.mock_similarity_calculator as mock_similarity_calculator
+import eia.tests.utilities as utilities
 import eia.text_file_discoverer as text_file_discoverer
 import eia.text_file_language_filterer as text_file_language_filterer
-import mock_similarity_calculator
-import utilities
 
 
 def test_compare_legislation_produces_similarity_matrix():

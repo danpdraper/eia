@@ -18,7 +18,7 @@ if [ -z "$VIRTUAL_ENV" ] ; then
 fi
 
 echo 'Running Python tests.'
-python3 -m pytest
+python3 -m pytest -vv
 return_code="$?"
 
 if $deactivate_after_test ; then

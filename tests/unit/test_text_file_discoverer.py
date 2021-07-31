@@ -1,7 +1,7 @@
 import os
 
 import eia.text_file_discoverer as text_file_discoverer
-import utilities
+import eia.tests.utilities as utilities
 
 
 class TestTextFileDiscoverer(object):

@@ -1,7 +1,7 @@
 import os
 
 import eia.file_reader as file_reader
-import utilities
+import eia.tests.utilities as utilities
 
 
 class TestFileReader(object):
