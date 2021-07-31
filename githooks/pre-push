@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# vim: set ft=sh
+
+common_file_path="$(dirname $(realpath ${BASH_SOURCE[0]}))/common.sh"
+if [ ! -f "$common_file_path" ] ; then
+  echo "Missing file. $common_file_path does not exist."
+  exit 1
+fi
+
+source "$common_file_path"
+
+deactivate_after_test=false
+
+if [ -z "$VIRTUAL_ENV" ] ; then
+  activate_virtual_environment
+  deactivate_after_test=true
+fi
+
+echo 'Running Python tests.'
+python3 -m pytest
+return_code="$?"
+
+if $deactivate_after_test ; then
+  deactivate_virtual_environment
+fi
+
+exit "$return_code"
