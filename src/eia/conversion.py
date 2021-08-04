@@ -1,11 +1,12 @@
 import re
 
 
+COMMA_SEPARATOR = ','
 STATE_NAME_SNAKE_CASE_REGEX = re.compile(r'/([a-z_]+)_[a-z]+\.')
 TO_CAPITALIZED_REGEX = re.compile(r'(^|_)([a-z])')
 
 
-def to_state_name_capitalized(file_path):
+def file_path_to_state_name_capitalized(file_path):
     match = STATE_NAME_SNAKE_CASE_REGEX.search(file_path)
     if not match:
         raise ValueError("File path {} does not conform to expectation of "
@@ -18,3 +19,9 @@ def to_state_name_capitalized(file_path):
             ' ' if match.group(1) == '_' else '',
             match.group(2).upper()),
         state_name_snake_case)
+
+
+def list_to_comma_separated_string(list_to_convert):
+    return COMMA_SEPARATOR.join(
+        map(lambda value: str(value) if type(value) == int else value,
+            list_to_convert))

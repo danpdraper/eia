@@ -5,8 +5,6 @@ import eia.application as application
 import eia.languages as languages
 import eia.tests.mock_similarity_calculator as mock_similarity_calculator
 import eia.tests.utilities as utilities
-import eia.text_file_discoverer as text_file_discoverer
-import eia.text_file_language_filterer as text_file_language_filterer
 
 
 def test_compare_legislation_produces_similarity_matrix():
@@ -27,11 +25,6 @@ def test_compare_legislation_produces_similarity_matrix():
     for file_path, text in legislation_text_by_file_path.items():
         with open(file_path, 'w') as file_object:
             file_object.write(text)
-
-    discoverer = text_file_discoverer.TextFileDiscoverer(
-        legislation_directory_path)
-    language_filterer = text_file_language_filterer.TextFileLanguageFilterer(
-        languages.ENGLISH)
 
     # The similarity_values dict corresponds to the following similarity matrix:
     #                  [ first_state second_state third_state ]
@@ -57,7 +50,7 @@ def test_compare_legislation_produces_similarity_matrix():
     expected_labels = ['State A', 'State B', 'State C']
     try:
         actual_labels, similarity_matrix = application.compare_legislation(
-            discoverer, language_filterer, similarity_calculator)
+            languages.ENGLISH, legislation_directory_path, similarity_calculator)
     finally:
         # Ensure that test legislation directory is deleted if the
         # compare_legislation function raises an exception

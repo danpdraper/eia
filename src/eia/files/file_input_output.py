@@ -25,3 +25,9 @@ class FileReader(object):
     def read_text_unbroken(self):
         with open(self.file_path, 'r') as file_object:
             return file_object.read()
+
+
+def write(file_path, line_generator):
+    with open(file_path, 'w') as file_object:
+        for line in line_generator:
+            file_object.write("{}\n".format(line))

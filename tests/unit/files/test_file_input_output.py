@@ -1,6 +1,6 @@
 import os
 
-import eia.file_reader as file_reader
+import eia.files.file_input_output as file_input_output
 import eia.tests.utilities as utilities
 
 
@@ -8,7 +8,7 @@ class TestFileReader(object):
     def setup(self):
         self.file_path = os.path.join(os.path.sep, 'tmp', 'test_file_loader.txt')
         utilities.silently_unlink_file(self.file_path)
-        self.file_reader = file_reader.FileReader(self.file_path)
+        self.file_reader = file_input_output.FileReader(self.file_path)
 
     def teardown(self):
         utilities.silently_unlink_file(self.file_path)
@@ -39,3 +39,27 @@ class TestFileReader(object):
         self.write_contents_to_file(expected_file_contents)
         actual_file_contents = self.file_reader.read_text_unbroken()
         assert expected_file_contents == actual_file_contents
+
+
+def line_generator(lines):
+    for line in lines:
+        yield line
+
+
+def test_write_writes_all_lines_yielded_by_generator_to_provided_file_path():
+    output_directory = os.path.join(os.path.sep, 'tmp', 'test_file_writer')
+    utilities.silently_delete_directory_tree(output_directory)
+    os.makedirs(output_directory)
+    file_path = os.path.join(output_directory, 'output.csv')
+    expected_output = [
+        '1,2,3,4',
+        '5,6,7,8',
+        '9,10,11,12',
+    ]
+    try:
+        file_input_output.write(file_path, line_generator(expected_output))
+        with open(file_path, 'r') as file_object:
+            actual_output = file_object.read().split('\n')[:-1]
+    finally:
+        utilities.silently_delete_directory_tree(output_directory)
+    assert expected_output == actual_output
