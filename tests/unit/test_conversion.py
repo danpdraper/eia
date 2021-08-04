@@ -28,8 +28,15 @@ def test_to_state_name_capitalized_raises_value_error_if_file_path_does_not_conf
         conversion.file_path_to_state_name_capitalized(file_path)
 
 
-def test_list_to_comma_separated_string_converts_list_containing_integers_to_comma_separated_string():
-    list_to_convert = ['Text', 1, 2, 3]
-    expected_return_value = 'Text,1,2,3'
-    actual_return_value = conversion.list_to_comma_separated_string(list_to_convert)
-    assert expected_return_value == actual_return_value
+def test_label_and_row_tuple_to_comma_separated_string_converts_list_containing_integers_to_comma_separated_string():
+    label_and_row = ('Test Label', [1, 2, 3])
+    expected_string = 'Test Label,1,2,3'
+    actual_string = conversion.label_and_row_tuple_to_comma_separated_string(label_and_row)
+    assert expected_string == actual_string
+
+
+def test_label_and_row_tuple_to_comma_separated_string_converts_list_containing_floats_to_comma_separated_string():
+    label_and_row = ('Test Label', [0.1, 0.2, 0.3])
+    expected_string = 'Test Label,0.1,0.2,0.3'
+    actual_string = conversion.label_and_row_tuple_to_comma_separated_string(label_and_row)
+    assert expected_string == actual_string

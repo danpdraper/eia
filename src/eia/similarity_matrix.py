@@ -1,9 +1,11 @@
-def generator(labels, values):
-    if len(labels) != len(values):
-        raise ValueError("The number of rows in values must equal the number of "
-            "elements in labels. labels: {}. values: {}.".format(labels, values))
-    if len(values) != len(values[0]):
-        raise ValueError("The number of rows and the number of columns in "
-            "values must be equal. values: {}".format(values))
-    for row in zip(labels, values):
-        yield [row[0]] + row[1]
+import eia.files.text_files as text_files
+
+
+def row_generator(algorithm, scope, language, text_file_directory_path):
+    for row_label, row_text in text_files.input_text_generator(
+            scope, language, text_file_directory_path):
+        row = []
+        for _, column_text in text_files.input_text_generator(
+                scope, language, text_file_directory_path):
+            row.append(algorithm.apply(row_text, column_text))
+        yield row_label, row

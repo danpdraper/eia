@@ -4,7 +4,7 @@ import eia.languages as languages
 
 
 class TestLanguage(object):
-    def test_init_raises_exception_when_supplied_unsupported_language(self):
+    def test_init_raises_value_error_when_supplied_unsupported_language(self):
         # Lowercase
         language = 'fakeguage'
         with pytest.raises(ValueError):

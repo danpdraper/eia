@@ -12,3 +12,8 @@ class Language(object):
 
 
 ENGLISH = Language('english')
+
+
+LANGUAGES = {
+    'english': ENGLISH,
+}

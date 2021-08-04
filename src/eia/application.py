@@ -4,21 +4,13 @@ import eia.files.text_files as text_files
 import eia.similarity_matrix as similarity_matrix
 
 
-def run(algorithm, legislation_language, legislation_directory_path, output_file_path):
-    legislation_file_paths = text_files.filter_file_paths_by_language(
-        text_files.discover(legislation_directory_path), legislation_language)
-    labels = list(map(
-        lambda file_path: conversion.file_path_to_state_name_capitalized(file_path),
-        legislation_file_paths))
-    values = [
-        [1, 1, 1],
-        [1, 1, 1],
-        [1, 1, 1],
-    ]
+def run(algorithm, scope, language, legislation_directory_path, output_file_path):
     file_input_output.write(
         output_file_path, map(
-            lambda value: conversion.list_to_comma_separated_string(value),
-            similarity_matrix.generator(labels, values)))
+            lambda value: conversion.label_and_row_tuple_to_comma_separated_string(value),
+            similarity_matrix.row_generator(
+                algorithm, scope, language, legislation_directory_path)))
+
 
 def compare_legislation(language, legislation_directory_path, similarity_calculator):
     legislation_file_paths = text_files.filter_file_paths_by_language(

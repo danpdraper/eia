@@ -21,7 +21,7 @@ def file_path_to_state_name_capitalized(file_path):
         state_name_snake_case)
 
 
-def list_to_comma_separated_string(list_to_convert):
+def label_and_row_tuple_to_comma_separated_string(label_and_row):
     return COMMA_SEPARATOR.join(
-        map(lambda value: str(value) if type(value) == int else value,
-            list_to_convert))
+        map(lambda value: str(value) if type(value) in [int, float] else value,
+            [label_and_row[0]] + label_and_row[1]))

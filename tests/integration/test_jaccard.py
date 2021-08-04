@@ -78,9 +78,10 @@ def test_jaccard_similarity_full_text():
         subprocess.run(
             [
                 script_file_path,
-                'jaccard',
+                'jaccard_index',
+                'full_text',
                 'english',
-                '--legislation_directory',
+                '--legislation_directory_path',
                 legislation_directory_path,
                 '--output_file_path',
                 similarity_output_file_path,
@@ -91,7 +92,7 @@ def test_jaccard_similarity_full_text():
                 line_components = line.rstrip('\n').split(',')
                 actual_similarity_matrix_labels.append(line_components[0])
                 actual_similarity_matrix.append(
-                    list(map(lambda line_component: int(line_component),
+                    list(map(lambda line_component: float(line_component),
                         line_components[1:])))
     finally:
         utilities.silently_delete_directory_tree(test_directory_path)
@@ -99,10 +100,18 @@ def test_jaccard_similarity_full_text():
 
     expected_similarity_matrix_labels = ['State A', 'State B', 'State C']
     expected_similarity_matrix = [
-        [1, 1, 1],
-        [1, 1, 1],
-        [1, 1, 1],
+        [1.0, 0.149, 0.135],
+        [0.149, 1.0, 0.160],
+        [0.135, 0.160, 1.0],
     ]
 
     assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
-    assert expected_similarity_matrix == actual_similarity_matrix
+    
+    assert len(expected_similarity_matrix) == len(actual_similarity_matrix)
+    epsilon = 0.0005
+    for row_index in range(len(expected_similarity_matrix)):
+        expected_row = expected_similarity_matrix[row_index]
+        actual_row = actual_similarity_matrix[row_index]
+        assert len(expected_row) == len(actual_row)
+        for column_index in range(len(expected_row)):
+            assert abs(expected_row[column_index] - actual_row[column_index]) < epsilon
