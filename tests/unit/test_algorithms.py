@@ -1,4 +1,12 @@
+import pytest
+
 import eia.algorithms as algorithms
+
+
+class TestAlgorithm(object):
+    def test_apply_raises_not_implemented_error(self):
+        with pytest.raises(NotImplementedError):
+            algorithms.Algorithm.apply('first_string', 'second_string')
 
 
 class TestJaccardIndex(object):
@@ -14,3 +22,6 @@ class TestJaccardIndex(object):
             first_string, second_string)
         epsilon = 0.00001
         assert abs(expected_jaccard_index - actual_jaccard_index) < epsilon
+
+    def test_to_string_returns_class_name_in_snake_case(self):
+        assert 'jaccard_index' == algorithms.JaccardIndex.to_string()

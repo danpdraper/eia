@@ -33,6 +33,6 @@ class ArgumentParser(object):
         self.argument_parser.add_argument('--output_file_path')
 
     def parse(self, arguments=None):
-        if arguments == None:
+        if arguments is None:
             return self.argument_parser.parse_args()
         return self.argument_parser.parse_args(arguments)

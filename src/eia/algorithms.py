@@ -1,3 +1,6 @@
+import eia.conversion as conversion
+
+
 SINGLE_SPACE = ' '
 
 
@@ -5,6 +8,10 @@ class Algorithm(object):
     @staticmethod
     def apply(first_string, second_string):
         raise NotImplementedError('Subclasses must override this method.')
+
+    @classmethod
+    def to_string(cls):
+        return conversion.capitalized_string_to_snake_case(cls.__name__)
 
 
 class JaccardIndex(Algorithm):

@@ -14,7 +14,7 @@ class TestArgumentParser(object):
         arguments = [
             'jaccard_index',
             'full_text',
-            'english', 
+            'english',
             '--legislation_directory_path',
             'test_legislation_directory_path',
             '--output_file_path',
@@ -36,7 +36,7 @@ class TestArgumentParser(object):
         arguments = [
             'unsupported_algorithm',
             'full_text',
-            'english', 
+            'english',
             '--legislation_directory_path',
             'test_legislation_directory_path',
             '--output_file_path',
@@ -49,7 +49,7 @@ class TestArgumentParser(object):
         arguments = [
             'jaccard_index',
             'unsupported_scope',
-            'english', 
+            'english',
             '--legislation_directory_path',
             'test_legislation_directory_path',
             '--output_file_path',
@@ -62,7 +62,7 @@ class TestArgumentParser(object):
         arguments = [
             'jaccard_index',
             'full_text',
-            'unsupported_language', 
+            'unsupported_language',
             '--legislation_directory_path',
             'test_legislation_directory_path',
             '--output_file_path',

@@ -2,7 +2,7 @@ class FileReader(object):
     def __init__(self, file_path):
         self.file_path = file_path
         self.line_generator = None
-        self.line_index = -1 
+        self.line_index = -1
 
     def _line_generator(self):
         with open(self.file_path, 'r') as file_object:
@@ -10,10 +10,10 @@ class FileReader(object):
                 yield line
 
     def read_next_line(self):
-        if self.line_generator == None:
+        if self.line_generator is None:
             self.line_generator = self._line_generator()
         line = None
-        while line == None:
+        while line is None:
             try:
                 line = next(self.line_generator).rstrip('\n')
                 self.line_index += 1

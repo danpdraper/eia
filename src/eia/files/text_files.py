@@ -20,7 +20,7 @@ def discover(text_file_directory_path):
 def filter_file_paths_by_language(file_paths, language):
     file_name_suffix_regex = re.compile(r"{}\.txt".format(language))
     return list(filter(
-        lambda file_path : file_name_suffix_regex.search(file_path),
+        lambda file_path: file_name_suffix_regex.search(file_path),
         file_paths))
 
 
