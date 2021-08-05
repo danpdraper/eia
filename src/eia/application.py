@@ -7,13 +7,14 @@ import eia.files.file_input_output as file_input_output
 import eia.similarity_matrix as similarity_matrix
 
 
-def run(algorithm, scope, language, legislation_directory_path, output_file_path):
+def run(algorithm, scope, language, legislation_directory_path,
+        output_file_path, debug):
     logging.basicConfig(
         datefmt='%Y-%m-%d %H:%M:%S',
         filemode='w',
         filename=os.path.join(environment.LOG_DIRECTORY_PATH, 'application.txt'),
         format='%(asctime)s [%(levelname)s] (%(name)s) %(message)s',
-        level=logging.INFO)
+        level=logging.DEBUG if debug else logging.INFO)
     logger = logging.getLogger(__name__)
     logger.info(
         "Starting application with the following parameters: "

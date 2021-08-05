@@ -73,6 +73,145 @@ STATE_C_LEGISLATION_TEXT = (
 
 
 def test_jaccard_similarity_full_text():
+    '''
+    State A legislation word set:
+        ((1), (2), (3), a, above, achieve, all, and, be, benefits, bodies,
+        cannot, citizens, conservation, country's, creating, defense, due,
+        entire, environment, environmental, feasible, for, general, have,
+        having, healthy, hence, i, implement, in, interests, is, it, its,
+        legislation, live, make, management, merely, national, natural,
+        necessary, objectives, obligations, of, out, participate, population,
+        preservation, principles, program, protection, published, purpose,
+        rational, relation, resources, respect, respectively, responsibility,
+        right, set, specialized, state, structures, sustainable, the, this,
+        title, to, underestimated, use, utilitarian, values, wellbeing, whose)
+    State A legislation word set size: 77
+
+    State B legislation word set:
+        ((1), (2), (3), a, aimed, an, and, applies, are, as, aspects,
+        associations, at, atmosphere, b, common, communities, conservation,
+        constitutes, content, cultural, decentralized, defense, defines,
+        develops, end, ensuring, environment, environmental, establishes, for,
+        framework, general, geosphere, government, grassroots, heritage, human,
+        hydrosphere, i, implementation, in, include, intangible, integral,
+        interest, is, it, its, law, legal, life, management, nation, national,
+        of, offers, or, part, particular, plans, policy, president, programs,
+        protection, provisions, rational, resources, responsibility, social,
+        state, strategies, sustainable, tangible, target, territorial, the,
+        their, these, they, this, title, to, together, universal, use, well,
+        which, with)
+    State B legislation word set size: 89
+
+    State C legislation word set:
+        ((1), (2), (3), according, action, administration, against, all, and,
+        associations, better, bodies, brings, citizen, collaboration,
+        collectivities, compliance, concerned, conditions, coordination,
+        decentralized, degradation, enhance, environment, environmental,
+        essential, establish, every, fight, for, forms, framework, fundamental,
+        i, implementation, improve, in, individually, institutions, is, it,
+        kinds, law, laws, living, local, managed, natural, necessary, of, or,
+        order, organizations, pollution, population, prevent, principles,
+        protect, protected, purpose, regulations, resources, responsible,
+        safeguard, sets, state, sustainably, territorial, the, this, title, to,
+        together, traditional, up, which, with, within, work)
+    State C legislation word set size: 79
+
+    State A and State B intersection word set:
+        ((1), (2), (3), a, and, conservation, defense, environment,
+        environmental, for, general, i, in, is, it, its, management, national,
+        of, protection, rational, resources, responsibility, state, sustainable,
+        the, this, title, to, use)
+    State A and State B intersection word set size: 30
+
+    State A and State B union word set:
+        ((1), (2), (3), a, above, achieve, aimed, all, an, and, applies, are,
+        as, aspects, associations, at, atmosphere, b, be, benefits, bodies,
+        cannot, citizens, common, communities, conservation, constitutes,
+        content, country's, creating, cultural, decentralized, defense, defines,
+        develops, due, end, ensuring, entire, environment, environmental,
+        establishes, feasible, for, framework, general, geosphere, government,
+        grassroots, have, having, healthy, hence, heritage, human, hydrosphere,
+        i, implement, implementation, in, include, intangible, integral,
+        interest, interests, is, it, its, law, legal, legislation, life, live,
+        make, management, merely, nation, national, natural, necessary,
+        objectives, obligations, of, offers, or, out, part, participate,
+        particular, plans, policy, population, preservation, president,
+        principles, program, programs, protection, provisions, published,
+        purpose, rational, relation, resources, respect, respectively,
+        responsibility, right, set, social, specialized, state, strategies,
+        structures, sustainable, tangible, target, territorial, the, their,
+        these, they, this, title, to, together, underestimated, universal, use,
+        utilitarian, values, well, wellbeing, which, whose, with)
+    State A and State B union word set size: 136
+
+    State A and State C intersection word set:
+        ((1), (2), (3), all, and, bodies, environment, environmental, for, i,
+        in, is, it, natural, necessary, of, population, principles, purpose,
+        resources, state, the, this, title, to)
+    State A and State C intersection word set size: 25
+
+    State A and State C union word set:
+        ((1), (2), (3), a, above, according, achieve, action, administration,
+        against, all, and, associations, be, benefits, better, bodies, brings,
+        cannot, citizen, citizens, collaboration, collectivities, compliance,
+        concerned, conditions, conservation, coordination, country's, creating,
+        decentralized, defense, degradation, due, enhance, entire, environment,
+        environmental, essential, establish, every, feasible, fight, for, forms,
+        framework, fundamental, general, have, having, healthy, hence, i,
+        implement, implementation, improve, in, individually, institutions,
+        interests, is, it, its, kinds, law, laws, legislation, live, living,
+        local, make, managed, management, merely, national, natural, necessary,
+        objectives, obligations, of, or, order, organizations, out, participate,
+        pollution, population, preservation, prevent, principles, program,
+        protect, protected, protection, published, purpose, rational,
+        regulations, relation, resources, respect, respectively, responsibility,
+        responsible, right, safeguard, set, sets, specialized, state,
+        structures, sustainable, sustainably, territorial, the, this, title, to,
+        together, traditional, underestimated, up, use, utilitarian, values,
+        wellbeing, which, whose, with, within, work)
+    State A and State C union word set size: 131
+
+    State B and State C intersection word set:
+        ((1), (2), (3), and, associations, decentralized, environment,
+        environmental, for, framework, i, implementation, in, is, it, law, of,
+        or, resources, state, territorial, the, this, title, to, together,
+        which, with)
+    State B and State C intersection word set size: 28
+
+    State B and State C union word set:
+        ((1), (2), (3), a, according, action, administration, against, aimed,
+        all, an, and, applies, are, as, aspects, associations, at, atmosphere,
+        b, better, bodies, brings, citizen, collaboration, collectivities,
+        common, communities, compliance, concerned, conditions, conservation,
+        constitutes, content, coordination, cultural, decentralized, defense,
+        defines, degradation, develops, end, enhance, ensuring, environment,
+        environmental, essential, establish, establishes, every, fight, for,
+        forms, framework, fundamental, general, geosphere, government,
+        grassroots, heritage, human, hydrosphere, i, implementation, improve,
+        in, include, individually, institutions, intangible, integral, interest,
+        is, it, its, kinds, law, laws, legal, life, living, local, managed,
+        management, nation, national, natural, necessary, of, offers, or, order,
+        organizations, part, particular, plans, policy, pollution, population,
+        president, prevent, principles, programs, protect, protected,
+        protection, provisions, purpose, rational, regulations, resources,
+        responsibility, responsible, safeguard, sets, social, state, strategies,
+        sustainable, sustainably, tangible, target, territorial, the, their,
+        these, they, this, title, to, together, traditional, universal, up, use,
+        well, which, with, within, work)
+    State B and State C union word set size: 140
+
+    Jaccard Index = Size of Intersection / Size of Union
+    Jaccard Index(State A, State B) = 30 / 136 ~= 0.221
+    Jaccard Index(State A, State C) = 25 / 131 ~= 0.191
+    Jaccard Index(State B, State C) = 28 / 140 = 0.2
+
+    Expected similarity matrix:
+                    [ State A State B State C ]
+        [ State A ] [  1.000   0.221   0.191  ]
+        [ State B ] [  0.221   1.000   0.200  ]
+        [ State C ] [  0.191   0.200   1.000  ]
+    '''
+
     test_directory_path = utilities.create_test_directory('jaccard_similarity_full_text')
 
     file_content_by_relative_path = {
@@ -102,6 +241,7 @@ def test_jaccard_similarity_full_text():
                 test_directory_path,
                 '--output_file_path',
                 output_file_path,
+                '--debug',
             ],
             check=True)
         with open(output_file_path, 'r') as file_object:
@@ -115,9 +255,9 @@ def test_jaccard_similarity_full_text():
 
     expected_similarity_matrix_labels = ['State A', 'State B', 'State C']
     expected_similarity_matrix = [
-        [1.0, 0.149, 0.135],
-        [0.149, 1.0, 0.160],
-        [0.135, 0.160, 1.0],
+        [1.0, 0.221, 0.191],
+        [0.221, 1.0, 0.2],
+        [0.191, 0.2, 1.0],
     ]
 
     assert expected_similarity_matrix_labels == actual_similarity_matrix_labels

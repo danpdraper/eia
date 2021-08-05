@@ -3,8 +3,14 @@ import re
 
 CAPITALIZED_REGEX = re.compile(r'(^|[a-z])([A-Z])')
 COMMA_SEPARATOR = ','
+EMPTY_STRING = ''
+LEADING_AND_TRAILING_WHITESPACE_REGEX = re.compile(r'^[ \n\t]+|[ \n\t]+$')
+PUNCTUATION_REGEX = re.compile(r'[,;:.?\-"\']')
+SINGLE_SPACE = ' '
 STATE_NAME_SNAKE_CASE_REGEX = re.compile(r'/([a-z_]+)_[a-z]+\.')
 TO_CAPITALIZED_REGEX = re.compile(r'(^|_)([a-z])')
+UNDERSCORE = '_'
+WHITESPACE_REGEX = re.compile(r'[ \n\t]+')
 
 
 def file_path_to_state_name_capitalized(file_path):
@@ -17,7 +23,7 @@ def file_path_to_state_name_capitalized(file_path):
     return re.sub(
         TO_CAPITALIZED_REGEX,
         lambda match: r"{}{}".format(
-            ' ' if match.group(1) == '_' else '',
+            SINGLE_SPACE if match.group(1) == UNDERSCORE else EMPTY_STRING,
             match.group(2).upper()),
         state_name_snake_case)
 
@@ -34,6 +40,16 @@ def capitalized_string_to_snake_case(capitalized_string):
         raise ValueError("String {} is not capitalized.".format(capitalized_string))
     return re.sub(
         CAPITALIZED_REGEX, lambda match: r"{}{}{}".format(
-            match.group(1), '' if match.group(1) == '' else '_',
+            match.group(1), EMPTY_STRING if match.group(1) == EMPTY_STRING else UNDERSCORE,
             match.group(2).lower()),
         capitalized_string)
+
+
+def delete_all_punctuation_from_string(string):
+    return re.sub(PUNCTUATION_REGEX, EMPTY_STRING, string)
+
+
+def reduce_whitespace_in_string_to_single_space_between_successive_words(string):
+    return re.sub(
+        LEADING_AND_TRAILING_WHITESPACE_REGEX, EMPTY_STRING,
+        re.sub(WHITESPACE_REGEX, SINGLE_SPACE, string))

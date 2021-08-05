@@ -117,16 +117,16 @@ def test_input_text_generator_yields_full_text_of_files_written_in_specified_lan
 
     expected_labels_and_text = [
         ('State A', (
-            'Title I - General Provisions\n'
-            '(1) I enjoy spending time outdoors.\n'
-            '(2) I prefer to do so when the weather is nice.\n'
-            '(3) That said, walking in the rain is not so bad either.\n'
+            'title i general provisions '
+            '(1) i enjoy spending time outdoors '
+            '(2) i prefer to do so when the weather is nice '
+            '(3) that said walking in the rain is not so bad either'
         )),
         ('State D', (
-            'Title I - General Provisions\n'
-            '(1) I do not enjoy spending time outdoors.\n'
-            '(2) I would much rather sit inside and play video games.\n'
-            '(3) Who wants to walk when you can drive?\n'
+            'title i general provisions '
+            '(1) i do not enjoy spending time outdoors '
+            '(2) i would much rather sit inside and play video games '
+            '(3) who wants to walk when you can drive'
         )),
     ]
 

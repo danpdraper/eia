@@ -30,5 +30,7 @@ def input_text_generator(scope, language, text_file_directory_path):
     for file_path in file_paths:
         yield (
             conversion.file_path_to_state_name_capitalized(file_path),
-            file_input_output.FileReader(file_path).read_text_unbroken()
+            conversion.reduce_whitespace_in_string_to_single_space_between_successive_words(
+                conversion.delete_all_punctuation_from_string(
+                    file_input_output.FileReader(file_path).read_text_unbroken())).lower()
         )

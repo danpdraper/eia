@@ -19,6 +19,7 @@ class TestArgumentParser(object):
             'test_legislation_directory_path',
             '--output_file_path',
             'test_output_file_path',
+            '--debug',
         ]
         expected_namespace = {
             # The equality holds in each of the following three cases because
@@ -28,6 +29,7 @@ class TestArgumentParser(object):
             'language': languages.ENGLISH,
             'legislation_directory_path': 'test_legislation_directory_path',
             'output_file_path': 'test_output_file_path',
+            'debug': True,
         }
         actual_namespace = vars(self.argument_parser.parse(arguments))
         assert expected_namespace == actual_namespace
@@ -41,6 +43,7 @@ class TestArgumentParser(object):
             'test_legislation_directory_path',
             '--output_file_path',
             'test_output_file_path',
+            '--debug',
         ]
         with pytest.raises(SystemExit):
             self.argument_parser.parse(arguments)
@@ -54,6 +57,7 @@ class TestArgumentParser(object):
             'test_legislation_directory_path',
             '--output_file_path',
             'test_output_file_path',
+            '--debug',
         ]
         with pytest.raises(SystemExit):
             self.argument_parser.parse(arguments)
@@ -67,10 +71,15 @@ class TestArgumentParser(object):
             'test_legislation_directory_path',
             '--output_file_path',
             'test_output_file_path',
+            '--debug',
         ]
         with pytest.raises(SystemExit):
             self.argument_parser.parse(arguments)
 
-    def test_parse_does_not_raise_system_exit_when_legislation_directory_path_and_output_file_path_not_provided(self):
+    def test_parse_does_not_raise_system_exit_when_optional_arguments_not_provided(self):
         arguments = ['jaccard_index', 'full_text', 'english']
         self.argument_parser.parse(arguments)
+
+    def test_parse_assigns_false_to_debug_parameter_when_debug_argument_not_provided(self):
+        arguments = ['jaccard_index', 'full_text', 'english']
+        assert self.argument_parser.parse(arguments).debug is False

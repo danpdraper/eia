@@ -31,6 +31,7 @@ class ArgumentParser(object):
             'language', action=LanguageAction, choices=['english'])
         self.argument_parser.add_argument('--legislation_directory_path')
         self.argument_parser.add_argument('--output_file_path')
+        self.argument_parser.add_argument('--debug', action='store_true')
 
     def parse(self, arguments=None):
         if arguments is None:

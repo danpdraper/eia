@@ -16,15 +16,15 @@ def test_row_generator_yields_tuples_of_row_label_and_row():
     }
 
     similarity_by_row_and_column_text = {
-        ('State A test file contents', 'State A test file contents'): 1,
-        ('State A test file contents', 'State B test file contents'): 2,
-        ('State A test file contents', 'State C test file contents'): 3,
-        ('State B test file contents', 'State A test file contents'): 4,
-        ('State B test file contents', 'State B test file contents'): 5,
-        ('State B test file contents', 'State C test file contents'): 6,
-        ('State C test file contents', 'State A test file contents'): 7,
-        ('State C test file contents', 'State B test file contents'): 8,
-        ('State C test file contents', 'State C test file contents'): 9,
+        ('state a test file contents', 'state a test file contents'): 1,
+        ('state a test file contents', 'state b test file contents'): 2,
+        ('state a test file contents', 'state c test file contents'): 3,
+        ('state b test file contents', 'state a test file contents'): 4,
+        ('state b test file contents', 'state b test file contents'): 5,
+        ('state b test file contents', 'state c test file contents'): 6,
+        ('state c test file contents', 'state a test file contents'): 7,
+        ('state c test file contents', 'state b test file contents'): 8,
+        ('state c test file contents', 'state c test file contents'): 9,
     }
 
     algorithm = mock.Mock()

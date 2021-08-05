@@ -13,7 +13,7 @@ def test_file_path_to_state_name_capitalized_capitalizes_first_letter_in_each_wo
     assert 'Very Long State Name' == conversion.file_path_to_state_name_capitalized(file_path)
 
 
-def test_to_state_name_capitalized_raises_value_error_if_file_path_does_not_conform_to_expected_format():
+def test_file_path_to_state_name_capitalized_raises_value_error_if_file_path_does_not_conform_to_expected_format():
     # File name missing extension
     file_path = '/path/to/state_a_english'
     with pytest.raises(ValueError):
@@ -54,3 +54,31 @@ def test_capitalized_string_to_snake_case_raises_value_error_if_string_is_not_ca
     string = 'test_capitalized_string'
     with pytest.raises(ValueError):
         conversion.capitalized_string_to_snake_case(string)
+
+
+def test_delete_all_punctuation_from_string_deletes_all_punctuation_from_provided_string():
+    string = 'Test, test; test: test. test-test "Test" , \'test\' ; tes\'t . test : test ? test - test'
+    expected_string = 'Test test test test testtest Test  test  test  test  test  test  test'
+    actual_string = conversion.delete_all_punctuation_from_string(string)
+    assert expected_string == actual_string
+
+
+def test_delete_all_punctuation_from_string_preserves_parentheses_and_brackets():
+    string = '(1) [1] Test [2] test [i] test'
+    expected_string = '(1) [1] Test [2] test [i] test'
+    actual_string = conversion.delete_all_punctuation_from_string(string)
+    assert expected_string == actual_string
+
+
+def test_reduce_whitespace_in_string_to_single_space_between_successive_words_deletes_all_but_single_space():
+    string = 'Test  test \ntest \ttest\n\ntest\n\ttest\t\ttest'
+    expected_string = 'Test test test test test test test'
+    actual_string = conversion.reduce_whitespace_in_string_to_single_space_between_successive_words(string)
+    assert expected_string == actual_string
+
+
+def test_reduce_whitespace_in_string_to_single_space_between_successive_words_deletes_leading_and_trailing_space():
+    string = ' \n\tTest  test\t\n '
+    expected_string = 'Test test'
+    actual_string = conversion.reduce_whitespace_in_string_to_single_space_between_successive_words(string)
+    assert expected_string == actual_string
