@@ -1,4 +1,4 @@
-SUPPORTED_LANGUAGES = ['english']
+SUPPORTED_LANGUAGES = ['english', 'french']
 
 
 class Language(object):
@@ -12,8 +12,10 @@ class Language(object):
 
 
 ENGLISH = Language('english')
+FRENCH = Language('french')
 
 
 LANGUAGES = {
     'english': ENGLISH,
+    'french': FRENCH,
 }

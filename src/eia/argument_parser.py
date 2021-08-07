@@ -29,7 +29,7 @@ class ArgumentParser(object):
         self.argument_parser.add_argument(
             'scope', action=ScopeAction, choices=['full_text', 'provision'])
         self.argument_parser.add_argument(
-            'language', action=LanguageAction, choices=['english'])
+            'language', action=LanguageAction, choices=['english', 'french'])
         self.argument_parser.add_argument('output_directory_path')
         self.argument_parser.add_argument(
             '--legislation_directory_path',
