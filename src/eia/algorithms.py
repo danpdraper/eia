@@ -1,6 +1,6 @@
 import logging
 
-import eia.conversion as conversion
+import eia.transformations as transformations
 
 
 LOGGER = logging.getLogger(__name__)
@@ -16,7 +16,7 @@ class Algorithm(object):
 
     @classmethod
     def to_string(cls):
-        return conversion.capitalized_string_to_snake_case(cls.__name__)
+        return transformations.capitalized_string_to_snake_case(cls.__name__)
 
 
 class JaccardIndex(Algorithm):

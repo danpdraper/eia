@@ -82,57 +82,85 @@ def test_filter_file_paths_by_language_only_returns_files_whose_language_matches
         text_files.filter_file_paths_by_language(file_paths, languages.ENGLISH)
 
 
-def test_input_text_generator_yields_full_text_of_files_written_in_specified_language_when_scope_is_full_text():
-    test_directory_path = utilities.create_test_directory('test_text_files')
-
+def populate_test_directory_for_input_text_generator_test(test_directory_path):
     file_content_by_relative_path = {
         'state_a_english.txt': (
             'Title I - General Provisions\n'
-            '(1) I enjoy spending time outdoors.\n'
-            '(2) I prefer to do so when the weather is nice.\n'
-            '(3) That said, walking in the rain is not so bad either.\n'
+            '(1) I enjoy spending time outdoors: [a] when the weather is nice and [b] I am in a good mood.\n'
+            '(2) That said, walking in the rain is not so bad either.\n'
         ),
         'state_b_french.txt': (
             'Titre I - Dispositions générales\n'
-            "(1) J'aime passer du temps dehors.\n"
-            '(2) Je préfère le faire quand il fait beau.\n'
-            "(3) Cela dit, marcher sous la pluie n'est pas si mal non plus.\n"
+            "(1) J'aime passer du temps à l'extérieur: [a] quand il fait beau et [b] je suis de bonne humeur.\n"
+            "(2) Cela dit, marcher sous la pluie n'est pas si mal non plus.\n"
         ),
         'state_c_spanish.txt': (
             'Título I - Disposiciones generales\n'
-            '(1) Disfruto pasar tiempo al aire libre.\n'
-            '(2) Prefiero hacerlo cuando hace buen tiempo.\n'
-            '(3) Dicho esto, caminar bajo la lluvia tampoco es tan malo.\n'
+            '(1) Disfruto pasar tiempo al aire libre: [a] cuando hace buen tiempo y [b] estoy de buen humor.\n'
+            '(2) Dicho esto, caminar bajo la lluvia tampoco es tan malo.\n'
         ),
         'state_d_english.txt': (
             'Title I - General Provisions\n'
-            '(1) I do not enjoy spending time outdoors.\n'
-            '(2) I would much rather sit inside and play video games.\n'
-            '(3) Who wants to walk when you can drive?\n'
+            '(1) I do not enjoy spending time outdoors because: '
+            '[1] the sun hurts my skin and [2] I would rather play video games.\n'
+            '(2) Also, who wants to walk when you can drive?\n'
         ),
     }
+    utilities.populate_test_directory(
+        test_directory_path, file_content_by_relative_path)
+
+
+def test_input_text_generator_yields_full_text_of_files_written_in_specified_language_when_scope_is_full_text():
+    test_directory_path = utilities.create_test_directory('test_text_files')
 
     expected_labels_and_text = [
         ('State A', (
             'title i general provisions '
-            '(1) i enjoy spending time outdoors '
-            '(2) i prefer to do so when the weather is nice '
-            '(3) that said walking in the rain is not so bad either'
+            '(1) i enjoy spending time outdoors [a] when the weather is nice and [b] i am in a good mood '
+            '(2) that said walking in the rain is not so bad either'
         )),
         ('State D', (
             'title i general provisions '
-            '(1) i do not enjoy spending time outdoors '
-            '(2) i would much rather sit inside and play video games '
-            '(3) who wants to walk when you can drive'
+            '(1) i do not enjoy spending time outdoors because '
+            '[1] the sun hurts my skin and [2] i would rather play video games '
+            '(2) also who wants to walk when you can drive'
         )),
     ]
 
     try:
-        utilities.populate_test_directory(
-            test_directory_path, file_content_by_relative_path)
+        populate_test_directory_for_input_text_generator_test(test_directory_path)
         actual_labels_and_text = [
             label_and_text for label_and_text in text_files.input_text_generator(
-                scopes.FULL_TEXT, languages.ENGLISH, test_directory_path)
+                scopes.FULL_TEXT, languages.ENGLISH, test_directory_path, True)
+        ]
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert expected_labels_and_text == actual_labels_and_text
+
+
+def test_input_text_generator_removes_provision_delimiters_from_full_text_when_preserve_provision_delimiters_is_false():
+    test_directory_path = utilities.create_test_directory('test_text_files')
+
+    expected_labels_and_text = [
+        ('State A', (
+            'title i general provisions '
+            'i enjoy spending time outdoors when the weather is nice and i am in a good mood '
+            'that said walking in the rain is not so bad either'
+        )),
+        ('State D', (
+            'title i general provisions '
+            'i do not enjoy spending time outdoors because '
+            'the sun hurts my skin and i would rather play video games '
+            'also who wants to walk when you can drive'
+        )),
+    ]
+
+    try:
+        populate_test_directory_for_input_text_generator_test(test_directory_path)
+        actual_labels_and_text = [
+            label_and_text for label_and_text in text_files.input_text_generator(
+                scopes.FULL_TEXT, languages.ENGLISH, test_directory_path, False)
         ]
     finally:
         utilities.delete_test_directory(test_directory_path)
@@ -143,48 +171,49 @@ def test_input_text_generator_yields_full_text_of_files_written_in_specified_lan
 def test_input_text_generator_yields_provisions_of_files_written_in_specified_language_when_scope_is_provision():
     test_directory_path = utilities.create_test_directory('test_text_files')
 
-    file_content_by_relative_path = {
-        'state_a_english.txt': (
-            'Title I - General Provisions\n'
-            '(1) I enjoy spending time outdoors.\n'
-            '(2) I prefer to do so when the weather is nice.\n'
-            '(3) That said, walking in the rain is not so bad either.\n'
-        ),
-        'state_b_french.txt': (
-            'Titre I - Dispositions générales\n'
-            "(1) J'aime passer du temps dehors.\n"
-            '(2) Je préfère le faire quand il fait beau.\n'
-            "(3) Cela dit, marcher sous la pluie n'est pas si mal non plus.\n"
-        ),
-        'state_c_spanish.txt': (
-            'Título I - Disposiciones generales\n'
-            '(1) Disfruto pasar tiempo al aire libre.\n'
-            '(2) Prefiero hacerlo cuando hace buen tiempo.\n'
-            '(3) Dicho esto, caminar bajo la lluvia tampoco es tan malo.\n'
-        ),
-        'state_d_english.txt': (
-            'Title I - General Provisions\n'
-            '(1) I do not enjoy spending time outdoors.\n'
-            '(2) I would much rather sit inside and play video games.\n'
-            '(3) Who wants to walk when you can drive?\n'
-        ),
-    }
-
     expected_labels_and_text = [
-        ('State A 1', 'i enjoy spending time outdoors'),
-        ('State A 2', 'i prefer to do so when the weather is nice'),
-        ('State A 3', 'that said walking in the rain is not so bad either'),
-        ('State D 1', 'i do not enjoy spending time outdoors'),
-        ('State D 2', 'i would much rather sit inside and play video games'),
-        ('State D 3', 'who wants to walk when you can drive'),
+        ('State A 1', (
+            'i enjoy spending time outdoors [a] when the weather is nice and '
+            '[b] i am in a good mood'
+        )),
+        ('State A 2', 'that said walking in the rain is not so bad either'),
+        ('State D 1', (
+            'i do not enjoy spending time outdoors because [1] the sun hurts '
+            'my skin and [2] i would rather play video games'
+        )),
+        ('State D 2', 'also who wants to walk when you can drive'),
     ]
 
     try:
-        utilities.populate_test_directory(
-            test_directory_path, file_content_by_relative_path)
+        populate_test_directory_for_input_text_generator_test(test_directory_path)
         actual_labels_and_text = [
             label_and_text for label_and_text in text_files.input_text_generator(
-                scopes.PROVISION, languages.ENGLISH, test_directory_path)
+                scopes.PROVISION, languages.ENGLISH, test_directory_path, True)
+        ]
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert expected_labels_and_text == actual_labels_and_text
+
+
+def test_input_text_generator_removes_delimiters_from_provisions_when_preserve_provision_delimiters_is_false():
+    test_directory_path = utilities.create_test_directory('test_text_files')
+
+    expected_labels_and_text = [
+        ('State A 1', 'i enjoy spending time outdoors when the weather is nice and i am in a good mood'),
+        ('State A 2', 'that said walking in the rain is not so bad either'),
+        ('State D 1', (
+            'i do not enjoy spending time outdoors because the sun hurts my '
+            'skin and i would rather play video games'
+        )),
+        ('State D 2', 'also who wants to walk when you can drive'),
+    ]
+
+    try:
+        populate_test_directory_for_input_text_generator_test(test_directory_path)
+        actual_labels_and_text = [
+            label_and_text for label_and_text in text_files.input_text_generator(
+                scopes.PROVISION, languages.ENGLISH, test_directory_path, False)
         ]
     finally:
         utilities.delete_test_directory(test_directory_path)

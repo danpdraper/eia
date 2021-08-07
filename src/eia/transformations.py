@@ -5,7 +5,9 @@ CAPITALIZED_REGEX = re.compile(r'(^|[a-z])([A-Z])')
 COMMA_SEPARATOR = ','
 EMPTY_STRING = ''
 LEADING_AND_TRAILING_WHITESPACE_REGEX = re.compile(r'^[ \n\t]+|[ \n\t]+$')
-PUNCTUATION_REGEX = re.compile(r'[,;:.?\-"\']')
+PROVISION_DELIMITER_REGEX = re.compile(
+    r'(^)\([0-9]+\)|(\n)\([0-9]+\)|(.)\[[A-Za-z0-9]+\]|(.)\[•\]')
+PUNCTUATION_REGEX = re.compile(r'[,;:.?\-"]| \'|\' ')
 SINGLE_SPACE = ' '
 STATE_NAME_SNAKE_CASE_REGEX = re.compile(r'/([a-z_]+)_[a-z]+\.')
 TO_CAPITALIZED_REGEX = re.compile(r'(^|_)([a-z])')
@@ -45,8 +47,26 @@ def capitalized_string_to_snake_case(capitalized_string):
         capitalized_string)
 
 
-def delete_all_punctuation_from_string(string):
-    return re.sub(PUNCTUATION_REGEX, EMPTY_STRING, string)
+def delete_punctuation_from_string(string):
+    return re.sub(
+        PUNCTUATION_REGEX,
+        lambda match: SINGLE_SPACE if len(match.group(0)) == 2 else EMPTY_STRING,
+        string)
+
+
+def delete_provision_delimiters_from_string(string):
+    return re.sub(
+        PROVISION_DELIMITER_REGEX,
+        lambda match: next(
+            filter(
+                lambda group: group is not None,
+                [
+                    match.group(1),
+                    match.group(2),
+                    match.group(3),
+                    match.group(4),
+                ])),
+        string)
 
 
 def reduce_whitespace_in_string_to_single_space_between_successive_words(string):

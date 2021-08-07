@@ -20,6 +20,7 @@ class TestArgumentParser(object):
             '--output_file_path',
             'test_output_file_path',
             '--debug',
+            '--do_not_preserve_provision_delimiters',
         ]
         expected_namespace = {
             # The equality holds in each of the following three cases because
@@ -30,6 +31,7 @@ class TestArgumentParser(object):
             'legislation_directory_path': 'test_legislation_directory_path',
             'output_file_path': 'test_output_file_path',
             'debug': True,
+            'preserve_provision_delimiters': False,
         }
         actual_namespace = vars(self.argument_parser.parse(arguments))
         assert expected_namespace == actual_namespace
@@ -44,6 +46,7 @@ class TestArgumentParser(object):
             '--output_file_path',
             'test_output_file_path',
             '--debug',
+            '--do_not_preserve_provision_delimiters',
         ]
         with pytest.raises(SystemExit):
             self.argument_parser.parse(arguments)
@@ -58,6 +61,7 @@ class TestArgumentParser(object):
             '--output_file_path',
             'test_output_file_path',
             '--debug',
+            '--do_not_preserve_provision_delimiters',
         ]
         with pytest.raises(SystemExit):
             self.argument_parser.parse(arguments)
@@ -72,6 +76,7 @@ class TestArgumentParser(object):
             '--output_file_path',
             'test_output_file_path',
             '--debug',
+            '--do_not_preserve_provision_delimiters',
         ]
         with pytest.raises(SystemExit):
             self.argument_parser.parse(arguments)
@@ -83,3 +88,7 @@ class TestArgumentParser(object):
     def test_parse_assigns_false_to_debug_parameter_when_debug_argument_not_provided(self):
         arguments = ['jaccard_index', 'full_text', 'english']
         assert self.argument_parser.parse(arguments).debug is False
+
+    def test_parse_assigns_true_to_preserve_provision_delimiters_parameter_when_argument_not_provided(self):
+        arguments = ['jaccard_index', 'full_text', 'english']
+        assert self.argument_parser.parse(arguments).preserve_provision_delimiters is True

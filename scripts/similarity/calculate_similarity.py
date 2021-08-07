@@ -9,4 +9,4 @@ if __name__ == '__main__':
     application.run(
         arguments.algorithm, arguments.scope, arguments.language,
         arguments.legislation_directory_path, arguments.output_file_path,
-        arguments.debug)
+        arguments.debug, arguments.preserve_provision_delimiters)

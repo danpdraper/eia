@@ -103,7 +103,7 @@ def compare_expected_and_actual_similarity_matrices(
             assert round(abs(expected_row[column_index] - actual_row[column_index]), 4) <= EPSILON
 
 
-def test_jaccard_similarity_full_text():
+def test_jaccard_similarity_full_text_preserve_provision_delimiters():
     '''
     State A legislation word set:
         ((1), (2), (3), a, above, achieve, all, and, be, benefits, bodies,
@@ -209,6 +209,121 @@ def test_jaccard_similarity_full_text():
         [1.0, 0.221, 0.191],
         [0.221, 1.0, 0.2],
         [0.191, 0.2, 1.0],
+    ]
+
+    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+
+    compare_expected_and_actual_similarity_matrices(
+        expected_similarity_matrix, actual_similarity_matrix)
+
+
+def test_jaccard_similarity_full_text_do_not_preserve_provision_delimiters():
+    '''
+    State A legislation word set:
+        (a, above, achieve, all, and, be, benefits, bodies, cannot, citizens,
+        conservation, country's, creating, defense, due, entire, environment,
+        environmental, feasible, for, general, have, having, healthy, hence, i,
+        implement, in, interests, is, it, its, legislation, live, make,
+        management, merely, national, natural, necessary, objectives,
+        obligations, of, out, participate, population, preservation, principles,
+        program, protection, published, purpose, rational, relation, resources,
+        respect, respectively, responsibility, right, set, specialized, state,
+        structures, sustainable, the, this, title, to, underestimated, use,
+        utilitarian, values, wellbeing, whose)
+    State A legislation word set size: 74
+
+    State B legislation word set:
+        (a, aimed, an, and, applies, are, as, aspects, associations, at,
+        atmosphere, b, common, communities, conservation, constitutes, content,
+        cultural, decentralized, defense, defines, develops, end, ensuring,
+        environment, environmental, establishes, for, framework, general,
+        geosphere, government, grassroots, heritage, human, hydrosphere, i,
+        implementation, in, include, intangible, integral, interest, is, it,
+        its, law, legal, life, management, nation, national, of, offers, or,
+        part, particular, plans, policy, president, programs, protection,
+        provisions, rational, resources, responsibility, social, state,
+        strategies, sustainable, tangible, target, territorial, the, their,
+        these, they, this, title, to, together, universal, use, well, which,
+        with)
+    State B legislation word set size: 86
+
+    State C legislation word set:
+        (according, action, administration, against, all, and, associations,
+        better, bodies, brings, citizen, collaboration, collectivities,
+        compliance, concerned, conditions, coordination, decentralized,
+        degradation, enhance, environment, environmental, essential, establish,
+        every, fight, for, forms, framework, fundamental, i, implementation,
+        improve, in, individually, institutions, is, it, kinds, law, laws,
+        living, local, managed, natural, necessary, of, or, order,
+        organizations, pollution, population, prevent, principles, protect,
+        protected, purpose, regulations, resources, responsible, safeguard,
+        sets, state, sustainably, territorial, the, this, title, to, together,
+        traditional, up, which, with, within, work)
+    State C legislation word set size: 76
+
+    Intersection word set sizes:
+        State A and State B: 27
+        State A and State C: 22
+        State B and State C: 25
+
+    Union word set sizes:
+        State A and State B: 133
+        State A and State C: 128
+        State B and State C: 137
+
+    Jaccard index = size of intersection / size of union
+
+    Expected similarity matrix:
+                    [ State A State B State C ]
+        [ State A ] [  1.000   0.203   0.172  ]
+        [ State B ] [  0.203   1.000   0.182  ]
+        [ State C ] [  0.172   0.182   1.000  ]
+    '''
+
+    test_directory_path = utilities.create_test_directory('jaccard_similarity_full_text')
+
+    file_content_by_relative_path = {
+        os.path.join('legislation', 'state_a_english.txt'): STATE_A_LEGISLATION_TEXT,
+        os.path.join('legislation', 'state_b_english.txt'): STATE_B_LEGISLATION_TEXT,
+        os.path.join('legislation', 'state_c_english.txt'): STATE_C_LEGISLATION_TEXT,
+    }
+
+    script_file_path = os.path.join(
+        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity',
+        'calculate_similarity.py')
+    output_file_path = os.path.join(test_directory_path, 'similarity.txt')
+
+    actual_similarity_matrix_labels = []
+    actual_similarity_matrix = []
+
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        subprocess.run(
+            [
+                script_file_path,
+                'jaccard_index',
+                'full_text',
+                'english',
+                '--legislation_directory_path',
+                test_directory_path,
+                '--output_file_path',
+                output_file_path,
+                '--debug',
+                '--do_not_preserve_provision_delimiters',
+            ],
+            check=True)
+        populate_actual_similarity_matrix_and_labels(
+            output_file_path, actual_similarity_matrix_labels,
+            actual_similarity_matrix)
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    expected_similarity_matrix_labels = ['State A', 'State B', 'State C']
+    expected_similarity_matrix = [
+        [1.0, 0.203, 0.172],
+        [0.203, 1.0, 0.182],
+        [0.172, 0.182, 1.0],
     ]
 
     assert expected_similarity_matrix_labels == actual_similarity_matrix_labels

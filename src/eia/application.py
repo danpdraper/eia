@@ -1,14 +1,14 @@
 import logging
 import os
 
-import eia.conversion as conversion
 import eia.environment as environment
-import eia.files.file_input_output as file_input_output
+import eia.files.input_output as input_output
 import eia.similarity_matrix as similarity_matrix
+import eia.transformations as transformations
 
 
 def run(algorithm, scope, language, legislation_directory_path,
-        output_file_path, debug):
+        output_file_path, debug, preserve_provision_delimiters):
     logging.basicConfig(
         datefmt='%Y-%m-%d %H:%M:%S',
         filemode='w',
@@ -22,12 +22,15 @@ def run(algorithm, scope, language, legislation_directory_path,
         "scope = {}, "
         "language = {}, "
         "legislation_directory_path = {}, "
-        "output_file_path = {}".format(
+        "output_file_path = {}, "
+        "debug = {}, "
+        "preserve_provision_delimiters = {}".format(
             algorithm.to_string(), scope, language, legislation_directory_path,
-            output_file_path))
+            output_file_path, debug, preserve_provision_delimiters))
 
-    file_input_output.write(
+    input_output.write(
         output_file_path, map(
-            lambda value: conversion.label_and_row_tuple_to_comma_separated_string(value),
+            lambda value: transformations.label_and_row_tuple_to_comma_separated_string(value),
             similarity_matrix.row_generator(
-                algorithm, scope, language, legislation_directory_path)))
+                algorithm, scope, language, legislation_directory_path,
+                preserve_provision_delimiters)))

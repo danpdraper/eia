@@ -32,6 +32,9 @@ class ArgumentParser(object):
         self.argument_parser.add_argument('--legislation_directory_path')
         self.argument_parser.add_argument('--output_file_path')
         self.argument_parser.add_argument('--debug', action='store_true')
+        self.argument_parser.add_argument(
+            '--do_not_preserve_provision_delimiters',
+            dest='preserve_provision_delimiters', action='store_false')
 
     def parse(self, arguments=None):
         if arguments is None:

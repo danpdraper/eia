@@ -27,6 +27,7 @@ def populate_test_directory(test_directory_path, file_content_by_relative_path):
                 os.makedirs(file_directory_path)
                 LOGGER.info("Created directory {}".format(file_directory_path))
         file_path = os.path.join(test_directory_path, relative_path)
+        LOGGER.info("Writing the following to {}: {}".format(file_path, file_content))
         with open(file_path, 'w') as file_object:
             file_object.write(file_content)
         LOGGER.info(
