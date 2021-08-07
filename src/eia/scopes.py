@@ -1,4 +1,4 @@
-SUPPORTED_SCOPES = ['full_text']
+SUPPORTED_SCOPES = ['full_text', 'provision']
 
 
 class Scope(object):
@@ -14,6 +14,10 @@ class Scope(object):
 FULL_TEXT = Scope('full_text')
 
 
+PROVISION = Scope('provision')
+
+
 SCOPES = {
     'full_text': FULL_TEXT,
+    'provision': PROVISION,
 }

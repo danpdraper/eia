@@ -26,7 +26,7 @@ class ArgumentParser(object):
         self.argument_parser.add_argument(
             'algorithm', action=AlgorithmAction, choices=['jaccard_index'])
         self.argument_parser.add_argument(
-            'scope', action=ScopeAction, choices=['full_text'])
+            'scope', action=ScopeAction, choices=['full_text', 'provision'])
         self.argument_parser.add_argument(
             'language', action=LanguageAction, choices=['english'])
         self.argument_parser.add_argument('--legislation_directory_path')

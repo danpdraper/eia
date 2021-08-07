@@ -4,41 +4,44 @@ import eia.files.file_input_output as file_input_output
 import eia.tests.utilities as utilities
 
 
-class TestFileReader(object):
-    def setup(self):
-        self.test_directory_path = utilities.create_test_directory('test_file_input_output')
-        self.test_file_path = os.path.join(self.test_directory_path, 'test_file.txt')
-        self.file_reader = file_input_output.FileReader(self.test_file_path)
+def test_read_returns_all_file_contents():
+    test_directory_path = utilities.create_test_directory('test_file_input_output')
+    file_content_by_relative_path = {
+        'test_file.txt': 'First line\nSecond line\nThird line\n',
+    }
+    file_path = os.path.join(test_directory_path, 'test_file.txt')
+    expected_contents = 'First line\nSecond line\nThird line\n'
 
-    def teardown(self):
-        utilities.delete_test_directory(self.test_directory_path)
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        actual_contents = file_input_output.read(file_path)
+    finally:
+        utilities.delete_test_directory(test_directory_path)
 
-    def write_contents_to_file(self, contents):
-        with open(self.test_file_path, 'w') as file_object:
-            file_object.write(contents)
+    assert expected_contents == actual_contents
 
-    def test_read_next_line_returns_next_line_with_line_index_on_each_successive_invocation(self):
-        file_contents = 'First line\nSecond line\nThird line'
-        self.write_contents_to_file(file_contents)
-        assert (0, 'First line') == self.file_reader.read_next_line()
-        assert (1, 'Second line') == self.file_reader.read_next_line()
-        assert (2, 'Third line') == self.file_reader.read_next_line()
 
-    def test_read_next_line_loops_back_to_first_line_after_reading_last_line(self):
-        file_contents = 'First line\nSecond line'
-        self.write_contents_to_file(file_contents)
-        assert (0, 'First line') == self.file_reader.read_next_line()
-        assert (1, 'Second line') == self.file_reader.read_next_line()
-        assert (0, 'First line') == self.file_reader.read_next_line()
-        assert (1, 'Second line') == self.file_reader.read_next_line()
-        assert (0, 'First line') == self.file_reader.read_next_line()
-        assert (1, 'Second line') == self.file_reader.read_next_line()
+def test_line_generator_yields_all_lines_in_file():
+    test_directory_path = utilities.create_test_directory('test_file_input_output')
+    file_content_by_relative_path = {
+        'test_file.txt': 'First line\nSecond line\nThird line\n',
+    }
+    file_path = os.path.join(test_directory_path, 'test_file.txt')
+    expected_lines = [
+        'First line',
+        'Second line',
+        'Third line',
+    ]
 
-    def test_read_text_unbroken_returns_file_contents_as_unbroken_string(self):
-        expected_file_contents = 'First line\nSecond line\nThird line'
-        self.write_contents_to_file(expected_file_contents)
-        actual_file_contents = self.file_reader.read_text_unbroken()
-        assert expected_file_contents == actual_file_contents
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        actual_lines = [line for line in file_input_output.line_generator(file_path)]
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert expected_lines == actual_lines
 
 
 def line_generator(lines):
