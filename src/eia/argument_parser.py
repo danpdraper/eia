@@ -1,6 +1,7 @@
 import argparse
 
 import eia.algorithms as algorithms
+import eia.environment as environment
 import eia.languages as languages
 import eia.scopes as scopes
 
@@ -29,8 +30,10 @@ class ArgumentParser(object):
             'scope', action=ScopeAction, choices=['full_text', 'provision'])
         self.argument_parser.add_argument(
             'language', action=LanguageAction, choices=['english'])
-        self.argument_parser.add_argument('--legislation_directory_path')
-        self.argument_parser.add_argument('--output_file_path')
+        self.argument_parser.add_argument('output_directory_path')
+        self.argument_parser.add_argument(
+            '--legislation_directory_path',
+            default=environment.LEGISLATION_DIRECTORY_PATH)
         self.argument_parser.add_argument('--debug', action='store_true')
         self.argument_parser.add_argument(
             '--do_not_preserve_provision_delimiters',

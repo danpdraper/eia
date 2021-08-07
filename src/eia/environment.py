@@ -18,4 +18,8 @@ def get_environment_root_path():
 ENVIRONMENT_ROOT_PATH = get_environment_root_path()
 
 
+LEGISLATION_DIRECTORY_PATH = os.path.join(
+    ENVIRONMENT_ROOT_PATH, 'raw_data', 'preprocessed')
+
+
 LOG_DIRECTORY_PATH = os.path.join(ENVIRONMENT_ROOT_PATH, 'logs')

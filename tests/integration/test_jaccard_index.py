@@ -76,8 +76,10 @@ EPSILON = 0.0005
 
 
 def populate_actual_similarity_matrix_and_labels(
-        output_file_path, actual_similarity_matrix_labels,
+        output_directory_path, scope, actual_similarity_matrix_labels,
         actual_similarity_matrix):
+    output_file_path = os.path.join(
+        output_directory_path, 'jaccard_index', "{}.txt".format(scope))
     with open(output_file_path, 'r') as file_object:
         for line in file_object:
             line_components = line.rstrip('\n').split(',')
@@ -103,7 +105,7 @@ def compare_expected_and_actual_similarity_matrices(
             assert round(abs(expected_row[column_index] - actual_row[column_index]), 4) <= EPSILON
 
 
-def test_jaccard_similarity_full_text_preserve_provision_delimiters():
+def test_jaccard_index_full_text_preserve_provision_delimiters():
     '''
     State A legislation word set:
         ((1), (2), (3), a, above, achieve, all, and, be, benefits, bodies,
@@ -166,7 +168,7 @@ def test_jaccard_similarity_full_text_preserve_provision_delimiters():
         [ State C ] [  0.191   0.200   1.000  ]
     '''
 
-    test_directory_path = utilities.create_test_directory('jaccard_similarity_full_text')
+    test_directory_path = utilities.create_test_directory('jaccard_index_full_text')
 
     file_content_by_relative_path = {
         os.path.join('legislation', 'state_a_english.txt'): STATE_A_LEGISLATION_TEXT,
@@ -177,7 +179,9 @@ def test_jaccard_similarity_full_text_preserve_provision_delimiters():
     script_file_path = os.path.join(
         environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity',
         'calculate_similarity.py')
-    output_file_path = os.path.join(test_directory_path, 'similarity.txt')
+    scope = 'full_text'
+    output_directory_path = os.path.join(test_directory_path, 'output')
+    legislation_directory_path = os.path.join(test_directory_path, 'legislation')
 
     actual_similarity_matrix_labels = []
     actual_similarity_matrix = []
@@ -185,21 +189,21 @@ def test_jaccard_similarity_full_text_preserve_provision_delimiters():
     try:
         utilities.populate_test_directory(
             test_directory_path, file_content_by_relative_path)
+        os.makedirs(output_directory_path)
         subprocess.run(
             [
                 script_file_path,
                 'jaccard_index',
-                'full_text',
+                scope,
                 'english',
+                output_directory_path,
                 '--legislation_directory_path',
-                test_directory_path,
-                '--output_file_path',
-                output_file_path,
+                legislation_directory_path,
                 '--debug',
             ],
             check=True)
         populate_actual_similarity_matrix_and_labels(
-            output_file_path, actual_similarity_matrix_labels,
+            output_directory_path, scope, actual_similarity_matrix_labels,
             actual_similarity_matrix)
     finally:
         utilities.delete_test_directory(test_directory_path)
@@ -217,7 +221,7 @@ def test_jaccard_similarity_full_text_preserve_provision_delimiters():
         expected_similarity_matrix, actual_similarity_matrix)
 
 
-def test_jaccard_similarity_full_text_do_not_preserve_provision_delimiters():
+def test_jaccard_index_full_text_do_not_preserve_provision_delimiters():
     '''
     State A legislation word set:
         (a, above, achieve, all, and, be, benefits, bodies, cannot, citizens,
@@ -280,7 +284,7 @@ def test_jaccard_similarity_full_text_do_not_preserve_provision_delimiters():
         [ State C ] [  0.172   0.182   1.000  ]
     '''
 
-    test_directory_path = utilities.create_test_directory('jaccard_similarity_full_text')
+    test_directory_path = utilities.create_test_directory('jaccard_index_full_text')
 
     file_content_by_relative_path = {
         os.path.join('legislation', 'state_a_english.txt'): STATE_A_LEGISLATION_TEXT,
@@ -291,7 +295,9 @@ def test_jaccard_similarity_full_text_do_not_preserve_provision_delimiters():
     script_file_path = os.path.join(
         environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity',
         'calculate_similarity.py')
-    output_file_path = os.path.join(test_directory_path, 'similarity.txt')
+    scope = 'full_text'
+    output_directory_path = os.path.join(test_directory_path, 'output')
+    legislation_directory_path = os.path.join(test_directory_path, 'legislation')
 
     actual_similarity_matrix_labels = []
     actual_similarity_matrix = []
@@ -299,22 +305,22 @@ def test_jaccard_similarity_full_text_do_not_preserve_provision_delimiters():
     try:
         utilities.populate_test_directory(
             test_directory_path, file_content_by_relative_path)
+        os.makedirs(output_directory_path)
         subprocess.run(
             [
                 script_file_path,
                 'jaccard_index',
-                'full_text',
+                scope,
                 'english',
+                output_directory_path,
                 '--legislation_directory_path',
-                test_directory_path,
-                '--output_file_path',
-                output_file_path,
+                legislation_directory_path,
                 '--debug',
                 '--do_not_preserve_provision_delimiters',
             ],
             check=True)
         populate_actual_similarity_matrix_and_labels(
-            output_file_path, actual_similarity_matrix_labels,
+            output_directory_path, scope, actual_similarity_matrix_labels,
             actual_similarity_matrix)
     finally:
         utilities.delete_test_directory(test_directory_path)
@@ -332,7 +338,7 @@ def test_jaccard_similarity_full_text_do_not_preserve_provision_delimiters():
         expected_similarity_matrix, actual_similarity_matrix)
 
 
-def test_jaccard_similarity_provisions():
+def test_jaccard_index_provisions():
     '''
     State A legislation provision 1 word set:
         (a, all, and, benefits, citizens, country's, defense, environment, have,
@@ -490,7 +496,7 @@ def test_jaccard_similarity_provisions():
         [ C_3 ] [ 0.111 0.146 0.188 0.121 0.092 0.140 0.174 0.073 1.000 ]
     '''
 
-    test_directory_path = utilities.create_test_directory('jaccard_similarity_full_text')
+    test_directory_path = utilities.create_test_directory('jaccard_index_provisions')
 
     file_content_by_relative_path = {
         os.path.join('legislation', 'state_a_english.txt'): STATE_A_LEGISLATION_TEXT,
@@ -501,7 +507,9 @@ def test_jaccard_similarity_provisions():
     script_file_path = os.path.join(
         environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity',
         'calculate_similarity.py')
-    output_file_path = os.path.join(test_directory_path, 'similarity.txt')
+    scope = 'provision'
+    output_directory_path = os.path.join(test_directory_path, 'output')
+    legislation_directory_path = os.path.join(test_directory_path, 'legislation')
 
     actual_similarity_matrix_labels = []
     actual_similarity_matrix = []
@@ -509,21 +517,21 @@ def test_jaccard_similarity_provisions():
     try:
         utilities.populate_test_directory(
             test_directory_path, file_content_by_relative_path)
+        os.makedirs(output_directory_path)
         subprocess.run(
             [
                 script_file_path,
                 'jaccard_index',
-                'provision',
+                scope,
                 'english',
+                output_directory_path,
                 '--legislation_directory_path',
-                test_directory_path,
-                '--output_file_path',
-                output_file_path,
+                legislation_directory_path,
                 '--debug',
             ],
             check=True)
         populate_actual_similarity_matrix_and_labels(
-            output_file_path, actual_similarity_matrix_labels,
+            output_directory_path, scope, actual_similarity_matrix_labels,
             actual_similarity_matrix)
     finally:
         utilities.delete_test_directory(test_directory_path)
@@ -555,3 +563,42 @@ def test_jaccard_similarity_provisions():
 
     compare_expected_and_actual_similarity_matrices(
         expected_similarity_matrix, actual_similarity_matrix)
+
+
+def test_jaccard_index_output_directory_does_not_exist():
+    test_directory_path = utilities.create_test_directory('jaccard_index_provisions')
+
+    file_content_by_relative_path = {
+        os.path.join('legislation', 'state_a_english.txt'): STATE_A_LEGISLATION_TEXT,
+        os.path.join('legislation', 'state_b_english.txt'): STATE_B_LEGISLATION_TEXT,
+        os.path.join('legislation', 'state_c_english.txt'): STATE_C_LEGISLATION_TEXT,
+    }
+
+    script_file_path = os.path.join(
+        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity',
+        'calculate_similarity.py')
+    output_directory_path = os.path.join(
+        os.path.sep, 'invalid', 'output', 'directory', 'path')
+    legislation_directory_path = os.path.join(test_directory_path, 'legislation')
+
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        completed_process = subprocess.run(
+            [
+                script_file_path,
+                'jaccard_index',
+                'full_text',
+                'english',
+                output_directory_path,
+                '--legislation_directory_path',
+                legislation_directory_path,
+                '--debug',
+            ],
+            capture_output=True,
+            text=True)
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert 0 != completed_process.returncode
+    assert 'ValueError' in completed_process.stderr

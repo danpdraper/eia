@@ -8,5 +8,5 @@ if __name__ == '__main__':
     arguments = argument_parser.ArgumentParser().parse()
     application.run(
         arguments.algorithm, arguments.scope, arguments.language,
-        arguments.legislation_directory_path, arguments.output_file_path,
+        arguments.output_directory_path, arguments.legislation_directory_path,
         arguments.debug, arguments.preserve_provision_delimiters)
