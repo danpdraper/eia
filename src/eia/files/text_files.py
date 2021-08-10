@@ -3,7 +3,6 @@ import os
 import re
 
 import eia.files.input_output as input_output
-import eia.files.text_files as text_files
 import eia.scopes as scopes
 import eia.transformations as transformations
 
@@ -11,7 +10,9 @@ import eia.transformations as transformations
 LOGGER = logging.getLogger(__name__)
 
 
+COMMENT_LINE_PREFIX = '#'
 PROVISION_REGEX = re.compile(r'^\(([0-9]+)\) (.*)')
+STATE_REGEX = re.compile(r'^.*\/([a-z_]+)_[a-z]+\.txt$')
 
 
 def discover(text_file_directory_path):
@@ -30,6 +31,20 @@ def filter_file_paths_by_language(file_paths, language):
     return list(filter(
         lambda file_path: file_name_suffix_regex.search(file_path),
         file_paths))
+
+
+def filter_file_paths_by_state(file_paths, states):
+    return list(map(
+        lambda match: match.group(0),
+        filter(
+            lambda match: match.group(1) in states,
+            map(
+                lambda file_path: STATE_REGEX.search(file_path),
+                file_paths))))
+
+
+def is_not_comment(line):
+    return not line.startswith(COMMENT_LINE_PREFIX)
 
 
 TRANSFORMATIONS = [
@@ -90,11 +105,16 @@ INPUT_TEXT_GENERATORS_BY_SCOPE = {
 
 def input_text_generator(
         scope, language, text_file_directory_path,
-        preserve_provision_delimiters):
-    file_paths = text_files.filter_file_paths_by_language(
-        text_files.discover(text_file_directory_path), language)
-    LOGGER.info(
-        "Found {} text files in language {} in directory {}".format(
-            len(file_paths), language, text_file_directory_path))
+        preserve_provision_delimiters, states_to_include=[]):
+    file_paths = filter_file_paths_by_language(
+        discover(text_file_directory_path), language)
+    if states_to_include:
+        file_paths = filter_file_paths_by_state(file_paths, states_to_include)
+    log_message = "Found {} text files in language {} ".format(
+        len(file_paths), language)
+    if states_to_include:
+        log_message += "from states {} ".format(states_to_include)
+    log_message += "in directory {}".format(text_file_directory_path)
+    LOGGER.info(log_message)
     return INPUT_TEXT_GENERATORS_BY_SCOPE[scope](
         file_paths, preserve_provision_delimiters)

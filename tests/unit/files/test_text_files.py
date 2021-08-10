@@ -82,6 +82,59 @@ def test_filter_file_paths_by_language_only_returns_files_whose_language_matches
         text_files.filter_file_paths_by_language(file_paths, languages.ENGLISH)
 
 
+def test_filter_file_paths_by_state_only_returns_files_whose_state_is_one_of_those_provided():
+    file_paths = [
+        '/path/to/state_a_english.txt',
+        '/path/to/state_b_french.txt',
+        '/path/to/state_c_spanish.txt',
+        '/path/to/state_d_russian.txt',
+        '/path/to/state_e_arabic.txt',
+        '/path/to/state_f_portuguese.txt',
+    ]
+    states = ['state_a', 'state_c', 'state_e']
+    expected_file_paths = [
+        '/path/to/state_a_english.txt',
+        '/path/to/state_c_spanish.txt',
+        '/path/to/state_e_arabic.txt',
+    ]
+    assert expected_file_paths == text_files.filter_file_paths_by_state(file_paths, states)
+
+
+def test_is_not_comment_returns_true_when_line_does_not_start_with_hashmark():
+    # Letter
+    assert text_files.is_not_comment('A') is True
+    assert text_files.is_not_comment('a') is True
+    # Number
+    assert text_files.is_not_comment('0') is True
+    assert text_files.is_not_comment('00') is True
+    # Punctuation
+    assert text_files.is_not_comment('.') is True
+    assert text_files.is_not_comment(',') is True
+    assert text_files.is_not_comment('?') is True
+    assert text_files.is_not_comment(';') is True
+    assert text_files.is_not_comment(':') is True
+    assert text_files.is_not_comment('"') is True
+    assert text_files.is_not_comment("'") is True
+    # Dashes and underscores
+    assert text_files.is_not_comment('-') is True
+    assert text_files.is_not_comment('_') is True
+    # Back slashes and forward slashes
+    assert text_files.is_not_comment('\\') is True
+    assert text_files.is_not_comment('/') is True
+    assert text_files.is_not_comment('//') is True
+    assert text_files.is_not_comment('/*') is True
+    assert text_files.is_not_comment('*/') is True
+    # Parentheses and brackets
+    assert text_files.is_not_comment('[') is True
+    assert text_files.is_not_comment(']') is True
+    assert text_files.is_not_comment('(') is True
+    assert text_files.is_not_comment(')') is True
+
+
+def test_is_not_comment_returns_false_when_line_starts_with_hashmark():
+    assert text_files.is_not_comment('#') is False
+
+
 def populate_test_directory_for_input_text_generator_test(test_directory_path):
     file_content_by_relative_path = {
         'state_a_english.txt': (
@@ -168,6 +221,33 @@ def test_input_text_generator_removes_provision_delimiters_from_full_text_when_p
     assert expected_labels_and_text == actual_labels_and_text
 
 
+def test_input_text_generator_full_text_excludes_states_not_in_states_to_include_when_states_to_include_not_empty():
+    test_directory_path = utilities.create_test_directory('test_text_files')
+
+    expected_labels_and_text = [
+        ('State D', (
+            'title i general provisions '
+            'i do not enjoy spending time outdoors because '
+            'the sun hurts my skin and i would rather play video games '
+            'also who wants to walk when you can drive'
+        )),
+    ]
+
+    states_to_include = ['state_d']
+
+    try:
+        populate_test_directory_for_input_text_generator_test(test_directory_path)
+        actual_labels_and_text = [
+            label_and_text for label_and_text in text_files.input_text_generator(
+                scopes.FULL_TEXT, languages.ENGLISH, test_directory_path, False,
+                states_to_include)
+        ]
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert expected_labels_and_text == actual_labels_and_text
+
+
 def test_input_text_generator_yields_provisions_of_files_written_in_specified_language_when_scope_is_provision():
     test_directory_path = utilities.create_test_directory('test_text_files')
 
@@ -214,6 +294,32 @@ def test_input_text_generator_removes_delimiters_from_provisions_when_preserve_p
         actual_labels_and_text = [
             label_and_text for label_and_text in text_files.input_text_generator(
                 scopes.PROVISION, languages.ENGLISH, test_directory_path, False)
+        ]
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert expected_labels_and_text == actual_labels_and_text
+
+
+def test_input_text_generator_provisions_excludes_states_not_in_states_to_include_when_states_to_include_not_empty():
+    test_directory_path = utilities.create_test_directory('test_text_files')
+
+    expected_labels_and_text = [
+        ('State D 1', (
+            'i do not enjoy spending time outdoors because the sun hurts my '
+            'skin and i would rather play video games'
+        )),
+        ('State D 2', 'also who wants to walk when you can drive'),
+    ]
+
+    states_to_include = ['state_d']
+
+    try:
+        populate_test_directory_for_input_text_generator_test(test_directory_path)
+        actual_labels_and_text = [
+            label_and_text for label_and_text in text_files.input_text_generator(
+                scopes.PROVISION, languages.ENGLISH, test_directory_path, False,
+                states_to_include)
         ]
     finally:
         utilities.delete_test_directory(test_directory_path)

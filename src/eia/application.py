@@ -9,7 +9,8 @@ import eia.transformations as transformations
 
 
 def run(algorithm, scope, language, output_directory_path,
-        legislation_directory_path, debug, preserve_provision_delimiters):
+        legislation_directory_path, debug, preserve_provision_delimiters,
+        states_to_include_file_path):
     logging.basicConfig(
         datefmt='%Y-%m-%d %H:%M:%S',
         filemode='w',
@@ -25,9 +26,11 @@ def run(algorithm, scope, language, output_directory_path,
         "output_directory_path = {}, "
         "legislation_directory_path = {}, "
         "debug = {}, "
-        "preserve_provision_delimiters = {}".format(
+        "preserve_provision_delimiters = {},"
+        "states_to_include_file_path = {}".format(
             algorithm.to_string(), scope, language, output_directory_path,
-            legislation_directory_path, debug, preserve_provision_delimiters))
+            legislation_directory_path, debug, preserve_provision_delimiters,
+            states_to_include_file_path))
 
     if not os.path.isdir(output_directory_path):
         raise ValueError("{} is not a directory.".format(output_directory_path))
@@ -42,7 +45,7 @@ def run(algorithm, scope, language, output_directory_path,
     labels_and_rows = [
         row for row in similarity_matrix.row_generator(
             algorithm, scope, language, legislation_directory_path,
-            preserve_provision_delimiters)
+            preserve_provision_delimiters, states_to_include_file_path)
     ]
 
     input_output.write(

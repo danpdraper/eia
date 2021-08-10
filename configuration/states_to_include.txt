@@ -1,0 +1,4 @@
+# This file is empty by design; the contents should not be modified.
+# Users looking to limit the similarity analysis to legislation from a
+# particular list of states should provide the --states_to_include_file_path
+# parameter and associated argument to the calculate_similarity.py script.

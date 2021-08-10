@@ -21,6 +21,8 @@ class TestArgumentParser(object):
             'test_legislation_directory_path',
             '--debug',
             '--do_not_preserve_provision_delimiters',
+            '--states_to_include_file_path',
+            'test_states_to_include_file_path',
         ]
         expected_namespace = {
             # The equality holds in each of the following three cases because
@@ -32,6 +34,7 @@ class TestArgumentParser(object):
             'legislation_directory_path': 'test_legislation_directory_path',
             'debug': True,
             'preserve_provision_delimiters': False,
+            'states_to_include_file_path': 'test_states_to_include_file_path',
         }
         actual_namespace = vars(self.argument_parser.parse(arguments))
         assert expected_namespace == actual_namespace
@@ -46,6 +49,8 @@ class TestArgumentParser(object):
             'test_legislation_directory_path',
             '--debug',
             '--do_not_preserve_provision_delimiters',
+            '--states_to_include_file_path',
+            'test_states_to_include_file_path',
         ]
         with pytest.raises(SystemExit):
             self.argument_parser.parse(arguments)
@@ -60,6 +65,8 @@ class TestArgumentParser(object):
             'test_legislation_directory_path',
             '--debug',
             '--do_not_preserve_provision_delimiters',
+            '--states_to_include_file_path',
+            'test_states_to_include_file_path',
         ]
         with pytest.raises(SystemExit):
             self.argument_parser.parse(arguments)
@@ -74,6 +81,8 @@ class TestArgumentParser(object):
             'test_legislation_directory_path',
             '--debug',
             '--do_not_preserve_provision_delimiters',
+            '--states_to_include_file_path',
+            'test_states_to_include_file_path',
         ]
         with pytest.raises(SystemExit):
             self.argument_parser.parse(arguments)
@@ -96,3 +105,10 @@ class TestArgumentParser(object):
         actual_legislation_directory_path = \
             self.argument_parser.parse(arguments).legislation_directory_path
         assert expected_legislation_directory_path == actual_legislation_directory_path
+
+    def test_parse_assigns_path_in_package_to_states_to_include_file_path_parameter_when_argument_not_provided(self):
+        arguments = ['jaccard_index', 'full_text', 'english', '/path/to/output/directory']
+        expected_states_to_include_file_path = environment.STATES_TO_INCLUDE_DEFAULT_FILE_PATH
+        actual_states_to_include_file_path = \
+            self.argument_parser.parse(arguments).states_to_include_file_path
+        assert expected_states_to_include_file_path == actual_states_to_include_file_path

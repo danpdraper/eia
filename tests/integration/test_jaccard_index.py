@@ -338,6 +338,109 @@ def test_jaccard_index_full_text_do_not_preserve_provision_delimiters():
         expected_similarity_matrix, actual_similarity_matrix)
 
 
+def test_jaccard_index_full_text_list_of_states_to_include():
+    '''
+    State A legislation word set:
+        ((1), (2), (3), a, above, achieve, all, and, be, benefits, bodies,
+        cannot, citizens, conservation, country's, creating, defense, due,
+        entire, environment, environmental, feasible, for, general, have,
+        having, healthy, hence, i, implement, in, interests, is, it, its,
+        legislation, live, make, management, merely, national, natural,
+        necessary, objectives, obligations, of, out, participate, population,
+        preservation, principles, program, protection, published, purpose,
+        rational, relation, resources, respect, respectively, responsibility,
+        right, set, specialized, state, structures, sustainable, the, this,
+        title, to, underestimated, use, utilitarian, values, wellbeing, whose)
+    State A legislation word set size: 77
+
+    State C legislation word set:
+        ((1), (2), (3), according, action, administration, against, all, and,
+        associations, better, bodies, brings, citizen, collaboration,
+        collectivities, compliance, concerned, conditions, coordination,
+        decentralized, degradation, enhance, environment, environmental,
+        essential, establish, every, fight, for, forms, framework, fundamental,
+        i, implementation, improve, in, individually, institutions, is, it,
+        kinds, law, laws, living, local, managed, natural, necessary, of, or,
+        order, organizations, pollution, population, prevent, principles,
+        protect, protected, purpose, regulations, resources, responsible,
+        safeguard, sets, state, sustainably, territorial, the, this, title, to,
+        together, traditional, up, which, with, within, work)
+    State C legislation word set size: 79
+
+    Intersection word set sizes:
+        State A and State C: 25
+
+    Union word set sizes:
+        State A and State C: 131
+
+    Jaccard index = size of intersection / size of union
+
+    Expected similarity matrix:
+                    [ State A State C ]
+        [ State A ] [  1.000   0.191  ]
+        [ State C ] [  0.191   1.000  ]
+    '''
+
+    test_directory_path = utilities.create_test_directory('jaccard_index_full_text')
+
+    file_content_by_relative_path = {
+        os.path.join('legislation', 'state_a_english.txt'): STATE_A_LEGISLATION_TEXT,
+        os.path.join('legislation', 'state_b_english.txt'): STATE_B_LEGISLATION_TEXT,
+        os.path.join('legislation', 'state_c_english.txt'): STATE_C_LEGISLATION_TEXT,
+    }
+
+    states_to_include_file_path = os.path.join(test_directory_path, 'states_to_include.txt')
+    with open(states_to_include_file_path, 'w') as file_object:
+        file_object.write('state_a\n')
+        # Omit State B
+        file_object.write('state_c\n')
+
+    script_file_path = os.path.join(
+        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity',
+        'calculate_similarity.py')
+    scope = 'full_text'
+    output_directory_path = os.path.join(test_directory_path, 'output')
+    legislation_directory_path = os.path.join(test_directory_path, 'legislation')
+
+    actual_similarity_matrix_labels = []
+    actual_similarity_matrix = []
+
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        os.makedirs(output_directory_path)
+        subprocess.run(
+            [
+                script_file_path,
+                'jaccard_index',
+                scope,
+                'english',
+                output_directory_path,
+                '--legislation_directory_path',
+                legislation_directory_path,
+                '--states_to_include_file_path',
+                states_to_include_file_path,
+                '--debug',
+            ],
+            check=True)
+        populate_actual_similarity_matrix_and_labels(
+            output_directory_path, scope, actual_similarity_matrix_labels,
+            actual_similarity_matrix)
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    expected_similarity_matrix_labels = ['State A', 'State C']
+    expected_similarity_matrix = [
+        [1.0, 0.191],
+        [0.191, 1.0],
+    ]
+
+    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+
+    compare_expected_and_actual_similarity_matrices(
+        expected_similarity_matrix, actual_similarity_matrix)
+
+
 def test_jaccard_index_provisions():
     '''
     State A legislation provision 1 word set:
@@ -557,6 +660,167 @@ def test_jaccard_index_provisions():
         [0.167, 0.220, 0.127, 0.103, 0.116, 0.127, 1.0, 0.140, 0.174],
         [0.109, 0.1, 0.117, 0.116, 0.093, 0.188, 0.140, 1.0, 0.073],
         [0.111, 0.146, 0.191, 0.121, 0.092, 0.140, 0.174, 0.073, 1.0],
+    ]
+
+    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+
+    compare_expected_and_actual_similarity_matrices(
+        expected_similarity_matrix, actual_similarity_matrix)
+
+
+def test_jaccard_index_provisions_list_of_states_to_include():
+    '''
+    State A legislation provision 1 word set:
+        (a, all, and, benefits, citizens, country's, defense, environment, have,
+        healthy, hence, in, its, live, natural, obligations, of, participate,
+        rational, resources, respectively, right, sustainable, the, to, use)
+    State A legislation provision 1 word set size: 26
+
+    State A legislation provision 2 word set:
+        (and, be, cannot, conservation, due, entire, environment, for, in,
+        interests, is, it, merely, natural, of, population, preservation,
+        principles, protection, rational, relation, resources, respect, the, to,
+        underestimated, use, utilitarian, values, wellbeing, whose)
+    State A legislation provision 2 word set size: 31
+
+    State A legislation provision 3 word set:
+        (a, above, achieve, and, bodies, creating, environmental, feasible, for,
+        having, implement, is, it, legislation, make, management, national,
+        necessary, objectives, of, out, program, published, purpose,
+        responsibility, set, specialized, state, structures, the, this, to)
+    State A legislation provision 3 word set size: 32
+
+    State C legislation provision 1 word set:
+        (according, against, and, conditions, degradation, enhance, environment,
+        essential, establish, forms, improve, in, is, law, living, managed,
+        natural, of, order, population, principles, protected, purpose,
+        resources, safeguard, sustainably, the, this, to, which)
+    State C legislation provision 1 word set size: 30
+
+    State C legislation provision 2 word set:
+        (against, all, and, associations, citizen, collaboration,
+        collectivities, compliance, decentralized, degradation, environmental,
+        every, fight, framework, in, individually, institutions, is, kinds,
+        laws, local, of, or, pollution, prevent, regulations, responsible,
+        state, territorial, the, to, traditional, with, within, work)
+    State C legislation provision 2 word set size: 35
+
+    State C legislation provision 3 word set:
+        (action, administration, and, better, bodies, brings, concerned,
+        coordination, enhance, environment, for, implementation, it, law,
+        necessary, of, organizations, protect, sets, the, this, to, together,
+        up)
+    State C legislation provision 3 word set size: 24
+
+    Intersection word set sizes:
+        State A provision 1 and State A provision 2: 10
+        State A provision 1 and State A provision 3: 5
+        State A provision 1 and State C provision 1: 8
+        State A provision 1 and State C provision 2: 6
+        State A provision 1 and State C provision 3: 5
+        State A provision 2 and State A provision 3: 7
+        State A provision 2 and State C provision 1: 11
+        State A provision 2 and State C provision 2: 6
+        State A provision 2 and State C provision 3: 7
+        State A provision 3 and State C provision 1: 7
+        State A provision 3 and State C provision 2: 7
+        State A provision 3 and State C provision 3: 9
+        State C provision 1 and State C provision 2: 8
+        State C provision 1 and State C provision 3: 8
+        State C provision 2 and State C provision 3: 4
+
+    Union word set sizes:
+        State A provision 1 and State A provision 2: 47
+        State A provision 1 and State A provision 3: 53
+        State A provision 1 and State C provision 1: 48
+        State A provision 1 and State C provision 2: 55
+        State A provision 1 and State C provision 3: 45
+        State A provision 2 and State A provision 3: 56
+        State A provision 2 and State C provision 1: 50
+        State A provision 2 and State C provision 2: 60
+        State A provision 2 and State C provision 3: 48
+        State A provision 3 and State C provision 1: 55
+        State A provision 3 and State C provision 2: 60
+        State A provision 3 and State C provision 3: 47
+        State C provision 1 and State C provision 2: 57
+        State C provision 1 and State C provision 3: 46
+        State C provision 2 and State C provision 3: 55
+
+    Jaccard index = size of intersection / size of union
+
+    Expected similarity matrix:
+                [  A_1   A_2   A_3   C_1   C_2   C_3  ]
+        [ A_1 ] [ 1.000 0.213 0.094 0.167 0.109 0.111 ]
+        [ A_2 ] [ 0.213 1.000 0.125 0.220 0.100 0.146 ]
+        [ A_3 ] [ 0.094 0.125 1.000 0.140 0.117 0.188 ]
+        [ C_1 ] [ 0.167 0.220 0.140 1.000 0.140 0.174 ]
+        [ C_2 ] [ 0.109 0.100 0.117 0.140 1.000 0.073 ]
+        [ C_3 ] [ 0.111 0.146 0.188 0.174 0.073 1.000 ]
+    '''
+
+    test_directory_path = utilities.create_test_directory('jaccard_index_provisions')
+
+    file_content_by_relative_path = {
+        os.path.join('legislation', 'state_a_english.txt'): STATE_A_LEGISLATION_TEXT,
+        os.path.join('legislation', 'state_b_english.txt'): STATE_B_LEGISLATION_TEXT,
+        os.path.join('legislation', 'state_c_english.txt'): STATE_C_LEGISLATION_TEXT,
+    }
+
+    states_to_include_file_path = os.path.join(test_directory_path, 'states_to_include.txt')
+    with open(states_to_include_file_path, 'w') as file_object:
+        file_object.write('state_a\n')
+        # Omit State B
+        file_object.write('state_c\n')
+
+    script_file_path = os.path.join(
+        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity',
+        'calculate_similarity.py')
+    scope = 'provision'
+    output_directory_path = os.path.join(test_directory_path, 'output')
+    legislation_directory_path = os.path.join(test_directory_path, 'legislation')
+
+    actual_similarity_matrix_labels = []
+    actual_similarity_matrix = []
+
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        os.makedirs(output_directory_path)
+        subprocess.run(
+            [
+                script_file_path,
+                'jaccard_index',
+                scope,
+                'english',
+                output_directory_path,
+                '--legislation_directory_path',
+                legislation_directory_path,
+                '--states_to_include_file_path',
+                states_to_include_file_path,
+                '--debug',
+            ],
+            check=True)
+        populate_actual_similarity_matrix_and_labels(
+            output_directory_path, scope, actual_similarity_matrix_labels,
+            actual_similarity_matrix)
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    expected_similarity_matrix_labels = [
+        'State A 1',
+        'State A 2',
+        'State A 3',
+        'State C 1',
+        'State C 2',
+        'State C 3',
+    ]
+    expected_similarity_matrix = [
+        [1.0, 0.213, 0.094, 0.167, 0.109, 0.111],
+        [0.213, 1.0, 0.125, 0.220, 0.1, 0.146],
+        [0.094, 0.125, 1.0, 0.127, 0.117, 0.191],
+        [0.167, 0.220, 0.127, 1.0, 0.140, 0.174],
+        [0.109, 0.1, 0.117, 0.140, 1.0, 0.073],
+        [0.111, 0.146, 0.191, 0.174, 0.073, 1.0],
     ]
 
     assert expected_similarity_matrix_labels == actual_similarity_matrix_labels

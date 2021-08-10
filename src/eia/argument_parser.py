@@ -38,6 +38,9 @@ class ArgumentParser(object):
         self.argument_parser.add_argument(
             '--do_not_preserve_provision_delimiters',
             dest='preserve_provision_delimiters', action='store_false')
+        self.argument_parser.add_argument(
+            '--states_to_include_file_path',
+            default=environment.STATES_TO_INCLUDE_DEFAULT_FILE_PATH)
 
     def parse(self, arguments=None):
         if arguments is None:
