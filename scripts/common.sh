@@ -490,7 +490,7 @@ function amend_typo_in_article {
   local article_number="$1"
   local regular_expression="$2"
   local replacement="$3"
-
+  
   echo "$stdin" | sed -E "s/^(\(${article_number}\).*)${regular_expression}/\1${replacement}/"
 }
 

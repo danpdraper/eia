@@ -86,22 +86,22 @@ function preprocess_all_legislation {
   echo_info "Successfully preprocessed all legislation."
 }
 
-raw_data_directory_path="$(cd $(pwd $(dirname $BASH_SOURCE))/.. && pwd)/raw_data"
+raw_data_directory_path="$(cd $(dirname $BASH_SOURCE)/../raw_data && pwd)"
 if [ ! -d "$raw_data_directory_path" ] ; then
-  echo_error "Unexpected directory structure. $raw_data_directory_path does not exist."
+  2>&1 echo "Unexpected directory structure. $raw_data_directory_path does not exist."
   exit 1
 fi
 
-script_directory_path="$(pwd $(dirname $BASH_SOURCE))"
+script_directory_path="$(cd $(dirname $BASH_SOURCE) && pwd)"
 if [ ! -d "$script_directory_path" ] ; then
-  echo_error "Unexpected directory structure. $script_directory_path does not exist."
+  2>&1 echo "Unexpected directory structure. $script_directory_path does not exist."
   exit 1
 fi
 
 if [ "$#" -ne 0 ] && [ "$#" -ne 2 ] ; then
-  echo_error "USAGE: $(basename $0) [state language]"
-  echo_error "PROVIDED: $(basename $0) $*"
-  echo_error "Invoking $(basename $0) without any arguments will preprocess ALL legislation."
+  2>&1 echo "USAGE: $(basename $0) [state language]"
+  2>&1 echo "PROVIDED: $(basename $0) $*"
+  2>&1 echo "Invoking $(basename $0) without any arguments will preprocess ALL legislation."
   exit 1
 fi
 state="$1"
@@ -109,7 +109,7 @@ language="$2"
 
 common_file_path="${script_directory_path}/${common_file_name}"
 if [ ! -f "$common_file_path" ] ; then
-  echo_error "File $script_file_path does not exist."
+  2>&1 echo "File $script_file_path does not exist."
   exit 1
 fi
 source "$common_file_path"
