@@ -1,26 +1,40 @@
 #!/bin/bash
 
 common_file_name="common.sh"
+preprocessed_directory_name=preprocessed
+unprocessed_directory_name=unprocessed
 
 function preprocess_legislation {
-  if [ "$#" -ne 4 ] ; then
-    echo_usage_error "$*" '<state> <language> <raw_data_directory_path> <script_directory_path>'
+  if [ "$#" -ne 5 ] ; then
+    echo_usage_error "$*" '<state> <language> <unprocessed_raw_data_directory_path> \
+      <preprocessed_raw_data_directory_path> <script_directory_path>'
     return 1
   fi
   local state="$1"
   local language="$2"
-  local raw_data_directory_path="$3"
-  local script_directory_path="$4"
+  local unprocessed_raw_data_directory_path="$3"
+  local preprocessed_raw_data_directory_path="$4"
+  local script_directory_path="$5"
 
-  input_file_path="${raw_data_directory_path}/${state}_${language}.txt"
+  local input_file_path="$(find "$unprocessed_raw_data_directory_path" -type f -name "${state}_${language}.txt")"
   if [ ! -f "$input_file_path" ] ; then
     echo_error "File $input_file_path does not exist."
     return 1
   fi
 
-  output_file_path="${raw_data_directory_path}/preprocessed/${state}_${language}.txt"
+  local escaped_unprocessed_raw_data_directory_path="$(
+    echo "$unprocessed_raw_data_directory_path" | sed -E 's/\//\\\//g')"
+  local input_file_path_suffix="$(
+    echo "$input_file_path" | sed -E "s/${escaped_unprocessed_raw_data_directory_path}//")"
+  local output_file_path="${preprocessed_raw_data_directory_path}${input_file_path_suffix}"
+  local output_directory_path="$(dirname $output_file_path)"
+  if [ ! -d "$output_directory_path" ] ; then
+    echo_error "Directory $output_directory_path does not exist."
+    return 1
+  fi
 
-  state_and_language_preprocessor_file_path="${script_directory_path}/${state}_${language}.sh"
+  local state_and_language_preprocessor_file_path="$(
+    find "$script_directory_path" -type f -name "${state}_${language}.sh")"
   if [ ! -f "$state_and_language_preprocessor_file_path" ] ; then
     echo_error "File $state_and_language_preprocessor_file_path does not exist."
     return 1
@@ -57,28 +71,32 @@ function extract_state_and_language_from_script_file_name {
 }
 
 function preprocess_all_legislation {
-  if [ "$#" -ne 2 ] ; then
-    echo_usage_error "$*" '<raw_data_directory_path> <script_directory_path>'
+  if [ "$#" -ne 3 ] ; then
+    echo_usage_error "$*" '<unprocessed_raw_data_directory_path> \
+      <preprocessed_raw_data_directory_path <script_directory_path>'
     return 1
   fi
-  local raw_data_directory_path="$1"
-  local script_directory_path="$2"
+  local unprocessed_raw_data_directory_path="$1"
+  local preprocessed_raw_data_directory_path="$2"
+  local script_directory_path="$3"
 
   local script_file_path
   local script_file_name
   local state_and_language
   local return_code
-  for script_file_path in "$script_directory_path"/* ; do
-    script_file_name="$(basename $script_file_path)"
+  for script_file_path in $(find "$script_directory_path" -type f) ; do
+    script_file_name="$(basename "$script_file_path")"
     if [ "$script_file_name" = "$common_file_name" ] ; then continue ; fi
     if [ "$script_file_name" = "$(basename $BASH_SOURCE)" ] ; then continue ; fi
+    if [[ "$script_file_name" =~ '.swp' ]] ; then continue ; fi
 
-    state_and_language="$(extract_state_and_language_from_script_file_name $script_file_name)"
+    state_and_language="$(extract_state_and_language_from_script_file_name "$script_file_name")"
     return_code="$?"
     if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
     state_and_language=($state_and_language)
 
-    preprocess_legislation "${state_and_language[@]}" "$raw_data_directory_path" "$script_directory_path"
+    preprocess_legislation "${state_and_language[@]}" "$unprocessed_raw_data_directory_path" \
+      "$preprocessed_raw_data_directory_path" "$script_directory_path"
     return_code="$?"
     if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
   done
@@ -86,13 +104,25 @@ function preprocess_all_legislation {
   echo_info "Successfully preprocessed all legislation."
 }
 
-raw_data_directory_path="$(cd $(dirname $BASH_SOURCE)/../raw_data && pwd)"
+raw_data_directory_path="$(cd "$(dirname $BASH_SOURCE)/../../raw_data" && pwd)"
 if [ ! -d "$raw_data_directory_path" ] ; then
   2>&1 echo "Unexpected directory structure. $raw_data_directory_path does not exist."
   exit 1
 fi
 
-script_directory_path="$(cd $(dirname $BASH_SOURCE) && pwd)"
+preprocessed_raw_data_directory_path="${raw_data_directory_path}/${preprocessed_directory_name}"
+if [ ! -d "$preprocessed_raw_data_directory_path" ] ; then
+  2>&1 echo "Unexpected directory structure. $preprocessed_raw_data_directory_path does not exist."
+  exit 1
+fi
+
+unprocessed_raw_data_directory_path="${raw_data_directory_path}/${unprocessed_directory_name}"
+if [ ! -d "$unprocessed_raw_data_directory_path" ] ; then
+  2>&1 echo "Unexpected directory structure. $unprocessed_raw_data_directory_path does not exist."
+  exit 1
+fi
+
+script_directory_path="$(cd "$(dirname $BASH_SOURCE)" && pwd)"
 if [ ! -d "$script_directory_path" ] ; then
   2>&1 echo "Unexpected directory structure. $script_directory_path does not exist."
   exit 1
@@ -115,12 +145,14 @@ fi
 source "$common_file_path"
 
 if [ "$#" -eq 0 ] ; then
-  preprocess_all_legislation "$raw_data_directory_path" "$script_directory_path"
+  preprocess_all_legislation "$unprocessed_raw_data_directory_path" \
+    "$preprocessed_raw_data_directory_path" "$script_directory_path"
   return_code="$?"
 fi
 
 if [ "$#" -eq 2 ] ; then
-  preprocess_legislation "$state" "$language" "$raw_data_directory_path" "$script_directory_path"
+  preprocess_legislation "$state" "$language" "$unprocessed_raw_data_directory_path" \
+    "$preprocessed_raw_data_directory_path" "$script_directory_path"
   return_code="$?"
 fi
 

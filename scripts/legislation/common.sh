@@ -7,7 +7,7 @@ NO_COLOUR='\033[0m'
 RED='\033[1;31m'
 
 function echo_error {
-  >&2 echo -e "${RED}ERROR: $1${NC}"
+  >&2 echo -e "${RED}ERROR: $1${NO_COLOUR}"
 }
 
 function echo_usage_error {
@@ -29,7 +29,7 @@ function echo_usage_error {
 }
 
 function echo_info {
-  echo -e "${GREEN}INFO: $1${NC}"
+  echo -e "${GREEN}INFO: $1${NO_COLOUR}"
 }
 
 function tee_to_stderr {
