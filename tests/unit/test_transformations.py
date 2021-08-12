@@ -56,6 +56,24 @@ def test_capitalized_string_to_snake_case_raises_value_error_if_string_is_not_ca
         transformations.capitalized_string_to_snake_case(string)
 
 
+def test_snake_case_string_to_capitalized_capitalizes_first_letter_of_each_word_and_removes_underscores():
+    snake_case_string = 'test_snake_case_string'
+    expected_string = 'Test Snake Case String'
+    actual_string = transformations.snake_case_string_to_capitalized(snake_case_string)
+    assert expected_string == actual_string
+
+
+def test_snake_case_string_to_capitalized_raises_value_error_if_string_is_not_snake_case():
+    # Capitalized String
+    string = 'Test Snake Case String'
+    with pytest.raises(ValueError):
+        transformations.snake_case_string_to_capitalized(string)
+    # Uppercase String
+    string = 'TEST SNAKE CASE STRING'
+    with pytest.raises(ValueError):
+        transformations.snake_case_string_to_capitalized(string)
+
+
 def test_delete_punctuation_from_string_deletes_all_punctuation_from_provided_string():
     string = 'Test, test; test: test. test-test "Test" , \'test\' ; tes\'t . test : test ? test - test'
     expected_string = 'Test test test test testtest Test  test  tes\'t  test  test  test  test'

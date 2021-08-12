@@ -9,6 +9,7 @@ PROVISION_DELIMITER_REGEX = re.compile(
     r'(^)\([0-9]+\)|(\n)\([0-9]+\)|(.)\[[A-Za-z0-9]+\]|(.)\[•\]')
 PUNCTUATION_REGEX = re.compile(r'[,;:.?\-"]| \'|\' ')
 SINGLE_SPACE = ' '
+SNAKE_CASE_REGEX = re.compile(r'(^|_)([a-z])')
 STATE_NAME_SNAKE_CASE_REGEX = re.compile(r'/([a-z_]+)_[a-z]+\.')
 TO_CAPITALIZED_REGEX = re.compile(r'(^|_)([a-z])')
 UNDERSCORE = '_'
@@ -41,10 +42,23 @@ def capitalized_string_to_snake_case(capitalized_string):
     if not match:
         raise ValueError("String {} is not capitalized.".format(capitalized_string))
     return re.sub(
-        CAPITALIZED_REGEX, lambda match: r"{}{}{}".format(
+        CAPITALIZED_REGEX,
+        lambda match: r"{}{}{}".format(
             match.group(1), EMPTY_STRING if match.group(1) == EMPTY_STRING else UNDERSCORE,
             match.group(2).lower()),
         capitalized_string)
+
+
+def snake_case_string_to_capitalized(snake_case_string):
+    match = SNAKE_CASE_REGEX.search(snake_case_string)
+    if not match:
+        raise ValueError("String {} is not snake case.".format(snake_case_string))
+    return re.sub(
+        SNAKE_CASE_REGEX,
+        lambda match: r"{}{}".format(
+            EMPTY_STRING if match.group(1) == EMPTY_STRING else SINGLE_SPACE,
+            match.group(2).upper()),
+        snake_case_string)
 
 
 def delete_punctuation_from_string(string):

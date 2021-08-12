@@ -56,5 +56,5 @@ def run(algorithm, scope, language, output_directory_path,
 
     output_image_path = os.path.join(
         algorithm_output_directory_path, "{}.png".format(scope))
-    plots.similarity_heatmap(labels_and_rows, algorithm, scope, output_image_path)
-    logger.info("Wrote similarity heatmap to {}".format(output_image_path))
+    plots.similarity_heatmap(
+        labels_and_rows, algorithm, scope, preserve_provision_delimiters, output_image_path)

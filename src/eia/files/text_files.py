@@ -12,6 +12,7 @@ LOGGER = logging.getLogger(__name__)
 
 COMMENT_LINE_PREFIX = '#'
 PROVISION_REGEX = re.compile(r'^\(([0-9]+)\) (.*)')
+STATE_AND_PROVISION_LABEL_REGEX = re.compile(r'^([A-Za-z ]+) ([0-9]+)$')
 STATE_REGEX = re.compile(r'^.*\/([a-z_]+)_[a-z]+\.txt$')
 
 
@@ -47,6 +48,15 @@ def is_not_comment(line):
     return not line.startswith(COMMENT_LINE_PREFIX)
 
 
+def state_and_provision_number_from_label(label):
+    match = STATE_AND_PROVISION_LABEL_REGEX.match(label)
+    if not match:
+        raise ValueError(
+            "Label {} does not consist of a state name and a provision "
+            "number.".format(label))
+    return match.group(1), match.group(2)
+
+
 TRANSFORMATIONS = [
     transformations.delete_provision_delimiters_from_string,
     transformations.delete_punctuation_from_string,
@@ -69,7 +79,7 @@ def apply_transformations_to_input_text(
 
 def full_text_input_text_generator(file_paths, preserve_provision_delimiters):
     for file_path in file_paths:
-        LOGGER.info("Generating input text from file {}".format(file_path))
+        LOGGER.debug("Generating input text from file {}".format(file_path))
         yield (
             transformations.file_path_to_state_name_capitalized(file_path),
             apply_transformations_to_input_text(
@@ -84,7 +94,7 @@ def provision_input_text_generator(file_paths, preserve_provision_delimiters):
             provision_match = PROVISION_REGEX.match(line)
             if not provision_match:
                 continue
-            LOGGER.info(
+            LOGGER.debug(
                 "Generating input text from provision {} in file {}".format(
                     provision_match.group(1), file_path))
             yield (
@@ -97,7 +107,7 @@ def provision_input_text_generator(file_paths, preserve_provision_delimiters):
             )
 
 
-INPUT_TEXT_GENERATORS_BY_SCOPE = {
+INPUT_TEXT_GENERATOR_BY_SCOPE = {
     scopes.FULL_TEXT: full_text_input_text_generator,
     scopes.PROVISION: provision_input_text_generator,
 }
@@ -115,6 +125,6 @@ def input_text_generator(
     if states_to_include:
         log_message += "from states {} ".format(states_to_include)
     log_message += "in directory {}".format(text_file_directory_path)
-    LOGGER.info(log_message)
-    return INPUT_TEXT_GENERATORS_BY_SCOPE[scope](
+    LOGGER.debug(log_message)
+    return INPUT_TEXT_GENERATOR_BY_SCOPE[scope](
         file_paths, preserve_provision_delimiters)

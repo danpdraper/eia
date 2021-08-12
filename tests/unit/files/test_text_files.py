@@ -1,5 +1,7 @@
 import os
 
+import pytest
+
 import eia.files.text_files as text_files
 import eia.languages as languages
 import eia.scopes as scopes
@@ -133,6 +135,32 @@ def test_is_not_comment_returns_true_when_line_does_not_start_with_hashmark():
 
 def test_is_not_comment_returns_false_when_line_starts_with_hashmark():
     assert text_files.is_not_comment('#') is False
+
+
+def test_state_and_provision_number_from_label_extracts_state_name_and_provision_number_from_label():
+    # Single-word state name and single-digit provision number
+    label = 'A 1'
+    assert 'A', '1' == text_files.state_and_provision_number_from_label(label)
+    # Single-word state name and multi-digit provision number
+    label = 'A 22'
+    assert 'A', '22' == text_files.state_and_provision_number_from_label(label)
+    # Multi-word state name and single-digit provision number
+    label = 'State A 1'
+    assert 'State A', '1' == text_files.state_and_provision_number_from_label(label)
+    # Multi-word state name and multi-digit provision number
+    label = 'State A 22'
+    assert 'State A', '22' == text_files.state_and_provision_number_from_label(label)
+
+
+def test_state_and_provision_number_from_label_raises_value_error_when_provided_string_does_not_match_expected_format():
+    # State name without provision number
+    label = 'State A'
+    with pytest.raises(ValueError):
+        text_files.state_and_provision_number_from_label(label)
+    # Provision number without state name
+    label = '1'
+    with pytest.raises(ValueError):
+        text_files.state_and_provision_number_from_label(label)
 
 
 def populate_test_directory_for_input_text_generator_test(test_directory_path):
