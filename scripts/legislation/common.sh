@@ -64,15 +64,15 @@ function get_header_regular_expression {
       header_regular_expression+="Annexe|ANNEXE"
       ;;
     portuguese)
-      header_regular_expression="Título|TÍTULO|"
-      header_regular_expression+="Capítulo|CAPÍTULO|"
-      header_regular_expression+="Seção|SEÇÃO|"
+      header_regular_expression="Título|TÍTULO|Titulo|TITULO|"
+      header_regular_expression+="Capítulo|CAPÍTULO|Capitulo|CAPITULO|"
+      header_regular_expression+="Seção|SEÇÃO|Secao|SECAO|"
       header_regular_expression+="Anexo|ANEXO"
       ;;
     spanish)
-      header_regular_expression="Título|TÍTULO|"
-      header_regular_expression+="Capítulo|CAPÍTULO|"
-      header_regular_expression+="Sección|SECCIÓN|"
+      header_regular_expression="Título|TÍTULO|Titulo|TITULO|"
+      header_regular_expression+="Capítulo|CAPÍTULO|Capitulo|CAPITULO|"
+      header_regular_expression+="Sección|SECCIÓN|Seccion|SECCION|"
       header_regular_expression+="Anexo|ANEXO"
       ;;
     *)

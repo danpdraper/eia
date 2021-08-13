@@ -16,9 +16,13 @@ function preprocess_legislation {
   local preprocessed_raw_data_directory_path="$4"
   local script_directory_path="$5"
 
+  local error_message
+
   local input_file_path="$(find "$unprocessed_raw_data_directory_path" -type f -name "${state}_${language}.txt")"
   if [ ! -f "$input_file_path" ] ; then
-    echo_error "File $input_file_path does not exist."
+    error_message="There is no file named ${state}_${language}.txt in "
+    error_message+="${unprocessed_raw_data_directory_path}."
+    echo_error "$error_message"
     return 1
   fi
 
@@ -36,7 +40,9 @@ function preprocess_legislation {
   local state_and_language_preprocessor_file_path="$(
     find "$script_directory_path" -type f -name "${state}_${language}.sh")"
   if [ ! -f "$state_and_language_preprocessor_file_path" ] ; then
-    echo_error "File $state_and_language_preprocessor_file_path does not exist."
+    error_message="There is no file named ${state}_${language}.sh in "
+    error_message+="${script_directory_path}."
+    echo_error "$error_message"
     return 1
   fi
   source "$state_and_language_preprocessor_file_path"
@@ -139,7 +145,7 @@ language="$2"
 
 common_file_path="${script_directory_path}/${common_file_name}"
 if [ ! -f "$common_file_path" ] ; then
-  2>&1 echo "File $script_file_path does not exist."
+  2>&1 echo "File $common_file_path does not exist."
   exit 1
 fi
 source "$common_file_path"
