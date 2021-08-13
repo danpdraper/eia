@@ -12,7 +12,7 @@ LOGGER = logging.getLogger(__name__)
 
 COMMENT_LINE_PREFIX = '#'
 PROVISION_REGEX = re.compile(r'^\(([0-9]+)\) (.*)')
-STATE_AND_PROVISION_LABEL_REGEX = re.compile(r'^([A-Za-z ]+) ([0-9]+)$')
+STATE_AND_PROVISION_LABEL_REGEX = re.compile(r'^([A-Za-z ]+)( [0-9]+)?$')
 STATE_REGEX = re.compile(r'^.*\/([a-z_]+)_[a-z]+\.txt$')
 
 
@@ -52,9 +52,9 @@ def state_and_provision_number_from_label(label):
     match = STATE_AND_PROVISION_LABEL_REGEX.match(label)
     if not match:
         raise ValueError(
-            "Label {} does not consist of a state name and a provision "
+            "Label {} does not consist of a state name and optional provision "
             "number.".format(label))
-    return match.group(1), match.group(2)
+    return match.group(1), match.group(2).lstrip(' ') if match.group(2) else match.group(2)
 
 
 TRANSFORMATIONS = [

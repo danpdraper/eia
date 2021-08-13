@@ -1,15 +1,15 @@
 import pytest
 
 import eia.algorithms as algorithms
-import eia.argument_parser as argument_parser
+import eia.argument_parsers as argument_parsers
 import eia.environment as environment
 import eia.languages as languages
 import eia.scopes as scopes
 
 
-class TestArgumentParser(object):
+class TestCalculateSimilarityArgumentParser(object):
     def setup(self):
-        self.argument_parser = argument_parser.ArgumentParser()
+        self.argument_parser = argument_parsers.CalculateSimilarityArgumentParser()
 
     def test_parse_extracts_expected_arguments(self):
         arguments = [
@@ -112,3 +112,22 @@ class TestArgumentParser(object):
         actual_states_to_include_file_path = \
             self.argument_parser.parse(arguments).states_to_include_file_path
         assert expected_states_to_include_file_path == actual_states_to_include_file_path
+
+
+class TestHighestSimilarityScoreArgumentParser(object):
+    def setup(self):
+        self.argument_parser = argument_parsers.HighestSimilarityScoreArgumentParser()
+
+    def test_parse_extracts_expected_arguments(self):
+        arguments = ['/path/to/similarity/matrix', '5', '--debug']
+        expected_namespace = {
+            'similarity_matrix_file_path': '/path/to/similarity/matrix',
+            'number_of_scores': 5,
+            'debug': True,
+        }
+        actual_namespace = vars(self.argument_parser.parse(arguments))
+        assert expected_namespace == actual_namespace
+
+    def test_parse_assigns_false_to_debug_parameter_when_debug_argument_not_provided(self):
+        arguments = ['/path/to/similarity/matrix', '5']
+        assert self.argument_parser.parse(arguments).debug is False

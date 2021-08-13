@@ -138,6 +138,16 @@ def test_is_not_comment_returns_false_when_line_starts_with_hashmark():
 
 
 def test_state_and_provision_number_from_label_extracts_state_name_and_provision_number_from_label():
+    # Single-word state name
+    label = 'A'
+    actual_label_and_provision = text_files.state_and_provision_number_from_label(label)
+    assert 'A' == actual_label_and_provision[0]
+    assert actual_label_and_provision[1] is None
+    # Multi-word state name
+    label = 'State A'
+    actual_label_and_provision = text_files.state_and_provision_number_from_label(label)
+    assert 'State A' == actual_label_and_provision[0]
+    assert actual_label_and_provision[1] is None
     # Single-word state name and single-digit provision number
     label = 'A 1'
     assert 'A', '1' == text_files.state_and_provision_number_from_label(label)
@@ -153,10 +163,6 @@ def test_state_and_provision_number_from_label_extracts_state_name_and_provision
 
 
 def test_state_and_provision_number_from_label_raises_value_error_when_provided_string_does_not_match_expected_format():
-    # State name without provision number
-    label = 'State A'
-    with pytest.raises(ValueError):
-        text_files.state_and_provision_number_from_label(label)
     # Provision number without state name
     label = '1'
     with pytest.raises(ValueError):

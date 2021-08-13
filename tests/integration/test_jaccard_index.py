@@ -79,7 +79,7 @@ def populate_actual_similarity_matrix_and_labels(
         output_directory_path, scope, actual_similarity_matrix_labels,
         actual_similarity_matrix):
     output_file_path = os.path.join(
-        output_directory_path, 'jaccard_index', "{}.txt".format(scope))
+        output_directory_path, 'jaccard_index', "{}.csv".format(scope))
     with open(output_file_path, 'r') as file_object:
         for line in file_object:
             line_components = line.rstrip('\n').split(',')

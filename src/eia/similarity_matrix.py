@@ -38,3 +38,15 @@ def row_generator(
                     algorithm.to_string(), row_label, column_label))
             row.append(algorithm.apply(row_text, column_text))
         yield row_label, row
+
+
+def element_generator(similarity_matrix_file_path):
+    labels_and_rows = [
+        transformations.comma_separated_string_to_label_and_row_tuple(line)
+        for line in input_output.line_generator(similarity_matrix_file_path)
+    ]
+    for row_index in range(len(labels_and_rows)):
+        for column_index in range(len(labels_and_rows[row_index][1])):
+            yield labels_and_rows[row_index][0], \
+                labels_and_rows[column_index][0], \
+                labels_and_rows[row_index][1][column_index]

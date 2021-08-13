@@ -3,20 +3,26 @@ import os
 
 import eia.environment as environment
 import eia.files.input_output as input_output
+import eia.files.text_files as text_files
 import eia.plots as plots
 import eia.similarity_matrix as similarity_matrix
 import eia.transformations as transformations
 
 
-def run(algorithm, scope, language, output_directory_path,
-        legislation_directory_path, debug, preserve_provision_delimiters,
-        states_to_include_file_path):
+def configure_logging(debug):
     logging.basicConfig(
         datefmt='%Y-%m-%d %H:%M:%S',
         filemode='w',
         filename=os.path.join(environment.LOG_DIRECTORY_PATH, 'application.txt'),
         format='%(asctime)s [%(levelname)s] (%(name)s) %(message)s',
         level=logging.DEBUG if debug else logging.INFO)
+
+
+def calculate_similarity(
+        algorithm, scope, language, output_directory_path,
+        legislation_directory_path, debug, preserve_provision_delimiters,
+        states_to_include_file_path):
+    configure_logging(debug)
     logger = logging.getLogger(__name__)
     logger.info(
         "Starting application with the following parameters: "
@@ -40,7 +46,7 @@ def run(algorithm, scope, language, output_directory_path,
         logger.info("Creating directory {}".format(algorithm_output_directory_path))
         os.makedirs(algorithm_output_directory_path)
     output_file_path = os.path.join(
-        algorithm_output_directory_path, "{}.txt".format(scope))
+        algorithm_output_directory_path, "{}.csv".format(scope))
 
     labels_and_rows = [
         row for row in similarity_matrix.row_generator(
@@ -58,3 +64,51 @@ def run(algorithm, scope, language, output_directory_path,
         algorithm_output_directory_path, "{}.png".format(scope))
     plots.similarity_heatmap(
         labels_and_rows, algorithm, scope, preserve_provision_delimiters, output_image_path)
+
+
+def extract_highest_similarity_scores(
+        similarity_matrix_file_path, number_of_scores, debug):
+    configure_logging(debug)
+    logger = logging.getLogger(__name__)
+    logger.info(
+        "Starting application with the following parameters: "
+        "similarity_matrix_file_path = {}, "
+        "number_of_scores = {}, "
+        "debug = {}".format(
+            similarity_matrix_file_path, number_of_scores, debug))
+
+    return sorted(
+        map(
+            lambda label_tuples_and_element: (
+                # Return the state and provision separated by a space if the
+                # row label contains a provision; otherwise, return the state.
+                "{} {}".format(*label_tuples_and_element[0])
+                if label_tuples_and_element[0][1]
+                else label_tuples_and_element[0][0],
+                # Return the state and provision separated by a space if the
+                # column label contains a provision; otherwise, return the state.
+                "{} {}".format(*label_tuples_and_element[1])
+                if label_tuples_and_element[1][1]
+                else label_tuples_and_element[1][0],
+                label_tuples_and_element[2]
+            ),
+            filter(
+                lambda label_tuples_and_element:
+                # The following predicate is equivalent to: column state < row
+                # state, and will evaluate to True when the column state would
+                # precede the row state if the two were sorted in ascending
+                # alphabetical order (e.g. column state = A, row state = B).
+                label_tuples_and_element[1][0] < label_tuples_and_element[0][0],
+                map(
+                    lambda labels_and_element: (
+                        text_files.state_and_provision_number_from_label(
+                            labels_and_element[0]),
+                        text_files.state_and_provision_number_from_label(
+                            labels_and_element[1]),
+                        labels_and_element[2],
+                    ),
+                    similarity_matrix.element_generator(
+                        similarity_matrix_file_path)))),
+        # Sort by the element (i.e. the similarity score).
+        key=lambda labels_and_element: labels_and_element[2],
+        reverse=True)[:number_of_scores]

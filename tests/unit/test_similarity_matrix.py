@@ -7,6 +7,9 @@ import eia.scopes as scopes
 import eia.tests.utilities as utilities
 
 
+EPSILON = 0.0005
+
+
 def test_row_generator_yields_tuples_of_row_label_and_row_with_provision_delimiters():
     test_directory_path = utilities.create_test_directory('test_similarity_matrix')
 
@@ -280,3 +283,53 @@ def test_row_generator_ignores_comments_in_states_to_include_file():
         utilities.delete_test_directory(test_directory_path)
 
     assert expected_labels_and_rows == actual_labels_and_rows
+
+
+def test_element_generator_yields_tuple_of_row_label_and_column_label_and_element():
+    test_directory_path = utilities.create_test_directory('test_similarity_matrix')
+
+    file_content_by_relative_path = {
+        'test_similarity_matrix.csv': (
+            'State A,0.01,0.02,0.03\n'
+            'State B,0.04,0.05,0.06\n'
+            'State C,0.07,0.08,0.09\n'
+        ),
+    }
+
+    similarity_matrix_file_path = os.path.join(
+        test_directory_path, 'test_similarity_matrix.csv')
+
+    expected_row_labels_and_column_labels_and_elements = [
+        ('State A', 'State A', 0.01),
+        ('State A', 'State B', 0.02),
+        ('State A', 'State C', 0.03),
+        ('State B', 'State A', 0.04),
+        ('State B', 'State B', 0.05),
+        ('State B', 'State C', 0.06),
+        ('State C', 'State A', 0.07),
+        ('State C', 'State B', 0.08),
+        ('State C', 'State C', 0.09),
+    ]
+
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        actual_row_labels_and_column_labels_and_elements = [
+            labels_and_element for labels_and_element in
+            similarity_matrix.element_generator(similarity_matrix_file_path)
+        ]
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert len(expected_row_labels_and_column_labels_and_elements) == \
+        len(actual_row_labels_and_column_labels_and_elements)
+    for index in range(len(expected_row_labels_and_column_labels_and_elements)):
+        assert len(expected_row_labels_and_column_labels_and_elements[index]) == \
+            len(actual_row_labels_and_column_labels_and_elements[index])
+        assert expected_row_labels_and_column_labels_and_elements[index][0] == \
+            actual_row_labels_and_column_labels_and_elements[index][0]
+        assert expected_row_labels_and_column_labels_and_elements[index][1] == \
+            actual_row_labels_and_column_labels_and_elements[index][1]
+        assert round(abs(
+            expected_row_labels_and_column_labels_and_elements[index][2] -
+            actual_row_labels_and_column_labels_and_elements[index][2]), 4) <= EPSILON

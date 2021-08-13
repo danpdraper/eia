@@ -42,6 +42,14 @@ def test_label_and_row_tuple_to_comma_separated_string_converts_list_containing_
     assert expected_string == actual_string
 
 
+def test_comma_separated_string_to_label_and_row_tuple_converts_string_to_label_and_list_containing_floats():
+    comma_separated_string = 'Test Label,0.1,0.2,0.3'
+    expected_label_and_row = ('Test Label', [0.1, 0.2, 0.3])
+    actual_label_and_row = transformations.comma_separated_string_to_label_and_row_tuple(
+        comma_separated_string)
+    assert expected_label_and_row == actual_label_and_row
+
+
 def test_capitalized_string_to_snake_case_converts_capitalized_letters_to_lowercase_and_adds_underscores():
     capitalized_string = 'TestCapitalizedString'
     expected_string = 'test_capitalized_string'

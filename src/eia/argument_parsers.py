@@ -21,7 +21,7 @@ class LanguageAction(argparse.Action):
         setattr(namespace, self.dest, languages.LANGUAGES[values])
 
 
-class ArgumentParser(object):
+class CalculateSimilarityArgumentParser(object):
     def __init__(self):
         self.argument_parser = argparse.ArgumentParser()
         self.argument_parser.add_argument(
@@ -41,6 +41,19 @@ class ArgumentParser(object):
         self.argument_parser.add_argument(
             '--states_to_include_file_path',
             default=environment.STATES_TO_INCLUDE_DEFAULT_FILE_PATH)
+
+    def parse(self, arguments=None):
+        if arguments is None:
+            return self.argument_parser.parse_args()
+        return self.argument_parser.parse_args(arguments)
+
+
+class HighestSimilarityScoreArgumentParser(object):
+    def __init__(self):
+        self.argument_parser = argparse.ArgumentParser()
+        self.argument_parser.add_argument('similarity_matrix_file_path')
+        self.argument_parser.add_argument('number_of_scores', type=int)
+        self.argument_parser.add_argument('--debug', action='store_true')
 
     def parse(self, arguments=None):
         if arguments is None:

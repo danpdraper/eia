@@ -37,6 +37,11 @@ def label_and_row_tuple_to_comma_separated_string(label_and_row):
             [label_and_row[0]] + label_and_row[1]))
 
 
+def comma_separated_string_to_label_and_row_tuple(comma_separated_string):
+    string_components = comma_separated_string.split(COMMA_SEPARATOR)
+    return string_components[0], [float(value) for value in string_components[1:]]
+
+
 def capitalized_string_to_snake_case(capitalized_string):
     match = CAPITALIZED_REGEX.search(capitalized_string)
     if not match:
