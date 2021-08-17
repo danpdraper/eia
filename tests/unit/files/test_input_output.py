@@ -64,3 +64,23 @@ def test_write_writes_all_lines_yielded_by_generator_to_provided_file_path():
     finally:
         utilities.delete_test_directory(test_directory_path)
     assert expected_output == actual_output
+
+
+def test_append_appends_all_lines_yielded_by_generator_to_provided_file_path():
+    test_directory_path = utilities.create_test_directory('test_input_output')
+    test_file_path = os.path.join(test_directory_path, 'output.csv')
+    first_expected_output = ['1,2,3,4']
+    try:
+        input_output.append(test_file_path, line_generator(first_expected_output))
+        with open(test_file_path, 'r') as file_object:
+            first_actual_output = file_object.read().split('\n')[:-1]
+        additional_lines = ['5,6,7,8', '9,10,11,12']
+        second_expected_output = first_expected_output + additional_lines
+        input_output.append(test_file_path, line_generator(additional_lines))
+        with open(test_file_path, 'r') as file_object:
+            second_actual_output = file_object.read().split('\n')[:-1]
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert first_expected_output == first_actual_output
+    assert second_expected_output == second_actual_output

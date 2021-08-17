@@ -51,7 +51,13 @@ def test_comma_separated_string_to_label_and_row_tuple_converts_string_to_label_
 
 
 def test_capitalized_string_to_snake_case_converts_capitalized_letters_to_lowercase_and_adds_underscores():
+    # No spaces
     capitalized_string = 'TestCapitalizedString'
+    expected_string = 'test_capitalized_string'
+    actual_string = transformations.capitalized_string_to_snake_case(capitalized_string)
+    assert expected_string == actual_string
+    # Spaces between words
+    capitalized_string = 'Test Capitalized String'
     expected_string = 'test_capitalized_string'
     actual_string = transformations.capitalized_string_to_snake_case(capitalized_string)
     assert expected_string == actual_string

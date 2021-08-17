@@ -82,6 +82,8 @@ def populate_actual_similarity_matrix_and_labels(
         output_directory_path, 'jaccard_index', "{}.csv".format(scope))
     with open(output_file_path, 'r') as file_object:
         for line in file_object:
+            if line.startswith('language'):
+                continue
             line_components = line.rstrip('\n').split(',')
             actual_similarity_matrix_labels.append(line_components[0])
             actual_similarity_matrix.append(

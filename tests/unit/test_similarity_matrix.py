@@ -1,6 +1,8 @@
 import os
 import unittest.mock as mock
 
+import pytest
+
 import eia.languages as languages
 import eia.similarity_matrix as similarity_matrix
 import eia.scopes as scopes
@@ -15,32 +17,32 @@ def test_row_generator_yields_tuples_of_row_label_and_row_with_provision_delimit
 
     file_content_by_relative_path = {
         'state_a_english.txt': (
-            "Title I - General Dispositions\n"
+            "Title I - General Provisions\n"
             "(1) State A's first provision.\n"
             "(2) State A's second provision: [a] is better than the first provision.\n"
         ),
         'state_b_english.txt': (
-            "Title I - General Dispositions\n"
+            "Title I - General Provisions\n"
             "(1) State B's first provision.\n"
             "(2) State B's second provision: [1] is better than the first provision.\n"
         ),
         'state_c_english.txt': (
-            "Title I - General Dispositions\n"
+            "Title I - General Provisions\n"
             "(1) State C's first provision.\n"
             "(2) State C's second provision: [•] is better than the first provision.\n"
         ),
     }
 
     transformed_state_a_contents = (
-        "title i general dispositions (1) state a's first provision (2) state "
+        "title i general provisions (1) state a's first provision (2) state "
         "a's second provision [a] is better than the first provision"
     )
     transformed_state_b_contents = (
-        "title i general dispositions (1) state b's first provision (2) state "
+        "title i general provisions (1) state b's first provision (2) state "
         "b's second provision [1] is better than the first provision"
     )
     transformed_state_c_contents = (
-        "title i general dispositions (1) state c's first provision (2) state "
+        "title i general provisions (1) state c's first provision (2) state "
         "c's second provision [•] is better than the first provision"
     )
 
@@ -88,32 +90,32 @@ def test_row_generator_yields_tuples_of_row_label_and_row_without_provision_deli
 
     file_content_by_relative_path = {
         'state_a_english.txt': (
-            "Title I - General Dispositions\n"
+            "Title I - General Provisions\n"
             "(1) State A's first provision.\n"
             "(2) State A's second provision: [a] is better than the first provision.\n"
         ),
         'state_b_english.txt': (
-            "Title I - General Dispositions\n"
+            "Title I - General Provisions\n"
             "(1) State B's first provision.\n"
             "(2) State B's second provision: [1] is better than the first provision.\n"
         ),
         'state_c_english.txt': (
-            "Title I - General Dispositions\n"
+            "Title I - General Provisions\n"
             "(1) State C's first provision.\n"
             "(2) State C's second provision: [•] is better than the first provision.\n"
         ),
     }
 
     transformed_state_a_contents = (
-        "title i general dispositions state a's first provision state a's "
+        "title i general provisions state a's first provision state a's "
         "second provision is better than the first provision"
     )
     transformed_state_b_contents = (
-        "title i general dispositions state b's first provision state b's "
+        "title i general provisions state b's first provision state b's "
         "second provision is better than the first provision"
     )
     transformed_state_c_contents = (
-        "title i general dispositions state c's first provision state c's "
+        "title i general provisions state c's first provision state c's "
         "second provision is better than the first provision"
     )
 
@@ -161,28 +163,28 @@ def test_row_generator_excludes_files_from_states_not_in_states_to_include_file(
 
     file_content_by_relative_path = {
         'state_a_english.txt': (
-            "Title I - General Dispositions\n"
+            "Title I - General Provisions\n"
             "(1) State A's first provision.\n"
             "(2) State A's second provision: [a] is better than the first provision.\n"
         ),
         'state_b_english.txt': (
-            "Title I - General Dispositions\n"
+            "Title I - General Provisions\n"
             "(1) State B's first provision.\n"
             "(2) State B's second provision: [1] is better than the first provision.\n"
         ),
         'state_c_english.txt': (
-            "Title I - General Dispositions\n"
+            "Title I - General Provisions\n"
             "(1) State C's first provision.\n"
             "(2) State C's second provision: [•] is better than the first provision.\n"
         ),
     }
 
     transformed_state_a_contents = (
-        "title i general dispositions (1) state a's first provision (2) state "
+        "title i general provisions (1) state a's first provision (2) state "
         "a's second provision [a] is better than the first provision"
     )
     transformed_state_c_contents = (
-        "title i general dispositions (1) state c's first provision (2) state "
+        "title i general provisions (1) state c's first provision (2) state "
         "c's second provision [•] is better than the first provision"
     )
 
@@ -225,28 +227,28 @@ def test_row_generator_ignores_comments_in_states_to_include_file():
 
     file_content_by_relative_path = {
         'state_a_english.txt': (
-            "Title I - General Dispositions\n"
+            "Title I - General Provisions\n"
             "(1) State A's first provision.\n"
             "(2) State A's second provision: [a] is better than the first provision.\n"
         ),
         'state_b_english.txt': (
-            "Title I - General Dispositions\n"
+            "Title I - General Provisions\n"
             "(1) State B's first provision.\n"
             "(2) State B's second provision: [1] is better than the first provision.\n"
         ),
         'state_c_english.txt': (
-            "Title I - General Dispositions\n"
+            "Title I - General Provisions\n"
             "(1) State C's first provision.\n"
             "(2) State C's second provision: [•] is better than the first provision.\n"
         ),
     }
 
     transformed_state_b_contents = (
-        "title i general dispositions (1) state b's first provision (2) state "
+        "title i general provisions (1) state b's first provision (2) state "
         "b's second provision [1] is better than the first provision"
     )
     transformed_state_c_contents = (
-        "title i general dispositions (1) state c's first provision (2) state "
+        "title i general provisions (1) state c's first provision (2) state "
         "c's second provision [•] is better than the first provision"
     )
 
@@ -290,6 +292,7 @@ def test_element_generator_yields_tuple_of_row_label_and_column_label_and_elemen
 
     file_content_by_relative_path = {
         'test_similarity_matrix.csv': (
+            'language:english\n'
             'State A,0.01,0.02,0.03\n'
             'State B,0.04,0.05,0.06\n'
             'State C,0.07,0.08,0.09\n'
@@ -333,3 +336,92 @@ def test_element_generator_yields_tuple_of_row_label_and_column_label_and_elemen
         assert round(abs(
             expected_row_labels_and_column_labels_and_elements[index][2] -
             actual_row_labels_and_column_labels_and_elements[index][2]), 4) <= EPSILON
+
+
+def test_get_language_extracts_language_from_matrix_file_at_provided_path():
+    test_directory_path = utilities.create_test_directory('test_similarity_matrix')
+
+    file_content_by_relative_path = {
+        'language_at_top.csv': (
+            'language:english\n'
+            'State A,0.01,0.02,0.03\n'
+            'State B,0.04,0.05,0.06\n'
+            'State C,0.07,0.08,0.09\n'
+            'State D,0.10,0.11,0.12\n'
+        ),
+        'language_in_middle.csv': (
+            'State A,0.01,0.02,0.03\n'
+            'State B,0.04,0.05,0.06\n'
+            'language:english\n'
+            'State C,0.07,0.08,0.09\n'
+            'State D,0.10,0.11,0.12\n'
+        ),
+        'language_at_bottom.csv': (
+            'State A,0.01,0.02,0.03\n'
+            'State B,0.04,0.05,0.06\n'
+            'State C,0.07,0.08,0.09\n'
+            'State D,0.10,0.11,0.12\n'
+            'language:english\n'
+        ),
+    }
+
+    language_at_top_file_path = os.path.join(
+        test_directory_path, 'language_at_top.csv')
+    language_in_middle_file_path = os.path.join(
+        test_directory_path, 'language_in_middle.csv')
+    language_at_bottom_file_path = os.path.join(
+        test_directory_path, 'language_at_bottom.csv')
+
+    expected_language = 'english'
+
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        # Language at top
+        assert expected_language == similarity_matrix.get_language(
+            language_at_top_file_path)
+        # Language in middle
+        assert expected_language == similarity_matrix.get_language(
+            language_in_middle_file_path)
+        # Language at bottom
+        assert expected_language == similarity_matrix.get_language(
+            language_at_bottom_file_path)
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+
+def test_get_language_raises_runtime_error_when_more_or_less_than_one_language_in_file():
+    test_directory_path = utilities.create_test_directory('test_similarity_matrix')
+
+    file_content_by_relative_path = {
+        'no_language.csv': (
+            'State A,0.01,0.02,0.03\n'
+            'State B,0.04,0.05,0.06\n'
+            'State C,0.07,0.08,0.09\n'
+            'State D,0.10,0.11,0.12\n'
+        ),
+        'two_languages.csv': (
+            'language:english\n'
+            'State A,0.01,0.02,0.03\n'
+            'State B,0.04,0.05,0.06\n'
+            'State C,0.07,0.08,0.09\n'
+            'State D,0.10,0.11,0.12\n'
+            'language:english\n'
+        ),
+    }
+
+    no_language_file_path = os.path.join(test_directory_path, 'no_language.csv')
+    two_languages_file_path = os.path.join(
+        test_directory_path, 'two_languages.csv')
+
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        # No language in file
+        with pytest.raises(RuntimeError):
+            similarity_matrix.get_language(no_language_file_path)
+        # Two languages in file
+        with pytest.raises(RuntimeError):
+            similarity_matrix.get_language(two_languages_file_path)
+    finally:
+        utilities.delete_test_directory(test_directory_path)

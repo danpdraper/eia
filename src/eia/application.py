@@ -2,6 +2,7 @@ import logging
 import os
 
 import eia.environment as environment
+import eia.files.csv_files as csv_files
 import eia.files.input_output as input_output
 import eia.files.text_files as text_files
 import eia.plots as plots
@@ -54,7 +55,8 @@ def calculate_similarity(
             preserve_provision_delimiters, states_to_include_file_path)
     ]
 
-    input_output.write(
+    input_output.write(output_file_path, ["language:{}".format(language)])
+    input_output.append(
         output_file_path, map(
             lambda value: transformations.label_and_row_tuple_to_comma_separated_string(value),
             labels_and_rows))
@@ -67,17 +69,22 @@ def calculate_similarity(
 
 
 def extract_highest_similarity_scores(
-        similarity_matrix_file_path, number_of_scores, debug):
+        similarity_matrix_file_path, number_of_scores,
+        include_provision_contents_in_output, legislation_directory_path, debug):
     configure_logging(debug)
     logger = logging.getLogger(__name__)
     logger.info(
         "Starting application with the following parameters: "
         "similarity_matrix_file_path = {}, "
         "number_of_scores = {}, "
+        "include_provision_contents_in_output = {}, "
+        "legislation_directory_path = {}, "
         "debug = {}".format(
-            similarity_matrix_file_path, number_of_scores, debug))
+            similarity_matrix_file_path, number_of_scores,
+            include_provision_contents_in_output, legislation_directory_path,
+            debug))
 
-    return sorted(
+    sorted_labels_and_elements = sorted(
         map(
             lambda label_tuples_and_element: (
                 # Return the state and provision separated by a space if the
@@ -101,9 +108,9 @@ def extract_highest_similarity_scores(
                 label_tuples_and_element[1][0] < label_tuples_and_element[0][0],
                 map(
                     lambda labels_and_element: (
-                        text_files.state_and_provision_number_from_label(
+                        csv_files.state_and_provision_number_from_label(
                             labels_and_element[0]),
-                        text_files.state_and_provision_number_from_label(
+                        csv_files.state_and_provision_number_from_label(
                             labels_and_element[1]),
                         labels_and_element[2],
                     ),
@@ -112,3 +119,20 @@ def extract_highest_similarity_scores(
         # Sort by the element (i.e. the similarity score).
         key=lambda labels_and_element: labels_and_element[2],
         reverse=True)[:number_of_scores]
+
+    if include_provision_contents_in_output:
+        language = similarity_matrix.get_language(similarity_matrix_file_path)
+        return map(
+            lambda labels_and_element: labels_and_element + (
+                text_files.find_provision_contents(
+                    legislation_directory_path, language,
+                    *csv_files.state_and_provision_number_from_label(
+                        labels_and_element[0])),
+                text_files.find_provision_contents(
+                    legislation_directory_path, language,
+                    *csv_files.state_and_provision_number_from_label(
+                        labels_and_element[1])),
+            ),
+            sorted_labels_and_elements)
+
+    return sorted_labels_and_elements

@@ -18,11 +18,11 @@ class TestCalculateSimilarityArgumentParser(object):
             'english',
             '/path/to/output/directory',
             '--legislation_directory_path',
-            'test_legislation_directory_path',
+            '/path/to/legislation/directory',
             '--debug',
             '--do_not_preserve_provision_delimiters',
             '--states_to_include_file_path',
-            'test_states_to_include_file_path',
+            '/path/to/states/to/include/file',
         ]
         expected_namespace = {
             # The equality holds in each of the following three cases because
@@ -31,10 +31,10 @@ class TestCalculateSimilarityArgumentParser(object):
             'scope': scopes.FULL_TEXT,
             'language': languages.ENGLISH,
             'output_directory_path': '/path/to/output/directory',
-            'legislation_directory_path': 'test_legislation_directory_path',
+            'legislation_directory_path': '/path/to/legislation/directory',
             'debug': True,
             'preserve_provision_delimiters': False,
-            'states_to_include_file_path': 'test_states_to_include_file_path',
+            'states_to_include_file_path': '/path/to/states/to/include/file',
         }
         actual_namespace = vars(self.argument_parser.parse(arguments))
         assert expected_namespace == actual_namespace
@@ -46,11 +46,11 @@ class TestCalculateSimilarityArgumentParser(object):
             'english',
             '/path/to/output/directory',
             '--legislation_directory_path',
-            'test_legislation_directory_path',
+            '/path/to/legislation/directory',
             '--debug',
             '--do_not_preserve_provision_delimiters',
             '--states_to_include_file_path',
-            'test_states_to_include_file_path',
+            '/path/to/states/to/include/file',
         ]
         with pytest.raises(SystemExit):
             self.argument_parser.parse(arguments)
@@ -62,11 +62,11 @@ class TestCalculateSimilarityArgumentParser(object):
             'english',
             '/path/to/output/directory',
             '--legislation_directory_path',
-            'test_legislation_directory_path',
+            '/path/to/legislation/directory',
             '--debug',
             '--do_not_preserve_provision_delimiters',
             '--states_to_include_file_path',
-            'test_states_to_include_file_path',
+            '/path/to/states/to/include/file',
         ]
         with pytest.raises(SystemExit):
             self.argument_parser.parse(arguments)
@@ -78,11 +78,11 @@ class TestCalculateSimilarityArgumentParser(object):
             'unsupported_language',
             '/path/to/output/directory',
             '--legislation_directory_path',
-            'test_legislation_directory_path',
+            '/path/to/legislation/directory',
             '--debug',
             '--do_not_preserve_provision_delimiters',
             '--states_to_include_file_path',
-            'test_states_to_include_file_path',
+            '/path/to/states/to/include/file',
         ]
         with pytest.raises(SystemExit):
             self.argument_parser.parse(arguments)
@@ -119,15 +119,35 @@ class TestHighestSimilarityScoreArgumentParser(object):
         self.argument_parser = argument_parsers.HighestSimilarityScoreArgumentParser()
 
     def test_parse_extracts_expected_arguments(self):
-        arguments = ['/path/to/similarity/matrix', '5', '--debug']
+        arguments = [
+            '/path/to/similarity/matrix',
+            '5',
+            '--include_provision_contents_in_output',
+            '--legislation_directory_path',
+            '/path/to/legislation/directory',
+            '--debug',
+        ]
         expected_namespace = {
             'similarity_matrix_file_path': '/path/to/similarity/matrix',
             'number_of_scores': 5,
+            'include_provision_contents_in_output': True,
+            'legislation_directory_path': '/path/to/legislation/directory',
             'debug': True,
         }
         actual_namespace = vars(self.argument_parser.parse(arguments))
         assert expected_namespace == actual_namespace
 
+    def test_parse_assigns_false_to_include_provision_contents_in_output_parameter_when_argument_not_provided(self):
+        arguments = ['/path/to/similarity/matrix', '5']
+        assert self.argument_parser.parse(arguments).include_provision_contents_in_output is False
+
     def test_parse_assigns_false_to_debug_parameter_when_debug_argument_not_provided(self):
         arguments = ['/path/to/similarity/matrix', '5']
         assert self.argument_parser.parse(arguments).debug is False
+
+    def test_parse_assigns_path_in_package_to_legislation_directory_path_parameter_when_argument_not_provided(self):
+        arguments = ['/path/to/similarity/matrix', '5']
+        expected_legislation_directory_path = environment.LEGISLATION_DIRECTORY_PATH
+        actual_legislation_directory_path = \
+            self.argument_parser.parse(arguments).legislation_directory_path
+        assert expected_legislation_directory_path == actual_legislation_directory_path

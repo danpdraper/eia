@@ -12,7 +12,6 @@ LOGGER = logging.getLogger(__name__)
 
 COMMENT_LINE_PREFIX = '#'
 PROVISION_REGEX = re.compile(r'^\(([0-9]+)\) (.*)')
-STATE_AND_PROVISION_LABEL_REGEX = re.compile(r'^([A-Za-z ]+)( [0-9]+)?$')
 STATE_REGEX = re.compile(r'^.*\/([a-z_]+)_[a-z]+\.txt$')
 
 
@@ -44,17 +43,35 @@ def filter_file_paths_by_state(file_paths, states):
                 file_paths))))
 
 
+def find_provision_contents(
+        text_file_directory_path, language, state_name, provision_number):
+    file_paths = filter_file_paths_by_state(
+        filter_file_paths_by_language(
+            discover(text_file_directory_path), language),
+        [transformations.capitalized_string_to_snake_case(state_name)])
+    if len(file_paths) != 1:
+        raise RuntimeError(
+            "Expected to find one file corresponding to state {} and language "
+            "{}, found: {}.".format(state_name, language, file_paths))
+
+    provision_number = int(provision_number)
+    provision_contents = list(map(
+        lambda match: match.group(2),
+        filter(
+            lambda match: match is not None and int(match.group(1)) == provision_number,
+            map(
+                lambda line: re.match(PROVISION_REGEX, line),
+                input_output.line_generator(file_paths[0])))))
+    if len(provision_contents) != 1:
+        raise RuntimeError(
+            "Expected to find one provision numbered {} in file {}, found: "
+            "{}.".format(provision_number, file_paths[0], provision_contents))
+
+    return provision_contents[0]
+
+
 def is_not_comment(line):
     return not line.startswith(COMMENT_LINE_PREFIX)
-
-
-def state_and_provision_number_from_label(label):
-    match = STATE_AND_PROVISION_LABEL_REGEX.match(label)
-    if not match:
-        raise ValueError(
-            "Label {} does not consist of a state name and optional provision "
-            "number.".format(label))
-    return match.group(1), match.group(2).lstrip(' ') if match.group(2) else match.group(2)
 
 
 TRANSFORMATIONS = [

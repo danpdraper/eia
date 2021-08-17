@@ -1,8 +1,8 @@
 import re
 
 
-CAPITALIZED_REGEX = re.compile(r'(^|[a-z])([A-Z])')
-COMMA_SEPARATOR = ','
+CAPITALIZED_REGEX = re.compile(r'(^|[a-z]| )([A-Z])')
+COMMA = ','
 EMPTY_STRING = ''
 LEADING_AND_TRAILING_WHITESPACE_REGEX = re.compile(r'^[ \n\t]+|[ \n\t]+$')
 PROVISION_DELIMITER_REGEX = re.compile(
@@ -32,13 +32,13 @@ def file_path_to_state_name_capitalized(file_path):
 
 
 def label_and_row_tuple_to_comma_separated_string(label_and_row):
-    return COMMA_SEPARATOR.join(
+    return COMMA.join(
         map(lambda value: str(value) if type(value) in [int, float] else value,
             [label_and_row[0]] + label_and_row[1]))
 
 
 def comma_separated_string_to_label_and_row_tuple(comma_separated_string):
-    string_components = comma_separated_string.split(COMMA_SEPARATOR)
+    string_components = comma_separated_string.split(COMMA)
     return string_components[0], [float(value) for value in string_components[1:]]
 
 
@@ -49,7 +49,8 @@ def capitalized_string_to_snake_case(capitalized_string):
     return re.sub(
         CAPITALIZED_REGEX,
         lambda match: r"{}{}{}".format(
-            match.group(1), EMPTY_STRING if match.group(1) == EMPTY_STRING else UNDERSCORE,
+            EMPTY_STRING if match.group(1) == SINGLE_SPACE else match.group(1),
+            EMPTY_STRING if match.group(1) == EMPTY_STRING else UNDERSCORE,
             match.group(2).lower()),
         capitalized_string)
 

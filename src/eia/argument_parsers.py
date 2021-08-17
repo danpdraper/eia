@@ -53,6 +53,11 @@ class HighestSimilarityScoreArgumentParser(object):
         self.argument_parser = argparse.ArgumentParser()
         self.argument_parser.add_argument('similarity_matrix_file_path')
         self.argument_parser.add_argument('number_of_scores', type=int)
+        self.argument_parser.add_argument(
+            '--include_provision_contents_in_output', action='store_true')
+        self.argument_parser.add_argument(
+            '--legislation_directory_path',
+            default=environment.LEGISLATION_DIRECTORY_PATH)
         self.argument_parser.add_argument('--debug', action='store_true')
 
     def parse(self, arguments=None):

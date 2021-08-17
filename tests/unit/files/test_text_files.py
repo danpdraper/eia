@@ -102,6 +102,104 @@ def test_filter_file_paths_by_state_only_returns_files_whose_state_is_one_of_tho
     assert expected_file_paths == text_files.filter_file_paths_by_state(file_paths, states)
 
 
+def test_find_provision_contents_finds_contents_of_provided_provision_in_file_concerning_provided_state_and_language():
+    test_directory_path = utilities.create_test_directory('test_text_files')
+
+    file_content_by_relative_path = {
+        'state_a_english.txt': (
+            '(1) First provision in State A English.\n'
+            '(2) Second provision in State A English.\n'
+        ),
+        os.path.join('nested', 'state_a_french.txt'): (
+            '(1) First provision in State A French.\n'
+            '(2) Second provision in State A French.\n'
+        ),
+        'state_b_english.txt': (
+            '(1) First provision in State B English.\n'
+            '(2) Second provision in State B English.\n'
+        ),
+        os.path.join('nested', 'state_b_french.txt'): (
+            '(1) First provision in State B French.\n'
+            '(2) Second provision in State B French.\n'
+        ),
+        'state_c_english.txt': (
+            '(1) First provision in State C English.\n'
+            '(2) Second provision in State C English.\n'
+        ),
+        os.path.join('nested', 'state_c_french.txt'): (
+            '(1) First provision in State C French.\n'
+            '(2) Second provision in State C French.\n'
+        ),
+    }
+
+    first_expected_provision = 'Second provision in State B English.'
+    second_expected_provision = 'First provision in State C French.'
+
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        # State B English provision 2
+        first_actual_provision = text_files.find_provision_contents(
+            test_directory_path, 'english', 'State B', 2)
+        # State C French provision 1
+        second_actual_provision = text_files.find_provision_contents(
+            test_directory_path, 'french', 'State C', 1)
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert first_expected_provision == first_actual_provision
+    assert second_expected_provision == second_actual_provision
+
+
+def test_find_provision_contents_raises_runtime_error_when_more_or_less_than_one_file_concerning_state_and_language():
+    test_directory_path = utilities.create_test_directory('test_text_files')
+
+    file_content_by_relative_path = {
+        'state_a_english.txt': (
+            '(1) First provision in State A English.\n'
+            '(2) Second provision in State A English.\n'
+        ),
+        os.path.join('nested', 'state_a_english.txt'): (
+            '(1) First provision in State A English.\n'
+            '(2) Second provision in State A English.\n'
+        ),
+    }
+
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        # No file concerning state and language
+        with pytest.raises(RuntimeError):
+            text_files.find_provision_contents(
+                test_directory_path, 'french', 'State A', 1)
+        # Two files concerning state and language
+        with pytest.raises(RuntimeError):
+            text_files.find_provision_contents(
+                test_directory_path, 'english', 'State A', 1)
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+
+def test_find_provision_contents_raises_runtime_error_when_provided_provision_not_found_in_file():
+    test_directory_path = utilities.create_test_directory('test_text_files')
+
+    file_content_by_relative_path = {
+        'state_a_english.txt': (
+            '(1) First provision in State A English.\n'
+            '(2) Second provision in State A English.\n'
+        ),
+    }
+
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        with pytest.raises(RuntimeError):
+            text_files.find_provision_contents(
+                test_directory_path, 'english', 'State A', 3)
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+
 def test_is_not_comment_returns_true_when_line_does_not_start_with_hashmark():
     # Letter
     assert text_files.is_not_comment('A') is True
@@ -135,38 +233,6 @@ def test_is_not_comment_returns_true_when_line_does_not_start_with_hashmark():
 
 def test_is_not_comment_returns_false_when_line_starts_with_hashmark():
     assert text_files.is_not_comment('#') is False
-
-
-def test_state_and_provision_number_from_label_extracts_state_name_and_provision_number_from_label():
-    # Single-word state name
-    label = 'A'
-    actual_label_and_provision = text_files.state_and_provision_number_from_label(label)
-    assert 'A' == actual_label_and_provision[0]
-    assert actual_label_and_provision[1] is None
-    # Multi-word state name
-    label = 'State A'
-    actual_label_and_provision = text_files.state_and_provision_number_from_label(label)
-    assert 'State A' == actual_label_and_provision[0]
-    assert actual_label_and_provision[1] is None
-    # Single-word state name and single-digit provision number
-    label = 'A 1'
-    assert 'A', '1' == text_files.state_and_provision_number_from_label(label)
-    # Single-word state name and multi-digit provision number
-    label = 'A 22'
-    assert 'A', '22' == text_files.state_and_provision_number_from_label(label)
-    # Multi-word state name and single-digit provision number
-    label = 'State A 1'
-    assert 'State A', '1' == text_files.state_and_provision_number_from_label(label)
-    # Multi-word state name and multi-digit provision number
-    label = 'State A 22'
-    assert 'State A', '22' == text_files.state_and_provision_number_from_label(label)
-
-
-def test_state_and_provision_number_from_label_raises_value_error_when_provided_string_does_not_match_expected_format():
-    # Provision number without state name
-    label = '1'
-    with pytest.raises(ValueError):
-        text_files.state_and_provision_number_from_label(label)
 
 
 def populate_test_directory_for_input_text_generator_test(test_directory_path):
