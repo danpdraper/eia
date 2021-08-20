@@ -67,6 +67,16 @@ def snake_case_string_to_capitalized(snake_case_string):
         snake_case_string)
 
 
+def list_to_occurrences(list_to_transform):
+    occurrences = {}
+    for item in list_to_transform:
+        if item in occurrences:
+            occurrences[item] += 1
+        else:
+            occurrences[item] = 1
+    return occurrences
+
+
 def delete_punctuation_from_string(string):
     return re.sub(
         PUNCTUATION_REGEX,

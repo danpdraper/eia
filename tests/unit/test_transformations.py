@@ -88,6 +88,20 @@ def test_snake_case_string_to_capitalized_raises_value_error_if_string_is_not_sn
         transformations.snake_case_string_to_capitalized(string)
 
 
+def test_list_to_occurrences_returns_dict_containing_number_of_occurrences_of_each_item_in_provided_list():
+    list_to_transform = ['i', 'like', 'walking', 'the', 'dog', 'while', 'walking', 'the', 'cat']
+    expected_occurrences = {
+        'i': 1,
+        'like': 1,
+        'walking': 2,
+        'the': 2,
+        'dog': 1,
+        'while': 1,
+        'cat': 1,
+    }
+    assert expected_occurrences == transformations.list_to_occurrences(list_to_transform)
+
+
 def test_delete_punctuation_from_string_deletes_all_punctuation_from_provided_string():
     string = 'Test, test; test: test. test-test "Test" , \'test\' ; tes\'t . test : test ? test - test'
     expected_string = 'Test test test test testtest Test  test  tes\'t  test  test  test  test'

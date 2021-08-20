@@ -26,7 +26,7 @@ class CalculateSimilarityArgumentParser(object):
         self.argument_parser = argparse.ArgumentParser()
         self.argument_parser.add_argument(
             'algorithm', action=AlgorithmAction,
-            choices=['jaccard_index', 'term_frequency'])
+            choices=['jaccard_index', 'term_frequency', 'bigram_frequency'])
         self.argument_parser.add_argument(
             'scope', action=ScopeAction, choices=['full_text', 'provision'])
         self.argument_parser.add_argument(
