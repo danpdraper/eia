@@ -9,9 +9,6 @@ import eia.scopes as scopes
 import eia.tests.utilities as utilities
 
 
-EPSILON = 0.0005
-
-
 def test_row_generator_yields_tuples_of_row_label_and_row_with_provision_delimiters():
     test_directory_path = utilities.create_test_directory('test_similarity_matrix')
 
@@ -287,55 +284,51 @@ def test_row_generator_ignores_comments_in_states_to_include_file():
     assert expected_labels_and_rows == actual_labels_and_rows
 
 
-def test_element_generator_yields_tuple_of_row_label_and_column_label_and_element():
+def test_from_file_returns_labels_and_lower_diagonal_matrix_without_diagonal():
     test_directory_path = utilities.create_test_directory('test_similarity_matrix')
 
     file_content_by_relative_path = {
         'test_similarity_matrix.csv': (
             'language:english\n'
-            'State A,0.01,0.02,0.03\n'
-            'State B,0.04,0.05,0.06\n'
-            'State C,0.07,0.08,0.09\n'
+            'State A 1,1.0,0.01,0.02,0.03,0.04,0.05\n'
+            'State A 2,0.01,1.0,0.06,0.07,0.08,0.09\n'
+            'State B 1,0.02,0.06,1.0,0.1,0.11,0.12\n'
+            'State B 2,0.03,0.07,0.1,1.0,0.13,0.14\n'
+            'State C 1,0.04,0.08,0.11,0.13,1.0,0.15\n'
+            'State C 2,0.05,0.09,0.12,0.14,0.15,1.0\n'
         ),
     }
 
     similarity_matrix_file_path = os.path.join(
         test_directory_path, 'test_similarity_matrix.csv')
 
-    expected_row_labels_and_column_labels_and_elements = [
-        ('State A', 'State A', 0.01),
-        ('State A', 'State B', 0.02),
-        ('State A', 'State C', 0.03),
-        ('State B', 'State A', 0.04),
-        ('State B', 'State B', 0.05),
-        ('State B', 'State C', 0.06),
-        ('State C', 'State A', 0.07),
-        ('State C', 'State B', 0.08),
-        ('State C', 'State C', 0.09),
-    ]
+    expected_labels = (
+        'State A 1',
+        'State A 2',
+        'State B 1',
+        'State B 2',
+        'State C 1',
+        'State C 2',
+    )
+    expected_matrix = (
+        [],
+        [0.01],
+        [0.02, 0.06],
+        [0.03, 0.07, 0.1],
+        [0.04, 0.08, 0.11, 0.13],
+        [0.05, 0.09, 0.12, 0.14, 0.15],
+    )
 
     try:
         utilities.populate_test_directory(
             test_directory_path, file_content_by_relative_path)
-        actual_row_labels_and_column_labels_and_elements = [
-            labels_and_element for labels_and_element in
-            similarity_matrix.element_generator(similarity_matrix_file_path)
-        ]
+        actual_labels, actual_matrix = similarity_matrix.from_file(
+            similarity_matrix_file_path)
     finally:
         utilities.delete_test_directory(test_directory_path)
 
-    assert len(expected_row_labels_and_column_labels_and_elements) == \
-        len(actual_row_labels_and_column_labels_and_elements)
-    for index in range(len(expected_row_labels_and_column_labels_and_elements)):
-        assert len(expected_row_labels_and_column_labels_and_elements[index]) == \
-            len(actual_row_labels_and_column_labels_and_elements[index])
-        assert expected_row_labels_and_column_labels_and_elements[index][0] == \
-            actual_row_labels_and_column_labels_and_elements[index][0]
-        assert expected_row_labels_and_column_labels_and_elements[index][1] == \
-            actual_row_labels_and_column_labels_and_elements[index][1]
-        assert round(abs(
-            expected_row_labels_and_column_labels_and_elements[index][2] -
-            actual_row_labels_and_column_labels_and_elements[index][2]), 4) <= EPSILON
+    assert expected_labels == actual_labels
+    assert expected_matrix == actual_matrix
 
 
 def test_get_language_extracts_language_from_matrix_file_at_provided_path():

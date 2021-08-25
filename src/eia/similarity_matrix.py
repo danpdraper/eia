@@ -43,19 +43,20 @@ def row_generator(
         yield row_label, row
 
 
-def element_generator(similarity_matrix_file_path):
-    labels_and_rows = list(map(
-        lambda line: transformations.comma_separated_string_to_label_and_row_tuple(line),
-        filter(
-            lambda line: csv_files.contains_comma(line),
-            input_output.line_generator(similarity_matrix_file_path))))
-    for row_index in range(len(labels_and_rows)):
-        for column_index in range(len(labels_and_rows[row_index][1])):
-            yield (
-                labels_and_rows[row_index][0],
-                labels_and_rows[column_index][0],
-                labels_and_rows[row_index][1][column_index],
-            )
+def from_file(similarity_matrix_file_path):
+    # The following produces labels and a lower diagonal matrix without the
+    # diagonal.
+    labels_and_rows = map(
+        lambda index_and_label_and_row: (
+            index_and_label_and_row[1][0],
+            index_and_label_and_row[1][1][:index_and_label_and_row[0]],
+        ), enumerate(map(
+            lambda line: transformations.comma_separated_string_to_label_and_row_tuple(line),
+            filter(
+                lambda line: csv_files.contains_comma(line),
+                input_output.line_generator(similarity_matrix_file_path)))))
+
+    return zip(*labels_and_rows)
 
 
 def get_language(similarity_matrix_file_path):

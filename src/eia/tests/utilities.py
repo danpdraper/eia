@@ -135,3 +135,18 @@ def compare_expected_and_actual_similarity_matrices(
                     row_index, column_index, expected_row[column_index],
                     actual_row[column_index]))
             assert round(abs(expected_row[column_index] - actual_row[column_index]), 4) <= EPSILON
+
+
+def plot_file_path(output_directory_path, algorithm, scope):
+    return os.path.join(
+        output_directory_path, algorithm, "{}.png".format(scope))
+
+
+def assert_plot_file_exists(output_directory_path, algorithm, scope):
+    assert os.path.exists(
+        plot_file_path(output_directory_path, algorithm, scope)) is True
+
+
+def assert_plot_file_does_not_exist(output_directory_path, algorithm, scope):
+    assert os.path.exists(
+        plot_file_path(output_directory_path, algorithm, scope)) is False

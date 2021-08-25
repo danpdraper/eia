@@ -385,8 +385,7 @@ def test_bigram_frequency_full_text_preserve_provision_delimiters():
     }
 
     script_file_path = os.path.join(
-        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity',
-        'calculate_similarity.py')
+        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity.py')
     algorithm = 'bigram_frequency'
     scope = 'full_text'
     output_directory_path = os.path.join(test_directory_path, 'output')
@@ -402,18 +401,20 @@ def test_bigram_frequency_full_text_preserve_provision_delimiters():
         subprocess.run(
             [
                 script_file_path,
+                '--legislation_directory_path',
+                legislation_directory_path,
+                '--debug',
+                'matrix_and_plot',
                 algorithm,
                 scope,
                 'english',
                 output_directory_path,
-                '--legislation_directory_path',
-                legislation_directory_path,
-                '--debug',
             ],
             check=True)
         utilities.populate_actual_similarity_matrix_and_labels(
             output_directory_path, algorithm, scope,
             actual_similarity_matrix_labels, actual_similarity_matrix)
+        utilities.assert_plot_file_exists(output_directory_path, algorithm, scope)
     finally:
         utilities.delete_test_directory(test_directory_path)
 
@@ -795,8 +796,7 @@ def test_bigram_frequency_full_text_do_not_preserve_provision_delimiters():
     }
 
     script_file_path = os.path.join(
-        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity',
-        'calculate_similarity.py')
+        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity.py')
     algorithm = 'bigram_frequency'
     scope = 'full_text'
     output_directory_path = os.path.join(test_directory_path, 'output')
@@ -812,19 +812,21 @@ def test_bigram_frequency_full_text_do_not_preserve_provision_delimiters():
         subprocess.run(
             [
                 script_file_path,
+                '--legislation_directory_path',
+                legislation_directory_path,
+                '--debug',
+                'matrix_and_plot',
                 algorithm,
                 scope,
                 'english',
                 output_directory_path,
-                '--legislation_directory_path',
-                legislation_directory_path,
-                '--debug',
                 '--do_not_preserve_provision_delimiters',
             ],
             check=True)
         utilities.populate_actual_similarity_matrix_and_labels(
             output_directory_path, algorithm, scope,
             actual_similarity_matrix_labels, actual_similarity_matrix)
+        utilities.assert_plot_file_exists(output_directory_path, algorithm, scope)
     finally:
         utilities.delete_test_directory(test_directory_path)
 
@@ -1111,8 +1113,7 @@ def test_bigram_frequency_full_text_list_of_states_to_include():
         file_object.write('state_c\n')
 
     script_file_path = os.path.join(
-        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity',
-        'calculate_similarity.py')
+        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity.py')
     algorithm = 'bigram_frequency'
     scope = 'full_text'
     output_directory_path = os.path.join(test_directory_path, 'output')
@@ -1128,20 +1129,22 @@ def test_bigram_frequency_full_text_list_of_states_to_include():
         subprocess.run(
             [
                 script_file_path,
+                '--legislation_directory_path',
+                legislation_directory_path,
+                '--debug',
+                'matrix_and_plot',
                 algorithm,
                 scope,
                 'english',
                 output_directory_path,
-                '--legislation_directory_path',
-                legislation_directory_path,
                 '--states_to_include_file_path',
                 states_to_include_file_path,
-                '--debug',
             ],
             check=True)
         utilities.populate_actual_similarity_matrix_and_labels(
             output_directory_path, algorithm, scope,
             actual_similarity_matrix_labels, actual_similarity_matrix)
+        utilities.assert_plot_file_exists(output_directory_path, algorithm, scope)
     finally:
         utilities.delete_test_directory(test_directory_path)
 
@@ -1571,8 +1574,7 @@ def test_bigram_frequency_provisions():
     }
 
     script_file_path = os.path.join(
-        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity',
-        'calculate_similarity.py')
+        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity.py')
     algorithm = 'bigram_frequency'
     scope = 'provision'
     output_directory_path = os.path.join(test_directory_path, 'output')
@@ -1588,18 +1590,20 @@ def test_bigram_frequency_provisions():
         subprocess.run(
             [
                 script_file_path,
+                '--legislation_directory_path',
+                legislation_directory_path,
+                '--debug',
+                'matrix_and_plot',
                 algorithm,
                 scope,
                 'english',
                 output_directory_path,
-                '--legislation_directory_path',
-                legislation_directory_path,
-                '--debug',
             ],
             check=True)
         utilities.populate_actual_similarity_matrix_and_labels(
             output_directory_path, algorithm, scope,
             actual_similarity_matrix_labels, actual_similarity_matrix)
+        utilities.assert_plot_file_exists(output_directory_path, algorithm, scope)
     finally:
         utilities.delete_test_directory(test_directory_path)
 
@@ -1916,8 +1920,7 @@ def test_bigram_frequency_provisions_list_of_states_to_include():
         file_object.write('state_c\n')
 
     script_file_path = os.path.join(
-        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity',
-        'calculate_similarity.py')
+        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity.py')
     algorithm = 'bigram_frequency'
     scope = 'provision'
     output_directory_path = os.path.join(test_directory_path, 'output')
@@ -1933,20 +1936,22 @@ def test_bigram_frequency_provisions_list_of_states_to_include():
         subprocess.run(
             [
                 script_file_path,
+                '--legislation_directory_path',
+                legislation_directory_path,
+                '--debug',
+                'matrix_and_plot',
                 algorithm,
                 scope,
                 'english',
                 output_directory_path,
-                '--legislation_directory_path',
-                legislation_directory_path,
                 '--states_to_include_file_path',
                 states_to_include_file_path,
-                '--debug',
             ],
             check=True)
         utilities.populate_actual_similarity_matrix_and_labels(
             output_directory_path, algorithm, scope,
             actual_similarity_matrix_labels, actual_similarity_matrix)
+        utilities.assert_plot_file_exists(output_directory_path, algorithm, scope)
     finally:
         utilities.delete_test_directory(test_directory_path)
 
@@ -1983,8 +1988,7 @@ def test_bigram_frequency_output_directory_does_not_exist():
     }
 
     script_file_path = os.path.join(
-        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity',
-        'calculate_similarity.py')
+        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity.py')
     output_directory_path = os.path.join(
         os.path.sep, 'invalid', 'output', 'directory', 'path')
     legislation_directory_path = os.path.join(test_directory_path, 'legislation')
@@ -1995,13 +1999,14 @@ def test_bigram_frequency_output_directory_does_not_exist():
         completed_process = subprocess.run(
             [
                 script_file_path,
+                '--legislation_directory_path',
+                legislation_directory_path,
+                '--debug',
+                'matrix_and_plot',
                 'bigram_frequency',
                 'full_text',
                 'english',
                 output_directory_path,
-                '--legislation_directory_path',
-                legislation_directory_path,
-                '--debug',
             ],
             capture_output=True,
             text=True)
@@ -2010,3 +2015,43 @@ def test_bigram_frequency_output_directory_does_not_exist():
 
     assert 0 != completed_process.returncode
     assert 'ValueError' in completed_process.stderr
+
+
+def test_bigram_frequency_matrix_only():
+    test_directory_path = utilities.create_test_directory('bigram_frequency_full_text')
+
+    file_content_by_relative_path = {
+        os.path.join('legislation', 'state_a_english.txt'): utilities.STATE_A_LEGISLATION_TEXT,
+        os.path.join('legislation', 'state_b_english.txt'): utilities.STATE_B_LEGISLATION_TEXT,
+        os.path.join('legislation', 'state_c_english.txt'): utilities.STATE_C_LEGISLATION_TEXT,
+    }
+
+    script_file_path = os.path.join(
+        environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity.py')
+    algorithm = 'bigram_frequency'
+    scope = 'full_text'
+    output_directory_path = os.path.join(test_directory_path, 'output')
+    legislation_directory_path = os.path.join(test_directory_path, 'legislation')
+
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        os.makedirs(output_directory_path)
+        subprocess.run(
+            [
+                script_file_path,
+                '--legislation_directory_path',
+                legislation_directory_path,
+                '--debug',
+                'matrix_and_plot',
+                algorithm,
+                scope,
+                'english',
+                output_directory_path,
+                '--matrix_only',
+            ],
+            check=True)
+        utilities.assert_plot_file_does_not_exist(
+            output_directory_path, algorithm, scope)
+    finally:
+        utilities.delete_test_directory(test_directory_path)

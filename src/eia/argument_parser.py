@@ -21,45 +21,45 @@ class LanguageAction(argparse.Action):
         setattr(namespace, self.dest, languages.LANGUAGES[values])
 
 
-class CalculateSimilarityArgumentParser(object):
-    def __init__(self):
+class ArgumentParser(object):
+    def __init__(
+            self, matrix_and_plot_function,
+            highest_provision_group_scores_function):
+        # Top-level parser
         self.argument_parser = argparse.ArgumentParser()
+        self.argument_parser.add_argument('--debug', action='store_true')
         self.argument_parser.add_argument(
+            '--legislation_directory_path',
+            default=environment.LEGISLATION_DIRECTORY_PATH)
+        subparsers = self.argument_parser.add_subparsers()
+
+        # Parser for 'matrix_and_plot' command
+        matrix_and_plot_parser = subparsers.add_parser('matrix_and_plot')
+        matrix_and_plot_parser.add_argument(
             'algorithm', action=AlgorithmAction,
             choices=['jaccard_index', 'term_frequency', 'bigram_frequency'])
-        self.argument_parser.add_argument(
+        matrix_and_plot_parser.add_argument(
             'scope', action=ScopeAction, choices=['full_text', 'provision'])
-        self.argument_parser.add_argument(
+        matrix_and_plot_parser.add_argument(
             'language', action=LanguageAction, choices=['english', 'french'])
-        self.argument_parser.add_argument('output_directory_path')
-        self.argument_parser.add_argument(
-            '--legislation_directory_path',
-            default=environment.LEGISLATION_DIRECTORY_PATH)
-        self.argument_parser.add_argument('--debug', action='store_true')
-        self.argument_parser.add_argument(
+        matrix_and_plot_parser.add_argument('output_directory_path')
+        matrix_and_plot_parser.add_argument(
             '--do_not_preserve_provision_delimiters',
             dest='preserve_provision_delimiters', action='store_false')
-        self.argument_parser.add_argument(
+        matrix_and_plot_parser.add_argument(
             '--states_to_include_file_path',
             default=environment.STATES_TO_INCLUDE_DEFAULT_FILE_PATH)
+        matrix_and_plot_parser.add_argument('--matrix_only', action='store_true')
+        matrix_and_plot_parser.set_defaults(func=matrix_and_plot_function)
 
-    def parse(self, arguments=None):
-        if arguments is None:
-            return self.argument_parser.parse_args()
-        return self.argument_parser.parse_args(arguments)
-
-
-class HighestSimilarityScoreArgumentParser(object):
-    def __init__(self):
-        self.argument_parser = argparse.ArgumentParser()
-        self.argument_parser.add_argument('similarity_matrix_file_path')
-        self.argument_parser.add_argument('number_of_scores', type=int)
-        self.argument_parser.add_argument(
+        # Parser for 'highest_provision_group_scores'
+        highest_scores_parser = subparsers.add_parser(
+            'highest_provision_group_scores')
+        highest_scores_parser.add_argument('matrix_file_path')
+        highest_scores_parser.add_argument('number_of_scores', type=int)
+        highest_scores_parser.add_argument(
             '--include_provision_contents_in_output', action='store_true')
-        self.argument_parser.add_argument(
-            '--legislation_directory_path',
-            default=environment.LEGISLATION_DIRECTORY_PATH)
-        self.argument_parser.add_argument('--debug', action='store_true')
+        highest_scores_parser.set_defaults(func=highest_provision_group_scores_function)
 
     def parse(self, arguments=None):
         if arguments is None:
