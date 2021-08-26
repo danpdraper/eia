@@ -12,5 +12,5 @@ setuptools.setup(
     packages=['eia'],
     package_dir={'': 'src'},
     scripts=[
-        os.path.join('scripts', 'similarity', 'calculate_similarity.py'),
+        os.path.join('scripts', 'similarity.py'),
     ])
