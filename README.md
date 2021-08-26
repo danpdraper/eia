@@ -87,6 +87,12 @@ Activate the virtual environment:
 source env/bin/activate
 ```
 
+Install the dependencies of the `eia` package:
+
+```
+python3 -m pip install -r requirements.txt
+```
+
 Install the `eia` package:
 
 ```
