@@ -59,6 +59,10 @@ class ArgumentParser(object):
         highest_scores_parser.add_argument('number_of_scores', type=int)
         highest_scores_parser.add_argument(
             '--include_provision_contents_in_output', action='store_true')
+        highest_scores_parser.add_argument(
+            '--score_threshold',
+            help='Score threshold in number of standard deviations above mean',
+            type=float)
         highest_scores_parser.set_defaults(func=highest_provision_group_scores_function)
 
     def parse(self, arguments=None):

@@ -1,6 +1,6 @@
-import itertools
 import logging
 import logging.handlers as handlers
+import math
 import os
 import statistics
 
@@ -85,32 +85,65 @@ def is_same_state(first_label, second_label):
         csv_files.state_and_provision_number_from_label(second_label)[0]
 
 
-def calculate_scaled_average(provision_group, provision_pairs, matrix):
-    similarity_scores = []
-    for pair in provision_pairs:
-        if pair[0] < len(matrix) and pair[1] < len(matrix[pair[0]]):
-            similarity_scores.append(matrix[pair[0]][pair[1]])
-        else:
-            similarity_scores.append(matrix[pair[1]][pair[0]])
-    return statistics.mean(similarity_scores) * (len(provision_group) - 1)
+def calculate_mean_and_standard_deviation(labels, matrix):
+    summ = 0
+    number_of_elements = 0
+    for row_index, row in enumerate(matrix):
+        for column_index, element in enumerate(row):
+            if is_same_state(labels[row_index], labels[column_index]):
+                break
+            summ += element
+            number_of_elements += 1
+    mean = summ / number_of_elements
+
+    sum_of_squared_differences = 0
+    for row_index, row in enumerate(matrix):
+        for column_index, element in enumerate(row):
+            if is_same_state(labels[row_index], labels[column_index]):
+                break
+            sum_of_squared_differences += (element - mean) ** 2
+    standard_deviation = math.sqrt(
+        sum_of_squared_differences / number_of_elements)
+
+    return mean, standard_deviation
 
 
-def populate_heap(labels, matrix, heap, base_provision_group, base_index):
+def calculate_scaled_average(provision_pairs, row, provisions_in_group):
+    similarity_scores = [row[pair[1]] for pair in provision_pairs]
+    return statistics.mean(similarity_scores) * (len(provisions_in_group) - 1)
+
+
+def traverse_row(
+        labels, row_index, row, heap, score_threshold, base_provision_pair_group,
+        base_column_index):
     logger = logging.getLogger(__name__)
-    for index in range(base_index, len(labels)):
-        if base_provision_group and \
-                is_same_state(labels[base_provision_group[-1]], labels[index]):
+    for index in range(base_column_index, len(row)):
+        if is_same_state(labels[row_index], labels[index]):
             continue
-        working_provision_group = base_provision_group + [index]
-        logger.info("Processing provision group {}.".format(working_provision_group))
-        if len(working_provision_group) > 1:
-            heap.push((
-                calculate_scaled_average(
-                    working_provision_group,
-                    itertools.combinations(working_provision_group, 2), matrix),
-                working_provision_group,
-            ))
-        populate_heap(labels, matrix, heap, working_provision_group, index + 1)
+        if base_provision_pair_group and \
+                is_same_state(labels[base_provision_pair_group[-1][1]], labels[index]):
+            continue
+        if score_threshold and row[index] < score_threshold:
+            continue
+        working_provision_pair_group = base_provision_pair_group + [(row_index, index)]
+        logger.info("Processing provision pair group {}".format(
+            working_provision_pair_group))
+        provisions_in_group = set([
+            index for pair in working_provision_pair_group for index in pair
+        ])
+        heap.push((
+            calculate_scaled_average(
+                working_provision_pair_group, row, provisions_in_group),
+            provisions_in_group,
+        ))
+        traverse_row(
+            labels, row_index, row, heap, score_threshold,
+            working_provision_pair_group, index + 1)
+
+
+def populate_heap(labels, matrix, heap, score_threshold):
+    for row_index, row in enumerate(matrix):
+        traverse_row(labels, row_index, row, heap, score_threshold, [], 0)
 
 
 def highest_provision_group_scores(arguments):
@@ -122,19 +155,30 @@ def highest_provision_group_scores(arguments):
         "number_of_scores = {}, "
         "include_provision_contents_in_output = {}, "
         "legislation_directory_path = {}, "
+        "score_threshold = {}, "
         "debug = {}".format(
             arguments.matrix_file_path, arguments.number_of_scores,
             arguments.include_provision_contents_in_output,
-            arguments.legislation_directory_path, arguments.debug))
+            arguments.legislation_directory_path, arguments.score_threshold,
+            arguments.debug))
 
     labels, matrix = similarity_matrix.from_file(arguments.matrix_file_path)
 
+    score_threshold = 0
+    if arguments.score_threshold:
+        mean, standard_deviation = calculate_mean_and_standard_deviation(
+            labels, matrix)
+        score_threshold = mean + arguments.score_threshold * standard_deviation
+
     min_heap = heap.BoundedMinHeap(arguments.number_of_scores)
-    populate_heap(labels, matrix, min_heap, [], 0)
+    populate_heap(labels, matrix, min_heap, score_threshold)
+    logger.debug("Unsorted heap contents following population: {}".format(
+        min_heap.to_list()))
     scores_and_provision_groups = sorted(
         sorted(
             min_heap.to_list(),
-            key=lambda score_and_provision_group: score_and_provision_group[1]),
+            key=lambda score_and_provision_group: sorted(
+                list(score_and_provision_group[1]))),
         key=lambda score_and_provision_group: score_and_provision_group[0],
         reverse=True)
 
@@ -154,11 +198,18 @@ def highest_provision_group_scores(arguments):
         ),
         scores_and_provision_groups)
 
+    if arguments.score_threshold:
+        print("Mean: {:.3f}".format(mean))
+        print("Standard deviation: {:.3f}".format(standard_deviation))
+        print("Mean + {} * standard deviation: {:.3f}".format(
+            arguments.score_threshold,
+            mean + arguments.score_threshold * standard_deviation))
+        print('\n----------\n')
     for index, score_and_provision_group in enumerate(scores_and_provision_groups):
         if index > 0:
             print('\n----------\n')
         # Convert map to list to permit multiple traversals
-        provision_group = list(score_and_provision_group[1])
+        provision_group = sorted(list(score_and_provision_group[1]))
         for provision in provision_group:
             print(provision[0])
         print("Scaled average: {:.3f}".format(score_and_provision_group[0]))

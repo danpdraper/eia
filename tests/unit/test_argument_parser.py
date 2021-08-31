@@ -206,6 +206,8 @@ class TestArgumentParser(object):
             '/path/to/similarity/matrix',
             '5',
             '--include_provision_contents_in_output',
+            '--score_threshold',
+            '0.5',
         ]
         expected_namespace = {
             'matrix_file_path': '/path/to/similarity/matrix',
@@ -213,6 +215,7 @@ class TestArgumentParser(object):
             'include_provision_contents_in_output': True,
             'legislation_directory_path': '/path/to/legislation/directory',
             'debug': True,
+            'score_threshold': 0.5,
             'func': self.highest_provision_group_scores_function,
         }
         actual_namespace = vars(self.parser.parse(arguments))
@@ -227,6 +230,8 @@ class TestArgumentParser(object):
             '/path/to/similarity/matrix',
             '5',
             '--include_provision_contents_in_output',
+            '--score_threshold',
+            '0.5',
         ]
         expected_function_output = 'highest_scores', {
             'matrix_file_path': '/path/to/similarity/matrix',
@@ -234,6 +239,7 @@ class TestArgumentParser(object):
             'include_provision_contents_in_output': True,
             'legislation_directory_path': '/path/to/legislation/directory',
             'debug': True,
+            'score_threshold': 0.5,
             'func': self.highest_provision_group_scores_function,
         }
         parsed_arguments = self.parser.parse(arguments)

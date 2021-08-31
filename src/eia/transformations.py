@@ -32,9 +32,9 @@ def file_path_to_state_name_capitalized(file_path):
 
 
 def label_and_row_tuple_to_comma_separated_string(label_and_row):
-    return COMMA.join(
-        map(lambda value: str(value) if type(value) in [int, float] else value,
-            [label_and_row[0]] + label_and_row[1]))
+    return COMMA.join(map(
+        lambda value: "{:.5f}".format(value) if type(value) is float else str(value),
+        [label_and_row[0]] + label_and_row[1]))
 
 
 def comma_separated_string_to_label_and_row_tuple(comma_separated_string):
