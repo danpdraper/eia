@@ -156,11 +156,12 @@ def highest_provision_group_scores(arguments):
         "include_provision_contents_in_output = {}, "
         "legislation_directory_path = {}, "
         "score_threshold = {}, "
+        "reduce_redundancy_in_output = {}, "
         "debug = {}".format(
             arguments.matrix_file_path, arguments.number_of_scores,
             arguments.include_provision_contents_in_output,
             arguments.legislation_directory_path, arguments.score_threshold,
-            arguments.debug))
+            arguments.reduce_redundancy_in_output, arguments.debug))
 
     labels, matrix = similarity_matrix.from_file(arguments.matrix_file_path)
 
@@ -170,7 +171,9 @@ def highest_provision_group_scores(arguments):
             labels, matrix)
         score_threshold = mean + arguments.score_threshold * standard_deviation
 
-    min_heap = heap.BoundedMinHeap(arguments.number_of_scores)
+    min_heap = heap.BoundedMinHeap(
+        arguments.number_of_scores,
+        reduce_element_data_redundancy=arguments.reduce_redundancy_in_output)
     populate_heap(labels, matrix, min_heap, score_threshold)
     logger.debug("Unsorted heap contents following population: {}".format(
         min_heap.to_list()))

@@ -63,6 +63,8 @@ class ArgumentParser(object):
             '--score_threshold',
             help='Score threshold in number of standard deviations above mean',
             type=float)
+        highest_scores_parser.add_argument(
+            '--reduce_redundancy_in_output', action='store_true')
         highest_scores_parser.set_defaults(func=highest_provision_group_scores_function)
 
     def parse(self, arguments=None):

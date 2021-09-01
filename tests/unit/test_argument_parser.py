@@ -208,6 +208,7 @@ class TestArgumentParser(object):
             '--include_provision_contents_in_output',
             '--score_threshold',
             '0.5',
+            '--reduce_redundancy_in_output',
         ]
         expected_namespace = {
             'matrix_file_path': '/path/to/similarity/matrix',
@@ -216,6 +217,7 @@ class TestArgumentParser(object):
             'legislation_directory_path': '/path/to/legislation/directory',
             'debug': True,
             'score_threshold': 0.5,
+            'reduce_redundancy_in_output': True,
             'func': self.highest_provision_group_scores_function,
         }
         actual_namespace = vars(self.parser.parse(arguments))
@@ -232,6 +234,7 @@ class TestArgumentParser(object):
             '--include_provision_contents_in_output',
             '--score_threshold',
             '0.5',
+            '--reduce_redundancy_in_output',
         ]
         expected_function_output = 'highest_scores', {
             'matrix_file_path': '/path/to/similarity/matrix',
@@ -240,6 +243,7 @@ class TestArgumentParser(object):
             'legislation_directory_path': '/path/to/legislation/directory',
             'debug': True,
             'score_threshold': 0.5,
+            'reduce_redundancy_in_output': True,
             'func': self.highest_provision_group_scores_function,
         }
         parsed_arguments = self.parser.parse(arguments)
@@ -260,3 +264,7 @@ class TestArgumentParser(object):
         actual_legislation_directory_path = \
             self.parser.parse(arguments).legislation_directory_path
         assert expected_legislation_directory_path == actual_legislation_directory_path
+
+    def test_parse_highest_scores_assigns_false_to_reduce_redunancy_in_output_when_argument_not_provided(self):
+        arguments = ['highest_provision_group_scores', '/path/to/similarity/matrix', '5']
+        assert self.parser.parse(arguments).reduce_redundancy_in_output is False
