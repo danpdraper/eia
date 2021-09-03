@@ -12,67 +12,67 @@ function replace_list_item_leading_character_parentheses_with_brackets {
   sed -E 's/(.)\(([0-9]+|[a-z])\) ([A-Z"])/\1[\2] \3/g'
 }
 
-function amend_typos_in_articles {
+function amend_errors_in_articles {
   # Article 4
-  amend_typo_in_article 4 'environnement\. \[k\]' 'environnement; [k]' | \
+  amend_error_in_article 4 'environnement\. \[k\]' 'environnement; [k]' | \
     # Article 9
-    amend_typo_in_article 9 ' TITIRE II' '\n\nTITRE II -' | \
+    amend_error_in_article 9 ' TITIRE II' '\n\nTITRE II -' | \
     # Article 12
-    amend_typo_in_article 12 'internationaux \[•\]' 'internationaux; [•]' | \
+    amend_error_in_article 12 'internationaux \[•\]' 'internationaux; [•]' | \
     # Article 13
-    amend_typo_in_article 13 '\. ARITCLE \[14\]' '.\n\n(14) ' | \
+    amend_error_in_article 13 '\. ARITCLE \[14\]' '.\n\n(14) ' | \
     # Article 14
-    amend_typo_in_article 14 '- \[1\]' '[1]' | \
+    amend_error_in_article 14 '- \[1\]' '[1]' | \
     # Article 15
-    amend_typo_in_article 15 'et tien ' 'et tient ' | \
+    amend_error_in_article 15 'et tien ' 'et tient ' | \
     # Article 22
-    amend_typo_in_article 22 en-deça en-deçà | \
-    amend_typo_in_article 22 "de d’administration" "de l’administration" | \
+    amend_error_in_article 22 en-deça en-deçà | \
+    amend_error_in_article 22 "de d’administration" "de l’administration" | \
     # Article 30
-    amend_typo_in_article 30 'ne doit nuire' 'ne doivent nuire' | \
+    amend_error_in_article 30 'ne doit nuire' 'ne doivent nuire' | \
     # Article 31
-    amend_typo_in_article 31 'Sans préjudicie' 'Sans préjudice' | \
-    amend_typo_in_article 31 '\(1\)' '[1]' | \
+    amend_error_in_article 31 'Sans préjudicie' 'Sans préjudice' | \
+    amend_error_in_article 31 '\(1\)' '[1]' | \
     # Article 35
-    amend_typo_in_article 35 côtés côtes | \
+    amend_error_in_article 35 côtés côtes | \
     # Article 37
-    amend_typo_in_article 37 'tires miniers' 'titres miniers' | \
-    amend_typo_in_article 37 'réservées au Fonds' 'réservés au Fonds' | \
+    amend_error_in_article 37 'tires miniers' 'titres miniers' | \
+    amend_error_in_article 37 'réservées au Fonds' 'réservés au Fonds' | \
     # Article 38
-    amend_typo_in_article 38 '\(1\)' '[1]' | \
+    amend_error_in_article 38 '\(1\)' '[1]' | \
     # Article 43
-    amend_typo_in_article 43 ellemême 'elle-même' | \
+    amend_error_in_article 43 ellemême 'elle-même' | \
     # Article 47
-    amend_typo_in_article 47 'loI; \[2\]' 'loi. [2]' | \
+    amend_error_in_article 47 'loI; \[2\]' 'loi. [2]' | \
     # Article 49
-    amend_typo_in_article 49 camerounaises camerounaise | \
+    amend_error_in_article 49 camerounaises camerounaise | \
     # Article 51
-    amend_typo_in_article 51 '\(1\)' '[1]' | \
+    amend_error_in_article 51 '\(1\)' '[1]' | \
     # Article 55
-    amend_typo_in_article 55 '\(1\)' '[1]' | \
+    amend_error_in_article 55 '\(1\)' '[1]' | \
     # Article 59
-    amend_typo_in_article 59 '\(1\)' '[1]' | \
-    amend_typo_in_article 59 '\(1\)' '[1]' | \
+    amend_error_in_article 59 '\(1\)' '[1]' | \
+    amend_error_in_article 59 '\(1\)' '[1]' | \
     # Article 65
-    amend_typo_in_article 65 Rion Rio | \
+    amend_error_in_article 65 Rion Rio | \
     # Article 77
-    amend_typo_in_article 77 '\(1\)' '[1]' | \
+    amend_error_in_article 77 '\(1\)' '[1]' | \
     # Article 82
-    amend_typo_in_article 82 soussols 'sous-sols' | \
+    amend_error_in_article 82 soussols 'sous-sols' | \
     # Article 83
-    amend_typo_in_article 83 "testes d’application" "textes d'application" | \
+    amend_error_in_article 83 "testes d’application" "textes d'application" | \
     # Article 88
-    amend_typo_in_article 88 '\(1\)' '[1]' | \
+    amend_error_in_article 88 '\(1\)' '[1]' | \
     # Article 90
-    amend_typo_in_article 90 '\(1\)' '[1]' | \
+    amend_error_in_article 90 '\(1\)' '[1]' | \
     # Article 98
-    amend_typo_in_article 98 '4\(1\) premier tirer' '4[1] premier titre' | \
-    amend_typo_in_article 98 n° 'numéro ' | \
+    amend_error_in_article 98 '4\(1\) premier tirer' '4[1] premier titre' | \
+    amend_error_in_article 98 n° 'numéro ' | \
     # Article 99
-    amend_typo_in_article 99 'anglais\..*$' 'anglais.'
+    amend_error_in_article 99 'anglais\..*$' 'anglais.'
 }
 
-function amend_typos_in_headers {
+function amend_errors_in_headers {
   sed -E 's/^(TITRE I.*)GENERALES/\1GÉNÉRALES/' | \
     sed -E 's/^(CHAPITRE I - DES )DEFINITIONS/\1DÉFINITIONS/' | \
     sed -E 's/^(CHAPITRE II - DES OBLIGATIONS )GENERALES/\1GÉNÉRALES/' | \
@@ -105,6 +105,6 @@ function preprocess_state_and_language_input_file {
     apply_common_transformations_to_stdin "$language" | \
     remove_all_text_before_first_title_header | \
     replace_list_item_leading_character_parentheses_with_brackets | \
-    amend_typos_in_articles | \
-    amend_typos_in_headers
+    amend_errors_in_articles | \
+    amend_errors_in_headers
 }

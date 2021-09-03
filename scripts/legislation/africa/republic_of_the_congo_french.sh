@@ -9,23 +9,23 @@ function remove_all_text_before_first_article_header {
     sed -En '/^\(1\)/,$p'
 }
 
-function amend_typos_in_articles {
+function amend_errors_in_articles {
   # Article 1
-  amend_typo_in_article 1 'I et II' 'I et II).' | \
+  amend_error_in_article 1 'I et II' 'I et II).' | \
     # Article 2
-    amend_typo_in_article 2 1er 1 | \
+    amend_error_in_article 2 1er 1 | \
     # Article 3
-    amend_typo_in_article 3 rèspect respect | \
+    amend_error_in_article 3 rèspect respect | \
     # Article 4
-    amend_typo_in_article 4 'choix; Des' 'choix. Des' | \
+    amend_error_in_article 4 'choix; Des' 'choix. Des' | \
     # Article 11
-    amend_typo_in_article 11 résulterait résulteraient | \
+    amend_error_in_article 11 résulterait résulteraient | \
     # Article 15
-    amend_typo_in_article 15 ' ANNEX 1' '\n\nANNEXE I' | \
-    amend_typo_in_article 15 ' Fait à Brazzaville.*$' ''
+    amend_error_in_article 15 ' ANNEX 1' '\n\nANNEXE I' | \
+    amend_error_in_article 15 ' Fait à Brazzaville.*$' ''
 }
 
-function amend_typos_in_annexes {
+function amend_errors_in_annexes {
   local stdin="$(</dev/stdin)"
 
   local annex_i_line_prefix='ANNEXE I '
@@ -87,6 +87,6 @@ function preprocess_state_and_language_input_file {
     replace_line_leading_stars_and_dashes_with_bullet_points | \
     apply_common_transformations_to_stdin "$language" | \
     remove_all_text_before_first_article_header | \
-    amend_typos_in_articles | \
-    amend_typos_in_annexes
+    amend_errors_in_articles | \
+    amend_errors_in_annexes
 }

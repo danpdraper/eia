@@ -13,31 +13,31 @@ function move_article_titles_above_article_bodies {
   sed -E 's/^(\([0-9]+\)) \(([A-Za-z ]+)\)/\2\n\1/g'
 }
 
-function amend_typos_in_articles {
+function amend_errors_in_articles {
   # Article 1
-  amend_typo_in_article 1 '1, 2 e 3' '[1], [2] e [3]' | \
-    amend_typo_in_article 1 'número 2' 'número [2]' | \
+  amend_error_in_article 1 '1, 2 e 3' '[1], [2] e [3]' | \
+    amend_error_in_article 1 'número 2' 'número [2]' | \
     # Article 4
     sed -E ':start;s/^(\(4\).*:) \[•\]/\1/;t start' | \
-    amend_typo_in_article 4 'comuns\. \[g\]' 'comuns; [g]' | \
+    amend_error_in_article 4 'comuns\. \[g\]' 'comuns; [g]' | \
     # Article 5
-    amend_typo_in_article 5 '358 DIÁRIO DA REPÚBLICA ' '' | \
-    amend_typo_in_article 5 desiquilíbrios desequilíbrios | \
+    amend_error_in_article 5 '358 DIÁRIO DA REPÚBLICA ' '' | \
+    amend_error_in_article 5 desiquilíbrios desequilíbrios | \
     # Article 12
-    amend_typo_in_article 12 ' I SÉRIE.*$' '' | \
+    amend_error_in_article 12 ' I SÉRIE.*$' '' | \
     # Article 14
-    amend_typo_in_article 14 abrangir abranger | \
+    amend_error_in_article 14 abrangir abranger | \
     # Article 19
-    amend_typo_in_article 19 '360 DIÁRIO DA REPÚBLICA ' '' | \
+    amend_error_in_article 19 '360 DIÁRIO DA REPÚBLICA ' '' | \
     # Article 20
-    amend_typo_in_article 20 'vertentes\. \[a\]' 'vertentes: [a]' | \
+    amend_error_in_article 20 'vertentes\. \[a\]' 'vertentes: [a]' | \
     # Article 27
-    amend_typo_in_article 27 'e nvolvam' envolvam | \
+    amend_error_in_article 27 'e nvolvam' envolvam | \
     # Article 32
-    amend_typo_in_article 32 'I SÉRIE \[•\] N 27 \[•\] DE 19 DE JUNHO DE 1998 361 ' '' | \
+    amend_error_in_article 32 'I SÉRIE \[•\] N 27 \[•\] DE 19 DE JUNHO DE 1998 361 ' '' | \
     # Article 37
-    amend_typo_in_article 37 ' Anexo' '\n\nAnexo' | \
-    amend_typo_in_article 37 ' Vista e aprovada.*$' ''
+    amend_error_in_article 37 ' Anexo' '\n\nAnexo' | \
+    amend_error_in_article 37 ' Vista e aprovada.*$' ''
 }
 
 function format_annex {
@@ -65,6 +65,6 @@ function preprocess_state_and_language_input_file {
     apply_common_transformations_to_stdin "$language" | \
     remove_all_text_before_first_chapter_header | \
     move_article_titles_above_article_bodies | \
-    amend_typos_in_articles | \
+    amend_errors_in_articles | \
     format_annex
 }

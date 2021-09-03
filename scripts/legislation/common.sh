@@ -480,7 +480,7 @@ function apply_common_transformations {
   cat "$input_file_path" | apply_common_transformations_to_stdin "$language"
 }
 
-function amend_typo_in_article {
+function amend_error_in_article {
   local stdin="$(</dev/stdin)"
 
   if [ "$#" -ne 3 ] ; then
