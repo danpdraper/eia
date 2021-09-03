@@ -115,7 +115,7 @@ Open [this](https://docs.google.com/spreadsheets/d/1pfEgen0jwUhYeVDrFlTAHWbcuDYf
 
 In some cases the link will lead you directly to the legislation, while in others the link will lead you to a landing page from which you need to either download the legislation or click an additional link to access the legislation in your browser.
 
-Once you have opened the document containing the legislation of interest, press CTRL (CMD on Mac) + A to select all of the text in the document and press CTRL + C to copy the selected text. Open a new document in a text editor of your choosing and press CTRL + V to paste the copied contents into the new document. Do not modify the pasted text at this point.
+Once you have opened the document containing the legislation of interest, press `ctrl (cmd on Mac) + a` to select all of the text in the document and press `ctrl + c` to copy the selected text. Open a new document in a text editor of your choosing and press `ctrl + v` to paste the copied contents into the new document. Do not modify the pasted text at this point.
 
 Save the document as `{state}_{language}.txt` in the directory `${PROJECT_ROOT}/raw_data/unprocessed/{continent}`. If you are unsure, the language is provided in the 'Language' column (column O) in the 'Adoption' sheet in the aforementioned Google sheet. The file name must be snake case; see [this](https://github.com/danpdraper/eia/tree/mainline/raw_data/unprocessed/africa) directory for examples. `${PROJECT_ROOT}` is the path to the directory into which you cloned the `eia` repository. If you followed the installation instructions in this README, then `${PROJECT_ROOT}` would be `$HOME/projects/eia`. If the `{continent}` directory does not exist, create it before saving the file (`{continent}` should also be snake case).
 
@@ -153,7 +153,7 @@ function preprocess_state_and_language_input_file {
 
 #### Preamble
 
-The next step is to remove all characters in the legislation prior to the first header. To do so, find the first header in the unprocessed legislation. It will be something like 'Title I ...', 'Chapter I ...' or 'Section I ...' (or the equivalent in the legislation's language). Let's assume for illustration purposes that the first header reads 'Title I General Provisions'. Assuming furthermore that there is no other header that starts with 'Title I' in the legislation, I would update my preprocessing script as follows:
+The next step is to remove all characters in the legislation prior to the first header. To do so, find the first header in the unprocessed legislation. It will be something like 'Title I ...', 'Chapter I ...' or 'Section I ...' (or the equivalent in the legislation's language). Let's assume for illustration purposes that the first header reads 'Title I General Provisions'. Assuming furthermore that there is no other header that starts with 'Title I' in the legislation, you would update your preprocessing script as follows:
 
 ```
 # New function
@@ -178,7 +178,7 @@ function preprocess_state_and_language_input_file {
 The `sed` command in the `remove_all_text_before_first_title_header` function prints only the matching line and those that follow, where the matching line is the first line to start with 'Title I'. If the legislation's preamble happened to contain a line starting with 'Title I' (e.g. 'Title I provides an outline of the ...'), then you would need to expand the regular expression to avoid the undesirable match. In such a case, you could modify the `sed` command as follows:
 
 ```
-sed -n '/Title I General Provisions/,$p'
+sed -n '/^Title I General Provisions/,$p'
 ```
 
 At this point, it would sensible to review the fruits of your labour. Open your terminal and execute the following command:
@@ -187,7 +187,7 @@ At this point, it would sensible to review the fruits of your labour. Open your 
 ${PROJECT_ROOT}/scripts/legislation/preprocess_legislation.sh {state} {language} && cat ${PROJECT_ROOT}/raw_data/preprocessed/{continent}/{state}_{language}.txt
 ```
 
-This command is idempotent, which for our purposes is important because you can execute the command as many times as you like without affecting the contents of the file that you saved to the `${PROJECT_ROOT}/raw_data/unprocessed/{continent}` directory. The `preprocess_legislation.sh` script reads in the unprocessed legislation, applies the transformations that you define and writes the result to `${PROJECT_ROOT}/raw_data/preprocessed/{continent}/{state}_{language}.txt`. You can thus execute the command often and use the results as the basis for tweaking and expanding your transformations.
+This command is idempotent, which for our purposes is important because you can execute the command as many times as you like without affecting the contents of the file that you saved to the `${PROJECT_ROOT}/raw_data/unprocessed/{continent}` directory. The `preprocess_legislation.sh` script reads in the unprocessed legislation, applies the transformations that you defined and writes the result to `${PROJECT_ROOT}/raw_data/preprocessed/{continent}/{state}_{language}.txt`. You can thus execute the command often and use the results as the basis for tweaking and expanding your transformations.
 
 #### Articles
 
@@ -203,7 +203,7 @@ It is worth noting that there is not (at the time of writing) a function in `${P
 
 #### Annexes
 
-You might come across unprocessed legislation that includes one or more annexes. At the time of writing, annexes factor into legislation-level similarity analysis, so errors in annexes should be amended. That said, in order to ensure that annexes do not factor into provision-level similarity analysis, line-leading numbers in annexes must not be enclosed in brackets (i.e. '[' and ']'). More information regarding formatting is provided in the 'Expected Format' section below. For examples of annex error amendment, consult [this](https://github.com/danpdraper/eia/blob/mainline/raw_data/unprocessed/africa/angola_portuguese.txt) unprocessed legislation and [this](https://github.com/danpdraper/eia/blob/mainline/scripts/legislation/africa/angola_portuguese.sh#L43-L53) preprocessing script, and [this](https://github.com/danpdraper/eia/blob/mainline/raw_data/unprocessed/africa/republic_of_the_congo_french.txt) unprocessed legislation and [this](https://github.com/danpdraper/eia/blob/mainline/scripts/legislation/africa/republic_of_the_congo_french.sh#L28-L76) preprocessing script.
+You might come across unprocessed legislation that includes one or more annexes. At the time of writing, annexes factor into legislation-level similarity analysis, so errors in annexes should be amended. That said, in order to ensure that annexes do not factor into provision-level similarity analysis, line-leading numbers in annexes must not be enclosed in square brackets (i.e. '[' and ']'). More information regarding formatting is provided in the 'Expected Format' section below. For examples of annex error amendment, consult [this](https://github.com/danpdraper/eia/blob/mainline/raw_data/unprocessed/africa/angola_portuguese.txt) unprocessed legislation and [this](https://github.com/danpdraper/eia/blob/mainline/scripts/legislation/africa/angola_portuguese.sh#L43-L53) preprocessing script, and [this](https://github.com/danpdraper/eia/blob/mainline/raw_data/unprocessed/africa/republic_of_the_congo_french.txt) unprocessed legislation and [this](https://github.com/danpdraper/eia/blob/mainline/scripts/legislation/africa/republic_of_the_congo_french.sh#L28-L76) preprocessing script.
 
 #### Other Amendments
 
@@ -213,7 +213,7 @@ The instructions provided in this README are understandably general. The range o
 
 #### Headers
 
-Every header should be on its own line and should follow the format `(Header Type) (Identifier) - (Label)` where `(Header Type)` is `Title`, `Chapter`, `Section` or `Annex` (or equivalent in the language of the legislation), `(Identifier)` is either a number, a single letter, an ordinal or a roman numberal, and `(Label)` is all of the text that otherwise follows the identifier. Here are some examples:
+Every header should be on its own line and should follow the format '(Header Type) (Identifier) - (Label)' where '(Header Type)' is 'Title', 'Chapter', 'Section' or 'Annex' (or equivalent in the language of the legislation), '(Identifier)' is either a number, a single letter, an ordinal or a roman numeral, and '(Label)' is all of the text that otherwise follows the identifier. Here are some examples:
 
 ```
 Unprocessed: Title I General Provisions
@@ -231,7 +231,7 @@ Preprocessed: ANNEX A - TYPES OF PROJECTS REQUIRING ASSESSMENT
 
 #### Articles
 
-Every article should be on its own line and should follow the format `(Number) Text ... [Article Delimiter] Text ... [Article Delimiter] ...`. The line should start with the article number in parentheses (round brackets) and every article delimiter (bullet points and bullet-point-like letters, numbers and roman numerals) should be enclosed in square brackets. Any non-number and non-letter character that is being used as a bullet point but is not a bullet point (such as a dash) should be replaced with a bullet point. Here are some examples:
+Every article should be on its own line and should follow the format '(Number) Text ... [Article Delimiter] Text ... [Article Delimiter] ...'. The line should start with the article number in parentheses (round brackets) and every article delimiter (bullet points and bullet-point-like letters, numbers and roman numerals) should be enclosed in square brackets. Any non-number and non-letter character that is being used as a bullet point but is not a bullet point (such as a dash) should be replaced with a bullet point. Here are some examples:
 
 ```
 Unprocessed: Article 1. I like walking the dog: a. when it is warm and b. when I am well-rested.
