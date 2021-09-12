@@ -456,8 +456,7 @@ def test_highest_similarity_scores_without_provision_contents_but_with_score_thr
         10, expected_output)
 
 
-def execute_highest_similarity_scores_without_provision_contents_but_with_redundancy_reduction_test(
-        number_of_scores, expected_output):
+def test_highest_similarity_scores_without_provision_contents_but_with_redundancy_reduction():
     '''
     Similarity matrix:
                 [ A 1  A 2  B 1  B 2  C 1  C 2  ]
@@ -514,10 +513,8 @@ def execute_highest_similarity_scores_without_provision_contents_but_with_redund
 
     The following table lists the provision groups sorted by scaled average in
     descending order and excludes any provision group that is a subset of
-    another group with a higher score. For example, 'A 1,B 1', 'A 1,C 1' and 'B
-    1,C 1' are all subsets of 'A 1,B 1,C 1'. None of 'A 1,B 1', 'A 1,C 1' and 'B
-    1,C 1' has a higher score than 'A 1,B 1,C 1', so all of 'A 1,B 1', 'A 1,C 1'
-    and 'B 1,C 1' are excluded from the table.
+    another group with a higher score. The excluded groups should not factor
+    into the output when the reduce_redundancy_in_output argument is provided.
 
     Provision group  Scaled average
     A 2,B 2,C 1      1.590
@@ -558,18 +555,13 @@ def execute_highest_similarity_scores_without_provision_contents_but_with_redund
                 '--debug',
                 'highest_provision_group_scores',
                 similarity_matrix_file_path,
-                str(number_of_scores),
+                '10',
                 '--reduce_redundancy_in_output'
             ],
             capture_output=True, check=True, text=True)
     finally:
         utilities.delete_test_directory(test_directory_path)
 
-    assert expected_output in completed_process.stdout
-
-
-def test_highest_similarity_scores_without_provision_contents_but_with_redundancy_reduction():
-    # Six highest scores
     expected_output = (
         'State A 2\n'
         'State B 2\n'
@@ -610,12 +602,6 @@ def test_highest_similarity_scores_without_provision_contents_but_with_redundanc
         'State B 2\n'
         'State C 2\n'
         'Scaled average: 1.000\n'
-    )
-    execute_highest_similarity_scores_without_provision_contents_but_with_redundancy_reduction_test(
-        6, expected_output)
-
-    # Ten highest scores
-    expected_output += (
         '\n'
         '----------\n'
         '\n'
@@ -631,8 +617,7 @@ def test_highest_similarity_scores_without_provision_contents_but_with_redundanc
         'State C 1\n'
         'Scaled average: 0.430\n'
     )
-    execute_highest_similarity_scores_without_provision_contents_but_with_redundancy_reduction_test(
-        10, expected_output)
+    assert expected_output in completed_process.stdout
 
 
 def test_highest_similarity_scores_with_provision_contents():
@@ -1126,10 +1111,8 @@ def test_highest_similarity_scores_with_provision_contents_and_redundancy_reduct
 
     The following table lists the provision groups sorted by scaled average in
     descending order and excludes any provision group that is a subset of
-    another group with a higher score. For example, 'A 1,B 1', 'A 1,C 1' and 'B
-    1,C 1' are all subsets of 'A 1,B 1,C 1'. None of 'A 1,B 1', 'A 1,C 1' and 'B
-    1,C 1' has a higher score than 'A 1,B 1,C 1', so all of 'A 1,B 1', 'A 1,C 1'
-    and 'B 1,C 1' are excluded from the table.
+    another group with a higher score. The excluded groups should not factor
+    into the output when the reduce_redundancy_in_output argument is provided.
 
     Provision group  Scaled average
     A 2,B 2,C 1      1.590

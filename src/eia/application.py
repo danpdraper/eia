@@ -114,8 +114,8 @@ def calculate_scaled_average(provision_pairs, row, provisions_in_group):
 
 
 def traverse_row(
-        labels, row_index, row, heap, score_threshold, base_provision_pair_group,
-        base_column_index):
+        labels, row_index, row, min_heap, score_threshold,
+        base_provision_pair_group, base_column_index):
     logger = logging.getLogger(__name__)
     for index in range(base_column_index, len(row)):
         if is_same_state(labels[row_index], labels[index]):
@@ -131,19 +131,19 @@ def traverse_row(
         provisions_in_group = set([
             index for pair in working_provision_pair_group for index in pair
         ])
-        heap.push((
+        min_heap.push(heap.ProvisionGroupHeapElement(
             calculate_scaled_average(
                 working_provision_pair_group, row, provisions_in_group),
-            provisions_in_group,
-        ))
+            len(working_provision_pair_group),
+            {labels[provision_index] for provision_index in provisions_in_group}))
         traverse_row(
-            labels, row_index, row, heap, score_threshold,
+            labels, row_index, row, min_heap, score_threshold,
             working_provision_pair_group, index + 1)
 
 
-def populate_heap(labels, matrix, heap, score_threshold):
+def populate_heap(labels, matrix, min_heap, score_threshold):
     for row_index, row in enumerate(matrix):
-        traverse_row(labels, row_index, row, heap, score_threshold, [], 0)
+        traverse_row(labels, row_index, row, min_heap, score_threshold, [], 0)
 
 
 def highest_provision_group_scores(arguments):
@@ -171,35 +171,34 @@ def highest_provision_group_scores(arguments):
             labels, matrix)
         score_threshold = mean + arguments.score_threshold * standard_deviation
 
-    min_heap = heap.BoundedMinHeap(
-        arguments.number_of_scores,
-        reduce_element_data_redundancy=arguments.reduce_redundancy_in_output)
+    min_heap = heap.SetBoundedMinHeap(
+        arguments.number_of_scores * (10 if arguments.reduce_redundancy_in_output else 1))
     populate_heap(labels, matrix, min_heap, score_threshold)
+    if arguments.reduce_redundancy_in_output:
+        min_heap.consolidate()
     logger.debug("Unsorted heap contents following population: {}".format(
         min_heap.to_list()))
-    scores_and_provision_groups = sorted(
+    heap_elements = sorted(
         sorted(
             min_heap.to_list(),
-            key=lambda score_and_provision_group: sorted(
-                list(score_and_provision_group[1]))),
-        key=lambda score_and_provision_group: score_and_provision_group[0],
-        reverse=True)
+            key=lambda heap_element: sorted(list(heap_element.provisions))),
+        key=lambda heap_element: heap_element.scaled_average,
+        reverse=True)[:arguments.number_of_scores]
 
     language = similarity_matrix.get_language(arguments.matrix_file_path)
     scores_and_provision_groups = map(
-        lambda score_and_provision_group: (
-            score_and_provision_group[0],
+        lambda heap_element: (
+            heap_element.scaled_average,
             map(
-                lambda provision_index: (labels[provision_index],) + (
+                lambda provision: (provision,) + (
                     (text_files.find_provision_contents(
                         arguments.legislation_directory_path, language,
-                        *csv_files.state_and_provision_number_from_label(
-                            labels[provision_index])),)
+                        *csv_files.state_and_provision_number_from_label(provision)),)
                     if arguments.include_provision_contents_in_output else ()
                 ),
-                score_and_provision_group[1]),
+                heap_element.provisions),
         ),
-        scores_and_provision_groups)
+        heap_elements)
 
     if arguments.score_threshold:
         print("Mean: {:.3f}".format(mean))
