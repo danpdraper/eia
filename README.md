@@ -121,6 +121,16 @@ Save the document as `{state}_{language}.txt` in the directory `${PROJECT_ROOT}/
 
 ### Developing the Preprocessing Script
 
+Navigate to the [Legislation Preprocessing](https://github.com/danpdraper/eia/projects/1) project board. Find the 'Develop preprocessing script for legislation from ...' issue for the state of interest in the 'Input Queue' column and move the issue (by dragging with your mouse) into the 'In Progress' column. Click on the 'Develop preprocessing script for legislation from ...' link in the issue box and, in the bar that opens on the right side of the screen, set yourself as the assignee. Take note of the issue number.
+
+In the `${PROJECT_ROOT}` directory, run the following command:
+
+```
+git checkout -b issue-${ISSUE_NUMBER}
+```
+
+In the preceding command, `${ISSUE_NUMBER}` is the issue number that you noted moments ago. For example, if your issue's number is 10, then the command would be `git checkout -b issue-10`.
+
 Open a new document in a text editor of your choosing and save the file as `{state}_{language}.sh` in the directory `${PROJECT_ROOT}/scripts/legislation/{continent}`. Again, if the `{continent}` directory does not exist, create it before saving the file.
 
 The script `${PROJECT_ROOT}/scripts/legislation/preprocess_legislation.sh` and module `${PROJECT_ROOT}/scripts/legislation/common.sh` expect that every state-and-language-specific preprocessing script will contain a function named `preprocess_state_and_language_input_file`. Accordingly, add the following to your newly-created file:
@@ -244,3 +254,38 @@ Preprocessed: (22) I do not like walking the dog: [i] when the dog is more inter
 #### Annexes
 
 Annexes do not need to adhere to a particular format. As mentioned in the 'Developing the Preprocessing Script' section above, the only formatting requirement with respect to annexes is that none of the lines in the annex start with a number in parentheses.
+
+### Creating a Pull Request
+
+When you are ready to commit your preprocessing script, the unprocessed legislation and the preprocessed legislation, run the following commands:
+
+```
+git add .
+git status
+```
+
+The latter command will show you the files that are staged for commit. If there are staged files that you do not wish to commit, unstage those files using the command(s) provided in the command's output.
+
+If you are satisfied with the files that are staged for commit, run the following command:
+
+```
+git commit --message ${COMMIT_MESSAGE}
+```
+
+In the preceding command, `${COMMIT_MESSAGE}` should be a concise sentence that describes your changes. If you are looking for inspiration, consult past commit messages [here](https://github.com/danpdraper/eia/commits/mainline).
+
+Push your commit to Github with the following command:
+
+```
+git push origin issue-${ISSUE_NUMBER}
+```
+
+The fourth element in the preceding command is the name of your current branch. If you forgot the name of your current branch, you can always run:
+
+```
+git branch
+```
+
+Create a pull request by following [these](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request#creating-the-pull-request) instructions. When it comes time to select a title for your pull request, ensure that your title reads `Closes #${ISSUE_NUMBER}` where `${ISSUE_NUMBER}` is the number of the Github issue corresponding to your changes. For example, if your issue's number is 10, then the title of your pull request should be `Closes #10`. Adhering to this naming convention will ensure that issues are moved about the project board automatically.
+
+Either before or after creating your pull request, set user `danpdraper` as an assignee.
