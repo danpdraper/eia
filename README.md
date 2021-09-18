@@ -288,4 +288,4 @@ git branch
 
 Create a pull request by following [these](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request#creating-the-pull-request) instructions. When it comes time to add a description to your pull request, ensure that the description includes `Closes #${ISSUE_NUMBER}` where `${ISSUE_NUMBER}` is the number of the Github issue corresponding to your changes. For example, if your issue's number is 10, then the description of your pull request should include `Closes #10`. Adhering to this convention will ensure that issues are moved about the project board automatically.
 
-Either before or after creating your pull request, set user `danpdraper` as a reviewer.
+After creating your pull request, add user `danpdraper` as a reviewer and add `Legislation Preprocessing` as a project.
