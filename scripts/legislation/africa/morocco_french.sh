@@ -41,32 +41,31 @@ function amend_errors_in_headers {
     sed -E 's/^(Section II - La remise.*) Article 69:/\1\n\n(69) /' | \
     sed -E 's/^(Section III - La procédure.*) Article 73:/\1\n\n(73) /' | \
     sed -E 's/^(Section IV - La procédure.*) Article 76:/\1\n\n(76) /' 
-
 }
 
 function amend_errors_in_articles {
-  amend_error_in_article 3 '\* - Dahir.*Etablissements humains' 'Établissements humains' | \
-  amend_error_in_article 3 '4 - Equilibre' '4 - Équilibre' | \
-  amend_error_in_article 34 'les critères nécessaires' '[•] les critères nécessaires' | \
-
-  #remove page numbers
-  amend_error_in_article 3 'mer. 3' 'mer. ' | \
-  amend_error_in_article 7 ' 4' '' | \
-  amend_error_in_article 37 ' 7' '' | \
-  amend_error_in_article 79 ' 12' '' | \
-
-  #fix spacing
+  #Article 1
+  sed -E ':start;s/^(\(1\).*)- /\1[•] /;t start' | \
+  #Article 2
   amend_error_in_article 2 " l'usager payeur " "l'usager payeur" | \
   amend_error_in_article 2 " du pollueur payeur " "du pollueur payeur" | \
-
-  #change dashes to bullet points
-  sed -E ':start;s/^(\(1\).*)- /\1[•] /;t start' | \
-  sed -E ':start;s/^(\(36\).*)- /\1 [•] /;t start' | \
-  sed -E ':start;s/^(\(37\).*) - /\1 [•] /;t start' | \
-
-  #article 3 numbering removal
+  #Article 3
+  amend_error_in_article 3 '\* - Dahir.*Etablissements humains' 'Établissements humains' | \
+  amend_error_in_article 3 'mer. 3' 'mer. ' | \
+  amend_error_in_article 3 '4 - Equilibre' '4 - Équilibre' | \
   sed -E ':start;s/^(\(3\).*)[0-9] - /\1/;t start' | \
-  sed -E ':start;s/^(\(3\).*)[0-9]/\1/;t start'
+  sed -E ':start;s/^(\(3\).*)[0-9]/\1/;t start' | \
+  #Article 7
+  amend_error_in_article 7 ' 4' '' | \
+  #Article 34
+  amend_error_in_article 34 'les critères nécessaires' '[•] les critères nécessaires' | \
+  #Article 36
+  sed -E ':start;s/^(\(36\).*)- /\1 [•] /;t start' | \
+  #Article 37
+  sed -E ':start;s/^(\(37\).*) - /\1 [•] /;t start' | \
+  amend_error_in_article 37 ' 7' '' | \
+  #Article 79
+  amend_error_in_article 79 ' 12' ''
 }
 
 function preprocess_state_and_language_input_file {
@@ -77,16 +76,9 @@ function preprocess_state_and_language_input_file {
   local input_file_path="$1"
   local language="$2"
 
-  cat "$input_file_path" | \
-    apply_common_transformations_to_stdin "$language" | \
+  apply_common_transformations "$input_file_path" "$language" | \
     remove_all_text_before_first_chapter_header | \
     remove_all_text_after_last_article | \
     amend_errors_in_headers | \
     amend_errors_in_articles 
 }
-
-
-
-
- 
-#/Users/matthkli/projects/eia/scripts/legislation/preprocess_legislation.sh morocco french && cat /Users/matthkli/projects/eia/raw_data/preprocessed/africa/morocco_french.txt
