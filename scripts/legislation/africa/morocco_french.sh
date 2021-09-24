@@ -45,16 +45,28 @@ function amend_errors_in_headers {
 }
 
 function amend_errors_in_articles {
-  
-  amend_error_in_article 3 '* - Dahir N° 1.03.59 du 10 Rabiï I 1424 (12 mai [2003], BO N° 5118 du Juin 2003 2' '' | \
+  amend_error_in_article 3 '\* - Dahir.*Etablissements humains' 'Établissements humains' | \
   amend_error_in_article 3 '4 - Equilibre' '4 - Équilibre' | \
+  amend_error_in_article 34 'les critères nécessaires' '[•] les critères nécessaires'
 
   #remove page numbers
   amend_error_in_article 3 'mer. 3' 'mer. ' | \
   amend_error_in_article 7 ' 4' '' | \
   amend_error_in_article 37 ' 7' '' | \
-  amend_error_in_article 79 ' 12' '' 
+  amend_error_in_article 79 ' 12' '' | \
 
+  #fix spacing
+  amend_error_in_article 2 " l'usager payeur " "l'usager payeur" | \
+  amend_error_in_article 2 " du pollueur payeur " "du pollueur payeur" | \
+
+  #change dashes to bullet points
+  sed -E ':start;s/^(\(1\).*)- /\1[•] /;t start' | \
+  sed -E ':start;s/^(\(36\).*)- /\1 [•] /;t start' | \
+  sed -E ':start;s/^(\(37\).*) - /\1 [•] /;t start' | \
+
+  #article 3 numbering removal 
+  sed -E ':start;s/^(\(3\).*)[0-9] - /\1/;t start' | \
+  sed -E ':start;s/^(\(3\).*)[0-9]/\1/;t start' 
 
 }
 
