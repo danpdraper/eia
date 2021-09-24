@@ -47,7 +47,7 @@ function amend_errors_in_headers {
 function amend_errors_in_articles {
   amend_error_in_article 3 '\* - Dahir.*Etablissements humains' 'Établissements humains' | \
   amend_error_in_article 3 '4 - Equilibre' '4 - Équilibre' | \
-  amend_error_in_article 34 'les critères nécessaires' '[•] les critères nécessaires'
+  amend_error_in_article 34 'les critères nécessaires' '[•] les critères nécessaires' | \
 
   #remove page numbers
   amend_error_in_article 3 'mer. 3' 'mer. ' | \
