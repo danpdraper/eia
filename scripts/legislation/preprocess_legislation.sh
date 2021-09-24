@@ -48,10 +48,22 @@ function preprocess_legislation {
   source "$state_and_language_preprocessor_file_path"
 
   echo_info "Preprocessing file $input_file_path."
-  local start_time="$(date +%s%N)"
+  if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    local start_time="$(date +%s%N)"
+  elif [[ "$OSTYPE" == "darwin"* ]]; then
+    local start_time="$(date +%s)"
+  else 
+    echo_error "os not supported"
+  fi
+  
   preprocess_file "$input_file_path" "$output_file_path"
   local return_code="$?"
-  local execution_time="$((($(date +%s%N) - $start_time) / 1000000))"
+
+  if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    local execution_time="$((($(date +%s%N) - $start_time) / 1000000))"
+  elif [[ "$OSTYPE" == "darwin"* ]]; then
+    local execution_time="$((($(date +%s) - $start_time) / 100000))"
+  fi
 
   if [ "$return_code" -ne 0 ] ; then
     echo_error "Failed to preprocess $input_file_path."
