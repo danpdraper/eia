@@ -398,6 +398,10 @@ function replace_double_angle_quotation_marks_with_quotation_marks {
   sed -E 's/(« ?| ?»)/"/g'
 }
 
+function replace_forward_ticks_with_single_quotation_marks {
+  sed -E "s/’/'/g"
+}
+
 function remove_colon_from_headers {
   local stdin=$(</dev/stdin)
 
@@ -464,6 +468,7 @@ function apply_common_transformations_to_stdin {
     add_dash_to_headers "$language" | \
     remove_space_before_colons_and_semicolons | \
     replace_double_angle_quotation_marks_with_quotation_marks | \
+    replace_forward_ticks_with_single_quotation_marks | \
     remove_colon_from_headers "$language" | \
     replace_article_literals_with_numbers "$language" | \
     wrap_list_item_leading_characters
