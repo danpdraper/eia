@@ -57,6 +57,12 @@ function get_header_regular_expression {
 
   local header_regular_expression
   case "$language" in
+    english)
+      header_regular_expression="Title|TITLE|"
+      header_regular_expression+="Chapter|CHAPTER|"
+      header_regular_expression+="Section|SECTION|"
+      header_regular_expression+="Annex|ANNEX"
+      ;;
     french)
       header_regular_expression="Titre|TITRE|"
       header_regular_expression+="Chapitre|CHAPITRE|"
@@ -92,6 +98,9 @@ function get_article_regular_expression {
 
   local article_regular_expression
   case "$language" in
+    english)
+      article_regular_expression="Art\.|Article|ARTICLE"
+      ;;
     french)
       article_regular_expression="Art\.|Article|ARTICLE"
       ;;
@@ -141,6 +150,19 @@ function get_ordinal_regular_expression {
 
   local ordinal_regular_expression
   case "$language" in
+    english)
+      ordinal_regular_expression="First|FIRST|"
+      ordinal_regular_expression+="Second|SECOND|"
+      ordinal_regular_expression+="Third|THIRD|"
+      ordinal_regular_expression+="Fourth|FOURTH|"
+      ordinal_regular_expression+="Fifth|FIFTH|"
+      ordinal_regular_expression+="Sixth|SIXTH|"
+      ordinal_regular_expression+="Seventh|SEVENTH|"
+      ordinal_regular_expression+="Eighth|EIGHTH|"
+      ordinal_regular_expression+="Ninth|NINTH|"
+      ordinal_regular_expression+="Tenth|TENTH|"
+      ordinal_regular_expression+="Preliminary|PRELIMINARY"
+      ;;
     french)
       ordinal_regular_expression="Premier|PREMIER|Première|PREMIÈRE|"
       ordinal_regular_expression+="Deuxième|DEUXIÈME|"
@@ -197,6 +219,9 @@ function get_unique_regular_expression {
 
   local unique_regular_expression
   case "$language" in
+    english)
+      unique_regular_expression="Unique|UNIQUE"
+      ;;
     french)
       unique_regular_expression="Unique|UNIQUE"
       ;;
