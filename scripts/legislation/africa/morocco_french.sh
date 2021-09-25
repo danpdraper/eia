@@ -50,11 +50,10 @@ function amend_errors_in_articles {
   amend_error_in_article 2 " l'usager payeur " "l'usager payeur" | \
   amend_error_in_article 2 " du pollueur payeur " "du pollueur payeur" | \
   #Article 3
-  amend_error_in_article 3 '\* - Dahir.*Etablissements humains' 'Établissements humains' | \
+  amend_error_in_article 3 '\* \[•\] Dahir.*Etablissements humains' 'Établissements humains' | \
   amend_error_in_article 3 'mer. 3' 'mer. ' | \
-  amend_error_in_article 3 '4 - Equilibre' '4 - Équilibre' | \
-  sed -E ':start;s/^(\(3\).*)[0-9] - /\1/;t start' | \
-  sed -E ':start;s/^(\(3\).*)[0-9]/\1/;t start' | \
+  amend_error_in_article 3 '4 \[•\] Equilibre' '4 [•] Équilibre' | \
+  sed -E ':start;s/^(\(3\)[^0-9]+)[0-9]+ \[•\] /\1/;t start' | \
   #Article 7
   amend_error_in_article 7 ' 4' '' | \
   #Article 34
