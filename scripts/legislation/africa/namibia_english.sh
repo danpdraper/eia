@@ -9,10 +9,6 @@ function prefix_article_numbers_with_article_literal {
   sed -E 's/^([0-9]+\.)/Article \1/'
 }
 
-function append_pipe_to_article_title {
-  sed -E 's/^(Article .*)$/\1|/'
-}
-
 function replace_parentheses_around_article_delimiters_with_square_brackets {
   sed -E 's/^\(([A-Za-z0-9]+)\)/[\1]/'
 }
@@ -47,7 +43,7 @@ function remove_margin_headers {
 
 function identify_leftover_articles {
   sed -E 's/(in section Article [[]44])/in section 44/' | \
-  sed -E 's/(Article )(\[[0-9]+\])/\n\n[\2]/g' | \
+  sed -E 's/(Article )(\[[0-9]+\])/\n[\2]/g' | \
   sed -e 's/\[\[\([^]]*\)\]\]/(\1)/g' 
 }
 
@@ -56,8 +52,6 @@ function remove_all_text_after_last_article {
 }
 
 function amend_errors_in_articles {
-  #remove random pipes
-  sed -E 's/[|]//g' | \
   #remove incorrect bullet points
   sed -E 's/ [[]•]//g' | \
   #format subsection numbers
@@ -69,7 +63,6 @@ function amend_errors_in_articles {
   #remove page numbers
   sed -E 's/. [0-9]+\  /. /g' | \
   sed -E 's/\.\././g' | \
-  #sed -E 's/  [0-9]+\//g' | \
 
   #Article 1
   amend_error_in_article 1 '1995]' '1995])' | \
@@ -102,10 +95,30 @@ function amend_errors_in_articles {
   #Article 44
   amend_error_in_article 44 'reasonable time.Appointment' 'reasonable time. Appointment' | \
   #Article 50
-  amend_error_in_article 50 'otherwise.Appeal' 'otherwise. Appeal' | \
+  amend_error_in_article 50 'otherwise.Appeal' 'otherwise. Appeal' 
+}
 
-  #Put Article titles on newline
+function move_article_titles_above_article_bodies {
   sed -E "s/^(\([0-9]+\\).*)\. /\1.\n\n/" 
+}
+
+function add_newlines_before_headers_and_articles {
+  local stdin="$(</dev/stdin)"
+
+  if [ "$#" -ne 1 ] ; then
+    echo_usage_error "$*" '<language>'
+    return 1
+  fi
+  local language="$1"
+
+  local line_prefix_regular_expression
+  line_prefix_regular_expression="$(get_line_prefix_regular_expression $language)"
+  local return_code="$?"
+  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
+
+  local regular_expression="([A-Z][A-Za-z]+|\.) ${line_prefix_regular_expression}"
+
+  echo "$stdin" | sed -E ":start;s/${regular_expression}/\1\n\2 \3/;t start"
 }
 
 function preprocess_state_and_language_input_file {
@@ -119,12 +132,13 @@ function preprocess_state_and_language_input_file {
   cat "$input_file_path" | \
     remove_all_text_before_first_header | \
     prefix_article_numbers_with_article_literal | \
-    append_pipe_to_article_title | \
     replace_parentheses_around_article_delimiters_with_square_brackets | \
+    add_newlines_before_headers_and_articles "$language" | \
     apply_common_transformations_to_stdin "$language" | \
     remove_margin_headers | \
     identify_leftover_articles | \
     amend_errors_in_articles | \
+    move_article_titles_above_article_bodies | \
     amend_errors_in_headers | \
     remove_all_text_after_last_article
 }
