@@ -14,7 +14,7 @@ function replace_parentheses_around_article_delimiters_with_square_brackets {
 }
 
 function move_article_titles_above_article_bodies {
-  sed -E "s/^(\([0-9]+\\).*)\. /\1.\n\n/" 
+  sed -E "s/^(\([0-9]+\).*)\. /\1.\n\n/" 
 }
 
 function add_newlines_before_headers_and_articles {
@@ -66,10 +66,9 @@ function remove_margin_headers {
     sed -E 's/Government Gazette 27 December 2007 No. 3966 //g' 
 }
 
-function identify_leftover_articles {
+function remove_leftover_article_literals {
   sed -E 's/(in section Article \[44\])/in section 44/' | \
-  sed -E 's/(Article )(\[[0-9]+\])/\n[\2]/g' | \
-  sed -e 's/\[\[\([^]]*\)\]\]/(\1)/g' 
+  sed -E 's/Article \[([0-9]+)\]/\n(\1)/g'
 }
 
 function remove_all_text_after_last_article {
@@ -88,6 +87,8 @@ function amend_errors_in_articles {
     #remove page numbers
     sed -E 's/. [0-9]+  /. /g' | \
     sed -E 's/\.\././g' | \
+    #remove space from dollar amounts
+    sed -E 's/ 000/000/g' | \
 
     #Article 1
     amend_error_in_article 1 '\[1995]' '1995)' | \
@@ -183,7 +184,7 @@ function preprocess_state_and_language_input_file {
     add_newlines_before_headers_and_articles "$language" | \
     apply_common_transformations_to_stdin "$language" | \
     remove_margin_headers | \
-    identify_leftover_articles | \
+    remove_leftover_article_literals | \
     amend_errors_in_articles | \
     move_article_titles_above_article_bodies | \
     amend_errors_in_headers | \
