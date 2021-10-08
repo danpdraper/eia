@@ -13,10 +13,6 @@ function replace_parentheses_around_article_delimiters_with_square_brackets {
   sed -E 's/^\(([A-Za-z0-9]+)\)/[\1]/'
 }
 
-function move_article_titles_above_article_bodies {
-  sed -E "s/^(\([0-9]+\).*)\. /\1.\n\n/" 
-}
-
 function add_newlines_before_headers_and_articles {
   local stdin="$(</dev/stdin)"
 
@@ -26,38 +22,14 @@ function add_newlines_before_headers_and_articles {
   fi
   local language="$1"
 
-  local line_prefix_regular_expression
-  line_prefix_regular_expression="$(get_line_prefix_regular_expression $language)"
+  local article_regular_expression
+  article_regular_expression="$(get_article_regular_expression $language)"
   local return_code="$?"
   if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
 
-  local regular_expression="([A-Z][A-Za-z]+|\.) ${line_prefix_regular_expression}"
+  local regular_expression="([A-Z][A-Za-z' ]+) (${article_regular_expression})"
 
-  echo "$stdin" | sed -E ":start;s/${regular_expression}/\1\n\2 \3/;t start"
-}
-
-function amend_errors_in_headers {
-  sed -E 's/^(Section [0-9]+ - [A-Za-z,’ ]+)[^a-z]+Article ([0-9]+)(er)?/\1\n\n(\2)/' | \
-    sed -E 's/^(PART )I/\1I -/' | \
-    sed -E 's/^(PART I - DEFINITIONS.*) Definitions/\1\n\nDefinitions/' | \
-    sed -E 's/^(PART )I -I/\1II -/' | \
-    sed -E 's/^(PART II - PRINCIPLES.*) Principles/\1\n\nPrinciples/' | \
-    sed -E 's/^(PART )II -I/\1III -/' | \
-    sed -E 's/^(PART III - GENERAL.*) Functions/\1\n\nFunctions/' | \
-    sed -E 's/^(PART )I -V/\1IV -/' | \
-    sed -E 's/^(PART IV - SUSTAINABLE.*) Establishment/\1\n\nEstablishment/' | \
-    sed -E 's/^(PART )V/\1V -/' | \
-    sed -E 's/^(PART V - ENVIRONMENTAL.*) Appointment/\1\n\nAppointment/' | \
-    sed -E 's/^(PART )V -I/\1VI -/' | \
-    sed -E 's/^(PART VI - ENVIRONMENTAL.*) Objects/\1\n\nObjects/' | \
-    sed -E 's/^(PART )VI -I/\1VII -/' | \
-    sed -E 's/^(PART VII - ENVIRONMENTAL.*) Listing/\1\n\nListing/' | \
-    sed -E 's/^(PART )VII -I/\1VIII -/' | \
-    sed -E 's/^(PART VIII - ENVIRONMENTAL.*) Application/\1\n\nApplication/' | \
-    sed -E 's/^(PART )I -X/\1IX -/' | \
-    sed -E 's/^(PART IX - SPECIAL.*) Consultation/\1\n\nConsultation/' | \
-    sed -E 's/^(PART )X/\1X -/' | \
-    sed -E 's/^(PART X - GENERAL.*) Delegation/\1\n\nDelegation/'
+  echo "$stdin" | sed -E "s/${regular_expression}/\n\n\1\n\2/g"
 }
 
 function remove_margin_headers {
@@ -69,10 +41,6 @@ function remove_margin_headers {
 function remove_leftover_article_literals {
   sed -E 's/(in section Article \[44\])/in section 44/' | \
   sed -E 's/Article \[([0-9]+)\]/\n(\1)/g'
-}
-
-function remove_all_text_after_last_article {
-  sed -E '/^\(58\)/,${/^\(58\)/!d}'
 }
 
 function amend_errors_in_articles {
@@ -166,7 +134,38 @@ function amend_errors_in_articles {
     #Article 51
     amend_error_in_article 51 '50\(4\)' '50[4]' | \
     #Article 56
-    amend_error_in_article 56 'Act\. \[l\]' 'Act; [l]' 
+    amend_error_in_article 56 'Act\. \[l\]' 'Act; [l]' | \
+    #Article 58
+    amend_error_in_article 58 '________________' ''
+}
+
+function amend_errors_in_headers {
+  sed -E 's/^(Section [0-9]+ - [A-Za-z,’ ]+)[^a-z]+Article ([0-9]+)(er)?/\1\n\n(\2)/' | \
+    sed -n '/^PART I/,$p' | \
+    sed -E 's/^(PART )I/\1I -/' | \
+    sed -E 's/^(PART I - DEFINITIONS.*) Definitions/\1\n\nDefinitions/' | \
+    sed -E 's/^(PART )I -I/\1II -/' | \
+    sed -E 's/^(PART II - PRINCIPLES.*) Principles/\1\n\nPrinciples/' | \
+    sed -E 's/^(PART )II -I/\1III -/' | \
+    sed -E 's/^(PART III - GENERAL.*) Functions/\1\n\nFunctions/' | \
+    sed -E 's/^(PART )I -V/\1IV -/' | \
+    sed -E 's/^(PART IV - SUSTAINABLE.*) Establishment/\1\n\nEstablishment/' | \
+    sed -E 's/^(PART )V/\1V -/' | \
+    sed -E 's/^(PART V - ENVIRONMENTAL.*) Appointment/\1\n\nAppointment/' | \
+    sed -E 's/^(PART )V -I/\1VI -/' | \
+    sed -E 's/^(PART VI - ENVIRONMENTAL.*) Objects/\1\n\nObjects/' | \
+    sed -E 's/^(PART )VI -I/\1VII -/' | \
+    sed -E 's/^(PART VII - ENVIRONMENTAL.*) Listing/\1\n\nListing/' | \
+    sed -E 's/^(PART )VII -I/\1VIII -/' | \
+    sed -E 's/^(PART VIII - ENVIRONMENTAL.*) Application/\1\n\nApplication/' | \
+    sed -E 's/^(PART )I -X/\1IX -/' | \
+    sed -E 's/^(PART IX - SPECIAL.*) Consultation/\1\n\nConsultation/' | \
+    sed -E 's/^(PART )X/\1X -/' | \
+    sed -E 's/^(PART X - GENERAL.*) Delegation/\1\n\nDelegation/'
+}
+
+function remove_all_text_after_last_article {
+  sed -E '/^\(58\)/,${/^\(58\)/!d}'
 }
 
 function preprocess_state_and_language_input_file {
@@ -186,7 +185,6 @@ function preprocess_state_and_language_input_file {
     remove_margin_headers | \
     remove_leftover_article_literals | \
     amend_errors_in_articles | \
-    move_article_titles_above_article_bodies | \
     amend_errors_in_headers | \
     remove_all_text_after_last_article
 }
