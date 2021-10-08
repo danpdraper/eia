@@ -1,0 +1,1419 @@
+Copyright Government of Botswana
+CHAPTER 65:07
+ENVIRONMENTAL IMPACT ASSESSMENT
+ARRANGEMENT OF SECTIONS
+PART I
+Preliminary
+SECTION
+1. Short title
+2. Interpretation
+3. Application of Act
+4. Requirements to undertake an activity
+5. Ensuring issuance of authorisation
+PART II
+Preparation of environmental impact assessment documentation
+6. Requirement for authorisation
+7. Public participation and scoping exercise
+8. Terms of reference
+9. Environmental impact assessment and statement
+10. Form and content of statement
+11. Registration and qualifications of consultants
+PART III
+Review process of environmental impact statement
+12. Public review of statement
+13. Conduct of public hearing
+14. Approval of statement
+15. Appeals
+PART IV
+Authorisation of a statement
+16. Validity of an authorisation
+17. Revocation or modification of authorisation
+18. Transfer of authorisation
+19. Decision making by competent authority
+PART V
+Post environmental impact assessment of implemented activities
+20. Monitoring programme and evaluation report
+21. Environmental audit by competent authority
+PART VI
+Miscellaneous
+22. Enforcement of provisions
+23. Public documents and register
+24. Confidentiality
+25. Protection from personal liability
+26. Powers of entry
+27. Power to require information
+28. Trans-boundary environmental impact
+29. General penalty
+30. Regulations
+31. Transitional
+32. Act to bind state 
+Copyright Government of Botswana
+Act 6, 2005.
+An Act to provide for environmental impact assessment to be used to assess the
+potential effects of planned developmental activities; to determine and to provide
+mitigation measures for effects of such activities as may have a significant adverse
+impact on the environment; to put in place a monitoring process and evaluation of the
+environmental impacts of implemented activities; and to provide for matters incidental to
+the foregoing.
+[Date of Commencement: 27th May, 2005]
+PART I
+Preliminary (ss 1-5)
+1. Short title
+ This Act may be cited as the Environmental Impact Assessment Act.
+2. Interpretation
+ In this Act, unless the context otherwise requires-
+"activity" includes a project, programme or policy;
+"authorisation" means a document issued under this Act, where the environmental
+impact of an activity is sufficiently described by the application, scoping exercise or an
+environmental impact statement, and the proposed mitigation for the impact are acceptable;
+"competent authority", in relation to an activity under this Act, means the Department;
+"consultant" has the meaning assigned to it under section 11;
+"Department" means the Department of Environment and Conservation;
+"developer" means an applicant authorised to undertake an activity;
+"Director" means the Director of the Department of Environment and Conservation;
+"environment" includes the physical, ecological, archaeological, aesthetic, cultural,
+economic, institutional, human health and social aspects of the surroundings of a person;
+"environmental audit" means work done to identify and evaluate compliance of the
+statement and the residual environmental impact of an existing activity, the effectiveness of
+mitigation measures and the functioning of monitoring mechanisms;
+"environmental impact" means any positive or negative effects caused by an activity
+on the environment;
+"environmental impact assessment" means the process and procedure for evaluating
+and predicting the likely environmental impact of a proposed activity;
+"evaluation report" means a report on studies carried out to ensure that environmental
+considerations are taken into account when an activity is implemented;
+"local authority" includes a land board;
+"mitigation measures" means the reduction or control of the adverse environmental
+impact of an activity and includes restitution for any damage to the environment caused by such
+activity through engineering works, technological improvements, management measures or
+compensation to ameliorate any loss suffered by a person;
+"preliminary environmental impact assessment" means a description of the likely
+environmental impacts of an activity provided by the applicant as part of the application;
+"relevant technical department" means a government department responsible for
+monitoring an activity undertaken under this Act, by virtue of that department having the
+necessary technical expertise to do so;
+"scoping" means consultations with concerned government departments, local
+authorities, non-governmental organisations, members of the public and any other interested
+persons, to determine the extent of the likely environmental impact of a proposed activity;
+"statement" means a report of the environmental impact assessment study executed in 
+Copyright Government of Botswana
+accordance with terms of reference approved by the competent authority;
+"strategic environmental assessment" means a process for evaluating the
+environmental consequences of proposed policy, plan, or programme initiatives in order to
+ensure that they are fully included and appropriately addressed at the earliest stage of decision
+making, on par with economic and social considerations;
+"threshold" in relation to an environmental impact assessment of an activity, means a
+measurable level or limit of an output resulting from the operation of a proposed activity
+indicative of the activity's environmental impact; and
+"terms of reference" means a document which details the main environmental issues
+which must be addressed in an environmental impact study.
+3. Application of Act
+ (1) This Act applies to the activities in respect of which the Minister, may, after
+screening them, prescribe by regulations.
+(2) Regulations made pursuant to subsection (1) shall prescribe -
+(a) a list of activities which are likely to cause significant adverse effects on the
+environment, or the locations that may be environmentally sensitive, in respect of which
+a statement shall be mandatory;
+(b) threshold determinations of environmental impact assessment with respect to the
+activities prescribed under paragraph (a); and
+(c) criteria which shall be used to determine the likely effects of a proposed activity in order
+to further determine whether or not a statement is required for the activity.
+(3) In this section, screening'' means an initial stage in the environmental impact
+assessment process where the Minister determines whether an activity should be subjected to
+an environmental impact assessment or not.
+4. Requirements to undertake an activity
+ (1) No person shall undertake or implement an activity prescribed under section 3
+unless the environmental impact of the proposed activity is fully taken into account in
+accordance with the provisions of this Act and authorisation has been issued under section 14.
+(2) Any person who undertakes or implements an activity in contravention of subsection
+(1) commits an offence and is liable to a fine not exceeding P100,000 or to a term of
+imprisonment not exceeding two years or to both.
+(3) A person who contravenes subsection (1) shall rehabilitate the area affected by the
+adverse environmental impact of the implemented activity.
+(4) In this section, "rehabilitate" means the reinstatement or restoration to a normal or
+functional environmental state.
+(5) A person who contravenes subsection (3) commits an offence and is liable to a fine
+not exceeding P15,000 or to a term of imprisonment not exceeding 2 years or to both.
+(6) In the case of a continued contravention in respect of a person convicted under
+subsection (2) or (5), that person is liable to a further fine not exceeding P2,000 for every day on
+which the offence continues.
+5. Ensuring issuance of authorisation
+ (1) A licensing authority shall, before issuing a permit, licence, consent or approval to
+any person who has applied to implement an activity prescribed under section 3, ensure that
+authorisation has been issued for the proposed activity in accordance with this Act.
+(2) In this section, "licensing authority" means any authority vested with the responsibility
+of issuing licenses for any of the activities prescribed under section 3.
+PART II
+Preparation of environmental impact assessment documentation (ss 6-11)
+6. Requirement for authorisation
+ (1) Every-
+(a) application made to obtain authorisation for a proposed activity shall contain or be 
+Copyright Government of Botswana
+accompanied by a preliminary environmental impact assessment which shall include a
+description of the activity; and
+(b) formulation of a policy or programme, shall contain or be accompanied by an approved
+strategic environmental assessment, which strategic environmental assessment shall
+contain a description of the proposed policy or programme.
+(2) An application made under subsection (1) (a) shall be in the prescribed form and
+shall be accompanied by such fee as may be prescribed.
+(3) Where the competent authority is satisfied that all relevant information is available in
+the application and that the activity can be carried out without any adverse environmental
+impact, the competent authority shall authorise the implementation of the activity.
+(4) Where the competent authority finds that information provided in the application is
+insufficient, the competent authority shall require and specify to the applicant the additional
+information to be provided.
+7. Public participation and scoping exercise
+ (1) An applicant shall take all measures necessary to seek the views of the people or
+communities which are likely to be affected by the activity.
+(2) In seeking the views of the people or communities in accordance with subsection (1)
+the applicant shall-
+(a) publicise the intended activity, its effects and benefits in the mass media using the
+official languages for a period of not less than 21 days; and
+(b) after the expiration of the period of 21 days, hold meetings with the affected people or
+communities to explain the activity and its effects.
+8. Terms of reference
+ (1) Where, upon a consideration of all the information submitted by the applicant, the
+competent authority decides that an environmental impact assessment is required, the authority
+shall inform the applicant, in writing, to prepare terms of reference for the environmental impact
+assessment, which terms of reference shall be in the prescribed form.
+(2) An applicant shall, after complying with section 7 and subsection (1) of this section,
+submit the terms of reference and the results of the scoping exercise to the competent authority.
+(3) In considering the terms of reference, the competent authority shall consult with the
+relevant technical departments or local authorities, and may-
+(a) conduct such investigation as it considers necessary to ascertain the validity of the
+scoping exercise of the activity; or
+(b) request the applicant to provide additional information for a better understanding of the
+terms of reference.
+(4) Where the competent authority is satisfied that the terms of reference will adequately
+assist in guiding the environmental impact assessment of the proposed activity, the competent
+authority shall approve the terms of reference.
+(5) Where an applicant requires the services of a consultant to prepare the terms of
+reference required in terms of subsection (1), the applicant shall appoint the consultant at the
+applicant's own expense.
+9. Environmental impact assessment and statement
+ (1) Where the competent authority determines that the proposed activity is likely to
+have a significant adverse environmental impact, it shall require that such activity undergo an
+environmental impact assessment, the costs of which shall be borne by the developer.
+(2) An environmental impact assessment shall identify and evaluate the environmental
+impact of an activity with particular reference to the-
+(a) health, safety or quality of life of people;
+(b) archaeological, aesthetic, cultural or sanitary conditions of the environment; and
+(c) configuration, quality and diversity of natural resources.
+(3) Where the competent authority determines that an environmental impact assessment 
+Copyright Government of Botswana
+be made under subsection (1), upon being informed in writing about the decision, the applicant
+shall, before undertaking or implementing the activity, prepare and submit a statement to the
+competent authority within the period of time prescribed in the approved terms of reference.
+(4) A person who contravenes subsection (3) commits an offence and is liable to a fine
+not exceeding P100,000 or to a term of imprisonment not exceeding five years or to both.
+10. Form and content of statement
+ (1) A statement shall be made in the prescribed form and shall include-
+(a) the name of the applicant;
+(b) a description of the proposed activity and its purpose;
+(c) an outline of alternative sites of the proposed activity including the non-action
+alternative;
+(d) a description of the likely environmental impact on local environment and
+socio-economic consequences;
+(e) an environmental management plan;
+(f) the time period for which environmental impact is predicted;
+(g) an account of the predicted environmental impact and an assessment of each kind of
+environmental impact;
+(h) a discussion of the distribution of the expected environmental impact;
+(i) a description of mitigating measures to keep adverse environmental impact to a
+minimum;
+(j) a description of residual environmental impact;
+(k) a proposed monitoring programme and evaluation exercise;
+(l) the potential uses to be prevented or impaired by the proposed activity;
+(m) the possible effects of an environmental impact of an activity;
+(n) the potential trans-boundary environmental impact of an activity;
+(o) a brief, non-technical or executive summary; and
+(p) such other relevant information as the Minister may consider necessary.
+(2) In this section, "environmental management plan" means a document representing
+the administration of efforts that will be made to manage any significant environmental impact
+resulting from the implementation of the activity; and
+"residual environmental impact" means an environmental impact which arises after the
+implementation of mitigation measures for an activity.
+11. Registration and qualifications of consultants
+ (1) A person shall be qualified to be engaged as a consultant for the purposes of this
+Act, if the person -
+(a) is registered as a consultant in accordance with the provisions of subsection (2); and
+(b) has, in his or her employment, or has access to the services of, persons specialising in
+such disciplines as the Minister may prescribe.
+(2) Where an individual applies for registration as a consultant under this Act, the
+individual shall satisfy the Minister that he or she has obtained by examination, any one of the
+disciplines prescribed in terms of subsection (1) and has-
+(a) at least two years experience in undertaking environmental assessments, as part of a
+team; and
+(b) knowledge of the basic processes on the environmental impact assessment process,
+and of international guidelines on the preparation of terms of reference and statements.
+PART III
+Review process of the environmental impact statement (ss 12-15)
+12. Public review of statement
+ (1) The competent authority shall, within 60 days of receiving a statement from a
+developer, examine the statement to determine whether such statement complies with the
+requirements of section 10. 
+Copyright Government of Botswana
+(2) Where the statement complies with the requirements of section 10, the competent
+authority shall -
+(a) place a notification in the Gazette and in a newspaper circulating at least once weekly,
+for four consecutive weeks, inviting comments or objections of those persons who are
+most likely to be affected by the proposed activity and other interested persons, stating
+the-
+ (i) nature and magnitude of the activity,
+ (ii) location of the activity,
+ (iii) anticipated environmental impact of the activity, and
+ (iv) proposed mitigation measures to respond to the negative environmental impact;
+and
+(b) in its decision making, consider the comments or objections raised by persons who are
+likely to be affected by the proposed activity and other interested persons.
+13. Conduct of public hearing
+ (1) The competent authority may hold a public hearing if-
+(a) after examining the statement, the competent authority is of the opinion that the activity
+is of such a nature that the public should have the opportunity to make submissions or
+comments at a public hearing; or
+(b) the public concern over the activity is that the activity may have a significant adverse
+impact on the environment.
+(2) The Minister may, in consultation with the competent authority, prescribe the
+procedure for conducting a public hearing.
+(3) The competent authority shall, after a public hearing, consider the findings in
+determining the adequacy of the environmental impact statement.
+14. Approval of statement
+ (1) Where the competent authority's review of the statement is complete, the competent
+authority shall-
+(a) grant authorisation to the developer, with such terms and conditions as the competent
+authority considers necessary, where-
+ (i) the competent authority is satisfied that the statement sufficiently identifies the
+environmental impact likely to be caused, and
+ (ii) the prescribed mitigation measures in the statement, to avert or minimise the
+potential adverse environmental impact, are effective and sufficient; or
+(b) where the competent authority is of the view that-
+ (i) the statement does not sufficiently identify the environmental impact likely to be
+caused, or
+ (ii) the prescribed mitigation measures to avert or minimise the potential adverse
+environmental impact, are insufficient and ineffective, afford the developer an
+opportunity to comply with the provisions of the Act; or
+(c) reject the statement, where the developer fails to satisfy the conditions under
+paragraph (b).
+(2) In deferring or rejecting the statement, the competent authority shall furnish the
+applicant with a written statement of the reasons for its decision.
+(3) An authorisation issued under subsection (1) (a) shall be in the prescribed form and
+shall include-
+(a) what has been decided;
+(b) why the decision has been made; and
+(c) how the statement influenced the decision.
+(4) The competent authority may, in issuing an authorisation, prescribe, in writing,
+specific requirements for monitoring during and after implementation of the proposed activity, by
+the technical departments, local authorities and the developer. 
+Copyright Government of Botswana
+15. Appeals
+ A person aggrieved by a decision of the competent authority may appeal to the High
+Court within 30 days of receiving the decision of the competent authority.
+PART IV
+ Authorisation of a statement (ss 16-19)
+16. Validity of an authorisation
+ An authorisation granted under section 14 (1) (a) shall be valid for such period as may
+be stipulated therein and may be subject to renewal at the end of such period.
+17. Revocation or modification of authorisation
+ (1) The competent authority may revoke or modify an authorisation to implement an
+activity where there is an unanticipated irreversible adverse environmental impact, or a
+developer fails to comply with any term or condition subject to which the developer's
+authorisation was issued.
+(2) The competent authority shall not revoke or modify any authorisation granted to a
+developer until the competent authority has, by notice in writing, given the opportunity to the
+developer concerned, to-
+(a) rectify any contravention; or
+(b) show cause, within a period not exceeding 21 days from the date of such notice, why
+the authorisation should not be so revoked or modified.
+(3) The competent authority shall publish a notice of any revocation or modification
+made under this section, in two consecutive issues of-
+(a) the Gazette; and
+(b) two newspapers in circulation in Botswana.
+18. Transfer of authorisation
+ (1) No person shall transfer, assign or encumber in any way, without the written
+consent of the competent authority, an authorisation issued under section 14 (1) (a).
+(2) A person who contravenes subsection (1) commits an offence and is liable to a fine
+not exceeding P15,000 or to imprisonment for a period not exceeding two years or to both.
+19. Decision making by competent authority
+ In assessing applications for an authorisation under this Act, and in making a decision
+as to whether it ought to issue or renew an authorisation under this Act, the competent authority
+shall take into account the contents of the terms of reference, the statement, the
+recommendations of other government departments, local authorities and the comments and
+objections of interested persons and the public.
+PART V
+Post environmental impact assessment of implemented activities (ss 20-21)
+20. Monitoring programme and evaluation report
+ (1) The relevant technical department or local authority, shall, during and after
+implementation of an activity, monitor the implementation of the activity to determine compliance
+with the agreed mitigation measures.
+(2) The developer shall submit an evaluation report to the relevant technical department
+or local authority, at such times as the department or local authority shall determine.
+21. Environmental audit by competent authority
+ (1) The competent authority shall carry out or cause to be carried out biennially at its
+own expense, environmental audits for approval and operational purposes.
+(2) After carrying out an environmental audit under subsection (1), the competent
+authority may require a developer to take-
+(a) specific mitigation measures to ensure compliance with predictions made in the
+statement; or
+(b) mitigation measures to address environmental impacts not anticipated at the time of
+the authorisation. 
+Copyright Government of Botswana
+PART VI
+Miscellaneous (ss 22-31)
+22. Enforcement of provisions
+(1) If a person alleges that any provision of this Act has been, is being, or is likely to be
+contravened in relation to him or her, or any other person or group of persons who have a
+substantial interest, that person may apply to the High Court for redress.
+(2) In subsection (1), interest shall be established in accordance with the common law
+rules of standing.
+23. Public documents and register
+ (1) Any terms of reference, statement, report, decision or any other document produced
+under this Act shall be a public document.
+(2) The competent authority shall maintain a register of public documents referred to
+under subsection (1), which shall be open for public inspection.
+24. Confidentiality
+ No person appointed, employed or duly authorised by the competent authority, shall
+disclose any information which the person acquired in the performance of any duty, or the
+exercise of any function under this Act, except for the purposes of the performance of a duty or
+the exercise of a function or when lawfully required to do so by a court.
+25. Protection from personal liability
+ An officer, employee or agent of the competent authority shall not be subject to any
+liability, action, claim or demand, for an act done by the officer, employee or agent, bona fide for
+the purposes of carrying the provisions of this Act into effect.
+26. Powers of entry
+ (1) For the purposes of the administration of this Act, an officer of the competent
+authority who has been authorised by the Director, in writing, may, without previous notice and
+at any time-
+(a) enter upon any land or premises for the purposes of undertaking investigations and
+inspections to ensure compliance with this Act;
+(b) stop, seize and search any vehicle, boat or aircraft, which the officer believes to have
+been used in the commission of an offence or to contain anything which might provide
+evidence of the offence; or
+(c) require the driver of the vehicle, the person in charge of the boat, or the pilot of the
+aircraft, referred to in paragraph (b), to furnish the officer with the details of any licence,
+permit, authority or permission issued to him under this Act.
+(2) A person authorised to act under subsection(1) shall, if so required, produce
+evidence of the authorisation signed by the Director.
+(3) Any person who wilfully obstructs a person authorised to exercise the powers under
+this section, or who gives information which he knows or ought reasonably to know is false,
+commits an offence and is liable to a fine not exceeding P15,000 or to imprisonment for a term
+not exceeding two years or to both.
+(4) Any power conferred by this section shall be construed as including power to search
+for the purpose of ascertaining the environmental impact of the activity.
+27. Power to require information
+(1) A person duly authorised under section 26 may, for the purpose of ensuring
+compliance with this Act, require the owner or occupier of any premises to provide any
+information which may be required for the purposes of this Act.
+(2) Any person who-
+(a) refuses to give the information required under subsection (1); or
+(b) gives information which is false or misleading,
+commits an offence and is liable to a fine not exceeding P10,000 or to imprisonment for a term
+not exceeding one year or to both. 
+Copyright Government of Botswana
+28. Trans-boundary environmental impact
+ (1) Where a proposed activity is likely to have a significant adverse environmental
+impact in another country, the competent authority shall consult the Minister.
+(2) The Minister shall, through the Minister responsible for foreign affairs, inform the
+country concerned about the intended activity, by sending to that country's Minister responsible
+for foreign affairs, the terms of reference or a statement, and any other relevant information.
+(3) This section applies to any country-
+(a) in respect of which the Minister, having regard to any reciprocal provisions under the
+laws of that country, so directs; or
+(b) that is a party to an international agreement or treaty to which Botswana is a party, has
+acceded to or ratified, where the parties to the international agreement or treaty are
+obliged to so inform one another.
+29. General penalty
+ Any person who contravenes the provisions of this Act for which no penalty is otherwise
+provided and is convicted of an offence shall be liable to a fine not exceeding P15,000 or to a
+term of imprisonment not exceeding two years or to both.
+30. Regulations
+ The Minister may make regulations for any matter which under this Act is to be
+prescribed or for the better carrying out of the provisions of this Act, and without prejudice to the
+generality of the foregoing, such regulations may make provision for-
+(a) guidelines for the scoping exercise;
+(b) a list of activities or environmentally sensitive areas for which a statement is
+mandatory, criteria for determining whether a statement is required and threshold
+determinations of environmental impact assessment to activities;
+(c) qualifications to conduct an environmental impact assessment;
+(d) forms and content of terms of reference or statement;
+(e) the manner of preparing the terms of reference, statement, monitoring programme or
+evaluation report;
+(f) reviewing of the terms of reference, the statement, the monitoring programme, the
+evaluation report and the environmental audit report;
+(g) the manner of holding public hearings;
+(h) revoking or modifying an authorisation issued under this Act;
+(i) the manner in which entry into premises may be achieved to investigate or evaluate an
+environmental impact, or to monitor and audit the environmental impact of an activity;
+and
+(j) the trans-boundary environmental impact of an activity.
+31. Transitional
+ (1) Where on the coming into force of this Act, a person is actively engaged in an
+activity prescribed under section 3, the person may continue to engage in that activity without an
+authorisation under this Act for a period of 12 months from the coming into force of the Act.
+(2) A person referred to under subsection (1) shall, within the twelve months referred to,
+apply for authorisation in accordance with the provisions of this Act.
+(3) A person who contravenes subsection (2) commits an offence and is liable to a fine
+not exceeding P100,000 or to imprisonment for a term not exceeding five years or to both.
+32. Act to bind State
+ This Act binds the State.
+CHAPTER 72:01
+BOTSWANA POSTAL SERVICES
+ARRANGEMENT OF SECTIONS
+SECTION 
+Copyright Government of Botswana
+PART I
+Preliminary
+1. Short title and commencement
+2. Interpretation
+PART II
+Establishment of Botswana Postal Services and Board of Management
+3. Establishment of Botswana Postal Services
+4. Establishment of Board
+5. Resignation and removal from office
+6. Tenure of office
+7. Payment of members
+PART III
+Meetings and Proceedings of Board
+8. Meetings
+9. Signification of documents
+PART IV
+Officers, Employees and Agents of the Post
+10. Appointment of officers and employees
+11. Delegation to committee
+PART V
+Functions, Powers and Duties of the Post
+12. Functions and powers
+13. Exclusive privilege of the Post
+14. Co-operation with authorities
+15. Research and records
+16. Power of Minister to give directions
+PART VI
+Finances
+17. Principles of financial operations
+18. Fixing of tariffs
+19. Borrowing powers
+20. Vesting of property in the Post
+21. Accounts and audit
+PART VII
+General
+22. Annual report
+23. Compulsory acquisition of land
+24. Resettlement measures
+25. Compensation for loss or damage
+26. Power to call for information
+27. Power of Board to make bye-laws
+28. Transitional provisions
+PART VIII
+Transmission of Postal Articles
+29. Registration of postal articles
+30. When postal articles deemed to be in course of transmission or to be posted or
+delivered 
+Copyright Government of Botswana
+31. Redirection and interception of postal articles
+32. Articles deemed to be posted in contravention of Act
+33. Articles to be sent by postmasters to Returned Letter Office for disposal
+34. Articles other than letters may be opened for examination
+35. Treatment of unclaimed letters in Returned Letter Office
+36. Unclaimed articles of value and articles posted in contravention of Act
+37. Sender of undelivered article liable for all charges due
+38. Delay, return to sender or delivery to other than addressee of article prohibited
+39. Undelivered articles of no value and newspapers may be destroyed
+40. Articles addressed to insolvent person
+41. Articles addressed to deceased person
+42. Articles addressed to persons conducting lottery or dealing in indecent or obscene
+matter
+PART IX
+Remittance of Money through Post Office
+43. Remittance of money through the Post
+44. Director General may refuse to issue or pay money orders, etc., to certain persons
+45. Money orders, etc., to be deemed bank notes
+PART X
+Offences and Penalties
+46. Forging stamps, dies, etc.
+47. Removing marks from stamps, etc., with intent to defraud
+48. Offences in connection with carriage and delivery of mail
+49. Fraudulent, injurious and offensive practices in connection with postal articles and
+premises
+50. Placing of dangerous or noxious articles and stoppage of mail
+51. Tampering with mail
+52. Wilfully obstructing or delaying mail
+53. Wilfully opening or delaying postal articles
+54. Unauthorized use of words "Post Office", "Botswana Mail", etc.
+55. Unauthorized entry of premises, obstruction of business, and refusal to comply with
+regulations
+56. Frauds in connection with money orders, etc.
+57. Personating officers of the Post with fraudulent intent
+58. False declaration
+59. Attempting to commit or procuring commission of offences
+60. In criminal proceedings, etc., property in postal articles, money, money orders, etc.,
+may be laid in Director General
+61. Evidence: acceptance of official marks
+PART XI
+Miscellaneous
+62. Limitation of liability
+63. Detention of postal articles
+64. Regulations
+65. Repeal and savings
+Act 22, 1989,
+S.I. 2, 1990.
+An Act to provide for the establishment of an organization to be known as the Botswana
+Postal Services for the provision, development, operation and management of postal
+services and for matters connected therewith or incidental thereto. 
+Copyright Government of Botswana
+[Date of Commencement: 6th October, 1989]
+PART I
+Preliminary (ss 1-2)
+1. Short title and commencement
+This Act may be cited as the Botswana Postal Services Act.
+2. Interpretation
+In this Act, unless the context otherwise requires-
+"financial year" means the year ending on 31st March in each year;
+"franking machine" means a machine for the purpose of making impressions on postal
+articles to denote payment of postage and includes any meter and any franking or date
+stamping die used in connection with postal franking;
+"money order" means a money order issued under this Act or by any postal authority
+for payment under this Act;
+"postage stamp" or "stamp" means any piece of paper or other substance or material
+having thereon the stamp mark, or impression of any die, plate or other instrument made or
+used under this Act on by any postal authority for the purpose of denoting any postage or other
+postal fee;
+"postal article" means any letter, post card, reply post-card, letter-card, newspaper,
+book, packet, sample packet or pattern or any parcel or other article when in course of
+transmission by post;
+"postal order" means a postal order issued under this Act or by any postal authority for
+payment under this Act;
+"postal service" means a service performed and facilities provided in connection with-
+(a) the collection, transmission and delivery of postal articles by whatever means of
+transportation from one place to another whether within or outside Botswana;
+(b) the issue of postage stamps and the use of franking machines; and
+(c) the issue or repayment of money orders or postal orders for the remittance of money
+through the Botswana Postal Services; and
+"senior officer" means any employee of the Botswana Postal Services who holds a
+position which is so designated by the Board.
+PART II
+Establishment of Botswana Postal Services and Board of Management (ss 3-7)
+3. Establishment of Botswana Postal Services
+(1) There is hereby established a commercial organization of the Government of
+Botswana to be known as the Botswana Postal Services, referred to in this Act as the "Post".
+(2) Notwithstanding any other law to the contrary, all legal proceedings by or against the
+Government of Botswana and related to any commercial activity for or by the Post may be
+instituted by or against the Botswana Postal Services in its own name as representing the
+Government of Botswana, and the necessary service of process therein may be effected on the
+Director General of Botswana Postal Services appointed under section 10 of this Act.
+(3) Sections 3 and 6 of the Civil Procedure (Actions by or Against Government or Public
+Officers) Act shall not apply to actions by or against the Botswana Postal Services.
+4. Establishment of Board
+(1) There is hereby established a Board of Management of the Botswana Postal
+Services (hereinafter referred to as the Board) which shall have such powers in relation to the
+overall management and control of the Post as may be specified in this Act.
+(2) The Board shall consist of the following members appointed by the Minister-
+(a) the Chairman;
+(b) the Director General of the Botswana Postal Services appointed under section 10 who
+shall be an ex-officio member; and 
+Copyright Government of Botswana
+(c) not less than 5 nor more than 7 other persons who in the opinion of the Minister have
+knowledge and experience likely to contribute to the successful management of the
+Post.
+(3) A person shall not be competent to be appointed or to act as a member of the Board
+if he-
+(a) is a member of the National Assembly;
+(b) is an employee of the Post;
+(c) has been declared insolvent or bankrupt under any law in any country and has not
+been discharged, or made a composition with his creditors and has not paid his debts
+in full.
+5. Resignation and removal from office
+(1) Any member of the Board, other than the Director General, may resign his
+membership of the Board by notice in writing to the Minister.
+(2) A member of the Board may be removed from membership thereof by the Minister if-
+(a) any circumstances arise, which, if he were not a member, would cause him to be
+disqualified for appointment as a member of the Board under section 4(2);
+(b) he becomes of unsound mind;
+(c) he suspends payment of his debts or compounds with his creditors;
+(d) he is absent from 3 consecutive meetings of the Board without such reason as appears
+to the Minister to be sufficient;
+(e) he is sentenced to imprisonment without the option of a fine or is convicted of an
+offence involving dishonesty;
+(f) is guilty of serious misconduct in relation to his duties as Chairman or member of the
+Board; or
+(g) in the case of a person possessed of professional qualifications, he is disqualified or
+suspended, otherwise than at his own request, from practising his profession in
+Botswana, or in any other country, by order of any competent authority made in respect
+of him personally.
+6. Tenure of office
+(1) A member of the Board, other than the Chairman and the Director General, shall hold
+office for such period not exceeding 4 years as may be specified in the notice appointing him,
+and on the expiration of such period shall be eligible for reappointment:
+Provided that in appointing members of the Board the Minister shall so specify such
+periods of appointment that the periods of appointment of not more than one-third of the
+members shall expire in any one year.
+(2) The Chairman of the Board shall hold office as Chairman for a period of 3 years and
+on the expiration of such period shall be eligible for reappointment.
+(3) The Board shall, once in every year, elect from among its members (other than the
+Director General) a Vice-Chairman for a period of one year.
+(4) Subject to the provisions of this Act, where any member of the Board is incapacitated
+by absence from Botswana or illness or any other sufficient cause, from performing the duties of
+his office, the Minister shall appoint another person to hold office in his place until the incapacity
+of that person has terminated or until the term of office of such member expires, whichever first
+occurs.
+7. Payment of members
+The Board shall pay to the members thereof such remuneration, fees and allowances for
+expenses as may be approved by the Minister.
+PART III
+Meetings and Proceedings of Board (ss 8-9)
+8. Meetings
+(1) The Board shall meet for the discharge of its functions at such times and places as 
+Copyright Government of Botswana
+the Chairman may appoint, so however that the Board shall meet at intervals not exceeding 3
+months.
+(2) The Chairman, or in his absence the Vice-Chairman, may, and shall on the request in
+writing of not less than 2 members of the Board, call an extraordinary meeting of the Board at
+such time and place as he may determine.
+(3) The Chairman, or in his absence the Vice-Chairman, shall preside at every meeting
+of the Board.
+(4) In the absence of both the Chairman and the Vice-Chairman, the members present
+shall elect one of their number to preside at the meeting.
+(5) The quorum at any meeting of the Board shall be not less than one half of the
+members of the Board:
+Provided that the presence of the Director General shall not count towards the
+constitution of the quorum.
+(6) All questions proposed at a meeting of the Board shall be determined by a majority of
+the members present and voting, and where the votes are equal, the Chairman or the person
+presiding shall have a second or casting vote:
+Provided that the Director General shall not be entitled to vote unless the Board decides
+otherwise in any particular instance.
+(7) Any member of the Board who has an interest, or whose spouse has an interest, in
+any company or undertaking with which the Board proposes to make a contract, or has an
+interest in any contract which the Board proposes to make, shall disclose the nature of his
+interest, and shall not vote or take any part in the proceedings of the Board relating to such
+contract.
+(8) The Board may, and shall if the Minister so directs request the attendance of any
+person to act as adviser at a meeting of the Board, and that person while so attending shall
+have all the powers of a member except that he shall not vote on any question and his presence
+at the meeting shall not count towards the constitution of a quorum.
+(9) The validity of any act or proceeding of the Board shall not be affected by any
+vacancy among its members or by any defect in the appointment of a member thereof.
+(10) The Board may from time to time make standing orders providing for the regulation
+of-
+(a) meetings of the Board;
+(b) the conduct of its business and other operations in furtherance of the purposes of this
+Act; and
+(c) the duties of its officers, employees and agents.
+9. Signification of documents
+All documents made by, and all decisions of, the Board may be signified under the hand
+of the Chairman of the Board, the Director General or any member or senior officer of the Post
+generally or specially authorized in that behalf.
+PART IV
+Officers, Employees and Agents of the Post (ss 10-11)
+10. Appointment of officers and employees
+(1) The Post shall have a Director General who shall be appointed by the Minister upon
+such terms and conditions as may be determined by the Board.
+(2) No person shall be appointed as Director General unless he is qualified by
+experience and training, and has demonstrated that he is competent, to manage and operate
+the business of the Post.
+(3) The Director General shall, subject to such directions on matters of general policy as
+may be given by the Board, be charged with the direction of the business of the Post and of its
+administration and organization, and the control of the employees of the Post.
+(4) The Director General may resign from office by notice in writing addressed to the 
+Copyright Government of Botswana
+Minister.
+(5) The Director General may delegate to any senior officer of the Post the exercise of
+any power which he is authorized to exercise under this Act.
+(6)(a) The Board shall, on consideration of the recommendations of the Director
+General, from time to time determine the staff deemed necessary for the proper discharge of the
+functions of the Post and the terms and conditions of employment.
+(b) The appointment and dismissal of all persons to or from positions designated by
+the Board as held by senior officers shall be made by the Board on consideration of
+recommendations by the Director General.
+(c) The appointment and dismissal of all other staff shall be made by the Director
+General or such senior officer as he may delegate to perform this function.
+(7) The Board may-
+(a) grant pensions, gratuities or retiring allowances to any officer or employee and may
+require such officer or employee to contribute to any pension or contributory scheme;
+(b) for the benefit of its officers and employees, establish and make contributions to any
+pension or superannuation fund or medical fund; and
+(c) from time to time appoint and employ upon such terms and conditions as it may think fit
+such agents and contractors as it may deem necessary.
+(8) Public officers from Ministries or other Departments may be transferred or seconded
+to the Post or may with the consent of their supervisors otherwise give assistance thereto.
+(9) Officers and employees of the Post shall, in so far as it is not inconsistent with the
+provisions of this Act, be public officers.
+(10) Officers and employees of the Post may become members of the appropriate Trade
+Union in accordance with the Trade Union legislation in force from time to time.
+11. Delegation to committee
+The Board may, by resolution, delegate to any committee appointed by it the exercise of
+any of the powers which it is authorized by this Act to exercise, generally or in any particular
+case.
+PART V
+Functions, Powers and Duties of the Post (ss 12-16)
+12. Functions and powers
+(1) The functions of the Post shall be-
+(a) to provide, develop, operate and manage postal services in an efficient and cost
+effective manner; and
+(b) to carry out such other operations as may appear to the Board to be conducive or
+incidental to the attainment of all or any of its objectives under this Act or any other law.
+(2) The Post shall have all powers necessary or convenient for the performance of its
+functions and duties and, without prejudice to the generality thereof, shall have the power to-
+(a) acquire and use any kind of property, undertaking, right or privilege and dispose of the
+same to the Government, or to any person other than a member, officer or employee of
+the Post or any agent or contractor appointed or employed by the Post;
+(b) enter into agreements in connection with the operation of postal services;
+(c) supply, sell or market air postal services to all persons desiring such services;
+(d) enter into such contracts as may be necessary for the performance of its functions and
+duties;
+(e) construct or cause to be constructed such works, houses, offices and other buildings
+and structures as it may deem necessary or expedient for the performance of its
+functions and duties;
+(f) purchase, take on lease or otherwise acquire or construct or cause to be constructed
+such tools, appliances, machinery, plant and equipment as it may deem necessary or
+expedient for the performance of its functions and duties; 
+Copyright Government of Botswana
+(g) sell, exchange, lease, dispose of, turn to account or otherwise deal with any of its
+assets or any part thereof, whether movable or immovable, not required for its
+purposes:
+ Provided that the immovable property of the Post shall not be sold without the
+approval in writing of the Minister for the time being responsible for finance;
+(h) invest from time to time, in such manner as it may deem fit, such moneys held by it as
+may be surplus to its immediate requirements, subject to the approval in writing of the
+Minister for the time being responsible for finance;
+(i) insure with any company or person against any loss, damage, risk or liability which the
+Post may incur;
+(j) purchase or sell any materials and stores used in the performance of its functions;
+(k) sell, hire or otherwise dispose of any apparatus used in connection with Postal
+services; and
+(l) carry on any activity which is reasonably requisite or convenient for or in connection
+with the discharge of its functions under this Act.
+13. Exclusive privilege of the Post
+(1) The Post shall have the exclusive privilege of establishing and operating postal
+services in Botswana.
+(2) Notwithstanding subsection (1) the Minister may, after consultation with the Board, by
+notice published in the Gazette, exempt services rendered by any person from the provisions of
+subsection (1) for such period as he may determine.
+14. Co-operation with authorities
+In the discharge of its functions the Post shall co-operate with local and other public
+authorities, including department and agencies of the Government, and shall consult with local
+authorities in matters of concern to the Post which affect their interest.
+15. Research and records
+With a view to facilitating present or future research or planning, the Post shall keep full
+and accurate records of all of its operations and shall have power to engage in research and to
+assist others to engage in research in respect of any matter relating to its functions, and to
+publish such records and the results of any such research.
+16. Power of Minister to give directions
+The Minister may, after consultation with the Board, give to the Board such directions of
+a general or specific character as to the exercise and performance of its powers in fulfilling its
+functions as are necessary as a matter of policy and as are not inconsistent with this Act or with
+the contractual or other legal obligations of the Post, and the Board shall give effect to any such
+directions.
+PART VI
+Finances (ss 17-21)
+17. Principles of financial operations
+(1) It shall be the duty of the Post to conduct its affairs on sound commercial lines and, in
+particular, so carry out its functions under this Act and so prescribe the charges payable in
+respect of the provision by the Post of its postal services as to ensure that its revenues are
+sufficient to produce on the fair value of its assets a reasonable return.
+(2) In determining what constitutes a reasonable return, all pertinent economic and
+financial considerations shall be taken into account, which shall include but not be limited to the
+need for a net operating income in an amount sufficient-
+(a) to meet interest payments on borrowings;
+(b) to provide for repayments to be made each year in respect of loans incurred by the
+Post to the extent to which such repayments exceed the year's provision for
+depreciation charged to revenue account;
+(c) to provide a reasonable proportion of the funds needed for expanding the Post's 
+Copyright Government of Botswana
+activities and improving its services;
+(d) to provide reserves for replacement, expansion or other purposes if and to the extent to
+which the Board deems it necessary to establish such reserves; and
+(e) to make dividend payments to the Government in respect of its equity interest in the
+Post if and to the extent deemed appropriate by the Board, after consultation with the
+Minister, and the Minister for the time being responsible for finance, and having regard
+to the future financial requirements of the Post.
+18. Fixing of tariffs
+(1) The Board shall, with the approval of the Minister, which approval shall not be
+unreasonably withheld, prescribe the tariffs or other charges for which it provides postal
+services so as to ensure that it is able to comply with the provisions of section 17.
+(2) The Board may prescribe different tariffs, charges or methods of charges for different
+classes or categories of service and for different areas or places.
+(3) Notwithstanding subsection (1), the Board may, where special circumstances exist
+and with the consent of the Minister, which consent shall not be unreasonably withheld, enter
+into agreement with any person providing for special tariffs or charges on a commercial basis in
+respect of that agreement.
+19. Borrowing powers
+(1) In order to enable the Post to discharge its functions under this Act and to meet its
+obligations it may borrow, on such terms and in such currencies as may be agreed between it
+and any lender, such sums as it may require, subject to the approval of the Minister for the time
+being responsible for finance.
+(2) The Post may charge its assets, undertakings, and revenues with the repayment of
+any money borrowed together with interest thereon and may issue debentures, bonds or other
+securities in order to secure the repayment of any money borrowed together with interest
+thereon and may do all other things necessary in connection with or incidental to such
+borrowings as are authorized by this section, subject to the approval of the Minister for the time
+being responsible for finance.
+20. Vesting of property in the Post
+(1) Any properties, assets, rights, debts, liabilities and obligations of the Government and
+the benefit and burden of all contracts made by or on behalf of the Government which are part
+of or concern or relate to postal services, may with the consent of the Board be transferred to
+and vest in the Post as hereinafter provided on terms and conditions agreed to by the Board.
+(2) The Minister may from time to time, by notice published in the Gazette, designate for
+the purposes of this section properties, assets, rights, debts, liabilities and obligations of the
+Government and contracts made by or on behalf of the Government which are part of, concern
+or relate to postal services, and as from the date specified in any such designation the
+properties, assets, rights, debts, liabilities and obligations and the benefit and burden of the
+contracts so designated shall vest in the Post.
+(3)(a) For the purposes of this subsection "appropriate date" means, in respect of any
+loan agreement made between the Government and any person whereby money was or is to be
+borrowed by the Government and used for or in connection with postal services, the date of the
+vesting of such loan agreement in the Post by virtue of the foregoing provisions of this section.
+(b) The Post shall pay to the Government, in such manner and on such date or dates as
+the Minister may, with the concurrence of the Board and the Minister for the time being
+responsible for finance, from time to time specify, any amount expended or advanced by the
+Government for or in connection with postal services comprising-
+ (i) all amounts repaid in respect of capital or interest by the Government to any
+person before the appropriate date under any loan agreement to which paragraph
+(a) applies;
+ (ii) all amounts disbursed or to be disbursed by the Government in repayment of any 
+Copyright Government of Botswana
+other loan raised or to be raised by the Government, and interest thereon, to the
+extent to which such loan has been or will be applied to postal services which,
+before the date specified in a designation pursuant to subsection (2), has not been
+offset by an amount or amounts credited to the Consolidated Fund for that
+purpose;
+ (iii) amounts equal to the outstanding debit balance of any advances made by the
+Government and all costs incurred by the Government as a result of making such
+advances;
+ (iv) any other amounts paid or to be paid by the Government which, before the date
+specified in a designation pursuant to subsection (2), has not been offset by an
+amount or amounts credited to the Consolidated Fund for that purpose.
+(4) If, within one month from the date specified by the Minister under subsection (3)(b)
+for the payment of any amount payable by the Post to the Government under that subsection,
+the Post fails to pay such amount, it shall pay interest thereon as from the date specified as
+aforesaid at such rate or rates as the Minister may, with the concurrence of the Minister for the
+time being responsible for finance, from time to time determine.
+21. Accounts and audit
+(1) The Post shall keep proper accounts and other records in relation to its operations,
+and shall prepare in respect of each financial year a statement of accounts showing in detail the
+assets and liabilities (real and contingent) and income and expenditure of the Post, in a form
+which shall conform with the best commercial accounting standards, applicable to the provision
+of postal services.
+(2) The accounts of the Post in respect of each financial year shall, within 4 months or
+such extended time after the end thereof as the Minister may direct, be audited by the
+Auditor-General or any auditor appointed by the Auditor-General (hereinafter referred to as
+"appointed auditor").
+(3) The Auditor-General or any appointed auditor shall report in respect of the accounts
+for each financial year, in addition to any other matter on which he deems it pertinent to
+comment, whether or not-
+(a) he has received all the information and explanations which, to the best of his
+knowledge and belief, were necessary for the performance of his duties as auditor;
+(b) the accounts and related records of the Post have been properly kept;
+(c) the Post has complied with all the financial provisions of this Act with which it is the
+duty of the Post to comply; and
+(d) the statement of accounts prepared by the Post was prepared on a basis consistent
+with that of the proceeding year and represents a true and fair view of the transactions
+and financial affairs of the Post.
+(4) The report of the Auditor-General or the appointed auditor and a copy of the audited
+accounts shall, within 7 days of the completion thereof, be forwarded to the Minister and to the
+Board.
+(5) The Minister shall, within 30 days of receiving the report and a copy of the audited
+accounts, lay such report and accounts before the National Assembly.
+PART VII
+General (ss 22-28)
+22. Annual report
+(1) The Board shall, within a period of 6 months after the end of the financial year or
+within such longer period as the Minister may approve, submit to the Minister a comprehensive
+report on the operations of the Botswana Postal Services during such year together with the
+auditor's report and the audited accounts as provided for in section 21, and the Board shall
+publish them in such manner as the Minister may specify.
+(2) The Minister shall, within 30 days of his receiving the Board's report, lay such report 
+Copyright Government of Botswana
+before the National Assembly.
+23. Compulsory acquisition of land
+For the purposes of any written law for the time being in force relating to the compulsory
+acquisition of land for public pursposes, the functions and operations of the Post shall be
+deemed to be public purposes.
+24. Resettlement measures
+If the operations of the Post make necessary resettlement of any person dwelling upon
+any communally owned land, the terms of such resettlement shall be subject to the agreement
+of the Government and of the local authorities of the area concerned.
+25. Compensation for loss or damage
+(1) In the exercise of its powers under this Act in relation to the execution of works or
+interference with property, the Post shall cause as little detriment and inconvenience and do as
+little damage as possible, and shall make full compensation to all local and other authorities and
+other persons who have sustained loss or damage by reason or in consequence of the exercise
+of such powers and, in default of agreement between the parties, the amount and application for
+such compensation shall be determined by arbitration in accordance with the provisions of the
+Arbitration Act.
+(2) For the purpose of such arbitration the parties shall be deemed to be parties to a
+submission in which the reference is to two arbitrators.
+26. Power to call for information
+The Minister may, for purposes associated with the administration of this Act, require the
+Board to provide him with estimates of the Post's future revenue and expenditure, and such
+other information relating to its activities and operations, including books of accounts, records,
+documents and agreements relating to postal services operated by the Post, as he may specify.
+27. Power of Board to make bye-laws
+The Board may, with the approval of the Minister, make bye-laws for any purpose
+connected with its powers, functions and duties under this Act, and may impose penalties for
+breach of any such bye-laws.
+28. Transitional provisions
+(1) Unless the contrary intention is indicated by the Board, every member of the staff of
+the former Department of Postal Services shall be deemed to have been duly appointed to an
+equivalent post under this Act.
+(2) Nothing in this Act shall be taken to effect any alteration in the terms of a contract
+subsisting immediately before the commencement of this Act or to authorize the making of any
+such alteration without the consent in writing of all parties bound by the contract.
+PART VIII
+Transmission of Postal Articles (ss 29-42)
+29. Registration of postal articles
+(1) The sender of any postal article may, upon payment of the prescribed fee in addition
+to the ordinary postage, have that article registered and obtain a receipt for it; but no such
+registration or receipt shall confer on any person any right to compensation or impose upon any
+officer any liability for the loss of any such article or of the contents thereof:
+Provided that the Director General may in an appropriate case, in his discretion pay
+compensation for the loss of any registered postal article or of the contents thereof.
+(2) Any postal article containing coin, bank notes, stamps, precious metals, precious
+stones or other articles of a like nature which have an intrinsic or marketable value shall be
+registered and if not so registered shall be liable on delivery to a charge equal to double the
+amount of any deficiency between the postage paid and the correct charge had the article been
+registered at the time of posting. No compensation shall be paid or payable in respect of the
+loss of any postal article, required to be registered under this subsection, but which is not so
+registered at the time of posting. 
+Copyright Government of Botswana
+30. When postal articles deemed to be in course of transmission or to be posted or
+delivered
+For the purposes of this Act-
+(a) a postal article shall be deemed to be in course of transmission by post from the time of
+its being delivered to a post office to the time of its being delivered to the person to
+whom it is addressed;
+(b) the placing of a postal article in a pillar box or other receptacle provided or the purpose
+by or with the approval of the Post, or the delivery of a postal article to an officer or
+other person authorized by the Director General to receive postal articles of that
+description, shall be deemed to be delivery to a post office;
+(c) the delivery of a postal article at the house or office of the person to whom the article is
+addressed or to his servant or agent or other responsible person or at the address
+specified on such article shall be deemed to be delivery to the person addressed; and
+(d) delivery into a private box or private bag shall be deemed to be personal delivery to the
+addressee.
+31. Redirection and interception of postal articles
+(1) The redirection of any unopened postal article (other than a parcel) from one place to
+another may be effected free of charge provided the new address has been fully prepaid, but
+registered articles redirected by the public shall be subject in each case to a further fee for
+registration.
+(2) Any redirected article which appears to the Director General to have been opened or
+tampered with shall be treated as if it were posted for the first time and shall be chargeable
+accordingly.
+(3) Any article arrested or intercepted in transit through the post-
+(a) at the request of either the sender or the addressee thereof, shall be liable to an
+additional charge equal to the ordinary rate of postage from the place of the original
+address to the place of the new address and any article which under the provisions of
+this Act may be returned to the sender thereof shall if reposted be liable again to
+postage;
+(b) for delivery to the sender or addressee at the office in which stoppage is effected, shall
+be liable to such special fee as may be prescribed.
+(4) Nothing contained in subsection (3) shall require the Director General to arrest or
+intercept any postal article.
+32. Articles deemed to be posted in contravention of Act
+A postal article received in a post office shall be deemed to have been posted in
+contravention of this Act if-
+(a) the postage stamps thereon have been previously used, obliterated or defaced;
+(b) any blasphemous, indecent, obscene, offensive or libellous matter appears on the
+outside thereof or any indecent or obscene matter is enclosed therein; or
+(c) it is posted or contains anything in fraud of or contrary to the provisions of this Act or
+any other law.
+33. Articles to be sent by postmasters to Returned Letter Office for disposal
+Any postal article which is-
+(a) without address or bears an illegible address or is otherwise undeliverable;
+(b) refused by the person to whom it is addressed; or
+(c) posted or reasonably suspected to have been posted in contravention of this Act or any
+other law,
+shall be sent to the Returned Letter Office of Botswana and dealt with as may be prescribed:
+Provided that any article referred to in paragraph (a) or (b) which bears on the outside
+thereof the name and address of the sender may be returned to him.
+34. Articles other than letters may be opened for examination 
+Copyright Government of Botswana
+(1) Any postal article, other than a letter, may be opened for examination in order to
+ascertain whether or not that article is entitled to transmission at the rate of postage prepaid
+thereon or has been posted in contravention of this Act.
+(2) The decision of the Director General as to whether or not any postal article is a letter
+or any description of postal article shall be final.
+35. Treatment of unclaimed letters in Returned Letter Office
+Any postal article originally posted within Botswana which is sent to the Returned Letter
+Office in accordance with section 33, or which is undelivered, shall be opened by an officer
+authorized by the Director General for that purpose and shall, unless it contains any valuable or
+saleable enclosure or has in the opinion of the Director General been posted in contravention of
+this Act or with intent to evade payment of the postage properly chargeable thereon, be returned
+to the sender thereof if his name and address are known, and may, if the sender refuses to
+receive it or if his name and address are not known, be sold or destroyed.
+36. Unclaimed articles of value and articles posted in contravention of Act
+(1) Any postal article opened under the provisions of this Act which contains any
+valuable or saleable enclosure shall be safely kept and a record thereof and of its contents shall
+be made and preserved.
+(2) The Director General shall, unless any such postal article or the contents thereof
+have in his opinion been posted in contravention of this Act or with intent to evade payment of
+the postage properly chargeable thereon, cause notice of his possession of that article and of
+the contents thereof to be sent to the person to whom it is addressed or, if he cannot be found,
+to the sender thereof if he can be found.
+(3) The Director General shall, upon application by the person to whom the notice has
+been sent, cause such postal article and its contents to be delivered to such person upon
+payment of all charges due thereon.
+(4) If no application under subsection (3) is made within 3 months after the sending of a
+notice under subsection (2), or if the postal article in question or the contents thereof has in the
+opinion of the Director General been posted in contravention of this Act or with intent to evade
+payment of any charge properly payable thereon, such article and its contents shall (without
+affecting the liability to any penalty or punishment to which the sender may be subject), be
+destroyed, sold or otherwise disposed of as the Director General may direct.
+(5) The proceeds of the sale of any postal article or the contents thereof, as well as any
+such contents consisting of money or any order or security for money, shall be paid into and
+form part of the postal revenue.
+(6) Any such order or security for money shall for the purpose of procuring payment be
+deemed to be the property of the Director General.
+37. Sender of undelivered article liable for all charges due
+(1) The sender of an undelivered postal article shall on demand pay all charges due
+thereon, and shall, in the event of his refusal to pay such charges, be guilty of an offence and
+liable to a fine of P10,00.
+(2) This section shall not be construed as releasing the person to whom a postal article
+is originally addressed from liability to pay the charges due thereon if such a postal article is
+delivered to him.
+38. Delay, return to sender or delivery to other than addressee of article prohibited
+Save as expressly provided in this Act, no postal article shall be delayed in transmission
+or returned to the sender or be delivered to any person not named in the address thereof except
+with the consent in writing of the addressee or on the special authority of the Director General.
+39. Undelivered articles of no value and newspapers may be destroyed
+Notwithstanding anything to the contrary contained in section 35 or 38 an undelivered
+postal article, which appears to be of no appreciable value or importance, and an undelivered
+newspaper may, after retention for the period prescribed, be sold, destroyed or otherwise 
+Copyright Government of Botswana
+disposed of as the Director General may direct.
+40. Articles addressed to insolvent person
+When the estate of any person has been sequestrated by a competent court in
+Botswana, the Director General shall cause all postal articles addressed to such person to be
+delivered to the trustee in such insolvent estate or, if no trustee has been appointed, to the
+Master of the High Court.
+41. Articles addressed to deceased person
+Postal articles addressed to a deceased person may be delivered to the executor or
+administrator of such deceased person on the production of letters of administration or, pending
+production of letters of administration, at the address indicated thereon.
+42. Articles addressed to persons conducting lottery or dealing in indecent or obscene
+matter
+When the Director General is satisfied by any advertisement, letter, circular or other
+documentary evidence that any person is conducting or assisting as agent or otherwise in
+conducting an illegal lottery, or is dealing in indecent or obscene matter, and is using the
+services of the Post for the purpose thereof, the Director General may detain or delay all postal
+articles addressed to such person or his agent or representative without the name of any person
+appearing thereon, and all such postal articles may be opened and returned to the senders
+thereof or otherwise disposed of as the Director General may deem fit.
+PART IX
+Remittance of Money through Post Office (ss 43-45)
+43. Remittance of money through the Post
+Any person may remit money through the Post to any other person whether in or outside
+Botswana at such rates of commission as may be prescribed and the Director General may
+authorize any office in the Post to issue and pay money orders, postal orders or any other
+document prescribed for the purpose of remitting money.
+44. Director General may refuse to issue or pay money orders, etc, to certain persons
+The Director General may refuse to issue or pay a money order, postal order or other
+document to a person to whom the provisions of section 42 apply and, where payment of any
+such order or other document is refused, such order may, if it was issued in Botswana, be
+returned to the person to whom it was originally issued, or otherwise disposed of as the Director
+General may deem fit, or, if it was issued outside Botswana, the amount thereof shall be
+returned to the postal authority of the country in which it was issued.
+45. Money orders, etc., to be deemed bank notes
+(1) A money order, postal order or other document issued under section 43 shall be
+deemed to be a bank note or any order for the payment of money and a valuable security within
+the meaning of any law relating to forgery or theft.
+(2) An unissued postal order shall be deemed to be public money.
+PART X
+Offences and Penalties (ss 46-61)
+46. Forging stamps, dies, etc.
+Any person who without due authority or lawful excuse, the proof of which shall lie upon
+him-
+(a) makes, alters, imitates or imports or assists in making, altering, imitating or importing
+any postage stamp, date stamp, card, envelope, wrapper cover or any money order,
+postal order, postal draft or savings bank warrant or any other warrant or order for the
+payment of money through the Post, or acknowledgement of deposit or any form or
+paper similar to that used or made under the authority or for the purposes of this Act or
+by any postal authority, or uses, issues, offers, exposes for sale, sells, deals in, sends
+by post or disposes of or has in his custody or possession any such postage stamp,
+date stamp, card, envelope, wrapper, cover, money order, postal order, postal draft, 
+Copyright Government of Botswana
+savings bank warrant or any other warrant or order, acknowledgement of deposit, form
+or paper, knowing it to have been made or altered or to be an imitation contrary to this
+section;
+(b) engraves or in any manner makes upon any plate or material any stamp, mark, figure
+or device in imitation of or resembling any stamp, mark, figure or device used or made
+for the purposes of this Act or by any postal authority, or sells, disposes of, purchases,
+receives or has in his custody or possession any plate or material so engraved or
+made;
+(c) makes or assists in making or has in his custody or possession any mould, frame or
+other instrument having thereon any word, letter, figure, mark, line or device peculiar to
+paper provided, used or made for any postage stamp or for any other purpose of this
+Act or by any personal authority;
+(d) makes or assists in making or has in his custody or possession any paper in the
+substance of which appear any word, letter, figure, mark, line or device peculiar to
+paper provided, used or made for any postage stamp or for any other purpose of this
+Act or by any postal authority, or makes, purchases, sells, disposes of or receives or
+has in his custody or possession any paper provided or made for the purposes of being
+used for any postage stamp or for any other purposes of this Act or by any postal
+authority before the same has been issued for public use;
+(e) makes use of any stamp, dye, plate or paper engraved or made for the purposes of this
+Act or by any postal authority, or sells, disposes of, purchases, receives or has in his
+custody or possession any paper or material whatever bearing an impression or mark
+of any such stamp, dye, plate or paper; or
+(f) makes on any envelope, wrapper, card, form or paper any mark in imitation of or
+similar to or purporting to be any official stamp or mark used for the purposes of this
+Act or by any postal authority, or any word, letter, device or mark which signifies or
+implies or may reasonbly be regarded as signifying or implying that any article bearing
+such word, letter, device or mark has been or is entitled to be sent through the post,
+shall be guilty of an offence and shall be liable to a fine of P2 000,00 and to imprisonment for 5
+years, and any stamp, dye, plate, paper, instrument or other material found in the possession of
+such person in contravention of this section shall be seized and forfeited to the State.
+47. Removing marks from stamps, etc., with intent to defraud
+(1) Any person who, with intent to defraud-
+(a) removes from an article sent by Post or from a document used for the purposes of this
+Act any stamp which has been affixed thereon, or wilfully removes, either actually or
+apparently, from any stamp which has been previously used, any mark or impression
+which has been made thereon at any post office, or knowingly utters, issues or uses
+any stamp or any part thereof which has been so removed or from which any such
+mark or impression has been removed;
+(b) erases, cuts, scrapes, defaces, obliterates or otherwise discharges or removes from,
+either actually or apparently, or in any manner adds to or alters any mark or impression
+upon, a money order, postal order, postal draft, savings bank warrant, or other order or
+warrant, or acknowledgement of deposit, paper or other material provided, used or
+made for the purposes of this Act or by any postal authority;
+(c) makes, does or practises or is concerned in any other act, contrivance or device for
+which no specific penalty is provided, or attempts unlawfully to evade payment of any
+of the rates, fees or duties payable under this Act,
+shall be guilty of an offence and shall be liable to a fine of P200,00 and to imprisonment for 6
+months.
+(2) For the purposes of this Part the sender of a postal article shall, unless the contrary
+is proved, be deemed to be the person by whom any postage stamp upon that article was 
+Copyright Government of Botswana
+affixed.
+(3) In any proceedings in respect of an offence under this section the burden or proving
+an absence of intent to defraud shall lie on the accused.
+48. Offence in connection with carriage and delivery of mail
+Any person authorised to receive or in any way to handle mail who-
+(a) negligently loses or wilfully detains, delays, misdelivers or omits to dispatch any mail
+(whether or not the same is afterwards recovered or delivered) or communicates or
+divulges the contents of any postal article;
+(b) while in charge of any mail, leaves it, or suffers any person, not being the guard or
+person employed for that purpose, to travel in the place appointed for the guard in or
+upon any conveyance carrying the mail, or to travel in or upon any such conveyance
+not authorized to carry passengers or upon any horse or other animal conveying that
+mail;
+(c) is guilty of carelessness, negligence or any misconduct where the safety of any mail is
+endangered;
+(d) while in charge of any mail is intoxicated or loiters or wilfully misspends or loses time
+so as to retard the arrival of the mail at its proper destination within the time fixed for its
+arrival, or does not use due care and diligence to safely convey the mail at the due rate
+of speed;
+(e) gives false information of any assault or attempt at robbery upon him; or
+(f) without due authority, collects, receives, conveys or delivers any postal article
+otherwise than in the ordinary course of post,
+shall be guilty of an offence and shall be liable to a fine of P200,00 and to imprisonment for 6
+months.
+49. Fraudulent, injurious and offensive practices in connection with postal articles and
+premises
+(1) Any person who-
+(a) with intent to defraud, puts into any post office anything purporting to be a postal article
+within the exemptions specified in this Act, or any postal article purporting to belong to
+a class, in respect of which a lower rate of postage or no postage is chargeable, or
+insufficiently stamped which if sent alone would be liable to postage;
+(b) with intent to defraud, puts into any post office any article in or upon or with which there
+is any communication, intelligence, character, figure, number, mark, matter or thing not
+allowed by this Act or by any other law, or wilfully subscribes on the outside of any
+posted article or otherwise a false statement of the contents thereof;
+(c) puts into any post office any article in which or with which or upon which there is any
+indecent or obscene matter, or anything of a profane, defamatory or grossly offensive
+character;
+(d) without due authority, the proof of which shall lie upon him, places or paints anything
+whatsoever upon, or wilfully injures, disfigures or tampers with any post office or any
+card, notice or other property of or used by or on behalf of the post, or commits a
+nuisance on or against any post office or against or upon such card, notice or other
+property;
+(e) detains, secretes or keeps any mail or postal article which ought to have been
+delivered to another person or which has been found by himself or by any other
+person; or
+(f) by false representation induces any officer to deliver to him or to any other person any
+postal article not addressed to or intended for either of them,
+shall be guilty of an offence and shall be liable to a fine of P200,00 and to imprisonment for 6
+months, without prejudice to any right the Director General may have of proceeding civilly
+against any person convicted under paragraph (d) for compensation for such damage as may 
+Copyright Government of Botswana
+have been caused by him.
+(2) In any proceedings in respect of any offence under paragraph (1)(a) or (b) the burden
+of proving an absence of intent to drafraud shall lie on the accused.
+50. Placing of dangerous or noxious articles and stoppage of mail
+(1) Any person who-
+(a) sends in or with any postal article or puts into or against any post office any fire, match
+or light or any explosive, dangerous, filthy, noxious or deleterious matter or thing or any
+matter or thing which is likely to injure or damage any post office, person or mail;
+(b) steals any mail or steals from any mail or post office or from the possession or custody
+of any officer, or for any purpose embezzles or fraudulently secretes or destroys any
+postal article or any of the contents thereof;
+(c) receives any mail or postal article or any of the contents thereof knowing the same to
+have been stolen, embezzled or fraudulently secreted or to have been sent or intended
+to be sent by post; or
+(d) stops any mail with intent to rob or search such mail, shall be guilty of an offence and
+shall be liable to a fine of P2 000,00 and to imprisonment for 7 years.
+(2) The Board may make bye-laws exempting from the provisions of this section noxious
+or deleterious matter sent in the interests of public health or justice in accordance with such
+requirements as it may prescribe.
+51. Tampering with mail
+Any officer who otherwise than in pursuance of his duty opens or tampers with or wilfully
+destroys, makes away with or secretes or suffers to be opened or tampered with, destroyed,
+made away with or secreted any mail or postal article, and any person who opens or tampers
+with or wilfully destroys, makes away with or secretes any mail shall be guilty of an offence and
+shall be liable to a fine of P2 000,00 and to imprisonment for 5 years.
+52. Wilfully obstructing or delaying mail
+Any person who wilfully interferes with the conveyance of any mail or through whose act
+or neglect the conveyance of any mail is interfered with shall be guilty of an offence and shall be
+liable to a fine of P200,00 and to imprisonment for 6 months.
+53. Wilfully opening or delaying postal articles
+(1) Any person, not being an officer, who wilfully opens any postal article which he
+knows ought to have been delivered to another person, or knowingly does any act or thing
+whereby the due delivery of that article to such other person is prevented, obstructed or
+delayed, shall be guilty of an offence and shall be liable to a fine of P200,00 and to
+imprisonment for 6 months.
+(2) Nothing in this section contained shall apply to any person who does any act to which
+this section applies where that person is the parent or in the position of parent or guardian of the
+addressee and the addressee is a minor under 16 years of age or a ward.
+(3) No prosecution under this section shall be instituted except by the direction or with
+the consent of the Director General.
+54. Unauthorized use of words "Post Office", "Botswana Mail", etc.
+Any person who, without the authority of the Director General, the proof of which shall lie
+upon him-
+(a) places or maintains or suffers to be placed or maintained, or to remain in, on or near
+any place belonging to him or under his control the word "Post Office" or any other
+word or mark which may imply or may give reasonable cause for believing that place to
+be a post office; or
+(a) places or maintains or permits to be placed or maintained or to remain on any vehicle
+or vessel the words "Botswana Mail" or any other word or mark which may imply or
+may give reasonable cause for believing that such vehicle or vessel is used for the
+conveyance of mail, 
+Copyright Government of Botswana
+shall be guilty of an offence and shall be liable be to a fine of P200,00 and to imprisonment for 6
+months.
+55. Unauthorized entry of premises, obstruction of business, and refusal to comply
+with regulations
+(1) Any person, not being an officer, who without the express permission of the Director
+General or of an officer having authority to give permission, enters any part of a post office in
+which is carried on any of the operations in respect of which an oath of secrecy is required to be
+taken by officers, or whilst in any post office, wilfully obstructs the course of business of the post
+or behaves in a disorderly manner or who wilfully obstructs, hinders or delays any officer in the
+execution of his duty, or who fails to comply with any regulations which have been issued, or
+by-laws to secure the comfort and convenience of the public or the safety of the premises, and
+which state that failure to comply therewith shall be an offence, shall be guilty of an offence and
+shall be liable to a fine of P200,00 and to imprisonment for 6 months.
+(2) An officer may require any person committing an offence under this section to leave
+the post office in question immediately, and any such person who fails to comply with such a
+requirement may be removed by any officer, and any member of the police force shall on
+demand by an officer remove or assist in removing any such person.
+56. Frauds in connection with money orders, etc.
+Any person who with fraudulent intent issues, re-issues, utters or presents to any person
+or at any post office any money order, postal order, savings bank warrant or other warrant,
+order or document for the remittance, payment, collection or deposit of money through or with
+the Post, or transmits through the Post or otherwise any letter or other communication
+concerning any money order, postal order, savings bank warrant or other warrant, order or
+document for the remittance, payment, collection or deposit of money through or with the Post,
+shall be guilty of an offence and on conviction there of shall be liable to a fine of P2 000,00 and
+to imprisonment for 5 years, and in any proceedings in respect of any offence under this section
+the burden of proving an absence of fraudulent intent shall lie on the accused.
+57. Personating officers of the Post with fraudulent intent
+Any person who, with fraudulent intent, personates or represents himself to be an officer
+of the Post shall be guilty of an offence and shall be liable to a fine of P800,00 and to
+imprisonment for 2 years.
+58. False declaration
+Any person who in any declaration prescribed by this Act makes a false statement
+knowing the same to be false shall be guilty of an offence and shall be liable to a fine of
+P400,00 and to imprisonment for 6 months.
+59. Attempting to commit or procuring commission of offences
+Any person who attempts to commit any offence under this Act, or solicits, or authorizes
+or endeavours to employ, cause, procure, aid, abet, incite or counsel any other person to do
+anything the doing whereof is an offence under this Act, shall be guilty of an offence and liable
+to the same punishment as if he actually commited the offence.
+60. In criminal proceedings, etc, property in postal articles, money, money orders, etc,
+may be laid in Director-General
+In any prosecution for any crime or any offence committed in respect of the Post or of
+any mail or any property, moneys, money order, postal order or other document authorized to
+be used for the purpose of remitting, paying, collecting or depositing money through or with the
+Post, or with respect to any act, deed, matter or thing which has been done or committed with
+any malicious, injurious or fraudulent intent relating to or concerning the Post or any such mail,
+property, moneys, money order, postal order or other document, it shall be sufficient-
+(a) to allege that any such mail, property, moneys, money order, postal order or other
+document belongs to or is in the lawful possession of the Director General and to put
+the same in evidence, and it shall not be necessary to allege or prove the same to be 
+Copyright Government of Botswana
+any value;
+(b) to allege that any such act, deed, matter or thing was done or committed with intent to
+injure or defraud the Director General without setting forth his or any other name,
+addition or description whatsoever; and
+(c) if the offender be an officer, to allege that the offender was an officer of the Post at the
+time of the committing of the offence without stating the nature or particulars of his
+employment.
+61. Evidence: acceptance of official marks
+In any proceedings for the recovery of any sum payable under this Act in respect of a
+postal article-
+(a) the official stamp or mark thereupon denoting the sum due shall be prima facie
+evidence of the liability of that postal article to the charge specified thereon; and
+(b) the production of any such postal article having thereon a post office stamp or mark
+denoting that the article has been refused or that the person to whom the same is
+addressed is dead or could not be found shall be prima facie evidence of the fact
+denoted.
+PART XI
+Miscellaneous (ss 62-65)
+62. Limitation of liability
+(1) Save as otherwise provided in this Act, no liability shall rest on any member of the
+Board or the Director General or any officer or employee of the Post by reason of any error,
+default, delay, omission, damage, destruction, non-delivery or loss in respect of any postal
+article unless it is established that it was due to the negligence or malfeasance of the said
+member, officer or employee.
+(2) The bona fide payment of any sum of money under the provisions of this Act shall, to
+whomever made, discharge the Post from all liability in respect of such payment.
+(3) If any person by fraudulent means obtains payment of any sum credited to a
+depositor's savings bank account, no liability shall rest on the Post, but the Director General
+may at his absolute discretion make good to the depositor any loss sustained or any part
+thereof.
+63. Detention of postal articles
+(1) Any postal article which is reasonably suspected of containing anything which will
+afford evidence of the commission of a criminal offence or reasonably suspected of being sent
+in order to further the commission of a criminal offence or to enable the detection of a criminal
+offence to be concealed shall, on the written request of a police officer of or above rank of
+Senior Inspector, be detained by the officer in charge of any post office in which it is or through
+which it passes and the Director General shall, if authorized thereto by such police officer,
+cause such postal article to be handed over to the said police officer.
+(2) On the occurrence of a public emergency or in the interests of public safety or
+tranquility, the President may by order in writing addressed to the Director General direct that
+any postal article or class or description of postal article in the course of transmission by post
+within Botswana be intercepted or detained or be delivered to any officer mentioned in the order
+or disposed of in any other manner.
+(3) A certificate signed by the President shall be conclusive proof of the existence of a
+public emergency or that any act done under subsection (2) was in the interests of public safety
+or tranquility.
+64. Regulations
+The Minister may, after consultation with the Board, make regulations generally for
+carrying into effect the provisions of this Act and prescribing anything that under this Act
+requires to be prescribed.
+65. Repeal and savings 
+Copyright Government of Botswana
+(1) The Post Office Act, 1980 is hereby repealed.
+(2) Notwithstanding the repeal of the Post Office Act, 1980 any statutory instruments
+made or any licences issued and in force immediately prior to the commencement of this Act
+shall, in so far as they are not inconsistent with the provisions of this Act, and until they are
+revoked or amended, continue in force as if made or issued under the corresponding provisions
+of this Act.
+DISCLAIMER
+Copyright (c) Botswana Government
+The data on this CD-ROM is copyright under the Berne Convention.
+Please note that you may be required, in terms of copyright or other laws, to obtain permission
+before reproducing any part of this database. Permission to reproduce the contents of this
+database may be sought from the Attorney-General Government Enclave Gaborone - Private
+Bag 009 Gaborone Botswana.
+Disclaimer
+Blackhall Publishing hereby disclaims any and all guarantees and warranties on the software
+described herein or on the documentation of this software, and specifically disclaims any implied
+warranties of the merchantability or fitness of the software or documentation for any particular
+purpose. This software and manual are sold on an 'as is' basis; any user of this software or
+manual uses it at his or her own risk.
+Further, Blackhall Publishing reserves the right to revise this publication and to make changes
+from time to time in the software and in the content of this publication without obligation of
+Blackhall Publishing to notify any person of such revision or changes. No guarantee is made
+that further versions of the software or manual will be compatible with any other versions.
+Further, although every care is taken to ensure the accuracy of this publication and disc,
+supplements, updates and replacement material, the authors, editors, publishers and printers do
+not accept any responsibility for any act, omission, loss, damage or the consequences thereof
+occasioned by the reliance by any person upon the contents hereof. 
