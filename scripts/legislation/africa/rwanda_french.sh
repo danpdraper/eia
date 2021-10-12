@@ -18,7 +18,7 @@ function amend_errors_in_headers {
     sed -E "s/^(Section 2 - Obligations.*) Article 60:/\1\n\n(60)/" | \
     sed -E 's/^(CHAPITRE )I -ll:/\1III -/' | \
     sed -E 's/^(CHAPITRE IV - .*)LA PRESENTE LOI/\1LA PRÉSENTE LOI/' | \
-    sed -E "s/^(TITRE III - .*)DE L'ETAT, DES COLLECTIVITES/\1DE L'ÉTAT, DES COLLECTIVITÉS LOCALES/" | \
+    sed -E "s/^(TITRE III - .*)DE L'ETAT, DES COLLECTIVITES/\1DE L'ÉTAT, DES COLLECTIVITÉS/" | \
     sed -E "s/^CHAPITRE PREMIER - DES OBLIGATIONS GENERALES/CHAPITRE PREMIER - DES OBLIGATIONS GÉNÉRALES/" | \
     sed -E "s/^(CHAPITRE II - DES OBLIGATIONS.*)Section première:/\1\n\nSection première:/" | \
     sed -E "s/^(CHAPITRE IV - .*)DES ETUDES/\1DES ÉTUDES/" | \
@@ -27,8 +27,8 @@ function amend_errors_in_headers {
 }
 
 function amend_errors_in_articles {   
-    #Article 1
-    amend_error_in_article 1 'bien être' 'bien-être' | \
+  #Article 1
+  amend_error_in_article 1 'bien être' 'bien-être' | \
     #Article 4
     amend_error_in_article 4 '; 5' ';' | \
     amend_error_in_article 4 ' 6' '' | \
@@ -46,6 +46,11 @@ function amend_errors_in_articles {
     amend_error_in_article 4 '\[a\] La pollution' 'La pollution' | \
     amend_error_in_article 4 '\[b\] La pollution' 'La pollution' | \
     amend_error_in_article 4 '\[c\] La pollution' 'La pollution' | \
+    amend_error_in_article 4 '\[a\] Une' 'Une' | \
+    amend_error_in_article 4 '; \[b\] Une' '. Une' | \
+    amend_error_in_article 4 '; \[c\] Une' '. Une' | \
+    amend_error_in_article 4 '; \[d\] Un' '. Un' | \
+    amend_error_in_article 4 '; \[e\] Une' '. Une' | \
     #Article 5
     amend_error_in_article 5 'a la faune' 'à la faune' | \
     amend_error_in_article 5 'programme' 'programmes' | \
@@ -117,7 +122,7 @@ function preprocess_state_and_language_input_file {
   local input_file_path="$1"
   local language="$2"
 
-    apply_common_transformations "$input_file_path" "$language" | \
+  apply_common_transformations "$input_file_path" "$language" | \
     remove_all_text_before_first_chapter_header | \
     amend_errors_in_headers | \
     reformat_numbering_within_articles | \
