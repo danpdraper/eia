@@ -33,19 +33,19 @@ function add_newlines_before_headers_and_articles {
 }
 
 function remove_margin_headers {
-    sed -E 's/No. 3966 Government Gazette 27 December 2007//g' | \
+  sed -E 's/No. 3966 Government Gazette 27 December 2007//g' | \
     sed -E 's/Act No. 7, 2007 ENVIRONMENTAL MANAGEMENT ACT, 2007//g' | \
     sed -E 's/Government Gazette 27 December 2007 No. 3966 //g' 
 }
 
 function remove_leftover_article_literals {
   sed -E 's/(in section Article \[44\])/in section 44/' | \
-  sed -E 's/Article \[([0-9]+)\]/\n(\1)/g'
+    sed -E 's/Article \[([0-9]+)\]/\n(\1)/g'
 }
 
 function amend_errors_in_articles {
-    #remove incorrect bullet points
-    sed -E 's/ \[•\]//g' | \
+  #remove incorrect bullet points
+  sed -E 's/ \[•\]//g' | \
     #format subsection numbers
     sed -E 's/(subsection )\(([0-9]+)\)/\1[\2]/g' | \
     #format (a-z) to [a-z]
@@ -180,7 +180,6 @@ function preprocess_state_and_language_input_file {
     remove_all_text_before_first_header | \
     prefix_article_numbers_with_article_literal | \
     replace_parentheses_around_article_delimiters_with_square_brackets | \
-    add_newlines_before_headers_and_articles "$language" | \
     apply_common_transformations_to_stdin "$language" | \
     remove_margin_headers | \
     remove_leftover_article_literals | \
