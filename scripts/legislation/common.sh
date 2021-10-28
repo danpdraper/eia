@@ -524,6 +524,20 @@ function amend_error_in_article {
   echo "$stdin" | sed -E "s/^(\(${article_number}\).*)${regular_expression}/\1${replacement}/"
 }
 
+function remove_and_reinsert_article_title {
+  local stdin="$(</dev/stdin)"
+
+  if [ "$#" -ne 2 ] ; then
+    echo_usage_error "$*" '<article_number> <article_title> '
+    return 1
+  fi
+  local article_number="$1"
+  local article_title="$2"
+
+  echo "$stdin" | sed -E "s/${article_title}//" | \
+  sed -E "s/\(${article_number}\)/${article_title}\n(${article_number})/" 
+}
+
 function preprocess_file {
   if [ "$#" -ne 2 ] ; then
     echo_usage_error "$*" '<input_file_path> <output_file_path>'
