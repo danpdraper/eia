@@ -1,0 +1,1583 @@
+ MALAWI
+ __________________________________________________
+The Malawi Gazette Supplement, dated 16th August, 1996, containing
+Acts (No.7c)
+(Published 16th August, 1996)
+ ACT
+
+ No. 23 of 1996
+ I assent
+ Bakili Muluzi
+ President
+ 5th August, 1996
+ ARRANGEMENT OF SECTIONS
+Section
+ PART I - PRELIMINARY
+1. Short title and commencement
+2. Interpretation
+ PART II - GENERAL PRINCIPLES
+3. National environmental policy
+4. Natural and genetic resources
+5. Right to a decent environment
+6. Role of lead agencies
+7. Inconsistent provisions in other written laws
+ PART III - ADMINISTRATION
+8. Duties and powers of the Minister
+9. Appointment of Director of Environmental Affairs
+10. Establishment and composition of the National Council for the Environment
+11. Tenure of office and vacancies
+12. Functions of the Council
+13. Proceedings of the Council
+14. Disclosure of interest
+15. Allowances of members of the Council
+16. Technical Committee on the Environment
+17. Functions of the Technical Committee
+18. Proceedings of the Technical Committee 
+19. Functions of District Development Committees
+20. District Environmental Officer
+ PART IV - ENVIRONMENTAL PLANNING
+21. Environmental planning at national level
+22. Purposes and contents of action plan
+23. Planning at district level
+ PART V - ENVIRONMENTAL IMPACT ASSESSMENT, AUDITS AND MONITORING
+24. Projects for which an environmental impact assessment is required
+25. Environmental impact assessment reports
+26. Review of environmental impact assessment reports
+27. Environmental audits
+28. Monitoring existing projects
+29. Fees
+ PART VI - ENVIRONMENTAL QUALITY STANDARDS
+30. Power to prescribe environmental quality standards
+ PART VII - ENVIRONMENTAL MANAGEMENT
+31. Environmental incentives
+32. Environmental protection areas
+33. Environmental protection orders
+34. Enforcement of environmental protection orders
+35. Conservation of biological diversity
+36. Access to genetic resources
+37. Waste management
+38. Licences for waste
+39. Importation, exportation and transportation of waste
+40. Classification of pesticides and hazardous substances
+41. Protection of the ozone layer
+ PART VIII - POLLUTION CONTROL
+42. Discharge of pollutants
+43. Licence to discharge effluent, etc.
+44. Prohibition of pollution
+ PART IX - INSPECTION, ANALYSIS AND RECORDS
+45. Environmental inspectors
+46. Powers of inspectors
+47. Procedure for taking samples
+48. Establishment or designation of analytical laboratories
+49. Appointment of analysts
+50. Certificate of analysis, etc.
+51. Keeping of records 
+52. Public access to information and prohibition of disclosure
+ PART X - ENVIRONMENTAL FUND
+53. Establishment of Environmental Fund
+54. Vesting of Fund in the Minister
+55. Advances to the Fund
+56. Objects of the Fund
+57. Application of the fund
+58. Books and other records of account, audit and reports of the Fund
+59. Holdings of the Fund
+60. Financial year
+ PART XI - OFFENCES
+61. General offences
+62. Hindering, obstructing, etc., of inspectors
+63. Offences relating to environmental impact assessments
+64. Offences relating to records
+65. Offences relating to environmental standards and guidelines
+66. Offences relating to hazardous materials, processes and wastes
+67. Offences relating to pollution
+ PART XII - LEGAL PROCEEDINGS
+68. Immunity of officials
+69. Establishment of Environmental Appeals Tribunal
+70. Composition of Tribunal
+71. Failure to attend
+72. Representation of parties
+73. Enforcement orders
+74. Costs
+75. Liability of bodies corporate, etc.
+ PART XIII - MISCELLANEOUS PROVISIONS
+76. Closure of premises
+77. Regulations 
+
+ An act to make provision for the protection and management of the environment and the
+conservation and sustainable utilization of natural resources and for matters
+ connected herewith and incidental thereto
+ ENACTED by the Parliament of Malawi as follows -
+ PART I - PRELIMINARY
+1. - This Act may be cited as the Environment Management Act, 1996, and shall
+come into force on such date as the Minister may, by notice published in the
+Gazette, appoint and the Minister may appoint different dates for the coming into
+force of different parts of this Act.
+Short title
+and
+commence
+ment
+
+Interpretation 2. In this Act unless the context otherwise requires -
+ "ambient air" means the atmosphere surrounding the earth but does not
+include the atmosphere within a structure or within any underground
+space;
+ "analysis" means the examination of any matter, substance or process
+for the purpose of determining its composition or quality or its effect
+(where physical, chemical or biological) on any segment of the
+environment;
+ "analyst" means an analyst appointed under section 49;
+ "biological diversity"means the variability among living organisms
+from all sources including, inter alia, terrestrial, marine and other
+aquatic ecological systems and the ecological complexes of which they
+are part, and includes diversity within or between species and of
+ecosystems;
+ "conservation" means the preservation of the natural resources and
+their protection from misuse, fire or waste;
+ "Council" means the National Council for the Environment established
+under section 10(1);
+ "dangerous" means harmful or dangerous to public health, plant or
+animal life or to the environment and "danger"shall be construed
+accordingly;
+ "developer" means any person who has proposed or has undertaken to
+implement a project;
+ "Director" means the Director of Environmental Affairs appointed
+under section 9(1);
+ "District Development Committee" means the District Development
+Committee established in every district to initiate, monitor and coordinate development policies and activities in that district;
+ "effluent" means waste water or other fluid originating from a
+domestic or an agricultural or industrial activity, whether treated or
+untreated and whether discharged directly or indirectly into the
+environment;
+ "environment" means the physical factors of the surroundings of the
+human being including land, water, atmosphere, climate, sound, odor,
+taste, and the biological factors of fauna and flora, and includes the
+cultural, social and economic aspects of human activity, the natural and 
+the built environment;
+ "environmental audit" means the systematic documentation and
+periodic and objective evaluation of the protection and management of
+the environment and the conservation and sustainable utilization of
+natural resources;
+ "environmental impact assessment" means a systematic evaluation of a
+project to determine its impact on
+ the environment and the conservation of natural resources;
+ "environmental impact assessment report" means the environmental
+impact assessment report required under section 25 (1);
+ "environmental monitoring" means the continuous or periodic
+assessment of the actual and potential impact of any activity on the
+environment;
+ "environmental planning" means planning that takes into account
+environmental issues;
+ "ex-situ" means conservation outside the natural habitat of a biological
+organism;
+ "genetic resource" means any genetic material of actual or potential
+value;
+ "hazardous substance" means any chemical, waste, gas or gaseous
+matter, medicines, drugs, plant, animal or micro-organism which is
+injurious to human health or the environment;
+ "hazardous waste" means waste which is poisonous, corrosive, noxious,
+explosive, inflammable, radioactive, toxic or harmful to the environment;
+ "in-situ" means conservation within the natural ecological system and
+habitat of a biological organism;
+ "inspector" means an environmental inspector designated under section
+45(1);
+ "lead agency" means any public office or organization including every
+Ministry or Government department which is conferred by any written
+law with powers and functions for the protection and management of any
+segment of the environment and the conservation and sustainable
+utilization of natural resources of Malawi;
+ "licensing authority" means any person on whom is conferred power
+under any written law to issue licenses in respect of any thing or activity
+required under that written law to be done or carried out otherwise than in
+accordance with a licence;
+ "National Environmental Action Plan" means the national
+environmental action plan launched by the Government in December,
+1994 outlining environmental strategies, measures and programmes
+necessary for promoting the protection and management of the
+environment and the conservation and sustainable utilization of natural
+resources;
+ "natural resources" means the natural resources of Malawi wherever
+located;
+ "occupier" means a person in occupation or control of any premises,
+and, in relation to premises different parts of which are occupied by
+different persons, means the person in occupatio
+ 
+are occupied by different persons, means the person in occupation or control of each such
+different part;
+ "oil" includes -
+ (a) crude oil, diesel oil, fuel oil, lubricating oil, petrol and paraffin, and any other petroleum
+product capable of causing pollution whether in a solid or liquid form; and
+ (b) any other substance which may be prescribed by the Minister, by notice published in the
+Gazette, to be oil for the purposes of this Act;
+ "owner", in relation to any premises, means -
+ (a) the registered owner of the premises in question;
+ (b) the lessee or sublessee of the premises in question;
+ (c) the agent, attorney or the personal representative of the owner of the premises;
+ (d) the person in actual possession of the premises or entitled to receive the rent of the premises,
+whether on his own account or as agent or trustee of any other person or as receiver;
+ (e) in relation to any vessel, includes the charterer, pilot or other person in actual control of the
+vessel, whether or not the vessel is registered in or outside Malawi;
+ "ozone layer" means the ozone layer as defined in the Vienna Convention for the protection of
+the Ozone Layer, 1985;
+ "Pollutant" means any substance whether in a liquid, solid or gaseous form which directly or
+indirectly -
+ (a) adversely alters or destroys the quality of the environment; or
+ (b) is dangerous or potentially dangerous to public health, plant or animal life,
+and includes objectionable odors, radioactive substances or particles, noise, vibration, or any
+substance or particle that causes temperature change or physical, chemical or biological change to
+the environment;
+ "pollution" means any direct or indirect alteration of the physical, thermal, chemical, biological,
+or radioactive properties of the environment caused by the discharge, emission or deposit of waste
+or a pollutant into the environment in such amounts and for such duration and under such
+conditions as to cause an actual or potential danger to the environment;
+ "premises" includes any land, whether covered by buildings or not, any place underground and
+any land covered by water and hereditament of any tenure
+and description;
+ "project" means a development activity or proposal which has or is
+likely to have an impact on the environment;
+ "project brief" means the project brief required under section 24(2);
+ "proprietary information" means any proprietary information
+protected by law or by any international treaty or convention to which
+Malawi is a party;
+ "Public Appointments Committee" means the Public Appointments
+Committee established under Section 56(7) of the Constitution;
+ "Segment" in relation to the environment, means any portion or part
+of the environment expressed in terms of volume, space, area, quantity,
+quality or time or any combination thereof;
+ "sustainable utilization" means the use or exploitation of natural
+resources which guards against the extinction, depletion or degradation
+of any natural resource of Malawi and permits the replenishment of
+natural resources by natural means or otherwise;
+ "Technical Committee" means the Technical Committee on the
+Environment established under section 16; 
+ "Tribunal" means the Environmental Appeals Tribunal established
+under section 69;
+ "vehicle" has the meaning ascribed to it in the Road Traffic Act;
+ "vessel" includes a ship, boat, floating structure or aircraft;
+ "waste" includes domestic, commercial or industrial waste whether
+in a liquid, solid, gaseous or radioactive form which is discharged,
+emitted or deposited into the environment in such volume, composition
+or manner as to cause pollution;
+ "water" includes surface and underground water, drinking water and
+water in a river, stream, watercourse, public reservoir, well, dam,
+canal, channel, lake, swamp or open drain and water in a gaseous or
+solid form.
+ PART II - GENERAL PRINCIPLES
+3. - (1) It shall be the duty of every person to take all necessary and
+appropriate measures to protect and manage the environment and to
+conserve natural resources and to promote sustainable utilization of
+natural resources in accordance with this Act and any other written
+law lawandementf o mlaang protection relatingthe to
+Cap.69.01
+National
+environ
+mental
+policy
+relating to the protection and management of the environment or the conservation
+and sustainable utilization of natural resources.
+ (2) Without prejudice to the generality of subsection (1), every person required
+under any written law to exercise power or perform functions relating to the
+protection and management of the environment or the conservation and the
+sustainable utilization of natural resources shall take such steps and measures as
+are necessary for -
+ (a) promoting a clean environment in Malawi;
+ (b) ensuring the sustainable utilization of the natural resources of Malawi;
+ (c) facilitating the restoration, maintenance and enhancement of the ecological
+systems and ecological processes essential for the function of the biosphere, and
+the preservation of biological diversity;
+ (d) promoting public awareness and participation in the formulation and
+implementation of environmental and conservation policies of the Government;
+ (e) promoting co-operation with foreign governments and international or
+regional organizations in the protection of the environment and the conservation
+and sustainable utilization of natural resources;
+ (f) promoting scientific research, technological development and training
+relating to the protection and management of the environment or the conservation
+and sustainable utilization of natural resources.
+4. The natural and genetic resources of Malawi shall constitute an integral part of
+the natural wealth of the people of Malawi and - 
+Natural and
+genetic
+resources
+Right to a decent
+environment
+ (a) shall be protected, conserved and managed for the benefit of the people of
+Malawi; and
+ (b) save for domestic purposes, shall not be exploited or utilized without the
+prior written authority of the Government.
+5. - (1) Every person shall have a right to a clean and healthy environment.
+ (2) For purposes of enforcing the right referred to in subsection (1), any
+person may bring an action in the High Court -
+ (a) to prevent or stop any act or omission which is deleterious or injurious to
+any segment of the environment or likely to accelerate unsustainable depletion of
+natural resources.
+ (b) to procure any public officer to take measures to prevent or stop any act or
+omission which is deleterious or injurious to any segment of the environment for
+which the public officer is responsible under any written law;
+ (c) to require that any on-going project or other activity be subjected to an
+environmental audit in accordance with this Act.
+ (3) Any person who has reason to believe that his or her right to a clean or healthy
+environment has been violated by any person may, instead of proceeding under
+subsection (2), file a written complaint to the Minister outlining the nature of his or
+her complaint and particulars, and the minister shall, within thirty days from the date
+of the complaint, institute an investigation into the activity or matter complained
+about and shall give a written response to the complainant indicating what action the
+Minister has taken or shall take to restore the claimant's right to a clean and healthy
+environment, including instructing the Attorney General to take such legal action on
+behalf of the Government as the Attorney General may deem appropriate.
+ (4) Subsection (3) shall not be construed as limiting the right of the complainant to
+commence an action under subsection (2);
+ Provided that an action shall not be commenced before the Minister has responded
+in writing to the complainant or where the Attorney General has commenced an
+action in court against any person on the basis of a complaint made to the Minister.
+ (5) Nothing in this Act shall be construed as divesting any lead agency of the
+powers, functions, duties or responsibilities conferred or imposed on it by any written
+law relating to the protection and management of the environment and the
+conservation and sustainable utilization of natural resources or limiting such powers,
+functions, duties or responsibilities.
+ (6) Where a written law on the protection and management of the environment or
+the conservation and sustainable utilization of natural resources is inconsistent with
+any provision of this Act, that written law shall be invalid to the extent of the
+inconsistency.
+Role of lead
+agencies 
+Inconsistent
+provisions in
+other written
+laws
+ PART III - ADMINISTRATION
+Duties and
+powers of the
+Minister
+ 7. - (1) It shall be the duty of the Minister to promote the protection and
+management of the environment and the conservation and sustainable utilization
+of natural resources, and the Minister shall, in consultation with lead agencies,
+take such measures as are necessary for achieving the objects of this Act.
+ (2) Without prejudice to the generality of the foregoing, the Minister shall -
+ (a) formulate and implement policies for the protection and management of
+the environment and the conservation and sustainable utilization of natural
+resources;
+ (b) co-ordinate and monitor all activities concerning the protection and
+management of the environment and the conservation and sustainable utilization
+of natural resources;
+ (c) prepare plans and develop strategies for the protection and management of
+the environment and the conservation and sustainable utilization of natural
+resources, and facilitate cooperation between the government, local authorities,
+private sector and the public in the protection and management of the
+environment and the conservation and sustainable utilization of natural
+resources;
+ (d) initiate, facilitate or commission research and studies on any aspect of the
+protection and management of the environment and the conservation and
+sustainable utilization of natural resources;
+ (e) prepare and lay before the National Assembly at least once in every year a
+report on the state of the environment;
+ (f) co-ordinate the promotion of public awareness on the protection and
+management of the environment and the conservation and sustainable utilization
+of natural resources;
+ (g) monitor trends in the utilization of natural resources and the impact of
+such utilization on any segment of the environment;
+ (h) receive and investigate any complaint by any person relating to the
+protection and management of the environment and the sustainable utilization of
+natural resources;
+ (i) recommend to the Government, on the advice of the council, international
+or regional treaties, conventions or agreements relating to the protection and 
+management of the environment and the conservation and sustainable utilization
+of natural resources to which Malawi should become party;
+
+
+ (j) promote international and regional cooperation in the protection and
+management of the environment and the conservation and sustainable utilization
+of natural resources shared between Malawi and other countries;
+ (k) on the recommendation of the Council, prescribe, by notice published in the
+Gazette, projects or classes or types of projects, for which environmental impact
+assessment is necessary under this Act;
+ (l) on the recommendations of the Council, prescribe, by notice published in the
+Gazette, environmental quality criteria and standards necessary for the
+maintenance of essential ecological processes and a healthy environment;
+ (m) carry out such other activities and take such other measures as may be
+necessary or expedient for the administration and achievement of the objects of
+this Act.
+ (3) In discharging his duties under this section, the Minister shall, were
+appropriate, consult the Minister responsible for any segment of the environment.
+ 8. - (1) There shall be appointed in the public service a Director of
+Environmental Affairs (in this Act otherwise referred to as the "Director") and
+such other suitably qualified public officers as may be required for the proper
+administration of this Act.
+ (2) The Director shall -
+ (a) carry out the duties and functions provided under this Act and such other
+duties as the Minister may, from time to time, assign to him;
+ (b) be responsible to the Minister for the proper discharge of his functions
+under this Act and for the implementation of such policies relating to the
+protection and management of the environment and the conservation and
+sustainable utilization of natural resources as the Minister may determine;
+ (c) furnish the Council with such information or documents as the Council may
+require and, from time to time, report to the council the status of the environment
+and natural resources;
+ 9. - (1) There is hereby established a council to be known as the National
+Council for the Environment (in this Act otherwise referred to as the "Council")
+which shall consist of -
+Appointment of
+Director of
+Environmental
+Affairs
+Establishment
+and 
+composition of
+the National
+Council for the
+Environment
+Tenure of office and
+vacancies
+ (a) the Chairman of the council who shall be appointed by the
+President on the recommendation of the Minister;
+ (b) the Secretary to the President and Cabinet, or his representative;
+ (c) all Principal Secretaries of Ministries, or their representatives;
+ (d) the General Manager of the Malawi Bureau of Standards, or his
+representative;
+ (e) the General Manager of the National Herbarium and Botanical
+Gardens of Malawi, or his representative;
+ (f) one member nominated by the Malawi Chamber of Commerce and
+Industry representing the industrial sector and appointed by the
+Minister;
+ (g) one member nominated by and representing non-governmental
+organizations concerned with the protection and management of the
+environment and the conservation of natural resources and appointed by
+the Minister;
+ (h) one representative of the University of Malawi appointed by the
+Minister;
+ (i) one member nominated by and representing the National
+Commission for Women in Development and appointed by the Minister.
+ (2) The vice-Chairman of the Council shall be appointed by the
+Minister from amongst the members of the council who are not public
+officers.
+ (3) The Director shall the be Secretary to the Council.
+ 10. - (1) The Chairman, Vice-Chairman and the members of the
+Council referred to in section 10(2)(f) to (i) shall hold office for three
+years and shall be eligible for reappointment.
+ (2) The Chairman, Vice-Chairman and any member referred to in
+section 10(2)(f) to (i) shall cease to be a member of the Council -
+ (a) if he or she resigns as a member of the Council
+ (b) if he or she ceases to be a member or employee of the organization
+that nominated him or her for appointment as a member of the Council;
+ (c) if, upon conviction of any offence, he or she is sentenced to a term
+of imprisonment exceeding six months without the option of a fine.
+ (d) if he or she is of unsound mind; and
+ (e) in circumstances where the member is compromised to such an extent that his
+or her ability to impartially exercise the duties of his or her office is seriously in
+question. 
+Functions of
+the Council
+Proceedings
+of the
+Council
+11. - The Council shall -
+(a) advise the minister on all matters and issues affecting the protection and
+management of the environment and the conservation and sustainable
+utilization of natural resources;
+(b) recommend to the minister measures necessary for the integration of
+environmental considerations in all aspects of economic planning and
+development;
+(c) recommend to the Minister measures necessary for the harmonization of
+activities, plans and policies of lead agencies and non-governmental
+organizations concerned with the protection and management of the
+environment and the conservation and sustainable utilization of natural
+resources.
+12. - (1) Save as is provided in this section, the Council shall regulate its own
+procedure.
+ (2) The Council shall hold at least four ordinary meetings in a year, and
+such number of extraordinary meetings as may be necessary, at such
+place or places and at such time or times, as the Chairman may
+determine.
+ (3) The Chairman shall convene an extraordinary meeting on his own
+motion or at the request of one third of the members of the Council
+within such reasonable period as the Chairman shall deem
+appropriate.
+ (4) Half of the members shall form a quorum at a meeting of the
+Council.
+ (5) The Chairman, or in his absence the vice-Chairman, shall preside at
+any meeting of the council and, in the absence of both the Chairman
+and the vice-Chairman, the members present shall elect amongst
+their number a chairman to preside at the meeting of the council.
+ (6) A decision of the Council on any question shall be by a majority of
+the members present and voting at the meeting
+ and, in the event of an equality of votes, the person presiding at the
+meeting shall have a casting vote in addition to his or her
+deliberative vote.
+ (7) The Council may invite any person whose presence is in its opinion
+desirable to attend and participate in the deliberations of the Council
+but that person shall have not right to vote.
+ (8) The Council shall cause to be kept minutes of the proceedings of
+every meeting of the Council and of every meeting of any committee
+constituted by the Council. 
+Disclosure
+of interest
+Allowances
+of members
+of the
+Council
+Technical
+Committee
+on the
+Environment
+13. - (1) If any person is present at a meeting of the Council or a committee of
+the Council at which any matter in which that person or his spouse is
+directly or indirectly interested in a private capacity is the subject of
+consideration he shall, as soon as practicable after the
+commencement of the meeting, disclose that interest and shall not,
+unless the Council or committee otherwise directs, take part in any
+consideration or discussion of, or vote on , any question touching
+that matter.
+ (2) A disclosure of interest made under this section shall be recorded in
+the minutes of the meeting at which it is made.
+14. A member of the council or committee shall be paid such allowance as the
+Minister may determine.
+15. - (1) There is hereby established a committee to be known as the
+Technical Committee on the Environment (in this Act otherwise
+referred to as the "Technical Committee") which shall consist of not
+less than ten members and not more than twenty members each of
+whom shall have sufficient knowledge and training in the protection
+and management of the environment and the conservation and
+sustainable utilization of natural resources.
+ (2) The members of the Technical Committee shall be appointed by the
+Minister on the recommendation of the Council and shall serve in a
+personal capacity for such period, and shall be paid such allowances
+and remuneration, as the Minister may determine.
+Functions of
+the
+Technical
+Committee
+ (3) A member of the Technical Committee may, by written notice to the
+Minister, at any time resign his position.
+16. The Technical Committee shall -
+ (a) examine any scientific issue which may be referred to it by the
+Minister, the Council, the Director or any lead agency relating to the
+protection and management of the environment and sustainable
+utilization of natural resources and shall recommend to the Minister,
+the council or lead agency, as the case may be, such action as is
+necessary for achieving the purposes of this Act;
+ (b) carry out investigations and conduct studies into the scientific, social
+and economic aspects of any activity, occurrence, product or
+substance which may be referred to the Minister, the council, the
+Director or any lead agency and shall, at the completion of the
+investigation or study, recommend to the Minister, the Council or
+lead agency, as the case may be, such action as is necessary for
+achieving the objectives of this Act; 
+Proceedings
+of the
+Technical
+Committee
+Functions of
+District
+Developmen
+t
+Committees
+ (c) recommend to the Council the criteria, standards and guidelines for
+environmental control and regulation, including the form and content
+of environmental impact assessment.
+18. - (1) The Technical Committee shall adopt its own rules of procedure and
+every meeting of the committee shall be presided over by a
+Chairman elected by the members from amongst their number, and
+the Director shall be the Secretary to the Committee.
+ (2) The Technical Committee may, where it deems it necessary, invite
+any person to attend and participate in the meetings of the
+Committee provided that such a person shall not have a right to vote
+at such a meeting.
+19. A District Development Committee shall, in addition to its existing role -
+ (a) under the supervision of the District Environmental Officer, prepare
+every five years, a district environmental action plan;
+District
+Environmen
+tal Officer
+ (b) co-ordinate the activities of lead agencies and non-governmental
+organizations in the protection and management of the environment
+and conservation and sustainable utilization of natural resources in
+the district;
+ (c) promote and disseminate information relating to the environment
+through public awareness programmes and prepare reports on the
+state of the environment in the district every two years at least two
+months before the end of each second calendar year.
+20. - (1) There shall be appointed for each district a District Environmental
+Officer who shall be a public officer.
+ (2) The District Environmental Officer shall be a member of the District
+Development Committee and shall -
+ (a) advise the District Development Committee on all matters relating to
+the environment and in the performance of its functions under
+section 19;
+ (b) report to the Director on all matters relating to the protection and
+management of the environment and conservation and sustainable
+utilization of natural resources;
+ (c) submit such reports to the Director as the Director may require;
+(d) promote environmental awareness in the district on the protection 
+and management of the environment and the conservation of natural
+resources;
+ (e) gather and manage information on the environment and the
+utilization of natural resources in the district; and
+ (f) perform such other functions as the Director may, from time to time,
+assign to him.
+
+
+Environ
+mental
+planning at
+national
+level
+Purposes
+and contents
+of action
+plan
+Planning at
+district level
+ PART IV - ENVIRONMENTAL PLANNING
+21. The Minister shall lay before the National Assembly a copy of the National
+Environmental Action Plan for approval at its next meeting after the
+commencement of this Act and the Minister shall thereafter review it every
+five years subject to approval by the National Assembly.
+22. The purpose of the National Environmental Action Plan shall be to promote
+and facilitate the integration of strategies and measures for the protection and
+management of the environment into plans and programmes for the social
+and economic development of Malawi.
+23. - (1) The district environmental action plan prepared under section 19(a)
+shall -
+ (a) be in conformity with the National Environmental Action Plan;
+ (b) identify environmental problems in the district in question;
+ (c) be approved by the minister on the recommendation of the Council
+and
+ (d) be disseminated to the public by the District Development
+Committee.
+ (2) No person shall implement a development activity or project in any
+district otherwise than in accordance with the district environment
+action plan for the district in question.
+ PART V - ENVIRONMENTAL IMPACT ASSESSMENT AUDIT 
+Projects for
+which an
+environmen
+tal impact
+assessment
+is required
+ AND MONITORING
+24. - (1) The Minister may, on the recommendation of the Council specify, by
+notice published in the Gazette, the types and sizes of projects which
+shall not be implemented unless an environmental impact assessment
+is carried out.
+ (2) A developer shall, before implementing any project for which an
+environmental impact assessment is required under subsection (1) ,
+submit to the Director, a project brief stating in a concise manner -
+
+
+Environment
+al impact
+assessment
+reports
+ (a) the description of the project;
+ (b) the activities that shall be undertaken in the implementation of the
+project;
+ (c) the likely impact of those activities on the environment;
+ (d) the number of people to be employed for purposes of implementing
+the project;
+ (e) the segment or segments of the environment likely to be affected in
+the implementation of the project;
+ (f) such other matters as the Director may in writing require from the
+developer or any other person who the Director reasonably believes
+has information relating to the project.
+(3) Where, upon examining the project brief, the Director considers that further
+information is required to be stated in the project brief before an
+environmental impact assessment is conducted, the Director shall require the
+developer, in writing, to provide such further information as the Director
+shall deem necessary.
+25. - (1) Where the Director considers that sufficient information has been
+stated in the project brief under section 24, the Director shall require
+the developer, in writing, to conduct, in accordance with such
+guidelines as the minister may, by notice published in the Gazette
+prescribe, an environmental impact assessment and to submit to the
+Director, in respect of such assessment, an environmental impact
+assessment report giving -
+ (a) a detailed description of the project and the activities to be
+undertaken to implement the project;
+(b) the description of the segment or segments of the environment likely
+to be affected by the project and the means for identifying,
+monitoring and assessing the environmental effects of the project;
+ (c) the description of the technology, method or process to be used in
+the implementation of the project and of
+any available alternative technology,
+method or process, and the reasons for not
+employing the alternative technology,
+method or process;
+Review of
+Environment
+al impact
+assessment
+reports
+ (d) the reasons for selecting the proposed site of the project as opposed
+to any other available alternative site;
+ (e) a detailed description of the likely impact the project may have on
+the environment and the direct, indirect, cumulative, short-term and
+long-term effects on the environment of the project;
+ (f) an identification and description of measures proposed for
+eliminating, reducing or mitigating any anticipated adverse effects of
+the project on the environment;
+ (g) an indication of whether the environment of any other country or of
+areas beyond the limits of national jurisdiction is or are likely to be
+affected by the project and the measures to be taken to minimize any
+damage to the environment;
+ (h) an outline of any gaps, deficiencies and the adverse environmental
+concerns arising from the environmental impact assessment and from
+the compilation of the environmental impact assessment report;
+ (i) a concise description of the method used by the developer to compile
+the information required under this section.
+ (3) The environmental impact assessment report shall be open for public
+inspection provided that no person shall be entitled to use any
+information contained therein for personal benefit except for
+purposes of civil proceedings brought under this Act or under any
+written law relating to the protection and management of the
+environment or the conservation or sustainable utilization of natural
+resources.
+26. - (1) Upon receiving the environmental impact assessment report, the
+Director shall invite written or oral comments from the public
+thereon, and where necessary may -
+ (a) conduct public hearings at such place or places as the Director deems
+necessary for purposes of assessing public opinion thereon;
+ (b) require the developer to redesign the project or to do such other thing
+as the Director considers desirable taking ac 
+Environmen
+tal audits
+ into account all the relevant environmental concerns highlighted in
+the environmental impact assessment report, any comments made by
+the public and the need to achieve the objectives of this Act;
+ (c) require the developer to conduct a further environmental impact
+assessment of the whole project or such part or parts of the project as
+the Director may deem necessary, or to revise the information
+compiled in the environmental impact assessment report;
+ (d) recommend to the Minister to approve the project subject to such
+conditions as the Director may recommend to the Minister.
+ (2) In considering whether or not to recommend to the Minister the
+approval of any project or of any condition, the Director shall take
+into account any likely impact of the project on the environment and
+the actual impact of any existing similar project on the environment.
+ (3) A licensing authority shall not issues any licence under any written
+law with respect to a project for which an environmental impact
+assessment is required under this Act unless the Director has
+certified in writing that the project has been approved by the
+Minister under this Act or that an environmental impact assessment
+is not required under this Act.
+27. - (1) The Director shall, in consultation with such lead agency as he may
+consider appropriate, carry out or cause to be carried out periodic
+environmental audits of any project for purposes of enforcing the
+provisions of this Act.
+ (2) For purposes of subsection (1), the Director may require a developer
+to keep such records and submit to the Director such reports as the
+Director may deem necessary.
+ (3) A developer shall take all reasonable measures for mitigating any
+undesirable effects on the environment arising from the
+implementation of a project which could not reasonably be foreseen
+in the process of conducting an environmental impact assessment
+and shall, within a reasonable time, report to the Director such
+effects meas
+Monitoring
+existing
+projects
+Fees
+ and measures.
+28. - The Director shall take such measures as are necessary for ensuring that the
+implementation of any project commenced before the coming into force of
+this Act complies with the provisions of this Act.
+29. The Minister may, by notice published in the Gazette, prescribe such fees as
+may be necessary for covering reasonable costs for scrutinizing
+environmental impact assessment reports and for the subsequent monitoring
+of a project which has been approved for implementation under this Act. 
+Power to
+prescribe
+environment
+al quality
+standards
+Environmen
+tal
+incentives
+ PART VI - ENVIRONMENTAL QUALITY STANDARDS
+30.- (1) The Minister may, on the advice of the council, prescribe
+environmental quality standards generally and, in particular, for air,
+water, soil, noise, vibrations, radiation, effluent and solid waste.
+ (2) The prescription of the environmental quality standards under
+subsection (1) shall be based on scientific and environmental
+principles and shall take into account the practicability and
+availability of appropriate technology for ensuring compliance with
+such standards.
+ (3) The Minister may prescribe different environmental quality
+standards to apply in different areas of Malawi with respect to
+different segments of the environment and the Minister may, from
+time to time, vary such standards.
+ PART VII - ENVIRONMENTAL MANAGEMENT
+31. The Minister, on the recommendation of the council and in consultation with
+the Minister of Finance, shall determine -
+ (a) such fiscal incentives as are necessary for promoting the protection
+and management of the environment and the conservation and
+sustainable utilization of natural resources; and
+ (b) such measures as are necessary for preventing the unsustainable use
+of natural resources and controlling the generation of pollutants.
+Environment
+al protection
+areas
+32. - (1) The Minister may, on the recommendation of the Council, declare
+any area of Malawi, other than an area declared to be a wild reserve,
+forest reserve, game reserve, national park or monument under any
+written law, to be an environmental protection area.
+ (2) In determining whether or not to declare any area an environmental
+protection area, the Minister shall have regard to -
+ (a) representations made by any person who has sufficient interest in the
+area;
+ (b) the natural features and beauty of the area;
+ (c) the flora and fauna of the area;
+ (d) the unique or special geological, physiographical, ecological or
+historical and cultural features of the area;
+ (e) any special scientific feature or biological diversity of or existing in
+the area; 
+ (f) the proneness of the area to any hazards against which the area
+requires protection;
+ (g) the interests of the local communities in or around the area;
+ (h) the need for the government to comply with any international
+obligation under any treaty, convention or an agreement to which
+Malawi is party;
+ (3) The Director shall, in consultation with relevant lead agencies,
+prepare an environmental protection plan for the protection and
+management of every environmental protection area, and the
+environmental protection plan shall -
+ (a) set out policies for the protection and management of the
+environmental protection area; and
+ (b) provide for the development of social amenities and facilities for
+carrying out scientific research in the environmental protection area.
+
+
+Environmen
+tal
+protection
+orders
+33. - (1) The Director shall have power to issue environmental protection
+orders against any person whose acts or omissions have or are likely
+to have adverse effects on the protection and management of the
+environment and the conservation and sustainable utilization of
+natural resources, and the environmental protection orders shall be in
+the prescribed form and, if no such form is prescribed, in such form
+as the Director may determine.
+ (2) Notwithstanding the provisions of any other law to the contrary, the
+environmental protection order may require the person against whom
+it is made to -
+ (a) take such measures as are necessary for the restoration of any land
+degraded by reason of the activities of the person against whom the
+environmental protection order is made including the replacement of
+soil, the replanting of trees and other flora, and the restoration, as far
+as may be possible, of unique geological, physiographical, ecological
+or historical features of the land and of waste disposal sites;
+ (b) stop, prevent or modify any action or conduct which causes or
+contributes or is likely to cause or contribute to pollution;
+ (c) remove, at the expense of the person against whom the
+environmental protection order is made, any waste or refuse
+deposited by that person, or with his or her knowledge or authority,
+in a place specified in the environmental protection order and to
+dispose of the waste or refuse in such manner and place and within
+such period as may be specified in the environmental protection
+order; 
+ (d) pay such compensation as may be specified in the environmental
+protection order to any person whose land is degraded by the action
+or conduct of the person against whom the environmental protection
+order is made.
+ (3) An environmental protection order issued under subsection (1) shall,
+in addition to the matters referred to in that subsection, specify -
+ (a) the activity considered by the Director to be detrimental to the
+protection and management of the environment and the conservation
+and sustainable utilization of natural resources;
+ (b) the particulars of the person or persons against whom it is made;
+ (c) the period within which anything required to be done by the person
+against whom it is made shall be done;
+ (d) the penalties which may be imposed for non-compliance with the
+environmental protection order; and
+ (e) such other matters as the Director may consider necessary for the
+protection and management of the environment and the conservation
+and sustainable utilization of natural resources.
+ (4) The Director shall have power to inspect, at any reasonable time, any
+activity on any premises for purposes of determining whether the
+activity is harmful to the environment or the conservation of natural
+resources or whether to make an environmental protection order
+under subsection (1).
+ (5) For purposes of subsection (4), the Director may enter any premises
+at any reasonable time to enforce the environmental protection order
+and the Director shall not be responsible for the consequences of any
+action reasonably taken by him in good faith under this section.
+ (6) Subject to subsection (5), any person aggrieved with the
+environmental protection order may, within thirty days from the date
+on which it is made, appeal to the Tribunal, and the appellant shall
+indicate whether the appeal is against the whole environment
+protection order or against only a part or parts thereof and, if so,
+which part or parts.
+ (7) The Director may delegate the power referred to in subsections (4)
+and (5) to an inspector or any person duly authorized by him and
+anything done by that person shall be deemed to be done by the
+inspector or by the Director and shall be valid for all purposes. 
+Enforcement
+of
+environmen
+tal
+protection
+Conservatio
+n of
+biological
+diversity
+ (8) An environmental protection order shall be served on the person
+against whom it is made or his agent or legal practitioner.
+34. - (1) Where a person against whom an environmental protection order is
+served fails, neglects or refuses to take the action specified in the
+environmental protection order, the Director shall take such action as
+he deems appropriate for achieving the purposes for which the
+environmental protection order is made.
+ (2) Where the Director has taken action pursuant to subsection (1), the
+Director shall be entitled to recover in full from the person against
+whom the environmental protection order is made the expenses
+reasonably incurred by the Director for taking such action, and if the
+expenses remain unpaid for a period of more than thirty days from
+the date of first demand in writing by the Director, the amount in
+respect of the expenses shall be recoverable by the Government as a
+civil debt.
+35. - (1) The Minister may, on the advice of the council -
+ (a) identify the components of the biological diversity of Malawi;
+ (b) determine the component or components of biological diversity
+which is or are threatened with extinction;
+ (c) prepare and maintain an inventory of the biological diversity of
+Malawi;
+ (d) determine actual and potential threats to the biological diversity of
+Malawi and devise such measures as are necessary for preventing,
+removing or mitigating the effect of those threats;
+ (e) devise measures for the better protection and conservation of rare
+and endemic species of wild fauna and flora;
+ (f) develop national strategies, plans and programmes for the
+conservation of the biological diversity of Malawi;
+ (g) require in writing any developer, including the government, to
+integrate the conservation and sustainable utilization of the
+biological diversity of Malawi in any project the implementation of
+which has or is likely to have detrimental effects to the biological
+diversity of Malawi;
+ (h) on the recommendation of the Technical Committee, prohibit or
+restrict access by any person to or the exportation of any component
+of the biological diversity of Malawi. 
+ (2) The Minister may, on the advice of the Council and in consultation
+with the Minister responsible for the matter in question, take such
+action or measure as is necessary for -
+ (a) promoting such land use methods as are compatible with the
+conservation of the biological diversity of Malawi;
+ (b) the selection and management of environmental protection areas for
+the conservation of the various terrestrial and aquatic ecological
+systems in Malawi;
+ (c) the establishment and management of buffer zones near
+environmental protection areas;
+ (d) the protection of threatened animal and plant species, habitats and
+ecological systems;
+ (e) controlling the importation of alien and plant species;
+ (f) identifying, promoting and integrating traditional knowledge into the
+conservation and sustainable utilization of the biological diversity of
+Malawi; and
+ (g) the establishment and management of germplasm banks, botanical
+gardens, zoos and animal orphanages and such other similar
+facilities.
+ (3) Where the Minister considers it desirable so to do, he may, on the
+advice of the Council, recommend to the Minister responsible for
+wildlife, the release of any animal or animal species conserved exsitu or in-situ into its natural habitat or ecological system.
+Access to
+genetic
+resources
+36. - (1) The Minister, on the recommendations of the Council, may, by
+regulations published in the Gazette, control or restrict access by any
+person to the genetic resources of Malawi.
+ (2) Without prejudice to the generality of subsection (1), the regulations
+may -
+ (a) prohibit the exportation of germplasm, except in accordance with a
+licence issued by the Minister and not subject to such conditions as
+the Minister may impose;
+ (b) provide for the sharing of benefits arising from the technological
+exploitation of germplasm originating from Malawi between the
+owner of the technology and the government;
+ (c) provide for fees payable in respect of an export licence issued under
+subsection (2)(a) and for a charge payable for accessing germplasm.
+37. - (1) The Minister, on the recommendations of the Council, may, by
+Waste
+management
+regulations published in the Gazette, control the management,
+transportation treatment and recycling, and safe disposal of waste
+and for prohibiting littering of public places.
+ (2) The Minister may recommend to the Minister responsible for local
+government the promulgation of such rules or the formulation of
+such measures as are necessary to regulate the collection,
+transportation and safe disposal of waste by local authorities.
+ (3) The Minister may, on the recommendation of the Council -
+ (a) formulate criteria and standards for the classification and analysis of
+waste and shall, subject to the rules or measures referred to in
+subsection (2), determine the method or methods for safe disposal of
+waste;
+ (b) control the handling, storage, transportation, classification,
+importation, exportation and destruction of waste;
+Licences for
+Waste
+ (c) monitor any waste disposal site and direct the control of any such
+site if its continued use as a waste disposal site constitutes or is likely
+to constitute a hazard to the health of the people living in the vicinity
+of, or to the environment adjacent to, the site.
+38. - (1) No person shall handle, store, transport, classify or destroy waste
+other than domestic waste, or operate a waste disposal site or plant,
+or generate waste except in accordance with a licence issued under
+this section.
+ (2) The Minister may, on the advice of the council, grant to any person a
+licence to handle, store, transport, classify or destroy any waste,
+including hazardous waste, or to generate waste or to operate a waste
+disposal site or plant, subject to such conditions as the Minister may
+determine.
+ (3) An application for a licence under this section shall be in the
+prescribed form or, if no such form is prescribed, in such form as the
+Minister may determine, and the form shall contain the applicant's
+full names, postal and physical address and such other particulars as
+the Minister may require.
+ (4) Any person who, at the commencement of this Act, is carrying on
+the business of handling, storing, transporting, classifying,
+destroying or disposing of waste shall apply for a licence under this
+section within six months from the date of the commencement of this
+Act. 
+ (5) The Minister may, at any time, revoke any licence issued under this
+section or vary any condition attached to the licence if the activity in
+respect of which the licence is issued constitutes an imminent, actual
+or potential hazard to the environment or natural resources or if the
+licensee violates any condition endorsed on the licence.
+ (6) The Minister may delegate the power to issue a licence under this
+section to the Director and any thing done by the Director in the
+exercise of that power shall be valid for all purposes as if it had been
+done by the Minister.
+Importation
+exportation
+and
+hazardous
+waste
+Cap.18:08
+Classifica
+tion of
+pesticides
+and
+hazardous
+substances
+39. - (1) Notwithstanding the Control of Goods Act, no person shall import or
+export any hazardous waste or substance, except under a permit
+issued by the Minister subject to such conditions as the Minister may
+determine, and in the case of exportation, the exporter shall before a
+permit is issued produce to the Minister written confirmation from
+an appropriate authority of the receiving country that the hazardous
+waste or substance may be exported to that country.
+ (2) No person shall transport within Malawi hazardous waste or
+substances, except under a permit issued by the Minister subject to
+such conditions as the Minister may impose.
+40. - (1) The Minister may, in consultation with the Minister responsible for
+agriculture, make rules for classifying pesticides and hazardous
+substances, and for determining their toxicity.
+ (2) Without prejudice to the generality of subsection (1), the rules may
+make provision -
+ (a) requiring the registration, labelling and packaging of pesticides and
+hazardous substances;
+ (b) for measures for controlling the manufacture, importation and
+exportation of pesticides and hazardous substances;
+ (c) for the distribution, storage, handling and transportation of pesticides
+and hazardous substances;
+ (d) for monitoring the impact of pesticides and hazardous substances
+and their residuary effect on public health, the environment and
+natural resources.
+ (e) for restricting or banning pesticides and hazardous substances.
+ 
+Protection of
+the ozone
+layer
+Cap.18:08
+41. - (1) The Director shall carry out national studies on substances, activities
+and practices that deplete or are likely to deplete the stratospheric
+ozone layer and other components of the stratosphere, and on the
+completion of each study, the Director shall submit the report of the
+study to the Minister.
+ (2) The Minister may, on the recommendation of the Council, make
+regulations -
+ (a) restricting or prohibiting the use of any appliance, equipment or any
+other thing which uses ozone depleting substances;
+ (b) requiring any person to make, in such manner and in such form as
+the Minister may determine, regular reports to the Minister on the
+generation, consumption and importation of ozone depleting
+substances;
+ (c) providing for the progressive reduction and eventual elimination of
+substances that deplete the ozone layer;
+ (e) providing for the control of activities and practices likely to deplete
+the ozone layer; and
+ (f) providing for such as matters as are necessary for protecting the
+stratospheric ozone layer.
+ (3) Notwithstanding the provisions of the Control of Goods Act, no
+person shall import or export any appliance, equipment or any other
+thing which uses substances that deplete the stratospheric ozone
+layer except under a licence issued by the Minister and subject to
+such conditions as the Minister may determine.
+ PART VIII - POLLUTION CONTROL
+42. - (1) No person shall discharge or emit any pollutant into the 
+Discharge of
+pollutants
+environment, except in accordance with this Act.
+ (2) It shall be the duty of person to prevent the discharge or emission of
+any pollutant into the environment otherwise than in accordance
+with this Act and to comply with such general or specific directions
+of the Minister or Director for preventing, minimizing or cleaning
+up, removing poll any orosing disp
+Licence to
+discharge
+effluent, etc.
+Prohibition
+of pollution
+ or disposing of any pollutant discharged or emitted into the
+environment.
+ (3) Any person who discharges or emits any pollutant into the
+environment otherwise than in accordance with this Act may be
+required by the Minister to clean up, remove or dispose of the
+pollutant in such manner and within such period as the Minister shall
+direct.
+43. - (1) No person shall discharge effluent or emit any gas or other gaseous
+substances into the environment except under a licence issued by the
+Minister subject to such conditions as the Minister shall determine.
+ (2) The Minister may revoke any licence issued under this section if the
+licensee fails to comply with the conditions of the licence or any
+provision of this Part:
+ Provided that no licence shall be revoked without the licensee being
+given a reasonable opportunity to be heard.
+ (3) The Minister may, by notice published in the Gazette, prescribe such
+fees as he shall deem necessary for the monitoring, cleaning up,
+removing or disposing of pollutants discharged or emitted into the
+environment.
+44. No person shall pollute or permit or cause any other person to pollute the
+environment.
+ PART IX - INSPECTION, ANALYSIS AND RECORDS
+45. - (1) For purposes of ensuring compliance with the provisions of this Act
+the Minister may, by notice published in the Gazette, designate such
+number of public officers as he may consider necessary to be
+environmental inspectors whose functions shall be to administer,
+monitor and enforce measures for the protection and management of,
+Environmen
+tal
+Inspectors
+and for the prevention and abatement of pollution to, the
+environment.
+ (2) Every inspector shall be issued with an identity card, and the identity
+card shall constitute prima-facie evidence that the holder thereof is
+an inspector duly designated by the Minister under subsection (1).
+Powers of
+inspectors
+ (3) An inspector shall, on demand by any person affected by the
+exercise of the powers of the inspectors under this Act, produce for
+inspection, the identity card referred to in subsection (2).
+46. - (1) An inspector may, for the purpose of performing the functions
+referred to in section 45 (1), enter, at any reasonable time, any
+premises to examine any activity which the inspector reasonably
+considers to be detrimental to the environment or natural resources
+and to collect therefrom samples of any pollutant or other substance
+for analysis at any laboratory designated by the Minister under
+section 48.
+ (2) Upon entering the premises, the inspector may require the owner or
+occupant or the agent of the owner or occupant of the premises to
+produce for inspection any book, document or record or copies
+thereof for retention by the inspector concerning any matter relevant
+to the administration of this Act.
+ (3) It shall be the duty of the owner or occupant or the agent of the
+owner or occupant of the premises to render an inspector reasonable
+assistance in the performance by the inspector of the functions
+referred to in section 45(1).
+ (4) An inspector may -
+ (a) inspect and examine any vehicle, in or upon which he has reasonable
+cause to believe that a pollutant or other article or substance which
+he believes to be a pollutant is being or has been transported;
+ (b) order the production of any document pertaining to the
+transportation of the pollutant or such other article or substance;
+ (c) collect any sample of the pollutant of any such substance from the
+vehicle or place where it has been delivered for analysis at a
+laboratory designated by the Minister under section 48;
+ (d) request information from any person who has or appears to have
+custody or control of the pollutant or such other article or substance
+or the vehicle in which it is or has 
+Procedure
+for taking
+samples
+Establish
+ment or
+designation
+of
+laboratories
+Appointmen
+t of analysts
+Certificate
+of analysis,
+etc.
+ been transported.
+47. - (1) An inspector shall, before collecting from the premises or vehicle a
+sample of any pollutant or other article or substance which the
+inspector believes to be a pollutant, inform the owner or occupier of
+the premises or vehicle or other person in control of the vehicle from
+which the sample is to be taken of his intention to do so.
+ (2) The inspector shall place the sample in three separately sealed
+packages and shall deliver one package each to the Director, to the
+laboratory at which the sample will be tested or analyzed and to the
+owner or occupier of the premises or vehicle or other person in
+control of the vehicle.
+ (3) Any dispute arising from the manner in which a sample is collected
+by an inspector or in connection with the results of any laboratory
+test or analysis of the sample shall be referred by the aggrieved
+person or the Director, as the case may be, to the Tribunal.
+48. The Minister may, by notice published in the Gazette, establish, or where he
+deems it necessary, designate such laboratories as he thinks fit to be
+analytical laboratories or reference laboratories at which samples taken under
+this Act may be tested or analyzed.
+49. There shall be appointed in the public service such number of analysts as
+may be required to carry out such functions and exercise such powers as are
+necessary for achieving the purposes of this Act.
+50. - (1) There shall be issued by every analyst in respect of any test or
+analysis, a certificate showing the results of the test or analysis.
+ (2) The certificate shall state the method or methods used in carrying out
+the test or analysis and shall be signed by the analyst who carried out
+the test or analysis.
+ (3) A certificate issued under this section shall be prima facie evidence
+of the results of any test or analysis carried out under this Act.
+Keeping of
+records
+51. - (1) The Director may, by notice published in the Gazette, prescribe the
+activities in respect of which records shall be kept for the purposes
+of this Act and may, require any person in possession or control of
+such records to transmit the records to the Director at such intervals
+as the Director may determine.
+ (2) The records shall be used by the Director or an inspector for
+purposes of environmental auditing, monitoring, control and
+inspection and such other purposes related to the protection and 
+Public
+access to
+information
+and
+prohibition
+of disclosure
+Cap.49.01;
+Cap.49.02
+management of the environment and the conservation and
+sustainable utilization of natural resources.
+52. - (1) Subject to subsection (3), every person shall have access to any
+information submitted to the Director or any lead agency relating to
+the implementation of the provisions of this Act or any other law
+relating to the protection and management of the environment and to
+the conservation and sustainable utilization of natural resources.
+ (2) Notwithstanding subsection (1), no person shall be entitled to have
+access to proprietary information (to which the Trade Mark Act or
+the Patents Act applies) submitted to or received by the Director
+under this Act unless with the prior written consent of the owner of
+the proprietary information.
+ (3) No person shall, without the consent of the Director, publish or
+disclose to any person, otherwise than in accordance with the
+provisions of this Act, the contents of any document, communication
+or information which relates to and which has come to his
+knowledge in the course of his duties under this Act.
+ (4) Any person who contravenes subsection (3) shall be guilty of an
+offence and shall be liable, upon conviction, to a fine of not less than
+K2,000 and not more than K100,000, and to imprisonment for
+twelve months.
+Establish
+ment of
+Environ
+mental Fund
+ PART X - ENVIRONMENTAL FUND
+53. - (1) There is hereby established a fund to be known as the Environmental
+Fund (in this Act otherwise referred to as the "Fund").
+ (2) The Fund shall consist of -
+ (a) such sums as shall be appropriated by Parliament for the purposes of
+the Fund;
+ (b) advances made to the Fund under section 55;
+ (c) such sums or other assets as may be received for the purposes of the
+Fund by way of voluntary contributions or donations;
+ (d) such sums as are paid by way of fees or other penalties in respect of
+licences issued under this Act. 
+Vesting of
+Fund in the
+Minister
+Cap.37:01
+Advances to
+the Fund
+Objects of
+the Fund
+54. The Fund shall be vested in the Minister and, subject to this Act and the
+Finance and Audit Act, shall be administered in accordance with his
+directions.
+55. If in any financial year the income of the Fund together with any surplus
+income brought forward from a previous year, is insufficient to meet the
+actual or estimated liabilities of the fund, the Minister responsible for finance
+may make advances to the Fund in order to meet the deficiency or any part
+thereof and such advances shall be made on such terms and conditions,
+whether as to repayment or otherwise, as the Minister responsible for finance
+may determine.
+56. The objects for which the Fund is established shall be the protection and
+management of the environment and the conservation and sustainable
+utilization of natural resources.
+
+Application
+of the Fund
+57. Without derogation from the generality of section 56, the Fund,may be
+applied to -
+ (a) research and training which is calculated to promote the protection
+and management of the environment and the conservation and
+sustainable utilization of natural resources;
+ (b) the acquisition of land, equipment, materials and other assets and the
+construction of buildings in order to promote the objects of the Fund;
+ (c) the cost of any scheme which the Minister considers to be in the
+interest of the protection and management of the environment and
+the conservation and sustainable utilization of natural resources;
+ (d) meeting any expenses arising from the establishment and
+maintenance of the Fund; and 
+Books and
+other
+records of
+account,
+audit and
+report of the
+Fund
+Cap.37:01
+Cap.37.01
+ (e) any purpose which the minister considers to be in the interest of the
+objects of the Fund.
+58. - (1) The Minister shall cause to be kept proper books and other records
+of account in respect of receipts and expenditures of the fund in
+accordance with the Finance and Audit Act.
+ (2) The accounts of the Fund shall be audited by the Auditor General
+who shall have all the powers conferred upon him by the Finance
+and Audit Act.
+ (3) The Minister shall cause to be prepared, as soon as practicable, but
+not later than six months after the end of the financial year, an
+annual report on all the financial transactions of the Fund.
+ (4) The report referred to in subsection (3) shall include a balance sheet,
+an income and expenditure account and the annual report of the
+Auditor General and shall be laid by the Minister before the National
+Assembly.
+Holdings of
+the Fund
+Financial
+year
+General
+59. - (1) All sums received for hade purposes of the Fund shall be paid into a
+bank account and no amount shall be withdrawn therefrom except by
+means of cheques signed by such persons as are authorized in that
+behalf by the Minister.
+ (2) Any part of the Fund not immediately required for the purposes of
+the Fund may, on the recommendation of the council, be invested in
+such manner as the Minister, after consulting with the Minister
+responsible for finance, may determine.
+60. The financial year of the fund shall be the period of twelve months
+commencing on 1st April in one year and ending on the 31st March of the
+following year;
+ Provided that the first financial year of the Fund may be a period shorter or
+longer than twelve months, as the Minister shall determine, but in any case
+not longer than eighteen months.
+ PART XI - OFFENCES
+61. - (1) Any person who contravenes any provision of this Act for which no
+to her penalty is specifically provided shall be guilty of an offence
+and liable, upon conviction, to a fine of not less than K10,000 and
+not more than K500,000 and to imprisonment for five years. 
+offences
+Hindering,
+obstructing,
+etc. of
+inspector
+ (2) Any person who is convicted of an offence under subsection (1)
+shall, in addition to the fine provided for in that subsection, be liable
+to a fine of K5,000 for each day the offence continues to be
+committed.
+62. Any person who -
+ (a) hinders or obstructs an inspector in the execution of his or her duties
+under this Act;
+ (b) fails to comply with a lawful order or requirement made by an
+inspector in accordance with this Act;
+ (c) prevents the Director or an inspector or any person duly authorized
+by the Director or inspector from gaining entry upon or into any
+premises which he or she is empowered under this Act to enter;
+Offences
+relating to
+environment
+al impact
+assessments
+Offences
+relating to
+records
+ (d) impersonates the Director or an inspector or any person duly
+authorized by the Director or inspector;
+ (e) prevents an inspector from having access to any record or document
+required by the inspector for purposes of this Act;
+ (f) misleads or gives false information to the Director or an inspector or
+any person duly authorized by the Director or inspector under this
+Act; or
+ (g) fails to comply with measures directed by the Minister, the Director
+or an inspector for the protection and management of the
+environment and the conservation and sustainable utilization of
+natural resources,
+ shall be guilty of an offence and shall be liable, upon conviction, to a fine of
+not less than K5,000 and not exceeding K200,000 and to imprisonment for
+two years.
+63. Any person who contravenes section 24 (3) or fails to prepare an
+environmental impact assessment report or knowingly gives false
+information in an environmental impact assessment report contrary to section
+25 shall be guilty of an offence and shall be liable, upon conviction, to a fine
+of not less than K5,000 and not exceeding K200,000 and to imprisonment for
+two years.
+64. Any person who -
+ (a) fails to keep records required under this Act or under any regulations
+made under this Act; 
+Offences
+relating to
+environment
+al standards
+and
+guidelines
+ (b) fraudulently or knowingly alters any such records,
+ shall be guilty of an offence and be liable, upon conviction, to a fine of not
+less than K5,000 and not exceeding K200,000 and to imprisonment for two
+years.
+65. Any person who -
+ (a) violates any environmental standard established under this Act;
+ (b) violates any measure prescribed under this Act; or
+ (c) uses natural resources otherwise than in accordance with thi
+
+Offences
+relating to
+hazardous
+materials,
+processes
+and wastes
+Offences
+relating to
+pollution
+Immunity of
+officials
+ this Act,
+ shall be guilty of an offence and shall be liable upon conviction to a fine of
+not less than K5,000 and not more than K200,000 and to imprisonment for
+two years.
+66. Any person who -
+ (a) fails to manage hazardous materials, processes and wastes in
+accordance with this Act;
+ (b) knowingly or fraudulently mislabels wastes, pesticides or chemicals;
+
+ (c) aids or abets the illegal trafficking in wastes, chemicals, pesticides or
+hazardous processes, wastes or substances,
+ shall be guilty of an offence and shall upon conviction be liable to a fine of
+not less than K20,000 and not more than K1,000,000 and to imprisonment
+for ten years.
+67. - (1) Any person who discharges or emits any pollutant into the
+environment otherwise than in accordance with this Act shall be
+guilty of an offence and shall be liable, upon conviction, to a fine of
+not less than K20,000 and not more than K1,000,000 and to
+imprisonment for ten years.
+ PART XII - LEGAL PROCEEDINGS
+68. No legal proceeding shall be brought against the Minister, Director, an
+inspector, an analyst or any other person duly authorized by the Minister, the
+Director, inspector or analyst to do anything authorized under this Act, in
+respect of anything done in good faith under the provisions of this Act.
+69. There is hereby established an Environmental Appeals Tribunal (in this Act
+otherwise referred to as the "Tribunal") which shall -
+(a) consider appeals against any decision or action of the Minister,
+Establish
+ment of
+Environmen
+tal Appeals
+Tribunals
+Director or inspector under this Act;
+ (b) consider appeals against the refusal by the Minister or Director to
+issue a licence under this Act;
+
+Composition
+of Tribunal
+ (c) consider appeals against the revocation by the Minister or Director
+of a licence issued under this Act;
+ (d) consider appeals against the closure pursuant to this Act of any
+premises;
+ (e) consider such other issues relating to the protection and management
+of the environment and the conservation and sustainable utilization
+of natural resources as the Minister, the Director or any person may
+refer to it.
+70. - (1) The Tribunal shall consist of -
+ (a) a suitably trained and qualified person appointed by the President, on
+the recommendation of the Minister, who shall be the Chairman; and
+ (b) two other members appointed by the President, on the
+recommendation of the Minister, both of whom shall be sufficiently
+qualified in the protection and management of the environment and
+the conservation and sustainable utilization of natural resources,
+ and the appointment of each member of the Tribunal shall be subject to
+confirmation by the Public Appointments Committee.
+ (2) The decisions of the Tribunal shall be by a majority.
+ (3) The Tribunal shall not be bound by rules of evidence and shall admit
+as evidence any matter which in its opinion shall assist it to arrive at
+a just and equitable decision for the advancement of the purposes of
+this Act.
+ (4) The Tribunal shall make its own rules of procedure and shall have
+power to -
+ (a) summon any person to give evidence in any proceedings before the
+Tribunal or to produce to the tribunal any document relevant to the
+proceedings before it;
+ (b) confirm,vary, amend or alter a decision made by the Minister, the
+Director or inspector or reverse or substitute such decision for any
+decision which is just and equitable and which is in the interest of
+the protection and management of the environment or the
+conservation and 
+ sust
+Failure to
+attend
+Representa
+tion of
+parties
+Enforcement
+of Orders
+Costs
+Liability of
+bodies
+corporate,
+etc.
+ sustainable utilization of natural resources.
+ (7) Any person aggrieved with the decision of the Tribunal may appeal
+to the High Court within thirty days from the date of the decision of
+the Tribunal.
+71. If a party fails to attend or to be represented at the proceedings of the
+Tribunal without good cause, the Tribunal may proceed in the absence of that
+party or representative.
+72. - (1) A party to any proceedings before the Tribunal may -
+ (a) appear personally; or
+ (b) be assisted or represented by a legal practitioner.
+73. Any decision or order of the Tribunal shall have the same force and effect as
+any other decision or order of a competent court and shall be enforceable
+accordingly.
+74. - (1) Subject to subsection (2), the Tribunal shall not make any order as to
+costs but nothing in this subsection shall prevent a legal practitioner
+from agreeing with his or her client the payment of solicitor and own
+client costs.
+ (2) The Tribunal may make an order as to costs where a party fails to
+attend, without good cause, any proceedings of the Tribunal or
+where the matter is vexatious or frivolous.
+75. - (1) Where an offence under this Act is committed by a body corporate
+or a partnership -
+ (a) in the case of the body corporate, every director, manager or similar
+officer of the body corporate shall be guilty of the offence; and
+ (b) in the case of a partnership, every partner shall jointly and severally
+be guilty of the offence.
+ (2) A person shall not be guilty of an offence under subsection (1), if he
+proves to the satisfaction of the court that the act constituting the
+offence was done without his knowledge, consent or connivance and
+that he did his part to prevent the commission of the offence having
+regard to all the circumstances of the case.
+ PART XIII - MISCELLANEOUS
+Closure of
+premises
+76 (1) Where the Director believes, on reasonable grounds, that this Act or
+any regulations made thereunder, have been contravened, the
+Director may, subject to subsection (2), order the closure of any
+Regulations
+premises by means of, or in relation to which the Director reasonably
+believes the contravention was committed.
+ (2) The closure of any premises shall cease after the provisions of this
+Act or any regulations made thereunder were, in the opinion of the
+Director, been complied with, unless before that time court
+proceedings have been instituted in respect of the contravention, in
+which event the premises shall remain closed until the proceedings
+are fully concluded.
+
+77. The Minister may make regulations for the better carrying out of the
+purposes of this Act.
+ Passed in Parliament this twenty-eighth day of June, one thousand, nine hundred and ninety-six.
+ R.L. GONDWE
+ Clerk of Parliament
