@@ -13,7 +13,7 @@ function replace_parentheses_around_article_delimiters_with_square_brackets {
   sed -E 's/^\(([A-Za-z0-9]+)\)/[\1]/'
 }
 
-function add_newlines_before_headers_and_articles {
+function add_newline_before_article_bodies {
   local stdin="$(</dev/stdin)"
 
   if [ "$#" -ne 1 ] ; then
@@ -180,6 +180,7 @@ function preprocess_state_and_language_input_file {
     remove_all_text_before_first_header | \
     prefix_article_numbers_with_article_literal | \
     replace_parentheses_around_article_delimiters_with_square_brackets | \
+    add_newline_before_article_bodies "$language" | \
     apply_common_transformations_to_stdin "$language" | \
     remove_margin_headers | \
     remove_leftover_article_literals | \
