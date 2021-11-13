@@ -13,23 +13,16 @@ function replace_parentheses_around_article_delimiters_with_square_brackets {
   sed -E 's/^\(([A-Za-z0-9]+)\)/[\1]/'
 }
 
-function add_newline_before_article_bodies {
-  local stdin="$(</dev/stdin)"
+function move_article_titles_after_article_numbers {
+  sed -En '${p;q};N;/\nArticle/{s/^(.*)\n(Article [0-9]+\.) /\2 \1|/p;b};P;D'
+}
 
-  if [ "$#" -ne 1 ] ; then
-    echo_usage_error "$*" '<language>'
-    return 1
-  fi
-  local language="$1"
+function move_article_titles_above_articles {
+  sed -E 's/^(\([0-9]+\) )([^|]+)\|/\2\n\1/'
+}
 
-  local article_regular_expression
-  article_regular_expression="$(get_article_regular_expression $language)"
-  local return_code="$?"
-  if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
-
-  local regular_expression="([A-Z][A-Za-z' ]+) (${article_regular_expression})"
-
-  echo "$stdin" | sed -E "s/${regular_expression}/\n\n\1\n\2/g"
+function add_newlines_before_headers {
+  sed -E 's/([^^]) ?(PART [IVX]+)/\1\n\n\2 -/'
 }
 
 function remove_margin_headers {
@@ -38,14 +31,15 @@ function remove_margin_headers {
     sed -E 's/Government Gazette 27 December 2007 No. 3966 //g' 
 }
 
-function remove_leftover_article_literals {
-  sed -E 's/(in section Article \[44\])/in section 44/' | \
-    sed -E 's/Article \[([0-9]+)\]/\n(\1)/g'
-}
-
 function amend_errors_in_articles {
-  #remove incorrect bullet points
-  sed -E 's/ \[•\]//g' | \
+  local stdin="$(</dev/stdin)"
+
+  local article_35_text="Environmental Commissioner must follow the "
+  article_35_text+="consultative process referred to in section 44."
+
+  echo "$stdin" | \
+    #remove incorrect bullet points
+    sed -E 's/ \[•\]//g' | \
     #format subsection numbers
     sed -E 's/(subsection )\(([0-9]+)\)/\1[\2]/g' | \
     #format (a-z) to [a-z]
@@ -68,13 +62,20 @@ function amend_errors_in_articles {
     amend_error_in_article 1 'section 27[(]1[)]' 'section 27[1]' | \
     #Article 3
     amend_error_in_article 3 '\[2\] \[a\]' '\[2\]\[a\]' | \
+    amend_error_in_article 3 ' 8' '' | \
+    #Article 5
+    amend_error_in_article 5 '  9' '' | \
     #Article 8
     amend_error_in_article 8 'subsections [(]4[)]' 'subsections [4]' | \
     #Article 10
     amend_error_in_article 10 'or\.' 'or' | \
+    #Article 11
+    sed -E 's/^(\(11\).*) Article \[12\] ([^|]+)\|\(1\)/\1\n\n\2\n(12) [1]/' | \
     #Article 15
     amend_error_in_article 15 '\[1991]' '1991)' | \
     amend_error_in_article 15 'before\.' 'before' | \
+    #Article 17
+    sed -E 's/^(\(17\).*) Article \[18\] ([^|]+)\|\(1\)/\1\n\n\2\n(18) [1]/' | \
     #Article 18
     amend_error_in_article 18 '\( \[2]' '[2]' | \
     amend_error_in_article 18 '\(2\)' '\[2\]' | \
@@ -103,11 +104,11 @@ function amend_errors_in_articles {
     #Article 30
     amend_error_in_article 30 '27\(1\)' '27\[1\]' | \
     #Article 31
-    amend_error_in_article 31 'invalid.PART' 'invalid. PART' | \
+    amend_error_in_article 31 ' 22' '' | \
     #Article 34
     amend_error_in_article 34 'or\.' 'or' | \
     #Article 35
-    amend_error_in_article 35 'section 44' 'section 44.' | \
+    sed -E "s/^(\(35\).*)(\[4\])/\1${article_35_text} \2/" | \
     amend_error_in_article 35 '\[1\]\[b\]\(ii\)' '[1][b][ii]' | \
     #Article 36
     amend_error_in_article 36 '35\(7\)\[c\]' '35[7][c]' | \
@@ -123,7 +124,7 @@ function amend_errors_in_articles {
     amend_error_in_article 42 'section \[44]' 'section 44.' | \
     amend_error_in_article 42 '\[1\] \[a\]' '\[1\]\[a\]' | \
     #Article 44
-    amend_error_in_article 44 'reasonable time.Appointment' 'reasonable time. Appointment' | \
+    sed -E 's/^(\(44\).*) Article \[45\] ([^|]+)\|/\1\n\n\2\n(45) /' | \
     #Article 48
     amend_error_in_article 48 'and\.' 'and' | \
     #Article 49
@@ -131,6 +132,7 @@ function amend_errors_in_articles {
     amend_error_in_article 49 '\[1\] \[a\]' '\[1\]\[a\]' | \
     #Article 50
     amend_error_in_article 50 'otherwise.Appeal' 'otherwise. Appeal' | \
+    sed -E 's/^(\(50\).*) Article \[51\] ([^|]+)\|\(1\)/\1\n\n\2\n(51) [1]/' | \
     #Article 51
     amend_error_in_article 51 '50\(4\)' '50[4]' | \
     #Article 56
@@ -140,28 +142,7 @@ function amend_errors_in_articles {
 }
 
 function amend_errors_in_headers {
-  sed -E 's/^(Section [0-9]+ - [A-Za-z,’ ]+)[^a-z]+Article ([0-9]+)(er)?/\1\n\n(\2)/' | \
-    sed -n '/^PART I/,$p' | \
-    sed -E 's/^(PART )I/\1I -/' | \
-    sed -E 's/^(PART I - DEFINITIONS.*) Definitions/\1\n\nDefinitions/' | \
-    sed -E 's/^(PART )I -I/\1II -/' | \
-    sed -E 's/^(PART II - PRINCIPLES.*) Principles/\1\n\nPrinciples/' | \
-    sed -E 's/^(PART )II -I/\1III -/' | \
-    sed -E 's/^(PART III - GENERAL.*) Functions/\1\n\nFunctions/' | \
-    sed -E 's/^(PART )I -V/\1IV -/' | \
-    sed -E 's/^(PART IV - SUSTAINABLE.*) Establishment/\1\n\nEstablishment/' | \
-    sed -E 's/^(PART )V/\1V -/' | \
-    sed -E 's/^(PART V - ENVIRONMENTAL.*) Appointment/\1\n\nAppointment/' | \
-    sed -E 's/^(PART )V -I/\1VI -/' | \
-    sed -E 's/^(PART VI - ENVIRONMENTAL.*) Objects/\1\n\nObjects/' | \
-    sed -E 's/^(PART )VI -I/\1VII -/' | \
-    sed -E 's/^(PART VII - ENVIRONMENTAL.*) Listing/\1\n\nListing/' | \
-    sed -E 's/^(PART )VII -I/\1VIII -/' | \
-    sed -E 's/^(PART VIII - ENVIRONMENTAL.*) Application/\1\n\nApplication/' | \
-    sed -E 's/^(PART )I -X/\1IX -/' | \
-    sed -E 's/^(PART IX - SPECIAL.*) Consultation/\1\n\nConsultation/' | \
-    sed -E 's/^(PART )X/\1X -/' | \
-    sed -E 's/^(PART X - GENERAL.*) Delegation/\1\n\nDelegation/'
+  sed -E 's/^(PART )I /\1I - /'
 }
 
 function remove_all_text_after_last_article {
@@ -180,10 +161,11 @@ function preprocess_state_and_language_input_file {
     remove_all_text_before_first_header | \
     prefix_article_numbers_with_article_literal | \
     replace_parentheses_around_article_delimiters_with_square_brackets | \
-    add_newline_before_article_bodies "$language" | \
+    move_article_titles_after_article_numbers | \
     apply_common_transformations_to_stdin "$language" | \
+    move_article_titles_above_articles | \
+    add_newlines_before_headers | \
     remove_margin_headers | \
-    remove_leftover_article_literals | \
     amend_errors_in_articles | \
     amend_errors_in_headers | \
     remove_all_text_after_last_article
