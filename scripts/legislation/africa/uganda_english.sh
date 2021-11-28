@@ -10,7 +10,7 @@ function prefix_article_numbers_with_article_literal {
 }
 
 function replace_parentheses_around_article_delimiters_with_square_brackets {
-  sed -E 's/^\(([A-Za-z0-9]+)\)/[\1]/' 
+  sed -E 's/\(([A-Za-z0-9]+)\)/[\1]/g' 
 }
 
 function remove_all_text_after_last_article {
@@ -18,20 +18,18 @@ function remove_all_text_after_last_article {
 }
 
 function amend_errors_in_headers {
-  sed -E 's/PART/\n\nPART/g' | \
+  sed -E 's/([^^])PART/\1\n\nPART/g' | \
     sed -E 's/^(PART .*)\[•\]/\1-/' | \
-    sed -n '/PART I /,$p' | \
     sed -E 's/ARRANGEMENTS The Authority/ARRANGEMENTS\n\nThe Authority/' 
 }
 
 function amend_errors_in_articles {
   sed -E 's/ \[•\]/:/g' | \
     sed -E 's/([a-z])- /\1: /g' | \
-    sed -E 's/\(([a-z])\)/[\1]/g' | \
-    sed -E 's/ \(([0-9])\)/ [\1]/g' | \
-    sed -E 's/([0-9]+)\(([0-9]+)\)/\1[\2]/g' | \
+    sed -E 's/ 1\]/ \[1\]/g' | \
     sed -E 's/Statute No. 4 National Environment Statute//g' | \
     sed -E 's/  1995 [0-9]+//g' | \
+    sed -E 's/sub-section/subsection/g' | \
     #Article 2
     amend_error_in_article 2 'have become adopted;' 'have become adopted.' | \
     amend_error_in_article 2 '\[a\]crude' '[a] crude' | \
@@ -46,11 +44,13 @@ function amend_errors_in_articles {
     amend_error_in_article 2 'acquatic' 'aquatic' | \
     amend_error_in_article 2 'condition limitation, or restrictuion to which' 'condition, limitation or restriction which' | \
     amend_error_in_article 2 'byitself' 'by itself' | \
+    amend_error_in_article 2 'No.6 of 1991' 'No. 6 of 1991' | \
     #Article 7
     amend_error_in_article 7 'Policy Committee' '\n\nPolicy Committee' | \
     amend_error_in_article 7 'Executive Diretor' 'Executive Director' | \
     amend_error_in_article 7 'Functions ofthe Authority and relationship with lead agencies and delegation' '' | \
     amend_error_in_article 7 '; .' ';' | \
+    amend_error_in_article 7 '. \[h\]' '[h]' | \
     #Article 8
     amend_error_in_article 8 'meetings. THE BOARD' '\n\nTHE BOARD' | \
     amend_error_in_article 8 'policy Committee' 'Policy Committee' | \
@@ -81,13 +81,16 @@ function amend_errors_in_articles {
     #Article 20
     amend_error_in_article 20 'Statute Environmental' 'Statute' | \
     amend_error_in_article 20 'impact assessment \[b\]' '[b]' | \
-    #Article 21
-    amend_error_in_article 21 'paragraph \[7\]' 'paragraph 7' | \
+    #Article 23
+    amend_error_in_article 23 'project conform in operation' 'project conforms in operation' | \
+    #Article 24
+    amend_error_in_article 24 'carried on that land' 'carried out on that land' | \
     #Article 34
     amend_error_in_article 34 '\[94\]' '94.' | \
     #Article 35
     amend_error_in_article 35 'Limits on the use of lakes and rivers. ' '' | \
     amend_error_in_article 35 '36-' '36:' | \
+    amend_error_in_article 35 'includes stream and canal' 'includes streams and canals' | \
     #Article 37
     amend_error_in_article 37 'oris' 'or is' | \
     #Article 39
@@ -97,6 +100,8 @@ function amend_errors_in_articles {
     #Article 43
     amend_error_in_article 43 '\]i' '\] i' | \
     amend_error_in_article 44 'exsitu' 'ex-situ' | \
+    #Article 45
+    amend_error_in_article 45 'consider, necessary' 'considers necessary' | \
     #Article 46
     amend_error_in_article 46 'thelead' 'the lead' | \
     amend_error_in_article 46 'section \[3\]' 'section 3.' | \
@@ -104,8 +109,11 @@ function amend_errors_in_articles {
     #Article 47
     amend_error_in_article 47 'section \[3\]' 'section 3.' | \
     amend_error_in_article 47 'byindividual landusers' 'by individual land users' | \
+    #Article 48
+    amend_error_in_article 48 'risk to desertification' 'risk of desertification' | \
     #Article 51
     amend_error_in_article 51 '\(c' '[c]' | \
+    amend_error_in_article 51 'minimization or risks' 'minimization of risks' | \
     #Article 55
     amend_error_in_article 55 'fallingunder' 'falling under' | \
     amend_error_in_article 55 '\[54\]' '54.' | \
@@ -114,40 +122,59 @@ function amend_errors_in_articles {
     amend_error_in_article 56 'measures on' 'measures on: ' | \
     #Article 57
     amend_error_in_article 57 'discharge by' 'discharge by: ' | \
+    amend_error_in_article 57 'passage or a reasonable time' 'passage of a reasonable time' | \
+    amend_error_in_article 57 'Authority may; upon an order' 'Authority may, upon an order' | \
     #Article 59
     amend_error_in_article 59 'detemine' 'determine' | \
     amend_error_in_article 59 'Comittee' 'Committee' | \
+    amend_error_in_article 59 '; \[3\]' '. [3]' | \
     #Article 61
     amend_error_in_article 61 '\]-' ']:' | \
     #Article 64
     amend_error_in_article 64 '\[4\]' '. [4]' | \
     amend_error_in_article 64 'further information .' 'further information.' | \
+    amend_error_in_article 64 'A license may apply' 'A licensee may apply' | \
     #Article 65
     amend_error_in_article 65 'orin' 'or in' | \
+    amend_error_in_article 65 'so to do' 'to do so' | \
     #Article 68
     amend_error_in_article 68 '\]levying' '] levying' | \
     #Article 73
     amend_error_in_article 73 '\[77\]' '77.' | \
-    amend_error_in_article 73 'so as to' 'so as to: ' | \
+    amend_error_in_article 73 'imposed on burdened land so as to' 'imposed on burdened land so as to: ' | \
+    amend_error_in_article 73 'to:  limit' 'to limit' | \
     #Article 75
     amend_error_in_article 75 '. easement.' '.' | \
     amend_error_in_article 75 'Enforcement of environmental ' '' | \
     #Article 76
     amend_error_in_article 76 ' Cap.' '' | \
+    #Article 78
+    amend_error_in_article 78 'this Statute has been complied' 'this Statute have been complied' | \
     #Article 79
     amend_error_in_article 79 '\[87\]' '87.' | \
     #Article 81
     amend_error_in_article 81 'without warrant' 'without warrant: ' | \
+    amend_error_in_article 81 'for purpose of' 'for the purpose of' | \
+    #Article 87
+    amend_error_in_article 87 'field of environment' 'field of the environment' | \
     #Article 88
     amend_error_in_article 88 'Integration of environmental education i the school curriculum.' '' | \
     #Article 90
     amend_error_in_article 90 '91' '\n\n(91)' | \
     #Article 93
     amend_error_in_article 93 'appoint by him' 'appointed by him' | \
+    #Article 94
+    amend_error_in_article 94 "Minister's powers in relation to taxation, Decree No.1 of Article" '' | \
+    amend_error_in_article 94 'included in the annual budget' 'include in the annual budget' | \
     #Article 96
     amend_error_in_article 96 'requiremnt' 'requirement' | \
+    #Article 98
+    amend_error_in_article 98 'not less that' 'not less than' | \
+    #Article 105
+    amend_error_in_article 105 'Unless other expressly' 'Unless otherwise expressly' | \
     #Article 106
     amend_error_in_article 106 'Porfeiture, cancellation, community service and other orders. ' '' | \
+    amend_error_in_article 106 'the offence related' 'the offence is related' | \
     #Article 108
     amend_error_in_article 108 'bye-laws' 'by-laws' | \
     amend_error_in_article 108 'cenvenient' 'convenient' | \
@@ -249,7 +276,7 @@ function remove_and_reinsert_article_titles {
     remove_and_reinsert_article_title 91 'Duty to operate on sound financial principles.' | \
     remove_and_reinsert_article_title 92 'Estimates.' | \
     remove_and_reinsert_article_title 93 'Accounts, audits and annual report. ' | \
-    remove_and_reinsert_article_title 94 "Minister's powers in relation to taxation, Decree No.1 of Article" | \
+    remove_and_reinsert_article_title 94 "Minister's powers in relation to taxation, Decree No. 1 of 1974" | \
     remove_and_reinsert_article_title 95 'Refundable performance deposit bonds. ' | \
     remove_and_reinsert_article_title 96 'Penalties relating to environmental inspectors. ' | \
     remove_and_reinsert_article_title 97 'Offences relating to impact assessment.' | \

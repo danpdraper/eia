@@ -535,7 +535,7 @@ function remove_and_reinsert_article_title {
   local article_title="$2"
 
   echo "$stdin" | sed -E "s/${article_title}//" | \
-    sed -E "s/\(${article_number}\)/${article_title}\n(${article_number})/" 
+  sed -E "s/^\(${article_number}\)/${article_title}\n(${article_number})/"
 }
 
 function preprocess_file {
