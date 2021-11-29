@@ -106,6 +106,7 @@ function amend_errors_in_articles {
     amend_error_in_article 46 'thelead' 'the lead' | \
     amend_error_in_article 46 'section \[3\]' 'section 3.' | \
     amend_error_in_article 46 'whall' 'shall' | \
+    amend_error_in_article 46 'paragraph \[e\] of subsection \[1\]' 'paragraph [e] of subsection [2]' | \
     #Article 47
     amend_error_in_article 47 'section \[3\]' 'section 3.' | \
     amend_error_in_article 47 'byindividual landusers' 'by individual land users' | \
@@ -133,7 +134,7 @@ function amend_errors_in_articles {
     #Article 64
     amend_error_in_article 64 '\[4\]' '. [4]' | \
     amend_error_in_article 64 'further information .' 'further information.' | \
-    amend_error_in_article 64 'A license may apply' 'A licensee may apply' | \
+    amend_error_in_article 64 'A licence may apply' 'A licensee may apply' | \
     #Article 65
     amend_error_in_article 65 'orin' 'or in' | \
     amend_error_in_article 65 'so to do' 'to do so' | \
@@ -276,7 +277,7 @@ function remove_and_reinsert_article_titles {
     remove_and_reinsert_article_title 91 'Duty to operate on sound financial principles.' | \
     remove_and_reinsert_article_title 92 'Estimates.' | \
     remove_and_reinsert_article_title 93 'Accounts, audits and annual report. ' | \
-    remove_and_reinsert_article_title 94 "Minister's powers in relation to taxation, Decree No. 1 of 1974" | \
+    remove_and_reinsert_article_title 94 "Minister's powers in relation to taxation, Decree No. 1 of 1974\." | \
     remove_and_reinsert_article_title 95 'Refundable performance deposit bonds. ' | \
     remove_and_reinsert_article_title 96 'Penalties relating to environmental inspectors. ' | \
     remove_and_reinsert_article_title 97 'Offences relating to impact assessment.' | \
