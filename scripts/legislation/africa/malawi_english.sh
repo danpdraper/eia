@@ -10,18 +10,19 @@ function prefix_article_numbers_with_article_literal {
 }
 
 function replace_parentheses_around_article_delimiters_with_square_brackets {
-  sed -E 's/^\(([A-Za-z0-9]+)\)/[\1]/' 
+  sed -E 's/\(([A-Za-z0-9]+)\)/[\1]/g' 
 }
 
 function amend_errors_in_headers {
   sed -E 's/PART/\n\nPART/g' | \
     sed -E 's/^(PART .*)\[•\]/\1-/' | \
     sed -n '/PART I /,$p' | \
+    sed -E 's/III \[•\]/III -/' | \
     sed -E 's/Projects for which an environmen tal impact assessment is required //' 
 }
 
 function format_article_literals {
-  sed -E 's/(Article )\[([0-9]+)\] \[•\]/\n\n\(\2\)/g' | \
+  sed -E 's/Article \[([0-9]+)\] \[•\]/\n\n\(\1\)/g' | \
     sed -E 's/\[([0-9]+)\] \[•\]/\n\n\(\1\)/g' 
 }
 
@@ -40,9 +41,7 @@ function amend_article_numbering {
 
 function amend_errors_in_articles {
   sed -E 's/ \[•\]/:/g' | \
-    sed -E 's/\(([a-z])\)/[\1]/g' | \
-    sed -E 's/ \(([0-9])\)/ [\1]/g' | \
-    sed -E 's/([0-9]+)\(([0-9]+)\)/\1[\2]/g' | \
+    sed -E 's/ 1\]/ \[1\]/g' | \
     #Article 1
     amend_error_in_article 1 'Short title and commence ment Interpretation \[2\]' '\n\n(2)' | \
     #Article 2
@@ -50,12 +49,15 @@ function amend_errors_in_articles {
     amend_error_in_article 2 'danger"shall' 'danger" shall' | \
     amend_error_in_article 2 'occupatio ' 'occupation ' | \
     amend_error_in_article 2 '25 \[1\]' '25[1]' | \
+    amend_error_in_article 2 'means the person in occupation are occupied by different persons, ' '' | \
     #Article 3
     amend_error_in_article 3 'lawandementf o mlaang protection relatingthe to Cap.69.01 National environ mental policy ' '' | \
     #Article 5
     amend_error_in_article 5 '\[6\]' '\n\n(7)' | \
     amend_error_in_article 5 '\[5\]' '\n\n(6)' | \
     amend_error_in_article 5 'Provided that an action' 'provided that an action' | \
+    amend_error_in_article 5 '. \[b\]' '; [b]' | \
+    amend_error_in_article 5 '\[2\];' '[2],' | \
     #Article 8
     amend_error_in_article 8 'were appropriate' 'where appropriate' | \
     #Article 9
@@ -63,6 +65,10 @@ function amend_errors_in_articles {
     #Article 11
     amend_error_in_article 11 'Council -' 'Council:' | \
     amend_error_in_article 11 'a fine.' 'a fine;' | \
+    amend_error_in_article 11 'Council \[b\]' 'Council; [b]' | \
+    #Article 13
+    amend_error_in_article 13 'shall have not right to vote' 'shall not have the right to vote' | \
+    amend_error_in_article 13 'Technical Committee on the Environment' '' | \
     #Article 14
     amend_error_in_article 14 'vote on ,' 'vote on,' | \
     #Article 17
@@ -88,6 +94,7 @@ function amend_errors_in_articles {
     amend_error_in_article 31 'Environment al protection areas' '' | \
     #Article 32
     amend_error_in_article 32 'Environmen tal protection orders ' '' | \
+    amend_error_in_article 32 '; \[3\]' '. [3]' | \
     #Article 33
     amend_error_in_article 33 'Enforcement of environmen tal protection Conservatio n of biological diversity ' '' | \
     #Article 35
@@ -96,14 +103,22 @@ function amend_errors_in_articles {
     amend_error_in_article 38 'Importation exportation and hazardous waste Cap.18:08 Classifica tion of pesticides and hazardous substances ' '' | \
     #Article 40
     amend_error_in_article 40 'Cap.' '' | \
+    amend_error_in_article 40 'environment and natural resources.' 'environment and natural resources;' | \
+    #Article 41 
+    amend_error_in_article 41 '\[e\]' '[d]' | \
+    amend_error_in_article 41 '\[f\]' '[e]' | \
     #Article 42
     amend_error_in_article 42 'poll any orosing disp ' '' | \
+    amend_error_in_article 42 'duty of person' 'duty of every person' | \
+    #Article 43
+    amend_error_in_article 43 'Part: Provided' 'Part, provided' | \
     #Article 45
     amend_error_in_article 45 'Environmen tal Inspectors ' '' | \
     #Article 46
     amend_error_in_article 46 'section 45 ' 'section 45' | \
     amend_error_in_article 46 'section \[48\] ' 'section 48' | \
     amend_error_in_article 46 'Establish ment or designation of laboratories Appointmen t of analysts ' '' | \
+    amend_error_in_article 46 '48\[2\]' '48[2].' | \
     #Article 51
     amend_error_in_article 51 'Cap.49.01; Cap.49.02 ' '' | \
     #Article 52
@@ -115,9 +130,14 @@ function amend_errors_in_articles {
     amend_error_in_article 57 'Books and other records of account, audit and report of the Fund ' '' | \
     amend_error_in_article 57 'Cap.37:01 Cap.37.01 ' '' | \
     #Article 58
-    amend_error_in_article 58 'Assembly. General' 'Assembly.' | \
+    amend_error_in_article 58 'Holdings of the Fund Financial year General' '' | \
+    #Article 59
+    amend_error_in_article 59 'hade purposes' 'the purposes' | \
+    #Article 60
+    amend_error_in_article 60 '; Provided' ', provided' | \
     #Article 61
     amend_error_in_article 61 'offences Hindering, obstructing, etc. of inspector ' '' | \
+    amend_error_in_article 61 'no to her penalty' 'no penalty' | \
     #Article 62
     amend_error_in_article 62 'Offences relating to environment al impact assessments ' '' | \
     #Article 63
@@ -131,8 +151,10 @@ function amend_errors_in_articles {
     #Article 70
     amend_error_in_article 70 'confirm,vary' 'confirm, vary' | \
     amend_error_in_article 70 'sust Failure to attend Representa tion of parties Enforcement of Orders Costs Liability of bodies corporate, etc. ' '' | \
+    amend_error_in_article 70 '\[7\]' '[5]' | \
     #Article 76
     sed -E 's/Closure of premises 76/\n\nClosure of premises \n\(76\)/' | \
+    amend_error_in_article 76 'been complied with' 'complied with' | \
     #Article 77
     amend_error_in_article 77 'Passed in Parliament.*$' ''
 }
@@ -153,7 +175,7 @@ function remove_and_reinsert_article_titles {
     remove_and_reinsert_article_title 13 'Proceedings of the Council' | \
     remove_and_reinsert_article_title 14 'Disclosure of interest ' | \
     remove_and_reinsert_article_title 15 'Allowances of members of the Council ' | \
-    remove_and_reinsert_article_title 16 'Technical Committee on the Environment' | \
+    remove_and_reinsert_article_title 16 'Technical Committee on the Environment  ' | \
     remove_and_reinsert_article_title 17 'Functions of the Technical Committee ' | \
     remove_and_reinsert_article_title 18 'Proceedings of the Technical Committee ' | \
     remove_and_reinsert_article_title 19 'Functions of District Development Committees ' | \
