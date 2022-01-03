@@ -14,7 +14,7 @@ function replace_parentheses_around_article_delimiters_with_square_brackets {
 }
 
 function amend_errors_in_headers {
-  sed -E 's/PART/\n\nPART/g' | \
+  sed -E 's/([^^])PART/\1\n\nPART/g' | \
     sed -E 's/^(PART .*)\[•\]/\1-/' | \
     sed -n '/PART I /,$p' | \
     sed -E 's/III \[•\]/III -/' | \
@@ -22,8 +22,8 @@ function amend_errors_in_headers {
 }
 
 function format_article_literals {
-  sed -E 's/Article \[([0-9]+)\] \[•\]/\n\n\(\1\)/g' | \
-    sed -E 's/\[([0-9]+)\] \[•\]/\n\n\(\1\)/g' 
+  sed -E 's/Article \[([0-9]+)\] \[•\]/\n\n(\1)/g' | \
+    sed -E 's/\[([0-9]+)\] \[•\]/\n\n(\1)/g' 
 }
 
 function amend_article_numbering {
