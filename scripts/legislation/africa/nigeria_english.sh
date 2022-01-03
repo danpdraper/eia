@@ -58,6 +58,7 @@ function amend_errors_in_articles {
     amend_error_in_article 13 '\[Cap. C49.\] ' '' | \
     #Article 16
     amend_error_in_article 16 '47,48' '47, 48,' | \
+    amend_error_in_article 16 '48 ' '48, ' | \
     amend_error_in_article 16 '\[1\] \[a\]' '[1][a]' | \
     amend_error_in_article 16 '\[2\] \[b\]' '[2][b]' | \
     amend_error_in_article 16 'he Agency' 'the Agency' | \
@@ -119,7 +120,7 @@ function amend_errors_in_articles {
     amend_error_in_article 61 '\[Cap. T5.\] ' '' | \
     amend_error_in_article 61 'section 61\[1\] \[b\]' 'section 61[1][b]' | \
     amend_error_in_article 61 '55\[1\] \[c\]' '55[1][c]' | \
-    amend_error_in_article 61 'subsection 14 \[1\]' 'section 14[1]' | \
+    amend_error_in_article 61 'subsection 14\[1\]' 'section 14[1]' | \
     amend_error_in_article 61 'section 17 \[1\]' 'section 17[1]' | \
     amend_error_in_article 61 'per cent ' 'percent ' | \
     amend_error_in_article 61 'subsections 11\[1\]' 'sections 11[1]' | \
