@@ -14,9 +14,9 @@ function replace_parentheses_around_article_delimiters_with_square_brackets {
 }
 
 function amend_errors_in_headers {
-  sed -E 's/([^^])PART/\1\n\nPART/g' | \
+  sed -E 's/^ +PART/PART/' | \
+    sed -E 's/([^^])PART/\1\n\nPART/g' | \
     sed -E 's/^(PART .*)\[•\]/\1-/' | \
-    sed -n '/PART I /,$p' | \
     sed -E 's/III \[•\]/III -/' | \
     sed -E 's/Projects for which an environmen tal impact assessment is required //' 
 }
