@@ -117,10 +117,12 @@ def test_jaccard_index_full_text_preserve_provision_delimiters():
         [0.191, 0.2, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_jaccard_index_full_text_do_not_preserve_provision_delimiters():
@@ -236,10 +238,12 @@ def test_jaccard_index_full_text_do_not_preserve_provision_delimiters():
         [0.172, 0.182, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_jaccard_index_full_text_list_of_states_to_include():
@@ -341,10 +345,12 @@ def test_jaccard_index_full_text_list_of_states_to_include():
         [0.191, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_jaccard_index_provisions():
@@ -570,10 +576,12 @@ def test_jaccard_index_provisions():
         [0.111, 0.146, 0.191, 0.121, 0.092, 0.140, 0.174, 0.073, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_jaccard_index_provisions_list_of_states_to_include():
@@ -733,10 +741,12 @@ def test_jaccard_index_provisions_list_of_states_to_include():
         [0.111, 0.146, 0.191, 0.174, 0.073, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_jaccard_index_output_directory_does_not_exist():

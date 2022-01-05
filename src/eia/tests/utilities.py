@@ -120,21 +120,32 @@ def populate_actual_similarity_matrix_and_labels(
                 list(map(lambda line_component: float(line_component), line_components[1:])))
 
 
+def compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels):
+    assert sorted(expected_similarity_matrix_labels) == sorted(actual_similarity_matrix_labels)
+
+
 def compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix):
+        expected_similarity_matrix, actual_similarity_matrix, expected_labels,
+        actual_labels):
     assert len(expected_similarity_matrix) == len(actual_similarity_matrix)
-    for row_index in range(len(expected_similarity_matrix)):
-        expected_row = expected_similarity_matrix[row_index]
-        actual_row = actual_similarity_matrix[row_index]
+    for expected_row_index, row_label in enumerate(expected_labels):
+        expected_row = expected_similarity_matrix[expected_row_index]
+        actual_row_index = actual_labels.index(row_label)
+        actual_row = actual_similarity_matrix[actual_row_index]
         assert len(expected_row) == len(actual_row)
-        for column_index in range(len(expected_row)):
+        for expected_column_index, column_label in enumerate(expected_labels):
+            expected_element = expected_row[expected_column_index]
+            actual_column_index = actual_labels.index(column_label)
+            actual_element = actual_row[actual_column_index]
             LOGGER.info(
-                "Comparing matrix elements at row index {} and column index "
-                "{}. Expected element value: {}, actual element value: "
-                "{}.".format(
-                    row_index, column_index, expected_row[column_index],
-                    actual_row[column_index]))
-            assert round(abs(expected_row[column_index] - actual_row[column_index]), 4) <= EPSILON
+                "Comparing matrix elements at expected row index {}, expected "
+                "column index {}, actual row index {} and actual column "
+                "index {}. Expected element value: {}, actual element value: "
+                "{}".format(
+                    expected_row_index, expected_column_index, actual_row_index,
+                    actual_column_index, expected_element, actual_element))
+            assert round(abs(expected_element - actual_element), 4) <= EPSILON
 
 
 def plot_file_path(output_directory_path, algorithm, scope):
