@@ -9,6 +9,16 @@ import eia.scopes as scopes
 import eia.tests.utilities as utilities
 
 
+def compare_expected_and_actual_labels_and_rows(
+        expected_labels_and_rows, actual_labels_and_rows):
+    expected_labels, expected_rows = zip(*expected_labels_and_rows)
+    actual_labels, actual_rows = zip(*actual_labels_and_rows)
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_labels, actual_labels)
+    utilities.compare_expected_and_actual_similarity_matrices(
+        expected_rows, actual_rows, expected_labels, actual_labels)
+
+
 def test_row_generator_yields_tuples_of_row_label_and_row_with_provision_delimiters():
     test_directory_path = utilities.create_test_directory('test_similarity_matrix')
 
@@ -79,7 +89,8 @@ def test_row_generator_yields_tuples_of_row_label_and_row_with_provision_delimit
     finally:
         utilities.delete_test_directory(test_directory_path)
 
-    assert expected_labels_and_rows == actual_labels_and_rows
+    compare_expected_and_actual_labels_and_rows(
+        expected_labels_and_rows, actual_labels_and_rows)
 
 
 def test_row_generator_yields_tuples_of_row_label_and_row_without_provision_delimiters():
@@ -152,7 +163,8 @@ def test_row_generator_yields_tuples_of_row_label_and_row_without_provision_deli
     finally:
         utilities.delete_test_directory(test_directory_path)
 
-    assert expected_labels_and_rows == actual_labels_and_rows
+    compare_expected_and_actual_labels_and_rows(
+        expected_labels_and_rows, actual_labels_and_rows)
 
 
 def test_row_generator_excludes_files_from_states_not_in_states_to_include_file():
@@ -216,7 +228,8 @@ def test_row_generator_excludes_files_from_states_not_in_states_to_include_file(
     finally:
         utilities.delete_test_directory(test_directory_path)
 
-    assert expected_labels_and_rows == actual_labels_and_rows
+    compare_expected_and_actual_labels_and_rows(
+        expected_labels_and_rows, actual_labels_and_rows)
 
 
 def test_row_generator_ignores_comments_in_states_to_include_file():
@@ -281,7 +294,8 @@ def test_row_generator_ignores_comments_in_states_to_include_file():
     finally:
         utilities.delete_test_directory(test_directory_path)
 
-    assert expected_labels_and_rows == actual_labels_and_rows
+    compare_expected_and_actual_labels_and_rows(
+        expected_labels_and_rows, actual_labels_and_rows)
 
 
 def test_from_file_returns_labels_and_lower_diagonal_matrix_without_diagonal():

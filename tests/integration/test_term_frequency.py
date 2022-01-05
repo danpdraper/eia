@@ -277,10 +277,12 @@ def test_term_frequency_full_text_preserve_provision_delimiters():
         [0.834, 0.759, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_term_frequency_full_text_do_not_preserve_provision_delimiters():
@@ -554,10 +556,12 @@ def test_term_frequency_full_text_do_not_preserve_provision_delimiters():
         [0.833, 0.757, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_term_frequency_full_text_list_of_states_to_include():
@@ -783,10 +787,12 @@ def test_term_frequency_full_text_list_of_states_to_include():
         [0.834, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_term_frequency_provisions():
@@ -1126,10 +1132,12 @@ def test_term_frequency_provisions():
         [0.569, 0.671, 0.592, 0.340, 0.597, 0.604, 0.620, 0.390, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_term_frequency_provisions_list_of_states_to_include():
@@ -1389,10 +1397,12 @@ def test_term_frequency_provisions_list_of_states_to_include():
         [0.569, 0.671, 0.592, 0.620, 0.390, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_term_frequency_output_directory_does_not_exist():
