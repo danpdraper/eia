@@ -1,78 +1,56 @@
 #!/bin/bash
 
-function replace_line_leading_stars_and_dashes_with_bullet_points {
-  sed -E 's/^[\t ]+[-*]/•/g'
-}
-
-function remove_all_text_before_first_article_header {
-  sed -E 's/ ARTICLE 1ER\. -/\n(1)/' | \
-    sed -En '/^\(1\)/,$p'
+function remove_all_text_before_first_header {
+  sed -n '/^TITRE 1 /,$p'
 }
 
 function amend_errors_in_articles {
-  # Article 1
-  amend_error_in_article 1 'I et II' 'I et II).' | \
-    # Article 2
-    amend_error_in_article 2 1er 1 | \
-    # Article 3
-    amend_error_in_article 3 rèspect respect | \
-    # Article 4
-    amend_error_in_article 4 'choix; Des' 'choix. Des' | \
-    # Article 11
-    amend_error_in_article 11 résulterait résulteraient | \
-    # Article 15
-    amend_error_in_article 15 ' ANNEX 1' '\n\nANNEXE I' | \
-    amend_error_in_article 15 ' Fait à Brazzaville.*$' ''
+  sed -E 's/Economie/Économie/g' | \
+    sed -E 's/Chargé/chargé/g' | \
+    sed -E 's/([0-9]) ([0-9])/\1.\2/g' | \
+    sed -E 's/Etat/État/g' | \
+    sed -E 's/1ère/première/g' | \
+    sed -E 's/2ème/deuxième/g' | \
+    sed -E 's/Energie/Énergie/g' | \
+    sed -E 's/0F/0 F/g' | \
+    # Article 18
+    amend_error_in_article 18 'Forestière, dressent' 'Forestière dressent' | \
+    # Article 22
+    amend_error_in_article 22 établissement établissements | \
+    # Article 41
+    amend_error_in_article 41 '\[39\]' '39.' | \
+    # Article 42
+    # Article 46
+    amend_error_in_article 46 classée classées | \
+    amend_error_in_article 46 fixés fixées | \
+    # Article 66
+    amend_error_in_article 66 '\. Cette' '; cette' | \
+    amend_error_in_article 66 '\[1\] ' '1.' | \
+    amend_error_in_article 66 'au delà' 'au-delà' | \
+    # Article 76
+    amend_error_in_article 76 'F\.' 'F,' | \
+    amend_error_in_article 76 'deux\(2\)' 'deux (2)' | \
+    amend_error_in_article 76 'six\(6\)' 'six (6)' | \
+    # Article 87
+    sed -E ':start;s/^(\(87\).*\] )L/\1l/;t start' | \
+    # Article 91
+    amend_error_in_article 91 présent présente | \
+    amend_error_in_article 91 journal Journal | \
+    amend_error_in_article 91 ' Fait.*$' ''
 }
 
-function amend_errors_in_annexes {
-  local stdin="$(</dev/stdin)"
-
-  local annex_i_line_prefix='ANNEXE I '
-  local annex_ii_line_prefix='ANNEXE II'
-
-  echo "$stdin" | \
-    # ANNEX I
-    sed -E ":start;s/^(${annex_i_line_prefix}.*\[[0-9]\]) -/\1/;t start" | \
-    sed -E "s/^(${annex_i_line_prefix}.*)forêts \[•\]/\1forêts: [•]/" | \
-    sed -E "s/^(${annex_i_line_prefix}.*engrais)\./\1/" | \
-    sed -E "s/^(${annex_i_line_prefix}.*ports)\./\1/" | \
-    sed -E "s/^(${annex_i_line_prefix}.*mer)\./\1/" | \
-    sed -E "s/^(${annex_i_line_prefix}.*eau)\./\1/" | \
-    sed -E "s/^(${annex_i_line_prefix}.*)transport aériens/\1transports aériens/" | \
-    sed -E "s/^(${annex_i_line_prefix}.*)gazodues/\1gazoducs/" | \
-    sed -E "s/^(${annex_i_line_prefix}.*)oléodues/\1oléoducs/" | \
-    sed -E "s/^(${annex_i_line_prefix}.*chimiques) etc\.\.\./\1, etc./" | \
-    sed -E "s/^(${annex_i_line_prefix}.*)1ère et 2ème classe/\1première et deuxième classe/" | \
-    sed -E "s/^(${annex_i_line_prefix}.*)Etablissements/\1Établissements/" | \
-    sed -E "s/^(${annex_i_line_prefix}.*eau)\./\1/" | \
-    sed -E "s/^(${annex_i_line_prefix}.*Lotissement) etc \.\.\./\1, etc./" | \
-    sed -E "s/^(${annex_i_line_prefix}.*) \[1\]/\1\n\n[1]/" | \
-    sed -E "s/^(${annex_i_line_prefix}).*(Liste des Travaux)/\1- \2/" | \
-    sed -E "s/^(${annex_i_line_prefix}.*)Etude/\1Étude/" | \
-    # ANNEX II
-    sed -E ":start;s/^(${annex_ii_line_prefix}.*\[[0-9]\]) -/\1/;t start" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*Impact),/\1/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*marécages),/\1/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*rendement),/\1/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*flore)\./\1/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*)Innondation/\1Inondation/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*salubrité publique),/\1/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*)Emissions/\1Émissions/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*)Emission/\1Émission/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*)Ecoulement/\1Écoulement/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*rejet)\./\1/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*découlant)\./\1/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*)listères/\1lisières/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*astoréicole),/\1/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*remarquables),/\1/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*)historistiques/\1historiques/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*renouvelables)\./\1/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*tourisme);/\1/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*sportifs)\./\1/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*) \[1\]/\1\n\n[1]/" | \
-    sed -E "s/^(${annex_ii_line_prefix}).*(Liste Indicative)/\1 - \2/" | \
-    sed -E "s/^(${annex_ii_line_prefix}.*)Etudes/\1Études/"
+function amend_errors_in_headers {
+  sed -E 's/GENERAL/GÉNÉRAL/g' | \
+    sed -E 's/ETABLISSEMENT/ÉTABLISSEMENT/g' | \
+    sed -E 's/ATMOSPHERE/ATMOSPHÈRE/g' | \
+    sed -E 's/^(TITRE 6 -)\./\1/' | \
+    sed -E 's/CLASSEE/CLASSÉE/g' | \
+    sed -E 's/DECHET/DÉCHET/g' | \
+    sed -E 's/NUCLEAIRE/NUCLÉAIRE/g' | \
+    sed -E 's/MEME/MÊME/g' | \
+    sed -E 's/STUPEFIANT/STUPÉFIANT/g' | \
+    sed -E 's/^(TITRE 14 -)\./\1/' | \
+    sed -E 's/^(TITRE 15 -)\./\1/'
 }
 
 function preprocess_state_and_language_input_file {
@@ -83,10 +61,8 @@ function preprocess_state_and_language_input_file {
   local input_file_path="$1"
   local language="$2"
 
-  cat "$input_file_path" | \
-    replace_line_leading_stars_and_dashes_with_bullet_points | \
-    apply_common_transformations_to_stdin "$language" | \
-    remove_all_text_before_first_article_header | \
+  apply_common_transformations "$input_file_path" "$language" | \
+    remove_all_text_before_first_header | \
     amend_errors_in_articles | \
-    amend_errors_in_annexes
+    amend_errors_in_headers
 }
