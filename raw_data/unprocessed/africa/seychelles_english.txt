@@ -1,0 +1,2929 @@
+1
+CONSOLIDATED TO 30 JUNE 2012
+LAWS OF SEYCHELLES
+CHAPTER 71
+ENVIRONMENT PROTECTION ACT
+[1
+st March, 1995]
+ARRANGEMENT OF SECTIONS
+PART I
+PRELIMINARY
+Section
+1. Short title and application
+2. Interpretation
+3. Object of the Act
+PART II
+ADMINISTRATION
+4. The Authority for environment protection and its functions
+5. The National Environmental Advisory Council
+PART III
+PREVENTION, CONTROL AND ABATEMENT OF ENVIRONMENTAL POLLUTION
+6. Standards
+7. Water quality management, protection of surface water, ground water and soil
+8. Air
+9. Noise
+10. Ozone Protection
+11. Coastal Zone its management and protection
+Act 9 of 1994
+Act 15 of 1998
+S.I. 73 of 1994
+2
+12. Waste
+13. Minimization of waste
+14. Hazardous substances
+PART IV
+ENVIRONMENT IMPACT ASSESSMENT
+15. Environment Impact Assessment Study and authorisation for particular projects and activities
+PART V
+ENFORCEMENT
+16. Enforcement notice
+17. Prohibition notice
+18. Variation notice
+19. Withdrawal notice
+20. Appeals
+21. Enforcement powers and authorised officers
+22. Powers of entry, inspection and seizure
+23. Declaration of environmental emergency
+24. Power of arrest
+25. Power to take samples
+26. Laboratories
+27. Government Analyst
+28. Reports of Government Analyst
+PART VI
+OFFENCES, PENALTIES AND PROCEDURES
+29. Fixed penalty
+30. Failure to comply with specific provisions
+31. Penalty for certain acts
+3
+32. Civil Liability
+33. Offences by companies
+34. Savings
+PART VII
+MISCELLANEOUS PROVISIONS
+35. Delegation of powers
+36. Furnishing of information to the authority in certain cases
+37. Authority empowered to collect information
+38. Confidentiality of information
+39. Protection of officers for action taken in good faith
+40. Power to make regulations
+----------------------
+PART I
+PRELIMINARY
+1. (1) This Act may be cited as the Environment Protection Act.
+(2) This Act binds the Republic.
+2. In this Act, unless the context otherwise requires:
+"abatement" means the reduction or removal of environmental pollution to the permitted
+or prescribed levels;
+"activity" means any process or operation whether commercial , industrial, domestic or
+agricultural on premises or by means of a mobile plant.
+" Administrator" means the administrative head of the Authority as notified by the
+Minister;
+"Ambient Air Quality" means the average atmospheric purity as distinguished from
+discharge measurements taken at the source of pollution.
+"Agency" means the Agency designated under section 12;
+"Authority" means the Authority referred to in section 4;
+4
+"Council" means the National Environment Advisory Council established under section
+5;
+"dumping" means any deliberate disposal of wastes or other matter from vehicles,
+vessels, aircraft, platforms or other man-made structures at sea;
+"effluent" means waste water or any other liquid with or without particles of matter in
+suspension therein of domestic, agricultural, trade or industrial origin, treated or
+untreated, and discharged directly or indirectly into the environment.
+"emission" means the act of passing into the atmosphere of any solid or liquid or gaseous
+substance coming out of any chimney, duct or flue or any other outlet or from a known
+source;
+"environment" means air, water and land and the inter-relationship which exists among
+and between air, water and land, and human beings, other living creatures, plants,
+micro-organisms and property;
+"hazardous substance" means any substance or preparation which by reason of its
+chemical or physico-chemical properties or handling , is liable to cause harm to human
+beings, other living creatures, plants, micro-organisms, property or the environment;
+"hazardous waste" means waste which is poisonous, corrosive, irritant, noxious,
+explosive, inflammable, toxic or harmful to the environment;
+"pollutant" means any solid, liquid or gaseous substance or energy present in such
+concentration as may be, or tend to be, injurious to environment;
+"pollution" means the presence in the environment of one or more pollutants;
+"polluter" means a person who contributes to or creates a condition of pollution;
+"prescribed" means prescribed by regulations under this Act.
+"wastes" means garbage, refuse, sludges, construction debris and other discarded
+substances resulting from industrial and commercial operations or from domestic,
+individual and community activity.
+"water quality" means the characteristics of water which define its use in terms of
+physical, chemical and biological contents;
+"watercourse" includes any river, stream, dam, reservoir, water catchment and wetlands;
+"wetland" includes all freshwater and tidal areas that are or may be submerged or
+periodically submerged under fresh or salt water, including all bodies or areas commonly
+referred to as marshes, swamps, beaches and flats.
+3. The principal object of this Act is to provide for the protection, improvement and
+preservation of the environment and for the prevention, control and abatement of environmental
+pollution.
+PART II
+5
+ADMINISTRATION
+4. (1) The Authority for the purposes of this Act shall be the Ministry or Department of
+the Government under the Minister having the Portfolio responsibility for Environment or a
+corporate body set up under subsection (2), as the case may be.
+(2) Subject to subsection (3), the Minister may by order published in the Gazette
+constitute an Authority which shall be a body corporate, with such name and for carrying out
+such of the powers and functions under this Act as may be specified in the order.
+(3) The Minister, in the exercise of the powers under subsection (2), may constitute
+different Authorities as bodies corporate for carrying out different powers and different functions
+under the Act as may be specified in the orders constituting such Authorities.
+(4) An order made under subsection (2) or subsection (3) may provide for -
+(a) any matter relating to the assets, capital, funds, finance, administration and
+management of the Authority constituted by such order;
+(b) any matter necessary for better carrying out the functions of such Authority.
+(5) Functions of the Authority are to -
+(i) implement policies and programmes in pursuance of the national objectives
+on environment protection.
+(ii) co-ordinate the activities of other agencies concerned with the protection of
+the environment –
+(a) under this Act; or ;
+(b) under any other law for the time being in force which is relatable to the
+objects of this Act.
+(iii) evolve standards for the quality of the environment in its various aspects and
+for emission or discharge of environmental pollutants from various sources
+whatsoever;
+(iv) commission research and sponsor studies on problems relating to
+environmental pollution;
+(v) examine such manufacturing processes, materials and substances as are
+likely to cause environmental pollution;
+(vi) identify areas in which any activity shall not be carried out or shall be carried
+out subject to certain safeguards;
+(vii) evolve procedures and safeguards for the prevention of accidents which may
+cause environmental pollution and remedial measures for such accidents;
+(viii) collect and disseminate information in respect of matters relating to
+environmental protection;
+6
+(ix) co-ordinate actions required in a state of environmental emergency or any
+other situation which may pose a serious threat to the environment.
+(x) prepare manuals, codes or guidelines relating to environmental protection
+and for the prevention, control and abatement of pollution and;
+(xi) carry out such other matters as the Minister may assign for the purpose of
+securing the effective implementation of the provisions of this Act.
+(6) The Authority shall be responsible to the Minister for carrying out the functions
+under this Act and for the discharge of any other functions that may be assigned to it by the
+Minister.
+(7) There shall be appointed within the Authority such officers as may be necessary
+for the proper discharge of the functions of the Authority under this Act.
+(8) The officers of the Authority shall be under the direct administrative control of the
+Administrator.
+(9) The Authority may establish as and when deemed necessary, such Technical or
+Advisory Committee or Committees as it thinks fit, to advise on matters pertaining to the
+scientific and technical aspects of environmental protection and management.
+(10) The Authority shall not, in any matter relating to public health under the Public
+Health Act, exercise its functions under this Act, except in consultation with the Ministry
+responsible for health and in accordance with the advice of that Ministry.
+(11) Subject to subsection (10), the Authority shall not, in any matter that is under the
+control or supervision of any Ministry, Government Department or Public Authority, act except
+with prior consultation with that Ministry, department or body.
+(12) Any matter that cannot be resolved by prior consultation under subsection (11)
+shall be referred to the President whose decision on the matter shall be final.
+5. (1) There is established by this Act the National Environmental Advisory Council.
+(2) The Council shall consist of such members as are appointed by the Minister from
+among persons representing the Government Departments, Non-Governmental Organisations and
+Associations having environment related functions or who in the opinion of the Minister are
+knowledgeable in matters relating to environment.
+(3) The functions of the Council shall be to -
+(a) consider any matter affecting the quality of the environment and report to the
+Minister;
+(b) advise the Minister on the state of the environment and make
+recommendations regarding actions and measures for environment protection
+and for improvement of the quality of the environment;
+(c) consider any other matter that may be referred to it by the Minister.
+7
+(4) The Minister shall appoint one of the members of the Council as its Chairman.
+(5) A member of the Council, other than a representative of a Government Department,
+Non-Governmental Organisation and Association shall hold office for a period of three years and
+shall be eligible for re-appointment.
+(6) The Council may co-opt any person as a member whose membership is considered
+necessary by virtue of the knowledge and experience of that person in environmental matters.
+(7) The Council shall meet at such time and at such places as the Chairman may
+determine.
+(8) One third of the members of the Council shall constitute a quorum.
+(9) The Council shall regulate its own proceedings in such manner as it thinks fit.
+(10) The Secretary of the Council shall be nominated by the Administrator.
+PART III
+PREVENTION, CONTROL AND ABATEMENT OF ENVIRONMENTAL POLLUTION
+6. The Minister may, on recommendations from the Authority, prescribe standards for -
+(a) quality of air, water or soil for various areas and purposes.
+(b) effluent limitations for existing and new point sources.
+(c) emissions of air pollutants from mobile and stationary sources;
+(d) noise emissions from various sources including construction sites, plants,
+machinery, motor vehicles, aircraft, industrial and commercial activities;
+(e) odours as are required to preserve and maintain public health and the environment;
+(f) pesticide residues in the environment.
+7. (1) The Minister may by regulations provide for -
+(a) the preservation of fishing areas, aquatic areas, drinking water sources and
+reservoirs, recreational and other areas where water may need special protection
+and;
+(b) carrying out works which appear to be necessary to prevent, control or abate water
+pollution from natural causes or from abandoned works or projects or activities.
+(2) (a) The Minister may, on the recommendation of the Authority, classify all
+waters in Seychelles based on their best usage.
+(b) The Authority shall in making its recommendations have regard to section
+4(10) and (11) and take into consideration the following factors-
+8
+(i) the existing quality of the body of water at the time of classification;
+(ii) the size, depth, surface area covered, volume, direction and rate of
+flow, gradient of stream; and
+(iii) the most beneficial use and value for public water supplies,
+propagation of fish, recreational purposes, agricultural, industrial and
+other legitimate uses.
+(c) Where the public interest so requires the Minister on the recommendation of
+the Authority, may re-classify a body of water based on intended beneficial
+use and take such steps as may be necessary to upgrade the quality of such
+water.
+(d) Where the quality of the water has deteriorated to a degree where its state
+shall adversely affect its best usage, the Authority, in co-ordination with
+other public bodies associated with water quality management may take
+measures as deemed necessary to upgrade the quality of such waters to meet
+the prescribed water quality standards.
+(3) (a) The Minister may, in consultation with the Minister in charge of water
+resources, by notice in the gazette declare a protection zone for the purposes
+of protecting the catchment areas used for abstracting water for supplying to
+the Community.
+(b) The Minister may by regulations prohibit or regulate in the protection zone
+activities which may affect the quality of the water directly or indirectly.
+(4) (a) No person shall, without an authorisation from the Authority, discharge or
+place into the ground or dispose of in the sub-soil or dig into the ground any
+polluting or hazardous substance or waste.
+(b) An authorisation issued under paragraph (a) above may be modified or
+revoked at any time by the Authority, if there is a risk of pollution of the
+water-supply source or for any other consideration for the protection of the
+environment.
+(c) An owner or user of any land shall immediately notify to the Authority any
+incidents of pollution of the soil or sub-soil owned or used by such owner or
+user.
+(5) No person shall, without an authorisation from the Authority, discharge any
+effluent or throw , deposit, or place any polluting or hazardous substance or waste or any
+obstructing matter into in any watercourse or in the territorial waters.
+(6) A person who contravenes subsection (4)(a) or (5) is guilty of an offence under this
+Act.
+8. (1) The Minister, on the recommendations of the Authority may, declare by notice in
+the gazette any area as an air pollution control area for the purposes of this Part.
+9
+(2) No person shall, without an authorisation from the Authority , cause any emission
+in an air pollution control area.
+(3) No person shall, without an authorisation from the Authority, establish or operate
+any industrial plant in an air pollution control area.
+(4) The Authority may grant the authorisation for such period and with such conditions
+as it may specify.
+(5) An authorisation may be revoked at any time if the conditions under which it was
+granted are violated.
+(6) The Minister may by regulations -
+(a) prescribe controls for the use of any fuel or any appliance which may cause
+or is likely to cause air pollution;
+(b) prohibit the burning of any material (not being fuel),
+in an air pollution control area.
+(7) For the purpose of this Part the Authority may establish monitoring stations or
+networks to locate sources of atmospheric pollution.
+(8) A person who contravenes subsection (2) or (3) is guilty of an offence under this
+Act.
+9. (1) The Minister may, on the recommendations of the Authority, by regulations,
+establish noise emission standards and such noise abatement measures as may be necessary to
+preserve the environment.
+(2) No person shall emit noise in excess of the noise emission standards established
+under this Part, except where an authorisation has been granted by the Authority allowing
+excessive emission of noise under such terms and conditions as it may determine.
+(3) The terms and conditions of an authorisation under sub-section (2) shall include
+compliance with such measures required to adequately protect persons exposed to excessive
+levels of noise.
+(4) A person who contravenes subsection (2) is guilty of an offence under this Act.
+10. (1) The Authority may undertake to study data and recognize national and international
+developments regarding the cumulative effect of any substance, practice or activity on the
+stratosphere and which may reasonably be anticipated to endanger the environment.
+(2) The Authority may make recommendations to the Minister and undertake
+programmes for the control of any substance, practice, or activity which may reasonably be
+anticipated to endanger the environment.
+(3) The Minister may by regulations provide for the control of any substance, practice,
+or activity which may reasonably be anticipated to endanger the environment.
+10
+(4) For the purposes of this section, "stratosphere" means the part of the atmosphere
+above the troposphere.
+11. (1) The Minister may by order published in the Gazette declare one or more Coastal
+Zones.
+(2) (a) The Authority shall make or cause to be made a survey of the Coastal Zone
+and prepare or cause to be prepared an Integrated Coastal Zone Management
+Plan based on the report of such a survey.
+(b) The Authority shall, from time to time, review the Coastal Zone Management
+Plan prepared under paragraph (a), as the circumstances may require.
+(3) The report of a survey shall include -
+(a) an inventory of all structures, roads, excavations, harbours, outfalls, dumping
+sites and other works located in the Coastal Zone;
+(b) an inventory of the state of the coral reefs, mangroves and marshes found
+within the coastal zone;
+(c) an inventory of all commercially exploitable mineral deposits, both proven
+and suspected, located within the Coastal Zone;
+(d) an inventory of all areas within the Coastal Zone of scenic value or of value
+for recreational purposes;
+(e) an inventory of all estuarine or wetland areas within the Coastal Zone with an
+indication of their significance as fisheries or wildlife habitat;
+(f) an inventory of all areas within the Coastal Zone of special value for research
+regarding coastal phenomena, including fisheries and sea erosion, littoral
+movements and related subjects;
+(g) an estimate of the quantities of sand, coral, sea shells and other substances
+being removed from the Coastal Zone;
+(h) an estimate of the impact of erosion on the Coastal Zone;
+(i) an estimate of the extent, nature, causes and sources of coastal pollution and
+degradation;
+(j) any other relevant data or information that may be deemed necessary.
+(4) No person shall release or cause to be released into the Coastal Zone such polluting
+or hazardous substances by dumping or through the atmosphere.
+(5) (a) The Minister may make such regulations as deemed necessary to ensure that
+activities in the Coastal Zone are so conducted as not to cause damage to the
+environment and to provide for such measures as are necessary to prevent,
+reduce and control pollution in the Coastal Zone.
+11
+(b) Notwithstanding the generality of paragraph (a), the regulations may provide
+for -
+(i) the control and prevention of pollution of the marine environment from
+land-based sources, including rivers, estuaries, pipelines and outfall
+structures;
+(ii) such other matters relating to the preservation and conservation of the
+Coastal Zone.
+(6) A person who contravenes subsection (4) is guilty of an offence under this Act.
+12 (1) The Minister shall prescribe –
+(a) standards for the classification and analysis of wastes and on standard
+treatment and disposal methods;
+(b) regulations on the introduction, production, possession, handling, storage,
+transportation, segregation and disposal of hazardous waste;
+(2) The Minister shall designate the Agency responsible for the management of wastes.
+(3) No person shall deposit or discharge waste on any land or cause or permit waste to
+be deposited or discharged on any land, except in a case where waste is deposited or discharged -
+(a) the site on which it is deposited or discharged, is a designated waste dump
+for the type of waste and the waste has been deposited or discharged in
+accordance with the authorisation from the Agency;
+(b) the waste has been placed in a receptacle adapted for this purpose and there
+is an arrangement or arrangement has been made for the collection and
+disposal of the waste; or
+(c) the waste -
+(i) is of a type which under this Act may be deposited in a public waste
+bin:
+(ii) has been placed in a receptacle or a public waste bin which is approved
+by the Agency responsible for the collection and disposal of waste in
+accordance with the instructions of the Agency:
+(4) No person shall -
+(a) throw, deposit or place any waste on or in any street or public place;
+(b) drive any vehicle on any street or public place unless any load which is likely
+to result in the littering or damage of the street or public place is so secured
+and packed that no part or content of the load may fall, escape or blow on to
+the street or public place.
+12
+(5) Where part or the content of any load of a vehicle has fallen, escaped or been
+blown on to a street or public place it shall be presumed unless the driver proves the contrary that
+the driver of the vehicle has failed to secure the load as provided in sub-section (4)(b).
+(6) No person shall dispose of any hazardous waste except in accordance with the
+authorisation from the Agency.
+(7) No person shall import any hazardous waste into Seychelles.
+(8) (a) No person shall transport hazardous waste within or through Seychelles
+without an authorisation from the Agency.
+(b) No person shall export hazardous waste to any country without obtaining
+an authorisation from the Agency and the prior informed consent of the
+receiving country.
+(9) The Agency shall -
+(a) designate, monitor and regulate waste disposal sites;
+(b) monitor the contamination and degradation of the environment arising from
+the operation of any waste disposal site;
+(c) monitor the safety and health of workers at waste disposal sites;
+(d) maintain the statistical data on the nature, quantity and volume of waste
+generated, and on sites and waste processing, where waste disposal is taking
+or has taken place;
+(e) do all such things as appear to be reasonably necessary for the monitoring
+and control of waste.
+(10) A person who contravenes subsection (3) or subsection (4)(a) or (b) or subsection
+(6) or subsection (7) or subsection (8)(a) or (b) is guilty of an offence under this Act.
+13. With a view to promote recycling and cleaner technology and minimizing waste disposal
+problems, the Minister may by regulations -
+(a) specify raw materials, additives or auxiliary substances that shall not be present or
+shall only be present in quantities as may be prescribed in materials and products
+sold or used in the Seychelles;
+(b) specify materials and products that shall contain specified proportions of recycled
+or recyclable material or products;
+(c) prohibit or regulate the use of specified materials or types of materials in products
+or goods for specific purposes, including packaging;
+(d) prescribe a fee to be paid to the designated Agency under Section 12(2) by
+importers or manufacturers of specified materials, products or goods including
+packaging material to cover costs in respect of disposal of the materials, products
+or goods.
+13
+14. (1) No person shall handle or cause to be handled any hazardous substance except in
+accordance with such procedures and after complying with such safeguards as may be prescribed.
+(2) "Handling", in relation to any substance , means the manufacture, processing,
+treatment, package, storage, transportation, importation, use, collection, destruction, conversion,
+offering for sale, transfer or the like of a substance.
+(3) A person who contravenes subsection (1) is guilty of an offence under this Act.
+PART - IV
+ENVIRONMENT IMPACT ASSESSMENT
+15. (1) Notwithstanding any license, permit or approval granted under any other enactment
+any person who commences, proceeds with , carries out, executes or conducts or causes to
+commence, proceed with, carry out, execute or conduct any prescribed project or activity or any
+project or activity in a protected or ecologically sensitive area as may be prescribed under this
+Act or under any other Act for the time being in force -
+(a) without carrying out an Environmental Impact Assessment Study and
+obtaining the authorisation from the Authority; or
+(b) in breach of any conditions imposed by the Authority,
+is guilty of an offence.
+(2) The Minister may, for the purposes of this Part appoint an Environmental Appraisal
+Committee or Committees to advise the Authority on any proposal for a project or activity.
+(3) An Environmental Impact Assessment Study shall contain a true statement and
+description of -
+(a) the location, size and scope of the project or activity and description of the
+original state of the environment prior to implementation of the project or
+activity;
+(b) the principle, concept and the purpose of the project or the activity;
+(c) the technical aspects relating to the project or the activity;
+(d) the direct or indirect effects that the activity is likely to have on the
+population, flora and fauna, soil, air, water, landscape, and other physical
+assets including historical, artistic and archeological;
+(e) any actions or measures which may avoid, prevent, change, mitigate or
+remedy the likely effects of the activity or the project on the environment;
+(f) the inevitable adverse effects that the project or the activity is likely to have
+on the environment if it is implemented in the manner proposed by the
+proponent;
+14
+(g) the irreversible and irretrievable impact on the commitments of resources
+which will be involved by the project or the activity;
+(h) the actions or measures proposed for compensating physically or financially
+for any resulting loss or damage to the environment.
+(i) a study of the feasible alternatives considered, including a summary of all the
+expected impacts;
+(j) an environmental monitoring programme;
+(k) such other information as may be necessary to a proper review of the
+potential environmental impact of the project or the activity.
+(4) (a) The project proponent shall be responsible for the preparation of the
+Environmental Impact Assessment Study and its submission to the Authority.
+(b) The procedures for submission of the Environmental Impact Assessment
+Study and for the grant of authorisation by the Authority shall be as
+prescribed by regulations.
+(5) (a) An Environmental Impact Assessment Study shall be open for public
+inspection at all reasonable times .
+(b) The time limit for the submission of public comments shall be notified by
+the Authority by giving a notice to that effect in two issues of the daily
+newspaper with an interval of at least seven days between the first and the
+second publications.
+(c) A notice published under paragraph (b) shall state-
+(i) a summary description of the activity;
+(ii) the location where the activity is to be carried out;
+(iii) the place where the Environmental Impact Assessment Study may be
+inspected.
+(6) The Authority shall be responsible for the monitoring of the conclusions of the
+Environmental Impact Assessment Study and to ensure that the necessary conditions are
+complied with.
+(7) If work on a project or activity is commenced in contravention of the provisions in
+this Part, the Authority may direct the owner to suspend the project or the activity.
+(8) A direction to suspend the project or activity may also be issued if,
+(a) the proponent has concealed, given false information or manipulated data in
+the course of the assessment procedure with the intent to mislead the
+Authority;
+15
+(b) fails to comply with or contravenes any of the conditions upon which the
+implementation of the project depends.
+(9) Wherever project implementation as referred to in this part brings about a change
+in the physical environment, the project proponent shall restore the matters specified by the
+Authority.
+(10) Where the project proponent fails to do so the Authority may itself perform the
+work and recover the cost from the project proponent who, in any event, shall compensate for any
+resulting loss or damage to the environment.
+(11) The Minister may, with the approval of the Cabinet, in exceptional circumstances
+and by notification giving grounds on which the decision is based, exclude a prescribed project
+from the Environment Impact Assessment process.
+(12) The notification under subsection (11) shall be made public and shall state the
+measures which are deemed to be necessary in order to reduce the environmental impact of the
+activity or the project.
+(13) Any person aggrieved by the decision or order of the Competent Authority may
+appeal to the Minister in the prescribed manner, and the Minister may affirm, revoke or vary the
+decision or order.
+(14) A person who fails to comply with a direction given under subsection (7) is guilty
+of an offence.
+PART V
+ENFORCEMENT
+16. (1) Where the Administrator is of the opinion that a person is contravening, or is likely
+to contravene any provision of this Act, the Administrator may cause to be served on the person
+an enforcement notice -
+(a) stating that the Administrator is of the said opinion;
+(b) specifying the matter constituting the contravention or the matters making
+it likely that the contravention will arise, as the case may be;
+(c) specifying the measures that shall be taken to remedy the contravention or
+eliminate the likelihood of a contravention as the case may be and
+(d) specifying the period within which the measures shall be implemented.
+(2) Any person who fails to comply with an enforcement notice under subsection (1) is
+guilty of an offence.
+17. (1) Where the Administrator is of the opinion that any project or activity or the manner
+in which a project or activity is carried on, involves an imminent risk of serious pollution of the
+environment, the Administrator may cause to be served on the person owning, or managing, or in
+charge of, or in control of the project or activity a prohibition notice.
+16
+(2) A prohibition notice may be served whether or not-
+(a) the activity, or the manner in which the project or activity is carried on,
+constituted a contravention of this Act,
+(b) there is in force in relation to that project or activity, a licence, permit or
+approval issued under this Act or under any other Act.
+(3) A prohibition notice shall-
+(a) state the opinion of the Administrator;
+(b) specify the risk of serious pollution involved as well as the way in which the
+project or activity or the manner in which the project or activity is carried on,
+is suspected to give rise to the risk;
+(c) specify the measures that shall be taken to remove the risk of pollution and
+the period within which they shall be implemented;
+(4) A prohibition notice shall not be a bar to a prosecution for any offence, even if
+there are consultations with the person served with the notice.
+(5) Any person who fails to comply with a prohibition notice, is guilty of an offence.
+18. (1) Any person affected, or any person empowered under Section 21, may apply to the
+Administrator for an amendment of a notice served under this Act.
+(2) The Administrator, on the initiative of the Administrator, or on an application, may
+amend a notice served under this Act by causing to be served on the person affected a variation
+notice.
+(3) A variation notice shall-
+(a) refer to the notice which is amended;
+(b) specify the amendment to the notice;
+(c) where necessary, vary the date specified in the notice.
+(4) A variation notice shall supersede the notice to which it refers to the extent of the
+amendment and shall be deemed to be a notice served under section 16 or section 17, as the case
+may be.
+19. (1) Where the Administrator is satisfied that -
+(a) the measures required to be taken in a notice have been implemented;
+(b) there exists no further pollution or risk of pollution to the environment by
+that project or activity;
+the Administrator may withdraw the notice.
+17
+20. Any person aggrieved by a notice made under this part, may appeal to the Minister in the
+prescribed manner and the Minister may affirm, vary or revoke the notice.
+21. (1) The Minister may empower any person appointed under this Act or under any other
+law for the purpose of implementation of specific provisions of this Act and shall issue to such
+person a certificate of his authority so to act.
+(2) A person empowered under subsection (1) shall hereafter be referred to as an
+authorised officer.
+22. (1) Any authorised officer shall have a right to enter, at all reasonable times with such
+assistance as the officer considers necessary, any place or premises for the performance of any of
+the functions entrusted to the officer under the Act and for the purpose of determining whether
+any provisions of this Act or any notice, order, direction or authorisation served, made, given or
+granted under this Act is being or has been complied with and for the purpose of examining and
+testing any equipment, industrial plant, record, register, document or any other material object or
+for conducting a search of any building in which the officer has reason to believe that an offence
+under this Act has been or is being or is about to be committed and for seizing any such
+equipment, industrial plant, record, register, document or other material object if the officer has
+reasons to believe that it may furnish evidence of the commission of an offence punishable under
+this Act or that such seizure is necessary to prevent or mitigate pollution.
+(2) Every person carrying on any project or activity shall be bound to render all
+assistance to an authorised officer for carrying out the functions stated above and is, if the person
+fails to do so without any reasonable cause or excuse, guilty of an offence under this Act.
+(3) If any person willfully delays or obstructs any authorised officer in the performance
+of the functions of that officer, the person is guilty of an offence under this Act.
+(4) An authorised officer shall, if so requested, by any person affected, produce the
+certificate of authority referred to in section 21.
+23. The Minister may declare an environmental emergency-
+(a) where pollution occurs or is apprehended to occur due to any accident or other
+unforseen act or event; or
+(b) where in the opinion of the Minister there is an imminent risk of serious pollution
+of the environment.
+in case of an environmental emergency declared under section 23, an authorised officer may,
+without warrant, arrest a person reasonably suspected of the contravention of this Act.
+24. (1) Any authorised officer shall have the power to take, for the purpose of analysis,
+samples of air, water, soil or other substance from any factory premises or other place in such
+manner as may be prescribed.
+(2) The result of any analysis of a sample taken under subsection (1) shall be
+admissible in evidence in any legal proceeding provided the procedure set out in subsections (3)
+and (4), as the case may be, is followed.
+18
+(3) In exercising the powers under subsection (1) the authorised officer shall -
+(a) serve on the owner or the agent of the owner or person in charge of the place,
+a notice, then and there, in such form as may be prescribed, of the intention
+of the officer to have it so analysed;
+(b) in the presence of the owner or the agent or person in charge of the place,
+collect a sample for analysis;
+(c) cause the sample to be placed in a container or containers which shall be
+marked and sealed and shall also be signed both by the authorised officer and
+the owner or the agent or person in charge of the place;
+(d) send without delay, the container or the containers to the laboratory
+established or recognized under the Act.
+(4) When a sample is taken for analysis and the authorised officer taking the sample
+serves on the owner or agent of the owner or person in charge of the place, a notice under
+subsection (3)(a) then -
+(a) in a case where the owner, the agent or person in charge of the place
+willfully keeps away from the places, the authorised officer shall collect
+the sample for analysis to be placed in a container or containers which shall
+be marked and sealed and shall also be signed by the authorised officer
+taking the sample, and
+(b) in case where the owner or the agent or person in charge of the place
+present at the time of taking the sample refuses to sign the marked and
+sealed container or containers of the sample as required, the marked and
+sealed container or containers shall be signed by the authorised officer
+taking the samples, and the container or containers shall be sent without
+delay by the authorised officer taking the sample for analysis to the
+laboratory established or recognized under the Act and the authorised
+officer shall inform the Government Analyst appointed or recognized
+under the Act in writing about the willful keeping away of the owner or the
+agent or person in charge of the place or, as the case may be, the refusal to
+sign the container or containers.
+25. (1) The Minister may, by notice in the Gazette -
+(a) establish one or more environmental laboratories;
+(b) recognize one or more laboratories or institutes as environmental
+laboratories,
+to carry out the functions entrusted to the environmental laboratory under this Act.
+(2) The Minister may, make Regulations specifying:-
+(a) the functions of the environmental laboratory;
+19
+(b) the procedure for the submission to the said laboratory of samples of air,
+water, soil or other substance for analysis or tests, the form of the laboratory
+report thereon and the fees payable for such report;
+(c) such matters as may be necessary or expedient to enable that laboratory to
+carry out its functions.
+26. The Minister may by notice in the Gazette, appoint or recognize such person or persons
+as the Minister thinks fit and having the prescribed qualifications to be Government Analysts for
+the purpose of analysis of samples of air, water, soil or other substance sent for analysis to any
+environmental laboratory established or recognized under the Act.
+27. Any document purporting to be a report signed by the Government analyst may without
+proof of signature, be used as evidence of the facts stated therein in any proceeding under this
+Act.
+PART VI
+OFFENCES, PENALTIES AND PROCEDURES
+29. (1) Subject to subsection (2), a person who is guilty of an offence under section 12(4)
+(a) or (b) is liable on conviction to a fine of Rs. 5000.
+(2) Where on any occasion, an authorised officer finds a person who the officer has a
+reason to believe has on that occasion committed an offence under section 12(4) (a) or (b), the
+officer may give that person a notice offering the person the opportunity of discharging any
+liability to conviction for that offence by payment of a fixed penalty.
+(3) Where a person is given a notice under this section in respect of an offence -
+(a) no proceedings shall be instituted for that offence before the expiration of
+fourteen days following the date of the notice;
+(b) the person shall not be convicted of that offence if the person pays the fixed
+penalty before the expiration of that period.
+(4) A notice under this section shall give such particulars of the circumstances alleged
+to constitute the offence as are necessary for giving reasonable information of the offence and
+shall state -
+(a) the period during which, by virtue of subsection (3) proceedings will not be
+taken for the offence;
+(b) the amount of fixed penalty; and
+(c) the person to whom and the address at which the fixed penalty may be made
+or paid.
+(5) A fixed penalty specified in a notice under subsection (4) may be paid in cash to
+the person specified in the notice or by cheque enclosed in a letter addressed to that person at the
+address specified in the notice.
+20
+(6) Where a letter is sent in accordance with subsection (5), the payment shall be
+regarded as having been made at the time at which that letter would be delivered in the ordinary
+course of post.
+(7) The form of notices under this section shall be such as may be prescribed under the
+regulations.
+(8) The fixed penalty payable in pursuance of a notice under this section shall, subject
+to subsection (9), be R 100.
+(9) The Minister may by order substitute a different amount for the time being
+specified as the amount of the fixed penalty in subsection (8).
+(10) In any proceedings a certificate which purports to be signed by or on behalf of the
+person receiving the fixed penalty stating that the payment of a fixed penalty was or was not
+received by a date specified in the certificate, shall, without proof of signature, be evidence of the
+facts stated therein.
+30. (1) Any person who commits an offence under section 16(2) or section 17(5) or section
+22(2) or section 22(3) is liable on conviction, to imprisonment for one year and a fine of R50,000
+and, if the offence is continued after conviction, is liable to a further fine of R5000 for each day
+during which the offence is so continued.
+(2) A person who commits an offence under sections 7(4)(a) or section 7(5) or section
+8(2) or section 8(3) or section 9(2) or section 11(4) or section 12(3) or section 12(6) section 12(7)
+or section 12(8)(a) or section 12(8)(b) or section 14(1) or section 15(1) or section 15(14) is liable,
+on conviction, to imprisonment for 6 years and a fine of R250,000 and, if the offence is continued
+after conviction, is liable to a further fine of R5000 for each day during which the offence is so
+continued.
+(3) Where an offence specified in subsection (2) is continued beyond a period of one
+year after conviction by the person so convicted the person is guilty of an offence and liable on
+conviction to imprisonment for not less than 2 years and not exceeding 7 years.
+31. Any person who -
+(a) destroys , pulls down, removes, injures or defaces any pillar, post or stake fixed by
+the Authority or any notice or other matter put up, inscribed or placed by or under
+the order of the Authority; or
+(b) obstructs any person acting under the orders or directions of the Authority from
+exercising the powers and performing the functions under this Act; or
+(c) damages any works or property belonging to the Authority, or
+(d) fails to furnish to any officer or other employee of the Authority a report or any
+information required by the officer or employee for the purpose of this Act, or
+(e) fails to intimate the occurrence of any accident or other unforeseen act to the
+Authority, or
+21
+(f) in giving a report or any information which the person is required to give under this
+Act, makes a statement which is false or misleading in any material particular,
+is guilty of an offence and is liable on conviction to imprisonment for 6 months and a fine of
+R10,000.
+32. In addition to imposing a penalty for an offence arising under the provisions of this Act,
+the Court may order the person convicted to compensate for any loss or damage to the
+environment and to take such steps as may be specified in the order and within such time as may
+be specified, to pay damages and to prevent, control, abate or mitigate any harm to the
+environment caused by the commission of the offence or to prevent the continuance or recurrence
+of the offence.
+33. (1) Where any offence under this Act has been committed by a company, every person
+who, at the time of offence was committed, was in charge of, and was responsible to, the
+company for the conduct of the business of the company, as well as the company is guilty of the
+offence and liable to be proceeded against and punished accordingly:
+Provided that nothing contained in this sub-section shall render any such person liable to any
+punishment provided in this Act, if the person proves that the offence was committed without the
+knowledge of that person or that the person exercised all due diligence to prevent the commission
+of such offence.
+(2) Where an offence under this Act has been committed with the consent or
+connivance of, or is attributable to any neglect on the part of any director, manager, secretary or
+other officer of the company, such director, manager, secretary or other officer is guilty of that
+offence and shall be liable to be proceeded against and punished accordingly.
+(3) For the purposes of this section -
+(a) "company" means any body corporate and includes a partnership or other
+association of individuals;
+(b) "director" in relation to a partnership, means a partner in the firm.
+34. (1) The provisions of this Act shall be in addition to and not in derogation of the
+provisions of the Public Health Act.
+(2) Subject to sub-section (1), in case of inconsistency between any of the provisions
+of this Act or the Regulations made thereunder and any other law for the time being in force, the
+provisions of this Act shall apply.
+PART VII
+MISCELLANEOUS PROVISIONS
+35. The Minister may, by notification in the official gazette, delegate, subject to such
+conditions and limitations as may be specified in the notification, such of the powers and
+functions under this Act ( except the power to make regulations) as the Minister may deem
+necessary or expedient , to any person or public authority.
+22
+36. (1) Where the discharge of any pollutant in excess of the prescribed standards occurs
+or is apprehended to occur due to any accident or other unforeseen act or event, the person
+responsible for such discharge and the person in charge of the premises shall be bound to prevent
+or mitigate the pollution caused as a result of such discharge and shall also forthwith -
+(a) intimate the fact of such occurrence or apprehension of such occurrence; and
+(b) be bound, if called upon, to render all assistance,
+to the Authority or such other authorities or agencies as may be prescribed.
+(2) A person who fails to comply with subsection (1) is guilty of an offence and is
+liable on conviction to a fine of R10,000 and to imprisonment for one year.
+37. (1) The Authority may, in relation to its functions under this Act, from time to time,
+require any person, officer or other authority to furnish to it or to any prescribed authority or
+officer any reports, returns, statistics, accounts and other information that may be required for the
+purposes of this Act and such person , officer, or other authority shall be bound to do so.
+(2) A person who fails to comply with subsection (1), on being required by the
+Authority to do so, is guilty of an offence and is liable on conviction to a fine of R10,000.
+38. Where any officer of the Authority or any person appointed on a committee or any person
+discharging any function or duty under this Act discloses otherwise than in the performance of
+the duty of the officer or such person any information relating to any trade secret used in carrying
+on a particular project or activity and the information has been given to the officer or such person
+by virtue of this Act, the officer or such person is guilty of an offence and is liable on conviction,
+to a fine of R10,000 and to imprisonment for one year.
+39. No suit or prosecution or other legal proceedings shall lie against the Minister or an
+officer of the Authority or an officer empowered under this Act, for anything that is done or
+intended to be done in good faith in pursuance of this Act or the regulations made thereunder.
+40. (1) The Minister may make regulations under this Act for all such matters as are to be
+prescribed under the Act and for any other matter that may be deemed necessary in pursuance of
+the objects of this Act, for the protection of any aspect of the environment and for the prevention,
+control and abatement of environmental pollution.
+(2) Regulations made under this section may provide for offences and penalties not
+exceeding R20,000 by way of fine and 2 years by way of imprisonment in respect of those
+offences.
+_____________
+23
+LAWS OF SEYCHELLES
+ENVIRONMENT PROTECTION ACT
+CHAPTER 71
+SUBSIDIARY LEGISLATION
+Section 40
+The Environment Protection (Miscellaneous) Regulations
+1. These regulations may be cited as the Environment Protection (Miscellaneous)
+Regulations, 1995
+2. In these regulations, unless the context otherwise requires:
+(a) "Authority" means the Division of Environment of the Ministry of Foreign Affairs,
+Planning and Environment ;
+(b) "Form" means a form set forth in the Third Schedule;
+(c) "Government Analyst" means a person specified in Column 2 of the Second
+Schedule;
+(d) "person" in relation to any factory or premises from where a sample is taken for
+analysis, means a person or occupier or his agent who has control over the affairs
+of the factory or premises and includes in relation to any substance, the person in
+possession of the substance;
+(e) "section" means a section of the Act.
+3. (1) Every application for authorisation under section 7(4)(a) and 7(5) shall be made in
+Form I and shall be accompanied by a fee of R100.
+(2) Every application for authorisation under section 8(2) or 8(3) shall be made in
+Form II and shall be accompanied by a fee of R100.
+(3) On receipt of an application for authorisation under subregulation (1) or
+subregulation (2) the Authority may depute any of its officers accompanied by as many assistants
+as may be necessary, to visit and inspect any place or premises under the control of the applicant
+or the occupier, for verifying the correctness or otherwise of the particulars furnished in the
+application or for obtaining such further particulars or information which in the opinion of such
+officer are essential.
+(4) Any officer deputed under subregulation (3) may inspect any place or premises
+where solid, liquid or gaseous emissions from any location within the premises are discharged
+and may require the applicant or the occupier to furnish the officer any plans, specifications or
+SI. 84 of 1995
+SI. 118 of 1995
+SI. 74 of 1996
+SI. 84 of 1996
+SI. 29 of 2000
+S.I. 12 of 2010
+24
+other data related to control equipment or system or any part thereof that the officer considers
+necessary.
+(5) The officer referred to in subregulation (3) shall, before visiting under that
+subregulation any place or premises of the applicant, give notice to the applicant of the intention
+to do so in Form III and the applicant shall furnish to such officer all information and provide
+facilities for inspection.
+(6) The officer may, before or after carrying out the inspection under subregulation (3)
+require the applicant to furnish to the officer orally or in writing such additional information or
+clarification or to produce before the officer such document as the officer may consider necessary
+for the purpose of investigation of the application and may for that purpose summon the applicant
+to the office of the Authority;
+(7) The Authority shall communicate its decision to an applicant under subregulation
+(1) or subregulation (2) within one month of the receipt of the application by the Authority.
+(8) A decision of the Authority under this regulation may be subject to such conditions
+as the Authority may impose and be revoked by the Authority at any time for any breach of the
+conditions.
+(9) Any person aggrieved by the decision of the Authority under this regulation may
+within fourteen days of the communication of the decision under subregulation (7) appeal to the
+Minister in Form IV and the Authority shall comply with the decision of the Minister on such
+appeal.
+(10) A fee of R50 shall be deposited by every appellant in the office of the Authority
+and an authenticated copy of the receipt obtained thereof shall be annexed to every appeal.
+4. Each person specified in column 1 of the First Schedule is appointed as an authorised
+officer and shall perfom the functions specified in the corresponding entry of column 2 of that
+Schedule.
+5. The laboratories specified in column 1 of the Second Schedule are recognised as
+environmental laboratories for the purpose of section 26(1);
+6. The following shall be the functions of environment laboratories-
+(i) application of standardisation methods for sampling and analysis of various types
+of effluents and pollutants;
+(ii) to analyse samples sent by the authorised officer under sub-section (1) of section
+25;
+(iii) to carry out such other functions as may be entrusted by the Minister from time to
+time.
+7. (1) A person shall not be qualified for appointment or recognised as a Government
+analyst unless he has experience in environmental investigation, testing or analysis.
+25
+(2) Each person specified in column 2 of the Second Schedule is appointed a
+Government Analyst for the purpose of analysis at the environmental laboratory specified in the
+corresponding entry in column 1 of that Schedule.
+8. The notice required to be served under section 25(3)(a) shall be in analysis Form V.
+9. (1) An authorised officer empowered to take samples under section 25 shall collect the
+sample in sufficient quantity to be divided into two uniform parts and effectively seal and suitably
+mark the same and permit the person from whom the sample is taken to add the seal of the person
+or mark , to all or any of the portions so sealed and marked.
+(2) The authorised officer shall after complying with subregulation (1) hand over one
+part of the sample to the person from, whom the sample is taken under acknowledgement and
+send the other part forthwith to an environmental laboratory for analysis.
+10. (1) Sample taken for analysis shall be sent by the authorised officer to an
+environmental laboratory along with Form VI.
+(2) The findings of the Government Analyst shall be recorded in Form VII in triplicate
+and signed by the Government Analyst and sent to the authorised officer who had sent the sample
+for analysis.
+(3) On receipt of the report of the findings of the Government Analyst, the authorised
+officer shall send one copy of the report to the person from whom the sample was taken for
+analysis, the second copy shall be retained by the officer for record and the third copy shall be
+kept by the officer to be produced in the court before which the proceedings, if any, are instituted.
+11. The Notice under section 29(7) shall be issued by an authorised officer in Form VIII.
+____________________
+FIRST SCHEDULE
+(REGULATION 4)
+AUTHORISED OFFICERS AND FUNCTIONS
+Officer Functions
+I. (1) Director, Assistant Director, Biochemist, Section 22(1) and
+Senior Project Officer, Project Officer, Section 25(1)
+Environment Officer, Project Technician,
+Senior Laboratory Technician, Laboratory
+Technician, Environment Inspectors not
+below the Grade IV level Senior Enforcement
+Officers not below Grade III and Inspectors
+26
+not below Grade IV from the Environment
+Assessment and Pollution Control of the
+Department of Environment.
+(2) Managing Director, Senior Parks Officers,
+Parks Officers, Assistant Parks Officers and
+Rangers from the Seychelles National Parks Authority.
+(3) Commissioned Officers of the Seychelles
+Coast Guard;
+(4) Police Officers of and above the rank of
+Sub-Inspector;
+(5) Coxswain and Marine Mechanics of the
+Port and Marine Services Division.
+II. Any Police Officer or any Environment Section 24
+Inspector from the Department of Environment
+not below the Grade I Level.
+III. (1) Principal Secretary of the Ministry Section 29(2)
+of Environment and Transport;
+(2) Director General of the Department
+of Environment;
+(3) Director, Assistant Director, Biochemist,
+Senior Project Officer, Project Officer,
+Environment Officer, Project Technician,
+Senior Laboratory Technician, Laboratory
+Technician, Inspectors not below the Grade
+IV level and Inspectors not below Grade
+IV from the Department of Environment
+27
+from the Department of Environment;
+(4) Director, Senior Conservation Officer, Conser- Section 29(2)
+vation Officer, Assistant Conservation Officer,
+Senior Research Officer, Project Officer, Ranger
+not below the Grade II level from the
+Conservation Section of the Department of
+Environment.
+(5) Director, Assistant Director, Forestry Section 29(2)
+Officer, Assistant Forestry Officer,
+Senior Project Officer, Project Officer,
+Forester, Forest Ranger (Grade I & II)
+from the Forestry Section of the Department
+of Environment
+(6) Any Senior or Assistant Education Section 29(2)
+Officer from the Education and Information
+Unit of the Department of Environment.
+(7) Principal Environmental Health Officer and
+Environmental Health Officers from the
+Ministry responsible for Health;
+(8) District Administrators;
+(9) Director, Amenity Officers from the
+Landscape and Waste Management Agency;
+(10) Director General, Pier Master from the
+Port and Marine Services Division;
+(11) Director General, Officers of the Legal
+Unit, Marsh Unit Supervisors of the
+28
+Policy, Planning and Services Division;
+(12) Assistant Market Keepers Section 29(2)
+(Grade I & II) of the Ministry of
+Agriculture & Marine Resources.
+(13) Police Officer Section 29(2);
+(14) Wardens and Rangers from the
+Seychelles Islands Foundations;
+(15) Director General, Highway Patrol
+Officers, Specialised Highway Patrol
+Officers, Traffic Wardens from the
+Land Transport Division;
+(16) Fishing Port Manager, Assistant
+Fishing Port Manager, Senior Supervisor,
+Chief Security Guard, Pier Master from
+the Seychelles Fishing Authority;
+(17) Managing Director, Manager, Project
+Co-ordinator, Project Officers, Senior
+Park Officer, Parks Officer, Assistant
+Parks Officers, Ranger Grade 3 & 4
+from the Seychelles National Parks Authority;
+(18) Managing Director Administration Officers
+Driver Senior Inspector Chief Task Force
+Supervisor Task Force Supervisor Task
+Force Worker Administration and Finance
+Manager Senior Education Officer of the
+The Agency responsible for the management
+29
+Of wastes designated under section 12(2) of the
+Environment Protection Act Section 29(2)
+_________________
+SECOND SCHEDULE
+(REGULATIONS 5 and 7)
+ENVIRONMENTAL LABORATORIES AND
+GOVERNMENT ANALYSTS
+Environmental Government
+Laboratory Analyst
+1. Public Health Laboratory Director of Public Health
+Ministry of Health Laboratory
+Mont Fleuri Biochemist
+Environmental Chemist
+Director Plant Genetic
+Research Section
+2. Laboratory Section Ian Charlette
+Public Utilities Corporation
+Unity House
+Mahe
+3. Environmental Laboratory Vivian Radegonde
+Seychelles Bureau of Standards
+Pointe Larue
+Mahe
+4. Soil and Plant Diagnostic José Lousteau Lalanne
+Laboratory
+Ministry of Agriculture &
+30
+Marine Resources
+Independence House, Mahe
+____________________
+THIRD SCHEDULE
+(Regulations 2 and 3)
+FORMS
+FORM 1
+APPLICATION FOR AUTHORISATION FOR DISCHARGE OF
+EFFLUENT ON LAND OR IN ANY WATERCOURSE
+From : Date: _____________________
+_______________________________
+_______________________________
+_______________________________
+To:
+_______________________________
+_______________________________
+_______________________________
+Sir,
+I/We hereby apply for authorisation / renewal of authorisation under section 7(4)(a) / 7(5) of the
+Environment Protection Act (Cap 71) for establishing or taking any steps for establishment of an
+industry / operation / process or any treatment / disposal system to bring into use any new /
+altered outlet for discharge* sewage / trade effluent* from land / premises owned by
+........................
+The other relevant details are below:-
+1. Name of owner / occupier
+2. (a) Individual
+(b) Partnership firm
+(Whether registered or unregistered)
+31
+(c) Proprietary Limited Company
+(d) Public Limited Compay
+(e) Government Company
+(f) Foreign Company
+(if a foreign company, the details of registration, incorporation, etc.)
+(g) Any other association or body:
+3. Name and address of the unit & location.
+4. Details of Commissioning etc.:-
+Approximate date of production:
+5. Details of licence, if any, obtained under the provisions of any other law.
+6. Name of the person authorised to sign this form (the original authorisation is to be enclosed
+in case the application is for renewal)
+7. (a) Attach the list of raw materials and chemicals used per month
+(b) Licenced annual capacity of the Unit.
+8. State daily quantity of water in kilolitres utilised and its source.
+9. (a) State the daily maximum quantum of effluent discharge and mode of disposal. Also
+attach analysis report of the effluents.
+(b) Quality of effluent currently being discharged or expected to be discharged.
+(c) Is there any effluent treatment plant? If yes, a brief description of unit operations with
+capacity. Attach information on the quality of treated effluent vis-a-vis the standards.
+(d) What monitoring arrangement is currently there or proposed.
+10. State details of solid wastes generated in the process or during waste treatement
+Description Quantity Method Method of disposal
+11. Whether the unit is handling any hazardous substances as defined under the Act. If yes,
+whether emergency plans are prepared for taking on-site / off-site measures.
+12. Whether the unit is generating hazardous wastes as defined under the Act. If yes, indicate
+the quantum and method of disposal.
+13. I/we further declare that the information furnished above is correct to the best of my/our
+knowledge.
+32
+14. I/we hereby submit that in case of change either of the point of discharge or the quantity of
+discharge or its quality, a fresh application for authorisation shall be made and until
+authorisation is granted no change shall be made.
+15. I/we hereby agree to submit to the Authority an application for renewal of authorisation one
+month in advance of the date of expiry of the authorised period for outlet/discharge if be
+continued thereafter.
+16. I/we, enclose herewith cash receipt no/bank draft no .................. dated ........................ for
+SR .................. (Seychelles Rupees .......................................................) in favour of the
+......................................... towards the fees payable under the Act.
+Yours faithfully
+Signature of applicant
+1. Any applicant knowingly giving information or suppressing any information pertaining
+thereto shall be liable to be punished under the Act.
+2. *Strike out which is not relevant
+_____________________
+FORM II
+APPLICATION FOR AUTHORISATION FOR EMISSION/CONTINUATION OF
+EMISSION
+From: ............................................
+............................................
+............................................
+To: ............................................
+............................................
+............................................
+Sir,
+I/we hereby apply for Authorisation/Renewal of Authorisation under section 8 of the
+Environment Protection Act (Cap 71) to bring into use a new/altered stack for the discharge of
+emission/ to begin to make new discharge of emission/to continue to discharge emission* from
+stack in industry owned by .............
+33
+The other relevant details are:
+1. (a) Name of owner/occupier
+(b) Name and Address of the unit location
+2. (a) Number of stack and vents with height and diametre
+(b) Quality and quantity of stack emission from each of the above stacks - Suspended
+Particulate Matter (SPM) and Sulphur Dioxide (SO2)
+Additional parameters as specified by the Authority.)
+(c) A brief account of the air pollution control unit to deal with the emission.
+(d) Parameters and Frequency of self monitoring.
+I/we enclosed herewith Receipt No ..................../ Bank Draft No ............... dated .......................
+for SR ................... (Seychelles Rupees .......................) in favour of the ...................................
+towards the fees payable under the Act.
+Yours faithfully
+__________________
+Signature of Applicant
+Note: 1. Any applicant knowingly giving incorrect information or suppressing an
+information pertaining thereto shall be liable to the punished under the Act.
+2. *Strike out which is not relevant.
+__________________
+FORM III
+NOTICE OF INSPECTION
+To
+_______________________
+_______________________
+_______________________
+Take Notice that for the purpose of enquiry under section ......... the following officers of the
+Authority, namely:
+(i) ------------------------------------------
+(ii) ------------------------------------------
+34
+(iii) ------------------------------------------
+and the persons authorised under the Act to assist them shall inspect -
+Any system of your industrial Plant
+Any other parts thereof or pertaining thereto under management / control of ............................. on
+date ............................ between .............................. hours when all facilities requested by them for
+such inspection should be made available to them on the site.
+Take notice that refusal or denial to above stated demand made under the functions of the
+Authority shall amount to obstruction punishable under section 31 of the Act.
+Copy to: Administrator
+1. --------------------------------
+2. --------------------------------
+_________________
+FORM IV
+MEMORANDUM OF APPEAL
+Memorandum of Appeal under section 20 of the Environment Protection Act (Cap. 71)
+.......................................................
+.......................................................
+.......................................................
+........................................................
+(here furnish complete postal address) ....................... Appellant
+Vs.
+.......................................................
+.......................................................
+.......................................................
+(here mention the name and designation
+35
+of the Authority) ................... Respondent
+(1) The appellant named above, begs to prefer this memorandum of appeal against the notice
+dated ................... passed by .........................
+(2) The facts of the case are as under:
+(here briefly mention the facts of the case)
+(3) The grounds on which the appellant relies and the purpose of this appeal are as below.
+(here mention the grounds on which the appeal is made)
+(4) In the light of what is stated above the appellant respectfully prays that the notice is
+unreasonable and be set aside / varied.
+(5) The amount of SRs ............................ (Seychelles Rupees .............................) as fee for this
+appeal has been paid to .................................. Vide receipt No ......................... dated
+.......................................
+Place:
+Signature of the Appellant
+Date:
+Name:
+Occupation:
+Address:
+Verification
+I ................................. (appellant's name) in the above Memorandum of appeal/or/duly authorised
+agent do/does hereby declare that what is stated therein is true to the best of my knowledge and
+belief.
+Signature .....................................
+Name .......................................
+(in block letters)
+Occupation ..................................
+Address .......................................
+.......................................
+.......................................
+36
+Dated:
+________________
+FORM V
+NOTICE OF INTENTION TO HAVE SAMPLE ANALYSED
+To
+................................................
+.................................................
+Take notice that it is intended to have analysed the sample of ............................. which has been
+taken today, the ................ day of ........................ 19 .................... from* ..................... ... by
+.............................................................................................
+(Name and designation of the person who takes the sample)
+______________________________
+*Specify the place where the sample is taken
+AUTHORISED OFFICER
+DATE .............................
+______________________
+FORM VI
+MEMORANDUM TO GOVERNMENT ANALYST
+From
+..............................................
+..............................................
+To
+The Government Analyst
+..............................................
+..............................................
+The portion of sample described below is sent herewith for analysis under Regulation 10(1) of the
+Environment Protection (Miscellaneous) Regulations.
+The portion of the sample has been marked with the following mark:
+37
+Details of the portion of sample taken.
+.....................................
+Date ...................... Name and designation of person who
+sends sample
+______________
+FORM VII
+REPORT BY GOVERNMENT ANALYST
+Report No: .....................................................
+Date: ......................................................
+I hereby certify that I ............................................................ Government Analyst duly appointed
+under section 27 of the Environment (Protection) Act (Cap 71) received on the ............. day of
+.................... 19 ......... from
+1. .............................................................................................
+............................................................................................
+a sample of ................................. for analysis ..................
+The sample was in a condition fit for analysis as reported below:
+I further certify that I have analysed the aforementioned sample on ........................................ and
+declare the result of analysis to be as follows:
+2. .........................................................................................
+.........................................................................................
+The condition of seals, fastening of sample on receipt was as follows:
+.....................................................................................
+..................................................................................................
+signed this ....................... day of ....................... 19 ..................
+______________________________________
+1. Here write the name of the officer/authority from whom sample was obtained.
+2. Here write full details of analysis and refer to method of analysis
+____________________
+38
+FORM VIII
+FIXED PENALTY NOTICE
+No. ..................
+To
+............................................
+I have reason to believe that on ..................... at ................ am/pm at ................ you committed the
+offence of ....................
+You may discharge your liability to conviction for that offence by paying a fixed penalty of SR
+200.00 to the Registrar of the Supreme Court at the Registry of the Supreme Court, Victoria or
+the Sub-Accountant, Grand Anse, Praslin within 14 days of the date of this notice.
+...................................... ..................................................
+Date Signature of the authorised officer
+Note: Failure to pay within the time stipulated may result in your being prosecuted before the
+court for the offence.
+__________
+Sections 6 and 40
+Environment Protection (Standards)
+Regulations
+(21st August 1995)
+1. These Regulations may be cited as the Environment Protection (Standards) Regulations.
+2. In these Regulations -
+"recipient system" means the part of the environment such as soil, water or air or other
+medium which receives an effluent.
+3. The Effluent Quality Standard specified in the Schedule is hereby prescribed as the
+Standard for the discharge of effluents to a recipient system from any industry, operation or
+process.
+SCHEDULE
+1. In this Schedule -
+(a) Effluent Quality Standard means the maximum acceptable concentrations in an
+effluent as specified in paragraph 2.
+SI. 83 of 1995
+39
+(b) BOD5 means Biochemical Oxygen Demand, which is a measure of the organic
+matter content of a sample that is susceptible to oxidation by micro-organisms at an
+incubational temperature of 20Â°c over a period of five days.
+(c) COD means Chemical Oxygen Demand, which is a measure of the oxygen
+equivalent of the organic matter content of a sample that is susceptible to oxidation
+by a strong chemical oxidant.
+2. Effluent Quality Standard
+Parameters Maximum concentration in
+milligram per litre (mg/1)
+unless otherwise stated
+(except ph)
+Temperature 30Â°C measured at the point of discharge
+pH 5.5 - 8.5
+Suspended Solids 30
+BOD5 at 20Â°c 30
+COD 80
+Free Chlorine (as ClÂ²) 0.5
+Phosphorus (as PO4) 5
+Nitrate (as NO3) 15
+Nitrite (as NO2) 1
+Phenols 0.1
+Chromium (total) 1.0
+Arsenic (total) 0.1
+Mercury (total) 0.05
+Cadmium (total) 0.2
+Lead (total) 0.9
+Copper (total) 1
+Zinc (total) 2
+40
+Iron (total) 5.0
+Nickel (total) 1
+Aluminium (total) 1
+Tin (total) 0.1
+Manganese (total) 2.0
+Oil and grease 10
+Total coliforms 500/100 ml
+Faecal coliforms 100/100 ml
+Faecal streptococus 100/100 ml
+Salmonella Must not be detectable in any
+100 ml sample
+Pesticides In accordance with the law relating
+to pesticides which may be in force.
+3. Sampling
+For the purpose of this Standard sampling shall be carried out in accordance with the
+British Standards 6068 - Guidance on Sampling of Waste Waters : Section 6.10:1993,
+unless otherwise specified by the Authority.
+4. Reference Methods Of Analysis
+For the purpose of this standard, the Reference Methods of Analysis shall be based on the
+methods, as adopted by the Laboratory established or recognised under section 26 of the
+Act.
+_____________________
+Sections 12(2) and 40
+Environment Protection (Designation of Solid
+Waste Agency) Regulations
+(15th May 1995)
+1. These Regulations may be cited as the Environment Protection (Designation of Solid
+Waste Agency) Regulations.
+2. In these Regulations -
+SI. 48 of 1995
+SI. 108 of 1995
+41
+"Agency" means the Solid Waste and Cleaning Agency established under regulation 4.
+"Board" means the Board constituted under these Regulations for the Management of the
+Agency.
+3. The Agency established under regulation 4 is hereby designated as the agency
+responsible for the management of wastes.
+4. There is hereby established an agency to be called the Solid Waste and Cleaning Agency
+which shall be a body corporate.
+5. (1) The Agency -
+(a) shall be responsible for the management of wastes;
+(b) shall designate, monitor and regulate waste disposal sites;
+(c) shall authorise the deposit and discharge of waste at the waste disposal sites
+designated under paragraph (b);
+(d) shall approve the receptacles and public waste bins in which waste may be
+placed or collected prior to collection for disposal at the waste disposal sites;
+(e) shall issue instructions as to the manner in which waste may be placed in
+receptacles or in public waste bins approved under paragraph (d);
+(f) shall designate the location where receptacles or public waste bins may be
+placed prior to collection for disposal at waste disposal sites;
+(g) shall collect, clean and dispose waste;(h)may charge such fee for the
+collection cleaning and disposal of waste as may be prescribed by the
+Minister;
+(h) may charge such fee for the collection cleaning and disposal of waste as may
+be prescribed by the Minister;
+(i) shall authorise and regulate the disposal, transport within or through
+Seychelles, and the export of hazardous waste;
+(j) shall monitor the contamination and degradation of the environment arising
+from the operation of any waste disposal site designated under paragraph (b);
+(k) shall monitor the safety and health of workers at waste disposal sites;
+(l) shall maintain the statistical data on the nature, quantity and volume of waste
+generated, and on sites and waste processing where waste disposal is taking
+or has taken place;
+(m) may advise the Minister on regulations the Agency may consider it
+reasonably necessary for carrying out its functions.
+42
+(2) The Agency may enter into contracts or agreements with any other persons for the
+collection, cleaning and disposal of waste and other matters relating thereto.
+6. (1) The Agency shall be managed by a Board consisting of-
+(a) a representative of the Ministry responsible for Environment, nominated by
+the Minister responsible for Environment;
+(b) a representative of the Ministry responsible for Health nominated by the
+Minister responsible for Health;
+(c) a representative of the Ministry responsible for Tourism nominated by the
+Minister responsible for Tourism;
+(d) a representative of the Seychelles Chamber of Commerce and Industry
+nominated by that Chamber; and
+(e) a representative of the Consumers' Association nominated by that
+Association.
+(2) The representative nominated under subregulation (1)(a) shall be the Chairman of
+the Board.
+(3) Where a Minister referred to in subregulation (1) is responsible for more than one
+subject matter referred to in that subregulation, the representative of that Ministry nominated by
+that Minister shall represent on the Board all such subject matters.
+(4) The Minister shall publish in the Gazette the names of the members of the Board
+nominated under subregulation (1) and the members shall hold office for a period of 2 years from
+the date of publication.
+(5) In case of a vacancy in the membership of the Board, other than on the expiration
+of the period of office, the Minister who nominated the member who vacated membership shall
+nominate another person to fill the vacancy and on the publication in the Gazette of the name of
+the person so nominated, the person shall hold office for the unexpired period of membership of
+the member who vacated membership.
+(6) The Board shall meet at least once each month and at such other times as the
+Chairman may determine.
+(7) One half of the number of members of the Board shall constitute a quorum for any
+meeting of the Board.
+(8) The Chairman or, in the absence of the Chairman, a member elected by the
+members present to preside at the meeting shall preside at a meeting of the Board.
+(9) Subject to the preceding subregulations, the Board shall regulate its own
+proceedings.
+(10) The members of the Board may be paid such allowances as the Minister may
+determine.
+43
+7. (1) The Minister shall appoint a person to be the Managing Director of the Agency on
+such terms and conditions as may be applicable to employees of public bodies.
+(2) Subject to the directions of the Board, the Managing Director-
+(a) shall have supervision over and direction of the day to day affairs of the
+Agency and shall be its chief executive officer;
+(b) shall perform the functions of Agency;
+(c) shall have power to sign the documents on behalf of the Agency;
+(d) may delegate any of the powers of the Managing Director to any other
+employee of the Agency.
+(3) On appointment under sub-regulation (1) the Managing Director of the Agency
+shall be an ex-officio member of the Board.
+(4) The Agency may employ such persons as are necessary to assist the Managing
+Director in the performance of its functions on terms and conditions and according to the
+procedures applicable to employees of public bodies.
+8. (1) The funds of the Agency shall consist of -
+(a) moneys appropriated by the Appropriation Act and paid to the Agency;
+(b) moneys lawfully charged by the Agency.
+(2) The funds of the Agency may be applied by the Agency-
+(a) in payment of expenses incurred by the Agency in the performance of its
+functions;
+(b) in payment of salaries payable to its staff including the Managing Director
+and the allowances payable to the members of the Board.
+9. (1) For each financial year the Agency shall prepare and submit to the Minister and the
+Minister responsible for finance the estimates of income and expenditure of the Agency.
+(2) The Minister may, acting after consultation with the Minister responsible for
+finance, approve with or without modification the estimates submitted under sub-regulation (1).
+(3) After the Minister approves the estimates under sub- regulation (2), the estimates
+so approved shall be the estimates of the Agency for the financial year for which it is prepared.
+(4) The financial year of the Agency shall be a period of 12 months ending on the 31st
+December of any year:
+Provided that the first financial year of the Agency shall end on 31st December next
+following the date of publication of these Regulations.
+44
+10. (1) The Agency shall keep proper accounts and records in relation to the accounts and
+shall prepare in respect of each financial year of the Agency a statement of accounts in such form
+as the Minister, acting after consultation with the Minister responsible for finance, may direct.
+(2) The accounts and the statement of accounts of the Agency shall be audited by an
+auditor appointed by the Minister.
+(3) As soon as the accounts are audited under sub-regulation (2), the Agency shall send
+to the Minister and the Minister responsible for finance a copy of the statement together with a
+copy of any report made by the auditor on that statement or the accounts of the Agency.
+_______________
+Sections 15 and 40
+Environment Protection (Impact Assessment) Regulations
+(3rd June, 1996)
+1. These Regulations may be cited as the Environment Protection (Impact Assessment)
+Regulations.
+2. In these regulations unless the context otherwise requires -
+"Authority" means the Authority as defined in regulation 2(a) of the Environment
+Protection (Miscellaneous) Regulations;
+"proponent" means the owner of, or a person who has the charge, management or control
+of, the project or activity or any proposal, plan, or programme in respect of a project or
+activity whether in the public or in the private sector;
+"EIA" means an Environment Impact Assessment Study;
+"environmental authorisationâ€• means an authorisation under section 15(1) of the Act
+3. (1) For the purposes of section 15(1) of the Act-
+(a) a project or activity specified in Schedule I; or
+(b) any other project or activity which for reasons to be stated in writing is, in
+the opinion of the Authority, likely to have a significant impact on the
+environment, is a prescribed project or activity.
+(2) For the purposes of section 15(1) of the Act any area specified in Schedule 2 is a
+protected area or an ecologically sensitive area, as the case may be.
+4. (1) An application for an environmental authorisation of a project or activity shall be
+made by its proponent-
+(a) where the project or activity is a development within the Town and Country
+Planning Act, to the Minister responsible for the administration of that Act or
+to the Town and Country Planning Authority established under that Act, as
+SI. 39 of 1996
+45
+the case may be, who or which shall forward a copy of the application to the
+Authority; or
+(b) where the project or activity does not fall within paragraph (a), to the
+Authority.
+(2) Where the Minister or the Town and Country Planning Authority referred to in subregulation (1) (a) forwards a copy of an application under that sub-regulation to the Authority, the
+Minister or the Town and Country Planning Authority shall, in exercising the powers under the
+Town and Country Planning Act, have regard to a grant or refusal of an environmental
+authorisation in respect of that application.
+5. (1) On receipt, under regulation 4, of an application for environmental authorisation, or
+a copy of the application, as the case may be, the Authority shall, subject to sub-regulation (2)
+determine whether the project or activity requires -
+(a) an EIA class I; or
+(b) an EIA class II.
+(2) In making a determination under sub-regulation (1), the Authority shall have regard
+to the guidelines laid down by the Authority and the likely impact that the project or activity may
+have on the environment.
+(3) The Authority shall inform its determination under sub-regulation (1) requiring an
+EIA class 1 to the proponent of the project or the activity and, where applicable, to the Minister or
+Town and Country Planning Authority referred to in regulation 4(1)(a) within 14 days after the
+receipt of the application or its copy by the Authority.
+6. (1) Where the Authority determines under regulation 5 that a project or activity
+requires an EIA class I, the Authority shall define the terms of reference of the EIA and forthwith
+notify the proponent and, where applicable, the Minister or the Town and Country Planning
+Authority referred to in regulation 4(1)(a).
+(2) Where the Authority determines under regulation 5 that a project or activity
+requires an EIA class II, the Authority may-
+(a) on behalf of the proponent undertake the preparation of the EIA; or
+(b) direct the proponent to prepare the EIA and define its terms of reference, and
+forthwith notify the proponent and, where applicable, the Minister or the
+Town and Country Planning Authority referred to in regulation 4(1)(a).
+(3) Where the Authority undertakes the preparation of the EIA under sub regulation (2)
+(a), the Authority shall direct the proponent of the project or activity to submit to the Authority
+such information as may be necessary and obtain such other assistance from the proponent or any
+other organisation or agency in the public or private sector.
+7. (1) A proponent of a project or activity shall, after the preparation by of the EIA in
+accordance with the terms of reference defined under regulation 6(1) or 6(2) (b), as the case may 
+46
+be, submit the EIA to the Authority along with other documents as may have been requested by
+the Authority.
+(2) The Authority-
+(a) shall make a preliminary review of the EIA and the documents submitted
+under sub-regulation (1); and
+(b) may require the proponent to carry out further study or submit additional
+information for the purpose of ensuring that the EIA is as accurate and
+exhaustive as possible.
+(3) On receipt of all the completed documents, in respect of an EIA class I the
+Authority shall give an acknowledgement to the proponent.
+(4) The Authority may, for the purpose of the review under sub-regulation (2)(a),
+request any person or organisation or agency in the public or private sector to submit their
+observations in writing on the EIA.
+(5) Any person, organisation or agency requested under subregulation (4) to submit
+observations on an EIA shall not divulge or communicate any information contained in the EIA
+to any other person, organisation or agency except with the consent in writing of the proponent in
+relation to that EIA or of the Authority.
+(6) Any contravention of sub-regulation (5) is an offence punishable by a fine of
+R5000 and imprisonment for a period of 6 months.
+8. (1) An EIA class I prepared by a proponent of a project or activity shall be open for
+public inspection at such place and such time as may be specified in a notice published by the
+Authority under this regulation.
+(2) The notice under sub-regulation (1) shall state-
+(a) the summary description of the project or activity;
+(b) the location where the project or activity is to be carried out;
+(c) the place where the EIA may be inspected;
+(d) the period within which the EIA is open for inspection.
+(3) The notice shall be published in 2 issues of a local newspaper with an interval of
+not less than seven days between the first and second publication.
+(4) Any member of the public being a citizen or a resident of Seychelles may make in
+writing comments on the EIA or the project or activity relating to the EIA within the period
+specified in the notice under sub-regulation (1) or record the comments in the register kept by the
+Authority at the place of inspection specified in the notice under sub-regulation (1).
+9. (1) Where it is considered necessary by the Authority, the Authority may refer the EIA
+to an Environmental Appraisal Committee appointed under section 15(2) of the Act. 
+47
+(2) The Environmental Appraisal Committee, hereafter referred to as “EAC”, shall
+consist of not less than 5 and not more than 7 technical experts in the relevant development sector
+and representatives of the concerned Ministries or departments.
+(3) One half of the members of EAC shall constitute a quorum for any meeting of the
+EAC.
+(4) The EAC, in relation to a referred project or activity, shall have a right of entry and
+inspection of the site, or as the case may be, premises, at any time prior to, during, or after the
+commencement of the operations relating to the project or activity.
+(5) The EAC, in relation to a referred project or activity, may seek any additional
+information from the proponent or any other assistance that may be necessary for the purposes of
+examining the EIA.
+(6) The EAC shall examine the EIA referred to it by the Authority along with the
+comments and observations made by it, and any public comments that may have been received.
+(7) The EAC shall make its recommendations to the Authority.
+(8) Subject to sub-regulation (3), the EAC shall regulate its meetings and proceedings.
+10. (1) In granting an environmental authorisation for a project or activity, the Authority
+shall have regard to-
+(a) made under regulation any comments 8(4); and
+(b) any recommendations made by the EAC.
+(2) The Authority may require the proponent of the project or activity to furnish any
+additional information as may be required any time before granting the environmental
+authorisation for the project or activity.
+(3) An environmental authorisation granted for a project or activity may be subject to
+such terms and conditions as may be specified by the Authority.
+(4) Where the Authority -
+(a) approves the EIA in respect of a project or activity it shall grant an
+environmental authorisation to the proponent of the project or activity;
+(b) does not approve the EIA in respect of a project or activity, it shall refuse to
+grant an environmental authorisation to the proponent of the project or
+activity.
+(5) The Authority shall notify its decision -
+(a) to grant an environmental authorisation; or
+(b) to refuse an environmental authorisation, 
+48
+for a project or activity to the proponent of the project or activity and, as the case may be, to the
+Minister or the Town and Country Planning Authority referred to in regulation 4(1) within 56
+days after the date of acknowledgement of the documents given by the Authority under regulation
+7(3) if the project or activity falls under the category requiring an EIA class I and within 28 days
+after the receipt of the application if it falls under the category requiring an EIA class II.
+11. (1) Any person aggrieved by a decision given by the Authority under regulation 10(4)
+may appeal to the Minister in Form I in Schedule 3 within 30 days from the date of receipt of the
+decision or order.
+(2) An appeal under sub-regulation (1) shall be accompanied by a fee of R250.
+12. (1) Where any development of land, not being a development falling within regulation
+4(1)(a), requires permission of the Town and Country Planning Authority established under the
+Town and Country Planning Act, an application for such permission shall be referred to the
+Authority.
+(2) The Authority shall consider the application referred to it under subregulation (1)
+within a period of 2 weeks after the referral and make its observations to the Town and Country
+Planning Authority.
+(3) In granting permission for any development referred to in subregulation (1), the
+Town and Country Planning Authority shall have regard to the observations made under
+subregulation (1).
+SCHEDULE 1
+Regulation 3(1)
+PROJECTS OR ACTIVITIES REQUIRING ENVIRONMENTAL AUTHORISATION
+CATEGORY OF PROJECT OR ACTIVITY
+1 Mining:
+1-1 Quarries and deposit sites.
+1-2 Rock crushing, splitting, blasting and excavating.
+1-3 Commercial production of aggregates and other materials.
+1-4 Earthworks.
+49
+2. Agricultural production:
+2-1 Commercial rearing of livestock, including pigs, cattle and poultry.
+2-2 Drainage or irrigation for commercial purposes.
+3 Forestry:
+3-1 Logging operations and vegetation clearing.
+3-2 Forest tracks or trails: construction or improvement.
+3-3 Sawmills: construction.
+4 Fish and associated products farming:
+4-1 Fish farming works and extension, aquaculture.
+4-2 Fish processing plants and equipment.
+5 Chemical industries:
+5-1 Manufacture, handling, storage and transportation of hazardous chemicals
+ or substances.
+6 Industry:
+6-1 Construction of industrial buildings.
+6-2 Installation of industrial equipments.
+6-3 Transportation equipment of industrial products: (classified dangerous as
+ per UNEP specifications)
+7 Food and agricultural industries.
+50
+8 Energy production and distribution:
+8-1 Power plant.
+8-2 Electric line.
+8-3 Gas storage.
+8-4 Pipeline.
+8-5 Bottling plant.
+9 Water:
+9-1 Dams and reservoirs.
+9-2 Water treatement plant.
+9-3 Public water supply network.
+9-4 Desalinization plant.
+10 Sewage and waste water:
+10-1 Sewerage treatment plants.
+10-2 Sewage networks and outfall.
+11 Solid waste:
+11-1 Dumping sites.
+11-2 Treatment plant.
+11-3 Collecting equipment.
+12 Hotels, Restaurants, and Tourism :
+12-1 New hotels or extension of existing hotels.
+12-2 Facilities such as golf, swimming pools.
+12-3 Restaurants.
+51
+13 Fishing vessels and fleet construction:
+13-1 New industrial vessels.
+14 Transport, Harbour and Marine:
+14-1 Harbour construction and development.
+14-2 Construction of airfields aviation strips and landing grounds.
+14-3 Harbour dredging operations.
+14-4 Equipment purchase and installation.
+14-5 Sea defenses and sea walls.
+14-6 Dry docks.
+15 Land reclamation.
+16 Habitat:
+16-1 Housing development and/or land subdivision that would give rise to the
+ creation of a large housing estate.
+16-2 Housing development and/or land subdivision that would result in
+ increase pressure on existing infrastructure and or environment.
+17 Road network:
+17-1 New roads.
+17-2 Extension out from existing bank.
+17-3 Surfacing of earth tracks or roads.
+17-4 Water drainage networks.
+SCHEDULE 2
+regulation 3(2)
+52
+PROTECTED AND ECOLOGICALLY SENSITIVE AREAS
+A) Protected areas
+A.1. National parks, special nature or wildlife reserves and other protected areas:
+(i) All areas designated under section 5 of the National Parks and Nature Conservancy
+Act (Cap 141)
+(ii) Shell reserves as designated under the Fisheries Act. (Cap 82 Sub. Leg. pg 16)
+(iii) Protected areas designated under the Protected Areas Act: African banks, - Ile Coco ,
+-Ile la Fouche, -Ilot Platte, -Bel Ombre. (Cap. 185 Sub. Leg. pgs 9, 10 and 11)
+(iv) Sainte Anne Island land use plan conservation area. NRC 95/13.
+(v) Anse Lazio coastal belt (Landscape of outstanding beauty). CAB 95/54.
+A.2. Historical sites and areas surrounding the National Monuments:
+The area within a radial distance of fifty metres around each of the National Monuments which
+are protected by a declaration order under the National Monuments Act (Cap 140) or any other
+law and around those sites, buildings and monuments which are given in the list below (A3),
+except however, in the case of those historical sites, buildings or monuments located in any of the
+districts of Mount Buxton, English Rivers, St. Louis, Bel Air, Plaisance and Mont Fleuri in which
+case the radial distance shall be 30 meters instead of 50 meters.
+A.3. Sites, buildings, monuments: ( see A2 for conditions).
+Fiennes Esplanade, F. Rachel Av., Victoria
+Original Landing of the French, Baie Lazare.
+Signal Hill Look out Post, Mt. Signal,
+Riv. Anglaise
+Original site of Pierre de Possession,
+La Poudrière
+Lenstiti kreol, Anse aux Pins.
+Water Mill, Cascade. Victoria Market, Victoria.
+Carnegie Building, Victoria. ex. St John Bosco School, Belonie,Victoria.
+Lighthouse ,Victoria Harbour. Camion Hall, CODEVAR,Victoria.
+Northolme Hotel, Glacis. Léproserie, Ile Ronde.
+53
+Old Pirogue Sheds, Anse aux Pins. Syna Adeline plantation house, Anse Kerlan.
+Regina Mundi School, Mont Fleuri. Léproserie, Curieuse
+Salles d’oeuvres, Victoria.
+Seychelles College, Mont Fleuri.
+Seychelles Hospital, Victoria
+Battery Guns, Sainte Anne
+Four à graisse de baleine, Sainte Anne.
+Queau de Quincy Building, Mont Fleuri.
+Bagatelle House and gardens.
+Jardin du Roi House and gardens.
+Anse Royale, Church of England, Anse
+Royale
+Queau de Quincy Tomb, State House.
+Remains of l’etablissement du Roi, State House.
+War Memorial, Mont Fleuri Cemetery, Mont
+Fleuri.
+Anse Boileau Catholic church.
+Grande Anse Catholic church.
+Port Glaud Catholic church.
+St. Louis chapel, Saint Louis.
+Sainte Anne chapel, Cerf Island.
+Beauvoir church, La Misère.
+Cathedral of the Immaculate Conception,
+Victoria
+St Francis Catholic church, Baie Lazare
+St Roch Catholic church, Bel ombre.
+St John the Baptist Catholic church, Glacis.
+St Matthew's church, Grand'Anse Praslin.
+St. Joseph Catholic church, Grand'Anse Praslin.
+Pentecostal church, Mont Fleuri.
+Anse Déjeuner Church of England.
+St Anthony Catholic chuch, Anse étoile.
+Sr Theresa Catholic church, Plaisance.
+Cathedral of the Immaculate Conception,
+Victoria
+St Francis Catholic church, Baie Lazare
+St Roch Catholic church, Bel ombre.
+St John the Baptist Catholic church, Glacis.
+Seven's day adventist chapel, St Louis.
+New Apostolic church, Mont Fleuri.
+Hindu temple, Victoria.
+Islam Mosque, Victoria.
+Francis Rachel street.
+Market street.
+54
+St Anthony Catholic chuch, Anse Ã©toile.
+Sr Theresa Catholic church, Plaisance.
+St Michael Catholic church, Anse aux pins.
+Sr Joseph Catholic church, Anse Royale.
+St Mary Magdalena Catholic church,
+Takamaka.
+Albert street.
+Revolution avenue
+A.4. Remarkable natural landscapes:
+All areas listed below are sites of outstanding natural and physical beauty, either natural or
+developed. As designated on maps deposited with the Division of Environment and certified by
+the Director General of Environment..
+MAHE:
+-Mont Sebert - Les Dents. -Rock at Anse Louis, "teapot".
+-Castle peak. -Rocks at Le Rocher
+-Glacis du Cap at Anse aux pins. -Danzille to Anse Major.
+-Fairyland, Ile Souris et plages. -Cascade de Grande Anse.
+-Anse Parnel et Cap Lascars. -Cascade de Bel ombre.
+-Rochers d'Anse Forbans. -Rocks at Baie Lazare beach.
+-Anse Capucins.
+-Anse Petite Boileau. PRASLIN:
+-Pointe Police. -Anse Lazio and Baie Chevalier.
+-Pointe du Réduit -Anse Georgette.
+55
+-Pointe Maravi. - Petite Anse Kerlan
+-Glacis de Val Mer. -Anse Matelot.
+-Pointe Gouvernement. -Ilot Chauve Souris.
+-Pointe Petit Gouvernement. -Ilot Saint Pierre.
+-Pointe Petite Anse. -Rocher du Comédien
+-Falaises des Remparts.
+-Pointe Barbarons. LA DIGUE:
+-Cascades de Souvenir, la Misére.
+- Southern coast from pointe Source d`Argent
+to Grand l'Anse.
+-Petite ile. - Grande Anse and Petite Anse.
+-Pointe Escalier.
+- Western coastal strip from pointe Turcy to
+Anse Patate
+-Cascade de Port Glaud. - Pointe Cap Barbi.
+-L'Ilot. - La Passe rocks.
+-Falaise de Danzille.
+-Pointe sud d'Anse Boileau.
+-La Réserve.
+A.5. Viewpoints:
+56
+The area extending upto 50 meters downwards, away from the road, around viewpoints indicated
+below:
+- Forêt Noire road down "Tea factory" -altitude from 80 to120 m, and 160 to 180m.
+- Forêt Noire road at "Sans Soucis" -altitude from 200 to 210m, and 420 to 430m.
+- Mission Lodge car park.
+- La MisÃ¨re road before "Grande Anse" -altitude from 100 to 150 meters.
+- La Misére road at "la Misére" -altitude from 170 to190 meters.
+- Grand Fond at Praslin -altitude above 300 meters.
+A.6. Inter-urban buffer zones:
+The areas as defined in the indicative land use plan (PAT June 1992).
+A.7. Water catchment areas:
+Those areas located upstream of dams that are used for public water catchment and water storage,
+and the following areas that are potential water catchment basins:
+Rivière Mare aux cochons. Above 50 meters altitude.
+Rivière les Mamelles. Above 80 meters altitude.
+Rivière Pasquière. Above 50 meters altitude.
+La Digue: 150 meters radius around the wells at "le Plateau"
+A.8. Industrial risk areas:
+Areas in the viccinity of industrial equipments or activities, with a high risk potential in case of an
+accident or an hazard.
+Mahé: -200 meters around Fuel and LPG storage at Newport Victoria.
+-200 meters around Fuel storage at Mahé airport:
+-50 meters each side of river Anse Etoile, downstream of La Gogue Dam:
+-25 meters each side of river Rochon downstream to Rochon dam.
+-Mahe Airport landing path:
+1000 m. radius from the end of the airstrip in both directions, in a 10Â° Angle.
+-200 metres around Anse Royale dumping site.
+-200 meters around Petit Paris dumping site.
+57
+-200 meters around Pointe Larue quarry.
+-200 meters around Providence quarry.
+Praslin: -200 meters around Fuel storage at Baie Sainte Anne
+-Airport landing path:
+500 m. radius from the end of the airstrip in both directions, in a 10Â° Angle.
+-200 m. Around La Jalousie dumpimg site.
+-200 m. Around La Jalousie quarry.
+-200 m. Around Anse Citron quarry.
+La Digue: -200 m. Around L'Union dumpimg site.
+A.9. Natural risk areas:
+Areas with a risk potential, by natural hazards, especially landslides and fall of boulders, on
+granitic and red earth steepest slopes and surroundings, such as:"Trois Freres Estate",
+"Pied du Morne" area, North east of "Copolia","Le Rocher" and "Brillant" area,"Anse Talbot"
+and "Riviere Bayonne" area, Mont Buxton area. As designated on corresponding maps...
+A.10. Steep slopes:
+Any area where the average slope within 50 meters on each side of the proposed development is
+higher than 1:2 gradient.
+A.11. Earth erosion areas:
+Areas which are highly eroded, particularily as a consequence of the destruction of the vegetation.
+An area is considered as eroded when the vegetation covers less than 50 % of the ground, on an
+average basis.
+A.12. High elevations:
+Areas located at an altitude of more than 200 meters above the sea level, except in the following
+districts viz: English River, Mont Buxton, St Louis, Bel Air, Plaisance, Anse Etoile and Grande
+Anse, where the altitude is set at 300 m. above the sea level.
+A.13. Skyline:
+Skyline is the line at which earth and sky appear to meet. It has an altitude higher than 50 meters
+above sea level and a water flow descending in two different directions. The sensitive area
+includes a 50 meter radius or strip from the skyline.
+(B) Ecologically sensitive areas:
+B.1. Natural Habitats for rare, protected or endemic species of fauna and flora:
+58
+The areas categorised below are based on one or more of the following considerations:
+- to protect the endemic species
+- to protected species according to national or international (CITES) conventions, laws or
+regulations.
+- to protect endangered species which need special attention because of particular uses which
+threaten their population.
+Extension as designated on maps deposited with the Division of Environment and certified by the
+Director General of Environment
+MAHE:
+- Montagne Glacis.
+- Mont Josephine .
+- Mt. Planeau -L`Abondance -Grand Bois -Varigault.
+- Mont Sebert -Les Dents.
+- Montagne Brulee -Castle Peak .
+- Mont Parnel.
+- Le Desert.
+- Mont Signal.
+- Montagne Corail -Mont Cauvin -Giraffe.
+- Riviere Dauban, Bardeau.
+- Copolia.
+- Anse Capucin
+- Anse Bazarca.
+- Glacis between Anse Louis and Souvenir.
+- Glacis at Barbarons
+- Glacis BÃ©oliÃ¨re.
+- L'Islette.
+- Sainte Anne, Grande Anse.
+- Souvenir. 
+59
+- Roche Caiman, Bird Sanctuary.
+- Endangered birds nesting areas.
+PRASLIN:
+- Nouvelle decouverte.
+- Consolation.
+- Fond Ferdinand, Fond d'Albaretz.
+- Cap Jean Marie.
+- Rivière Pelissier.
+- Mont Cabris.
+- Pointe Badamier.
+- Newcome.
+- Savoie.
+- Petite Cour glacis.
+- Grande Anse, Fond de l'Anse.
+- Baie Pasquière.
+- Endangered birds nesting areas.
+LA DIGUE
+- Nid d'Aigle.
+- Woodlands of le Plateau- nesting territories for La Veuve
+- Belle Vue
+- Endangered birds nesting areas.
+B.2. Marshes and Wetlands habitats:
+Areas where the water table enables specific vegetation to thrive, whether the area is permanently
+or temporarily flooded, or fresh or salt water, including all mangroves.
+The relevant areas may show some of the following characteristics:
+- contributes to decrease in water pollution before it outflows to the sea
+- decreases excessive flooding of lands
+60
+- contains specific fauna habitats and contributes to nesting and breeding of this type of
+fauna.
+B.3. Streams and Surroundings:
+Areas as categorised in Schedule A of the State Land and River Reserves Act. (Cap 228)
+B.4. Coastal Strip:
+The area extending upto a distance of 100 meters towards landward side from the high water
+mark except in the following cases:
+- Where a paved and regularly used vehicular road alongside the sea has been built nearer
+than 100 meters towards land. In this case, the road defines the boundary of the coastal
+strip.
+- Where the area is already developed, including a 20 meter radius around the existing
+development.
+- Where the area has been scheduled in an approved development plan for the proposed
+development.
+- Where an integrated coastal zone management plan (ICZM) has defined the delineation of
+the coastal strip under section 11 of the Environmental Protection Act.
+- On the eastern coast of Mahé from North east Point to Ile du Suète.
+B.5. Beaches and intertidal zones:
+All areas between the lowest low tide and the dune crest plus 20 meters on the landward side. If a
+dune crest does not exist, the landward boundary will be 30 meters from the high water mark.
+B.6. Seabed:
+All lands that are regularly flooded by the sea within the territorial waters fall in this category.
+For estuary and mangroves, the sea bed boundary is defined by a junction line across the outflow
+at the high water mark.
+B.7. Small islands and outlying islands:
+All Seychelles islands except the main islands of Mahe, Praslin, La Digue where the sensitive
+areas are defined based on specific considerations.
+SCHEDULE 3
+FORM I
+(Regulation 11)
+(FORM OF MEMORANDUM OF APPEAL)
+61
+Memorandum of Appeal under Regulation 11 of the Environment Protection (Impact
+Assessments) Regulations.
+................................................................
+................................................................
+................................................................
+................................................................ .................................. Appellant
+(here furnish complete postal address)
+Vs.
+...............................................................
+...............................................................
+(here mention the name and designation of
+the Authority)
+.................................. Respondent
+(1) The appellant named above, begs to prefer this Memorandum of Appeal against the
+decision /order dated ........................................ passed by...................................
+(2) The facts of the case are as under:
+(here briefly mention the facts of the case)
+(3) The grounds on which the appellant relies for the purpose of this Appeal are as below:
+(here mention the grounds on which the appeal is made)
+(4) In the light of what is stated above the appellant respectfully prays that the decision/ order
+is unreasonable and be set aside/varied in the following manner.
+(here mention the manner in which the objections are made)
+(5) The amount of Rs ....................(Seychelles Rupees.......................................) as fee for this
+Appeal has been paid to.................................................................. vide receipt No.
+.......................................... dated ..............................................
+Place: Signature of the Appellant:
+Date: Name:
+Occupation:
+Address:
+62
+Verification
+I ............................................................. (Appellant’s name) in the above Memorandum of
+Appeal/or/duly authorised agent do/does hereby declare that what it stated therein is true to the
+best of may knowledge and belief and nothing has been hidden thereunder.
+Signature ......................................
+Name ...........................................
+(in block letters)
+Occupation ...................................
+Address ........................................
+......................................................
+....................................................
+............................................Date:
+_____________________
+Sections 6 and 40
+Environment Protection (Noise Emission Standards) Regulation
+1. These Regulations may be cited as the Environment Protection (Noise Emission
+Standards) Regulations.
+2. The limits of noise level in respect of areas and times referred to in the Schedule are
+hereby prescribed as the noise emission standards for the purpose of sections 6 and 9 of the Act
+3. These Regulations shall not apply to noise generated by aircraft, or vehicular traffic or
+animals.
+SCHEDULE
+1. In this Schedule -
+"Authority" means the Authority within the meaning of section 4 of the Act;
+"noise" means the vibration of a frequency within the range of 0 - 20,000 Hertz;
+"dB(A)" means decibels on the A-weighting scale;
+"Leq" means the continuous sound level which gives the same total energy as the varying
+sound level;
+"L(10)" means the sound pressure level exceeded 10% of the time;
+SI. 49 of 1999
+63
+"pristine" used with reference to an area denotes a natural environment of particular value
+because of its quietness, beauty or natural sounds;
+"impulse" means an abrupt variation of short duration of noise level followed by a rapid
+return to the initial state;
+"industrial" used with reference to an area means an area of land developed for the sitting
+of trade and manufacturing enterprises;
+"residential" used with reference to an area means an area mainly occupied by private
+houses.
+2. Noise Emission Standards
+Description of Area Time Limits in Decibel dB(A)
+Residential
+0600 hrs -
+2300 hrs
+2300 hrs -
+0600 hrs
+60 Leq
+55 Leq
+Industrial At all times
+(L10) 75
+Measurement shall be done at boundaries
+of industrial site
+Audible intrusion in pristine
+acoustic environment 60 Leq
+3. Testing
+Testing shall be carried out in accordance with Appendix A of SS43: 1998 or any other
+test methods approved by the Authority.
+Equipment used for measurement of noise level shall be approved by the Authority.
+A sampling time of 15 minutes shall be adopted for test unless the Authority decides
+otherwise
+_________________________
+Section 29(9)
+[2nd November 1999]
+Environment Protection (Fixed Penalty) Order
+SI. 51 of 1999
+64
+1. This Order may be cited as the Environment Protection (Fixed Penalty) Order, 1999.
+2. With effect from the date of publication of this Order, the fixed penalty payable in
+pursuance of a notice under section 29 of the Environment Protection Act shall be R200.
+_______________
+Section 10(3)
+[15th May 2000)
+Environment Protection (Ozone) Regulations
+1. These Regulations may be cited as the Environment Protection (Ozone) Regulations,
+2000.
+2. In these Regulations -
+"Administrator" means the Administrator of the Authority under section 2 of the Act.
+3. These Regulation shall apply to -
+(a) the substances specified in the Schedule and goods containing, made with or
+designed for, such substances (hereinafter referred to as "controlled products"), and
+(b) persons who, in the course of any licensed activity or otherwise, import, export,
+sell, purchase or use controlled products (hereinafter referred to as "persons to
+whom these regulations apply").
+4. No person shall produce or manufacture controlled of products.
+5. No person shall sell any controlled products -
+(a) except under, and otherwise than in accordance with the conditions of, a permit
+issued under these Regulations;
+(b) except to persons who are, by a permit issued in that behalf under these regulations,
+authorised to purchase controlled products.
+6. No person shall use controlled products for any purpose including the purpose of
+installing, servicing, or operating any led products such products, except under, and otherwise
+than in accordance with the conditions of, a permit issued under these Regulations.
+7. (1) No person shall decommission controlled products except under, and otherwise
+than in accordance with the condition of, any licence issued by the Seychelles Licensing
+Authority.
+(2) A licence referred to in sub-regulation (1) shall be issued to a person only if such
+person has satisfied the Administrator that he has completed a course of training approved by the
+Administrator.
+SI. 24 of 2000
+65
+8. Every application for a permit under these Regulations shall be made to the
+Administrator in the form provided by the Ministry of Environment and shall be accompanied by
+such documents as may be specified in the form.
+9. (1) On receipt of an application under regulation 8, the Administrator may use a permit
+or may refuse to issue a permit.
+(2) A permit issued under these Regulations shall -
+(a) be subject to any conditions set out therein;
+(b) remain in force for such period as may be specified therein and shall be
+renewable;
+(c) not be transferable.
+10. Any person aggrieved by the decision of the Administrator to refuse to issue or renew a
+permit may within thirty days of such decision appeal to the Minister against the decision. The
+decision of the Minster on such appeal shall be final and conclusive.
+11. (1) The Administrator may cancel a permit if any of the conditions specified in the
+permit is contravened, after giving the holder of the permit an opportunity to show cause why the
+permit should not be cancelled.
+(2) A person aggrieved by the decision of the Administrator to cancel a permit may
+within thirty days of the decision appeal to the Minister against the cancellation and the Minister's
+decision on such appeal shall be final and conclusive.
+12. A person to whom the regulations apply shall be required to make arrangements for the
+recovery of controlled products -
+(a) from refrigerators and air conditioners;
+(b) from equipment containing such products;
+(c) from fire protection systems;
+(d) before recycling and reclamation of such products during servicing or maintenance
+of goods; or
+(e) before dismantling or disposal of goods.
+under the supervision of an officer authorised in that behalf by the Ministry responsible for
+Environment and Transport.
+13. Persons to whom these regulations apply shall be responsible for taking all practical
+measures to prevent leakage of substances constituting controlled products whenever they handle
+controlled products.
+14. (1) The Minister may empower any officer of his Ministry to be an authorised officer
+for the purpose of ensuring compliance with these Regulations.
+66
+(2) The provisions of section 22 of the Act shall mutatis mutandis apply to an
+authorised officer empowered under this regulation.
+15. Any person who contravenes Regulations 4, 5, 6, 7, 12, 13 of these Regulations is guilty
+of an offence and is liable on conviction to imprisonment for a period not exceeding 2 years and
+to a fine not exceeding R20,000.
+SCHEDULE
+1. Any substance mentioned below or a compound containing any such substance and all
+isomers of such substances
+Substance
+CFC 11
+CFC 12
+CFC 113
+CFC 114
+CFC 115
+Halon 1211
+Halon 1301
+Halon 2402
+CFC 13
+CFC 111
+CFC 112
+CFC 211-217
+Carbon Tetrachloride
+Mathyl Chloroform
+HCFC's
+HBFC's
+Methyl Bromide
+2. Goods containing, made with, or designed for the substances referred to in paragraph 1.
+______________________
+67
+Section 40
+[30th April 2001]
+Environment Protection (Containers) Regulations
+1. These Regulations may be cited as the Environment Protection (Containers) Regulations.
+2. In these Regulations -
+“Administrator” means the Director General of the Environment Division of the Ministry
+of Environment and Transport or such other officer as may be so designated by the
+Minister;
+“Container” means a large receptacle of standard design used for transportation of goods.
+3. (1) These Regulations shall apply to all containers except those that are being used for
+the transportation of goods and those that are kept at container yards.
+(2) In the event of any dispute as to the applicability of these Regulations to a
+particular container the Administrator’s determination shall be final and conclusive.
+4. (1) No person shall have in that person’s custody, or possess or use, a container to
+which these Regulations apply otherwise than under and in accordance with the conditions of a
+permit issued under these Regulations.
+(2) The conditions of a permit shall relate to the siting, use, maintenance and disposal
+of the container in respect of which the permit is given.
+(3) This regulation shall not be enforced until thirty days have passed after the coming
+into operation of these Regulations.
+5. A person may apply to the Administrator for a permit under these Regulations stating -
+(a) the name and address of the applicant;
+(b) the premises where the container is kept;
+(c) the purpose for which the container is used or its proposed to be used;
+(d) the manner of disposal of the container.
+6. Where, on the coming into operation of these Regulations, a person has in that person’s
+custody or possesses or uses a container to which these Regulations apply, that person shall be
+deemed to have complied with Regulation 4, if an application is made by that person within 30
+days after the coming into operation of these Regulations, and a written acknowledgement of the
+application is obtained by that person.
+7. (1) If an application for a permit under these Regulations is not granted, the
+Administrator may by written notice, direct the applicant to dispose of the container in such
+manner and within such period as may be specified in the notice.
+SI. 14 of 2001
+68
+(2) If a container is not sited, used or maintained in accordance with the conditions of a
+permit, the Administrator may by written notice direct the permit holder to dispose of the
+container within the period specified in the notice.
+(3) The Administrator may by written notice direct -
+(a) a person who appears to be in contravention of regulation 4(1) to comply
+with that regulation within such period as may be specified in the notice;
+(b) the owner of any abandoned container to remove or dispose of the container
+in such manner and within such period as may be specified in the notice.
+8. A person who contravenes regulation 4 or a direction under regulation 7 shall be guilty of
+an offence, and shall on conviction be liable to a fine not exceeding R20,000.
+__________________
+Section 13 and 40
+[16th June 2008]
+Environment Protection (Restrictions on Plastic Bags) Regulations
+1. These Regulations may be cited as the Environment Protection (Restrictions on Plastic
+Bags) Regulations.
+2. In these Regulations, unless the context otherwise requires:
+“commercial distribution” means making plastic bags directly or indirectly available for
+packaging or carrying of goods;
+“plastic bag” means a type of flexible packaging made of thin, flexible, plastic film used
+for containing and transporting foods, produce, powders, ice, chemicals ,waste, etc.
+“plastic film” means a continuous, thin, non-woven membranous skin or layer of flexible
+material made of thermoplastic materials;
+“trade” means the sale of plastic bags and to any person, including, but not limited to,
+wholesalers and retailers of goods, for use within the Republic of Seychelles.
+3. (1) The manufacture, trade and commercial distribution of domestically produced and
+imported plastic bags below 30 microns, for use within the Republic of Seychelles, are hereby
+restricted.
+(2) A tolerance of 20 percent variation in the measurement of the minimum thickness
+of the plastic film, used in the manufacture of the plastic bag, shall not be considered as
+SI. 39 of 2008
+69
+contravening sub-regulation (1), where such variation is subsequent to the normal variation
+occurring in the normal course of production.
+4. Where, on the coming into operation of these Regulations, a manufacturer, a trader or a
+distributor has in its custody plastic bags to which these Regulations apply, that manufacturer,
+trader or distributor has six months from the date of coming into operation of these Regulations to
+use or distribute its plastic bags.
+5. A person may apply to the Trades Tax Division for an import permit under these
+Regulations, which may be given only after consultation from and approval by the Ministry
+responsible for environment.
+6. (1) Any person who contravenes these Regulations shall be guilty of an offence and is
+liable on conviction to a fine of SR5,000 or to imprisonment for a period not exceeding one year,
+or to both such fine and imprisonment.
+(2) Any person convicted of an offence in terms of these Regulations and who, after
+such conviction, persists in the act or omission which constituted such offence, shall be guilty of a
+continuing offence and liable, to a further fine of SR2,000 for each day during which the offence
+is so continued.
+(3) Where an offence in terms of these Regulations is continued beyond a period of
+one year after conviction by the person so convicted, the person shall be guilty of an offence and
+liable on conviction to imprisonment for not less than one year and not exceeding two years.
+__________________
+Section 29 (9)
+[7th July 2008]
+Environment Protection (Fixed Penalty) Order
+1. This Order may be cited as the Environment Protection (Fixed Penalty) Order, 2008.
+2. With effect the date of publication of this Order, the fixed penalty payable in purchase of
+a notice under section 29 of the Environment Protection Act shall be R500.
+3. The Environment Protection (Fixed Penalty) Order, 1999 is hereby repealed.
+_______________
+Section 12 (2)
+[2nd March 2009]
+Environment Protection (Landscape and Waste Management Agency) Regulations
+1. These Regulations may be cited as the Environment Protection (Landscape and Waste
+Management Agency) Regulations, 2009 and shall be deemed to have come into operation on 1st
+January, 2009.
+SI. 29 of 2009
+SI. 29 of 2009
+70
+2. In these Regulations-
+“Agency” means the Landscape and Waste Management Agency established under
+regulation 3(1);
+“Board” means the Board appointed under regulation 10(1);
+“hazardous waste” means any waste harmful to health and the environment;
+“landscape waste” means any area of land private or public, in its natural state or alerted
+by human intervention that may be or is used for public purposes or to which the public
+or part of the public has a right of access;
+“landscaping” means the upkeep, planting, or installation or maintenance of facilities on
+any land or area used for public purposes or to which the public or part of the public has a
+right of access;
+“member” means a member of the Board and includes the Chairperson;
+“Minister” means the Minister responsible for Environment;
+“waste” means garbage, refuse, sludge, construction debris and any other discarded
+substance resulting from industrial and commercial operations or from domestic,
+individual or community activities.
+3. (1) There is established an Agency to be called the Landscape and Waste Management
+Agency, which shall be a body corporate.
+(2) The Agency is responsible for the management of waste and overall landscape
+development and management of Seychelles.
+4. The Agency-
+(a) shall monitor the work of contractors undertaking landscaping contracts on behalf
+of the Government of Seychelles to ensure that quality and standards are
+maintained in accordance with the landscaping contracts;
+(b) shall act as adviser to the Government of Seychelles with regards to landscape
+management;
+(c) shall plan, coordinate and monitor the development and management of public
+landscaping in Seychelles;
+(d) shall be responsible for the maintenance of all drains including the repairs of such
+drains;
+(e) shall maintain and improve the landscape of urban centers, roads, highway
+corridors, public parks and any other public places;
+(f) shall be responsible for the management of waste including the monitoring and
+control of a waste disposal site;
+71
+(g) shall issue technical instructions that provide for technical acceptance conditions
+for the deposit and discharge of waste at a waste disposal site;
+(h) shall designate and approve a site where receptacles or public waste bins may be
+placed prior to collection for disposal at a waste disposal site;
+(i) shall issue instructions as to the manner in which waste may be placed in
+receptacles or public waste bins for disposal at a waste disposal site;
+(j) may enter into contracts or agreements with any person or companies for the
+collection and disposal of waste, cleaning of waste bins and any other matter
+relating thereto;
+(k) shall ensure that companies or persons responsible for waste collection, collect
+waste, clean waste bin sites and dispose waste at a waste disposal site;
+(l) may charge fees for the collection of disposal and treatment of waste;
+(m) shall maintain statistical data on the nature, quantity and volume of waste
+generated, and of sites where waste processing and waste disposal are taking or has
+taken place;
+(n) shall advise the Minister on the preparation of waste management plans and written
+laws, which the Agency may consider necessary in connection with the
+performance of its functions.
+5. (1) The Minister shall appoint a person to be the Chief Executive Officer of the
+Agency on such terms and conditions as may be applicable to an employee of a public body.
+(2) Subject to the directions of the Board, the Chief Executive Officer-
+(a) shall have supervision over and direction of the day to day affairs of the
+Agency;
+(b) shall perform the functions of the Agency;
+(c) shall have power to sign documents on behalf of the Agency; and
+(d) may delegate any of his or her powers to any other employee of the Agency.
+(3) On appointment under subregulation (1), the Chief Executive Officer of the
+Agency shall be an ex-officio member of the Board.
+6. The Agency may employ such other persons as are necessary to assist the Chief
+Executive Officer in the performance of his or her functions on terms and conditions, and
+according to the procedures applicable to an employee of a public body.
+7. (1) The funds of the Agency consist of-
+(a) moneys appropriated by the Appropriation Act and paid to the Agency; and
+(b) moneys lawfully charged by the Agency.
+72
+(2) The funds of the Agency may be applied by the Agency-
+(a) in payment of expenses incurred by the Agency in the performance of its
+functions; and
+(b) in payment of salaries payable to its employees, the Chief Executive Officer
+and the allowances payable to the members.
+8. (1) For each financial year the Agency shall prepare and submit to the Minister and the
+Minister and the Minister responsible for Finance, the estimates of income and expenditure of the
+Agency.
+(2) The Minister may, acting after consultation with the Minister responsible for
+Finance, approve with or without modification the estimates submitted under subregulation (1).
+(3) After the Minister approves the estimates under subregulation (2), the estimates so
+approved shall be the estimates of the Agency for the financial year for which it is prepared.
+(4) The financial year of the Agency shall be a period of 12 months ending on the 31st
+December of any year.
+(5) The first financial year of the Agency shall end on 31st December next following
+the date of publication of these Regulations.
+9. (1) The Agency shall keep proper accounts and records in relation to the accounts and
+shall prepare in respect of each financial year of the Agency, a statement of accounts in such form
+as the Minister, acting after consultation with the Minister responsible for Finance, may direct.
+(2) The accounts and statement of accounts of the Agency referred to under
+subregulation (1) shall be audited by an auditor appointed by the Minister responsible for
+Finance.
+(3) As soon as the accounts are audited under subregulation (2), the Agency shall
+submit to the Minister and the Minister responsible for Finance a copy of the statement together
+with a copy of any report made by the auditor on that statement or the accounts of the Agency.
+10. (1) The Agency is managed by the Board appointed by the Minister, consisting of the
+following members-
+(a) the Chief Executive Officer appointed under regulation 5(1);
+(b) a representative of the Ministry responsible for Environment nominated by
+the Minister;
+(c) a representative of the Ministry responsible for Health nominated by the
+Minister, after consultation with the Minister responsible for Health;
+(d) a representative of t he Ministry responsible for Community Development
+nominated by the Minister, after consultation with the Minister responsible
+for Community Development;
+73
+(e) a representative of the Seychelles Tourism Board nominated by the
+Chairman of the Board;
+(f) a representative of the Seychelles Chamber Commerce and Industry
+nominated by the Chamber of Commerce;
+(g) a representative of the Consumers’ Association nominated by the
+Association.
+(2) The Minister may appoint 3 other persons who, in the opinion of the Minister, have
+knowledge and experience likely to contribute to the successful direction of the affairs and
+operations of the Agency.
+(3) The Minister shall designate a member appointed under subregulation (1) to be
+Chairperson of the Board.
+(4) The Minister shall publish in the Gazette, the names of the members appointed
+under subregulation (1) and (2).
+11. A member appointed under regulation 10(1) and (2) shall hold office for a period of 2
+years from the date of publication, and may be reappointed for a further term.
+12. (1) The Chairperson may resign from office by a letter addressed to the Minister, and
+the resignation shall take effect from the date on which the Minister receives the letter.
+(2) A member other than the Chairperson may resign from office by a letter to the
+Minister and transmitted through the Chairperson and the resignation shall take effect from the
+date on which the Minister receives the letter.
+(3) The Minister may remove a member from office upon being satisfied that the
+member-
+(a) is, for whatever reason, permanently incapable of discharging the duties of a
+member;
+(b) has been absent, without leave of the Board, from 3 consecutive meetings of
+the Board;
+(c) has neglected the duties of a member; or
+(d) is guilty of an offence.
+(4) Where a member resigns or is removed from office, other than on the expiration of
+the period of office-
+(a) the Minister shall appoint a person to hold office for the remaining period of
+office of the member referred to under regulation 10(1) (b), (c), (d) and (2);
+or
+(b) the person who nominated the member who vacated membership under
+regulation 10(1) (e), (f) and (g), shall nominate another person for
+appointment to the Board.
+74
+(5) On the publication in the Gazette of the name of the person so appointed under
+subregulation 4(1) or (b), the person shall hold office for the unexpired period of membership of
+the member who vacated membership.
+13. (1) The Board shall meet at least once every two months and at such other times as the
+Chairperson may determine.
+(2) Five members shall constitute a quorum for any meeting of the Board.
+(3) The Chairperson is to preside at all meetings of the Board at which he or she is
+present.
+(4) If the Chairperson is absent from a meeting, the members present shall elect from
+among them, a member to preside, and the member shall, with respect to such meeting or any
+business transacted, have all the powers of the Chairperson.
+14. The members may be paid such allowances as the Minister may determine.
+15. The Board may regulate its own proceedings.
+16. The Environment Protection (Designation of Solid Waste Agency) Regulations, 1995 is
+repealed.
+__________________
+Sections 4(3) and 40
+[2nd March 2009]
+Environment Protection (Seychelles National Parks Authority) Order
+1. This Order may be cited as the Environment Protection (National Parks Authority) Order,
+2009 and it shall be deemed to have come into operation on 1st January, 2009.
+2. In this Order, unless the context otherwise requires-
+“Authority” means the National Parks Authority constituted under paragraph 3;
+“Board” means the Board appointed under paragraph 13;
+“member” means a member of the Board and includes the Chairperson;
+“Minister” means the Minister responsible for Environment;
+“National Park” has the meaning given to it under section 2 of the National Parks and
+Nature Conservancy Act, and includes the National Parks designated under that Act.
+3. There is constituted the National Parks Authority, which shall be a body corporate.
+4. (1) The Authority-
+(a) shall be responsible for the protection and management of a National Park;
+SI. 30 of 2009
+75
+(b) shall implement policies and programmes for the protection and management
+of a National Park;
+(c) shall monitor and control all activities concerned with the management and
+protection of a National Park;
+(d) shall commission research or sponsor studies concerned with the
+management and protection of a National Park;
+(e) shall promote awareness of a National Park, and shall provide and
+disseminate information relating to a National Park;
+(f) shall perform such other functions with respect to the conservation of flora
+and fauna in a National Park as may be conferred on it by or under any
+written law;
+(g) may advise the Minister on policies and written laws concerned with the
+protection and management of a National Park, which may be considered
+necessary by the Authority in the performance of its functions.
+5. (1) The Minister shall, subject to subparagraph (3), appoint a person to be the Chief
+Executive Officer of the Authority on such terms and conditions as may be applicable to an
+employee of a public body.
+(2) Subject to the directions of the Board, the Chief Executive Officer shall-
+(a) undertake executive responsibility for the effective functioning of the
+Authority;
+(b) have supervision over and direction of the day to day affairs of the Authority;
+and
+(c) perform the functions of the Authority.
+(3) The Chief Executive Officer shall be a person who is suitably qualified and has
+working experience in marine science, biology, management and any other disciplines relevant to
+the functions of the Authority.
+(4) On appointment, the Chief Executive Officer shall be an ex-officio member of the
+Board.
+6. The Authority may employ such other persons as are necessary to assist the Chief
+Executive Officer in the performance of the functions of the Authority on terms and conditions,
+and according to the procedures applicable to an employee of a public body.
+7. (1) The Minister may give to the Authority directions in writing on the policy to be
+followed by the Authority in the performance of its functions, and the Authority shall comply
+with those directions.
+(2) Directions under subparagraph (1) shall not restrict or be inconsistent with the
+functions conferred on the Authority under this Order.
+76
+8. (1) The Authority may, for the purpose of the performance of its functions, with the
+approval of the Minister granted after consultation with the Minister responsible for Finance,
+borrow moneys in or outside Seychelles.
+(2) The Authority may give security over any of its assets for the purpose of a
+borrowing under subparagraph (1).
+(3) The Minister responsible for Finance may, out of public moneys, make, at the
+request of the Minister, advances to the Authority of such amounts and on such terms as the
+Minister responsible for Finance, acting after consultation with the Minister, determines.
+(4) The Authority shall make to the Republic at such times and in such manner, as the
+Minister responsible for Finance acting after consultation with the Minister may direct, payments
+of such amounts as may be so directed in or towards the repayment of advances made pursuant to
+subparagraph (3), or of any sums issued in fulfillment of any guarantee given under any written
+law in respect of any amount borrowed in accordance with subparagraph (1), or of interest on any
+such advances or sums at the rate directed by the Minister responsible for Finance.
+9. (1) The funds of the Authority shall consist of-
+(a) moneys appropriated by an Appropriation Act and paid to the Authority;
+(b) moneys lawfully borrowed by the Authority;
+(c) moneys due on any investment made by the Authority;
+(d) other moneys lawfully received by the Authority for the purposes of the
+Authority.
+(2) Funds of the Authority may be applied by the Authority-
+(a) in payment or discharge of the costs, expenses and other obligations of the
+Authority; and
+(b) in payment of remuneration, fees and allowances payable to a member and
+the employees of the Authority.
+(3) Moneys of the Authority not immediately required for the purposes of the
+Authority may be invested-
+(a) on fixed deposits with one, or more than one, bank;
+(b) in Government securities; or
+(c) in any other manner which, the Authority, with the approval of the Minister
+granted after consultation with the Minister responsible for Finance, thinks
+fit.
+(4) The Authority shall, after making adequate provision for-
+(a) acquisition or replacement of assets;
+77
+(b) depreciation of assets;
+(c) repayment of loans and advances;
+(d) repayment of interest on all charges and expenses incurred in connection
+with loans; and
+(e) any matter which the Authority considers necessary, including any
+investment under subparagraph (3),
+pay, with the approval of the Minister, the surplus funds remaining for each financial year into the
+Consolidated Fund.
+10. (1) For-
+(a) each financial year of the Authority; and
+(b) any longer period which the Minister acting after consultation with the
+Minister responsible for Finance may require,
+the Authority shall prepare and submit to the Minister and the Minister responsible for Finance,
+not later than such date as the Minister may direct, estimates of the income and expenditure of the
+Authority, including its capital budget for the financial year or any such longer period.
+(2) The Minister may, acting after consultation with the Minister responsible for
+Finance, approve with or without modification the estimates submitted under subparagraph (1).
+(3) After the Minister approves the estimates under subparagraph (2), the estimates so
+approved shall be the estimates of the Authority for the period for which it is prepared.
+(4) The financial year of the Authority shall be a period of 12 months ending on 31sr
+of December of any year.
+(5) The first financial year of the Authority shall end on 31st December next following
+the date of publication of this Order.
+11. (1) The Authority may open and maintain an account or accounts with one, or more
+than one, bank and shall maintain at all times at least one such account.
+(2) The Authority shall pay all funds of the Authority into an account maintained under
+subparagraph (1).
+12. (1) The Authority shall keep proper accounts and records in relation to the accounts
+and shall prepare, in respect of each financial year of the Authority, statement of accounts in such
+form as the Minister, acting after consultation with the Minister responsible for Finance, may
+direct.
+(2) The accounts and statement of accounts of the Authority shall be audited by an
+auditor appointed by the Minister acting after consultation with the Minister responsible for
+Finance.
+78
+(3) As soon as the accounts and statement of accounts of the Authority in respect of
+any financial year of the Authority have been audited pursuant to subparagraph (2), the Authority
+shall submit to the Minister and the Minister responsible for Finance a copy of the statement
+together with a copy of any report made by the auditor on that statement or on the accounts of the
+Authority.
+13. (1) The Authority is managed by a Board appointed by the Minister, consisting of the
+following members-
+(a) the Chief Executive Officer appointed under paragraph 5(1);
+(b) a representative of the Ministry responsible for Environment nominated by
+the Minister;
+(c) a representative of the Ministry responsible for Defence nominated by the
+Minister, after consultation with the Minister responsible for Defence.
+(d) a representative of the Seychelles Tourism Board nominated by the
+Chairman of the Board;
+(e) such other persons as may be appointed by the Minister from among persons
+who, in the opinion of the Minister, have knowledge and experience likely to
+contribute to the successful direction of the affairs and operations of the
+Authority.
+(2) The Minister shall designate a member of the Board appointed under subparagraph
+(1) to be Chairperson of the Board.
+(3) A member appointed under subparagraph (1) shall hold office for a period of two
+years and is eligible for reappointment.
+(4) The Minister shall cause the names of the members appointed under subparagraph
+(1) to be published in the Gazette.
+14. (1) The Chairperson may resign from office by a letter addressed to the Minister and
+the resignation shall take effect from the date on which the Minister receives the letter.
+(2) A member other than the Chairperson may resign from office by a letter to the
+Minister and transmitted through the Chairperson and the resignation shall take effect from the
+date on which the Minister receives the letter.
+(3) The Minister may remove a member from office upon being satisfied that the
+member-
+(a) is, for whatever reason, permanently incapable of discharging the duties of a
+member;
+(b) has been absent, without leave of the Board, from 3 consecutive meetings of
+the Board;
+(c) has neglected the duties of a member; or
+79
+(d) is guilty of an offence.
+(4) Where a member resigns or is removed from office, other than on the expiration of
+the period of office-
+(a) the Minister shall appoint a person to hold office for the remaining period of
+office of the member referred to under paragraph 13 (1)(b), (c) and (e); or
+(b) the person who nominated the member who vacated membership under
+paragraph 13(1)(d) shall nominate another person for appointment to the
+Board.
+(5) On the publication in the Gazette of the name of the person so appointed under
+subparagraph 4(a) or (b), the person shall hold office for the unexpired period of membership of
+the member who vacated membership.
+15. (1) The Chairperson is to preside at all meetings of the Board at which he or she is
+present.
+(2) if the Chairperson is absent from a meeting, the members present shall elect from
+among them a member to preside, and the member shall, with respect to such meeting or any
+business transacted, have all the powers of the Chairperson.
+16. (1) The Board may meet not less than six times in any one calendar year and at such
+other times as the Chairperson may determine.
+(2) The decision of the majority of the members present and voting at any meeting of
+the Board shall be considered to be the decision of the Board.
+(3) No act, decision or proceeding of the Board shall be questioned on account of any
+vacancy in the membership thereof, or on account of appointment of any member of the Board
+being defective if the act was done or authorised or the decision was taken or the proceeding took
+place by or in accordance with a majority vote of the persons who at the time were entitled to act
+as members.
+17. One half the number of members of the Board shall constitute a quorum for any meeting
+of the Board.
+18. A member appointed under paragraph 13(1)(e) may e paid such allowance as may be
+determined by the Minister.
+19. Subject to this Order, the Board shall regulate its own proceedings.
+20. The Environment Protection (Marine Parks Authority) Order, 1996 is repealed.
+__________________
+80
+Section 10 (3)
+[6th September 2010]
+Environment Protection (Ozone) Regulations, 2010
+1. These Regulations may be cited as the Environment Protection (Ozone) Regulations,
+2010.
+2. In these Regulations —
+“Administrative Officer” means the officer in charge of the Ozone Unit;
+“controlled product” means a product containing, made with or designed for a controlled
+substance and includes the products specified in Schedule 1, Part C;
+“controlled substance” means a substance specified in Schedule 1, Part B;
+“Minister” means the Minister responsible for environment and “Ministry” is construed
+accordingly;
+“Ozone Unit” means the body designated by the Minister to implement these Regulations
+and other laws relating to Ozone;
+“prescribed product” means a product containing, made with or designed for a prescribed
+substance and includes the products specified in Schedule 1, Part C; and
+“prescribed substance” means a substance specified in Schedule 1, Part A.
+3. These Regulations apply to —
+(a) controlled substances and products;
+(b) prescribed substances and products; and
+(c) persons who, in the course of any licensed activity or otherwise produce,
+manufacture, import, export, sell, purchase or use
+(i) controlled substances or products; or
+(ii) prescribed substances or products.
+4. (1) A person shall not produce, manufacture, import, export, sell, purchase or use —
+(a) prescribed substance; or
+(b) prescribed product.
+(2) A person who imports a prescribed substance or product in contravention of sub
+regulation (1) shall re-ship the substance or product to the port of origin at his or her cost.
+5. A person shall not produce or manufacture —
+SI. 64 of 2010
+81
+(a) controlled substance; or
+(b) a controlled product.
+6. A person shall not import, export or sell —
+(a) a controlled substance; or
+(b) a controlled product,
+unless that person —
+(i) is registered by the Ozone Unit under regulation 11; and
+(ii) holds a permit issued under regulation 12.
+7. (1) A person shall not purchase or use a controlled substance without a permit issued
+under regulation 12.
+(2) For the purposes of this section, “use” includes installing, servicing and operating a
+controlled substance.
+8. (1) A person shall not decommission —
+(a) a controlled substance or product; or
+(b) a prescribed substance or product,
+except under and in accordance with the conditions of a licence issued under the Licences Act
+(Cap 113).
+(2) A licence referred to in sub regulation (1) shall be issued only to a person who has
+satisfied the Administrative Officer that the person has completed a course of training approved
+by the Administrative Officer.
+9. A person who imports, exports, sells, purchases, or uses a controlled substance or product
+shall make arrangements for the recovery of controlled substances from—
+(i) refrigerators and air conditioners;
+(ii) fire protection systems;
+(iii) equipment containing such substances;
+(iv) controlled or prescribed products before the recycling or reclamation, and during
+servicing and maintenance of such products; and
+(v) controlled or prescribed products before dismantling or disposal of such products,
+at that person's own cost and under the supervision of an officer so authorised by
+the Administrative Officer.
+82
+10. A person who imports, exports, sells, purchases, or uses controlled substances or products
+shall take all practicable measures to prevent leakage of substances constituting controlled
+products whenever they handle controlled products.
+11. (1) An application for registration under regulation 6(i) shall be made to the
+Administrative Officer in the form specified in Schedule 2, Part A and shall be accompanied by—
+(a) such documents as may be specified in the form; and
+(b) the prescribed fee.
+(2) An applicant who satisfies the Administrative Officer that he or she meets the
+requirements for registration shall be registered under subregulation (1).
+12. (1) An application for a permit under regulations 6(ii) and 7 shall be made to the
+Administrative Officer in the form specified in Schedule 2, Part B accompanied by —
+(a) such documents as may be specified in the form; and
+(b) the prescribed fee.
+(2) Upon receipt of an application under subregulation (1), the Administrative Officer
+shall consider the application and issue or refuse to issue a permit.
+(3) A permit issued under these Regulations shall —
+(a) be subject to any conditions set out in the permit;
+(b) remain in force for such period as may be specified in the permit; and
+(c) not be transferable.
+13. A permit issued under regulation 12 may be renewed by making an application for a
+renewal to the Administrative Officer in writing, accompanied by the prescribed fee.
+14. The Administrative Officer may cancel a permit issued under regulation 12, if any of the
+conditions set out in the permit is contravened, after giving the holder of the permit an
+opportunity to show cause why the permit should not be cancelled.
+15. (1) A person aggrieved by the decision of the Administrative Officer to —
+(a) refuse to register that person under regulation 11;
+(b) refuse to issue or renew a permit under regulation 12 or 13 as the case may
+be; or
+(c) cancel a permit under 14, may appeal in writing to the Minister against the
+decision, within 30 days of the decision.
+(2) The decision of the Minister made under subregulation (1) shall be final.
+83
+16. (1) The Minister may empower any officer of the Ministry to be an authorised officer
+for the purpose of ensuring compliance with these Regulations.
+(2) The provisions of section 22 of the Act shall apply mutatis mutandis to an
+authorised officer empowered under these Regulations.
+17. (1) A fee of SR3000 per equipment shall be imposed for the import of prescribed
+substance or prescribed product containing, made with or designed for prescribed substance, and
+SR300 per kg for all import of prescribed substance or prescribed product.
+(2) (a) A person who contravenes regulations 4, 5, 6, 7, 8, 9 and 10; or
+(b) a person who fails to pay the penalty imposed under regulation 17(1),
+commits an offence and is liable on conviction to imprisonment for a period
+not exceeding 2 years and to a fine not exceeding SR20,000.
+18. Notwithstanding any other provision of these Regulations, a person shall not produce,
+manufacture, import, export, sell purchase, or use a controlled substance or product on or after 1st
+January 2020.
+19. The Environment Protection (Ozone) Regulations, 2000, are repealed.
+20. A licence or permit issued under the Environment Protection (Ozone) Regulations, 2000,
+shall during its period of validity have effect as if the licence or permit were issued under these
+Regulations.
+SCHEDULE 1
+Part A: Prescribed substances.
+This includes any substances mentioned below or a compound containing any such substance and
+all isomers of such substances.
+Group Substance Ozone-Depleting Potential
+CFCl3 (CFC-11) 1.0
+CF2Cl2 (CFC-12) 1.0
+C2F3Cl3 (CFC-113) 0.8
+C2F4Cl2 (CFC-114) 1.0
+84
+C2F5C l (CFC-115) 0.6
+CF2BrCl (halon-1211) 3.0
+CF3Br (halon-1301) 10.0
+C2F4Br2 (halon-2402) 6.0
+CF3C1 (CFC-13) 1.0
+C2FC15 (CFC-111) 1.0
+C2F2C14 (CFC-112) 1.0
+C3FC17 (CFC-211) 1.0
+C3F2C16 (CFC-212) 1.0
+C3F3C15 (CFC-213) 1.0
+C3F4C14 (CFC-214) 1.0
+C3F5C13 (CFC-215) 1.0
+C3F6C12 (CFC-216) 1.0
+C3F7C1 (CFC-217) 1.0
+CC14 Carbon tetrachloride 1.1
+C2H3C13* 1,1,1-trichloroethane*
+(methyl chloroform)
+0.1
+85
+CH3Br Methyl bromide 0.6
+ This formula does not refer to 1, 1, 2-trichloroethane.
+Part B: Controlled Substances
+This includes any substances mentioned below or a compound containing any such substance and
+all isomers of such substances.
+Group Substance Number of isomers Ozone-Depleting
+Potential
+CHFC12 (HCFC-21)** 1 0.04
+CHF2C1 (HCFC-22)** 1 0.055
+CH2FC1 (HCFC-31) 1 0.02
+C2HFC14 (HCFC-121) 2 0.01 0.04
+C2HF2C13 (HCFC-122) 3 0.02 0.08
+C2HF3C12 (HCFC-123) 3 0.02 0.06
+CHC12CF3 (HCFC-123)** 0.02
+C2HF4C1 (HCFC-124) 2 0.02 0.04
+CHFC1CF3 (HCFC-124)** 0.022
+C2H2FC13 (HCFC-131) 3 0.007 0.05
+C2H2F2C12 (HCFC-132) 4 0.008 0.05
+86
+C2H2F3C1 (HCFC-133) 3 0.02 0.06
+C2H3FC12 (HCFC-141) 3 0.005 0.07
+CH3CFC12 (HCFC-141b)** 0.11
+C2H3F2C1 (HCFC-142) 3 0.008 0.07
+CH3CF2C1 (HCFC-142ª)** 0.065
+C2H4FC1 (HCFC-151) 2 0.003 0.005
+C3HFC16 (HCFC-221) 5 0.015 0.07
+C3HF2C15 (HCFC-222) 9 0.01 0.90
+C3HF3C14 (HCFC-223) 12 0.01 0.08
+C3HF4C13 (HCFC-224) 12 0.01 0.09
+C3HF5C12 (HCFC-225) 9 0.02 0.07
+CF3CF2CHC12 (HCFC-225ca)** 0.025
+CF2C1CF2CHC1F (HCFC-225cb)** 0.033
+C3HF6C1 (HCFC-226) 5 0.02 0.10
+C3H2FC15 (HCFC-231) 9 0.05 0.09
+C3H2F2C14 (HCFC-232) 16 0.008 0.10
+C3H2F3C13 (HCFC-233) 18 0.007 0.23
+87
+C3H2F4C12 (HCFC-234) 16 0.01 0.28
+C3H2F5C1 (HCFC0235) 9 0.03 0.52
+C3H3FC14 (HCFC-241) 12 0.004 0.09
+C3H3F2C13 (HCFC-242) 18 0.005 0.13
+C3H3F3C12 (HCFC-243) 18 0.007 0.12
+C3H3F4C1 (HCFC-244) 12 0.009 0.14
+C3H4FC13 (HCFC-251) 12 0.001 0.01
+C3H4F2C12 (HCFC-252) 16 0.005 0.04
+C3H4F3C1 (HCFC-253) 12 0.003 0.03
+C3H5FC12 (HCFC-261) 9 0.002 0.02
+C3H5F2C1 (HCFC-262) 9 0.002 0.02
+C3H6FC1 (HCFC-271) 5 0.001 0.03
+CHFBr2 1 1.00
+CHF2Br (HBFC-22B1) 1 0.74
+CH2FBr 1 0.73
+C2HFBr4 2 0.3 0.8
+C2HF2Br3 3 0.5 18
+88
+C2HF3Br2 3 0.4 1.6
+C2HF4Br 2 0.7 1.2
+C2H2FBr3 3 0.1 1.1
+C2H2F2Br2 4 0.2 1.5
+C2H2F3Br 3 0.7 1.6
+C2H3FBr2 3 0.1 1.7
+C2H3F2Br 3 0.2 1.1
+C2H4FBr 2 0.07 0.1
+C3HFBr6 5 0.3 1.5
+C3HF2Br5 9 0.2 1.9
+C3HF3Br4 12 0.3 1.8
+C3HF4Br3 12 0.5 2.2
+C3HF5Br2 9 0.9 2.0
+C3HF6Br 5 0.7 3.3
+C3H2FBr5 9 0.1 1.9
+C3H2F2Br4 16 0.2 2.1
+C3H2F3Br3 18 0.2 5.6
+89
+C3H2F4Br2 16 0.3 7.5
+C3H2F5Br 8 0.9 14.0
+C3H3FBr4 12 0.08 1.9
+C3H3F2Br3 18 0.1 3.1
+C3H3F3Br2 18 0.1 2.5
+C3H3F4Br 12 0.3 4.4
+C3H4FBr3 12 0.03 0.3
+C3H4F2Br2 16 0.1 1.0
+C3H4F3Br 12 0.07 0.8
+C3H5FBr2 9 0.04 0.4
+C3H5F2Br 9 0.07 0.8
+C3H6FBr 5 0.02 0.7
+CH2BrC1 bromochloromethane 1 0.12
+Part C: Products containing, made with or designed for prescribed or
+controlled substances
+1. Automobile and truck air conditioning units (whether incorporated in vehicles or not).
+2. Domestic and commercial refrigeration and air conditioning/heat pump equipment,
+including Refrigerators; Freezers; Dehumidifiers; Water coolers; Ice machines; Air
+conditioning and heat pump units.
+90
+3. Aerosol products, except medical aerosols.
+4. Portable fire extinguishers.
+5. Insulation boards, panels and pipe covers.
+6. Pre-polymers.
+——————
+SCHEDULE 2
+Part A: Form 1
+APPLICATION FOR REGISTRATION AS IMPORTER EXPORTERS
+AND SELLERS OF NON OZONE DEPLETING SUBSTANCES (ODS)
+To be filled in two copies (one will be returned to the applicant with a
+decision)
+Name of the Applicant:
+..................................................................................
+Importer Exporter
+(from which company)
+Seller
+(from which company)
+Please tick the appropriate box.
+Enterprise/Organisation Identification No.:
+.......................................................................................
+Postal Address:
+.........................................................................................................................
+.........................................................................................................................
+Tel No:........................................................Fax ...............................................
+No:..............................................................
+91
+Email
+address: ............................................................................................................
+Contact person: (Name/Title)
+.......................................................................................
+Person authorised to act on behalf of the Enterprise/Organisation (Name/Title):
+.........................................................................................................................
+.........................................................................................................................
+List of controlled substances and products to be imported, exported or sold:
+HCF/HBFCs (Use chemical code name)
+Controlled
+Substances
+Requested
+Quantities
+Size of Cylinder Exporting
+Country
+Intended Use
+Additional information to be attached to this application:
+• Licence Number of Enterprise/Organisation issued by Seychelles Licensing Authority;
+• Copies of any certificates of the Refrigerant Technician(s) dealing with controlled
+substances and products;
+• Authorisation of Enterprise/Organisation for person to act on behalf of
+Enterprise/Organisation;
+• Information on previously imported quantities of controlled substances.
+92
+Please note:
+It is an offence to import, export, sell, purchase or use prescribed substances (Annexe 1).
+It is an offence to import, export, sell, purchase and use controlled substance (Annexe 2).
+A quota system is in place for the import of controlled substances.
+The import of HCFCs and HBFCs shall be banned from 1st January 2020.
+I, ....................................................................................................., authorised to act on behalf
+of....................................................................................., certify that the information given in
+this application and its annexes is correct.
+Name in block letters:................................................................
+Title:..........................................................................................
+Signature:..................................................................................
+Date and Place:..........................................................................
+FORM 2
+APPLICATION TO IMPORT NON OZONE DEPLETING
+SUBSTANCES (ODS)
+To be filled in two copies (one will be returned to the applicant with a decision)
+Name of the Applicant:
+..................................................................................................
+Enterprise/Organisation identification no:
+..................................................................................................
+Postal Address:
+.........................................................................................................................
+.........................................................................................................................
+Tel No:.....................................................Fax No:............................................
+93
+Email address:..................................................................................................
+Contact person: (Name/Title)
+.........................................................................................................................
+Person authorised to act on behalf of the Enterprise/Organisation (Name/Title):
+.........................................................................................................................
+.........................................................................................................................
+List of Controlled substances and products to be imported:
+HCFC/HFCs (Use chemical code name)
+Controlled
+Substances
+Requested
+Quantities
+Size of Cylinder Exporting
+Country
+Intended Use
+Expected Date of Arrival: .................................................................................
+Port of Entry:....................................................................................................
+Name of Carrier:...............................................................................................
+Additional information to be attached to this application:
+• Licence Number of Enterprise/Organisation issued by Seychelles Licensing Authority;
+• Copies of any certificates of the Refrigerant Technician(s) dealing with controlled
+substances and products;
+• Authorisation of Enterprise/Organisation for person to act on behalf of
+Enterprise/Organisation;
+• Information on previously imported quantities of controlled substances.
+Please note:
+94
+It is an offence to import, export, sell, purchase and use prescribed substances (Annexe 1).
+It is an offence to import, export, sell, purchase and use controlled substance (Annexe 2).
+A quota system is in place for the import of controlled substances.
+The import of HCFCs and HBFCs shall be banned from 1st January 2020.
+I, .........................................................................................................., authorised to act on behalf
+of......................................................................................, certify that the information given in this
+application and its annexes is correct.
+Name in block letters:................................................................
+Title:..........................................................................................
+Signature:..................................................................................
+Date and Place:..........................................................................
+__________________________
