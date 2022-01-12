@@ -425,10 +425,12 @@ def test_bigram_frequency_full_text_preserve_provision_delimiters():
         [0.115, 0.097, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_bigram_frequency_full_text_do_not_preserve_provision_delimiters():
@@ -837,10 +839,12 @@ def test_bigram_frequency_full_text_do_not_preserve_provision_delimiters():
         [0.111, 0.092, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_bigram_frequency_full_text_list_of_states_to_include():
@@ -1154,10 +1158,12 @@ def test_bigram_frequency_full_text_list_of_states_to_include():
         [0.115, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_bigram_frequency_provisions():
@@ -1630,10 +1636,12 @@ def test_bigram_frequency_provisions():
         [0.0, 0.055, 0.0, 0.054, 0.023, 0.0, 0.117, 0.0, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_bigram_frequency_provisions_list_of_states_to_include():
@@ -1972,10 +1980,12 @@ def test_bigram_frequency_provisions_list_of_states_to_include():
         [0.0, 0.055, 0.0, 0.117, 0.0, 1.0],
     ]
 
-    assert expected_similarity_matrix_labels == actual_similarity_matrix_labels
+    utilities.compare_expected_and_actual_similarity_matrix_labels(
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
     utilities.compare_expected_and_actual_similarity_matrices(
-        expected_similarity_matrix, actual_similarity_matrix)
+        expected_similarity_matrix, actual_similarity_matrix,
+        expected_similarity_matrix_labels, actual_similarity_matrix_labels)
 
 
 def test_bigram_frequency_output_directory_does_not_exist():
