@@ -1,66 +1,46 @@
 #!/bin/bash
 
-function remove_all_text_before_first_article {
-  sed -E -n '/^\(1\)/,$p'
+function remove_all_text_before_first_header {
+  sed -E 's/(CHAPITRE I):/\n\1 -/' | \
+    sed -n '/^CHAPITRE I /,$p'
 }
 
 function amend_errors_in_articles {
-  sed -E 's/ ARTICLE\. 2/\n\n(2) /' | \
-    sed -E 's/ ARTICLE 3/\n\n(3)/' | \
-    sed -E 's/ ARTIC:/\n\n(4)/' | \
-    sed -E 's/ ARTICLE. 6: ./\n\n(6)/' | \
+  sed -E 's/Energie/Énergie/g' | \
     # Article 1
-    amend_error_in_article 1 'Au \. sens' 'Au sens' | \
-    amend_error_in_article 1 ',\.d9:;3présegt-;\.décret\.' 'du présent décret,' | \
-    amend_error_in_article 1 ',;oppp::ente,nd -par\.' 'on entend par' | \
-    amend_error_in_article 1 'toute\.-activite~:-\.huma,ine' 'toute activité humaine' | \
-    amend_error_in_article 1 ':..ay~t:~~~o~u~~.effet' ' ayant pour effet' | \
-    amend_error_in_article 1 '~\.~de-nuire \.,\.\., \. \.' ' de nuire ' | \
-    amend_error_in_article 1 "dfapporterdes'--perturbati~n~s" "d’apporter des perturbations" | \
-    amend_error_in_article 1 '-notab1~~~à11~fro~e~~t' " notables à l’environnement" | \
-    amend_error_in_article 1 comprerinent comprennent | \
-    amend_error_in_article 1 roytes routes | \
-    amend_error_in_article 1 "toute'activité" 'toute activité' | \
-    amend_error_in_article 1 zpporter apporter | \
-    # Article 2
-    amend_error_in_article 2 ';,: \.,&q~op@ent\.\.a-qz~r\.egI,eess' 'Conformément aux règles' | \
-    amend_error_in_article 2 '\.rel\+tives' relatives | \
-    amend_error_in_article 2 "\[1\]' " "l'" | \
-    amend_error_in_article 2 "-:et \.- du \. ',c,we L'de',\." ' et du cadre de' | \
-    amend_error_in_article 2 " , ' 1 es _ ac , t'ions \. \._:" ' , les actions ' | \
-    amend_error_in_article 2 '\. 1-ors- c& \.1~,~cut~o' "lors de l'exécution " | \
-    amend_error_in_article 2 "~es~'9f~d~:~~a~auX" 'des grands travaux ' | \
-    amend_error_in_article 2 'r;do~Y~resee~~é~~' 'doivent préserver' | \
-    amend_error_in_article 2 '--- \[•\] SSOILC~S' 'les ressources naturelles' | \
-    amend_error_in_article 2 's2t-üyaTè-g-e ,,, \.-" 2a ---' 'et minimiser la' | \
-    amend_error_in_article 2 "~egr~4~07'c'\. \[•\] ---" 'dégradation de' | \
-    amend_error_in_article 2 '~ëT~~~~romement~2é~\.;-' "l’environnement et " | \
-    amend_error_in_article 2 ', -, >- kadre >-\.de:cv~ e,' 'du cadre de vie.' | \
-    # Article 3
-    amend_error_in_article 3 '-: #-Tout proj et' 'Tout projet' | \
-    amend_error_in_article 3 '>-cl,e:<qrands -travaux' ' de grands travaux' | \
-    amend_error_in_article 3 "-réaliser par 1 ' Etat" "réaliser par l’État" | \
-    amend_error_in_article 3 '\.oTectivités:' ' collectivités' | \
-    amend_error_in_article 3 "accompap-é: 'dj\.\.\.~ e \.;" "accompagné d’une " | \
-    amend_error_in_article 3 ' \[•\]' '' | \
-    amend_error_in_article 3 "'&ablies" établies | \
-    amend_error_in_article 3 'milieu-' milieu | \
-    # Article 4
-    amend_error_in_article 4 'sl;rr' sur | \
-    amend_error_in_article 4 'de ique' 'de la République' | \
-    amend_error_in_article 4 cornote compte | \
-    amend_error_in_article 4 '_du' 'du' | \
-    amend_error_in_article 4 'Agenda-21' 'Agenda 21' | \
-    amend_error_in_article 4 "juin'i992" 'juin 1992' | \
-    amend_error_in_article 4 '-Janeiro' Janeiro | \
-    # Article 5
-    amend_error_in_article 5 modaIités modalités | \
-    # Article 6
-    amend_error_in_article 6 "l'-Environnement" "l'Environnement" | \
-    amend_error_in_article 6 "1'Energie" "l'Énergie" | \
-    amend_error_in_article 6 "'Urbanisme" "l'Urbanisme" | \
-    amend_error_in_article 6 'de et du' "de l'Artisanat et du" | \
-    amend_error_in_article 6 ' P\/ Le.*$' ''
+    amend_error_in_article 1 'physique, chimique, biologique' 'physiques, chimiques, biologiques' | \
+    # Article 10
+    amend_error_in_article 10 'domestiques comprennent' 'domestiques, comprennent' | \
+    # Article 14
+    amend_error_in_article 14 1er 1 | \
+    # Article 15
+    amend_error_in_article 15 'le présente' 'la présente' | \
+    amend_error_in_article 15 'Agriculture de' 'Agriculture, de' | \
+    amend_error_in_article 15 Agents agents | \
+    amend_error_in_article 15 'procès verbal' 'procès-verbal' | \
+    amend_error_in_article 15 'le fermeture' 'la fermeture' | \
+    # Article 16
+    amend_error_in_article 16 "200,000 à 1,200,000 F QU'A" '200.000 à 1.200.000 F CFA' | \
+    amend_error_in_article 16 'une des peines' 'une de ces peines' | \
+    # Article 17
+    amend_error_in_article 17 'le présente' 'la présente' | \
+    amend_error_in_article 17 '500,000 à 1,000,000' '500.000 à 1.000.000' | \
+    # Article 18
+    amend_error_in_article 18 '20,000 à 300,000' '20.000 à 300.000' | \
+    # Article 19
+    amend_error_in_article 19 '500,000 à 2,500,000' '500.000 à 2.500.000' | \
+    # Article 20
+    amend_error_in_article 20 astreint astreinte | \
+    amend_error_in_article 20 '200,000 à 1 200 000' '200.000 à 1.200.000' | \
+    # Article 22
+    amend_error_in_article 22 ' KOULOUBA.*$' ''
+}
+
+function amend_errors_in_headers {
+  sed -E 's/DEFINITION/DÉFINITION/g' | \
+    sed -E 's/ELIMINATION/ÉLIMINATION/g' | \
+    sed -E 's/DECHET/DÉCHET/g' | \
+    sed -E 's/EMISSION/ÉMISSION/g'
 }
 
 function preprocess_state_and_language_input_file {
@@ -72,6 +52,7 @@ function preprocess_state_and_language_input_file {
   local language="$2"
 
   apply_common_transformations "$input_file_path" "$language" | \
-    remove_all_text_before_first_article | \
-    amend_errors_in_articles
+    remove_all_text_before_first_header | \
+    amend_errors_in_articles | \
+    amend_errors_in_headers
 }
