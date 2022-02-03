@@ -20,7 +20,7 @@ function remove_all_text_after_last_article {
 function amend_errors_in_headers {
   sed -E 's/([^^])PART/\1\n\nPART/g' | \
     sed -E 's/^(PART [A-Z]+)/\1 -/g' | \
-    sed -E 's/PART \[•\] IV/PART - IV/' | \
+    sed -E 's/PART \[•\] IV/PART IV -/' | \
     sed -E 's/II - 5/II -/' 
 }
 
@@ -104,13 +104,14 @@ function amend_errors_in_articles {
     amend_error_in_article 25 ':-' ':' | \
     #Article 29
     amend_error_in_article 29 '\[4\] \[a\]' '[4][a]' | \
-    amend_error_in_article 29 'Rs\. \[5000\]' 'R5.000. ' | \
+    amend_error_in_article 29 'Rs\. \[,000\]' 'R5.000. ' | \
     amend_error_in_article 29 '\[4\] \[a\]' '[4][a]' | \
     amend_error_in_article 29 '20 ' '' | \
     amend_error_in_article 29 'R \[100\]' 'R100. ' | \
     #Article 30
     amend_error_in_article 30 'sections 7' 'section 7' | \
     amend_error_in_article 30 '\[6\] section' '[6] or section' | \
+    sed -E 's/R,000/R5,000/g' | \
     #Article 31
     amend_error_in_article 31 '21 ' '' | \
     amend_error_in_article 31 'destroys , pulls' 'destroys, pulls' | \
