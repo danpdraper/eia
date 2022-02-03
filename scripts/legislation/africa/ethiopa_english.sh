@@ -41,6 +41,8 @@ function amend_errors_in_articles {
     amend_error_in_article 2 '~egions' 'regions' | \
     amend_error_in_article 2 ';.' ';' | \
     amend_error_in_article 2 'things.' 'things;' | \
+    amend_error_in_article 2 'to, land atmosphere, whether' 'to land, atmosphere, whether' | \
+    amend_error_in_article 2 '"Project" mans' '"Project" means' | \
     #Article 3
     sed -E 's/Pro visions/Provisions/' | \
     sed -z 's/\nGeneral Provisions/General Provisions/' | \
@@ -75,13 +77,15 @@ function amend_errors_in_articles {
     sed -E '/lR PBfYB/,/2002-Page 1955/d' | \
     amend_error_in_article 9 'stasifactoriey avoided Article 0' 'satisfactorily avoided.' | \
     amend_error_in_article 9 'limpacts' 'impacts' | \
+    amend_error_in_article 9 'countered, or' 'countered; or' | \
     #Article 10
     sed -E 's/Validity of Approved Environmental Impact Study\| Report/\n\nValidity of Approved Environmental Impact Study Report\n(10)/' | \
     amend_error_in_article 10 'assessment, PART' 'assessment. PART' | \
     amend_error_in_article 10 'ageqcy' 'agency' | \
     amend_error_in_article 10 'shal1,' 'shall, ' | \
+    amend_error_in_article 10 'circumstance' 'circumstances' | \
     #Article 11
-    sed -E 's/Occurrence of Ne W Circumstance/\n\nOccurrence of New Circumstance\n(11)/' | \
+    sed -E 's/Occurrence of Ne W Circumstance/\n\nOccurrence of New Circumstances\n(11)/' | \
     #Article 12
     amend_error_in_article 12 '7%-' '\n\n7%-' | \
     sed -E 's/\[2\] When the/\n[2] When the/' | \
@@ -89,12 +93,14 @@ function amend_errors_in_articles {
     sed -z 's/\n\n\[2\] When/[2] When/' | \
     amend_error_in_article 12 ' ~' '' | \
     amend_error_in_article 12 'comrnitments' 'commitments' | \
+    amend_error_in_article 12 'rectification measure' 'rectification measures' | \
     #Article 13
-    sed -E 's/En vironmentallmpact Assessment ofpublic/Environmental Impact Assessment of public/' | \
+    sed -E 's/En vironmentallmpact Assessment ofpublic/Environmental Impact Assessment of Public/' | \
     amend_error_in_article 13 'enail' 'entail' | \
     #Article 14
     sed -z 's/\n\n\[2\] The regional/[2] The regional/' | \
     #Article 15
+    sed -E 's/Public participation/Public Participation/' | \
     amend_error_in_article 15 'its evaluation.' 'its evaluation.\n' | \
     sed -E "/ 7% '/,/2002-Page/d" | \
     amend_error_in_article 15 'Athority' 'Authority' | \
@@ -110,13 +116,14 @@ function amend_errors_in_articles {
     amend_error_in_article 18 'Bin' 'Birr' | \
     amend_error_in_article 18 'fulfil1' 'fulfill' | \
     #Article 19
+    sed -E 's/Issue regulations/Issue Regulations/' | \
     sed -E 's/PO wer/Power/g' | \
     #Article 21
     amend_error_in_article 21 'implemlentation' 'implementation' | \
     #Article 23
     sed -E 's/3\*/3rd/g' | \
     sed -E 's/\[2002\]/2002./' | \
-    amend_error_in_article 23 '\[2002\].*$' '2002.'
+    amend_error_in_article 23 'Done at.*$' ''
     }
 
 function amend_errors_in_headers {
