@@ -104,7 +104,7 @@ function amend_errors_in_articles {
     amend_error_in_article 25 ':-' ':' | \
     #Article 29
     amend_error_in_article 29 '\[4\] \[a\]' '[4][a]' | \
-    amend_error_in_article 29 'Rs\. \[,000\]' 'R5.000. ' | \
+    amend_error_in_article 29 'Rs\. \[,000\]' 'R5,000. ' | \
     amend_error_in_article 29 '\[4\] \[a\]' '[4][a]' | \
     amend_error_in_article 29 '20 ' '' | \
     amend_error_in_article 29 'R \[100\]' 'R100. ' | \
