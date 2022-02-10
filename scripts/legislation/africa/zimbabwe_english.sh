@@ -51,9 +51,7 @@ function amend_errors_in_articles {
     sed -E 's/a invasive/an invasive/g' | \
     sed -E 's/Board: Provided/Board, provided/g' | \
     #Article 1
-    amend_error_in_article 1 '2003- ' '2003—' | \
-    amend_error_in_article 1 ':which' '—which' | \
-    amend_error_in_article 1 'Editor.' 'Editor.]' | \
+    amend_error_in_article 1 '\[S.I. 103.*$' '' | \
     #Article 2
     amend_error_in_article 2 'flowing,fresh,brackish' 'flowing, fresh, brackish' | \
     #ARTICLE 4
@@ -79,6 +77,8 @@ function amend_errors_in_articles {
     amend_error_in_article 27 'subjectmatter' 'subject matter' | \
     #Article 29
     sed -z 's/\n(29) documents/ documents\n(29)/' | \
+    #Article 34
+    amend_error_in_article 34 'Agency: Provided' 'Agency, provided' | \
     #Article 36
     sed -E 's/Director- General/Director-General/' | \
     amend_error_in_article 36 'mangaged' 'managed' | \
@@ -106,17 +106,21 @@ function amend_errors_in_articles {
     amend_error_in_article 50 'it: Provided' 'it, provided' | \
     #Article 54
     amend_error_in_article 54 'AuditorGeneral' 'Auditor-General' | \
+    #Article 55
+    amend_error_in_article 55 '\[Wording altered to make grammatical sense—Editor.\] ' '' | \
     #Article 56
     amend_error_in_article 56 'purposes \[iv\]' 'purposes; [iv]' | \
     amend_error_in_article 56 'use. \[c\]' 'use; [c]' | \
     #Article 68
     amend_error_in_article 68 'Any person' 'any person' | \
-    amend_error_in_article 68 'Agency Provided' 'Agency, provided' | \
     amend_error_in_article 68 'three; the' 'three; [c] the' | \
+    sed -E 's/Agency Provided//' | \
     #Article 70
     amend_error_in_article 70 'the Board \[3\]' 'the Board. [3]' | \
     amend_error_in_article 70 'llicensed' 'licensed' | \
     amend_error_in_article 70 'subsection \[1\]' 'subsection [2]' | \
+    #Article 72
+    amend_error_in_article 72 '\[The paragraph numbering has been altered into sequence—Editor.\] ' '' | \
     #Article 73
     sed -z 's/\n(73) oil into the environment/ oil into the environment\n(73)/' | \
     amend_error_in_article 73 'directions Board' 'directions the Board' | \
@@ -125,6 +129,7 @@ function amend_errors_in_articles {
     amend_error_in_article 77 '\[a\]; \[2\]' '[a]. [2]' | \
     #Article 79
     amend_error_in_article 79 '\[ ' '[' | \
+    amend_error_in_article 79 ' \[“bonus“ changed to read “booms“ –Editor\]' '' | \
     #ARticle 83
     amend_error_in_article 83 '\( ' '(' | \
     amend_error_in_article 83 ' \)' ')' | \
@@ -134,6 +139,8 @@ function amend_errors_in_articles {
     sed -E 's/\[2005\]\]\|/2005]/' | \
     sed -E 's/\(84\) July, \[2005\]\]//' | \
     sed -z 's/\nRepealed by the Radiation Protection Act 5\/2004 with effect from the 1st/\n(84) [Repealed by the Radiation Protection Act 5\/2004 with effect from the 1st 2005]/' | \
+    #Article 90
+    amend_error_in_article 90 'eighty- nine' 'eighty-nine' | \
     #Article 92
     sed -z 's/\n\n12]; and\n(29)/ 29:12]; and/' | \
     #Article 97
@@ -146,6 +153,8 @@ function amend_errors_in_articles {
     #Article 101
     amend_error_in_article 101 'issue: Provided' 'issue, provided' | \
     amend_error_in_article 101 ' .' '.' | \
+    #Article 103
+    amend_error_in_article 103 'Director-General: Provided' 'Director-General, provided' | \
     #Article 108
     amend_error_in_article 108 'any: Provided' 'any, provided' | \
     #Article 109
@@ -170,7 +179,7 @@ function amend_errors_in_articles {
     #Article 129 
     amend_error_in_article 129 'against: Provided' 'against, provided' | \
     #Article 130
-    amend_error_in_article 130 'Editor.' 'Editor.]' | \
+    amend_error_in_article 130 '\[The.*$' '' | \
     amend_error_in_article 130 'prescribed: Provided' 'prescribed, provided' | \
     #Article 132
     amend_error_in_article 132 '\[k\] any' '[j] any' | \
@@ -178,6 +187,8 @@ function amend_errors_in_articles {
     amend_error_in_article 132 ' \)' ')' | \
     #Article 133
     amend_error_in_article 133 'jurisdiction: Provided' 'jurisdiction, provided' | \
+    #Article 137
+    amend_error_in_article 137 ' \[The subsection referred to above has been changed—Editor.\]' '' | \
     #Article 139
     sed -E 's/; Article 139 Additional penalties for contraventions of this Act\|/.\n\nAdditional penalties for contraventions of this Act\n(139)/' | \
     #Article 140
@@ -186,12 +197,13 @@ function amend_errors_in_articles {
     amend_error_in_article 140 'provisions: Provided' 'provisions, provided' | \
     #Article 144
     amend_error_in_article 144 '19:.07' '19:07' | \
-    amend_error_in_article 144 ': Editor.' '—Editor.]' | \
+    amend_error_in_article 144 '\[This section.*$' '' | \
     #Article 145
     amend_error_in_article 145 '\[1992\]' '1992)' | \
     amend_error_in_article 145 '\[Pensions\]' '(Pensions)' | \
     #Article 146
     sed -E 's/\(6146\)/(146)/'
+
 }
 
 function preprocess_state_and_language_input_file {
