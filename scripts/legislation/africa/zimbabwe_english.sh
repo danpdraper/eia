@@ -114,7 +114,7 @@ function amend_errors_in_articles {
     #Article 68
     amend_error_in_article 68 'Any person' 'any person' | \
     amend_error_in_article 68 'three; the' 'three; [c] the' | \
-    sed -E 's/Agency Provided//' | \
+    sed -E 's/Agency Provided/Agency, provided/' | \
     #Article 70
     amend_error_in_article 70 'the Board \[3\]' 'the Board. [3]' | \
     amend_error_in_article 70 'llicensed' 'licensed' | \
