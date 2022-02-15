@@ -47,8 +47,8 @@ function amend_errors_in_articles {
     #Article 2
     amend_error_in_article 2 'unincorporate' 'unincorporated' | \
     amend_error_in_article 2 '1997 1' '1997' | \
-    amend_error_in_article 2 'Act";' 'Act;' | \
-    amend_error_in_article 2 'Act;"' 'Act;' | \
+    amend_error_in_article 2 'Act”;' 'Act;' | \
+    amend_error_in_article 2 'Act;”' 'Act;' | \
     amend_error_in_article 2 'restriction to which is subject to' 'restriction which is subject to' | \
     amend_error_in_article 2 'or degraded the carrying capacity' 'or degrade the carrying capacity' | \
     #Article 3
@@ -74,7 +74,7 @@ function amend_errors_in_articles {
     #Article 20
     amend_error_in_article 20 '19\[3\]\(a\)' '19[3][a]' | \
     #Article 21
-    amend_error_in_article 21 'project. \[b\]' 'project: [b]' | \
+    amend_error_in_article 21 'project. \[b\]' 'project; [b]' | \
     #Article 25
     amend_error_in_article 25 'that, the Director' 'that the Director' | \
     #Article 27
@@ -126,7 +126,7 @@ function amend_errors_in_articles {
     amend_error_in_article 82 'storage facility conveyance' 'storage facility, conveyance' | \
     #Article 84
     amend_error_in_article 84 '\(6\)' '[6]' | \
-    amend_error_in_article 84 'the Director my delegate' 'the Director may delegate' | \
+    sed -E 's/The Director my delegate/The Director may delegate/' | \
     amend_error_in_article 84 'restoration notice, made' 'restoration notice made' | \
     #Article 86
     amend_error_in_article 86 'Action by the Director in case of non compliance with an environmental Article \[87\] restoration notice\|' '\n\nAction by the Director in case of non compliance with an environmental restoration notice\n(87)' | \
