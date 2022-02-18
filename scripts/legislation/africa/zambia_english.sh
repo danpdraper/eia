@@ -17,7 +17,7 @@ function remove_all_text_after_last_article {
   sed -z 's/Regulations SUBSIDIARY LEGISLATION.*$//' 
 }
 
-function format_articles {
+function format_article_numbers {
   sed -E 's/Article \[([0-9]+)\]/\n\n(\1)/g' 
 }
 
@@ -107,6 +107,10 @@ function amend_errors_in_articles {
     sed -E 's/\(As amended.*$//g' | \
     sed -E 's/instal /install /g' | \
     sed -E 's/inspectorate/Inspectorate/g' | \
+    #Article 6
+    amend_error_in_article 6 'consider and advise, on' 'consider and advise on' | \
+    #Article 7
+    amend_error_in_article 7 'writing: Provided' 'writing, provided' | \
     #Article 21
     amend_error_in_article 21 'Standing Technical Advisory Committee \[2' '[2' | \
     sed -E 's/\(21\)/Standing Technical Advisory Committee\n(21)/' | \
@@ -116,12 +120,17 @@ function amend_errors_in_articles {
     amend_error_in_article 32 'extention' 'extension' | \
     #Article 33
     amend_error_in_article 33 'of\[' 'of: [' | \
+    amend_error_in_article 33 'Inspectorate, may' 'Inspectorate may' | \
     #Article 35
     sed -E 's/\(35\)/Interpretation\n(35)/' | \
+    amend_error_in_article 35 'source "licence"' 'source; "licence"' | \
     #Article 36
     sed -E 's/\(36\)/Responsibilities of Council\n(36)/' | \
+    #Article 38
+    amend_error_in_article 38 'consider \[a\]' 'consider: [a]' | \
     #Article 44
     sed -E 's/\(44\)/Circumstances under which extension deemed new\n(44)/' | \
+    amend_error_in_article 44 'change \[a\]' 'change: [a]' | \
     #Article 45
     sed -E 's/\(45\)/Grant or refusal of licences\n(45)/' | \
     amend_error_in_article 45 'of\[' 'of: [' | \
@@ -134,6 +143,8 @@ function amend_errors_in_articles {
     sed -E 's/\(52\)/Application for licence\n(52)/' | \
     #Article 54
     sed -E 's/\(54\)/Contents of application and conditions for licence\n(54)/' | \
+    #Article 56
+    amend_error_in_article 56 'Zambia.  ' 'Zambia. ' | \
     #Article 57
     sed -E 's/\(57\)/Interpretation\n(57)/' | \
     #Article 58
@@ -150,19 +161,23 @@ function amend_errors_in_articles {
     #Article 72
     sed -E 's/\(72\)/Responsibilities of Council\n(72)/' | \
     amend_error_in_article 72 '. Cap. 311 Cap.' '' | \
+    amend_error_in_article 72 'programme and advice on' 'programme and advise on' | \
     #Article 73
     amend_error_in_article 73 'Cap.' '' | \
     #Article 74
     amend_error_in_article 74 'Cap. 311 ' '' | \
     #Article 75
-    sed -E 's/\(75\)/Interpretation\n(71)/' | \
+    sed -E 's/\(75\)/Interpretation\n(75)/' | \
     #Article 76
-    sed -E 's/\(76\)/Responsibilities of Council\n(72)/' | \
+    sed -E 's/\(76\)/Responsibilities of Council\n(76)/' | \
     #Article 77
     amend_error_in_article 77 'contamin-ation' 'contamination' | \
     #Article 84
     amend_error_in_article 84 'Powers of inspectors ' '' | \
     sed -E 's/\(84\)/Powers of inspectors\n(84)/' | \
+    amend_error_in_article 84 'enquiry collection of samples' 'enquiry, collection of samples' | \
+    #Article 95
+    amend_error_in_article 95 'after the receiving' 'after receiving' | \
     #Article 96 
     sed -E 's/\(96\)/Regulations\n(96)/'
 }
@@ -170,7 +185,8 @@ function amend_errors_in_articles {
 function amend_errors_in_headers {
   sed -E 's/([^^])PART/\1\n\nPART/g' | \
     sed -E 's/^(PART [A-Z]+)/\1 -/g' | \
-    sed -z 's/\n\nPART IX -,/PART IX,/' 
+    sed -z 's/\n\nPART IX -,/PART IX,/' | \
+    sed -z 's/Interpretation\n(75)/PART X - NATURAL RESOURCES CONSERVATION\n\nInterpretation\n(75)/' 
 }
 
 function preprocess_state_and_language_input_file {
@@ -187,7 +203,7 @@ function preprocess_state_and_language_input_file {
     replace_parentheses_around_article_delimiters_with_square_brackets | \
     apply_common_transformations_to_stdin "$language" | \
     remove_all_text_after_last_article | \
-    format_articles | \
+    format_article_numbers | \
     remove_and_reinsert_article_titles | \
     amend_errors_in_articles | \
     amend_errors_in_headers 
