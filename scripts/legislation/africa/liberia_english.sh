@@ -82,19 +82,46 @@ function amend_errors_in_articles {
     amend_error_in_article 3 'objectives evaluation' 'objective evaluation' | \
     amend_error_in_article 3 'established on under section 33' 'established under section 33' | \
     amend_error_in_article 3 'both the renewable or non-renewable' 'both the renewable and non-renewable' | \
-    amend_error_in_article 3 'section 16 of this Agency Act:' 'section 16 of this Agency Act;' | \
+    amend_error_in_article 3 'section 16 of this Agency Act:' 'section 16 of the Agency Act;' | \
     amend_error_in_article 3 'corrosive, irritating radioactive' 'corrosive, irritating, radioactive' | \
     amend_error_in_article 3 'section 29 of this Agency Act' 'section 29 of the Agency Act' | \
     amend_error_in_article 3 'air, land water' 'air, land, water' | \
     amend_error_in_article 3 'atmosphere with a structure' 'atmosphere within a structure' | \
     amend_error_in_article 3 "Brief'" 'Brief"' | \
     amend_error_in_article 3 "territorial waters of Liberia's coastline" "territorial waters off Liberia's coastline" | \
+    amend_error_in_article 3 '; "Territorial' '. "Territorial' | \
+    amend_error_in_article 3 'Liberia; "' 'Liberia. "' | \
+    amend_error_in_article 3 'Law; "Coastal' 'Law. "Coastal' | \
+    amend_error_in_article 3 'environment; "Environmental' 'environment. "Environmental' | \
+    amend_error_in_article 3 'surroundings; "Environmental' 'surroundings. "Environmental' | \
+    amend_error_in_article 3 'environment; "Environmental' 'environment. "Environmental' | \
+    amend_error_in_article 3 'sustainability; "Environmental' 'sustainability. "Environmental' | \
+    amend_error_in_article 3 'term; "Environmental' 'term. "Environmental' | \
+    amend_error_in_article 3 'issues; "Environmental' 'issues. "Environmental' | \
+    amend_error_in_article 3 'qualities; "Environmental' 'qualities. "Environmental' | \
+    amend_error_in_article 3 ' Law; "Environmental' ' Law. "Environmental' | \
+    amend_error_in_article 3 ' Act; "Ex-situ' ' Act. "Ex-situ' | \
+    amend_error_in_article 3 'Liberia; "Genetic' 'Liberia. "Genetic' | \
+    amend_error_in_article 3 'value; "Good' 'value. "Good' | \
+    amend_error_in_article 3 'Law; "Mangrove' 'Law. "Mangrove' | \
+    amend_error_in_article 3 'qualities; "Noise' 'qualities. "Noise' | \
+    amend_error_in_article 3 'environment; "Occupational' 'environment. "Occupational' | \
+    amend_error_in_article 3 'operation; "Precautionary' 'operation. "Precautionary' | \
+    amend_error_in_article 3 'degradation; "Premises' 'degradation. "Premises' | \
+    amend_error_in_article 3 'premises; "The' 'premises. "The' | \
+    amend_error_in_article 3 'Liberia; "Project' 'Liberia. "Project' | \
+    amend_error_in_article 3 'environment; "Project' 'environment. "Project' | \
+    amend_error_in_article 3 'business; "Published' 'business. "Published' | \
+    amend_error_in_article 3 'law; "Sustainable' 'law. "Sustainable' | \
+    amend_error_in_article 3 'ecosystems; "Sustainable' 'ecosystems. "Sustainable' | \
+    amend_error_in_article 3 'environment; "Water' 'environment. "Water' | \
+    amend_error_in_article 3 '; and;' '.' | \
+    amend_error_in_article 3 'Liberia; "' 'Liberia. "' | \
     #Article 4
     amend_error_in_article 4 'poll uter \[•\] ' 'polluter-' | \
     amend_error_in_article 4 'teclmology' 'technology' | \
     amend_error_in_article 4 'on III' 'on in' | \
     amend_error_in_article 4 '\[1\] Ensure' '[l] Ensure' | \
-    sed -E ':start;s/^(\(4\).*\[[a-z]\] )([A-Z])/\1\L\2/;t start' | \
     amend_error_in_article 4 'principle \[c\]' 'principle; [c]' | \
     amend_error_in_article 4 'principle \[d\]' 'principle; [d]' | \
     amend_error_in_article 4 'equity \[e\]' 'equity; [e]' | \
@@ -119,7 +146,7 @@ function amend_errors_in_articles {
     #Article 6
     sed -E 's/and provides/and provide/' | \
     sed -E 's/concerns:/concerns./' | \
-    sed -E 's/. Application/. \n\nApplication/' | \
+    sed -E 's/. Application for an/. \n\nApplication for an/' | \
     amend_error_in_article 6 'conformity with' 'conformity with section 36' | \
     amend_error_in_article 6 'Law; \[2\]' 'Law. [2]' | \
     amend_error_in_article 6 'license, on' 'license on' | \
@@ -129,7 +156,6 @@ function amend_errors_in_articles {
     #Article 8
     amend_error_in_article 8 'proj ected' 'projected' | \
     amend_error_in_article 8 '0 f' 'of' | \
-    amend_error_in_article 8 'manner prescribed' 'prescribed manner' | \
     amend_error_in_article 8 'scooping activities' 'scoping activities' | \
     amend_error_in_article 8 'Registry; \[3\]' 'Registry. [3]' | \
     amend_error_in_article 8 'brief; \[4\]' 'brief. [4]' | \
@@ -260,7 +286,6 @@ function amend_errors_in_articles {
     amend_error_in_article 36 'ermssion' 'emission' | \
     amend_error_in_article 36 'Determi ne' 'Determine' | \
     amend_error_in_article 36 'lor c' 'or c' | \
-    amend_error_in_article 36 'Criteria andd guidelines' 'Criteria and guidelines' | \
     amend_error_in_article 36 'plants of the installation' 'plants or the installation' | \
     amend_error_in_article 36 'section: \[c\]' 'section; [c]' | \
     amend_error_in_article 36 'both, such fine' 'both such fine' | \
@@ -280,8 +305,10 @@ function amend_errors_in_articles {
     amend_error_in_article 40 'sub section' 'sub-section' | \
     amend_error_in_article 40 'various soil' 'various soils' | \
     amend_error_in_article 40 'soil \[e\]' 'soil; [e]' | \
+    amend_error_in_article 40 'degrade the soi.' 'degrade the soil;' | \
+    amend_error_in_article 40 'section.. \[4\]' 'section. [4]' | \
     #Article 41
-    sed -E 's/Criteria an/Criteria and/g' | \
+    sed -E 's/Criteria an /Criteria and /g' | \
     amend_error_in_article 41 'form existing and future sources' 'from existing and future sources' | \
     #Article 42
     amend_error_in_article 42 'of to' 'or to' | \
@@ -372,12 +399,14 @@ function amend_errors_in_articles {
     amend_error_in_article 68 'Law; \[2\]' 'Law. [2]' | \
     #Article 69
     amend_error_in_article 69 '\(3\) ,' '[3],' | \
+    amend_error_in_article 69 'Law: \[3\]' 'Law. [3]' | \
     #Article 74
     amend_error_in_article 74 'nver' 'river' | \
     amend_error_in_article 74 'degradation an take' 'degradation and take' | \
     #Article 75
     amend_error_in_article 75 'drilJ' 'drill' | \
     amend_error_in_article 75 'may by notice publish' 'may by published notice' | \
+    amend_error_in_article 75 'riverbanks lakeshores or wetlands' 'riverbanks, lakeshores or wetlands' | \
     #Article 76
     amend_error_in_article 76 'lanel' 'land' | \
     #Article 77
@@ -393,7 +422,7 @@ function amend_errors_in_articles {
     amend_error_in_article 79 'Environemt' 'Environment' | \
     #Article 80
     amend_error_in_article 80 'reserve \[d\]' 'reserve; [d]' | \
-    amend_error_in_article 80 '51 Conservation to Energy' 'Conservation to Energy' | \
+    sed -E 's/51 Conservation/Conservation/' | \
     #Article 81
     amend_error_in_article 81 'Promoti ng' 'Promoting' | \
     #Article 82
@@ -440,6 +469,7 @@ function amend_errors_in_articles {
     amend_error_in_article 90 '\(6\)' '[6]' | \
     amend_error_in_article 90 'order shall have contain' 'order shall contain' | \
     amend_error_in_article 90 'environment of the conservation' 'environment or the conservation' | \
+    amend_error_in_article 90 'An Environmental Inspect of the Agency' 'An Environmental Inspector of the Agency' | \
     #Article 91
     amend_error_in_article 91 'COUli' 'Court' | \
     amend_error_in_article 91 ' hall ' ' shall ' | \
@@ -480,10 +510,18 @@ function amend_errors_in_articles {
     amend_error_in_article 101 'prescribed form indication' 'prescribed form indicating' | \
     amend_error_in_article 101 'access to information; \[a\]' 'access to information: [a]' | \
     amend_error_in_article 101 'within its offices; the Agency' 'within its offices, the Agency' | \
+    amend_error_in_article 101 '. \[2' '; [2' | \
+    amend_error_in_article 101 '. \[3' '; [3' | \
+    amend_error_in_article 101 '. \[4' '; [4' | \
+    amend_error_in_article 101 '. \[5' '; [5' | \
+    amend_error_in_article 101 '. \[6' '; [6' | \
+    amend_error_in_article 101 '. \[7' '; [7' | \
+    amend_error_in_article 101 '. \[8' '; [8' | \
     #Article 103
     amend_error_in_article 103 'The Agency may, publish' 'The Agency may publish' | \
     #Article 104
     amend_error_in_article 104 'may on the application to the Agency' 'may on application to the Agency' | \
+    amend_error_in_article 104 'to the Agency may be determined' 'to the Agency as may be determined' | \
     #Article 105
     amend_error_in_article 105 'briefin' 'brief in' | \
     amend_error_in_article 105 'an is' 'and is' | \
