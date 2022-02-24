@@ -117,6 +117,8 @@ function amend_errors_in_articles {
     amend_error_in_article 3 'environment; "Water' 'environment. "Water' | \
     amend_error_in_article 3 '; and;' '.' | \
     amend_error_in_article 3 'Liberia; "' 'Liberia. "' | \
+    amend_error_in_article 3 'Agency"' '"Agency"' | \
+    amend_error_in_article 3 'coastline. Trade"' 'coastline. "Trade"' | \
     #Article 4
     amend_error_in_article 4 'poll uter \[•\] ' 'polluter-' | \
     amend_error_in_article 4 'teclmology' 'technology' | \
@@ -422,7 +424,7 @@ function amend_errors_in_articles {
     amend_error_in_article 79 'Environemt' 'Environment' | \
     #Article 80
     amend_error_in_article 80 'reserve \[d\]' 'reserve; [d]' | \
-    sed -E 's/51 Conservation/Conservation/' | \
+    sed -E 's/51 Conservation to Energy/Conservation of Energy/' | \
     #Article 81
     amend_error_in_article 81 'Promoti ng' 'Promoting' | \
     #Article 82
