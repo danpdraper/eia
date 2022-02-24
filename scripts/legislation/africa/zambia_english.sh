@@ -111,6 +111,8 @@ function amend_errors_in_articles {
     amend_error_in_article 6 'consider and advise, on' 'consider and advise on' | \
     #Article 7
     amend_error_in_article 7 'writing: Provided' 'writing, provided' | \
+    #Article 19
+    amend_error_in_article 19 'matter: Provided' 'matter, provided' | \
     #Article 21
     amend_error_in_article 21 'Standing Technical Advisory Committee \[2' '[2' | \
     sed -E 's/\(21\)/Standing Technical Advisory Committee\n(21)/' | \
