@@ -16,7 +16,7 @@ TITRE II - DE LA GESTION DE L'ENVIRONNEMENT
 
 CHAPITRE UNIQUE - DU CADRE INSTITUTIONNEL
 
-(5) L'élaboration et la mise en œuvre de la politique nationale en matière d'environnement sont assurées par le Ministère en charge de l'environnement en collaboration avec tous les autres départements, les collectivités locales, le secteur privé, les Organisations Non Gouvernementales et autres acteurs intervenant directement ou indirectement dans le domaine de l'environnement. L'Etat garantit à l'ensemble des citoyens le droit à une éducation environnementale. A ce titre, les institutions publiques et privées ayant en charge l'enseignement, la recherche ou la communication se doivent de participer à l'éducation, à la formation et à la sensibilisation des populations aux problèmes d'environnement: [•] en intégrant dans leurs activités des programmes permettant d'assurer une meilleure connaissance de l'environnement; [•] en favorisant le renforcement des capacités des acteurs environnementaux.
+(5) L'élaboration et la mise en oeuvre de la politique nationale en matière d'environnement sont assurées par le Ministère en charge de l'environnement en collaboration avec tous les autres départements, les collectivités locales, le secteur privé, les Organisations Non Gouvernementales et autres acteurs intervenant directement ou indirectement dans le domaine de l'environnement. L'Etat garantit à l'ensemble des citoyens le droit à une éducation environnementale. A ce titre, les institutions publiques et privées ayant en charge l'enseignement, la recherche ou la communication se doivent de participer à l'éducation, à la formation et à la sensibilisation des populations aux problèmes d'environnement: [•] en intégrant dans leurs activités des programmes permettant d'assurer une meilleure connaissance de l'environnement; [•] en favorisant le renforcement des capacités des acteurs environnementaux.
 
 (6) Les collectivités locales dans les limites des textes en vigueur et les associations de protection de l'environnement doivent contribuer à toute action entreprise par les départements ministériels impliqués.
 
@@ -188,7 +188,7 @@ Section 5 - Des installations classées
 
 (78) La demande d'autorisation des installations de première classe doit comporter une fiche technique précisant la nature, la qualité, la toxicité des déchets, des émanations et autres nuisances susceptibles d'être produites par l'établissement, le mode de traitement ou d'élimination prévu pour ces déchets. Elle doit être soumise à une enquête administrative à la charge du demandeur dont la procédure est déterminée par voie réglementaire.
 
-(79) Toute installation classée doit disposer d'un plan d'urgence destiné, en cas d'accident, à assurer l'alerte des pouvoirs publics et des populations voisines, à faciliter l'évacuation du personnel et à permettre la mise en œuvre des moyens propres à circonscrire le sinistre.
+(79) Toute installation classée doit disposer d'un plan d'urgence destiné, en cas d'accident, à assurer l'alerte des pouvoirs publics et des populations voisines, à faciliter l'évacuation du personnel et à permettre la mise en oeuvre des moyens propres à circonscrire le sinistre.
 
 (80) Toute installation classée est soumise à un contrôle périodique effectué par les Agents compétents.
 
@@ -204,7 +204,7 @@ Section 6 - Des Plans d'Urgence et Plans d'Opération Interne
 
 (85) Les Plans d'Urgence et/ou les Plans d'Opération Interne des installations classées doivent être préalablement agréés par le Ministère en charge de l'Environnement après avis technique des Départements concernés. A cet effet, le Ministre chargé de l'Environnement doit périodiquement: [•] s'assurer que les opérateurs prennent les mesures effectives pour les rendre opérationnels; [•] contraindre les opérateurs à les élaborer et au besoin, prendre eux-mêmes conformément aux textes en vigueur, des mesures qui leur paraissent efficaces et accessibles; [•] être en permanence pleinement informé de la nature et de la qualité des mesures prises; [•] prendre des sanctions appropriées contre les opérateurs qui ne respectent pas les mesures prescrites.
 
-(86) Des textes règlementaires fixent les conditions d'élaboration, le contenu, les modalités de mise en œuvre des plans d'urgence et d'opération interne. Dans la mise en œuvre de ces plans, les autorités administratives sont autorisées à procéder à la réquisition des personnes, des biens et à l'occupation temporaire et la traversée des propriétés privées. Les actes des autorités administratives doivent dans tous les cas être conformes aux lois et règlements en vigueur.
+(86) Des textes règlementaires fixent les conditions d'élaboration, le contenu, les modalités de mise en oeuvre des plans d'urgence et d'opération interne. Dans la mise en oeuvre de ces plans, les autorités administratives sont autorisées à procéder à la réquisition des personnes, des biens et à l'occupation temporaire et la traversée des propriétés privées. Les actes des autorités administratives doivent dans tous les cas être conformes aux lois et règlements en vigueur.
 
 Section 7 - Des Études d'Impact Environnemental
 
@@ -220,7 +220,7 @@ Section 7 - Des Études d'Impact Environnemental
 
 (92) Toute Étude d'Impact Environnemental donne lieu à une décision du Ministre chargé de l'Environnement. La décision d'autorisation de l'étude d'impact doit faire l'objet d'une publication selon les modalités prescrites par les dispositions réglementaires.
 
-(93) Le Ministre chargé de l'Environnement requiert la mise en œuvre des procédures d'urgence appropriées afin d'interrompre l'exécution des travaux envisagés ou entamés, lorsque les termes de références de l'étude d'impact ne sont pas respectés. Ces procédures d'urgence sont engagées sans préjudice des sanctions pénales prévues par la présente loi. Lorsque l'étude d'impact est jugée satisfaisante, le Ministre délivre le certificat de conformité environnementale au promoteur du projet.
+(93) Le Ministre chargé de l'Environnement requiert la mise en oeuvre des procédures d'urgence appropriées afin d'interrompre l'exécution des travaux envisagés ou entamés, lorsque les termes de références de l'étude d'impact ne sont pas respectés. Ces procédures d'urgence sont engagées sans préjudice des sanctions pénales prévues par la présente loi. Lorsque l'étude d'impact est jugée satisfaisante, le Ministre délivre le certificat de conformité environnementale au promoteur du projet.
 
 Section 8 - De l'Audience Publique
 
@@ -232,7 +232,7 @@ Section 8 - De l'Audience Publique
 
 (97) Le Ministère en charge de l'Environnement peut décider d'office d'avoir recours à la procédure d'audience publique sur toute autre question touchant l'environnement.
 
-(98) Toute personne physique ou morale peut saisir le Ministre chargé de l'Environnement afin de mettre en œuvre la procédure d'audience publique sur l'environnement. La demande doit être accompagnée d'un dossier de justification.
+(98) Toute personne physique ou morale peut saisir le Ministre chargé de l'Environnement afin de mettre en oeuvre la procédure d'audience publique sur l'environnement. La demande doit être accompagnée d'un dossier de justification.
 
 (99) Le Ministre chargé de l'Environnement, après avis technique des services compétents, peut accepter ou refuser en motivant son refus, la demande prévue à l'article précédent. En cas de refus, les personnes visées à l'article 98 peuvent saisir le tribunal administratif territorialement compétent de cette décision.
 
@@ -244,7 +244,7 @@ Section 9 - De l'Évaluation Environnementale
 
 Section 10 - De l'Audit Environnemental
 
-(102) Il est instauré en République centrafricaine un Audit Environnemental. L'Audit Environnemental a pour objet d'apprécier, de manière périodique, l'impact que tout ou partie de la production ou de l'existence d'une entreprise génère ou est susceptible directement ou indirectement de générer sur l'environnement. L'Audit Environnemental permet au Ministère en charge de l'Environnement de veiller au respect des normes et standards afin d'exiger des mesures correctives ou de prendre des sanctions dans le cas de non respect délibéré ou de récidive. Il existe deux formes d'Audit: [•] l'audit interne relevant de la responsabilité de l'entreprise; [•] l'audit externe à l'initiative du Ministère en charge de l'Environnement. Les modalités de mise en œuvre de l'Audit Environnemental ainsi que les frais y afférents sont fixés par voie réglementaire.
+(102) Il est instauré en République centrafricaine un Audit Environnemental. L'Audit Environnemental a pour objet d'apprécier, de manière périodique, l'impact que tout ou partie de la production ou de l'existence d'une entreprise génère ou est susceptible directement ou indirectement de générer sur l'environnement. L'Audit Environnemental permet au Ministère en charge de l'Environnement de veiller au respect des normes et standards afin d'exiger des mesures correctives ou de prendre des sanctions dans le cas de non respect délibéré ou de récidive. Il existe deux formes d'Audit: [•] l'audit interne relevant de la responsabilité de l'entreprise; [•] l'audit externe à l'initiative du Ministère en charge de l'Environnement. Les modalités de mise en oeuvre de l'Audit Environnemental ainsi que les frais y afférents sont fixés par voie réglementaire.
 
 TITRE IV - DE LA RÉPRESSION DES INFRACTIONS
 

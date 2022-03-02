@@ -5,19 +5,12 @@ function remove_all_text_before_first_chapter_header {
 }
 
 function amend_errors_in_headers {
-  sed -E 's/^(Section [0-9]+ - [A-Za-z,’ ]+)[^a-z]+Article ([0-9]+)(er)?/\1\n\n(\2)/' | \
+  sed -E "s/^(Section [0-9]+ - [A-Za-z,' ]+)[^a-z]+Article ([0-9]+)(er)?:/\1\n\n(\2)/" | \
     sed -E 's/Article premier:/\n\n(1)/' | \
     sed -E 's/DISPOSITIONS GENERALES/DISPOSITIONS GÉNÉRALES/' | \
     sed -E 's/DES DEFINITIONS/DES DÉFINITIONS/' | \
-    sed -E "s/DE L’ELABORATION/DE L'ÉLABORATION/" | \
-
-    #identify articles preceded by sections
-    sed -E 's/^(Section 2 - Des.*) Article 31:/\1\n\n(31)/' | \
-    sed -E 's/^(Section 1 - De la.*) Article 37:/\1\n\n(37)/' | \
-    sed -E 's/^(Section 3 - De la.*) Article 52:/\1\n\n(52)/' | \
-    sed -E 's/^(Section 4 - De la.*) Article 59:/\1\n\n(59)/' | \
-    sed -E 's/^(Section 5 - Des déchets.*) Article 62:/\1\n\n(62)/' | \
-    sed -E 's/^(Section 10 - De la.*) Article 86:/\1\n\n(86)/'     
+    sed -E "s/DE L'ELABORATION/DE L'ÉLABORATION/" | \
+    sed -E 's/^(Section 3 - De la.*) Article 52:/\1\n\n(52)/'
 }
 
 function fix_double_dash {
@@ -34,17 +27,14 @@ function amend_errors_in_articles {
     amend_error_in_article 2 'Etablissements classés' 'Établissements classés' | \
     amend_error_in_article 2 'Equilibre écologique' 'Équilibre écologique' | \
     amend_error_in_article 2 'Etablissement humain' 'Établissement humain' | \
-    amend_error_in_article 2 'Etude d’impact' 'Étude d’impact' | \
+    amend_error_in_article 2 "Etude d'impact" "Étude d'impact" | \
     amend_error_in_article 2 'ce denier' 'ce dernier' | \
     #Article 3
     sed -E ':start;s/^(\(3\).*)[[][a-z]] /\1[•] /;t start' | \
-    #Article 10
-    amend_error_in_article 10 'oeuvrant' 'œuvrant' | \
-    #Article 11
-    amend_error_in_article 11 'oeuvrant' 'œuvrant' | \
     #Article 37
     amend_error_in_article 37 'Article 38:' '\n\n(38)' | \
     sed -E ':start;s/^(\(37\).*)- /\1[•] /;t start' | \
+    amend_error_in_article 37 'homme;' 'homme.' | \
     #Article 40
     amend_error_in_article 40 'audelà' 'au-delà' | \
     #Article 42

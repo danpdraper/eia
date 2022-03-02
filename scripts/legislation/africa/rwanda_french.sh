@@ -5,7 +5,7 @@ function remove_all_text_before_first_chapter_header {
 }
 
 function amend_errors_in_headers {
-  sed -E "s/^(Section [0-9]+ - [A-Za-z,' ]+)[^a-z]+Article ([0-9]+)(er)?/\1\n\n(\2)/" | \
+  sed -E "s/^(Section [0-9]+ - [A-Za-z,' ]+)[^a-z]+Article ([0-9]+)(er)?:/\1\n\n(\2)/" | \
     sed -E 's/CHAPITRE PREMIER - DES DISPOSITIONS GENERALES/CHAPITRE PREMIER - DES DISPOSITIONS GÉNÉRALES/' | \
     sed -E 's/Article premier:/\n\n(1)/' | \
     sed -E 's/^(CHAPITRE )I -l:/\1II -/' | \
@@ -13,9 +13,6 @@ function amend_errors_in_headers {
     sed -E 's/^(TITRE )I -l:/\1II -/' | \
     sed -E "s/(CHAPITRE PREMIER - DE L'ENVIRONNEMENT NATUREL )/\1\n\n/" | \
     sed -E 's/^(Section première: Le sol.*) Article 11:/\1\n\n(11)/' | \
-    sed -E 's/^(Section 3 - De la diversité.*) Article 20:/\1\n\n(20)/' | \
-    sed -E "s/^(Section 4 - De l'atmosphère.*) Article 25:/\1\n\n(25)/" | \
-    sed -E "s/^(Section 2 - Obligations.*) Article 60:/\1\n\n(60)/" | \
     sed -E 's/^(CHAPITRE )I -ll:/\1III -/' | \
     sed -E 's/^(CHAPITRE IV - .*)LA PRESENTE LOI/\1LA PRÉSENTE LOI/' | \
     sed -E "s/^(TITRE III - .*)DE L'ETAT, DES COLLECTIVITES/\1DE L'ÉTAT, DES COLLECTIVITÉS/" | \

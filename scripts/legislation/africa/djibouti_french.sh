@@ -42,7 +42,7 @@ function amend_errors_in_articles {
     # Article 6
     amend_error_in_article 6 "l'État aux" "l'État, aux" | \
     # Article 8
-    amend_error_in_article 8 'œuvre \.' 'œuvre.' | \
+    amend_error_in_article 8 'oeuvre \.' 'oeuvre.' | \
     # Article 10 
     amend_error_in_article 10 créée créé | \
     # Article 11

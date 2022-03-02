@@ -26,7 +26,6 @@ function amend_errors_in_articles {
     sed -E 's/Equilibre/Équilibre/g' | \
     sed -E 's/Etablissement/Établissement/g' | \
     sed -E 's/Etude/Étude/g' | \
-    sed -E 's/œuvre/oeuvre/g' | \
     sed -E 's/Economie/Économie/g' | \
     # Article 2
     sed -E ':start;s/^(\(2\).*) ([0-9]+) (\[•\]|–)/\1 [\2]/;t start' | \
