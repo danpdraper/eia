@@ -124,15 +124,15 @@ CHAPITRE II - DES OBLIGATIONS SPÉCIFIQUES
 
 Section première: Des obligations de l'Administration Centrale
 
-(49) L'État doit: [1] mettre sur pied une politique générale de l'environnement et sa protection; [2] prendre toutes dispositions appropriées pour assurer ou faire assurer le respect des obligations découlant des conventions et accords internationaux auxquels il est partie; [3] interdire toute activité menée sous son contrôle ou dans les limites de sa juridiction, susceptible d'entraîner une dégradation de l'environnement dans un autre État ou dans des régions ne relevant pas de la juridiction nationale; [4] œuvrer en toute coopération avec les autres États pour prendre les mesures contre la pollution transfrontière; [5] mettre en place, en utilisant des mesures appropriées, des toilettes et l'hygiène dans les installations et lieux de rencontres publiques, sur les routes et dans les habitations.
+(49) L'État doit: [1] mettre sur pied une politique générale de l'environnement et sa protection; [2] prendre toutes dispositions appropriées pour assurer ou faire assurer le respect des obligations découlant des conventions et accords internationaux auxquels il est partie; [3] interdire toute activité menée sous son contrôle ou dans les limites de sa juridiction, susceptible d'entraîner une dégradation de l'environnement dans un autre État ou dans des régions ne relevant pas de la juridiction nationale; [4] oeuvrer en toute coopération avec les autres États pour prendre les mesures contre la pollution transfrontière; [5] mettre en place, en utilisant des mesures appropriées, des toilettes et l'hygiène dans les installations et lieux de rencontres publiques, sur les routes et dans les habitations.
 
-(50) L'État doit également: [1] déterminer la politique nationale de l'Environnement et veiller à sa mise en œuvre; [2] assurer, par des mesures idoines, la protection, la conservation et la gestion de l'environnement; [3] faire une réglementation relative aux digues et déversements d'égouts, dans les milieux récepteurs et de recyclage.
+(50) L'État doit également: [1] déterminer la politique nationale de l'Environnement et veiller à sa mise en oeuvre; [2] assurer, par des mesures idoines, la protection, la conservation et la gestion de l'environnement; [3] faire une réglementation relative aux digues et déversements d'égouts, dans les milieux récepteurs et de recyclage.
 
 (51) L'État détermine: [1] des mesures de lutte contre l'érosion; [2] les mesures de lutte contre la pollution du sol par des substances chimiques, les engrais, les produits phytosanitaires et autres dont l'usage est admis; [3] les mesures de prévention des pollutions diffuses affectant le sol et les mesures concrètes de restauration des sols endommagés; [4] les mesures de protection des points de prélèvement d'eau potable.
 
 (52) L'État définit des périmètres protégés, en vue de la protection, de la conservation ou de la restauration des: [1] écosystèmes, [2] forêts, boisements, espèces de la biodiversité et espaces protégés; [3] monuments naturels, sites et paysages; [4] systèmes hydrologiques et leur qualité; [5] espaces littoraux, rivières, cours d'eau, lacs, plaines, vallées et marais.
 
-(53) L'autorité compétente, peut à l'intérieur des périmètres visés à l'article 52 de la présente loi organique: [1] interdire, limiter ou réglementer les activités incompatibles avec les objectifs assignés à la zone; [2] mettre en œuvre des programmes de restauration du milieu naturel ou des monuments naturels; [3] approuver tout plan d'aménagement ou d'action définissant les moyens d'atteindre les objectifs assignés à la zone.
+(53) L'autorité compétente, peut à l'intérieur des périmètres visés à l'article 52 de la présente loi organique: [1] interdire, limiter ou réglementer les activités incompatibles avec les objectifs assignés à la zone; [2] mettre en oeuvre des programmes de restauration du milieu naturel ou des monuments naturels; [3] approuver tout plan d'aménagement ou d'action définissant les moyens d'atteindre les objectifs assignés à la zone.
 
 (54) L'État dresse une liste: [1] des espèces animales et végétales qui doivent être protégées, en raison de leur rôle dans les écosystèmes, de leur rareté, de leur valeur esthétique de la menace d'extinction qui pèse sur leurs populations et enfin de l'intérêt économique, culturel et scientifique quelles représentent. Cette liste est fixée par Arrêté du Ministre ayant l'environnement dans ses attributions; [2] des sites et monuments naturels protégés et il est précisé les mesures à prendre pour la protection du patrimoine architectural historique et culturel national. Cette liste est fixée par Arrêté du Ministre ayant le tourisme dans ses attributions.
 
@@ -144,11 +144,11 @@ Section première: Des obligations de l'Administration Centrale
 
 (58) L'État prend les mesures adéquates relatives à l'éducation, la formation et la sensibilisation de la population sur l'environnement dans les programmes d'enseignement à tous les niveaux. Il peut donner son agrément aux associations de défense de l'environnement.
 
-(59) L'Autorité Nationale Compétente coordonne les activités nationales de mise en œuvre et de suivi des conventions et accords internationaux relatifs à l'environnement.
+(59) L'Autorité Nationale Compétente coordonne les activités nationales de mise en oeuvre et de suivi des conventions et accords internationaux relatifs à l'environnement.
 
 Section 2 - Obligations des entités décentralisées
 
-(60) D'une manière générale, les entités décentralisées sont chargées de l'application des lois et de la mise en œuvre des politiques, stratégies, programmes et plans d'actions visant la protection, la conservation et la gestion de l'environnement au Rwanda.
+(60) D'une manière générale, les entités décentralisées sont chargées de l'application des lois et de la mise en oeuvre des politiques, stratégies, programmes et plans d'actions visant la protection, la conservation et la gestion de l'environnement au Rwanda.
 
 (61) Dans le cadre de conservation et de protection de l'environnement, les entités décentralisées sont particulièrement chargées de: [1] veiller à la protection des terres en luttant surtout contre l'érosion et en collectant les eaux de pluie; [2] reboiser, protéger et gérer les forets; [3] protéger les rivières, les cours d'eau, les lacs, les sources et les eaux souterraines; [4] protéger et bien gérer les marais; [5] conserver et bien gérer les aires protégées, les sites, les animaux et les végétaux appartenant à des espèces protégées.
 
@@ -156,7 +156,7 @@ Section 2 - Obligations des entités décentralisées
 
 Section 3 - Droits et obligations de la population
 
-(63): Dans la gestion de l'environnement, la population a le droit de: [1] avoir le libre accès à l'information sur l'environnement; [2] avoir l'occasion d'exprimer son opinion en matière d'environnement; [3] être représentée au sein des organes qui prennent les décisions en matière d'environnement; [4] bénéficier de la formation, de la sensibilisation et de l'information des résultats de recherche sur l'environnement.
+(63) Dans la gestion de l'environnement, la population a le droit de: [1] avoir le libre accès à l'information sur l'environnement; [2] avoir l'occasion d'exprimer son opinion en matière d'environnement; [3] être représentée au sein des organes qui prennent les décisions en matière d'environnement; [4] bénéficier de la formation, de la sensibilisation et de l'information des résultats de recherche sur l'environnement.
 
 (64) Les populations ont le devoir et la responsabilité de contribuer à la protection et l'amélioration de l'environnement à travers les actions individuelles, les travaux communautaires, les clubs environnementaux, l'aménagement des espaces verts, des aires protégées et d'autres activités favorables à l'environnement.
 

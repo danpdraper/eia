@@ -468,6 +468,10 @@ function wrap_list_item_leading_characters {
     sed -E 's/ • / [•] /g'
 }
 
+function replace_œ_with_oe {
+  sed -E 's/œ/oe/g'
+}
+
 function apply_common_transformations_to_stdin {
   local stdin="$(</dev/stdin)"
 
@@ -496,7 +500,8 @@ function apply_common_transformations_to_stdin {
     replace_forward_ticks_with_single_quotation_marks | \
     remove_colon_from_headers "$language" | \
     replace_article_literals_with_numbers "$language" | \
-    wrap_list_item_leading_characters
+    wrap_list_item_leading_characters | \
+    replace_œ_with_oe
 }
 
 function apply_common_transformations {

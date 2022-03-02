@@ -14,7 +14,7 @@ function replace_parentheses_around_article_delimiters_with_square_brackets {
 }
 
 function remove_all_text_after_last_article {
-  sed -E '/^\(109\)/q'
+  sed -E '/^\(109\)/,${/^\(109\)/!d}'
 }
 
 function amend_errors_in_headers {

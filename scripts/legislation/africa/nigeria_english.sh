@@ -28,7 +28,7 @@ function move_article_titles_above_article_bodies {
 }
 
 function remove_all_text_after_last_article {
-  sed -E '/^\(62\)/q'
+  sed -E '/^\(62\)/,${/^\(62\)/!d}'
 }
 
 function amend_errors_in_headers {

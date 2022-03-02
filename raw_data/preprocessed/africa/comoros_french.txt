@@ -4,7 +4,7 @@
 
 (2) La présente loi vise à: [a] préserver la diversité et l'intégrité de l'Environnement de la République Fédérale Islamique des Comores, partie intégrante du patrimoine universel, que l'insularité rend particulièrement vulnérable; [b] créer les conditions d'une utilisation, quantitativement et qualitativement, durables des ressources naturelles par les générations présentes et futures; [c] garantir à tous les citoyens un cadre de vie écologiquement saine et équilibrée.
 
-(3) L'État Comorien a l'obligation d'œuvrer, par ses organismes mais aussi en s'appuyant sur la participation collectivement organisée de tous les citoyens, pour la sauvegarde de l'Environnement.
+(3) L'État Comorien a l'obligation d'oeuvrer, par ses organismes mais aussi en s'appuyant sur la participation collectivement organisée de tous les citoyens, pour la sauvegarde de l'Environnement.
 
 (4) Chaque citoyen a le droit fondamental de vivre dans un Environnement sain. Mais il a aussi le devoir de contribuer, individuellement ou collectivement, à sa sauvegarde.
 
@@ -20,15 +20,15 @@
 
 (9) Environnement est la direction générale de l'Environnement. Elle est représentée dans chacune des îles de la République Fédérale Islamique des Comores par des services régionaux qui bénéficient de l'appui des comités consultatifs régionaux pour l'Environnement.
 
-(10) Les associations reconnues d'utilité publique, conformément à la loi numéro 86-006/PR du 30 septembre 1986, et œuvrant statutairement pour la sauvegarde de l'environnement depuis plus d'une année, peuvent être agréées par le Ministre chargé de l'Environnement pour participer à l'action des organisme publique. Elles peuvent, à cet effet, bénéficier de l'appui financier du fonds pour la gestion de l'Environnement.
+(10) Les associations reconnues d'utilité publique, conformément à la loi numéro 86-006/PR du 30 septembre 1986, et oeuvrant statutairement pour la sauvegarde de l'environnement depuis plus d'une année, peuvent être agréées par le Ministre chargé de l'Environnement pour participer à l'action des organisme publique. Elles peuvent, à cet effet, bénéficier de l'appui financier du fonds pour la gestion de l'Environnement.
 
 3. DES ÉTUDES D'IMPACT
 
-(11) La demande d'agrément des projets d'aménagement et de développement, y compris les plans d'urbanisme, à mettre en œuvre par une personne physique ou morale, privée ou publique, doit être accompagnée d'une étude d'impact sur l'Environnement.
+(11) La demande d'agrément des projets d'aménagement et de développement, y compris les plans d'urbanisme, à mettre en oeuvre par une personne physique ou morale, privée ou publique, doit être accompagnée d'une étude d'impact sur l'Environnement.
 
-(12) L'étude d'impact qui évalue les incidences sur l'Environnement des travaux et activités projetés doit obligatoirement contenir: [a] une analyse de l'état du site et de son environnement; [b] une évaluation des conséquences prévisible de la mise en œuvre du projet pour son environnement naturel et humain; [c] une présentation des mesures prévue pour réduire ou supprimer les effets dommageables sur l'Environnement et des autres possibilités, non retenues, de mise en œuvre du projet.
+(12) L'étude d'impact qui évalue les incidences sur l'Environnement des travaux et activités projetés doit obligatoirement contenir: [a] une analyse de l'état du site et de son environnement; [b] une évaluation des conséquences prévisible de la mise en oeuvre du projet pour son environnement naturel et humain; [c] une présentation des mesures prévue pour réduire ou supprimer les effets dommageables sur l'Environnement et des autres possibilités, non retenues, de mise en oeuvre du projet.
 
-(13) L'agrément accordé peut être accompagné d'autre obligations jugées nécessaires pour le maître de l'ouvrage et le maître d'œuvre.
+(13) L'agrément accordé peut être accompagné d'autre obligations jugées nécessaires pour le maître de l'ouvrage et le maître d'oeuvre.
 
 (14) Un décret en conseil des Ministre: [a] arrête la liste des travaux et projets non soumis à l'étude d'impact préalable, en raison de la nature des activités projetées; [b] règlement et les modalités de réalisation et de présentation des études d'impact, de leur examen par l'Administration et d'information du public au cours de la procédure avant l'agrément.
 
@@ -84,7 +84,7 @@
 
 (34) Sans préjudice des dispositions de l'article 33, il est interdit aux navires dans les eaux sous juridiction comorienne de rejeter: [a] leurs eaux usées, à moins de les avoir préalablement traitées; [b] leurs ordures, à moins qu'elle ne soit pas nuisible pour le milieu marin. L'évacuation doit alors s'effectuer en un point aussi éloigné que possible des côtes comoriennes, en aucun cas à l'intérieur des limites des eaux territoriales.
 
-(35) L'application des dispositions des articles 33 et 34 admet des dérogations lorsque le déversement des substances est rendu indispensable par: [a] la mise en œuvre d'opération de lutte contre la pollution marine par des hydrocarbures; [b] le sauvetage des vies humaines en mer; [c] la sécurité du navire et des personnes transportées.
+(35) L'application des dispositions des articles 33 et 34 admet des dérogations lorsque le déversement des substances est rendu indispensable par: [a] la mise en oeuvre d'opération de lutte contre la pollution marine par des hydrocarbures; [b] le sauvetage des vies humaines en mer; [c] la sécurité du navire et des personnes transportées.
 
 (36) Un décret en conseil des Ministres fixe les mesures de lutte contre la pollution marine.
 
@@ -98,7 +98,7 @@
 
 (39) Les différentes espèces végétales et animales, leurs habitats et écosystèmes font partie du patrimoine national et universel dont il importe de préserver la diversité, de favoriser la régénération, d'assurer l'utilisation rationnelle et durable pour sauvegarder les équilibres écologiques essentiels. Les mesures de conservation doivent être envisagées, prioritairement, dans le milieu d'origine.
 
-(40) Aux fins d'une protection appropriée des espèces de faune et de flore sauvage des Comores, la présente loi distingue: [a] pour les espèces animales: [•] la capture, la détention et la mise à mort des spécimens; [•] le transport, l'achat, la vente l'exportation des spécimens vivants ou morts, même neutralisés ou de produits dérivés; [•] toute gêne, pour ces espèces, pendant la période de reproduction et de dépendance; [•] la destruction, le ramassage et la détention des œufs même vides et des nids; [b] pour les espèces végétales: [•] la cueillette, le ramassage, la coupe, le déracinage, la destruction par le feu ou toute autre forme de destruction; [•] le transport, l'achat, la vente ou l'exportation à l'état frais ou desséché, y compris de produits dérivés. Un arrêté du Ministre de l'Environnement définit les modalités d'application du présent article.
+(40) Aux fins d'une protection appropriée des espèces de faune et de flore sauvage des Comores, la présente loi distingue: [a] pour les espèces animales: [•] la capture, la détention et la mise à mort des spécimens; [•] le transport, l'achat, la vente l'exportation des spécimens vivants ou morts, même neutralisés ou de produits dérivés; [•] toute gêne, pour ces espèces, pendant la période de reproduction et de dépendance; [•] la destruction, le ramassage et la détention des oeufs même vides et des nids; [b] pour les espèces végétales: [•] la cueillette, le ramassage, la coupe, le déracinage, la destruction par le feu ou toute autre forme de destruction; [•] le transport, l'achat, la vente ou l'exportation à l'état frais ou desséché, y compris de produits dérivés. Un arrêté du Ministre de l'Environnement définit les modalités d'application du présent article.
 
 (42) Toute dérogation aux dispositions de l'article 41 n'est admise qu'en vertu d'une autorisation du Ministre de l'Environnement, après avis d'une institution nationale scientifique agréée, aux seules fins d'études et de recherche scientifiques. La permise ou certificat délivré à cet effet ne peut porter que sur une seule espèce et n'est valable que pour une période déterminée.
 
@@ -170,7 +170,7 @@
 
 (68) Lorsqu'il est établi, par l'étude d'impact sur l'Environnement, que la localisation ou le fonctionnement d'une exploitation agricole artisanale ou industrielle ou privée présente de graves dangers immédiats ou non, directs ou indirects pour la santé et la salubrité publique, pour la conservation du milieu naturel et ses ressources, pour la protection du patrimoine architectural et culturel, elle est inscrite sur la liste des établissements classés.
 
-(69) Un décret en conseil des Ministres fixe les modalités et le régime de classement: [a] la mise en œuvre de l'établissement classé est subordonnée à l'autorisation préalable du Ministre concerné. Elle est refusée lorsque les dangers générés peuvent avoir des effets graves, irrémédiables ou irréversibles pour les intérêts protégés à l'article 68; [b] l'autorisation accordée doit prendre en considération la nécessité de prévenir, de réduire ou d'éliminer les risques présentés. Elle peut être, selon le cas, subordonnée à l'éloignement de l'établissement classé de zones d'habitation, de cours ou réserves d'eau, de milieu ou site naturels ou artificiels particulièrement sensibles; [c] le décret précise, le délai au terme duquel les exploitations visées à l'article 68, déjà en service à la date de son entrée en vigueur, devront se conformer à la législation relative aux établissements classés; [d] le classement d'un établissement peut intervenir postérieurement à la mise en service lorsque la modification ou l'extension de ses activités ou lorsque des effets non prévisibles découlant de son fonctionnement relève des risques pour les intérêts protégés à l'article 68; [e] les dispositions du présent article s'applique sans préjudice de celles prévues par la présente loi et les textes d'application, relatives à la prévention de la pollution des eaux, du sous-sol et de l'atmosphère.
+(69) Un décret en conseil des Ministres fixe les modalités et le régime de classement: [a] la mise en oeuvre de l'établissement classé est subordonnée à l'autorisation préalable du Ministre concerné. Elle est refusée lorsque les dangers générés peuvent avoir des effets graves, irrémédiables ou irréversibles pour les intérêts protégés à l'article 68; [b] l'autorisation accordée doit prendre en considération la nécessité de prévenir, de réduire ou d'éliminer les risques présentés. Elle peut être, selon le cas, subordonnée à l'éloignement de l'établissement classé de zones d'habitation, de cours ou réserves d'eau, de milieu ou site naturels ou artificiels particulièrement sensibles; [c] le décret précise, le délai au terme duquel les exploitations visées à l'article 68, déjà en service à la date de son entrée en vigueur, devront se conformer à la législation relative aux établissements classés; [d] le classement d'un établissement peut intervenir postérieurement à la mise en service lorsque la modification ou l'extension de ses activités ou lorsque des effets non prévisibles découlant de son fonctionnement relève des risques pour les intérêts protégés à l'article 68; [e] les dispositions du présent article s'applique sans préjudice de celles prévues par la présente loi et les textes d'application, relatives à la prévention de la pollution des eaux, du sous-sol et de l'atmosphère.
 
 6.2.4. DES PLANS D'URGENCES
 
@@ -178,7 +178,7 @@
 
 (71) Tout exploitant d'un établissement classé, sous le contrôle périodique et régulier de la Direction Générale de l'Environnement, un plan d'urgence destiné, en cas d'accident grave à: [a] assurer la sécurité du personnel et des populations environnantes; [b] circonscrire les causes de l'accident et en réduire ou éviter les effets dommageables.
 
-(72) Un décret en conseil des Ministres détermine pour l'établissement des plans d'urgence visés aux articles 70 et 71: [a] les moyens qui peuvent être mobilisés; [b] les stratégies de mise en œuvre des plans; [c] les mesures obligatoires d'information et de protection des populations.
+(72) Un décret en conseil des Ministres détermine pour l'établissement des plans d'urgence visés aux articles 70 et 71: [a] les moyens qui peuvent être mobilisés; [b] les stratégies de mise en oeuvre des plans; [c] les mesures obligatoires d'information et de protection des populations.
 
 7. DES DISPOSITIONS PÉNALES
 

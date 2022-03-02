@@ -45,7 +45,7 @@ function amend_errors_in_articles {
     amend_error_in_article 3 intér8t intérêt | \
     amend_error_in_article 3 domedtiques domestiques | \
     sed -E ':start;s/^(\(3\).*[;:] )L/\1l/;t start' | \
-    amend_error_in_article 3 'des œufs ou d,p ni\*' 'des oeufs ou des nids,' | \
+    amend_error_in_article 3 'des oeufs ou d,p ni\*' 'des oeufs ou des nids,' | \
     amend_error_in_article 3 ' Ia ' ' la ' | \
     amend_error_in_article 3 'destruction\.' 'destruction,' | \
     amend_error_in_article 3 ' athat' ' achat' | \
@@ -363,7 +363,6 @@ function amend_errors_in_articles {
     amend_error_in_article 36 'nouvel\. alinéa' 'nouvel alinéa' | \
     amend_error_in_article 36 ' e Dans' ' "Dans' | \
     amend_error_in_article 36 'pafcs-' 'parcs ' | \
-    amend_error_in_article 36 œuvre oeuvre | \
     amend_error_in_article 36 "'de" de | \
     amend_error_in_article 36 ' D \[II\] \[•\]' '" [2]' | \
     amend_error_in_article 36 'Art\. \[366\] \[•\]' '"Art. 366. -' | \
