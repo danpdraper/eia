@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function remove_all_text_before_first_header {
-  sed -n '/^Interprelation./,$p' | \
+  sed -n '/^Interprelation/,$p' | \
     sed -n '/^PART I - PRELIMINARY/,$p'
 }
 
@@ -22,6 +22,7 @@ function amend_errors_in_articles {
     sed -E 's/of([a-z]+)/of \1/g' | \
     sed -E 's/\[•\] //g' | \
     sed -E 's/ \(1\)/ \[1\]/g' | \
+    sed -E 's/Siena Leone/Sierra Leone/g' | \
     sed -E 's/SierraLeone/Sierra Leone/g' | \
     sed -E 's/anyof/any of/g' | \
     sed -E 's/of fice/office/g' | \
@@ -83,6 +84,8 @@ function amend_errors_in_articles {
     amend_error_in_article 1 'inspection,"' 'inspection,' | \
     amend_error_in_article 1 'An "' 'an "' | \
     amend_error_in_article 1 "project'" "project" | \
+    amend_error_in_article 1 ' ,' '' | \
+    amend_error_in_article 1 'water-resources' 'water resources' | \
     #Article 2
     sed -E "s/Establis~t~ \[1\] There is hereby established the National Environment ~~r:'= ProtectionBoard <hereinafter referredto as//" | \
     sed -E 's/"theBoard"\), Protection Board Composition and tenure of officeof the Board.//' | \
@@ -177,6 +180,7 @@ function amend_errors_in_articles {
     amend_error_in_article 9 'fco-operate~·' 'co-operate ' | \
     amend_error_in_article 9 'forprotecting theenvironmentand identifyingandpublicising' 'for protecting the environment and identifying and publicising' | \
     amend_error_in_article 9 'information advice' 'information, advice' | \
+    amend_error_in_article 9 'environment \[3\]' 'environment. [3]' | \
     #Article 10
     sed -E 's/\(10\)/Power to Delegate.\n(10)/' | \
     amend_error_in_article 10 'Subjectto subsection\(2\), theMinistermaydelegate' 'Subject to subsection [2], the Minister may delegate' | \
@@ -220,6 +224,8 @@ function amend_errors_in_articles {
     amend_error_in_article 12 "government'sreview" "government's review" | \
     amend_error_in_article 12 'Siam' 'Sierra' | \
     amend_error_in_article 12 '\.monitor' 'monitor' | \
+    amend_error_in_article 12 'this this' 'this' | \
+    amend_error_in_article 12 'environmental Policies' 'environmental policies' | \
     #Article 13
     sed -E 's/\(13\)/Duties of the Director.\n(13)/' | \
     amend_error_in_article 13 '\(I\) The Directorshall,sUbject to the policy guiclana:of the \~es' '[1] The Director shall, subject to the policy guidance' | \
@@ -302,6 +308,7 @@ function amend_errors_in_articles {
     amend_error_in_article 20 'withintwenty-one daysof' 'within twenty-one days of' | \
     amend_error_in_article 20 '" \[4\]' '[4]' | \
     amend_error_in_article 20 '"been disapproved the applicationin respectof the projectshall be rejected .' 'been disapproved the application in respect of the project shall be rejected' | \
+    amend_error_in_article 20 'impact  together with' 'impact assessment together with' | \
     #Article 21
     sed -E 's/\(21\)/Director to issue licences.\n(21)/' | \
     amend_error_in_article 21 'Yithout Prejudice' 'Without prejudice' | \
@@ -454,15 +461,18 @@ function amend_errors_in_articles {
     amend_error_in_article 36 'of fshore' 'offshore' | \
     amend_error_in_article 36 '18 No.2 Environment Protection Act ' '' | \
     amend_error_in_article 36 '\(I\)' '[1]' | \
+    amend_error_in_article 36 'on shore' 'onshore' | \
+    amend_error_in_article 36 'of the Minister ' '' | \
     #Article 37
     amend_error_in_article 36 'Legal \[37\]' '\n\nLegal proceedings.\n(37)' | \
     amend_error_in_article 37 'proceedings. any memberof' 'proceedings any member of' | \
     amend_error_in_article 37 'finn ' 'firm ' | \
     amend_error_in_article 37 '. with the Act' 'with the Act' | \
+    amend_error_in_article 37 'company or by proceedings any member' 'company or by any member' | \
     #Article 38
     sed -E 's/ Establishment \[38\]/Establishment of the National Environment Fund.\n(38)/' | \
     amend_error_in_article 38 'Nationtal ' '' | \
-    amend_error_in_article 38 'ofEn\~e ' 'of ' | \
+    amend_error_in_article 38 'ofEn\~e ' '' | \
     amend_error_in_article 38 'vironmen Fund. ' '' | \
     amend_error_in_article 38 'I I No.2 Environment Protection Act 19 ' '' | \
     amend_error_in_article 38 '\(4\), .' '[4],' | \
@@ -489,6 +499,7 @@ function amend_errors_in_articles {
     amend_error_in_article 40 '.me use of the Fund' 'the use of the Fund' | \
     amend_error_in_article 40 'MInister' 'Minister' | \
     amend_error_in_article 40 '  \[2\]' ' [2]' | \
+    amend_error_in_article 40 'records in Accounts and relation' 'records in relation' | \
     #Article 41
     sed -E 's/Regulations. \[41\]/\n\nRegulations.\n(41)/' | \
     amend_error_in_article 41 'Act \[2\]' 'Act. [2]' | \
@@ -497,7 +508,8 @@ function amend_errors_in_articles {
     amend_error_in_article 41 "I' \[c\]" "[c]" | \
     amend_error_in_article 41 'theregulations' 'the regulations' | \
     amend_error_in_article 41 'penaltiesfor' 'penalties for' | \
-    amend_error_in_article 41 '\[1\] anyother' '[f] any other'
+    amend_error_in_article 41 '\[1\] anyother' '[f] any other' | \
+    sed -E 's/  / /g'
 }
 
 function amend_errors_in_headers {
