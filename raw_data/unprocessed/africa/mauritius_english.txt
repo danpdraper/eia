@@ -1,0 +1,1146 @@
+
+THE ENVIRONMENT PROTECTION ACT 1991
+Act No. 34 of 1991 –19 July 1991
+________
+                                          ARRANGEMENT OF SECTIONS
+
+PART I - PRELIMINARY
+Section	3.  Application of Act
+1.  Short title	
+2.  Interpretation	
+PART II - ADMINISTRATION
+4. The National Environment Commission	8.  The Environmental Advisory Council
+5.  Functions and Powers of the Commission	9.  Duties of the Council
+6.  Powers of the Minister	10. Technical advisory committee
+7.  The Department of Environment	
+PART III - ENFORCEMENT AGENCIES
+11. Enforcing agencies	12. The Environment Coordination Committee
+PART IV - ENVIRONMENTAL IMPACT ASSESSMENT
+13. Application for EIA Licence	19. EIA approval
+14. Contents of EIA	20. Submission of fresh EIA
+15. Public comment	21. Transfer of EIA licence
+16. Review of EIA	22. Effect of EIA licence
+17. EIA Committee	23. Exemption
+18. Decision on EIA	
+PART V - SPILL AND ENVIRONMENTAL EMERGENCY
+24. Duty to notify Director	28. Recovery of expenses
+25. Measures taken by Director	29. Environmental emergency
+26. Clean-up and removal operations	30. Powers in case of spill or emergency
+27. Liability for spill	31. Regulations under this Part
+PART VI - NATIONAL ENVIRONMENTAL STANDARDS
+32. Issue of standards	37. Standards for hazardous waste
+33. Standards for water
+38. Standards for non- hazardous waste
+34. Effluent limitations	39. Standards for pesticide residues
+35. Standards for air
+40. Standards for odours
+36. Standards and regulations for noise	41. Quality control of laboratories
+PART VII- COASTAL AND MARITIME ZONE MANAGEMENT
+42. Interpretation under this Part	44. Dumping in the zone
+43. Protection of the zone	
+PART VIII - THE ENVIRONMENT APPEAL TRIBUNAL
+45. The Environment Appeal Tribunal	48. Determination of the Tribunal
+46. Jurisdiction of the Tribunal	49. Appeal to the Supreme Court
+47. Proceedings of the Tribunal	50. Regulations by the Tribunal
+PART IX - THE NATIONAL ENVIRONMENT FUND
+51. The National Environment Fund	56A. Application of Part IXA
+52. Objects of the Fund	56B. Charge to environment protection fee
+53. The Board	56C. Registration of enterprise or activity
+54. Income and disbursement	56D. Surcharge for late payment of fee
+55. Audit and accounts	56E. Payment of the fee into the Fund
+56. Regulations in respect of the Fund	56F. Recovery of fee
+PART X - ENFORCEMENT
+57. Programme approval	64. Powers of entry
+58. Enforcement notice	65. Entry and arrest without warrant
+59. Prohibition notice	66.Compliance monitoring
+60. General provisions on notices	67. Offences
+61. Consultation on notices	68. Powers of Court
+62. Variation notice.	69. Jurisdiction
+63. Revocation of notices	
+PART XI  - MISCELLANEOUS PROVISIONS
+70. Restriction of liability	
+71. Liability of corporate bodies	74. Regulations
+72. Disclosure of information	75. Consequential amendments
+73. Code of practice	76. Commencement
+	
+________
+ An Act
+To provide for the protection and management of the environmental assets of Mauritius so that their capacity to sustain the society and its development remains unimpaired and to foster harmony between quality of life, environmental protection and sustainable development for the present and future generations; more specifically to provide for the legal framework and the mechanism to protect the natural environment, to plan for environmental management and to coordinate the inter-relations of environmental issues, and to ensure the proper implementation of governmental policies and enforcement provisions necessary for the protection of human health and the environment of Mauritius.
+ENACTED by the Parliament of Mauritius, as follows -
+PART I
+PRELIMINARY
+1.	Short title
+This Act may be cited as the Environment Protection Act 1991.
+2.	Interpretation
+In this Act –
+"accredited laboratory" means public or private laboratory accredited to conduct analyses of environmental samples under section 41(2);
+"air" includes air within a building, a vehicle or within any enclosure or structure; 
+"authorised officer" means an officer designated under section 7(5);
+"Board" means the Board established under section 53(1); 
+"Central Water Authority" means the Central Water Authority established under the Central Water Authority Act;
+"Commission" means the National Environment Commission established under section 4;
+"Committee" means the Environment Coordination Committee established under section 12;
+"Contingency plan" means measures intended to be applied in the event of a spill or an environmental emergency;
+"Council" means the Environmental Advisory Council established under section 8;
+"Department" means the Department of Environment established under section 7(1);
+"Director" means the Director of Environment appointed under section 7(2);
+"discharge" includes deposit, emission and leakage;
+"effluent limitations" means any restriction prescribed under section 34 on quantities, rates and concentrations of chemical, biological or other constituents which are discharged into the waters;
+"EIA" means an environmental impact assessment;
+"EIA Committee" means the EIA Committee established under Section 17;
+"EIA licence" means a licence issued under section 18(4);
+"enforcement notice" means a notice referred to under section 58;
+"enforcing agency" means an enforcing agency declared under section 11;
+"environment" includes land, air, water, or any of these media, and all living organisms;
+"environmental data" means data obtained from the laboratory analyses of environmental samples;
+"environmental impact assessment" means a document containing the information required under section 14;
+"environmental laws" means -
+(a) this Act and any regulations made under this Act, and includes any direction, order, notice issued under, or any requirement imposed by, this Act;
+(b) any other enactment, or part of any other enactment which the Minister may by regulations declare with the approval of Commission;
+"environment liaison officer" means an environment liaison officer designated under section 11(3);
+"exempt undertaking" means an undertaking by a public department in relation to which a declaration is made under section 23;
+"Finance Officer" means the Finance Officer posted at the Ministry;
+"financial year" has the meaning assigned to it by section 111 of the Constitution;
+"Fund" means the National Environment Fund established under section 51;
+"hazardous substance" means a substance declared as hazardous substance under section 37(1);
+"holder" means the holder of an EIA licence;
+"local authority" has the meaning assigned to it in the Local Government Act 1989;
+"medium" means environmental medium and includes air, land and waters;
+"Minister" means the Minister to whom responsibility for the subject of the environment is assigned;
+"Ministry" means the Ministry having responsibility for the subject of the environment;
+"monitoring" includes the inspection, measurement sampling or analysis of any discharge of a pollutant, or of any environmental medium in any locality, whether periodically or continuously;
+"national environmental standards" means standards referred to under Part VI;
+"noise" includes vibration;
+"non-hazardous waste" means solid waste other than hazardous waste and clinical waste;
+"notice" means an enforcement notice, a prohibition notice, and a variation notice;
+"owner of a pollutant" means the owner or the person having the charge, management or control of a pollutant which is spilled;
+"person responsible" means the owner, or the person having the charge, management or control of an activity, enterprise, or undertaking;
+"pesticide residue" means any substance resulting from the use of a pesticide or of the derivation of a pesticide;
+"pollutant" means a substance which may cause harm, damage or injury to the environment, to plant or animal life, or to human health; and includes any substance from which a pollutant is derived;
+"Prime Minister" means the Prime Minister of the Government of Mauritius;
+"programme approval" means a programme approval referred to under section 57(3);
+"programme of measures" includes steps, plans, proposals;
+"prohibition notice" means a notice referred to under section 59;
+"proponent", subject to sections 13(5) and 21(4),means a person who -
+(a)	is the owner of, or who has the charge, management, or control of an undertaking; or
+
+(b)	carries out or proposes to carry out an undertaking;
+"public comments" means submissions made under section 15 by any person other than a public department on an EIA;
+"public department" means a Ministry in the Government of Mauritius, a parastatal body and a public authority established under any enactment and includes an enforcing agency;
+"relevant enforcing agency" means the enforcing agency designated in the Fourth Schedule in relation to a specified medium or pollutant;
+"spill" means a discharge of a pollutant into the environment from or out of a structure, vehicle, vessel, craft, or other carrier or container, which -
+(a)	is abnormal having regards to all the circumstances of the discharge, and
+
+(b)	poses a serious threat to the environment;
+"standards" includes criteria and specifications;
+"substance" means any natural or artificial substance, whether in solid or liquid from or in the form of a gas or vapour, and includes mixtures of substances, electricity and heat;
+"technical advisory committee" means a committee established under section 10;
+"Tribunal" means the Environment Appeal Tribunal established under section 45;
+"undertaking" means such enterprise or activity, or any proposal, plan, or programme in respect of an enterprise or activity by a public department, local authority, or any other person, as is prescribed in the First Schedule, and includes any modification, change, alteration or addition of an undertaking;
+"zone" has the meaning assigned to it by section 42.
+3. 	Application of Act 
+This Act shall -
+(a) bind the Crown;
+(b) apply to -
+(i)	the island of Mauritius;
+(ii)	the islands under the jurisdiction of the State of Mauritius with such modifications as the Minister may, by regulations prescribe.
+
+
+PART II
+ADMINISTRATION
+4.	The National Environment Commission
+(1)	There is established for the purposes of this Act a National Environment Commission.
+(2) The Commission shall consist of -
+(a) the Prime Minister, as chairman,
+(b) the Minister, as vice chairman,
+(c) the Ministers to whom are assigned responsibility for the subjects listed in the Second Schedule, and 
+(d) such other Ministers as the Prime Minister may designate.
+5.	Functions and powers of the Commission
+(1) The Commission shall -
+(a)	set national objectives and goals, and determine policies and priorities for the protection of the environment, having due regard to the recommendations of the Minister;
+(b)	review progress made by public departments on any aspect of environmental management projects and programmes;
+(c)	ensure coordination and cooperation between public departments, local authorities, and other government organisations engaged in environmental protection programmes; 
+(d)	make such recommendations and issue such directions as it may determine to public departments;
+(e)	monitor and review the activities of public departments concerned with the protection and management of the environment.
+(2) The Director shall act as secretary to the Commission.
+6.	Powers of the Minister
+Subject to any direction by the Commission, the Minister shall for the purpose of this Act-
+(a)	propose and develop policies on all aspects of environmental protection and management pursuant to national objectives and goals set by the Commission from time to time; 
+(b)	coordinate and monitor all activities concerning the protection and management of the environment;
+(c)	investigate reports of pollution, spills, and other related cases;
+(d)	establish such standards for the protection of the air, land, water and as may be necessary to safeguard the human health and the environment;
+(e)	carry out research and commission studies on environmental quality and related matters;
+(f)	prepare environmental action plans and issue reports on the state of the environment in cooperation with other public departments, the Council, and non-governmental organisation or associations;
+(g)	initiate and coordinate actions required in a state of environmental emergency or any other situations which may pose a serious threat to the environment;
+(h)	appoint technical advisory committees or other committees;
+(i)	publish and disseminate information concerning the protection of the environment; 
+(j) carry out such other activities as may be necessary or expedient for the administration of this Act.
+7.	The Department of Environment
+(1) There is established within the Ministry for the purposes of this Act a Department of Environment.
+(2) The Department shall be administered by a Director of Environment who shall –
+(a)	be a public officer, 
+(b)	appointed by the Public Service Commission,
+(c)	be responsible for the control, operation and management of the day to day business of the Department,
+(d)	carry out the duties and functions provided under this Act, and such other duties as the Minister may assign to him,
+(e)	be responsible to the Minister for the proper discharge of his functions under this Act and for the implementation of such policies as may be determined.
+(3) There shall be appointed at the Department such officers as may be necessary for the proper discharge of the functions and duties of the Director under this Act.
+(4) The officers of the department shall be public officers and shall be under the direct administrative control of the Director.
+(5) The Director may designate any officer of the Department as authorised officer who shall have the duties and powers conferred by this Act.
+8.	The Environmental Advisory Council
+(1) There shall be established an Environmental Advisory Council.
+(2) The Council shall consist of one representative from each of the organisations or public departments listed in the Third Schedule and such other persons having competence and knowledge in matters relating to the protection and management of the environment, as may be appointed by the Minister.
+(3) The Council may elect one of its members as Chairman.
+(4) A member of the Council other than a representative of an organisation or association shall hold office for a period of three years and shall be eligible for reappointment.
+(5) One third of the members of the Council shall constitute a quorum.
+(6) The Council shall regulate its own meetings and proceedings in such manner as it thinks fit.
+(7) The Director shall designate an officer of the Department to act as secretary to the Council.
+9.	Duties of the Council
+The Council shall -
+(a)	consider any matter affecting the quality of the environment and report to the Minister;
+(b)	advise the Minister on the state of Environment and make recommendations to him regarding actions and measures for the improvement of the quality of the environment.
+10.	Technical advisory committee
+(1) The Minister may at any time establish such technical advisory committee as he thinks fit to advise him on matters pertaining to the scientific and technical aspects of environmental protection and management.
+(2) The technical advisory committee shall
+(a)	consist of members appointed by the Minister,
+(b)	provide advice on any matter specified by the Minister,
+(c)	obtain any assistance from the Director as may reasonably be required to carry out its functions,
+(d)	be discharged on submission of its opinion on the matter referred to it, unless the Minister- 
+(i)	requests further advice, or 
+(ii)	otherwise directs;
+(e)	regulate its own meetings and proceedings in such manner as it thinks fit.
+(3) Any person having a sound technical knowledge of the matter on which advice is required-
+(a)	may be appointed on a technical advisory committee on such terms and conditions as may be determined by the Minister;
+(b)	shall not hold a public office solely by virtue of his appointment on the committee; 
+(c) shall be under the duty of confidentiality provided under section 72.
+PART III
+ENFORCING AGENCIES
+11. Enforcing agencies
+(1)	There shall be such enforcing agencies as are declared in the Fourth Schedule in respect of such environmental medium, or such pollutant as is specified.
+(2)	The enforcing agencies shall have the functions and duties prescribed in the Fourth Schedule.
+(3)	Each enforcing agency shall designate an environment liaison officer who shall have such functions, duties and powers as prescribed in the Fourth Schedule.
+(4)	The Minister may with the approval of the Commission amend the Fourth Schedule.
+12. The Environment Coordination Committee
+(1)	There shall be for the purposes of this Act an Environment Coordinating Committee which shall consist of -
+(a)	the Permanent Secretary of the Ministry, as Chairman;
+(b) the enforcing agencies, or their representatives;
+(c) the environment liaison officers;
+(d) the Director;
+(e) the Deputy Director of the Department;
+(f) any other public officer designated by the Committee.
+(2)	The Committee shall -
+(a)	develop such policies and administrative measures as are necessary to ensure prompt and effective consultation on matters relating to environment protection and management
+(b)	ensure that information is shared among the enforcing agencies, the Department and other public departments so as to develop a better understanding of environmental issues and of problems relating to enforcement of environmental laws;
+(c)	advise the Minister and, where requested, the Commission, on matters relating to environmental standards, guidelines, codes of practice and other control measures for the purpose of avoiding duplication of functions among public departments and of ensuring proper enforcement of environmental laws; and
+(d)	generally to ensure the maximum cooperation and coordination among enforcing agencies and other public departments dealing with environment protection.
+(3)	The Committee may -
+(a)	make recommendations to the Minister on any matter relating to the protection and management of the environment, including national environmental standards, the processing of applications for EIA licence, the review of EIA, spills and environmental emergency, enforcement procedures and policies;
+(b)	propose to the Minister amendment of the Fourth Schedule;
+(c)	adopt any memorandum of understanding on the use of facilities under the control of any public department;
+(d)	provide sound guidelines on sampling, monitoring and laboratory analyses under an environmental law.
+(4)	The Committee shall -
+(a)	regulate its own meetings and proceedings as it thinks fit;
+(b) meet as often as it is necessary at the request of its chairman, but in any case at least once every month.
+(5)	For the purpose of discharging its functions under this Act, the Committee may -
+(a)	establish sub-committees;
+(b) delegate any of its functions and powers to its Chairman, the Director or any subcommittee.
+Part IV
+ENVIRONMENTAL IMPACT ASSESSMENT
+13. Application for EIA licence
+(1) Notwithstanding any licence, permit, or approval granted under any other enactment, any person being a proponent who commences, proceeds with, carries out, executes or conducts, or causes to commence, proceed with, carry out, execute or conduct, an undertaking -
+(a)	without an EIA licence; or
+(b) in breach of any condition of the licence,
+shall commit an offence.
+(2) Notwithstanding subsection (1) a proponent
+(a)	may for the purpose of an undertaking prepare a feasibility study or do any research or any act in furtherance of an application for a EIA licence, or for an approval, permission or license required under any other enactment in respect of the undertaking;
+(b) shall inform the Director of any act done under paragraph (a).
+(3) A proponent applying for an EIA licence in relation to his undertaking shall submit to the Director an environment impact assessment.
+(4) Where ownership, control or management of an undertaking is transferred before an EIA is approved to any person, the proponent and that person shall jointly notify the Director of the transfer and communicate a copy of the document witnessing the transfer.
+(5) On notification under subsection (4), the person to whom the transfer is made shall be deemed to be the proponent in respect of the undertaking transferred as from the date of the notification.
+(6) Unless a joint notification of transfer is given to the Director, the person applying for an EIA licence shall be deemed to be the proponent.
+(7) Any person who contravenes subsection (4) shall commit an offence.
+
+14	Contents of EIA
+An EIA shall contain a true statement and description of -
+(a)	the location of the undertaking and its surroundings;
+(b) the principle, concept and purpose of the undertaking;
+(c) the direct or indirect effects that the undertaking is likely to have on the environment;
+(d) the social, economic, and cultural effects that the undertaking is likely to have on people and society;
+(e) any actions or measures which may avoid, prevent, change, mitigate or remedy the likely effects of the undertaking on the environment, people and society;
+(f) the inevitable adverse environmental effects that the undertaking is likely to have on the environment people and society, if it is implemented in the manner proposed by the proponent;
+(g) the irreversible and irretrievable commitments of resources which will be involved by the undertaking, if implemented in the matter proposed by the proponent;
+(h) any alternatives to the proposed undertaking;
+(i) such other information as may be necessary to a proper review of the potential environmental impact of the undertaking.
+15. Public Comment
+(1) An EIA submitted under section 13 (3) shall be open at all reasonable hours for public inspection.
+(2) The Director shall give notice to that effect in 2 issues of the Gazette and in 2 issues of 2 daily newspapers, there being in each case an interval of at least 7 days between the first and second publications.
+(3) A notice published under subsection (2) shall state - 
+(a)	a summary description of the undertaking,
+(b) the address where the undertaking is to be carried out,
+(c) the place where the EIA may be inspected, 
+(d) the time limit for the submission of public comment in writing.
+(4) The Director may on application extend the time limit to afford reasonable opportunity for any person to submit public comments on the EIA.
+16.	Review of EIA
+(l) The Director shall -
+(a)	review an EIA submitted by a proponent and determine its scope and contents; and
+(b) refer the EIA, other than the EIA relating to an exempt undertaking, with such comments and observations as he thinks appropriate, and with any public comments submitted, to the EIA Committee for examination.
+(2) The Director may for the purpose of the review under subsection (1)(a) -
+(a)	request any public department, an enforcing agency, any non-governmental organisation or any other person to submit their observations in writing on the EIA; 
+(b) set up a technical advisory committee to advise him on the EIA or on any aspects of the undertaking;
+(c) require the proponent to carry out further study or to submit additional information for the purpose of ensuring that the EIA is as accurate and exhaustive as possible.
+17.	EIA Committee
+(1)	There is established for the purposes of this Act an EIA Committee which shall consist of:
+(a)	the Permanent Secretary, Ministry of Environment & Quality of Life, as Chairman;
+(b)	the Director;
+(c)	a representative of the Ministry of Health;
+(d)	a representative of the Ministry of Agriculture, Fisheries & Natural Resources;
+(e)	a representative of the Ministry of Industry and Industrial Technology;
+(f)	a representative of the Ministry of Housing, Lands & Town & Country Planning; and
+(g)	a representative of the Ministry of Energy, Water Resources & Postal Services.
+(2)	The EIA Committee shall examine applications for an EIA licence referred to it after review by the Director and shall make such recommendations to the Minister as it thinks fit.
+(3)	 Four members of the EIA Committee shall constitute a quorum.
+(4)	The EIA Committee may
+(a)	establish any sub-committee;
+(b) with the approval of the Minister, co-opt any person as member.
+(5)	No co-opted member shall 
+(a)	be deemed to hold a public office solely by virtue of his designation as member of the EIA Committee;
+(b) have any voting right.
+(6)	Subject to the other provisions of this section, the EIA Committee shall regulate its meetings and proceedings in such manner as it thinks fit.
+18. Decision on EIA
+(1) The Minister shall after taking into account the recommendations of the EIA Committee make his decision on the EIA, and may -
+(a)	refer it back to the Director with a direction to set up a technical advisory committee for further consideration of the EIA;
+(b) require the proponent to furnish any additional information as may be needed to determine the environmental impact of the undertaking;
+(c) where an EIA provides insufficient information to determine the scope or the impact of the undertaking on the environment, people or society, disapprove the EIA;
+(d) subject to section 19, approve the EIA with a direction to issue an EIA licence on such terms and conditions as it considers appropriate.
+(2) Subject to an appeal under section 49, the decision of the Minister shall be final and binding.
+(3) The Director shall comply and give effect to the decision of the Minister under subsection (1).
+(4)	Where an EIA is approved by the Minister, the Director shall issue an EIA Licence on the terms and conditions contained in a direction under subsection (1).
+19. EIA approval
+(1) In considering approval of an EIA, account shall be taken of -
+(a)	the minimum requirements of an EIA as prescribed in regulations;
+(b) the environmental factors considered in the EIA;
+(c) the measures proposed to avoid or minimise adverse effects on the environment, people or society;
+(d) the alternatives proposed in the EIA;
+(e) such other matters that may be relevant in weighing the significance or insignificance of the potential environmental impact of the undertaking.
+(2) Where an EIA is approved or a direction is given by the Minister under subsection 3(b), the EIA and the directions shall be deemed to be conditions of the EIA licence issued under section 18(4).
+(3) The Minister may at any time notwithstanding an approved EIA -
+(a)	revoke an EIA licence, or amend the conditions of an EIA licence;
+(b) give the proponent such directions as he considers necessary in relation to-
+(i)	the methods of execution and the phasing of the undertaking;
+(ii) works or actions required to prevent, reduce or eliminate the adverse effects of the undertaking on the environment, people and society;
+(iii)	 research, investigation, and monitoring programmes related to the undertaking;
+(iv) any other aspect of the undertaking or of the execution of the undertaking which is reasonably expected to have adverse environmental effects.
+(c) require the proponent to submit at such interval as he may determine, reports on the impacts of the undertaking on the environment, people and society.
+(4) Any person who fails to comply with a requirement under subsection (3) (c), shall commit an offence.
+20. Submission of fresh EIA.
+(1) The Director may at any time after the issue of an EIA licence order a holder to submit a fresh EIA in respect of his undertaking within such time as may be specified.
+(2) An order under subsection (1) may be issued where in the opinion of the Director-
+(a)	the undertaking is or is likely to be a source of pollution to the environment;
+(b) there is a substantial change or modification in the undertaking, or in the manner in which the undertaking is being operated;
+(c) the undertaking poses a threat to the environment; or
+(d) the circumstances of the undertaking with regard to its surrounding environment so require.
+(3)	Where a person being a holder fails to comply with an order issued under subsection (1) –
+(a) he shall commit an offence;
+(b) his EIA licence shall be cancelled.
+21. Transfer of EIA Licence.
+(1) An EIA licence may be transferred by the holder to a person who purports to own, or to have charge, or management, or control of the undertaking to which the licence relates.
+(2) Where an EIA licence is transferred under this section, the person to whom it is transferred and the holder shall jointly notify the Director in writing of the transfer not later than thirty days of the transfer, and communicate the document witnessing the transfer.
+(3) Where no joint notification of transfer is given in accordance with subsection (2), the holder shall be deemed for the purposes of this Act to be the owner, or the person having charge, or management or control of the undertaking, as the case may be.
+(4) An EIA Licence which is transferred to a person under this section shall have effect on the date the Director is notified as if it has been issued to that person and be subject to the same conditions as were attached to it immediately before that date.
+(5) Any person who contravenes subsection (2) shall commit an offence.
+22.	Effect of EIA Licence.
+(1) No civil or criminal liability in respect of an undertaking or consequence resulting from an undertaking shall be incurred by the Government of Mauritius, the Minister, or any public officer by reason of the approval of an EIA or the grant of an EIA licence, or by reason of any conditions attached to an EIA licence.
+(2) The fact that an EIA licence is issued in respect of an undertaking shall afford no defence to any civil action or to a prosecution under any enactment other than section 13(1) concerning that undertaking or the manner it is operated or managed.
+23.	Exemption.
+(1) The Minister may declare an undertaking by a public department, which in his opinion is urgently needed in the national interest or for the economic development of Mauritius, to be an exempt undertaking.
+(2) Sections 13 and 16(b) shall not apply in respect of an exempt undertaking.
+(3) The Director shall refer an EIA in respect of an exempt undertaking together with his comments and observations and with any public comments submitted, to the Minister for his decision.
+(4) The Minister may approve the EIA on such conditions as he thinks fit, having regard to section 19.
+(5) On approving an EIA under subsection (4), the Minister shall cause a notice to be published in the Gazette stating -
+(a) summary description of the undertaking and its location;
+(b) the proponent of the undertaking;
+(c) a declaration that the undertaking is an exempt undertaking;
+(d) the approval of the EIA and the conditions attached to the approval. 
+
+PART V
+SPILL AND ENVIRONMENTAL EMERGENCY
+24. Duty to notify the Director.
+(1) Any office of a public department or of a local authority who is informed of a spill, shall notify the Director.
+(2) Any owner of a pollutant which is spilled shall forthwith - 
+(a)	notify the Director
+(b) inform the Director of - 
+(i)	the circumstances of the spill,
+(ii) any action taken or proposed to be taken in relation to the spill,
+(c) do everything practicable to -
+(i)	prevent, eliminate and ameliorate the adverse effects of the spill,
+(ii) restore the environment.
+25. Measures taken by the Director.
+(1) Where the owner of a pollutant which is spilled -
+(a)	is reasonably suspected of contravening section 24(2)(c),
+(b) cannot promptly be identified,
+(c) requests the assistance of the Director in relation to a spill,
+the Director may initiate any action and take any measures necessary in the public interest to prevent, eliminate and ameliorate the adverse effects on and to restore the environment.
+(2) In the event of a spill, the Director may order the owner of the pollutant which is spilled, or any other person to do such action within such period of time as he may specify in order to -
+(a)	prevent, eliminate, or ameliorate the adverse environmental effects of the spill,
+(b) restore the environment,
+(c) dispose of or in any way deal with the pollutant or any object reasonably suspected to be affected by the pollutant.
+(3) The Director may direct any person conducting an activity which may, in the Director's opinion, cause a spill -
+(a)	to prepare a contingency plan satisfactory to the Director,
+(b) to make such modification as he thinks appropriate to an existing contingency plan.
+(4) The Minister may make regulations providing for the requirement of contingency plans in respect of such activities or buildings as may be prescribed.
+26. Clean-up and removal operations.
+The Minister shall prescribe -
+(a)	The procedures for clean-up and removal operations in the event of a spill;
+(b) the method of storage and of disposal of any pollutant or of any object, plant, animal, or any part of the environment removed in a clean-up or removal operation or otherwise affected by a pollutant.
+27. Liability for spill.
+(1) Any person affected in any way by a spill shall have a right to damages from the owner of a pollutant.
+(2) Subject to this section, Article 1384 alinea l of the Code Napoleon shall apply to an action under subsection (1).
+(3) For the purposes of an action for damages under this section -
+(a)	the owner of a pollutant shall be presumed to be liable for any damages caused by a spill;
+(b) the owner of a pollutant which is spilled shall always be deemed to be the "gardien" of the pollutant;
+(c) a pollutant shall always be deemed to be in the custody of the owner of the pollutant;
+(d) the burden of proving that the damage was not caused by the pollutant which was spilled, shall always rest on the owner of the pollutant;
+(e) "force majeure", "la faute du tiers", or"la faute exclusive de la victime" shall not be a defence.
+(4) Where there are several owners of a pollutant, the action may be directed against all or anyone of them.
+(5) Where damage is caused by a spill to the environment, or to any property, object or thing which is not the subject of private ownership, the Attorney-General may claim damages against the owner of the pollutant in accordance with this section.
+28.	Recovery of expenses.
+(1) The Director may recover from the owner of a pollutant which is spilled all costs and expenses incurred as a result of -
+(i)	any clean-up or removal operation,
+(ii) any measure taken to prevent, eliminate and ameliorate the adverse effects of a spill on the environment;
+(iii) any measure taken to dispose of or to deal with the pollutant.
+(2) The costs and expenses referred to in subsection (1) shall be deemed to be civil debts owed by the owner of a pollutant to the Government of Mauritius.
+29. Environmental emergency.
+(1) Where a major threat to the environment is posed as a result of a spill or otherwise, the Prime Minister may in consultation with the Minister declare an environmental emergency.
+(2) Notwithstanding any enactment, where an emergency is declared under subsection (1), the Prime Minister may make such order as he thinks fit to any public department for the purpose of the protection of the environment.
+(3) The Commission shall prepare such contingency plan as is appropriate in the event of an emergency situation.
+30.	Powers in case of emergency or spill.
+Any person engaged in an action or measure taken by the Director in the case of a spill, or in furtherance of an order by the Prime Minister in the case of an emergency, may -
+(a)	without warrant enter any premises and have access through or over any building, structure, vehicle or by land, water or air,
+(b) construct or set up any structure, machinery, materials and equipment on any premises, 
+(c) remove the pollutant or any object, plant, animal, to any part of the environment which is reasonably suspected to be effected by the pollutant, and
+(d) stop, inspect, search and detain any vehicle.
+31. Regulations under this Part.
+The Minister may make regulations under this Part - 
+(a)	for the purpose of preventing or in any way dealing with a spill, 
+(b) after consultation with the Commission, for the purpose of environmental emergency.
+PART VI
+NATIONAL ENVIRONMENTAL STANDARDS
+32. The issue of standards.
+(1) Without prejudice to the Occupational Safety, Health, and Welfare Act, and subject to this section, the Minister shall, for the control of pollution of the environment, have exclusive authority to issue national environmental standards in relation to -
+(a)	water,
+(b)	effluent limitations,
+(c)	air,
+(d)	noise, 
+(e)	waste,
+(f)	pesticide residues, and 
+(g)	odour.
+(2) A public department, a non-governmental organisation or any person may make recommendations to the Minister in respect of national environment standards.
+(3) Where the Minister proposes to issue national environmental standards or to amend existing standards, he may consult a technical advisory committee and the Committee.
+(4) Before issuing any national environmental standards, the Minister shall cause the proposed standards to be published by notice in the Gazette and in two daily newspapers and invite submissions in writing on the proposed standards within such period as may be specified.
+(5) No standards shall be issued unless the relevant enforcing agency has been consulted.
+33. Standards for water.
+(1) The Minister shall prescribe standards for water quality to protect the public health,welfare and the environment, and to provide adequate safeguard for the quality of water.
+(2) The Minister may establish different standards for water quality having regard to the use and value of water for domestic supplies, propagation of fish, flora, fauna, and wildlife, recreational purpose, agricultural, industrial and other uses.
+34. Effluent limitations.
+The Minister shall establish -
+(a)	effluent limitations for sources of pollution by effluents in accordance with the applicable pollution control technology, having regard to existing and to new sources of pollution,
+(b) time schedule for installation and operation of applicable pollution control technology.
+35. Standards for air. 
+(1) The Minister shall prescribe standards to protect the quality of air resources so as to promote the public health and welfare, and the development and the productive capacity of the human, animal, or plant life.
+(2) The standards prescribed under subsection (1), shall provide for -
+(a)	minimum essential air quality,
+(b) the control of concentration of substances in the air which separately or in combination are likely to result in damage or deterioration of property, of human, animal and plant health,
+(c) controls for atmospheric pollution originating from energy and industrial sources, including pollution produced by aircrafts and other self-propelled vehicles, and by factories and power generating station,
+(d) standards applicable to emission from mobile sources causing or contributing to air pollution, or endangering public health and welfare.
+
+
+
+36. Standards for noise.
+The Minister shall prescribe such standards for noise emission as are required to preserve and maintain public health and the environment.
+37. Standards for hazardous waste.
+(1) The Minister may by regulations declare any substance to be a hazardous substance.
+(2) In determining what substances shall be declared hazardous, the Minister shall have regard to such special circumstances as he considers appropriate, including quantity, location, and climatic conditions relating to discharges.
+(3) The Minister shall prescribe standards for hazardous wastes to control pollution of the environment and to promote public health and welfare.
+(4) The Minister may make regulations for -
+(a)	the control of the import, export, collection, movement, transportation and disposal of hazardous wastes;
+(b) the licensing of waste disposal sites and waste management systems and other facilities relating to the disposal of hazardous wastes in an environmentally sound manner.
+38. Standards for non-hazardous waste.
+The Minister shall prescribe standards for the collection, transportation, storage, processing, disposal and re-cycling of non-hazardous wastes.
+39. Standards for pesticide residue.
+(1) The Minister shall prescribe standards for the concentration of pesticide residues in raw agricultural commodities, food and animal feeds.
+(2) For the purpose of subsection (1), raw agricultural commodities -
+(a)	include fresh or frozen fruits and vegetables in their raw state, grains, nuts, eggs, raw milk, meat and other agricultural produce,
+(b) but do not include any agricultural produce or food which is processed, fabricated or manufactured by cooking, dehydrating, milling or by any other means.
+
+
+40. Standards for odours.
+The Minister shall prescribe such standards for odours as are required to preserve and maintain public health and the environment.
+41. Quality control of laboratories.
+(1) For the purpose of assessing analytical performance and ensuring the validity and comparability of environmental data, the Minister, shall, in relation to accredited laboratories -
+(a)	prescribe standards of procedure for quality assurance and quality control;
+(b) establish analytical quality control programmes;
+(c) prescribe calibration procedures for analytical instruments used in accredited laboratories.
+(2) The Minister may on application accredit a public or private laboratory conducting or intending to conduct laboratory analyses of environmental samples or providing environmental data.
+(3) An analysis of environmental sample conducted by or environmental data provided by a laboratory other than an accredited laboratory shall not be admissible evidence in any proceeding before a Court of law or before the Tribunal.
+
+PART VII
+COASTAL AND MARITIME ZONE MANAGEMENT
+42. Interpretation under this Part.
+In this Part -
+"baseline" has the meaning assigned to it in the Territorial sea Act;
+"coastal zone" - 
+(a) means -
+(i)	any area of seawater including any low-tide elevation, land, beach, islet, reefs, rocks, lying between the baseline and the highwater mark,
+(ii) any land which is situated wholly or partly within 81.21 metres from the highwater mark,
+(b)	includes any estuary or mouth of a river and that part of a river, stream or canal which lies within 81.21 metres from the outermost point of its bank on the sea at high tide;
+"dumping" means -
+(i)	any deliberate disposal of wastes or other matter from vessels, aircraft, platforms or other man-made structures at sea,
+(ii) any deliberate disposal of vessels, aircraft, or other man-made structures at sea; 
+"maritime zone" means the maritime zone under the jurisdiction of the state of Mauritius, and include the territorial sea, the exclusive economic zone,and the continental shelf, as defined in the Maritime Zones Act;
+"zone" means the coastal and maritime zone.
+43. Protection of the zone.
+(1) The Minister may make such regulations as he thinks fit to prevent, reduce and control pollution in the zone.
+(2) Notwithstanding the generality of subsection (1), the regulations may provide for -
+(a)	such measures as are necessary to ensure that activities in the zone are so conducted as not to cause damage by pollution to the natural environment;
+(b) the control and prevention of pollution from vessels, crafts, and other engines used in the zone;
+(c) the control and prevention of pollution from installations and devices used in the exploration or exploitation of the natural resources of the sea-bed and subsoil of the maritime zone;
+(d) the control and prevention of pollution of the marine environment from land-based sources, including rivers, estuaries, pipelines, and outfall structures;
+(e) the control and prevention of pollution of the marine environment arising from or in connection with seabed activities and from artificial islands, installations and structures in the maritime zone;
+(f) such other matters relating to the preservation and conservation of the environment of the zone.
+44. Dumping in the zone.
+(1) Subject to subsection (2), no person shall release or cause to release into the zone such toxic, harmful or noxious substances from or through the atmosphere or by dumping.
+(2) It shall be a defence to a prosecution under subsection(1) to prove that the release or the dumping was due to or was rendered necessary by "force majeure", or for the protection of human life.
+(3)	Any person who contravenes subsection (1) shall commit an offence.
+
+PART VIII
+THE ENVIRONMENT APPEAL TRIBUNAL
+45. The Environment Appeal Tribunal.
+(1) There is established for the purposes of this Act an Environment Appeal Tribunal which shall consist of -
+(a)	a Chairman, who shall be a barrister at law of not less than ten years standing, appointed by the Public Service Commission, and
+(b) such other members as may appointed by the Minister.
+(2) The Minister may -
+(a)	appoint such members on an ad hoc basis and for such period as he considers necessary to serve on the Tribunal;
+(b) designate such public officers as he thinks fit to assist in conducting the business of the Tribunal;
+(c) approve such fees as may be paid to the members of the Tribunal.
+46. Jurisdiction of the Tribunal.
+(1) The Tribunal shall hear and determine appeals against -
+(a) any decision of the Minister - 
+(i)	on an EIA under section 18; or
+(ii)	revoking an EIA licence or amending the conditions of an EIA licence under section 19(3)(a). 
+(b)	a direction given under section 19(3)(b);
+(c) an order of the Director to submit a fresh EIA under Section 20(1);
+(d) the revocation of a programme approval under section 57;
+(e) the issue of an enforcement notice, a prohibition notice and a variation notice under sections 58, 59 and 62;
+(f) a requirement of compliance monitoring under section 66.
+(2) Any person may appeal within 30 days of the decision, direction, order, or notice referred to in subsection (1) in such form and manner as may be prescribed by regulations.
+47. Proceedings of the Tribunal.
+(l) The Tribunal shall sit at such place and time as the Chairman of the Tribunal may determine.
+(2) Where the Tribunal adjourns any proceedings, it may resume them at such place and time as the Chairman of the Tribunal may determine.
+(3) Subject to any regulations made under Section 50, all appeals before the Tribunal shall be instituted and conducted -
+(a)	as far as possible in the same manner as proceedings in a civil matter before a District Magistrate;
+(b) in accordance with the law of evidence in force in Mauritius;
+(c) in public, except with the agreement of all the parties, or where the Tribunal so orders in the public interest.
+(4) The Tribunal may -
+(a)	make such orders for requiring the attendance of persons and the production of articles or documents, as it thinks necessary or expedient;
+(b) take evidence on oath and may for that purpose administer oaths;
+(c) and on its own motion, summon and hear any person as witness.
+(5) Any person who -
+(a)	fails to attend Tribunal after having required to do so under subsection (4);
+(b) refuses to take an oath before the Tribunal or to answer fully and satisfactorily to the best of his knowledge and belief any question lawfully put to him in any proceedings before the Tribunal or to produce any article or document when required to do so by the Tribunal;
+(c) knowingly gives false evidence or evidence which he knows to be misleading before the Tribunal;
+(d) at any sitting of the Tribunal -
+(i)	wilfully insults any member thereof;
+(ii) wilfully interrupts the proceedings, or commits any contempt of the Tribunal, shall commit an offence.
+48. Determination of the Tribunal.
+(1) (a) For the purpose of hearing and determining any cause or matter under this Act, the Tribunal shall be constituted by the Chairman and at least any 2 of its members.
+(b) A member of the Tribunal who has a direct interest in any cause or matter which is the subject of proceedings before the Tribunal shall not take part in those proceedings.
+(2) Where there is a disagreement among the members of the Tribunal, the decision of the majority shall be the determination of the Tribunal. 
+(3) Subject to section 49, a decision or finding of the Tribunal on any cause or matter before it, shall be final and binding on the parties.
+(4) On hearing an appeal, the Tribunal may confirm, amend or cancel any decision, order, direction or notice referred to in section 46.
+(5) Where a decision, order, direction or notice is confirmed or amended, the Tribunal shall specify the period within which it shall be complied with.
+(6) Any person who fails to comply with a decision, order, direction or notice confirmed or amended by the Tribunal, shall commit an offence.
+(7)	(a) The Tribunal may make such order as to costs as may be prescribed.
+(b) An order made under paragraph (a) shall be enforced in the same manner as an order for costs in proceedings before a Judge.
+(c) No order under paragraph (a) shall be made against the Crown, the Minister, the Department or the Director.
+(8) Proceedings before the Tribunal shall be exempt from stamp duty and registration dues.
+49. Appeal to the Supreme Court.
+(1) Any party who is dissatisfied with the decision or findings of Tribunal relating to an appeal under section 48 as being erroneous in point of law may appeal to the Supreme Court.
+(2) Any party wishing to appeal to the Supreme Court under subsection (1) shall, within 15 days of the date of the decision of the Tribunal -
+(a)	lodge with, or send by registered post to, the Chairman of the Tribunal a written application requiring the Tribunal to state and sign a case for the opinion of the Supreme Court on the grounds stated therein;
+(b) at the same time, or earlier, forward a copy of his application by registered post to the other party.
+(3) An appeal under this section shall be prosecuted in the manner provided by rules made by the Supreme Court.
+50. Regulations by the Tribunal.
+The Tribunal may make regulations for the purpose of instituting and conducting proceedings of appeals before it.
+
+
+PART IX
+THE NATIONAL ENVIRONMENT FUND
+51. The National Environment Fund.
+(1) There shall be established a National Environment Fund.
+(2) The Fund shall be deemed to be a Special Fund for the purposes of the Finance and Audit Act.
+52. Objects of the Fund.
+The objects of the Fund shall be -
+(a)	to provide for foreign laboratory support for analysis of environmental samples,
+(b) to carry out programmes to prevent and reduce pollution,
+(c) to promote environmental education and research,
+(d)	to support non-governmental organisations engaged in environment protection,
+(e) to encourage local environmental initiatives,
+(f) to publish reports on the environment,
+(g)	to promote, support and encourage activities relating to environment protection and management.
+53. The Board.
+(1) The Fund shall be administered by a Board which shall consist of -
+(a)	The Permanent Secretary, Ministry of Environment, Chairman;
+(b) The Accountant-General, or his representative;
+(c) The Director; 
+(d) any other person designated by the Minister.
+(2) The Board shall -
+(a)	comply with such directions of a general character as the Minister may give;
+(b) furnish to the Minister such information with respect to the discharge of its functions as the Minister may require;
+(c) be convened by the Chairman at such time and place as he thinks fit;
+(d) regulate its meetings and proceedings in such manner as it thinks fit.
+54. Income and disbursement.
+(1) The Fund shall consist of -
+(a)	any money lawfully accruing to the Fund;
+(b) donations;
+(c) any funds raised from public activities organised with the approval of the Board.
+(2) No disbursement of money shall be made from the Fund except -
+(a)	for the purposes of the Fund;
+(b) with the authorisation of the Board.
+(3) Article 910 of the Code Napoleon shall not apply to donations made to the Fund.
+55. Audit and Accounts.
+(1) The Finance Officer shall -
+(a)	not later than 3 months after each financial year, prepare and submit to the Director of Audit - 
+(i)	an annual statement of the receipts and payments of the Fund for that financial year; and
+(ii) a balance sheet showing the assets and liabilities of the Fund in respect of that financial year;
+(b)	furnish to the Minister as soon as practicable after the end of each financial year, a report dealing with the activities and financial position of the Fund during that period;
+(c) attend the meetings of and advise the Board of the financial standing of the Fund.
+(2) The Minister shall at the earliest available opportunity, lay a copy of the annual reports and audited Annual accounts of the financial year before the Assembly.
+56. Regulations in respect of the Fund.
+The Minister may with the approval of the Board make such regulations as he thinks fit for the purposes of the Fund.
+
+PART IXA
+
+ENVIRONMENT PROTECTION FEE
+
+
+56A.	Interpretation 
+
+In this part – 
+
+“designated establishment” means premises or a set of premises used in connection with the carrying of any of the activities specified in the Fifth Schedule;
+
+“fee” - 
+(a) 	means the environment protection fee specified in section 56B; and
+(b)	includes any surcharge specified in section 56D;
+
+“manager’ in relation to a designated establishment means – 
+(a)	the person responsible; and 
+(b)	includes the licensee.
+
+56B.	Charge to environment protection fee
+
+(1)	Subject to other provisions of this section, there shall be levied on every designated establishment a fee to be known as the environment protection fee.
+
+(2)	The fee shall - 
+
+(a)	be payable by the manager in respect of every designated establishment;
+
+(b)	in respect of every financial year, be paid by the manager to the Director in accordance with the Fifth Schedule
+(3)	(a)	Where at any time in a financial year a designated establishment starts or ceases its activity, the fee leviable under this section shall be calculated on a prorata basis provided that part of a month shall be reckoned as a month;
+(b)	Where a designated establishment ceases its activity, the fee calculated in accordance with paragraph (a) shall be paid not later than 7 days of the date of cessation of operations.
+
+(4)	Any manager who fails to pay the fee leviable under this Part shall commit an offence and shall, on conviction, be liable to a fine not exceeding 100,000 rupees and to imprisonment for a term not exceeding 5 years.
+
+56C.	Registration of enterprise or activity
+(1)	Subject to the other provisions of this section, every manager shall - 
+(a)	within 14 days of the start of its activity; or
+(b)	where its activity has already started before the coming into force of this Act, within 30 days of the coming into force of this Act, 
+register the designated establishment with the Director by  submitting an application for registration in such form as may be approved by the Director.
+(2)	For the purposes of registration under subsection (1), the manager shall provide the full name and address, the nature of the activity, the turnover and the number of employees in respect of the accounting year of the designated establishment and such other information and particulars as may be required in the form of registration.
+(3)	Where, after the registration of a designated establishment, under this Part, there is a change in the turnover or number of employees which may affect the liability to the fee payable or there is a change in any of the other particulars provided, the manager shall, within 14 days of the occurrence of the change, give notice in writing to the Director.
+(4)	Where a designated establishment ceases its activity, the manager shall, within 7 days thereof give written notice to that effect to the Director.
+(5)	Any manager who fails to comply with provisions of this section, shall commit an offence and shall, on conviction, be liable to a fine not exceeding 50,000 rupees and to imprisonment for a term not exceeding 2 years.
+56D.	Surcharge for late payment of fee
+Where a manager fails to pay any fee chargeable under section 56B on the last day on which it is payable, he shall be liable to pay to the Director, in addition to the fee, a surcharge representing 50 per cent of the fee remaining unpaid.
+56E.	Recovery of fee
+The Director may, in respect of any fee which has been left unpaid, recover the amount due in the same manner as is prescribed in the Recovery of State Debts Act.
+
+PART X
+ENFORCEMENT
+57. Programme approval.
+(1) Where he is of opinion that a person is contravening, or is likely to contravene an environmental law, the Director may cause to be served on him a programme notice -
+(a) stating the opinion of the Director;
+(b) specifying the matter constituting the contravention or the matter making it likely that the contravention will arise, as the case may be;
+(c) requesting the person to submit for his approval before a specified date a written programme of measures which the person intends to take to remedy the contravention or to eliminate the likelihood of a contravention.
+(2) The Director may -
+(a) hold consultations with the person to determine the appropriate method of remedying the contravention or eliminating the likelihood of a contravention,
+(b) consult a technical advisory committee or the Committee,
+(c) request the person to submit additional information, proposal or research study.
+(3) On approving a programme of measures, the Director shall issue a programme approval stating 
+(a) the notice issued under subsection (1),
+(b) the measures that shall be taken to remedy the contravention or eliminate the likelihood of a contravention, and
+(c) the period within which the measures shall be implemented.
+(4) The Director may -
+(a) supervise and issue directions in respect of the implementation of the measures contained in the programme approval;
+(b) with the consent of the person, modify the programme approval;
+(c) at any time, revoke a programme approval.
+(5) No person shall be prosecuted for a contravention in respect of which a programme approval is in force.
+(6) Where -
+(a) a person fails to comply with - 
+(i) a request in a notice under subsection (1);
+(ii) a programme approval issued under subsection (3);
+(iii) any direction issued under subsection (4); or
+(b) a programme approval is revoked under subsection (4);
+the Director may issue an enforcement notice or a prohibition notice. 
+58. Enforcement notice.
+(1) Where he is of the opinion that -
+(a) a person is contravening, or is likely to contravene an environmental law,
+(b) a programme approval will not provide an effectual remedy, or a prohibition notice is not appropriate,
+the Director may cause to be served on the person an enforcement notice.
+(2) An enforcement notice shall -
+(a) state the opinion of the Director;
+(b) specify the matter constituting the contravention or the matter making it likely that the contravention will arise, as the case may be;
+(c) specify the measures that shall be taken to remedy the contravention or to remedy or eliminate the matter making it likely that the contravention will arise, as the case may be; and
+(d) specify a period within which those measures shall be implemented.
+(3) No person shall be prosecuted for a contravention in respect of which an enforcement notice was issued as long as the notice is in force.
+(4) Any person who fails to comply with an enforcement notice shall commit an offence.
+59. Prohibition notice.
+(1) Where he is of the opinion that an enterprise or activity or the manner in which the enterprise or activity is carried on, involves an imminent risk of serious pollution of the environment, the Director may cause to be served on the person owning, or managing, or in charge of, or in control of the enterprise or activity a prohibition notice.
+(2) A prohibition notice may be served whether or not -
+(a) the enterprise or activity, or the manner in which the enterprise or activity is carried on, constituted a contravention of an environmental law;
+(b) there is in force in relation to that enterprise or activity, a licence, permit or approval issued under any environmental law or any other enactment.
+(3) A prohibition notice shall -
+(a) state the Director's opinion;
+(b) specify the risk of serious pollution involved as well as the way in which the enterprise, activity or the manner in which the enterprise or activity is carried on, is suspected to give rise to the risk;
+(c) specify the measures that shall be taken to remove the risk of pollution and the period within they shall be implemented;
+(d) specify the enterprise or activity, or any aspect of the enterprise or activity that is prohibited, or specify any conditions in which the enterprise or activity may be carried on.
+(4) A prohibition notice shall not be a bar to a prosecution for any offence, even if there are consultations with the person served with the notice.
+(5) Any person who fails to comply with a prohibition notice, shall commit an offence.
+60. General provisions on notices.
+Sections 61 to 64 shall apply to enforcement notices and to prohibition notices, and in these sections -
+(a) "notice" means an enforcement notice and a prohibition notice, and does not include a variation notice;
+(b) "person affected" means a person on whom a notice is served or is proposed to be served.
+61. Consultation on notices.
+(1) Before or at any time after issuing a notice, the Director shall as far as he deems practicable consult - 
+(a) the person affected; 
+(b) the Committee.
+(2) The Director may consult a technical advisory committee or any public department on a notice;
+62. Variation notice.
+(1) Any person affected, or any enforcing agency may apply to the Director for an amendment of a notice.
+(2) The Director, on his own initiative, or on application, may amend a notice by causing to be served on the person affected a variation notice.
+(3) A variation notice shall -
+(a) refer to the notice which is amended;
+(b) specify the amendment to the notice;
+(c) where necessary, vary the date specified in the notice.
+(4) A variation notice shall supersede the notice to which it refers to the extent of the amendment.
+63. Revocation of notices.
+(1) Where he is satisfied that -
+(a) the measures required to be taken in a notice have been implemented;
+(b) there exists no further pollution or risk of pollution to the environment caused by the enterprise, activity or the manner in which the enterprise or activity is carried on;
+(c) the notice is not or will not be effectual; 
+the Director may revoke a notice and shall inform the person affected in writing.
+(2) The Director may -
+(a) when revoking any notice, serve a programme approval;
+(b) when revoking an enforcement noticed, serve a prohibition notice;
+(c) when revoking a prohibition notice, serve an enforcement notice.
+64. Powers of entry.
+(1) An authorised officer may, at any time, enter any premises other than a private dwelling house for the purposes of -
+(a) carrying out any lawful order given by the Minister or the Director under this Act;
+(b) determining whether any environmental law or any enforcement notice, prohibition notice, direction is being complied with;
+(c) discharging any other functions under an environmental law.
+(2) Subject to section 65, except with the consent of the owner, an authorised officer shall not enter a private dwelling unless he has given to the owner not less than 24 hours' notice in writing of his proposed entry.
+(3) An authorised officer may on entering any premises -
+(a) require the owner to produce any records, documents or licenses,
+(b) examine any such records documents or licenses and take copies or extracts,
+(c) make plans, take photographs and carry out inspections,
+(d)	make tests, take measurements and samples, inspect plants, machineries, equipments, vehicles,
+(e) require the owner of the premises entered upon or any person employed by him, or any other person on the premises to give to the authorised officer all reasonable assistance and to answer all proper questions either orally or in writing.
+(4)	On entering any premises, the authorised officer may bring with him any person or equipment he may consider necessary for the purpose of his entry.
+65. Entry and arrest without warrant.
+(1) Where -
+(a) there is or has been a contravention of an environmental law,
+(b) there is reasonable suspicion that a contravention of an environmental law has been or is likely to be committed,
+(c) an environmental emergency is declared,
+(d) a spill occurs, or is reasonably suspected to have occurred, or is likely to occur,
+(e) in his opinion, there is an imminent risk of serious pollution of the environment,
+an authorised officer may, at any time, without warrant -
+(i) enter and search premises;
+(ii) secure any article, object, equipment, plant, machinery related to the contravention, or suspected to be a cause of spill or pollution to the environment;
+(iii) secure any document, file, or record reasonably required for the investigation or for the prevention of the contravention;
+(iv) arrest any person reasonably suspected of the contravention;
+(v) exercise any of the powers conferred under section 64(3).
+(2) When exercising any powers conferred by section 64 and this section, an authorised officer shall, if so requested by any person affected, produce to that person a document under the hand of the Director stating that he is authorised to exercise the powers so conferred.
+(3) Any person who in relation to the exercise of powers conferred by section 64 and this section- 
+(a) refuses to allow an authorised officer to enter any premises or to take any person or equipment with him in the exercise of his powers;
+(b) obstruct or impedes an authorised officer in the exercise of any of his powers;
+(c) fails to provide assistance or information requested by the authorised officer;
+(d) gives to an authorised officer any information which is false or misleading;
+shall commit an offence.
+66. Compliance monitoring.
+(1) The Director may, after consultation with the Committee, in relation to any activity, enterprise, or undertaking, carry out, cause to be carried out, or arrange for such monitoring of -
+(a) environmental quality, and
+(b) the nature, extent and effects of discharges of pollutants,
+as the Director may consider necessary for ensuring compliance with an environmental law.
+(2) The Director may, as he considers necessary, require a person responsible for an activity, enterprise, or undertaking from which there is a discharge of a pollutant into the environment to carry out such monitoring of the nature, extent and effect of the discharge and of the quality of any environmental medium likely to be affected by the discharge, and to keep and to supply to him such records of the monitoring as the Director considers necessary.
+(3) Any person who fails to comply with a requirement under subsection(2) shall commit an offence.
+
+67. Offences.
+(1) Any person who -
+(a) fails to comply with any requirement, notice, order or direction issued under this Act;
+(b) on being required to submit a report or to provide information under this Act,
+(i) fails to do so within the specified date, or
+(ii) submits a false report or submits a report misleading in any material particular, or
+(iii) provides false or misleading information;
+(c) contravenes this Act;
+shall commit an offence and unless it is otherwise specifically provided, shall -
+(i)	on a first conviction be liable to a fine not exceeding Rs 5000 and to imprisonment for a term not exceeding two years;
+(ii) on a second or subsequent offence relating to an environmental law, be liable to a fine not exceeding Rs 10,000 and to imprisonment for a term of imprisonment not exceeding eight years.
+(2) Any person who commits an offence under sections 13(1), 20(3)(a), 44(3), 48(6), 58(4) and 59(5) shall -
+(a) on a first conviction, be liable to a fine which shall be not less than Rs 10,000 and not more than Rs 25,000 and to imprisonment for a term not more than 4 years;
+(b) on a second or subsequent conviction, be liable to a fine which shall not be less than Rs 50 000 and not more than Rs 250 000, and to imprisonment for a term which shall be not less than 6 years and not more than 12 years.
+(3) Any person who commits an offence under sections 13(7), 19(4), 21(5), and 66(3), shall - 
+(a) on a first conviction be liable to a fine which shall be not less than Rs 6,000 and not more than Rs 15,000 and to imprisonment for a term not exceeding 4 years;
+(b) on a second or subsequent conviction be liable to a fine which shall not be less than Rs 25,000 and not more than Rs 150,000 and to imprisonment for a term which shall be not less than 6 years and not more than 8 years.
+68. Powers of Court.
+(1) In addition to any penalty under section 67, the Court may -
+(a) order the forfeiture of any object, machine, plant, vehicle or any article used in or connected in any way with the commission of an offence;
+(b) order or prohibit the doing of any act to stop a continuing contravention.
+(2) Where the conviction relates to an enforcement notice, a prohibition notice, an order or direction, the Court shall order compliance with the notice, order or direction within such period as the Court may determine.
+(3) Where the conviction relates to section 13(1), the Court shall make an order that the undertaking be stopped, ceased, closed or pulled down as the case may be.
+69. Jurisdiction.
+(1) Notwithstanding -
+(a) Section 114 of the Courts Act; and
+(b) Section 72 of the District and Intermediate Courts (Criminal Jurisdiction) Act,
+a Magistrate shall have jurisdiction to try all offences under an environmental law and may impose any penalty provided under the enactment.
+(2) The following enactments shall not apply to a sentence provided under an environmental law:
+(a) sections 152 and 153 of the Criminal Procedure Act;
+(b) the Probation of Offenders Act.
+
+ 
+PART XI
+MISCELLANEOUS PROVISIONS
+70. Restriction of liability.
+(1) No civil or criminal liability shall attach to the Minister, the Director, or to any officer of the Department in respect of any act done in good faith in the execution or purported execution of their duties or their powers under this Act.
+(2) The Director and the Officers of the Department shall be public officers for the purposes of the Public Officers Protection Act and the Criminal Code.
+(3) Subsection (1) shall be in addition to and not in derogation from the Public Officers Protection Act.
+71. Liability of corporate bodies.
+Where an offence under an environmental law is committed by a corporate body or by any person acting on behalf of the corporate body or by any person employed by a corporate body, the Court shall impose the maximum penalty prescribed.
+72. Disclosure of information.
+Where the director or any other officer of the Department, or any person appointed on a committee or any other person discharging any function or duty under this Act, discloses otherwise than in the performance of his duty any information relating to any trade secret used in carrying on a particular undertaking and the information has been given to him or obtained by him by virtue of this Act, he shall commit an offence.
+73. Code of practice.
+(1) The Minister may after consultation with the Committee cause to be published in the Gazette codes of practice for the purpose of providing practical guidance with respect to appropriate pollution control technology, and generally with respect to the protection of the environment.
+(2) The Minister may for the preparation of a code of practice consult a technical advisory committee or any person he thinks fit.
+74. Regulations.
+(1) The Minister may -
+(a) make regulations for the purposes of this Act;
+(b) subject to this Act, amend the Schedules.
+(2) Regulations made under this section may -
+(a) make provisions for the issue, amendment and revocation of licenses;
+(b) provide for the taking of fees and the levy of charges;
+(c) make different provisions for different classes of activities or things and for different areas;
+(d) make provisions for the purpose of this Act in respect of islands under the jurisdiction of Mauritius other than the Island of Mauritius.
+75. Consequential amendments.
+(1) The Board of Agriculture, Natural Resources and Environment Act is amended -
+(a) in section 1, by deleting the words "Natural Resources and the Environment Act" and replacing them by the words -
+"and Natural Resources Act";
+(b) in section 2, by deleting the definition of "Board" and replacing it by the following -
+"Board" means the Board of Agriculture and Natural Resources established by section 3;
+(c) in section 3(1), by deleting the words "Natural Resources and the Environment" and replacing them by the words "and Natural Resources".
+(2) The Central Water Authority Act is amended -
+(a) in section 2, by deleting the definition of "polluted water";
+(b) in section 20(2)(l), by inserting before the words "to supervise", the following words -
+"unless otherwise provided under any other enactment";
+(c) by deleting section 21(k);
+(d) by deleting section 42 and replacing it by the following section -
+42. Immunity of Authority. 
+The Authority shall not be responsible for any damage resulting from the irregularity and insufficiency of supply of water for whatever purpose.
+(e) by deleting section 46A.
+(3) The Chemical Analyses Act is repealed.
+(4) The Criminal Code (Supplementary) Act is amended in section 110 by deleting subsections (2) and (3) and by renumbering the existing subsection (4) as subsection (2).
+(5) The Dangerous Substances Act and the Dangerous Substances Regulations 1914 are repealed.
+(6) The Fisheries Act is amended in section 9 by deleting -
+(a) in the marginal note, the words "and the environment", 
+(b) subsection (3).
+(7) The Ground Water Act is amended by deleting subsection (2) of section 4 and by renumbering the existing subsection (3) as subsection (2);
+(8) The Local Government Act is amended -
+(a) in section 2, by inserting in their appropriate places the following definitions -
+"disposal", in relation to waste, includes the sorting, carriage, transportation, treatment, storage and tipping above or under ground, and the transformation operations necessary for its recovery, re-use or recycling;
+"disposal site" means a disposal site designated under section 156 A(8);
+"Environment Coordination Committee" means the Environment Coordination Committee established under the Environment Protection Act 1991;
+"waste" means solid waste other than hazardous waste, clinical waste and pharmaceutical waste;
+(b) in section 51(1), by deleting paragraph (b) and replacing it by the following paragraph -
+(b) subject to any regulations under section 156 A(5), the collection and removal of waste to disposal sites ;
+(c) by inserting immediately after section 156 the following new part, and renumbering the existing part X as part XI -
+
+
+
+
+
+
+
+
+PART X
+156A. Control of waste.
+(1) The Permanent Secretary shall make arrangements for - 
+(a) the collection and disposal of waste;
+(b) the operation and management of disposal sites.
+(2) In making arrangements under subsection (1), the Permanent Secretary shall -
+(a) comply with such standards and code of practice issued under the Environment Protection Act 1991;
+(b) consult the Environment Coordinating Committee.
+(3) The Minister may make regulations to give effect to the arrangements made.
+(4) The regulations may provide for -
+(a) the issue, amendment and revocation of licenses;
+(b) the taking of fees and the levy of charges;
+(c) the removal of waste unlawfully deposited and the recovery of expenses incurred for the removal;
+(d) any matter relating to enforcement, including the issue of enforcement notices, powers of entry, search and arrest, and the seizure of any vehicle, object or thing used in the commission of an offence under the regulations.
+(5) The regulations may -
+(a) make different provisions for different categories of waste, and for different disposal sites;
+(b) provide that a person who contravenes them shall commit an offence, and shall on conviction be liable to a fine not exceeding Rs 25 000, and to a term of imprisonment not exceeding 5 years;
+(c) provide that, in addition to the punishment under paragraph (b), the Court may order the forfeiture of any vehicle, object or thing used in the commission of the offence.
+(6) Subject to any requirements imposed under the Environment Protection Act 1991, the Minister may by notice in the Gazette designate a disposal site.
+(7) Notwithstanding section 114 of the Courts Act, and section 72 of the District and Intermediate Courts (Criminal Jurisdiction) Act, a Magistrate shall have jurisdiction to try all offences under this section and under any regulations made under this section. 
+(9) The National Coast Guard Act 1988 is amended -
+(a) in section 2 by inserting at its appropriate place the following definition -
+"environmental laws" has the meaning assigned to it by section 2 of the Environment Protection Act;
+(b) in section 6(1) by inserting after the word "section" the following words -
+"and any environmental law,"
+(10) The Noise Prevention Act and the following regulations are repealed -
+(a) The Noise Prevention (Beau Bassin Rose Hill) Regulations 1939;
+(b) The Noise Prevention (Curepipe) Regulations 1939;
+(c) The Noise Prevention (Port Louis) Regulations 1939;
+(d) The Noise Prevention (Quatre Bornes) Regulations 1939;
+(e) The Noise Prevention (Rural Districts) Regulations 1942;
+(f) The Noise Prevention (Vacoas Phoenix) Regulations 1967;
+(g) The Noise Prevention (Victoria Hospital) Regulations 1939;
+(11) The Occupational Safety, Health and Welfare Act 1988 is amended in subsection (1) of section 4 by deleting the words "The Minister" and replacing them by the words -
+"Without prejudice to any standards issued under the Environment Protection Act 1991, the Minister."
+(12) The Public Health Act is amended -
+(a) in section 2, by inserting in its appropriate place the following definition-
+"environmental law" has the meaning assigned to it in the Environment Protection Act 1991;
+(b) in section 18, by deleting the word "nuisance" and inserting before the word "includes" the following - 
+Without prejudice to any environmental law, "nuisance"
+(c) by deleting sections 84 to 88 and section 150.
+(13) The Rivers and Canals Act is amended -
+(a) in section 26, by deleting subsection (2) and renumbering the subsection (3) as subsection (2);
+(b) in section 68, by deleting paragraphs (c), (i) and (j), and renumbering the remaining paragraphs accordingly;
+(c) by repealing sections 70, 87, 88 and 91;
+(14) The Town and Country Planning Act is amended -
+(a) in section 2, by inserting in its appropriate place the following definition -
+"EIA licence" has the meaning assigned to it in the Environment Protection Act 1991;
+"undertaking" has the meaning assigned to it in the Environment Protection Act; 
+(b) in section 7, by inserting the following subsection (4) -
+"Where an application under subsection (3) relates to an undertaking, the local authority shall not grant a permit unless there is in relation to that undertaking an EIA licence.”
+(15) The Town and Country Planning Act 1990 is amended -
+(a) in section 2, by inserting in their appropriate places the following definitions -
+"EIA licence" has the meaning assigned to it in the Environment Protection Act 1991;
+"undertaking" has the meaning assigned to it in the Environment Protection Act 1991;
+(b) in section 12, (i) by inserting after paragraph (a) the following paragraph -
+(b) the provisions of Part IV of the Environment Protection Act 1991 and any standards issued under that Act;
+(ii) by renumbering the existing paragraphs (b) to (e) as paragraphs (c) to (f) accordingly;
+(c) in section 13, by deleting the expression "A development order" where it first occurs, and replacing it by the following words -
+" Subject to section 14 A, a development order";
+(d) by adding after section 14 the following section -
+14A. Permit for undertaking.
+No permit for development shall be granted in respect of an undertaking, unless there is in relation to it an EIA licence.
+(16) The Territorial Sea Act is amended by deleting section 9.
+76. Commencement.
+This Act shall come into force on a date to be fixed by Proclamation and different dates may be fixed in respect of different provisions.
+Passed by the Legislative Assembly on the first day of July, one thousand nine hundred and ninety-one.
+_____________
+ 
+
+THE FIRST SCHEDULE
+(section 2)
+UNDERTAKINGS REQUIRING AN ENVIRONMENT IMPACT ASSESSMENT
+A. Manufacturing
+Sugar industries and refineriesTimber treatment plants.
+Manufacture of chemical fertilisers.
+Manufacture of polyurethane foam.
+Petroleum refineries
+Manufacture of rubber products.
+Bulk storage facilities for petroleum, petro-chemical and hazardous chemical products.
+Food processing and canning industries.
+Power stations.
+Manufacture of packing of cements.
+Sawmills.
+Stone crushing plants.
+Block making plants.
+Premix concrete plants.
+Textile industry associated with dyeing, weaving, washing, knitting.
+bleaching and printing.
+Tanneries and leather finishing.
+Manufacture, formulation and packing of pesticides.
+Installation for cold storages/refrigeration plants and chilling plants.
+Manufacture and use of asbestos and asbestos-based products.
+Coral sand crushing and processing.
+Waste incinerators.
+Breweries.
+Refining and processing of edible oil and fats.
+Asphalt plants including asphalt mix for road construction.
+Manufacture of matches.
+Wine industries.
+Manufacture of batteries.
+B. Coastal Development Projects
+Wetlands development.
+Creation of islands.
+Removal of sand, coral, beach rock or natural vegetation.
+Sand crushing, screening and washing.
+Mining of sand dunes and sea beds.
+Lagoon dredging and reprofiling of sea beds.
+Modification of existing coastline. 
+Marinas.
+Construction of jetties.
+Barachois development.
+C. Port and Harbour Development
+Harbour construction and development.
+Construction of air fields, aviation strips and landing grounds.
+Harbour dredging operations.
+Vessel related activities.
+Fishing ports.
+Handling and storage of petroleum products, liquid gas, coal and chemicals.
+D. Land Use and Development
+5.	Zoning changes.
+Dredging, draining and filling of wetlands.
+Land clearing in watersheds, nature reserves and natural parks.
+Land reclamation.
+Quarrying.
+Parcelling out of land into 10 or more plots-
+
+(a)	otherwise than by way of division in kind among heirs;
+
+(b)	to be allocated to persons other than such persons as may be approved by the Minister responsible for the subject of agriculture and who are -
+ 
+(i)	bona fide occupiers of housing units forming part of sugar estate camps owned by sugar millers or sugarcane planters;
+(ii)	bona fide occupiers of housing units forming part of tea estate camps;
+(iii)	workers affected by the closure of a sugar factory; or
+(iv)	workers opting for the Voluntary Retirement Scheme.
+E. Sewerage and Water Supply
+Sewage works and outfalls.
+Sewage treatment plants.
+F. Transportation
+Land transport infrastructure.
+Airports, highways and rapid transit systems.
+G. Manufacture, Handling, Storage and Transport of Hazardous Materials and Pesticides
+H Waste Management
+Landfills.
+Waste disposal installations for incineration or chemical treatment of all types of waste, including hazardous waste, or change of use of lands for the deposit of such waste.
+I Urban Development Projects
+Hospital construction.
+Major housing projects.
+Restructuring of land holdings on urban fringes.
+Industrial estate.
+Depot for buses and motor vehicles.
+Traffic centre.
+New town and satelite town.
+Hotels and motels.
+J. Agriculture and Forestry
+Deforestation
+Commercial/industrial rearing of livestock including poultry, pig, goat and sheep.
+Rearing of crocodiles, birds, monkeys in nature reserves or elsewhere.
+___________
+
+THE SECOND SCHEDULE
+(section 4)
+NATIONAL ENVIRONMENT COMMISSION
+Ministers who are assigned responsibilities for the following subjects -
+Finance
+Economic Planning & Development
+Education
+Energy, Water Resources
+Tourism
+Youth & Sports
+Agriculture, Fisheries & Natural Resources
+Works
+Industry & Industrial Technology
+Local Government
+Labour & Industrial Relations
+Rodrigues
+Health
+____________
+
+THE THIRD SCHEDULE
+(section 8(2))
+Environmental Advisory Council
+1. A representative of the following Ministries -
+(a) Ministry of Environment & Land Use.
+(b) Ministry responsible for the subject of water resources.
+(c) Ministry of Health.
+(d) Ministry of Agriculture, Fisheries and Natural Resources
+(e) Ministry of Local Government.
+(f) Ministry of Labour & Industrial Relations.
+(g) Ministry of Rodrigues
+2. A representative of Mauritius Employers' Federation.
+3. A representative of The Medical Council.
+4. A representative of Mauritius Sugar Producers' Association.
+5. A representative of Mauritius Chamber of Commerce & Industry.
+6. A representative of University of Mauritius.
+7. A representative of The Institution of Engineers.
+8. A representative of The Mauritius Bar Council.
+9. A representative of AHRIM.
+10. A representative of The Mauritius Association of Architects.
+11. A representative of Mauritius Export Processing Zone Association.
+12. A representative of La Societe des Historiens de l'Ile Maurice.
+13. One representative of Non Governmental Organization.
+14. A representative of the Mauritius Union of Journalists.
+15. A representative of Association des Autorites Urbaines.
+16. A representative of Association of District Councils.
+17. A representative of Trade Unions approved by Ministry of Labour & Industrial Relations.
+18. Two persons appointed by the Minister.
+ 
+FOURTH SCHEDULE
+(Section 11)
+Enforcing Agencies
+1.	In this Schedule -
+"Act" means the Environment Protection Act 1991;
+"functions" includes duties and powers conferred by this Act;
+"inland waters"      (a) includes -
+(i) any river, watercourse, stream, lake, pond,
+(ii) ground waters, water in a well, borehole or any passage or adit constructed in connection with a well or borehole;
+(iii) effluents other than those containing hazardous substances;
+(b) does not include -
+(i) waters in the coastal and maritime zone except effluents discharged in the coastal zone;
+(ii) water supplied for drinking and domestic purposes;
+“port” means the port named “Port Louis” and delimited in the manner described in the second column of the Schedule to the Ports Act;
+“Port Master” has the meaning assigned to it in the Ports Act;
+"relevant enforcing agency" means the enforcing agency designated in respect of a medium, or the aspects of a medium, or a pollutant specified in paragraph 2;
+"record" means a record of inspections, compliance monitoring exercises and information and environmental data obtained as result of such monitoring;
+"sphere of responsibility" means the functions exercisable by an enforcing agency over the medium, or the aspects of a medium, or the pollutant specified in paragraph 2;
+"zone" has the meaning assigned to it by section 2 of the Act;
+2.	(1) Subject to subparagraph (2),the enforcing agencies shall be -
+(a) in relation to air, noise, quality control of water, and odour, the Permanent Secretary to the Ministry of Health;
+(b) in relation to inland waters and effluents, the Permanent Secretary to the Ministry responsible for the subject of water resources;
+(c) in relation to solid wastes, the Permanent Secretary to the Ministry of Environment and Quality of Life;
+(d) in relation to pesticide residue, the Permanent Secretary to the Ministry of Agriculture and Natural Resources;
+(e)	in relation to waters in the zone other than waters in the port, the Permanent Secretary to the Ministry of Fisheries and Marine Resources;
+(f) in relation to national environmental standards, affecting the island of Rodrigues, the Island Secretary for Rodrigues;
+(g)	in relation to national environment standards applicable to the Port, the Port Master. 
+(2) The Director of the Department shall be an enforcing agency and shall -  
+(a)	exercise its functions together with any enforcing agency specified in subparagragh (1)which is responsible for to any medium, aspect of medium or pollutant specified in that subparagraph;
+(b)	Where no enforcing agency is specifically designated in relation to any medium, aspect of medium or pollutant exercise its functions in relation to that medium, aspect of medium or pollutant.
+3.	An enforcing agency shall in respect of its sphere of responsibility -
+(a) supervise enforcement of national environmental standards and notices, orders and directives issued under an environmental law;
+(b) verify compliance with environment laws;
+(c) conduct such regular monitoring, sampling, test and analyses as to ensure compliance with environmental laws;
+(d) provide such assistance as may be required for reviewing an EIA, and in case of a spill or of an environmental emergency;
+(e) carry out directions issued by the Minister on the recommendation of the Environment Coordination Committee.
+4.	(1) An enforcing agency shall have all the powers conferred on the Director by sections 57, 58, 61(1), 62 and 63 of the Act to issue and to revoke any notice other than a prohibition notice.
+(2) For the purpose of sub-paragraph (1), reference to the Director in sections 57, 58, 61(1), 62 and 63 shall be read as if reference is made to an enforcing agency.
+(3) An enforcing agency shall -
+(a)	have all the powers conferred on an authorised officer under sections 64 and 65 of the Act, and may delegate in writing its powers to any officer posted under his authority.
+(b)	make available to other enforcing agencies and to the Department all facilities required for carrying out laboratory analyses and tests.
+(c) keep a record of all inspections and compliance monitoring exercises and information and environmental data obtained as a result of such monitoring;
+d) at his request, provide the Director with a copy of the record.
+5.	An enforcing agency shall report, as soon as is practicable, to the Director, through its environment liaison officer, any contravention of an environmental law relating to its sphere of responsibility.
+6.	Where an enforcing agency suspects, or detects any contravention of an environmental law, beyond its sphere of responsibility, it shall forthwith inform the Director and the relevant enforcing agency.
+
+ 
+FIFTH SCHEDULE 
+(Section 56B)
+
+
+Column 1	Column 2	Column 3
+Enterprise or activity	Fee payable	Date payable
+		
+1.  Hotels	0.75 percent of monthly turnover	Within 20 days after the end of every month
+		
+2.  Boarding houses of more than 4 bedrooms	0.75 percent of monthly turnover	Within 20 days after the end of every month
+
