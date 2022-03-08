@@ -42,7 +42,7 @@
 
 5. DE L'ENVIRONNEMENT NATUREL
 
-(18) L'État assure, par des mesures nécessaires et appropriées, la protection de la qualité des différentes composantes naturelles de l'Environnement qui sont: [a] le sol et le sous-sol; [b] les ressources en eau, y compris le milieu marin; [c] l'atmosphère; [d] la flore et la faune. Il peut interdire ou réglementer l'exercice d'activités susceptibles de constituer une menace pour l'intégrité et la stabilité des écosystèmes.
+(18) L'État assure, par des mesures nécessaires et appropriées, la protection de la qualité des différentes composantes naturelles de l'Environnement qui sont: [a] le sol et le sous-sol; [b] les ressources en eau, y compris le milieu marin; [c] l'atmosphère; [d] la flore et la faune. Il peut interdire ou règlementer l'exercice d'activités susceptibles de constituer une menace pour l'intégrité et la stabilité des écosystèmes.
 
 (19) Lorsque des faits ou l'exercice d'activités, en violation ou non des dispositions de la présente loi et de ses textes d'application, génèrent un danger grave et imminent pour les intérêt protégés à l'article 18, leur auteur ou responsable est mis en demeure, par la direction générale de l'Environnement ou ses services régionaux de mettre un terme au danger. Lorsque cette mise en demeure est restée sans effet, le Ministre de l'Environnement, après consultation du Ministre concerné, fait exécuter, au frais de l'auteur ou responsable défaillant, les mesures nécessaires.
 
@@ -68,7 +68,7 @@
 
 (27) Sur proposition des Ministres de l'Environnement et de la santé publique, un décret en conseil des Ministres définit les normes bactériologiques, biologiques, physiques et chimiques de l'eau de consommation humaine et de l'eau destinée à l'irrigation et l'arrosage des terres de culture.
 
-(28) Les points de prélèvement de l'eau destinée à la consommation humaine, doivent, selon les besoins constatés pour chaque cas des espèces entourés d'un périmètre dit de protection immédiate éloignée. Toutes activités susceptibles de nuire à la qualité des eaux sont interdites ou peuvent être strictement réglementées à l'intérieur des périmètres de protection.
+(28) Les points de prélèvement de l'eau destinée à la consommation humaine, doivent, selon les besoins constatés pour chaque cas des espèces entourés d'un périmètre dit de protection immédiate éloignée. Toutes activités susceptibles de nuire à la qualité des eaux sont interdites ou peuvent être strictement règlementées à l'intérieur des périmètres de protection.
 
 (29) Sont interdits, dans les cours d'eau et sur leurs abords, les déversements, les rejets de tous corps solides, de toutes substances liquides ou gazeuses, susceptible de nuire à la qualité des eaux.
 
@@ -78,7 +78,7 @@
 
 (31) Les dispositions de la présente loi s'appliquent également aux zones maritimes de la République Fédérale Islamique des Comores, telles que définies par la loi relatives à la délimitation des zones maritimes. Ce sont les eaux archipélagiques, la mer territoriale, la zone économique exclusive ainsi que le rivage de la mer, les fonds marins et le sous-sol correspondant.
 
-(32) Les zones maritimes sont des dépendances du domaine public. Aucun ouvrage et aucun projet de mise en valeur ne peuvent y être exécutés sans autorisation conjointe du Ministre concerné et du Ministre de l'Environnement. Un décret en conseil des Ministres sur propositions du Ministre chargé de la Pêche et celui de l'Environnement réglemente les activités de Pêche. Il proscrit la pratique de la Pêche industrielle dans les eaux territoriales. Le prélèvement de matériaux du rivage de la mer est strictement interdit.
+(32) Les zones maritimes sont des dépendances du domaine public. Aucun ouvrage et aucun projet de mise en valeur ne peuvent y être exécutés sans autorisation conjointe du Ministre concerné et du Ministre de l'Environnement. Un décret en conseil des Ministres sur propositions du Ministre chargé de la Pêche et celui de l'Environnement règlemente les activités de Pêche. Il proscrit la pratique de la Pêche industrielle dans les eaux territoriales. Le prélèvement de matériaux du rivage de la mer est strictement interdit.
 
 (33) Il est interdit de rejeter dans les eaux maritimes toutes substances susceptibles de: [a] détruire la faune et la flore du milieu marin; [b] comporte un danger pour la santé de l'homme; [c] porter atteinte à la valeur esthétique et touristique de la mer et du littoral; [d] nuire à toute autre utilisation légitime de la mer.
 
@@ -92,7 +92,7 @@
 
 (37) La présente loi s'applique également aux activités humaines susceptibles de provoquer une alternative de la composition et de la consistance de la couche atmosphérique qui enveloppe la terre, avec des conséquences dommageables pour la santé des personnes, la production agricole et l'équilibre biologique.
 
-(38) Un décret en conseil des Ministres: [a] réglemente ou interdit les émissions de substances nocives, particulièrement lorsqu'elles sont dues au fonctionnement d'exploitations agricoles, artisanales et industrielles et de moyens de transport qui doivent être dotés de dispositifs de rétention ou de neutralisation des substances polluantes; [b] prend des mesures pour limiter et réduire l'importation, la production, la consommation et l'exportation de substance de la nature à détruire la couche d'ozone et encourager le recours à des substances et techniques de substitutions.
+(38) Un décret en conseil des Ministres: [a] règlemente ou interdit les émissions de substances nocives, particulièrement lorsqu'elles sont dues au fonctionnement d'exploitations agricoles, artisanales et industrielles et de moyens de transport qui doivent être dotés de dispositifs de rétention ou de neutralisation des substances polluantes; [b] prend des mesures pour limiter et réduire l'importation, la production, la consommation et l'exportation de substance de la nature à détruire la couche d'ozone et encourager le recours à des substances et techniques de substitutions.
 
 5.4. DE LA FAUNE ET DE LA FLORE
 
@@ -122,7 +122,7 @@
 
 (50) Les forêts en République Fédérale Islamique des Comores constituent des dépendances du domaine public. Elles sont inaliénables et imprescriptibles.
 
-(51) Pour préserver les forêts de toutes formes de dégradation, y sont interdits les incendies volontaires, les défrichements, les reboisements et les mises en culture sauf dans les secteurs de production, aménagés à cet effet, et rigoureusement soumis à une réglementation de l'exploitation.
+(51) Pour préserver les forêts de toutes formes de dégradation, y sont interdits les incendies volontaires, les défrichements, les reboisements et les mises en culture sauf dans les secteurs de production, aménagés à cet effet, et rigoureusement soumis à une règlementation de l'exploitation.
 
 (52) Lorsque la protection des sols, le régime des cours d'eau, la conservation d'une espèce de faune menacée ou l'équilibre écologique l'exigent, des forêts peuvent être classés, soumises à un régime plus strict de protection, par décret en conseil des Ministres, sur proposition conjointe du Ministre du Développement Rural et celui de l'Environnement.
 
@@ -138,7 +138,7 @@
 
 (56) L'autorisation préalable de construire qu'impose la loi portant code de l'urbanisme et de l'habitat aux administrations, aux services publics et concessionnaires, des services publics de l'État et des communes et des personnes privées désireuses d'entreprendre une construction à usage d'habitation ou non ne saurait être accordée si la construction projetée présente des risques prévisibles pour l'Environnement. Les services régionaux de l'Environnement sont consultés avant la délivrance de l'autorisation de construire.
 
-(57) Un décret en conseil des Ministres, sur proposition du Ministre de la culture et du Ministre de l'Environnement, réglemente la protection du patrimoine architectural, historique ou culturel national pour sa valorisation.
+(57) Un décret en conseil des Ministres, sur proposition du Ministre de la culture et du Ministre de l'Environnement, règlemente la protection du patrimoine architectural, historique ou culturel national pour sa valorisation.
 
 (58) Lorsque des faits ou l'exercice d'activités en violation ou non des dispositions de la présente loi et de ses textes d'applications génèrent un danger pour la qualité du cadre de vie et la santé des personnes, leur auteur ou responsable est mis en demeure, par la Direction Générale de l'Environnement ou ses services régionaux de mettre un terme au danger. Lorsque cette mise en demeure est restée sans effet, le Ministre de l'Environnement, après consultation du Ministre concerné, fait exécuter, au frais de l'auteur ou responsable détaillant, les mesures nécessaires.
 

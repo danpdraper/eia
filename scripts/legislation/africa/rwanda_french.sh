@@ -85,7 +85,7 @@ function amend_errors_in_articles {
     #Article 85 
     amend_error_in_article 85 ' 26' '' | \
     #Article 88
-    amend_error_in_article 88 'réglementées' 'réglementées;' | \
+    amend_error_in_article 88 'règlementées' 'règlementées;' | \
     #Article 89
     amend_error_in_article 89 'autres' 'autres;' | \
     #Article 90

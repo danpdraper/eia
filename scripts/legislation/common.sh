@@ -472,6 +472,10 @@ function replace_œ_with_oe {
   sed -E 's/œ/oe/g'
 }
 
+function replace_réglement_with_règlement {
+  sed -E 's/réglement/règlement/g'
+}
+
 function apply_common_transformations_to_stdin {
   local stdin="$(</dev/stdin)"
 
@@ -501,7 +505,8 @@ function apply_common_transformations_to_stdin {
     remove_colon_from_headers "$language" | \
     replace_article_literals_with_numbers "$language" | \
     wrap_list_item_leading_characters | \
-    replace_œ_with_oe
+    replace_œ_with_oe | \
+    replace_réglement_with_règlement
 }
 
 function apply_common_transformations {

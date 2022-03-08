@@ -172,7 +172,7 @@ Chapitre I - Protection de l'air et de l'atmosphère
 
 (L.321-7) Toute utilisation de l'air aux fins de ventilation forcée ou d'échange thermique doit se faire dans le respect des intérêts visés à l'article L.100-1. 
 
-(L.321-8) Les dispositions du présent chapitre s'appliquent sans préjudice des réglementations particulières et des dispositions spécifiques concernant les installations soumises à surveillance particulière.
+(L.321-8) Les dispositions du présent chapitre s'appliquent sans préjudice des règlementations particulières et des dispositions spécifiques concernant les installations soumises à surveillance particulière.
 
 Chapitre II - Protection des ressources hydriques
 
@@ -180,7 +180,7 @@ Chapitre II - Protection des ressources hydriques
 
 (L.322-2) Les travaux de prélèvement d'eau destinée à la consommation humaine font l'objet d'une déclaration d'intérêt public par Ordonnance Souveraine.
 
-(L.322-3) Aux fins d'éviter l'altération des eaux destinées à la consommation humaine, l'Ordonnance Souveraine portant déclaration d'intérêt public établit, autour du ou des points de prélèvement, des périmètres de protection à l'intérieur desquels est interdite ou réglementée toute activité ou toute installation susceptible de nuire à la qualité de ces eaux.
+(L.322-3) Aux fins d'éviter l'altération des eaux destinées à la consommation humaine, l'Ordonnance Souveraine portant déclaration d'intérêt public établit, autour du ou des points de prélèvement, des périmètres de protection à l'intérieur desquels est interdite ou règlementée toute activité ou toute installation susceptible de nuire à la qualité de ces eaux.
 
 (L.322-4) Des prescriptions en vue de l'utilisation rationnelle des ressources hydriques peuvent être édictées par arrêté ministériel. Ces prescriptions, applicables en particulier aux chantiers publics et privés, prévoient notamment: [1] l'obligation d'utiliser des matériaux et des procédés non contaminants pour les nappes aquifères; [2] l'obligation d'informer, sans délai, l'autorité administrative compétente de la découverte ou de toute venue d'eau; [3] l'obligation d'informer l'autorité administrative compétente de toute opération susceptible d'avoir des conséquences sur le système aquifère.
 
@@ -196,7 +196,7 @@ Chapitre III - Protection des eaux
 
 (L.323-4) Des dispositions relatives à la production, l'importation, la vente et l'utilisation de substances ou catégories de substances susceptibles d'altérer la qualité des eaux sont, en tant que de besoin, fixées par Ordonnance Souveraine. Une étude des incidences sur l'environnement peut être requise par l'autorité administrative compétente, dans les conditions de l'article L.141-1.
 
-(L.323-5) Les dispositions du présent chapitre s'appliquent sans préjudice des réglementations particulières et des dispositions spécifiques concernant les installations soumises à surveillance particulière.
+(L.323-5) Les dispositions du présent chapitre s'appliquent sans préjudice des règlementations particulières et des dispositions spécifiques concernant les installations soumises à surveillance particulière.
 
 Chapitre IV - Gestion des eaux usées
 
@@ -206,7 +206,7 @@ Chapitre V - Protection du sol et du sous-sol
 
 (L.325-1) Des prescriptions relatives à la protection du sol et du sous-sol peuvent être édictées par arrêté ministériel. Ces prescriptions, applicables en particulier aux chantiers publics ou privés, prévoient notamment: [1] l'obligation d'installer des dispositifs de récupération ou d'épuration des rejets; [2] l'obligation d'utiliser des matériaux et des procédés ne pouvant pas altérer ou endommager les cavités naturelles.
 
-(L.325-2) Une Ordonnance Souveraine fixe la nomenclature des activités ou usages qui, en raison des dangers qu'ils présentent pour le sol, le sous-sol ou leurs ressources, sont interdits ou réglementés.
+(L.325-2) Une Ordonnance Souveraine fixe la nomenclature des activités ou usages qui, en raison des dangers qu'ils présentent pour le sol, le sous-sol ou leurs ressources, sont interdits ou règlementés.
 
 (L.325-3) L'exploitation des ressources minérales contenues dans le sol et le sous-sol est subordonnée à autorisation délivrée par le Ministre d'État. Le dossier de demande d'autorisation comporte notamment une étude des incidences sur l'environnement.
 
@@ -224,7 +224,7 @@ Chapitre I - Dispositions générales
 
 (L.411-1) Sont soumis aux dispositions du présent titre toute activité ou tout produit pouvant présenter des dangers ou des inconvénients, soit pour la santé humaine, soit pour la protection de l'environnement, soit pour la sécurité et la salubrité publiques, soit pour la commodité du voisinage, soit pour la protection et l'exploitation des ressources naturelles, soit pour la conservation des sites et des monuments.
 
-(L.411-2) Toute personne physique ou morale, publique ou privée, doit prendre toute mesure pour prévenir à la source toute pollution ou nuisance, ou pour en réduire au minimum les effets défavorables. Dans le cas où une activité engendre directement ou indirectement une pollution ou une nuisance, les intéressés doivent prendre les mesures nécessaires pour l'éliminer ou en réduire les effets défavorables dans le cadre des dispositions législatives et réglementaires en vigueur.
+(L.411-2) Toute personne physique ou morale, publique ou privée, doit prendre toute mesure pour prévenir à la source toute pollution ou nuisance, ou pour en réduire au minimum les effets défavorables. Dans le cas où une activité engendre directement ou indirectement une pollution ou une nuisance, les intéressés doivent prendre les mesures nécessaires pour l'éliminer ou en réduire les effets défavorables dans le cadre des dispositions législatives et règlementaires en vigueur.
 
 (L.411-3) Afin de prévenir toute pollution ou nuisance, ou en réduire au minimum les effets défavorables, sont déterminées par arrêté ministériel les normes applicables aux produits et activités, définies conformément à l'article L.160-2.
 
@@ -246,7 +246,7 @@ Chapitre II - Informations relatives aux effets des activités sur l'environneme
 
 Chapitre III - Activités, matières, substances et préparations dangereuses
 
-(L.413-1) Sans préjudice de réglementations particulières, sont considérées comme dangereuses les activités, les matières, les substances et les préparations énumérées par arrêté ministériel.
+(L.413-1) Sans préjudice de règlementations particulières, sont considérées comme dangereuses les activités, les matières, les substances et les préparations énumérées par arrêté ministériel.
 
 (L.413-2) Les prescriptions relatives aux modalités de transport des matières, des substances ou préparations dangereuses mentionnées à l'article précédent sont fixées par Ordonnance Souveraine.
 
@@ -270,9 +270,9 @@ Chapitre IV - Installations soumises à surveillance particulière
 
 (L.414-7) Pour les installations visées au présent chapitre, des visites périodiques de contrôle sont obligatoires; elles sont effectuées par la Commission technique d'hygiène, de sécurité et de protection de l'environnement, selon une périodicité qu'elle fixe. Cette périodicité peut être modifiée, en tant que de besoin, par ladite Commission. La Commission technique d'hygiène, de sécurité et de protection de l'environnement effectue également des visites de contrôle afin de vérifier que les prescriptions mentionnées à l'article L.414-6 ont bien été exécutées dans les délais prescrits.
 
-(L.414-8) Un procès-verbal est dressé à l'issue des visites, lesquelles ont pour but notamment de vérifier que: [•] les installations ou équipements sont maintenus en conformité avec les dispositions de la réglementation en vigueur et les prescriptions de l'arrêté d'autorisation; [•] les contrôles et la mise à jour des documents nécessaires ont bien été effectués dans les délais impartis.
+(L.414-8) Un procès-verbal est dressé à l'issue des visites, lesquelles ont pour but notamment de vérifier que: [•] les installations ou équipements sont maintenus en conformité avec les dispositions de la règlementation en vigueur et les prescriptions de l'arrêté d'autorisation; [•] les contrôles et la mise à jour des documents nécessaires ont bien été effectués dans les délais impartis.
 
-(L.414-9) Tout exploitant d'une installation visée au présent chapitre doit déclarer à l'autorité administrative compétente la cessation de son activité et lui adresser un état de la qualité du site relatif à l'ensemble des éléments constitutifs de l'écosystème. Il peut être ordonné à l'exploitant toute mesure de remise en état de nature à assurer le retour à l'état initial du site ou à permettre un usage futur tel que ne se manifeste aucun risque pour l'environnement ou pour la santé et les activités qui seront ultérieurement menées, conformément à la réglementation en vigueur au moment de la cessation d'activité.
+(L.414-9) Tout exploitant d'une installation visée au présent chapitre doit déclarer à l'autorité administrative compétente la cessation de son activité et lui adresser un état de la qualité du site relatif à l'ensemble des éléments constitutifs de l'écosystème. Il peut être ordonné à l'exploitant toute mesure de remise en état de nature à assurer le retour à l'état initial du site ou à permettre un usage futur tel que ne se manifeste aucun risque pour l'environnement ou pour la santé et les activités qui seront ultérieurement menées, conformément à la règlementation en vigueur au moment de la cessation d'activité.
 
 TITRE II - BIOTECHNOLOGIES
 
@@ -288,7 +288,7 @@ Chapitre II - Organismes génétiquement modifiés
 
 (L.422-2) Les risques que présentent les organismes génétiquement modifiés, les procédés utilisés pour leur obtention et les dangers potentiels liés à l'utilisation des techniques de génie génétique font l'objet d'une évaluation rigoureuse, contradictoire et continue. Les conditions et prescriptions relatives à cette évaluation sont fixées par Ordonnance Souveraine.
 
-(L.422-3) Sans préjudice de réglementations particulières, l'utilisation, la production, l'importation, l'exportation, la manipulation, le transport, l'utilisation en milieu confiné des organismes génétiquement modifiés, leur dissémination volontaire dans le milieu naturel, leur mise sur le marché ainsi que toute activité de recherche scientifique relative à ces organismes sont subordonnés à l'obtention d'une autorisation délivrée par le Ministre d'État. Cette autorisation peut être assortie de prescriptions particulières. Une étude des incidences sur l'environnement peut être requise, indépendamment de l'exigence d'évaluation de l'article L.422-2.
+(L.422-3) Sans préjudice de règlementations particulières, l'utilisation, la production, l'importation, l'exportation, la manipulation, le transport, l'utilisation en milieu confiné des organismes génétiquement modifiés, leur dissémination volontaire dans le milieu naturel, leur mise sur le marché ainsi que toute activité de recherche scientifique relative à ces organismes sont subordonnés à l'obtention d'une autorisation délivrée par le Ministre d'État. Cette autorisation peut être assortie de prescriptions particulières. Une étude des incidences sur l'environnement peut être requise, indépendamment de l'exigence d'évaluation de l'article L.422-2.
 
 (L.422-4) Les conditions et modalités selon lesquelles peuvent être diffusées les informations relatives aux organismes génétiquement modifiés et à leur dissémination sont fixées par Ordonnance Souveraine.
 
@@ -314,9 +314,9 @@ Chapitre I - Dispositions générales
 
 (L.431-4) Le Ministre d'État prescrit, après mise en demeure restée infructueuse au terme du délai qu'elle impartit, le traitement desdits déchets aux frais et risques du responsable.
 
-(L.431-5) La fabrication, la détention en vue de la vente, la mise en vente, la vente et la mise à disposition d'un utilisateur, sous quelque forme que ce soit, de produits générateurs de déchets peuvent être, par Ordonnance Souveraine, soit interdites, soit réglementées en vue de faciliter la gestion desdits déchets. Le Ministre d'État peut faire obligation aux producteurs, importateurs et distributeurs des produits visés à l'alinéa précédent de pourvoir ou de contribuer au traitement des déchets qui en proviennent.
+(L.431-5) La fabrication, la détention en vue de la vente, la mise en vente, la vente et la mise à disposition d'un utilisateur, sous quelque forme que ce soit, de produits générateurs de déchets peuvent être, par Ordonnance Souveraine, soit interdites, soit règlementées en vue de faciliter la gestion desdits déchets. Le Ministre d'État peut faire obligation aux producteurs, importateurs et distributeurs des produits visés à l'alinéa précédent de pourvoir ou de contribuer au traitement des déchets qui en proviennent.
 
-(L.431-6) Les dispositions du présent titre s'appliquent sans préjudice des réglementations particulières et des dispositions spécifiques concernant notamment les installations soumises à surveillance particulière.
+(L.431-6) Les dispositions du présent titre s'appliquent sans préjudice des règlementations particulières et des dispositions spécifiques concernant notamment les installations soumises à surveillance particulière.
 
 Chapitre II - Déchets dangereux
 
@@ -352,7 +352,7 @@ Chapitre II - Risques technologiques
 
 (L.442-1) L'État et tout acteur économique veillent à la prévention des risques technologiques créés par leurs activités et qui sont susceptibles de conséquences majeures pour la santé humaine ou pour l'environnement. Toute mesure de prévention, de protection et de sauvegarde des habitants de la Principauté à l'égard des risques technologiques peut être prise par le Ministre d'État et notamment la délimitation des zones exposées, l'élaboration de plans et de programmes déterminés par arrêtés ministériels.
 
-(L.442-2) Sans préjudice de réglementations particulières, sont interdites l'introduction, la fabrication, l'utilisation, la vente, la location de produits, substances, engins, matériels, équipements, machines ou véhicules qui présentent un risque technologique élevé. L'importance de ce risque est appréciée par le Ministre d'État après avis de la Commission technique d'hygiène, de sécurité et de protection de l'environnement.
+(L.442-2) Sans préjudice de règlementations particulières, sont interdites l'introduction, la fabrication, l'utilisation, la vente, la location de produits, substances, engins, matériels, équipements, machines ou véhicules qui présentent un risque technologique élevé. L'importance de ce risque est appréciée par le Ministre d'État après avis de la Commission technique d'hygiène, de sécurité et de protection de l'environnement.
 
 Chapitre III - Plans d'urgence
 

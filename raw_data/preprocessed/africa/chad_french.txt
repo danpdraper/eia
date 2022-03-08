@@ -2,7 +2,7 @@ TITRE I - DISPOSITIONS GENERALES
 
 CHAPITRE 1 - Objectifs
 
-(1) La présente loi a pour objectifs d'établir les principes pour la gestion durable de l'environnement et sa protection contre toutes les formes de dégradation, afin de sauvegarder et valoriser les ressources naturelles et d'améliorer les conditions de vie de la population. Des textes réglementaires subséquents préciseront le cadre et les modalités d'application.
+(1) La présente loi a pour objectifs d'établir les principes pour la gestion durable de l'environnement et sa protection contre toutes les formes de dégradation, afin de sauvegarder et valoriser les ressources naturelles et d'améliorer les conditions de vie de la population. Des textes règlementaires subséquents préciseront le cadre et les modalités d'application.
 
 CHAPITRE 2 - Définitions
 
@@ -12,7 +12,7 @@ CHAPITRE 3 - Principes Fondamentaux
 
 (3) La présente loi a pour objet d'établir les principes essentiels selon lesquels l'environnement est géré durablement et protégé contre les formes de dégradations, afin de sauvegarder et valoriser les ressources naturelles et d'améliorer les conditions de vie de la population. Des décrets préciseront le cadre et les modalités d'application des dispositions de l'alinéa 1 de la présente loi.
 
-(4) Tout citoyen, individuellement ou dans le cadre d'institutions locales traditionnelles ou d'associations, est chargé, en collaboration avec les collectivités territoriales décentralisées et l'État, d'oeuvrer, de prévenir et de lutter contre toute sorte de pollution ou de dégradation de l'environnement dans le respect des textes législatifs et réglementaires.
+(4) Tout citoyen, individuellement ou dans le cadre d'institutions locales traditionnelles ou d'associations, est chargé, en collaboration avec les collectivités territoriales décentralisées et l'État, d'oeuvrer, de prévenir et de lutter contre toute sorte de pollution ou de dégradation de l'environnement dans le respect des textes législatifs et règlementaires.
 
 (5) L'administration met en place les organes nécessaires à la mise en oeuvre de la présente loi. Elle associe les organismes concernés pour une meilleure coordination de l'action de protection et de mise en valeur de l'environnement.
 
@@ -94,7 +94,7 @@ CHAPITRE 4 - Les Zones Humides
 
 (34) Les textes d'application de la présente loi fixent la liste des substances dangereuses dont le rejet, le déversement, l'immersion ou l'introduction de manière directe ou indirecte dans les zones humides doivent être interdits.
 
-(35) Aux fins d'éviter l'altération des zones humides, les autorités compétentes peuvent établir autour du ou des points de prélèvement, des périmètres de protection à l'intérieur desquels sont interdites ou réglementées toutes activités susceptibles de nuire à la qualité de ces zones.
+(35) Aux fins d'éviter l'altération des zones humides, les autorités compétentes peuvent établir autour du ou des points de prélèvement, des périmètres de protection à l'intérieur desquels sont interdites ou règlementées toutes activités susceptibles de nuire à la qualité de ces zones.
 
 (36) Sera puni d'un emprisonnement de 1 mois à 1 an et d'une amende de 150.000 F à 3.000.000 f ou de l'une de ces deux peines seulement toute personne qui aura introduit des substances dangereuses dans les eaux continentales, en infraction aux dispositions de l'article 35 ci-dessus.
 
@@ -110,13 +110,13 @@ CHAPITRE 5 - L'air et l'atmosphère
 
 CHAPITRE 6 - Les Aires Protégées
 
-(41) Peuvent être érigées en aires protégées, après enquête publique, les parties du territoire national aux fins de protéger, remettre en état et conserver les espèces et les habitats spécialement menacés ou présentant un intérêt particulier. Ces zones sont protégées et préservées de toute intervention ou activité susceptible de les modifier ou les dégrader. Lorsque les intérêts de la zone à protéger le justifient, l'autorité compétente peut en parc national, en réserve naturelle intégrale, en réserve spéciale ou en réserve de faune selon les procédures prévues par les textes législatifs et réglementaires en vigueur.
+(41) Peuvent être érigées en aires protégées, après enquête publique, les parties du territoire national aux fins de protéger, remettre en état et conserver les espèces et les habitats spécialement menacés ou présentant un intérêt particulier. Ces zones sont protégées et préservées de toute intervention ou activité susceptible de les modifier ou les dégrader. Lorsque les intérêts de la zone à protéger le justifient, l'autorité compétente peut en parc national, en réserve naturelle intégrale, en réserve spéciale ou en réserve de faune selon les procédures prévues par les textes législatifs et règlementaires en vigueur.
 
 (42) La décision de classement ou d'inscription d'une zone spécialement protégée, lorsqu'elle occasionne un préjudice matériel, direct et certain par une limitation des activités antérieures donne droit à indemnité au profit du propriétaire ou des ayant-droit dans des conditions fixées par les textes d'application de la présente loi.
 
 (43) Lorsque le maintien de l'équilibre écologique l'exige, toutes portions de bois ou forêts classées, quels que soient leurs propriétaires, peuvent être érigées en forêts classées, interdisant par là même tout changement d'affectation ou tout mode d'occupation du sol de nature à des compromettre la qualité des boisements. Ces classements donnent lieu à des indemnités dans les mêmes conditions que celles fixées à l'article 37 de la présente loi.
 
-(44) Sera puni d'un emprisonnement de 1 an à 3 ans et d'une amende de 10.000 F à 1.000.000 f ou de l'une de ces deux peines seulement quiconque aura contrevenu à la réglementation des forêts protégées, classées, telles que prévues aux articles 40 et 41 ci-dessus.
+(44) Sera puni d'un emprisonnement de 1 an à 3 ans et d'une amende de 10.000 F à 1.000.000 f ou de l'une de ces deux peines seulement quiconque aura contrevenu à la règlementation des forêts protégées, classées, telles que prévues aux articles 40 et 41 ci-dessus.
 
 TITRE V - LES POLLUTIONS ET LES NUISANCES
 
@@ -132,7 +132,7 @@ CHAPITRE 1 - Les Installations Classées pour la Protection de l'Environnement
 
 (49) Dans le cas de risque imminent grave constaté, pour la santé de l'homme ou la protection de l'environnement en général, l'administration compétente peut, après mise en demeure de l'exploitant, et conformément aux dispositions en vigueur, suspendre, tout ou partie des activités de l'installation classée présumée responsable.
 
-(50) L'administration chargée de l'environnement peut imposer à l'exploitant d'une installation classée dans des conditions fixées par voie réglementaire d'installer des équipements de mesure de la pollution et de lui transmettre périodiquement les relevés effectués sur la nature et la qualité des effluents liquides, solides et gazeux rejetés.
+(50) L'administration chargée de l'environnement peut imposer à l'exploitant d'une installation classée dans des conditions fixées par voie règlementaire d'installer des équipements de mesure de la pollution et de lui transmettre périodiquement les relevés effectués sur la nature et la qualité des effluents liquides, solides et gazeux rejetés.
 
 (51) Sera puni d'un emprisonnement de 2 mois à 1 an et d'une amende de 50.000 F à 150.000 F ou de l'une de ces deux peines seulement quiconque aura exploité consciemment une installation sans l'autorisation ou la déclaration requise aux articles 47 et 48 de la présente loi ou qui aura méconnu les conditions imposées par l'autorisation prévue.
 
@@ -156,7 +156,7 @@ CHAPITRE 2 - Les déchets
 
 (60) Le transport des déchets spéciaux sur le territoire de la République du Tchad est conditionné à la délivrance d'un permis de transport de matière dangereuse tel que régi par les textes d'application de la présente loi.
 
-(61) L'importation, l'exportation et le transit de certaines catégories de déchets, déterminées par un texte d'application, peuvent être interdits ou réglementés par l'administration chargée de l'environnement ou subordonnés à l'accord préalable des autorités compétentes des États concernés afin de prévenir les atteintes à l'environnement.
+(61) L'importation, l'exportation et le transit de certaines catégories de déchets, déterminées par un texte d'application, peuvent être interdits ou règlementés par l'administration chargée de l'environnement ou subordonnés à l'accord préalable des autorités compétentes des États concernés afin de prévenir les atteintes à l'environnement.
 
 (62) Lorsque des déchets ont été introduits sur le territoire en violation des dispositions prévues à l'article précédent, l'administration chargée de l'environnement enjoint à leur détenteur d'assurer leur retour dans le pays d'origine. En cas d'inexécution, elle prend toutes dispositions utiles pour assurer ce retour, les dépenses correspondantes étant mises à la charge des personnes ayant contribué à l'introduction ou au dépôt de ces déchets.
 
@@ -216,7 +216,7 @@ CHAPITRE 1 - Les Études d'Impact sur l'Environnement
 
 (85) Préalablement à l'accomplissement de toute étude d'impact requise au terme de la présente loi et de ses textes d'application, le pétitionnaire ou le maître de l'ouvrage communique à l'administration chargée de l'environnement un cahier des charges contenant des éléments qu'il compte développer dans l'étude d'impact.
 
-(86) L'étude d'impact sur l'environnement est réalisée par le maître de l'ouvrage, le pétitionnaire ou par une personne physique ou morale habilitée par celui-ci et agréée par l'administration chargée de l'environnement. Les frais y afférents sont à la charge de l'initiateur du projet. L'étude ainsi réalisée est déposée auprès de l'administration chargée de l'environnement qui délivre un récépissé. Le délai de dépôt de l'étude est fixé par voie réglementaire.
+(86) L'étude d'impact sur l'environnement est réalisée par le maître de l'ouvrage, le pétitionnaire ou par une personne physique ou morale habilitée par celui-ci et agréée par l'administration chargée de l'environnement. Les frais y afférents sont à la charge de l'initiateur du projet. L'étude ainsi réalisée est déposée auprès de l'administration chargée de l'environnement qui délivre un récépissé. Le délai de dépôt de l'étude est fixé par voie règlementaire.
 
 (87) Une fois que l'administration chargée de l'environnement a reçu l'étude d'impact et qu'elle l'a jugée recevable, après une contre-expertise, elle publie par voie d'annonce officielle sa décision et ouvre au public pendant quarante cinq jours la consultation de ladite étude. Pendant cette période, elle tient à la disposition du public un registre permettant la consignation de toutes observations relatives au projet et à l'étude d'impact déposée. Les frais de publicité sont à la charge du demandeur.
 

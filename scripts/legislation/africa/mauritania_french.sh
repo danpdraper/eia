@@ -217,7 +217,6 @@ function amend_errors_in_articles {
     sed -E 's/interesses/intéressés/g' | \
     sed -E 's/aupres/auprès/g' | \
     sed -E 's/ministeriel/ministériel/g' | \
-    sed -E 's/règlement/réglement/g' | \
     sed -E 's/restee/restée/g' | \
     sed -E 's/responsabilite/responsabilité/g' | \
     sed -E 's/penal/pénal/g' | \
@@ -319,7 +318,6 @@ function amend_errors_in_articles {
     # Article 4
     amend_error_in_article 4 dedéveloppement 'de développement' | \
     # Article 5
-    amend_error_in_article 5 réglements règlements | \
     amend_error_in_article 5 équilibre équilibré | \
     amend_error_in_article 5 ' lis' ' Ils' | \
     amend_error_in_article 5 "\('implication" "l'implication" | \
@@ -456,7 +454,6 @@ function amend_errors_in_articles {
     sed -E ':start;s/^(\(22\).*)([0-9]) \[•\]/\1[\2]/;t start' | \
     amend_error_in_article 22 'État:' 'État;' | \
     amend_error_in_article 22 aftectees affectées | \
-    amend_error_in_article 22 réglements règlements | \
     amend_error_in_article 22 "f'environnement" "l'environnement" | \
     amend_error_in_article 22 'activités:' 'activités;' | \
     amend_error_in_article 22 'trésorerie:' 'trésorerie;' | \
@@ -518,12 +515,12 @@ function amend_errors_in_articles {
     amend_error_in_article 33 ' Articles 34:' '\n\n(34)' | \
     # Article 34
     sed -E ':start;s/^(\(34\).*)([0-9])°:/\1[\2]/;t start' | \
-    amend_error_in_article 34 reqlernentes réglementés | \
+    amend_error_in_article 34 reqlernentes règlementés | \
     amend_error_in_article 34 '"émission' "l'émission" | \
     amend_error_in_article 34 'iI doit' 'il doit' | \
     amend_error_in_article 34 pubtlcation publication | \
     amend_error_in_article 34 'décret\.' 'décret;' | \
-    amend_error_in_article 34 'réglementes et contrôles' 'réglementés et contrôlés' | \
+    amend_error_in_article 34 'règlementes et contrôles' 'règlementés et contrôlés' | \
     amend_error_in_article 34 '32<' 32 | \
     amend_error_in_article 34 'présente lol' 'présente loi' | \
     amend_error_in_article 34 cornpris compris | \
@@ -577,12 +574,12 @@ function amend_errors_in_articles {
     amend_error_in_article 39 'préalablernent approuve,' 'préalablement approuvé\.' | \
     sed -E ':start;s/^(\(39\).*[;:]) à/\1 [•] à/;t start' | \
     # Article 40
-    amend_error_in_article 40 réglementes réglementés | \
+    amend_error_in_article 40 règlementes règlementés | \
     amend_error_in_article 40 déversernents déversements | \
     amend_error_in_article 40 'atterer la qualita' 'altérer la qualité' | \
-    amend_error_in_article 40 n3glementees réglementées | \
+    amend_error_in_article 40 n3glementees règlementées | \
     amend_error_in_article 40 déversernents déversements | \
-    amend_error_in_article 40 regJementation réglementation | \
+    amend_error_in_article 40 regJementation règlementation | \
     amend_error_in_article 40 ' 1° ' ' premier ' | \
     amend_error_in_article 40 '\. L' '. l' | \
     amend_error_in_article 40 controtes contrôles | \
@@ -707,7 +704,6 @@ function amend_errors_in_articles {
     amend_error_in_article 62 '"homme at' "l'homme et" | \
     amend_error_in_article 62 envlronnement environnement | \
     amend_error_in_article 62 contormernent conformément | \
-    amend_error_in_article 62 réglements règlements | \
     # Article 63
     amend_error_in_article 63 arrête arrêté | \
     amend_error_in_article 63 'Environnernent etaborera' 'Environnement élaborera' | \
@@ -805,7 +801,7 @@ function amend_errors_in_articles {
     amend_error_in_article 81 préter prêter | \
     amend_error_in_article 81 ala 'à la' | \
     amend_error_in_article 81 vatidlte validité | \
-    amend_error_in_article 81 'reg\/ementaire' réglementaire | \
+    amend_error_in_article 81 'reg\/ementaire' règlementaire | \
     # Article 82
     amend_error_in_article 82 penêtrer pénétrer | \
     amend_error_in_article 82 amenaqements aménagements | \
@@ -826,7 +822,6 @@ function amend_errors_in_articles {
     amend_error_in_article 84 préuves preuves | \
     amend_error_in_article 84 irnportes importés | \
     amend_error_in_article 84 Ia la | \
-    amend_error_in_article 84 réglements règlements | \
     amend_error_in_article 84 matenelle matérielle | \
     amend_error_in_article 84 "\('" "l'" | \
     amend_error_in_article 84 'lis préndront' 'Ils prendront' | \
@@ -859,7 +854,7 @@ function amend_errors_in_articles {
     amend_error_in_article 90 '"article' "l'article" | \
     amend_error_in_article 90 eftectue effectué | \
     amend_error_in_article 90 creuse creusé | \
-    amend_error_in_article 90 'reqlernentaire:' 'réglementaire;' | \
+    amend_error_in_article 90 'reqlernentaire:' 'règlementaire;' | \
     amend_error_in_article 90 'implante au aqrandi' 'implanté ou agrandi' | \
     amend_error_in_article 90 modifie modifié | \
     amend_error_in_article 90 'au auront commence' 'ou auront commencé' | \
@@ -877,7 +872,6 @@ function amend_errors_in_articles {
     # Article 91
     amend_error_in_article 91 '\{ente' tenté | \
     amend_error_in_article 91 contr61es contrôles | \
-    amend_error_in_article 91 réglements règlements | \
     amend_error_in_article 91 '\. \[' '; [' | \
     amend_error_in_article 91 'detrutt ou tente de detrulre' 'détruit ou tenté de détruire' | \
     # Article 92
@@ -898,9 +892,7 @@ function amend_errors_in_articles {
     amend_error_in_article 93 'à entralne' 'a entraîné' | \
     # Article 94
     amend_error_in_article 94 'reprirnees conformêment' 'réprimées conformément' | \
-    amend_error_in_article 94 réglements règlements | \
     amend_error_in_article 94 toret forêt | \
-    amend_error_in_article 94 réglements règlements | \
     amend_error_in_article 94 '\(' l | \
     # Article 95
     amend_error_in_article 95 vtsees visées | \

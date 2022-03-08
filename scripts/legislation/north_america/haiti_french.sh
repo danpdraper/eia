@@ -108,7 +108,7 @@ function amend_errors_in_articles {
     sed -E 's/consacree/consacrée/g' | \
     sed -E 's/ ala / à la /g' | \
     sed -E 's/specifiques/spécifiques/g' | \
-    sed -E 's/reglernentation/réglementation/g' | \
+    sed -E 's/reglernentation/règlementation/g' | \
     sed -E 's/Amenag/Aménag/g' | \
     sed -E 's/evalu/évalu/g' | \
     sed -E 's/basee/basée/g' | \
@@ -352,7 +352,6 @@ function amend_errors_in_articles {
     sed -E 's/decern/décern/g' | \
     sed -E 's/benefici/bénéfici/g' | \
     sed -E 's/Arrete/Arrêté/g' | \
-    sed -E 's/règlementaire/réglementaire/g' | \
     sed -E 's/schema/schéma/g' | \
     sed -E 's/penal/pénal/g' | \
     sed -E 's/declares/déclarés/g' | \
@@ -546,7 +545,6 @@ function amend_errors_in_articles {
     sed -E 's/au-dela/au-delà/g' | \
     sed -E 's/utilises/utilisés/g' | \
     sed -E 's/caracteris/caractéris/g' | \
-    sed -E 's/règlementation/réglementation/g' | \
     sed -E 's/élaboree/élaborée/g' | \
     sed -E 's/édictee/édictée/g' | \
     sed -E 's/visee/visée/g' | \
@@ -1031,7 +1029,7 @@ function amend_errors_in_articles {
     amend_error_in_article 48 'Environnement\.' 'Environnement.\n\n(54)' | \
     amend_error_in_article 48 'matière\.' 'matière.\n\n(53)' | \
     amend_error_in_article 48 'adéfinir,' 'à définir.\n\n(52)' | \
-    amend_error_in_article 48 'réglementaire, L' 'réglementaire.\n\n(51) L' | \
+    amend_error_in_article 48 'règlementaire, L' 'règlementaire.\n\n(51) L' | \
     amend_error_in_article 48 'ressources\.' 'ressources.\n\n(50)' | \
     amend_error_in_article 48 'protection\.' 'protection.\n\n(49)' | \
     amend_error_in_article 48 constitue constitué | \
@@ -1147,7 +1145,7 @@ function amend_errors_in_articles {
     amend_error_in_article 69 'concernée, Le' 'concernée.\n\n(73) Le' | \
     amend_error_in_article 69 'CONATE\. Toutes' 'CONATE.\n\n(72) Toutes' | \
     amend_error_in_article 69 'passées, Avec' 'passées.\n\n(71) Avec' | \
-    amend_error_in_article 69 'réglementaire\. Le' 'réglementaire.\n\n(70) Le' | \
+    amend_error_in_article 69 'règlementaire\. Le' 'règlementaire.\n\n(70) Le' | \
     amend_error_in_article 69 institue institué | \
     amend_error_in_article 69 pUbliques publiques | \
     amend_error_in_article 69 dévaluatton "d'évaluation" | \
@@ -1422,7 +1420,7 @@ function amend_errors_in_articles {
     amend_error_in_article 131 ' it ' ' à ' | \
     # Article 132
     amend_error_in_article 132 etcombattre 'et combattre' | \
-    amend_error_in_article 132 'réglementaire, CHAPITREVI DE' 'réglementaire.\n\nCHAPITRE VI - DE ' | \
+    amend_error_in_article 132 'règlementaire, CHAPITREVI DE' 'règlementaire.\n\nCHAPITRE VI - DE ' | \
     # Article 133
     amend_error_in_article 133 ' Ii ' ' à ' | \
     # Article 134
@@ -1450,7 +1448,7 @@ function amend_errors_in_articles {
     amend_error_in_article 138 'particuliers\.' 'particuliers;' | \
     amend_error_in_article 138 'a des' 'à des' | \
     amend_error_in_article 138 'anirnaux Oil' 'animaux ou' | \
-    amend_error_in_article 138 'règlementarion hailienne' 'réglementation haïtienne' | \
+    amend_error_in_article 138 'règlementarion hailienne' 'règlementation haïtienne' | \
     # Article 139
     amend_error_in_article 139 delevage "d'élevage" | \
     amend_error_in_article 139 parle 'par le' | \
@@ -1525,7 +1523,7 @@ function amend_errors_in_articles {
     amend_error_in_article 153 pénalernent pénalement | \
     # Article 154
     amend_error_in_article 154 conformêment conformément | \
-    amend_error_in_article 154 règlemenraires réglementaires | \
+    amend_error_in_article 154 règlemenraires règlementaires | \
     amend_error_in_article 154 aprotéger 'à protéger' | \
     amend_error_in_article 154 ' No\..*$' '' | \
     # Article 155
