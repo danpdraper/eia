@@ -14,13 +14,7 @@ function append_pipe_to_article_title {
 }
 
 function replace_parentheses_around_article_delimiters_with_square_brackets {
-  sed -E 's/^\(([A-Za-z0-9]+)\)/[\1]/' 
-}
-
-function fix_leftover_article_literals {
-  sed -E 's/Article \[1\] Goals and objectives of environmental impact assessment \| /\n\nGoals and objectives of environmental impact assessment\n(1) /' | \
-    sed -E 's/Article \[13\]/\n\n(13)/' | \
-    sed -E 's/Article \[26\]/\n\n(26)/' 
+  sed -E 's/\(([A-Za-z0-9]+)\)/[\1]/g' 
 }
 
 function move_article_titles_above_article_bodies {
@@ -28,7 +22,7 @@ function move_article_titles_above_article_bodies {
 }
 
 function remove_all_text_after_last_article {
-  sed -E '/^\(62\)/,${/^\(62\)/!d}'
+  sed -E '/^\(42\)/,${/^\(42\)/!d}'
 }
 
 function amend_errors_in_headers {
@@ -37,96 +31,53 @@ function amend_errors_in_headers {
 }
 
 function amend_errors_in_articles {
-  sed -E 's/\(([a-z])\)/[\1]/g' | \
-    sed -E 's/( )\(([0-9]+)\)/\1[\2]/g' | \
-    sed -E 's/\(ii\)/[ii]/g' | \
-    sed -E 's/([0-9]+) (\[[0-9]+\])/\1\2/g' | \
-    sed -E 's/‐ \[/: [/g' | \
-    #Article 1
-    amend_error_in_article 1 'decision‐ making' 'decision‐making' | \
-    amend_error_in_article 1 'be take into account' 'be taken into account' | \
-    amend_error_in_article 1 'town and villages' 'towns and villages' | \
-    #Article 4
-    amend_error_in_article 4 '`\[g\]' '[g]' | \
-    amend_error_in_article 4 'impacts of proposed activity' 'impacts of the proposed activity' | \
+  sed -E 's/‐ /: /g' | \
+    sed -E 's/\[1992 No. \[59\]\] //g' | \
+    sed -E 's/\[1992 No.//g' | \
+    sed -E 's/, 000/,000/g' | \
+    #Article 2
+    amend_error_in_article 2 '\[1999 No. \[14\]\] ' '' | \
+    amend_error_in_article 2 '\[Schedule.' '' | \
+    amend_error_in_article 2 '…..' '.....' | \
+    #Article 3
+    amend_error_in_article 3 '1S' 'is' | \
+    amend_error_in_article 3 '\[i\] Health' '[iii] Health' | \
+    amend_error_in_article 3 '\(ii\)' '[ii]' | \
     #Article 5
-    amend_error_in_article 5 'detailed commensuration' 'detail commensurate' | \
+    amend_error_in_article 5 '\[1992 No. \[59\]\] ' '' | \
+    amend_error_in_article 5 '\(i\)' '[i]' | \
+    amend_error_in_article 5 '\(ii\)' '[ii]' | \
+    #Article 6
+    amend_error_in_article 6 'co: ' 'co-' | \
+    #Article 9
+    amend_error_in_article 9 '\[Cap. P4.\] ' '' | \
     #Article 12
-    amend_error_in_article 12 '\[Schedule.\] ' '' | \
+    amend_error_in_article 12 '\[Cap. L5.\] ' '' | \
     #Article 13
-    amend_error_in_article 13 '\[Consolidated\]' '(Consolidated)' | \
-    amend_error_in_article 13 '\[Cap. C49.\] ' '' | \
+    amend_error_in_article 12 'Article \[13\] Fund of the Agency \|' '\n\nFund of the Agency\n(13)' | \
     #Article 16
-    amend_error_in_article 16 '47,48' '47, 48' | \
-    amend_error_in_article 16 '49 any' '49, any' | \
-    amend_error_in_article 16 '\[1\] \[a\]' '[1][a]' | \
-    amend_error_in_article 16 '\[2\] \[b\]' '[2][b]' | \
-    amend_error_in_article 16 'he Agency' 'the Agency' | \
-    amend_error_in_article 16 'subsection \[1\] of this Act' 'subsection [1] of this section' | \
-    amend_error_in_article 16 'renewal resources' 'renewable resources' | \
-    amend_error_in_article 16 'that he Agency' 'that the Agency' | \
-    amend_error_in_article 16 'consulting tthe Agency' 'consulting the Agency' | \
-    #Article 19
-    amend_error_in_article 19 'subsection \[1\] of this Act' 'subsection [1] of this section' | \
-    #Article 20
-    amend_error_in_article 20 '5 \[d\]' '5[d]' | \
+    sed -E 's/Water quality Article \[16\] Federal water quality standards \|/\n\nWater Quality\n\nFederal water quality standards\n(16)/' | \
+    #Article 17
+    amend_error_in_article 17 'Air quality and atmospheric protection Article \[18\] Air quality, etc. \|' '\n\nAir quality and atmospheric protection \n\nAir quality, etc.\n(18)' | \
     #Article 21
-    amend_error_in_article 21 '\[1\] \[a\]' '[1][a]' | \
-    #Article 23
-    amend_error_in_article 23 '5 \[d\]' '5[d]' | \
+    amend_error_in_article 20 'Hazardous substances Article \[21\] Discharge of hazardous substances \|' '\n\nHazardous substances  \n\nDischarge of hazardous substances\n(21)' | \
+    amend_error_in_article 21 '\[Cap. Hl.' '' | \
+    amend_error_in_article 21 'N 1' 'N1' | \
     #Article 25
-    amend_error_in_article 25 'Discretionary powers' '\n\nDiscretionary powers' | \
-    amend_error_in_article 25 '39\[1\] \[a\]' '39[1][a]' | \
-    #Article 32
-    amend_error_in_article 32 'on the request of the mediation' 'on the request of the mediator' | \
+    sed -E 's/Article \[25\] Establishment of State and local government bodies \|/\n\nEstablishment of State and local government bodies\n(25)/' | \
+    #Article 26
+    sed -E 's/PART I -V /PART IV /' | \
+    sed -E 's/Enforcement powers Article \[26\] Powers to inspect, etc. \|/\n\nEnforcement powers \n\nPowers to inspect, etc.\n(26)/' | \
+    #Article 31
+    amend_error_in_article 31 '30 \[2\]' '30[2]' | \
+    #Article 35
+    sed -E 's/General penalties and legal proceedings Article \[35\] Material misrepresentation and impersonation \|/\n\nGeneral penalties and legal proceedings \n\nMaterial misrepresentation and impersonation\n(35)/' | \
+    #Article 36
+    amend_error_in_article 36 'therefor,' 'therefore,' | \
     #Article 37
-    amend_error_in_article 37 'and or ordering the witness' 'and order the witness' | \
-    #Article 39
-    amend_error_in_article 39 '25 \[b\]' '25[b]' | \
-    amend_error_in_article 39 '\[1\] \[a\]' '[1][a]' | \
-    amend_error_in_article 39 'subsection \[1\] \[a\]' 'subsection [1][a]' | \
-    #Article 40
-    amend_error_in_article 40 '\[1\] \[a\]' '[1][a]' | \
-    amend_error_in_article 40 'for or in the pursuant to' 'for or pursuant to' | \
+    amend_error_in_article 37 'Miscellaneous' '\n\nMiscellaneous' | \
     #Article 42
-    amend_error_in_article 42 'bye‐law' 'by‐law' | \
-    #Article 43
-    amend_error_in_article 43 '\[1\] \[e\]' '[1][e]' | \
-    amend_error_in_article 43 ' co‐ chairman' ' co-chairman' | \
-    amend_error_in_article 43 '\[f\] of this section' '[f] of section 42' | \
-    sed -E ':start;s/^(\(43\).*)subsection 42 of this Act/\1section 42 of this Act/;t start' | \
-    #Article 44
-    amend_error_in_article 44 '42\[1\] \[d\]' '42[1][d]' | \
-    #Article 47
-    amend_error_in_article 47 'environment effects' 'environmental effects' | \
-    #Article 51
-    amend_error_in_article 51 'subsection 47\[1\]' 'section 47[1]' | \
-    #Article 54
-    amend_error_in_article 54 '15 \[b\]' '15[b]' | \
-    amend_error_in_article 54 '5 \[b\]' '5[b]' | \
-    #Article 57
-    amend_error_in_article 57 'irregularity .' 'irregularity.' | \
-    #Article 58
-    amend_error_in_article 58 'section 42\[1\] \[a\]' 'section 42[1][a]' | \
-    amend_error_in_article 58 '42\[1\] \[d\]' '42[1][d]' | \
-    amend_error_in_article 58 '\[Schedule.\] ' '' | \
-    amend_error_in_article 58 'assist m conducting' 'assist in conducting' | \
-    #Article 60
-    amend_error_in_article 60 'thanN100' 'than N100' | \
-    #Article 61
-    amend_error_in_article 61 'provides‐' 'provides:' | \
-    amend_error_in_article 61 '\[Cap. F10.\] ' '' | \
-    amend_error_in_article 61 '\[Cap. S4.\] ' '' | \
-    amend_error_in_article 61 '\[Cap. T5.\] ' '' | \
-    amend_error_in_article 61 'section 61\[1\] \[b\]' 'section 61[1][b]' | \
-    amend_error_in_article 61 '55\[1\] \[c\]' '55[1][c]' | \
-    amend_error_in_article 61 'subsection 14\[1\]' 'section 14[1]' | \
-    amend_error_in_article 61 'section 17 \[1\]' 'section 17[1]' | \
-    amend_error_in_article 61 'per cent ' 'percent ' | \
-    amend_error_in_article 61 'subsections 11\[1\]' 'sections 11[1]' | \
-    #Article 62
-    amend_error_in_article 62 'SCHEDULE.*' '' 
-    
+    amend_error_in_article 42 ' ___.*$' '' 
 }
 
 function preprocess_state_and_language_input_file {
@@ -143,7 +94,6 @@ function preprocess_state_and_language_input_file {
     append_pipe_to_article_title | \
     replace_parentheses_around_article_delimiters_with_square_brackets | \
     apply_common_transformations_to_stdin "$language" | \
-    fix_leftover_article_literals | \
     move_article_titles_above_article_bodies | \
     remove_all_text_after_last_article | \
     amend_errors_in_headers | \
