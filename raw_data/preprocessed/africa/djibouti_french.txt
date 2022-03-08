@@ -2,7 +2,7 @@ TITRE I - DISPOSITIONS GÉNÉRALES
 
 CHAPITRE I - DES DÉFINITIONS
 
-(1) Au sens de la présente loi, on entend par: [•] Environnement: l'ensemble des éléments naturels et artificiels, y compris les milieux humains économiques, sociaux et culturels qui conditionnent la vie des espèces animales, végétales et des êtres humains ainsi que le maintien des paysages et des espèces naturels. [•] Évaluation environnementale: le processus générique d'analyse des données environnementales, socio-économiques, culturelles, pour intégrer la sauvegarde de l'environnement dans la planification des activités de développement, des programmes ou des projets. [•] Valeurs-limites: le niveau chiffré autorisé de substances polluantes ou des polluants dans un milieu. [•] Polluants, substances polluantes: toutes substances, organismes, vibrations, rayonnements, odeurs, susceptibles de modifier au-delà des limites réglementaires les caractéristiques du milieu. [•] Étude d'impact environnemental: la procédure d'examen prospectif des éventuelles conséquences d'un projet ou d'une activité sur l'environnement ainsi que les mesures envisagées pour les atténuer jusqu'à un niveau acceptable par les règlements. [•] Évaluation environnementale stratégique: examen prospectif des impacts des plans, des programmes ou des politiques de développement dans un secteur, une région ou le pays.
+(1) Au sens de la présente loi, on entend par: [•] Environnement: l'ensemble des éléments naturels et artificiels, y compris les milieux humains économiques, sociaux et culturels qui conditionnent la vie des espèces animales, végétales et des êtres humains ainsi que le maintien des paysages et des espèces naturels. [•] Évaluation environnementale: le processus générique d'analyse des données environnementales, socio-économiques, culturelles, pour intégrer la sauvegarde de l'environnement dans la planification des activités de développement, des programmes ou des projets. [•] Valeurs-limites: le niveau chiffré autorisé de substances polluantes ou des polluants dans un milieu. [•] Polluants, substances polluantes: toutes substances, organismes, vibrations, rayonnements, odeurs, susceptibles de modifier au-delà des limites règlementaires les caractéristiques du milieu. [•] Étude d'impact environnemental: la procédure d'examen prospectif des éventuelles conséquences d'un projet ou d'une activité sur l'environnement ainsi que les mesures envisagées pour les atténuer jusqu'à un niveau acceptable par les règlements. [•] Évaluation environnementale stratégique: examen prospectif des impacts des plans, des programmes ou des politiques de développement dans un secteur, une région ou le pays.
 
 CHAPITRE II - DES OBJECTIFS ET PRINCIPES GÉNÉRAUX DE GESTION DE L'ENVIRONNEMENT
 
@@ -36,7 +36,7 @@ CHAPITRE I - DES EAUX CONTINENTALES
 
 (13) Les eaux, composantes principales de l'environnement constituent un patrimoine commun dont l'utilisation est soumise aux principes énumérés à l'article 5 ci-dessus.
 
-(14) Les eaux sont soumises à des valeurs-limites de protection et d'utilisation qui sont établies par voies réglementaires.
+(14) Les eaux sont soumises à des valeurs-limites de protection et d'utilisation qui sont établies par voies règlementaires.
 
 (15) Tout rejet liquide supérieur à ces valeurs-limites et dépôt de toute nature pouvant provoquer ou accroître la pollution des eaux sont interdits.
 
@@ -68,7 +68,7 @@ CHAPITRE IV - DE L'AIR
 
 (26) L'air constitue un patrimoine commun dont l'utilisation en dehors des besoins fondamentaux est soumise aux principes énumérés à l'article 5 ci-dessus.
 
-(27) Toute émission de substances au-delà des valeurs-limites est interdite. Les normes relatives à la qualité de l'air seront définies par voie réglementaire.
+(27) Toute émission de substances au-delà des valeurs-limites est interdite. Les normes relatives à la qualité de l'air seront définies par voie règlementaire.
 
 (28) Toutes installations terrestres, aériennes, maritimes ou souterraines susceptibles d'entraîner des conséquences de nature à modifier les caractéristiques de l'air sont soumises à étude d'impact environnemental préalable dont l'issue sera sanctionnée par décision du Ministre chargé de l'environnement.
 
@@ -82,9 +82,9 @@ CHAPITRE V - DU SOL
 
 (32) Le sol et le sous-sol sont un patrimoine commun dont l'utilisation est soumise aux principes énumérés à l'article 5 ci-dessus.
 
-(33) Tout déversement ou épandage de substance de nature à modifier les caractéristiques des sols et sous-sols est soumis, sans préjudice des dispositions légales et réglementaires spécifiques, à étude d'impact environnemental préalable.
+(33) Tout déversement ou épandage de substance de nature à modifier les caractéristiques des sols et sous-sols est soumis, sans préjudice des dispositions légales et règlementaires spécifiques, à étude d'impact environnemental préalable.
 
-(34) Toute émission de substances toxiques ou dangereuses sur ou dans le sol est interdite. La liste de ces substances est fixée par voie réglementaire.
+(34) Toute émission de substances toxiques ou dangereuses sur ou dans le sol est interdite. La liste de ces substances est fixée par voie règlementaire.
 
 (35) Toute activité portant préjudice à une installation légitime ou reconnue sur le sol ou dans le sous-sol engage la responsabilité de son auteur. Ce préjudice donne droit à réparation.
 
@@ -96,7 +96,7 @@ TITRE III - DES ESPÈCES
 
 (38) Les espèces constituent un patrimoine commun dont l'utilisation est soumise aux principes de gestion énumérés à l'article 5 ci-dessus.
 
-(39) Les espèces et leurs habitats bénéficient de protection spéciale à travers: l'instauration d'Aires Protégées, des listes des espèces protégées et la réglementation de l'introduction, quelle qu'en soit l'origine, de toute espèce pouvant porter atteinte aux espèces déjà sur place ou à leurs milieux particuliers. Les modalités de mise en oeuvre de cette protection seront définies par voie réglementaire.
+(39) Les espèces et leurs habitats bénéficient de protection spéciale à travers: l'instauration d'Aires Protégées, des listes des espèces protégées et la règlementation de l'introduction, quelle qu'en soit l'origine, de toute espèce pouvant porter atteinte aux espèces déjà sur place ou à leurs milieux particuliers. Les modalités de mise en oeuvre de cette protection seront définies par voie règlementaire.
 
 (40) Toute destruction d'animal ou végétal est interdite hormis le cas de l'utilisation courante pour la consommation humaine.
 
@@ -106,11 +106,11 @@ TITRE IV - DES FACTEURS DE DÉGRADATION DE L'ENVIRONNEMENT
 
 CHAPITRE I - DES FACTEURS PHYSIQUES
 
-(42) Le bruit, les rayonnements, les vibrations, peuvent altérer les conditions d'équilibre de l'environnement. Le niveau maximum et les modalités d'émission de ces facteurs seront précisés par voie réglementaire. En attendant la mise en place d'un système normatif national, les systèmes agréés par les Nations Unies peuvent être utilisés comme valeurs-limites de référence.
+(42) Le bruit, les rayonnements, les vibrations, peuvent altérer les conditions d'équilibre de l'environnement. Le niveau maximum et les modalités d'émission de ces facteurs seront précisés par voie règlementaire. En attendant la mise en place d'un système normatif national, les systèmes agréés par les Nations Unies peuvent être utilisés comme valeurs-limites de référence.
 
 DES DÉCHETS DANGEREUX
 
-(43) Au sens de la présente loi, on entend par déchet dangereux, toute substance chimique nocive ou dangereuse qui, en raison de sa toxicité, de sa radioactivité, ou de sa concentration dans les chaînes biologiques, présentes ou est susceptible de présenter un danger pour l'homme et son environnement. La liste des déchets dangereux est fixée par voie réglementaire.
+(43) Au sens de la présente loi, on entend par déchet dangereux, toute substance chimique nocive ou dangereuse qui, en raison de sa toxicité, de sa radioactivité, ou de sa concentration dans les chaînes biologiques, présentes ou est susceptible de présenter un danger pour l'homme et son environnement. La liste des déchets dangereux est fixée par voie règlementaire.
 
 (44) Il est interdit d'importer des déchets dangereux sur le territoire national.
 
@@ -126,11 +126,11 @@ CHAPITRE II - DES SUBSTANCES TOXIQUES OU DANGEREUSES
 
 (48) Est toxique ou dangereuse, toute substance qui, dans l'environnement, peut induire les effets suivants: [•] avoir à court ou long terme un effet de destruction des conditions d'équilibre du milieu; [•] mettre en danger les conditions de la vie de la population; [•] perturber les facteurs de conservation des espèces.
 
-(49) L'importation des substances toxiques ou dangereuses est soumise à autorisation spéciale du Ministère chargé de l'Environnement. Les substances visées seront définies par voie réglementaire.
+(49) L'importation des substances toxiques ou dangereuses est soumise à autorisation spéciale du Ministère chargé de l'Environnement. Les substances visées seront définies par voie règlementaire.
 
 (50) Le transport, le stockage, la vente et l'utilisation des produits visés à l'article 48 sont soumis à un cahier des charges visé par le Ministère chargé de l'Environnement.
 
-(51) Les substances visées par l'article 48 ainsi que les modalités d'application des articles 49 et 50 seront définies par voie réglementaire. En attendant la mise en oeuvre de ces dispositions, les clauses pertinentes des systèmes agréés par les Nations Unies serviront de références.
+(51) Les substances visées par l'article 48 ainsi que les modalités d'application des articles 49 et 50 seront définies par voie règlementaire. En attendant la mise en oeuvre de ces dispositions, les clauses pertinentes des systèmes agréés par les Nations Unies serviront de références.
 
 TITRE V - DES MÉCANISMES D'INTÉGRATION DE L'ENVIRONNEMENT
 
@@ -138,7 +138,7 @@ TITRE V - DES MÉCANISMES D'INTÉGRATION DE L'ENVIRONNEMENT
 
 (53) L'évaluation environnementale stratégique est requise dans deux conditions: la planification d'un secteur ou d'une filière et à chaque fois qu'un grand projet est susceptible d'influencer des facteurs importants, de l'équilibre environnemental notamment: [•] les ressources en eau, [•] la désertification, [•] les ressources naturelles, [•] la démographie, etc.
 
-(54) L'étude d'impact environnemental est obligatoire pour toutes activités susceptibles de produire des incidences sur l'environnement. L'étude d'impact est sanctionnée par une décision du Ministère chargé de l'Environnement. Le champ d'application de la présente disposition sera défini par voie réglementaire .
+(54) L'étude d'impact environnemental est obligatoire pour toutes activités susceptibles de produire des incidences sur l'environnement. L'étude d'impact est sanctionnée par une décision du Ministère chargé de l'Environnement. Le champ d'application de la présente disposition sera défini par voie règlementaire.
 
 (55) L'étude d'impact environnemental consiste en une procédure contradictoire prospective sur les éventuels impacts d'une activité. Toute personne susceptible d'être affectée par l'activité à droit à être informée et entendue. Les modalités de la procédure seront définies par voie de règlement.
 
@@ -152,7 +152,7 @@ CHAPITRE I - DES SANCTIONS ADMINISTRATIVES
 
 (58) Les dispositions de l'article 57 supra ne portent pas préjudice à l'application des Dispositions du droit positif notamment à la mise en cause de la responsabilité des contrevenants. Le Ministère chargé de l'Environnement peut ordonner la restauration de tout site ou bien dégradés.
 
-(59) En tant que de besoin, des dispositifs réglementaires préciseront les dispositions des articles 57 et 58.
+(59) En tant que de besoin, des dispositifs règlementaires préciseront les dispositions des articles 57 et 58.
 
 DES DÉCHETS DANGEREUX
 
@@ -168,9 +168,9 @@ CHAPITRE II - DES SANCTIONS PÉNALES
 
 (64) En cas de récidive les amendes et les peines prévues par les articles 57 et 62 seront doublées.
 
-(65) Certaines infractions visées par la présente loi peuvent faire l'objet de transaction. Le régime des transactions sera défini par voie réglementaire.
+(65) Certaines infractions visées par la présente loi peuvent faire l'objet de transaction. Le régime des transactions sera défini par voie règlementaire.
 
-(66) En tant que de besoin, des dispositions légales ou réglementaires seront adoptées pour l'exécution de la présente loi.
+(66) En tant que de besoin, des dispositions légales ou règlementaires seront adoptées pour l'exécution de la présente loi.
 
 (67) Toutes dispositions contraires à la présente loi sont nulles et de nul effet.
 

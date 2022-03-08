@@ -82,7 +82,7 @@ function amend_errors_in_articles {
     sed -E 's/alinea/alinéa/g' | \
     sed -E 's/respectee/respectée/g' | \
     sed -E 's/geologique/géologique/g' | \
-    sed -E 's/reglementaire/réglementaire/g' | \
+    sed -E 's/reglementaire/règlementaire/g' | \
     sed -E 's/carriere/carrière/g' | \
     sed -E 's/autorisee/autorisée/g' | \
     sed -E 's/erosion/érosion/g' | \
@@ -130,7 +130,7 @@ function amend_errors_in_articles {
     sed -E 's/espece/espèce/g' | \
     sed -E 's/vegetale/végétale/g' | \
     sed -E 's/renforcee/renforcée/g' | \
-    sed -E 's/reglementee/réglementée/g' | \
+    sed -E 's/reglementee/règlementée/g' | \
     sed -E 's/contormement/conformément/g' | \
     sed -E 's/auxtextes/aux textes/g' | \
     sed -E 's/jugee/jugée/g' | \
@@ -187,7 +187,7 @@ function amend_errors_in_articles {
     sed -E 's/commodite/commodité/g' | \
     sed -E 's/declaration/déclaration/g' | \
     sed -E 's/obei/obéi/g' | \
-    sed -E 's/reglementation/réglementation/g' | \
+    sed -E 's/reglementation/règlementation/g' | \
     sed -E 's/accordee/accordée/g' | \
     sed -E 's/apres/après/g' | \
     sed -E 's/etud/étud/g' | \
@@ -306,7 +306,7 @@ function amend_errors_in_articles {
     amend_error_in_article 5 'visesci-dessus' 'visés ci-dessus' | \
     amend_error_in_article 5 "al'élaboration" "à l'élaboration" | \
     amend_error_in_article 5 "al'exécution" "à l'exécution" | \
-    amend_error_in_article 5 n§glementaires réglementaires | \
+    amend_error_in_article 5 n§glementaires règlementaires | \
     amend_error_in_article 5 ' TITRE' '\n\nTITRE' | \
     # Article 6
     amend_error_in_article 6 Sontqualities 'Sont qualifiés' | \
@@ -354,7 +354,7 @@ function amend_errors_in_articles {
     amend_error_in_article 11 'etabllr leurdegréde' 'établir leur degré de' | \
     amend_error_in_article 11 'etabllrla Iistedes' 'établir la liste des' | \
     amend_error_in_article 11 prsatable préalable | \
-    amend_error_in_article 11 'règlernentaires edidees' 'réglementaires édictées' | \
+    amend_error_in_article 11 'règlernentaires edidees' 'règlementaires édictées' | \
     amend_error_in_article 11 aautorisation 'à autorisation' | \
     amend_error_in_article 11 'lestravaux de prospedion' 'les travaux de prospection' | \
     amend_error_in_article 11 'destinées aprévenir, amitiger' 'destinées à prévenir, à mitiger' | \
@@ -379,7 +379,7 @@ function amend_errors_in_articles {
     amend_error_in_article 12 qualitédes 'qualité des' | \
     amend_error_in_article 12 aune 'à une' | \
     amend_error_in_article 12 'serontdefinles par vole' 'seront définies par voie' | \
-    amend_error_in_article 12 'reqlementaire, Chapitre' 'réglementaire.\n\nChapitre' | \
+    amend_error_in_article 12 'reqlementaire, Chapitre' 'règlementaire.\n\nChapitre' | \
     # Article 13
     amend_error_in_article 13 "\\\'utilisation" "l'utilisation" | \
     amend_error_in_article 13 rninerales minérales | \
@@ -432,7 +432,7 @@ function amend_errors_in_articles {
     amend_error_in_article 20 poiluants polluants | \
     amend_error_in_article 20 '\[3\]atoutagentéconomique' '[3] à tout agent économique' | \
     amend_error_in_article 20 "d'éviterd'émettre dansl'air" "d'éviter d'émettre dans l'air" | \
-    amend_error_in_article 20 desseuilsréglementaires 'des seuils réglementaires' | \
+    amend_error_in_article 20 desseuilsrèglementaires 'des seuils règlementaires' | \
     amend_error_in_article 20 telleque 'telle que' | \
     amend_error_in_article 20 lesgazstoxiques 'les gaz toxiques' | \
     # Article 21
@@ -579,7 +579,7 @@ function amend_errors_in_articles {
     amend_error_in_article 44 Ilest 'Il est' | \
     amend_error_in_article 44 bruitsayantdes 'bruits ayant des' | \
     amend_error_in_article 44 'lesseuils fixespar' 'les seuils fixés par' | \
-    amend_error_in_article 44 'normeslecales ou reclernentaires' 'normes légales ou réglementaires' | \
+    amend_error_in_article 44 'normeslecales ou reclernentaires' 'normes légales ou règlementaires' | \
     # Article 45
     amend_error_in_article 45 prives privés | \
     amend_error_in_article 45 'equipes, exploites, utilises' 'équipés, exploités, utilisés' | \

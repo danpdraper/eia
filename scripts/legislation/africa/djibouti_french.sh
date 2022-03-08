@@ -94,6 +94,8 @@ function amend_errors_in_articles {
     amend_error_in_article 53 définie défini | \
     amend_error_in_article 53 ' Article 54:' '\n\n(54)' | \
     amend_error_in_article 53 '' " $article_53_text" | \
+    # Article 54
+    amend_error_in_article 54 'règlementaire \.' 'règlementaire.' | \
     # Article 57
     amend_error_in_article 57 '48, 52' '48 et 52' | \
     amend_error_in_article 57 'auto \[•\] saisine' 'auto-saisine' | \

@@ -23,7 +23,7 @@ function amend_errors_in_articles {
     amend_error_in_article 2 environnemeiit environnement | \
     amend_error_in_article 2 zpprécier apprécier | \
     amend_error_in_article 2 ": D'une" ": d'une" | \
-    amend_error_in_article 2 'I églementaires' réglementaires | \
+    amend_error_in_article 2 'I églementaires' règlementaires | \
     amend_error_in_article 2 "; 15 no.*D'autre" "; d'autre" | \
     amend_error_in_article 2 ': L' ': l' | \
     amend_error_in_article 2 élude étude | \
@@ -62,7 +62,7 @@ function amend_errors_in_articles {
     amend_error_in_article 4 ' de\.' ' de' | \
     amend_error_in_article 4 'recherche\.' 'recherche,' | \
     amend_error_in_article 4 'poursuite-' poursuite | \
-    amend_error_in_article 4 régleinentation réglementation | \
+    amend_error_in_article 4 régleinentation règlementation | \
     amend_error_in_article 4 dehûrs dehors | \
     amend_error_in_article 4 'de Ces zones' 'de ces zones' | \
     # Article 5
@@ -216,7 +216,6 @@ function amend_errors_in_articles {
     amend_error_in_article 19 '-1\.' la | \
     amend_error_in_article 19 "revision du'cadasire" 'révision du cadastre' | \
     amend_error_in_article 19 'tt de' 'et de' | \
-    amend_error_in_article 19 réglements règlements | \
     amend_error_in_article 19 roncière foncière | \
     amend_error_in_article 19 tituIaires titulaires | \
     amend_error_in_article 19 '.eels' réels | \
@@ -324,7 +323,7 @@ function amend_errors_in_articles {
     amend_error_in_article 29 'asser- mentés' assermentés | \
     amend_error_in_article 29 '~tionaux' nationaux | \
     amend_error_in_article 29 ' no ' ' numéro ' | \
-    amend_error_in_article 29 reglementation réglementation | \
+    amend_error_in_article 29 reglementation règlementation | \
     amend_error_in_article 29 "i'" "l'" | \
     # Article 30
     amend_error_in_article 30 'proces-verbaux dresshs' 'procès-verbaux dressés' | \
