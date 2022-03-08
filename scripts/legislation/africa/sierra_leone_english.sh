@@ -86,6 +86,7 @@ function amend_errors_in_articles {
     amend_error_in_article 1 "project'" "project" | \
     amend_error_in_article 1 ' ,' '' | \
     amend_error_in_article 1 'water-resources' 'water resources' | \
+    amend_error_in_article 1 'an "offshore' '"offshore' | \
     #Article 2
     sed -E "s/Establis~t~ \[1\] There is hereby established the National Environment ~~r:'= ProtectionBoard <hereinafter referredto as//" | \
     sed -E 's/"theBoard"\), Protection Board Composition and tenure of officeof the Board.//' | \
