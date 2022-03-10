@@ -1,0 +1,1345 @@
+1
+ NATIONAL ENVIRONMENT MANAGEMENT
+ ACT (NEMA), 1994
+
+
+SECTION ARRANGEMENT OF SECTIONS
+PART 1 - PRELIMINARY
+1. Short title
+2. Interpretation
+PART II - GENERAL PRINCIPLES
+3. Duty to maintain a decent Environment
+4. Attorney General to bring public interest action
+PART III - ADMINISTRATION
+5. Establishment of the National Environment Management Council
+6. Composition of the Council
+7. Functions of the Council
+8. Proceedings of the Council
+9. Establishment of the Agency
+10. Functions of the Agency
+11. Appointment, removal, etc. of the Executive Director
+12. Establishment of the Administration and Finance Committee
+13. Establishment of the Technical Advisory Committee
+14. Functions of the Technical Advisory Committee
+2
+15. Proceedings of the Technical Advisory Committee
+16. Technical Working Groups
+17. Local Environment Committees in Banjul and Kanifing Municipal Area.
+18. Local Environment Committees in the Provinces.
+19. Functions of the local Environment Committees.
+PART IV - ENVIRONMENTAL PLANNING
+
+20. Planning at the national level
+21. Planning at the local level
+PART V - ENVIRONMENTAL IMPACT ASSESSMENT, AUDITS AND MONITORING
+
+22. Submission of project briefs for assessment
+23. Environmental Impact Studies and Environmental Impact Statements
+24. Consideration and review of the Environmental Impact Statement
+25. Environmental audits
+26. Monitoring of existing projects
+27. Monitoring of natural phenomena
+PART VI - ENVIRONMENTAL STANDARDS
+
+28. Establishment of criteria and standards
+PART VII - ENVIRONMENTAL MANAGEMENT
+29. Incentives for good environmental behaviour and disincentives for bad environmental
+behaviour
+
+30. Management of the coastal zone, rivers and wetlands
+3
+31. Management of the inland zone
+32. Conservation of biological diversity
+33. Conservation of biological diversity in situ
+34. Conservation of biological diversity ex-situ
+35. Access to genetic resources
+36. Management of the working environment
+37. Protection of the ozone layer
+PART VIII - POLLUTION CONTROL
+
+38. Prohibition of the discharge of dangerous materials, substances and oil into the
+environment and spiller’s liability.
+39. Prohibition of pollution
+40. Disaster preparedness
+PART IX - INSPECTION, ANALYSIS AND RECORDS
+41. Environmental Inspectors
+42. Powers and duties of the Environmental Inspector
+43. Procedure for taking samples for analysis
+44. Establishment or designation of analytical laboratories.
+45. Designation of analysts and reference analysts
+46. Certificate of analysis and its effect
+47. Records to be kept
+4
+PART X - INFORMATION, EDUCATION AND PUBLIC AWARENESS
+48. Freedom to environmental information
+49. Gathering analysis and management of information
+50. Environment in the school curriculum
+PART XI - OFFENCES
+51. General Offence
+52. Offences relating to inspectors
+53. Offences relating to impact assessments
+54. Offences relating to records
+55. Offences relating to environmental standards and guidelines
+56. Offences relating to hazardous and dangerous, materials, etc.
+57. Offences relating to pollution
+PART XII - JUDICIAL PROCEEDINGS
+58. Immunity of officers acting in good faith
+59. Liability of bodies corporate, etc.
+60. Forfeiture, cancellation, community service and other orders.
+PART XIII - MISCELLANEOUS PROVISIONS
+61. Amendment of the Schedule
+62. Delegation of powers and functions by the Council and the Executive Director
+63. The power to make regulations
+5
+64. Inconsistent laws
+65. Repeal
+
+
+
+
+
+
+
+ 
+6 
+7
+Preamble WHEREAS It is necessary to assure all persons living in the Gambia the fundamental
+right to an environment adequate for their health and well-being, ensure the
+integration of environmental considerations, in all development strategies and
+related activities and to conserve and promote the rational use of natural resources
+for the benefit of present and future generations,
+WHEREAS It is necessary to protect and improve the health and quality of life of all
+Gambians through sound environmental management, and to preserve and restore
+the equilibrium of ecological processes, in accordance with the Banjul Declaration of
+18th February 1977,
+WHEREAS increased public environmental awareness and the promotion of effective
+public participation and community involvement are essential to environmental
+management.
+WHEREAS it is desirous to prevent pollution and where it occurs ensure that the true
+and total costs of environmental pollution are borne by the polluter in accordance
+with the polluter pay’s principle.
+AND WHEREAS The Gambia is committed to promote international co-operation in
+the protection of the environment by implementing its international commitments.
+NOW THEREFORE BE IT ENACTED by the Parliament of The Gambia as follows:
+27th May, 1994
+PART 1
+PRELIMINARY
+
+1. This Act may be cited as the National Environment Management Act, 1994,
+Interpretation
+2. In this Act unless the context otherwise required,
+“Action Plan” means The Gambia Environment Action Plan described in section 20.
+“Agency” means the National Environment Agency established under section 9;
+“Air quality” means the concentration prescribed under or pursuant to this Act, of a
+pollutant in he atmosphere at the point of measurement;
+“Ambient air” means the atmosphere surrounding the earth but does not include the
+atmosphere within a structure or within any underground space;
+8
+“Analysis” means test or examination of any matter, substance or process for the purpose
+of determining its composition or qualities or its effect (whether physical, chemical or
+biological) on any segment of the environment or examination of emissions or recordings
+of noise or sub-sonic vibrations to determine the level or other characteristics of the
+matter, noise or sub-sonic vibration or its effect on any segment of the environment;
+“Analyst” means a person appointed as such under section 45;
+“Beneficial use” means a use of the environment or any element or segment of the
+environment that is conducive to public health, welfare or safety and which requires
+protection from the effects of wastes, discharges, emissions and deposits;
+“Biological diversity” means the variability among living organisms from all sources
+including inter-alia, terrestrial ecosystems and aquatic ecosystems and the ecological
+complexes of which they are part and this includes diversity within species, between
+species, and of ecosystem;
+“Chemical” means a chemical substance in any form whether by itself or in a mixture or
+preparation whether manufactured or derived from nature and includes industrial
+chemicals, pesticides, fertilizers, and drugs;
+“Coastal zone” means the zone identified as such by way of regulations;
+“Council” means the National Environment Management Council established under Section.
+“Developer” means any person who proposes or has undertaken the development of a
+project;
+“Effluent” means waste water or other fluid of domestic, agricultural or industrial origin,
+treated or untreated and discharged directly or indirectly into environment;
+“Element”, in relation to the environment, means any of the principal constituent parts of
+the environment including water, atmosphere, soil, vegetation, climate, sound, odour,
+aesthetics, fish and wildlife;
+“Environment” means the physical factors of the surroundings of the human being including
+land, water, atmosphere, climate, sound, odour, taste, the biological factors of fauna and
+flora and the social factor of aesthetics and includes both the natural and the built
+environment;
+9
+“Environmental audit” means the systematic documentation and periodic and objective
+evaluation of how well environmental organisation, management, and equipment are
+performing in conserving the environment and its resources;
+“Environmental impact assessment” means a systematic examination conducted to
+determine whether or not an activity may have any adverse impacts on the environment;
+“Environmental impact statement” means the statement described in section 22;
+“Environmental monitoring” means the continuous or periodic determination of actual and
+potential effects of any activity or phenomenon on the environment whether short-term or
+long-term;
+“Environmental planning” means both long-term and short-term planning that takes into
+account environmental issues;
+“Environmental resources” mean the resources of the air, the land and the water including
+their aesthetical qualities;
+“Ex-situ” means conservation outside the natural habitat of the biological organism;
+“Executive Director” means the Executive Director of the Agency;
+“Genetic resources” means genetic material of actual or potential value;
+“Good environmental practice” means practice that is in accordance with technical norms
+and specifications and consistent with the provisions of this Act and any other law;
+“Hazardous substance” means any chemical pesticide, waste, gas, medicine, drug, plant,
+animal or microorganism which is injurious to human or animal health or the environment;
+“Hazardous material” means any material, which has been identified by the Agency to be a
+hazardous material under section 36;
+“Inland zone” means the zone identified as such by way of regulations;
+“In-situ” means conservation within the natural ecosystem and habitat of the biological
+organism;
+“Inspector” means any environmental inspector appointed or designated as such under 
+10
+section 41;
+“Lead department” means any ministry, department, parastatal agency, public officer in
+which or whom any law vests functions of control or management of any segment of the
+environment.
+“Local environment plan” means the plan provided for under section 21;
+“Mixture containing oil” means a mixture with such oil content as may be specified by the
+Council or, if such oil context is not specified, a mixture with an oil content of one hundred
+parts or more in one million parts of the mixture;
+“Occupational air quality” means the concentration prescribed under or pursuant to this Act
+of a pollutant in the atmosphere within a structure or underground space in which human
+activities take place;
+“Oil” includes
+(a) crude oil, diesel oil, fuel oil and lubricating oil; and
+(b) any other description of oil which may be prescribed by the Council;
+“Owner” means,
+(a) in relation to any premises;
+(I) the registered proprietor of the premises;
+(ii) the lessee or sub-lessee of premises, whether registered or not;
+(iii) the agent or trustee of any of the owners described in sub-paragraphs (I)
+and (ii) or where such owner as described in sub-paragraphs (I) and(ii)
+cannot be traced or has died, his legal personal representative;
+(iv) the person receiving the rent of the premises whether on his own account or
+as agent, or trustee for any other person or as receiver or who would receive
+the rent if such premises were let to a tenant; and
+(b) in relation to any ship, the person registered as the owner or charterer of the ship r
+in the absence of registration, the person in actual possession of the ship except 
+11
+that in the case of a ship owned by any country and operated by a company which in
+that country is registered as the ship’s operator owner shall include such country;
+“Ozone layer” means the layer of atmosphere ozone above the planetary boundary layer;
+“Noise” means any undesirable sound that is intrinsically objectionable or that can cause
+adverse effects on human health, or the environment;
+“Pollutant” means any substance whether liquid, solid or gaseous which directly or
+indirectly;
+(a) alters the quality of any segment or element of the receiving environment so as to
+affect any beneficial use adversely; or
+(b) is hazardous or potentially hazardous to health and includes objectionable odours,
+radio-activity, noise, vibration, temperature change or physical chemical or
+biological change to any segment or element of the environment;
+“Pollution” means any direct or indirect alteration of the physical, thermal, chemical,
+biological, or radioactive properties of any part of the environment by discharging,
+emitting, or depositing wastes so as to affect any beneficial use adversely, to cause a
+condition which is hazardous or potentially hazardous to public health, safety, or welfare,
+or to animals, birds, wildlife, fish or aquatic life, or to plants or to cause a contravention of
+any condition, limitation, restriction under this Act;
+“Practicable” means reasonably practicable having regard, among other things, to local
+conditions and circumstances and to the current state of technical knowledge;
+“Practicable means” includes the provision and the efficient maintenance of a
+manufa
+cturing
+or other plant and the proper use thereof and the supervision by or on behalf of the
+occupier of any process or operation;
+“Premises” includes messages, buildings, land, and hereditament in every, tenure,
+machinery, plant or vehicle used in connection with any trade carried on at any premises;
+“Prescribed” means prescribed by or under this Act or continued in operation by this Act
+under regulations, standards and guidelines made pursuant to this Act;
+12
+“Project” means any activity, which has or is likely to have an impact on the environment;
+“Project brief” means a summary statement of a proposed development and its likely
+environmental effect;
+“Proprietary information” means information relating to any manufacturing process, trade
+secret, trade mark, copyright, patent or formula protected by law or by international treaties
+to which The Gambia is a party;
+“Radiation” includes ionizing radiations and any other radiation likely to have adverse
+effects on human or animal health and the environment;
+“Segment” in relation to the environment means any portion of the environment expressed
+in terms of volume, space, area, quantity, quality or time or any combination thereof;
+“Soil” includes earth, sand, rock, shales, minerals and the fauna and flora in the soil and
+derivatives thereof;
+“Standard” means the limits of pollution established under section 28 or under regulations
+made pursuant to this Act or any other law;
+“Sustainable development” means development that meets the needs of this generation
+without compromising the needs of future generations
+“Sustainable use” means present use which does not comprise the ability to use the same
+resource by future generation;
+“Technical Advisory Committee” means the committee established under section 13 of this
+Act.
+“Trade” means any business or undertaking whether originally carried on at fixed premises
+or at varying places which results in the discharge of wastes and includes any activity
+prescribed to be a trade, business or undertaking for the purposes of this Act or any other
+law;
+“Vessel” includes ship, boat, floating structure, or aircraft;
+“Waste” includes any matter prescribed to be waste, and any rejected matter, whether
+liquid, solid, gaseous, or radioactive, which is discharged emitted, or deposited in the
+environment in such volume, composition or manner likely to adversely affect the 
+13
+environment;
+“Water” includes drinking water, river, stream, watercourse reservoir, well, dam, canal,
+channel, lake, swamp, open drain, or underground water;
+“Wetland” means an area permanently or seasonally flooded by water where plants and
+animals have become adapted, and
+“Technical Working Group” means the Working Group established under section 16.
+PART II
+GENERAL PRINCIPLES
+
+Duty to maintain a decent environment
+3. (1) Every person shall have a duty to maintain and enhance the quality of the
+environment including the duty to inform the Agency of activities that affect or are
+likely to affect the environment adversely.
+(2) The Agency shall on its volition or upon receipt of information referred to under
+sub-section (1) instruct the person whose activities affect or are likely to affect the
+environment adversely.
+(a) to discontinue such activities, or
+(b) subject such activities to environmental monitoring or auditing as may be
+necessary.
+(3) The Agency may instruct any public officer to take measures to prevent or
+discontinue any act deleterious to the environment.
+Attorney General to bring public interest action
+4. (1) Notwithstanding section 3 the Agency may petition the Attorney General requesting
+him to bring a public interest action if;
+(a) any person instructed under section 3, refuses to follow the instructions
+given, or
+(b) the activities of a person have adversely affected or are likely to adversely 
+14
+affect the environment.
+(2) Every person shall have the capacity to bring a public interest action to protect the
+environment provided that the fiat of the Attorney General authorising such action
+is first obtained.
+PART II
+
+ADMINISTRATION
+Establishment of the National Environment Management Council
+5. There is hereby established a Council to be known as the Environment Management
+Council.
+6. (1) The Council shall consist of the following:
+(a) the President, who shall be Chairman and who may designate the Vice
+President to act as Chairman;
+(b) the Minister responsible for natural resources;
+(c) the Minister responsible for agriculture;
+(d) the Minister responsible for local government and lands;
+(e) the Minister responsible for health and social welfare;
+(f) the Minister responsible for finance and economic affairs;
+(g) the Minister responsible for trade, industry and employment; and
+(h) such other person as the President may co-opt;
+(2) The Executive Director of the Agency shall be the Secretary to the Council.
+Functions of the Council
+7. The Council shall:
+15
+(a) be the policy making organ of the Agency;
+(b) co-ordinate all policies, whether by government or the private sector, which
+have or are likely to have a significant impact on the environment;
+(c) integration of environmental considerations in all aspects of social and
+economic planning;
+(d) harmonise the plans and policies of the various sectors dealing with the
+environment and approve all environmental plans and policies;
+(e) promote the use of renewable sources of energy and the conservation of
+traditional sources;
+(f) supervise the work of the Agency;
+(h) establish the terms and conditions of service of the staff of the Agency;
+(i) commission and publish studies on the environment promote public
+awareness of the environment;
+(j) adopt standards, guidelines and regulations proposed by the Agency; and
+(k) perform such other matters as Government may assign to the Council;
+Proceedings of the Council
+8. (1) The Council shall meet at least once in every three months at such times and places
+as the Chairman may appoint.
+(2) The Chairman shall preside at all meetings of the Council and in his absence he
+shall designate the Vice-President to preside.
+(3) The decisions of the Council shall be carried by majority vote of the members
+present and voting, and in the event of an equality of votes the Chairman shall have
+a casting vote.
+(4) At every meeting of the Council one half of the members shall constitute a quorum.
+(5) The Chairman may invite any person to attend and participate in the discussions of
+the Council provided that such person shall not have a right to vote.
+16
+(6) Subject to the provisions of this Act, the Council may determine its rules of
+procedure.
+Establishment of the Agency
+9. (1) There is hereby established an Agency to be known as the National Environment
+Agency which shall be the Secretariat of the Council.
+(2) The Agency shall be the principle body responsible for the management of the
+environment and shall co-ordinate all activities of the Government in the field of the
+environment.
+(3) The Agency shall be a body corporate with capacity to sue and be sued in its
+corporate name.
+(4) The Agency shall be composed of the Executive Director and such other members
+as may be prescribed by the Council.
+(5) The Executive Director shall be responsible for managing the affairs of the Agency.
+Functions of the Agency
+10. The Agency shall perform the following functions:
+(a) implement the policies of the Council on the environment;
+(b) liaise with the various ministries, departments, and agencies of Government
+on all issues relating to the environment and ensure that environmental
+concerns are integrated into all spheres of national planning and project
+implementation;
+(c) liaise with the private sector, inter governmental organizations, nongovernmental organizations, governmental agencies of other states on all
+issues relating to the environment;
+(d) prepare proposals for environmental policies and strategies for the Council;
+(e) initiate legislative proposals, standards, guidelines, and regulations in
+accordance with the provisions of this Act;
+17
+(f) review and approve environmental impact assessments submitted in
+accordance with this Act or any other law;
+(g) undertake studies and submit reports and recommendations to the Council
+on such matters as are likely to have an impact on the environment;
+(h) promote public awareness of environmental issues through gathering,
+analyzing and disseminating information about the environment and
+publishing periodic reports on the state of the environment;
+(I) attend to any complaint relating to the environment addressed to it;
+(j) carry out environmental audits and monitoring; and
+(k) carry out such other functions as the council may assign to it or as may be
+incidental or conducive to the exercise by the Agency of any powers
+provided for under this Act.
+Appointment, removal, etc of the Executive Director
+11. (1) The Executive Director shall be appointed by the President in consultation with the
+Public Service Commission.
+(2) The Executive Director shall have such training and experience as may be
+prescribed by the Council.
+(3) The Executive Director shall serve for such period as may be determined by the
+Council unless,
+(a) he resigns in writing addressed to the President; or
+(b) he is removed for;
+i. gross misconduct, or
+ii. inability to discharge his duties whether arising from infirmity of
+body or mind or for any other cause;
+Establishment of the Administration and Finance Committee
+18
+12. (1) There is hereby established the Administration and Finance Committee whose
+members shall be appointed by the Council and shall comprise such numbers as the
+Council may determine.
+(2) The Committee shall:
+(a) be responsible for the appointment and discipline of staff of the Agency in
+accordance with the Agency’s Manual of Procedures; and
+(b) perform such other functions as may be prescribed in the Agency’s Manual
+of Procedure.
+(3) Notwithstanding sub-section (2) (a), the Public Service Commission may at the
+request of the Agency second public servants to the Agency.
+Establishment of the Technical Advisory Committee
+13. (1) There is hereby established the Technical Advisory Committee which shall be an
+advisory body to the Agency.
+(2) The Technical Advisory Committee shall consist of fifteen members whose expertise
+shall reflect the various fields of environmental management.
+(3) The members of the Technical Advisory Committee shall be appointed by the
+Council on the advice of the Executive Director and shall serve in a personal capacity
+for such period and on such terms and conditions as may be specified by the
+Council.
+(4) A member of the Technical Advisory Committee may at any time resign his position
+in writing addressed to the Executive Director.
+(5) Wherever a vacancy arises on the Technical Advisory Committee due to any cause,
+such vacancy shall be filled in accordance with sub-section (3).
+Functions of the Advisory Committee
+14. The Technical Advisory Committee shall advise the Agency on any issue which may be
+deferred to it by the Agency and in particular, it shall;
+19
+(a) review the achievement by the Agency of any goals and targets set by the
+Council, and advise the Agency;
+(b) review and advise the Agency on any environmental impact assessments of
+major projects;
+(c) review and advise the Agency on any environmental plans;
+(d) review and advise the Agency on any environmental standards, guidelines
+and regulations made pursuant to this Act; and
+(e) perform such other advisory services to the Agency as are necessary.
+Proceedings of the Technical Advisory Committee
+15. (1) The Executive Director shall be Chairman of the Technical Advisory Committee.
+(2) The Technical Advisory Committee shall meet at such time and place as the
+Chairman may appoint.
+(3) The Technical Advisory Committee may, where it deems it necessary, invite any
+person to attend and participate in the meetings of the Committee provided that
+such person shall not have a right to vote at such meeting.
+(4) The Executive Director shall designate from among the staff of the Secretariat,
+Secretary to the Technical Advisory Committee.
+(5) Subject to the provision of this Act, the Technical Advisory Committee shall adopt
+its own procedure.
+Technical Working Group
+16. (1) Where a matter requires specialized technical consideration, the Executive Director
+may establish a Technical Working Group for the purpose.
+(2) The Technical Working Group shall advise the Agency and conduct its affairs in
+accordance with the powers and procedures laid down in the instrument of their
+appointment.
+Local Environment Committees in Banjul and Kanifing Municipal Areas
+20
+(a) the Banjul Environment Committee which shall be a Committee of Banjul City
+Council; and
+(b) a Ward Environment Committee in each Ward.
+(2) There is hereby established in the Kanifing Municipal Area, established under the
+Kanifing Municipal Council Act, Act No.7 of 1991.
+(a) the Kanifing Environment Committee which shall be a Committee of the
+Kanifing Municipal Council; and
+(b) a Ward Environment Committee in each Ward.
+(3) Each environment committee shall serve for such term and on such conditions as
+may be prescribed.
+Local Environmental Committees in the provinces Cap 33.01
+18. (1) There is hereby established an Area Environment Committee for each Area Council
+established under the Local Government Act, and for each village.
+(2) The Area Environment Committee shall be a Committee of the Area Council and
+shall be composed of such members of the Council and the Divisional coordinating
+Committee as may be prescribed.
+(3) The village Environment Committee shall be composed of ten members elected by
+the adult members of the village community provided that the following shall be
+represented.
+(a) the village elders;
+(b) the voluntary groups active in the village especially in the field of the
+environment;
+(c) the women;
+(d) the youth, and
+(e) the extension workers;
+21
+(4) A Committee established under this section shall serve for such term and on such
+conditions as may be prescribed.
+Functions of the local Environment Committees
+19. (1) The Area Environment Committee, the Banjul Environment Committee and the
+Kanifing Environment Committee shall carry out the following functions:
+(a) integrate environmental considerations into all plans, projects, and
+strategies of the Area Council, the City Council or the Municipal Council, as
+the case may be;
+(b) co-ordinate the activities of the Agency relating to the management of the
+environment and natural resources within their jurisdiction;
+(c) initiate and promote by-laws relating to the environment to be adopted by
+the various municipalities.
+(d) co-ordinate with the Agency and other ministries dealing with the
+environment; and co-ordinate the village or ward environment Committees,
+as the case maybe;
+(e) receive reports from village Environment Committees or Ward Committees,
+as the case may be;
+(f) integrate the views of the public, through wide consultation, into
+environmental policies and decisions;
+(g) develop a local environment plan as provided for in section 21; and
+(h) prepare a state of the environment report for the area under its jurisdiction
+at such intervals and in such form as may be prescribed.
+(2) The Village Environment and the Ward Environment Committee shall:
+(a) carry out public education campaigns and encourage the public to
+participate in making decisions about the environment;
+(b) mobilize the people within their jurisdiction on the basis of voluntary self-
+22
+help to identify and restore degraded resources;
+(c) introduce and popularize environmentally sound methods of land use;
+(d) report any activities deleterious to the environment to public officers; and
+(e) involve all persons within their jurisdiction in decision making
+
+PART IV
+ENVIRONMENTAL PLANNING
+Planning at the national level
+20. (1) The Action Plan shall be the key instrument for national environmental planning.
+(2) The Action Plan shall be prepared by the Agency in consultation with the public and
+revised at least once every ten years and at such other times as may be necessary to
+take into account new developments and emergent needs.
+(3) The Action Plan shall relate to all matters affecting the environment and shall
+identify key environmental issues and strategies for preventing, controlling or
+mitigating any deleterious effects on the environment, and shall include the
+conservation of an sustainable use of natural resources.
+(4) The Agency shall take into account the views of the public in the preparation of the
+plan through conducting open public consultation.
+(5) The Action Plan and any revision thereto shall be approved by resolution of
+Parliament and shall be a binding document.
+Planning at the local level
+21. (1) The unit for environmental planning at the local level shall be:
+(a) the City of Banjul,
+(b) the Kanifing Municipal Area; and
+(c) each administrative division.
+(2) The Environment Committee of each environmental planning unit shall prepare a 
+23
+local environment plan which shall
+(a) be in conformity with the Action Plan;
+(b) be binding on all organs, agencies and persons within the planning unit;
+(c) be coordinated with plans prepared under the Physical Planning and
+Development Control Act; Act No. Of 1991
+(d) contain such matters as may be prescribed, and shall take into account local
+concerns and needs expressed through public consultations;
+(e) be approved by the Banjul City Council, Kanifing Municipal Council or the
+Area Council; and
+(f) be disseminated to the public.
+PART V
+
+ENVIRONMENTAL IMPACT ASSESSMENT, AUDITS AND MONITORING
+
+Submission of project briefs for assessment
+22. 1. A developer of a project provided for under Part A of the Schedule shall be required
+to submit a project brief to the Agency stating.
+a. the nature of the project;
+b. the activities that shall be undertaken;
+c. the possible products and by-products of the activities anticipated;
+d. the number of people the project shall employ;
+e. the area of the land, the air, or the water that may be affected; and
+f. any other matters as may be prescribed.
+2. If after considering the project brief, the Agency in consultation with the lead department is
+of the view that the proposed project will not have any adverse impact on the environment, 
+24
+it may approve the project.
+3. If pursuant to the consideration in sub-section (2), the Agency determines that the project
+may have a significant impact on the environment, it shall require that an environmental
+impact study be made in accordance with the provisions of section 23.
+4. The Agency shall adopt guidelines and regulations for the making of preliminary
+environmental impact assessments to determine whether an environmental impact study
+should be made.
+5. In making an environmental impact assessment or environmental impact study under this
+section, the provisions of Part B of the Schedule shall be taken into account.
+Schedule
+6. No licence or permit required under any law shall be granted to any person desiring to
+develop a project specific in Part A of the Schedule unless he complies with this section and
+sections 23 and 24.
+Environmental impact studies and environmental impact statements
+23.1. Where the Agency has determined that an environmental impact study be conducted
+under section 22 the developer shall make an environmental impact statement
+on completing the study.
+2. The Agency shall make guidelines according to which the environmental impact
+study shall be made:
+3. Without prejudice to the generality of what may be included in an environmental
+impact study conducted according to sub-section 2, the environmental impact
+statement shall state.
+a. a description of the proposed activity or project and of activities it is likely
+to generate;
+b. a description of the potentially affected environment including specific
+information necessary for identifying and assessing the environmental
+effects of the proposed activity;
+c. a description of the technology and processes that will be used;
+25
+d. reasons for selecting the proposed site and rejecting alternative sites;
+e. environmental impacts of the proposed activity including the direct, indirect,
+cumulative short-term and long-term effects and the possible alternatives;
+f. an identification and description of measures proposed for eliminating,
+minimising or mitigating the anticipated adverse impacts;
+g. An identification of gaps in knowledge and uncertainties which were
+encountered in compiling the required information;
+h. An indication of whether the environment of any other state or areas beyond
+the limits of national jurisdiction are likely to be affected and the
+alternatives and mitigating measures;
+I. a brief description of how the information provided for in this section has
+been generated; and
+j. any other matter relevant to environment assessment that may be prescribed.
+4. The environmental impact statement shall be submitted to the Agency.
+5. The Environmental impact statement shall be a public document which may be freely
+consulted by any person provided that the Agency shall protect any information which it
+considers to be proprietary.
+Consideration and review of the environmental impact statement
+24. a. invite public comments on the environmental impact statement in general;
+b. invite the comments of those persons who are most likely to be affected by
+the proposed project by specifically drawing attention to the
+environmental impact statement;
+c. consider the environmental impact statement and the public comments
+hereon and request any interested government department or agency to
+make further comments;
+26
+d. consider the environmental impact statement and all the comments made;
+and
+e. require the holding of a public hearing if it deems it necessary.
+2. The Agency decides whether to
+a. approve the project if it is satisfied that the project will not have an adverse
+effect on the environment;
+b. require that the developer redesign the project taking into account all
+environmental factors and the comments made;
+c. reject the project if it has reasonable cause to believe that the project may
+cause significant injury to the environment; and
+d. take any other measures that may be prescribed;
+3. In executing its duties under sections 22, 23 and this section the Agency shall act within
+reasonable time to within such time frame as may be prescribed.
+Environmental Audits
+25. 1. In executing the project, the developer shall take all practicable measures to ensure
+that the expectations of the environmental impact assessment are compiled with.
+2. The developer shall within a specific period after the completion of the project or
+the commencement of its operations undertake an initial environmental audit of the
+project and make a report to the Agency.
+3. The Agency shall carry out a periodic audit of each project to ensure that the
+predictions made in the environmental impact assessment are compiled with and
+the Agency may, in so doing,
+a. use inspectors in accordance with section 42; and
+b. require that the developer keeps records and submits reports to the Agency
+at such periods as the Agency deems necessary on how far the project 
+27
+conforms in operation with the predictions made in the environmental
+impact assessment
+4. The developer shall take all reasonable measures to mitigate any undesirable effects of the
+project not contemplated in the environmental impact assessment and shall report such
+measures to the Agency
+Monitoring of existing projects
+26.1. The Agency shall monitor the operation of all projects in existence at the date of
+commencement of this Act with a view to determining their compliance with the provisions
+of this Act or any regulations made thereunder;
+26.2. The Agency shall, where it determines that the project does not comply with this Act, or any
+regulations made thereunder require that the developer take remedial measures in such a
+manner and period as the Agency shall determine.
+Schedule
+26.3. The Agency shall require all operators of existing projects covered by Part A of the Schedule
+to prepare and submit annual reports on how far their projects comply with the provisions
+of this Act.
+Monitoring of natural phenomena
+27. The Agency shall monitor natural phenomena which have possible negative impacts on the
+environment and take or recommend preventive measures.
+PART IV
+ENVIRONMENTAL STANDARDS
+
+Establishment of criteria and standards
+28. (1) The Agency shall establish criteria and measurement of environmental quality in
+general and in particular, of
+(a) air quality;
+(b) water quality;
+(c) smell;
+28
+(d) noise;
+(e) vibrations;
+(f) radiation;
+(g) soil quality;
+(h) buildings and other structures;
+(i) industrial products;
+(j) materials used in industry, agriculture and for domestic uses;
+(k) effluent; and
+(l) solid waste.
+(2) The Agency shall, in consultation with the lead department, establish the minimum
+standards for environmental quality in general and in particular for:
+(a) air quality, including ambient air quality, occupational air quality and
+emissions for both stationary and mobile air pollution sources;
+(b) water quality, taking into account different uses including drinking water,
+water for industry, agriculture, fisheries, wildlife and recreational purposes;
+(c) effluent discharges;
+(d) noise;
+(e) smell;
+(f) vibrations;
+(g) soil quality;
+(h) radiation;
+29
+(i) buildings and other structures;
+(j) industrial products;
+(k) materials used in industry, agriculture and for domestic purposes and ;
+(l) solid waste disposal.
+PART VII
+ENVIRONMENTAL MANAGEMENT
+
+Incentives for good environmental behaviour and dis-incentives for bad environmental behaviour
+29. (1) The Agency may propose to the Government for inclusion in the annual budget
+proposals.
+(a) tax incentives to encourage good environmental behaviour which promote
+the conservation of natural resources and the prevention or abatement of
+pollution.
+(b) user fees to ensure that those who use environmental resources pay the
+proper value for the utilization of the resources; and
+(c)
+(d) disincentives including tax to deter bad environmental behaviour that leads
+the unsustainable use of natural resources or that causes pollution;
+(2) The Council may, by order published in the Gazette, promulgate other incentives
+and disincentives not of a fiscal nature.
+Management of coastal zone, rivers and wetlands
+30. (1) Unless expressly allowed to do so under any law or by the Agency in writing, no
+person may in relation to the coastal zone, rivers and any other wetlands;
+(a) use, erect, reconstruct, place, alter, extend, remove or demolish any part of
+any structure in, on, under, or over the sea bed;
+(b) excavate, drill, tunnel or otherwise disturb; 
+30
+(c) introduce or plant any plant or part of a plant whether alien or indigenous;
+(d) introduce any animal or micro-organism whether alien or indigenous;
+(e) deposit or dump any substance which is likely to have adverse effects on the
+environment;
+(f) divert a river or lagoon;
+(g) drain any river, lagoon or wetland;
+(2) The Council may make regulations and guidelines for the management of the
+environment of the coastal zone, rivers and other wetlands and in particular may
+provide for:
+(a) the development of an overall management plan of the coastal zone taking
+into account the various sectoral interests;
+(b) measures for the control of coastal erosion;
+(c) the conservation of mangrove ecosystems on the basis of the principle of
+optimum sustainable yield;
+(d) the harvesting of the minerals of the coastal zone including sand, clay,
+shells and the restoration of the mineral sites;
+(e) the environmentally sound development of tourism resources especially the
+orderly and planned development of building structures along the coast;
+(f) containment of oil spill emergencies;
+(g) the management of freshwater wetlands;
+(h) containment of salt water intrusion into rivers, aquifers and agricultural
+lands, and
+(i) the exploitation of the offshore areas including the continental shelf, the
+territorial sea, and the exclusive economic zone.
+31
+(3) The Council may declare protected zones in any area of the coastal zone, river, or
+wetland and exclude or restrict human activities, if it thinks that such an area;
+(a) is at great risk from unsustainable human activities; or
+(b) is of ecological cultural, or aesthetic significance;
+Management of inland zone
+1. (1) The Agency shall establish environmentally sound management procedures for:
+(a) forests, including
+reforestation,
+afforestation,
+agroforestry, all forms of tree planting, and the development of wood
+plantations;
+(b) soil resources;
+(c) rangelands;
+(d) natural heritage sites;
+(e) mining operations.
+(2) The Agency may restrict or prohibit the use of any method for the exploitation of
+the natural resources of the inland zone.
+(3) The Agency shall take appropriate measures for the development and improvement
+of the urban environment in consultation with the lead departments.
+Conservation of biological diversity
+32. The Agency shall, in consultation with the lead departments;
+(a) develop national strategies, plans and programmes for the conservation of
+biological diversity;
+(b) integrate the conservation and sustainable utilization of ethic resources in 
+32
+diversity in existing government activities and the activities of private
+persons;
+(c) identify the components of biological diversity of The Gambia;
+(d) determine which components of biological diversity of The Gambia;
+(e) prepare and maintain an inventory of biological diversity;
+(f) determine existing and potential threats to biological diversity and devise
+measures to remove or mitigate heir effects;
+(g) prohibitor restrict any trade or traffic in any component of biological
+diversity.
+33. (1) The Agency shall promote the conservation of biological diversity in-situ.
+(2) The Agency shall establish guidelines for :
+(a) land use methods that are compatible with the conservation of biological
+diversity;
+(b) the selection and management of protected areas so as to promote the
+conservation of the various terrestrial and aquatic ecosystems of The
+Gambia;
+(c) the selection and management of buffer zones near protected areas;
+(d) special measures for protection of species habitats and ecosystems faced
+with extinction;
+(e) prohibiting or controlling the production of alien species; and
+(f) identifying and integrating traditional conservation knowledge into the
+conservation policy.
+Conservation of biological diversity ex - situ
+34. (1) The Agency shall promote the conservation ex situ of those components of
+biological diversity which are threatened with extinction.
+33
+(2) The Agency shall make guidelines for the environmentally sound establishment and
+management.
+(a) germplasm banks;
+(b) botanical gardens and herbaria;
+(c) zoos and animal orphanages; and
+(d) such other facilities as may be prescribed.
+(3) Species conserved ex-situ may be re-introduced into their native habitats and
+ecosystems provided that the Agency is satisfied that:
+(a) the threat to the species no longer exists; and
+(b) viable populations of the threatened species have been achieved.
+Access to genetic resources
+35. (1) The genetic resources of The Gambia shall constitute an essential part of the natural
+wealth of resources of the people of The Gambia.
+(2) The Council may make regulations and prescribed guidelines regarding access to
+the genetic resources of The Gambia, including:
+(a) measures regulating the export of germplasm;
+(b) measures for sharing of benefits derived from germplasm originating from
+the Gambia; and
+(c) Fees to be paid for access to germplasm.
+Management of the working environment
+36. (1) The Council may prescribe measures for the management and improvement of the
+working environment.
+(2) The agency shall identify and classify materials, processes and waste that are 
+34
+dangerous to human or animal health and the environment.
+(3) The Council shall make regulations and establish guidelines for the management of
+the materials, processes, and waste identified in accordance with sub-section (2).
+Protection of the ozone layer
+37. The Council shall make regulations controlling, prohibiting or restricting the manufacture
+or use of substances that deplete the ozone layer identified in accordance with the Vienna
+Convention for the Protection of the Ozone Layer and Montreal Protocol on Substances that
+Deplete the Ozone Layer.
+PART VIII
+POLLUTION CONTROL
+
+Prohibition of the discharge of materials, substances and oil into the environment
+38. (1) No person shall discharge any dangerous material, or substance, oil or mixture
+containing oil into any waters or any other segment of the environment except in
+accordance with regulations prescribed by the Council.
+(2) A person who discharges any dangerous material or substance, oil or mixture
+containing oil in any water or other segment of the environment contrary to subsection (1) commits an offence.
+(3) Where a person is convicted under sub-section (2) the court may in addition to any
+penalty imposed by it, require that person to:
+(a) pay the cost of the removal of the dangerous substance or material, oil or
+mixture containing oil including any cost to Government in restoring the
+damage environment; and
+(b) pay the costs incurred by third parties resulting from the discharge.
+(4) The owner of a vessel, production of storage facility or motor vehicle from which a
+discharge occurs contrary to this section has the duty to mitigate the impact of the
+discharge by:
+(a) giving notice of the discharge to the Agency and other public officers;
+35
+(b) commencing clean-up operations using the best available methods; and
+(c) Complying with such operations as the Agency may give.
+(5) The Agency may seize the production or storage facility, vessel or motor vehicle
+until the owner takes mitigation measures.
+(6) The Agency may dispose of the production or storage facility, vessel or motor
+vehicle seize in accordance with sub-section (5) to meet the cost of clean-up and
+restoration measures where the owner, after a passage of a reasonable time, fails to
+take the necessary measures.
+(7) The Agency shall not be liable to a suit for anything done by it in good faith under
+subsections (5) and (6).
+(8) Any person who hinders or obstructs the Agency or any person designated to the
+Agency to act under this section commits an offence and is liable on conviction to a
+fine of not more than three thousand dalasis or to a term of imprisonment of not
+more than one year.
+Prohibition of pollution
+39. (1) No person shall pollute or permit any other person to excess of any standards or
+guidelines established under section 28.
+(2) A person who pollutes or permits any other person to pollute the environment in
+excess of any standards and guidelines established under this Act commits a
+offence.
+(3) In addition to any sentence that may be imposed upon a polluter under sub-section
+(2) the Court shall require such person.
+(a) to pay the full cost of cleaning up the environment and of removing the
+effects of the pollution; or
+(b) to clean up the environment and remove the effects of the pollution.
+(4) Without prejudice to the provisions of sub-sections (2), and (3) the Court may also
+require the polluter to meet the costs of the pollution to third parties through
+compensation, restoration or restitution.
+36
+Disaster preparedness
+40. (1) The Agency shall prepare guidelines for the management of environmental disasters
+including:
+(a) major oil spills and gas leakages;
+(b) spills of other hazardous substances;
+(c) industrial accidents;
+(d) natural disasters such as floods, droughts and major pest infestations, or
+other intrusions of alien species of fauna and flora; and
+(e) fire;
+(2) The Agency may require any institution or individual employer to prepare a disaster
+preparedness plan appropriate to the risks anticipated in his establishment or
+premises.
+(3) A disaster preparedness plan prepared in accordance with sub-section (2) shall
+expressly state which Government agency or private person shall be obliged to
+implement the plan.
+PART IX
+INSPECTION, ANALYSIS AND RECORDS
+Environmental Inspectors
+41. The Agency may, by notification in the Gazette, appoint environmental inspectors.
+Powers and duties of Environmental Inspectors
+42. (1) An inspector may, in the performance of his duties under this Act or any regulations
+made thereunder, at all reasonable times and without a warrant.
+(a) enter any land, premises, vessels or vehicle to determine whether the
+provisions of this Act are being compiled with;
+(b) require the production of, inspect, examine and copy licences, registers,
+records, and other documents required under this Act or any other law
+relating to the environment and the management of natural resources;
+37
+(c) make examinations and enquiries to determine whether this Act is complied
+with;
+(d) take samples of any articles or substances to which this Act relates and, as
+may be prescribed, submit such samples for test or analysis;
+(e) carry out periodic inspections of all establishments within the local limits of
+his jurisdiction whose activities are likely to have significant impact on the
+environment;
+(f) carry out such other inspections as may be necessary to ensure that the
+provisions of this Act are being complied with;
+(g) on the instructions of the Executive Director, seize any vessel, motor vehicle,
+plant, manufacturing plant, equipment, or any other thing which he believes
+has been used in committing an offence under this Act;
+(h) on the instructions of the Executive Director, close any manufacturing plant
+or other activity which pollutes or is likely to pollute the environment
+contrary to this Act for such period as the Executive Director may determine;
+(I) on the instructions of the Executive Director, issue an improvement notice
+requiring the occupier of any manufacturing plant or other activity to cease
+any activities deleterious to the environment which are contrary to this Act
+or to install new plant or safeguards within such reasonable time as the
+inspector may determine; and
+(j) arrest any person whom he believes has committed an offence under this
+Act and hand over such person to the police for investigations.
+(2) An inspector may at any time install any equipment on any land, premises,
+manufacturing plant, motor vehicle or vessel for the purpose of monitoring
+compliance with this Act.
+(3) A person who tampers with any installation under sub-section (2) commits an
+offence and is liable on conviction to a fine of not more than one thousand dalasis
+or to a term of imprisonment of not more than three years.
+(4) Where an inspector enters premises the owner of such premises may demand that
+the inspector produce his document or authorisation or identity card before 
+38
+exercising any powers under this section in respect of such premises.
+Procedure for taking samples for analysis
+43. (1) An inspector shall, before taking samples of any substance for analysis in
+accordance with section 42 inform the occupier that the samples will be taken for
+analysis.
+(2) The inspector shall take the sample in three parts and mark and seal them as their
+nature will permit and deliver them as follows:
+(a) the first to the occupier;
+(b) the second to the laboratory for analysis; and
+8 The third to the Agency or its duly authorized agent.
+(3) Where the substance
+(a) is parked in small containers or packages;
+(b) is likely to change, deteriorate or be damaged by exposure, or
+(c) Would be dangerous or have other significant impacts on human health or
+the environment when opened.
+The inspector shall take three containers or packages as samples and mark, seal and deliver them
+as provided in sub-section (2).
+(4) Where after analysis the results of analysis are disrupted, the sample delivered to
+the Agency or its duly authorized agent may be sent by a Court to a reference
+laboratory for analysis.
+Establishment or designation of analytical laboratories
+44. (1) The Council may, be notification in the Gazette, establish or where it deems it fit,
+designate existing laboratories to be analytical laboratories and reference
+laboratories.
+39
+(2) The notification in sub-section (1) shall specify the functions of the laboratory and
+the local limits or subject matter that the laboratory shall serve.
+Designation of analysts and reference analysts
+45. (1) The Council may, by notification in the Gazette, appoint, or designate public officers
+where it deems it fit, to serve as analyst or reference analyst for the purpose of this
+Act.
+(2) The notification in sub-section (1) shall specify the functions, subject matter and
+local limits within which each analyst or reference analyst shall serve provided that
+he may be redeployed to other laboratories.
+Certificate of analysis effects
+46. (1) The laboratory or the reference laboratory shall issue a certificate of analysis of any
+substance submitted to it in accordance with this Act stating its findings.
+(2) The certificate of analysis shall state the methods of analysis used and shall be
+signed by the analyst or the reference analyst, as the case may be.
+(3) A certificate complying with the provisions of sub-sections (1) and (2) shall be
+sufficient evidence of the facts stated therein.
+Records to be kept
+47. (1) The Agency may prescribe the activities for which records shall be kept and the
+content of the records that shall be kept for the purpose of this Act.
+(2) The records kept in accordance with sub-section (1) and any other records available
+at the site of an activity shall be made available to an inspector for purposes of:
+(a) an environmental audit under section 25;
+(b) environmental monitoring under section 26;
+(c) pollution control under Part VIII.
+(d) inspection under section 42; and
+40
+(e) any other purpose that may be prescribed.
+(3) All establishments keeping records under this section shall transmit their records to
+the Agency at such intervals as the Agency may determine.
+(4) The Agency shall use the records transmitted to it in the preparation of the state of
+the environment report and for such other purposes it deems necessary.
+PART X
+INFORMATION, EDUCATION AND PUBLIC AWARENESS
+Freedom of environmental information
+48. (1) Every person shall have freedom of access to any information relating to the
+implementation of the provisions of this Act or any other law relating to the
+management of the environment submitted to the Agency.
+(2) A person desiring information provided for in sub-section (1) shall make an
+application to the Agency and may be granted access on such terms and conditions
+as the Agency deems fit.
+(3) Without prejudice to the provisions of sub-sections (1) and (2) the Agency may
+refuse access or limit the access of any person to proprietary information submitted
+to it or to any other Government department or agency.
+Gathering analysis and management of information
+49. (1) The Agency shall gather, analyse, manage and disseminate environmental
+information.
+(2) The Agency shall have access, subject to any other law, to all existing environmental
+information of a public nature and shall coordinate the management of
+environmental information.
+(3) The Agency shall determine deficiencies in existing environmental information and
+exchange information with other persons, including international organizations,
+non-governmental organizations and governmental agencies of other states.
+(4) The Agency shall, at such intervals as it deems fit, publish a state of the
+environment report which shall highlight the achievements of the Agency in the 
+41
+protection of the environment and the future challenges, problems, prospects and
+the strategies for addressing them.
+(5) The Agency may make other publications and adopt other measures and strategies
+for promoting public awareness of environmental issues and the need for
+conservation of natural resources.
+Environment in the school curriculum
+50. The Agency may, in collaboration with the Minister responsible for education, adopt
+measures and strategies for the integration of environmental education in the school
+curriculum.
+PART XI
+OFFENCES
+General offences
+51. A person who commits an offence under the provisions of this Act or any regulations made
+thereunder for which no penalty is provided, is liable on conviction.
+(a) in the case of a natural person, to a fine of not more than three thousand
+dalasis or to a term of imprisonment of not more than one year; and
+(b) in the case of a body corporate, to a fine of not more than twenty thousand
+dalasis.
+Offences relating to inspectors
+52. (1) A person commits an offence if he knowingly.
+(a) hinders or obstructs an inspector in the execution of his duties under, this
+Act;
+(b) fails to comply with a lawful order or requirement made by an inspector in
+accordance with the provisions of this Act;
+(c) refuses an inspector entry upon any land or into any premises which he is
+empowered to enter by this Act;
+42
+(d) impersonates an inspector;
+(e) refuses an inspector access to records kept in accordance with this Act;
+(f) fails to state or wrongly states his name or address to an inspector in the
+course of his duties under this Act;
+(g) misleads or gives wrongful information to an inspector under this Act; or
+(h) fails to carry out an improvement order issues by an inspector under this
+Act.
+(2) A person who commits an offence under subsection (1) is liable on conviction,
+(a) in the case of a natural person, to a fine of not more than four thousand
+dalasis or to a term of imprisonment of not more than two years; and
+(b) in the case of a body corporate, to a fine of not more than forty thousand
+dalasis.
+Offences relating to environmental impact assessment
+53. (1) A person commits an offence if he;
+(a) fails to submit a project brief contrary to section 22;
+(b) fails to prepare an environmental impact statement contrary to section 23;
+or
+(c) Fraudulently makes a false statement in an environmental impact statement
+contrary to section 23.
+(2) A person who commits an offence under subsection (1) is liable on conviction,
+(a) in the case of a natural person, to a fine of not more than one hundred and
+sixty thousand dalasis or to a term of imprisonment of not more than five
+years; and
+(b) in the case of a body corporate, to a fine of not more than fifty thousand 
+43
+dalasis.
+Offences relating to records
+54. (1) A person commits an offence if he;
+(a) fails to keep records of the activities, products, by-products, and wastes
+required to be kept by this Act; or
+(b) fraudulently alters any record required by this Act;
+(2) A person who commits an offence under subsection (1) is liable on conviction.
+(a) in the case of a natural person, to a fine of not more than ten thousand
+dalasis or to a term of imprisonment of not more than two years; and
+(b) in the case of a body corporate, to a fine of not more than thirty thousand
+dalasis.
+Offences relating to environmental standards and guidelines
+55. (1) A person commits an offence if he;
+(a) violates any environmental standard established in accordance with section
+28.
+(b) violates any guideline made under this Act; or
+(c) uses natural resources in a wasteful manner contrary to measures and
+regulations prescribed under Part VII;
+(2) A person who commits an offence under subsection (1) is liable on conviction;
+(a) in the case of a natural person, to a fine of not more than twenty thousand
+dalasis or to a term of imprisonment of not more than five years; and
+(b) in the case of a body corporate, to a fine of not more than fifty thousand
+dalasis.
+Offences relating to hazardous and dangerous materials, etc.
+44
+56. A person commits an offence if he
+(a) fails to manage hazardous and dangerous materials, processes and wastes
+in accordance with the provisions of section 36.
+(b) knowingly mislabels any wastes, chemical or dangerous process or other
+materials;
+(c) Withholds information about the management of wastes, chemicals or
+dangerous processes and substances; or
+(d) aids or abets the illegal traffic in wastes, chemicals or dangerous processes
+and substances.
+(2) A person who commits an offence under subsection (1) is liable on conviction.
+(a) in the case of a natural person, to a fine of not more than one hundred
+thousand dalasis or to a term of imprisonment of not more than six years.
+(b) in the case of a body incorporate, to a fine of not more than five hundred
+thousand dalasis.
+Offences relating to pollution
+57. (1) A person commits an offence if he
+(a) discharges any dangerous materials, substance, oil or mixture containing oil
+into any waters or any other segment of the environment contrary to section
+38; or
+(b) pollutes the environment contrary to section 39.
+(2) A person who commits an offence under subsection (1) is liable on conviction,
+(a) in the case of a natural person, to a fine of not more than two hundred
+thousand dalasis or to term of imprisonment of not more than ten years.
+(b) in the case of a body corporate, to a fine of not more than one million
+dalasis.
+45
+46
+PART XII
+JUDICIAL PROCEEDINGS
+
+Immunity of officers acting in good faith
+58. No person acting under this Act shall be liable to be sued in any civil court for any act done
+or ordered to be done by him in the discharge of his duties under this Act, provided that he
+acts in good faith.
+Liability of bodies corporate etc.
+59. (1) Where an offence under this Act is committed by a body corporate, the body
+corporate and every director or officer of the body corporate who had knowledge or
+should have had knowledge of the commission of the offence, and who did not
+exercise all due diligence to ensure compliance with the Act commits the offence.
+(2) Where an offence is committed this Act by a partnership, every partner or officer of
+the partnership who had knowledge of the commission of the offence commits the
+offence.
+(3) A person shall be personally liable for any offence under this Act whether
+committed by him on his own account or as an agent or servant of another person.
+(4) An employer or principal shall be liable for any offence committed by his employee
+or agent under this Act if the employee or agent acted within the scope of his
+employment.
+Forfeiture, cancellation etc.
+60. (1) The court before which a person is prosecuted for an offence under this Act or the
+regulations made thereunder may in addition to any penalty imposed on him order
+that the substance, equipment or appliances used in the commission of the offence
+be forfeited to the State and be disposed of a the court directs.
+(2) In making the order to forfeit under sub-section (1) the court may also order that
+the cost of disposing of the substances, equipment or appliance, be borne by the
+accused.
+(3) The court may further order that any authorization given under this Act be
+cancelled.
+47
+(4) The court may also issue an order requiring that the convicted person restore the
+environment to its original state at his own cost.
+PART XIII
+MISCELLANEOUS PROVISIONS
+
+Amendment of the Schedule
+61. The Council may, by order published in the Gazette, amend the Schedule.
+Delegation of powers and functions by the Council and the Executive Director
+62. (1) The Council may by order delegate any of its functions and powers to a Minister, the
+Executive Director, a local government or any other public officer provided that the
+power so delegated shall not be sub-delegated.
+(2) The Executive Director may delegate any of his powers and functions, in writing, to
+any member of the senior staff of the Agency, a local government or other public
+officer provided that the power so delegated shall not be sub-delegated.
+Power to make regulations
+63. (1) The Council may, on the recommendation of the Agency, make regulations
+prescribing all matters that are required or permitted by this Act to be prescribed,
+or are necessary for giving effect to this Act.
+(2) Regulations made under sub-section (1) may adopt wholly or in part or with
+modifications any rules, standards, guidelines, regulations, by-laws, codes,
+instructions, specifications or administrative procedures prescribed under any law
+either as in force at the time of prescription or publication or as amended from time
+to time thereafter.
+Inconsistent laws
+64. Where the provisions of this Act are inconsistent with the provisions of any existing Act the
+provisions of this Act shall prevail.
+Repeal
+48
+65. The National Environment Management Act, 1987 is hereby repealed.
+Cap.72:01
+49
+SCHEDULE
+
+ENVIRONMENTAL IMPACT ASSESSMENT
+PART A
+
+PROJECTS TO BE CONSIDERED FOR ENVIRONMENTAL IMPACT ASSESSMENT
+
+1. General
+
+(a) Any activity out of character with its surroundings.
+(b) Any structure of a scale not in keeping with its surroundings.
+8 Major changes in land use.
+2. Urban Development, including,
+(a) Designation of new townships, villages and residential areas.
+(b) Establishment of industrial estates.
+(c) Establishment of industrial estates.
+(d) Establishment or expansion of recreational townships in hilly areas, national parks
+and game reserves.
+(e) Shopping centres and complexes.
+(f) Hotels and other tourist facilities.
+3. Transportation, including,
+(a) All major roads.
+(b) All roads in scenic, wooded or hilly areas.
+(c) Bridges.
+(d) Railways lines.
+50
+(e) Airports and airfields.
+(f) Pipelines.
+(g) Water transport.
+(h) Ports and landing sites.
+4. Dams, rivers and water resources, including,
+
+(a) Storage dams, barrages and weirs.
+(b) River diversions and water transfers between catchments.
+5. Aerial Spraying
+
+6. Fisheries especially large-scale commercial projects.
+7. Mining, including quarrying and open-cast extraction of:
+(a) Precious metals.
+(b) Diamonds.
+(c) Metalliferous ores.
+(d) Coal.
+(e) Phosphates.
+(f) Limestone and dolomite.
+(g) Stone and slate.
+(h) Aggregates, sand, gravel and laterite.
+(i) Clay.
+(j) Exploration for the production of petroleum in any form.
+51
+(k) Off-shore activities.
+8. Forestry related activities, including,
+
+(a) Timber harvesting.
+(b) Clearance of forest areas.
+(c) Reafforestation and afforestation.
+(d) Establishment of wood plantation.
+9. Agriculture, including,
+(a) Large scale agriculture.
+(b) Use of new pesticide.
+(c) Introduction of new crops and animals.
+(d) Use of fertilizers.
+10. Processing and manufacturing industries, including,
+(a) Mineral processing, reduction of ores and minerals.
+(b) Smelting and refining of ores and minerals.
+(c) Foundries.
+(d) Brick and earthenware manufacture.
+(e) Cement works and lime processing.
+(f) Glass works.
+(g) Fertilizer manufacture or processing.
+(h) Explosives plants.
+52
+(I) Oil refineries and petro-chemical works.
+(j) Tanning and dressing of hides and skins.
+(k) Abattoirs and meat-processing plants.
+(l) Chemical works and process plants.
+(m) Brewing and malting.
+(n) Bulk grain-processing plants.
+(o) Fish processing plants.
+(q) Pulp and paper mills.
+(r) Food processing plants.
+(s) Plants for the manufacture or assembly of motor vehicle.
+(t) Plants for the construction or repair of aircraft of railway equipment.
+(u) Plants for the manufacturing or processing of rubber.
+(v) Plants for the manufacture of tanks, reservoirs and sheet-metal containers.
+(w) Plants for the manufacture of groundnut briquettes or other briquettes.
+(x) Mechanical workshops.
+(y) Cottage industries.
+11. Electrical infrastructure, including,
+
+(a) Electricity generation stations.
+(b) Electrical transmission lines (high voltages).
+8 Electrical substations.
+53
+(d) Pumped-storage schemes.
+12. Management of hydrocarbons, including.
+The storage of natural gas and combustible or explosive fuels.
+13. Waste disposal, including,
+
+(a) Sites for solid waste disposal.
+(b) Sites for hazardous waste disposal.
+8 Sewage disposal works.
+(d) Major atmospheric emissions.
+(e) Offensive odours.
+14. Natural conservation areas, including,
+
+(a) Creation of national parks, game reserves, and buffer zones.
+(b) Establishment of wilderness areas.
+(c) Formulation or modification of forest management policies.
+(d) Formulation or modification of water catchment management policies.
+(e) Policies for management of ecosystems, especially by use of fire.
+(f) Commercial exploitation of natural fauna and flora.
+(g) Introduction of alien species of fauna and flora into ecosystems.
+(h) Establishment of natural heritage areas.
+PART B
+ISSUES TO BE CONSIDERED IN MAKING ENVIRONMENTAL IMPACT ASSESSMENTS
+
+The following issues may, among others, be considered in the making of environmental impact 
+54
+assessments.
+1. Ecological Consideration, in particular biological diversity:
+(I) Effect of proposal on number, diversity, breeding habits, etc. of wild animals and
+vegetation.
+(ii) Gene pool of domesticated plants and animals, e.g. monoculture vs wild-types.
+2. Sustainable use including,
+
+(I) Effect of proposal on soil fertility.
+(ii) Breeding populations of fish and game.
+(iii) Natural regeneration of woodland and sustainable yield.
+3. Ecosystem maintenance, including,
+(I) Effect of proposal on food chains.
+(ii) Nutrient cycles.
+(iii) Aquifer recharge, water run-off rates, etc.
+(iv) Areal extent of habitats.
+4. Social consideration, including,
+(I) Effects of proposal on generation or reduction of employment in the area.
+(ii) Social cohesion or disruption.
+(iii) Effect on human health.
+(iv) Immigration or emigration.
+(v) Communication - roads opened up, closed, re-routed.
+(vi) Local economy.
+55
+5. Landscape including
+
+(I) Views opened up or closed.
+(ii) Visual impacts (features, removal of vegetation, etc).
+(iii) Compatibility with surrounding areas.
+(iv) Amenity opened up or closed, e.g. recreation possibilities.
+6. Land Use
+
+(I) Effects or proposal on current land uses and land use potentials in the project area.
+(ii) Possibility of multiple use.
+(iii) Effects of proposal on surrounding land uses and land use potentials.
+56
