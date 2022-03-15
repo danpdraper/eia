@@ -39,6 +39,7 @@ function amend_errors_in_articles {
     amend_error_in_article 2 '\[1999 No. \[14\]\] ' '' | \
     amend_error_in_article 2 '\[Schedule.' '' | \
     amend_error_in_article 2 '…..' '.....' | \
+    amend_error_in_article 2 'themselves m environmental' 'themselves in environmental' | \
     #Article 3
     amend_error_in_article 3 '1S' 'is' | \
     amend_error_in_article 3 '\[i\] Health' '[iii] Health' | \
@@ -49,8 +50,11 @@ function amend_errors_in_articles {
     amend_error_in_article 5 '\(ii\)' '[ii]' | \
     #Article 6
     amend_error_in_article 6 'co: ' 'co-' | \
+    amend_error_in_article 6 'welfare or the population' 'welfare of the population' | \
     #Article 9
     amend_error_in_article 9 '\[Cap. P4.\] ' '' | \
+    #Article 11
+    sed -E s'/Power to accept gifts, etc. /Power to accept gifts, etc./' | \
     #Article 12
     amend_error_in_article 12 '\[Cap. L5.\] ' '' | \
     #Article 13
@@ -59,23 +63,32 @@ function amend_errors_in_articles {
     sed -E 's/Water quality Article \[16\] Federal water quality standards \|/\n\nWater Quality\n\nFederal water quality standards\n(16)/' | \
     #Article 17
     amend_error_in_article 17 'Air quality and atmospheric protection Article \[18\] Air quality, etc. \|' '\n\nAir quality and atmospheric protection \n\nAir quality, etc.\n(18)' | \
+    #Article 19
+    amend_error_in_article 19 ' Noise' '\n\nNoise' | \
     #Article 21
     amend_error_in_article 20 'Hazardous substances Article \[21\] Discharge of hazardous substances \|' '\n\nHazardous substances  \n\nDischarge of hazardous substances\n(21)' | \
     amend_error_in_article 21 '\[Cap. Hl.' '' | \
     amend_error_in_article 21 'N 1' 'N1' | \
+    amend_error_in_article 21 'accordingly: Provided' 'accordingly, provided' | \
+    #Article 22
+    amend_error_in_article 22 'operator or a vessel' 'operator of a vessel' | \
     #Article 25
     sed -E 's/Article \[25\] Establishment of State and local government bodies \|/\n\nEstablishment of State and local government bodies\n(25)/' | \
     #Article 26
-    sed -E 's/PART I -V /PART IV /' | \
+    sed -E 's/PART I -V /PART IV - /' | \
     sed -E 's/Enforcement powers Article \[26\] Powers to inspect, etc. \|/\n\nEnforcement powers \n\nPowers to inspect, etc.\n(26)/' | \
     #Article 31
     amend_error_in_article 31 '30 \[2\]' '30[2]' | \
     #Article 35
     sed -E 's/General penalties and legal proceedings Article \[35\] Material misrepresentation and impersonation \|/\n\nGeneral penalties and legal proceedings \n\nMaterial misrepresentation and impersonation\n(35)/' | \
+    amend_error_in_article 35 'an offences' 'an offence' | \
     #Article 36
     amend_error_in_article 36 'therefor,' 'therefore,' | \
     #Article 37
     amend_error_in_article 37 'Miscellaneous' '\n\nMiscellaneous' | \
+    #Article 41
+    amend_error_in_article 41 'inter: relationships' 'inter-relationships' | \
+    amend_error_in_article 41 'pipe; ditch' 'pipe, ditch' | \
     #Article 42
     amend_error_in_article 42 ' ___.*$' '' 
 }
