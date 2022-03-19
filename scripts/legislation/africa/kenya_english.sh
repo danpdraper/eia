@@ -49,7 +49,7 @@ function amend_errors_in_articles {
     amend_error_in_article 10 '\(c \)' '[c]' | \
     amend_error_in_article 10 'Secretary. \[c\]' 'Secretary; [c]' | \
     amend_error_in_article 10 '\[1\] \[a\]' '[1][a]' | \
-    amend_error_in_article 10 'section 1' 'subsections 1' | \
+    amend_error_in_article 10 'section 1' 'subsections [1]' | \
     amend_error_in_article 10 'at least four time' 'at least four times' | \
     #Article 11  
     amend_error_in_article 11 '\[e\]' '[f]' | \
@@ -186,9 +186,9 @@ function amend_errors_in_articles {
     amend_error_in_article 141 'substances;' 'substances; commits an offence and shall, on conviction, be liable to a fine of not less than one million shillings, or to imprisonment for a term of not less than two years, or to both.' | \
     sed -z 's/both.\n\n(35)/both./' | \
     #Article 142
-    amend_error_in_article 142 'subsection \[1\]' 'subsections [1].' | \
     amend_error_in_article 142 '\[1\] \[2\]' '[1] and [2]' | \
-    amend_error_in_article 142 'subsections \[1\].' 'subsection [1]' | \
+    amend_error_in_article 142 'subsections \[1\].' 'subsection [1] ' | \
+    amend_error_in_article 142 'of subsection' 'of subsections' | \
     #Article 143
     amend_error_in_article 143 'Fails' 'fails' | \
     #Article 147
