@@ -51,27 +51,45 @@ function amend_errors_in_articles {
     amend_error_in_article 1 '. \[g\] G' '; [g] G' | \
     amend_error_in_article 1 '. \[h\] T' '; [h] T' | \
     amend_error_in_article 1 '. \[i\] O' '; [i] o' | \
+    #Article 3
+    amend_error_in_article 3 'financial remuneration' 'financial remuneration.' | \
     #Article 4
     amend_error_in_article 3 'article 4:' '\n\n(4)' | \
     #Article 5
     sed -E ':start;s/^(\(5\).*)\. \[•\] ([A-Z])/\1; \L\2/;t start' | \
     amend_error_in_article 5 '\[•\] P' 'p' | \
+    #Article 6
+    sed -E ':start;s/^(\(6\).*)\. \[•\] ([A-Z])/\1; [•] \L\2/;t start' | \
+    amend_error_in_article 6 'The CEO' 'the CEO' | \
     #Article 13
     amend_error_in_article 13 ' ,' ',' | \
     amend_error_in_article 13 'SecretaryGeneral' 'Secretary-General' | \
     amend_error_in_article 13 'the sector' 'the sector.' | \
     #Article 14
     amend_error_in_article 14 '\[1983\]' '1983.' | \
+    sed -E ':start;s/^(\(14\).*)\. (\[[a-z]\] [A-Z])/\1; \L\2/;t start' | \
+    amend_error_in_article 14 'Amounts allocated' 'amounts allocated' | \
+    #Article 25
+    sed -E ':start;s/^(\(25\).*)\. \[•\] ([A-Z])/\1; [•] \L\2/;t start' | \
+    amend_error_in_article 25 'Gathering the' 'gathering the' | \
     #Article 29
     amend_error_in_article 29 'para one' 'paragraph one' | \
     #Article 33
     amend_error_in_article 33 'shall occur' 'shall occur.' | \
     #Article 48
     amend_error_in_article 48 'para \(38\) of article \(1\)' 'paragraph [38] of article 1' | \
+    sed -E ':start;s/^(\(48\).*)\. (\[[a-z]\] [A-Z])/\1; \L\2/;t start' | \
+    amend_error_in_article 48 '\] To protect' '] to protect' | \
     #Article 52
     amend_error_in_article 52 'Republic or Egypt' 'Republic of Egypt' | \
+    #Article 54
+    sed -E ':start;s/^(\(54\).*)\. (\[[a-z]\] [A-Z])/\1; \L\2/;t start' | \
+    amend_error_in_article 54 'Securing the' 'securing the' | \
     #Article 57
     amend_error_in_article 57 'ARE' 'The competent minister shall determine the tools and equipment for reducing pollution with which all ships registered in ARE' | \
+    #Article 58
+    sed -E ':start;s/^(\(58\).*)\. (\[[a-z]\] [A-Z])/\1; \L\2/;t start' | \
+    amend_error_in_article 58 'Loading,' 'loading,' | \
     #Article 60
     amend_error_in_article 60 'cisterns portable tanks' 'cisterns, portable tanks' | \
     #Article 69
@@ -81,6 +99,8 @@ function amend_errors_in_articles {
     #Article 81
     amend_error_in_article 81 'State Council \[•\]' 'State Council -' | \
     amend_error_in_article 81 'Lighthouses Department' 'Lighthouses Department.' | \
+    sed -E ':start;s/^(\(81\).*)\. \[•\] ([A-Z])/\1; [•] \L\2/;t start' | \
+    amend_error_in_article 81 'A counselor' 'a counselor' | \
     #Article 87
     amend_error_in_article 87 'para 1' 'paragraph 1' | \
     amend_error_in_article 87 'para 2' 'paragraph 2' | \
@@ -93,7 +113,9 @@ function amend_errors_in_articles {
     amend_error_in_article 92 '54-b' '54[b]' | \
     amend_error_in_article 92 '\(1\)' '[1]' | \
     amend_error_in_article 92 '\(2\)' '[2]' | \
-    amend_error_in_article 92 '\(3\)' '[3]'
+    amend_error_in_article 92 '\(3\)' '[3]' | \
+    sed -E ':start;s/^(\(92\).*)\. (\[[0-9]\] [A-Z])/\1; \L\2/;t start' | \
+    amend_error_in_article 92 'Fails to' 'fails to' 
 }
 
 function preprocess_state_and_language_input_file {
