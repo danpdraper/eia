@@ -71,6 +71,7 @@ function amend_errors_in_articles {
     amend_error_in_article 14 'Amounts allocated' 'amounts allocated' | \
     #Article 25
     sed -E ':start;s/^(\(25\).*)\. \[•\] ([A-Z])/\1; [•] \L\2/;t start' | \
+    amend_error_in_article 25 '\[•\] Identifying' '[•] identifying' | \
     amend_error_in_article 25 'Gathering the' 'gathering the' | \
     #Article 29
     amend_error_in_article 29 'para one' 'paragraph one' | \
