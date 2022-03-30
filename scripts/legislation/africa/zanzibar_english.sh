@@ -137,7 +137,7 @@ function amend_errors_in_articles {
     amend_error_in_article 103 'Schedule' 'Schedule 4.' | \
     #Article 104
     amend_error_in_article 104 'by–' 'by:' | \
-    amend_error_in_article 104 'subsection [1]; the' 'subsection [1], the' | \
+    amend_error_in_article 104 'subsection \[1\]; the' 'subsection [1], the' | \
     #Article 106
     amend_error_in_article 106 'shall appoints' 'shall appoint' | \
     amend_error_in_article 106 '\[be\]' '(be)' | \
@@ -166,7 +166,8 @@ function amend_errors_in_articles {
 
 function amend_errors_in_headers {
   sed -E 's/([0-9]) ([A-Z]+)/\n\nPART \1 - \2/g' | \
-    sed -z 's/\n\nPART 1/PART 1/' 
+    sed -z 's/\n\nPART 1/PART 1/' | \
+    sed -z 's/\n\nPART 9 - Act/9 Act/' 
 }
 
 function preprocess_state_and_language_input_file {
