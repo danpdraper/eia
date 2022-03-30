@@ -111,6 +111,11 @@ function amend_errors_in_articles {
     amend_error_in_article 3 'any "' 'any' | \
     amend_error_in_article 3 'are~' 'areas' | \
     amend_error_in_article 3 'environmentand' 'environment and' | \
+    amend_error_in_article 3 'measuages' 'messuages' | \
+    amend_error_in_article 3 'other radiation "likely to have' 'other radiation likely to have' | \
+    amend_error_in_article 3 'homesteads, institution' 'homesteads, institutions' | \
+    amend_error_in_article 3 'abandoned cars scraps' 'abandoned car scraps' | \
+    amend_error_in_article 3 'undertaking-for' 'undertaking for' | \
     #Article 4
     amend_error_in_article 4 '\[l' '[1' | \
     sed -E 's/to clean, safe/to a clean, safe/g' | \
@@ -119,6 +124,8 @@ function amend_errors_in_articles {
     amend_error_in_article 5 'therinciple' 'the principle' | \
     amend_error_in_article 5 'omissionislikely' 'omission is likely' | \
     amend_error_in_article 5 'useslost' 'uses lost' | \
+    amend_error_in_article 5 'in relation: to' 'in relation to' | \
+    amend_error_in_article 5 'in the development policies' 'in the development of policies' | \
     #Article 6
     amend_error_in_article 6 'environment ment' 'environment' | \
     amend_error_in_article 6 'sys~m' 'system' | \
@@ -134,18 +141,22 @@ function amend_errors_in_articles {
     #Article 9
     amend_error_in_article 9 'Environmental Policy..*$' 'Environment Policy.' | \
     amend_error_in_article 9 'Promotion of the National Environment Policy.' '' | \
+    #Article 10
+    amend_error_in_article 10 'to be known as' 'to be known as Environment Day' | \
+    #Article 11
+    amend_error_in_article 11 'members, specified' 'members specified' | \
     #Article 12
     amend_error_in_article 12 'it shall' 'it shall:' | \
-    amend_error_in_article 12 '\[b\] Minister Responsible for Environment' '\n\n[b] Minister Responsible for Environment' | \
+    amend_error_in_article 12 '\[b\] Minister Responsible for Environment' '\n\n(b) Minister Responsible for Environment' | \
     amend_error_in_article 12 ',where' ', where' | \
     #Article 13
-    amend_error_in_article 13 '\[c\] Director of Environment' '\n\n[c] Director of Environment' | \
+    amend_error_in_article 13 '\[c\] Director of Environment' '\n\n(c) Director of Environment' | \
     #Article 14
     amend_error_in_article 14 'Powers ofthe.*$' '' | \
     #Article 15
     amend_error_in_article 15 'coordinare issues relating to articulatioo' 'coordinate issues relating to the articulation' | \
     amend_error_in_article 15 'to articulation' 'to the articulation' | \
-    amend_error_in_article 15 '\[d\] National' '\n\n[d] National' | \
+    amend_error_in_article 15 '\[d\] National' '\n\n(d) National' | \
     #Article 16
     amend_error_in_article 16 'naine' 'name' | \
     amend_error_in_article 16 'by acronym' 'by the acronym' | \
@@ -172,7 +183,7 @@ function amend_errors_in_articles {
     #Article 27
     amend_error_in_article 27 'Chainnan' 'Chairman' | \
     #Article 29
-    amend_error_in_article 29 '\[e\]' '\n\n[e]' | \
+    amend_error_in_article 29 '\[e\]' '\n\n(e)' | \
     amend_error_in_article 29 'Powers ofthe.*$' '' | \
     #Article 30
     amend_error_in_article 30 'otherwritten' 'other written' | \
@@ -184,16 +195,18 @@ function amend_errors_in_articles {
     amend_error_in_article 32 'Sector.' 'Sector' | \
     amend_error_in_article 32 'environm~nt' 'environment' | \
     amend_error_in_article 32 'Submission of sector.* expert ' '' | \
+    amend_error_in_article 32 '\[a\] bi-annual report' '[a] a bi-annual report' | \
     #Article 33
     amend_error_in_article 33 '-shall' 'shall' | \
     amend_error_in_article 33 'mlling' 'falling' | \
-    amend_error_in_article 33 '\[I\] Regional Secretariat' '\n\n[f] Regional Secretariat' | \
+    amend_error_in_article 33 '\[I\] Regional Secretariat' '\n\n(f) Regional Secretariat' | \
     #Article 35
-    amend_error_in_article 35 '\[g\] Local GovernmentAuthorities' '[g] Local Government Authorities' | \
+    amend_error_in_article 35 '\[g\] Local GovernmentAuthorities' '\n\n(g) Local Government Authorities' | \
     #Article 36
     amend_error_in_article 36 'shall \[a\]' 'shall: [a]' | \
     amend_error_in_article 36 'by~laws' 'bylaws' | \
     amend_error_in_article 36 'FW1Ctions.*$' '' | \
+    amend_error_in_article 36 'the Management Officer who shall be known' 'the Management Officer shall be known' | \
     #Article 37
     amend_error_in_article 37 'Commit: ' '' | \
     amend_error_in_article 37 'tees of ' '' | \
@@ -208,6 +221,8 @@ function amend_errors_in_articles {
     amend_error_in_article 38 'Worlcs ' 'Works ' | \
     amend_error_in_article 38 '\[District\] Authorities Act, \[1982\]' '(District Authorities) Act, 1982.' | \
     amend_error_in_article 38 'mutatts' 'mutatis' | \
+    amend_error_in_article 38 'perform any other function or discharging' 'perform any other function or discharge' | \
+    amend_error_in_article 38 'relating to ancillary or incidental to' 'relating to, ancillary or incidental to' | \
     #Article 40
     amend_error_in_article 40 'Article \[41\]' '\n\n(41)' | \
     amend_error_in_article 40 'Designation of the Township, Ward.*$' '' | \
@@ -217,6 +232,8 @@ function amend_errors_in_articles {
     amend_error_in_article 41 "any'" 'any' | \
     amend_error_in_article 41 'retoses' 'refuses' | \
     amend_error_in_article 41 'related fu' 'related to' | \
+    amend_error_in_article 41 'have reasonable cause to believes' 'has reasonable cause to believe' | \
+    amend_error_in_article 41 'substances believes to be pollutant' 'substances believed to be pollutant' | \
     #Article 42
     amend_error_in_article 42 '\$Overnment' 'government' | \
     amend_error_in_article 42 'junsdiction' 'jurisdiction' | \
@@ -227,6 +244,7 @@ function amend_errors_in_articles {
     amend_error_in_article 44 'tbs' 'the' | \
     amend_error_in_article 44 'Minister;.*\[f\]' 'Minister; [f]' | \
     amend_error_in_article 44 '\[1\] provide' '[l] provide' | \
+    amend_error_in_article 44 'be the, basis' 'be the basis' | \
     #Article 45
     amend_error_in_article 45 'which Environment' 'which the Environment' | \
     #Article 46
@@ -242,14 +260,20 @@ function amend_errors_in_articles {
     amend_error_in_article 49 '\[1\] \(b \)' '[1][b]' | \
     amend_error_in_article 49 'Management measure' 'Management measures' | \
     amend_error_in_article 49 '\[1\] \[f\]' '[1][f]' | \
+    amend_error_in_article 49 "person's identified" 'persons identified' | \
+    amend_error_in_article 49 '\[e\] benefit' '[d] benefit' | \
+    amend_error_in_article 49 '\[t\] entrance' '[e] entrance' | \
+    amend_error_in_article 49 '\[g\] any other' '[f] any other' | \
     #Article 50
     sed -E 's/SO\./\n\n(50)/' | \
     #Article 51
     amend_error_in_article 51 'regula~ en:vironmentally sensiti_ve' 'regulate environmentally sensitive' | \
     amend_error_in_article 51 'area under' 'areas under' | \
+    amend_error_in_article 51 'environmental sensitive areas' 'environmentally sensitive areas' | \
     #Article 52
     amend_error_in_article 52 'pwposes' 'purposes' | \
     amend_error_in_article 52 'Land utilization management.*\[i\]' '[i]' | \
+    amend_error_in_article 52 '\[t\]' '[f]' | \
     #Article 53
     amend_error_in_article 53 'andagriculturalists in tenns' 'and agriculturalists in terms' | \
     #Article 54
@@ -259,6 +283,7 @@ function amend_errors_in_articles {
     amend_error_in_article 54 'Minisr,er' 'Minister' | \
     amend_error_in_article 54 '  ' ' ' | \
     amend_error_in_article 54 'advise' 'advice' | \
+    amend_error_in_article 54 '; and any advice' '; and [c] any advice' | \
     #Article 55
     amend_error_in_article 55 'environme_ntal' 'environmental' | \
     amend_error_in_article 55 'pennit' 'permit' | \
@@ -266,6 +291,10 @@ function amend_errors_in_articles {
     amend_error_in_article 55 'a ocean' 'an ocean' | \
     amend_error_in_article 55 'river: bank' 'river bank' | \
     amend_error_in_article 55 'Environment;' 'Environment,' | \
+    amend_error_in_article 55 'any of the following activity' 'any of the following activities' | \
+    amend_error_in_article 55 'lake or, lakeshore' 'lake or lakeshore' | \
+    amend_error_in_article 55 'lakeshore shoreline' 'lakeshore, shoreline' | \
+    amend_error_in_article 55 'lake or; lakeshore ' 'lake or lakeshore ' | \
     #Article 56
     amend_error_in_article 56 'Declaration of protected wetlands 44 Prohibit:' '' | \
     #Article 57
@@ -298,8 +327,10 @@ function amend_errors_in_articles {
     amend_error_in_article 64 'beenergy' 'be' | \
     amend_error_in_article 64 'woodlors' 'woodlots' | \
     amend_error_in_article 64 'ot as' 'or as' | \
+    amend_error_in_article 64 'renewal sources' 'renewable sources' | \
     #Article 65
     amend_error_in_article 65 '\[1994\]' '1994.' | \
+    amend_error_in_article 65 'the provision of the' 'the provisions of the' | \
     #Article 66
     amend_error_in_article 66 '\[I\] The' '[1] The' | \
     amend_error_in_article 66 'resources~' 'resources,' | \
@@ -309,6 +340,8 @@ function amend_errors_in_articles {
     amend_error_in_article 66 'sustainable ~' 'sustainable use' | \
     amend_error_in_article 66 'mechanism;r' 'mechanism; of' | \
     amend_error_in_article 66 '  ' ' ' | \
+    amend_error_in_article 66 'The Minister may, take into account' 'The Minister may take into account' | \
+    amend_error_in_article 66 'conservations equitable sharing' 'conservation, equitable sharing' | \
     #Article 67
     amend_error_in_article 67 '\[l\] The' '[1] The' | \
     amend_error_in_article 67 'regulate\.or' 'regulate or' | \
@@ -327,6 +360,8 @@ function amend_errors_in_articles {
     amend_error_in_article 69 '_personal injury' 'personal injury' | \
     amend_error_in_article 69 'donnant' 'dormant' | \
     amend_error_in_article 69 'fonn' 'form' | \
+    amend_error_in_article 69 'import or export' 'imports or exports' | \
+    amend_error_in_article 69 'various, viruses' 'various viruses' | \
     #Article 70
     amend_error_in_article 70 'Conserva -tion.*\[2\]' '[2]' | \
     amend_error_in_article 70 '\[l\]' '[1]' | \
@@ -344,13 +379,13 @@ function amend_errors_in_articles {
     amend_error_in_article 74 'lay~r;or .' 'layer;' | \
     amend_error_in_article 74 'iikely' 'likely' | \
     amend_error_in_article 74 'aildconsiifuption ' 'and consumption ' | \
+    amend_error_in_article 74 'sector of Ministry' 'sector Ministry' | \
     #Article 75
     amend_error_in_article 75 'wanning' 'warning' | \
     amend_error_in_article 75 'schot>ls' 'schools' | \
     amend_error_in_article 75 'finn' 'firm' | \
     amend_error_in_article 75 '\[s\]' '(s)' | \
     amend_error_in_article 75 'global warning' 'global warming' | \
-    amend_error_in_article 75 'gases' 'gasses' | \
     #Article 76
     sed -E 's/76,-\[1\]/\n\n(76) [1]/' | \
     amend_error_in_article 75 'Measures on climate.*$' '' | \
@@ -376,6 +411,7 @@ function amend_errors_in_articles {
     amend_error_in_article 77 'fonnulations' 'formulations' | \
     amend_error_in_article 77 'iri' 'in' | \
     amend_error_in_article 77 'incfostrial' 'industrial' | \
+    amend_error_in_article 77 'shall mainstream respective parts of the National Implementation Plan and into their policies' 'shall mainstream respective parts of the National Implementation Plan into their policies' | \
     #Article 78
     amend_error_in_article 77 '78~-\( l \):' '\n\n(78) [1]' | \
     amend_error_in_article 78 'Infonned Consent \[PIC\]' 'Informed Consent (PIC)' | \
@@ -386,7 +422,7 @@ function amend_errors_in_articles {
     #Article 79
     amend_error_in_article 79 'stistmnable' 'sustainable' | \
     amend_error_in_article 79 'coµ.sumption' 'consumption' | \
-    amend_error_in_article 79 '. \[d\] Economic Instruments' '\n\n[d] Economic Instruments' | \
+    amend_error_in_article 79 '. \[d\] Economic Instruments' '\n\n(d) Economic Instruments' | \
     #Article 80
     amend_error_in_article 80 'Promotion of cleaner.*Impact Assessm ent ' '' | \
     amend_error_in_article 80 '\[t\] encourage' '[f] encourage' | \
@@ -412,6 +448,8 @@ function amend_errors_in_articles {
     amend_error_in_article 85 'i \[c\]' '[c]' | \
     amend_error_in_article 85 'maintainedby' 'maintained by' | \
     amend_error_in_article 85 'Councilin' 'Council in' | \
+    amend_error_in_article 85 'analyzing the required data' 'analyzing of the required data' | \
+    amend_error_in_article 85 'contents, may be searched' 'contents may be searched' | \
     #Article 86
     amend_error_in_article 86 '\[l\] The' '[1] The' | \
     amend_error_in_article 86 '\[l\] shall' '[1] shall' | \
@@ -420,11 +458,13 @@ function amend_errors_in_articles {
     amend_error_in_article 87 'set,up' 'set up' | \
     amend_error_in_article 87 'tiie' 'the' | \
     amend_error_in_article 87 ' mental Impact Statement' '.' | \
+    amend_error_in_article 87 'but not limited to' 'but is not limited to' | \
     #Article 88
     amend_error_in_article 88 "'lfflpection " '' | \
     amend_error_in_article 88 '~f pose ' '' | \
     amend_error_in_article 88 '-Impact' 'Impact' | \
     amend_error_in_article 88 '~n' 'in' | \
+    amend_error_in_article 88 'for proposed project' 'for the proposed project' | \
     #Article 89
     amend_error_in_article 89 '\[l\] Without' '[1] Without' | \
     amend_error_in_article 89 'Environmental Impact Statement review.*the Minister' ':' | \
@@ -439,6 +479,9 @@ function amend_errors_in_articles {
     amend_error_in_article 93 "Social, economic,'" 'social, economic,' | \
     #Article 95
     amend_error_in_article 95 'disapprove an' 'disapprove an Environmental Impact Statement' | \
+    amend_error_in_article 95 'Environmental Impact Statement Environmental Impact Statement' 'Environmental Impact Statement' | \
+    #Article 96
+    amend_error_in_article 96 'record referred under' 'record referred to under' | \
     #Article 97
     amend_error_in_article 96 '\[97\]' '\n\n(97)' | \
     amend_error_in_article 96 'Cancellation of licence upon.*$' '' | \
@@ -447,7 +490,8 @@ function amend_errors_in_articles {
     amend_error_in_article 97 '_ _ Impact Assessment study wi~in' 'within' | \
     amend_error_in_article 97 "_ \. \[a\] there'" '[a] there' | \
     amend_error_in_article 97 '_ threat$' ' threats' | \
-    amend_error_in_article 97 'environmental_ threat$' 'an environmental threat' | \
+    amend_error_in_article 97 'Assessment mental study' 'Assessment study' | \
+    amend_error_in_article 97 'environmental_ threat\$' 'environmental threats' | \
     #Article 98
     amend_error_in_article 97 'Offence ~8.' '\n\n(98)' | \
     amend_error_in_article 98 'di,rections for con:' 'directions' | \
@@ -462,6 +506,7 @@ function amend_errors_in_articles {
     amend_error_in_article 100 'revocatioh' 'revocation' | \
     #Article 101
     amend_error_in_article 101 'Monitoring compliance with.*' '' | \
+    amend_error_in_article 101 'may; upon' 'may, upon' | \
     #Article 102
     amend_error_in_article 102 'the holder:fulfils' 'the holder fulfills' | \
     #Article 104
@@ -478,6 +523,8 @@ function amend_errors_in_articles {
     amend_error_in_article 104 'of\.objection' 'of objection' | \
     amend_error_in_article 104 'fmal' 'final' | \
     amend_error_in_article 104 'revisedbill' 'revised bill' | \
+    amend_error_in_article 104 'likely effects of such regulations' 'likely effects such regulations' | \
+    amend_error_in_article 104 'policy Bills' 'policy, Bill' | \
     #Article 105
     amend_error_in_article 105 '\(1 \)' '[1]' | \
     amend_error_in_article 105 '1he' 'the' | \
@@ -487,6 +534,8 @@ function amend_errors_in_articles {
     amend_error_in_article 105 'mining,energy or w;:iter reg~ng' 'mining, energy or water regarding' | \
     amend_error_in_article 105 'io:be' 'to be' | \
     amend_error_in_article 105 'water project shall' 'water projects shall' | \
+    amend_error_in_article 105 'mine or oil and gas site' 'mine or oil and gas sites' | \
+    amend_error_in_article 105 'these development' 'these developments' | \
     #Article 106
     amend_error_in_article 106 'authoriz.ation' 'authorization' | \
     amend_error_in_article 106 'permitor' 'permit or' | \
@@ -516,6 +565,7 @@ function amend_errors_in_articles {
     amend_error_in_article 109 'refuse-of' 'refuse of' | \
     amend_error_in_article 109 "solid'" 'solid' | \
     amend_error_in_article 109 "coinmits an' offence .." 'commits an offence.' | \
+    amend_error_in_article 109 'to be earned' 'to be carried' | \
     #Article 110
     amend_error_in_article 110 'containmg' 'containing' | \
     amend_error_in_article 110 "o'r" 'or' | \
@@ -528,6 +578,7 @@ function amend_errors_in_articles {
     amend_error_in_article 110 'The Council shall ~k an order of the coui:t f9r the d~~po~' ' The Council shall make an order of the court for the disposal' | \
     amend_error_in_article 110 'writtentaw, theCouncttshatl' 'written law, the Council shall' | \
     amend_error_in_article 110 'measures \.' 'measures.' | \
+    amend_error_in_article 110 'energy; \[b\] industries' 'energy industries; [b]' | \
     #Article 111
     amend_error_in_article 111 'Duty to keep.*or activity ' '' | \
     #Article 112
@@ -541,6 +592,8 @@ function amend_errors_in_articles {
     amend_error_in_article 113 'activit\.' 'activity' | \
     amend_error_in_article 113 'it impose' 'it imposes' | \
     amend_error_in_article 113 'activity.,' 'activity.' | \
+    amend_error_in_article 113 'ceases, to have effect' 'ceases to have effect' | \
+    amend_error_in_article 113 'where, it applies' 'where it applies' | \
     #Article 114
     amend_error_in_article 114 'formechanisms' 'for mechanisms' | \
     amend_error_in_article 114 'manufucturers' 'manufacturers' | \
@@ -555,11 +608,14 @@ function amend_errors_in_articles {
     amend_error_in_article 115 '. . J' '.' | \
     amend_error_in_article 115 'purpo~s' 'purpose' | \
     amend_error_in_article 115 'police,army' 'police, army' | \
+    amend_error_in_article 115 'geographical areas of jurisdictions' 'geographical areas of jurisdiction' | \
+    amend_error_in_article 115 '\[4\] for' '[4] For' | \
     #Article 116
     amend_error_in_article 116 'shalt' 'shall' | \
     #Article 118
     amend_error_in_article 118 'so\}id' 'solid' | \
     amend_error_in_article 118 'a11d se.cu_red to preve.nt' 'and secured to prevent' | \
+    amend_error_in_article 118 'solid stations waste are generated' 'solid waste are generated' | \
     #Article 119
     amend_error_in_article 119 'me1hod' 'method' | \
     #Article 120
@@ -577,10 +633,12 @@ function amend_errors_in_articles {
     amend_error_in_article 120 '\[vi\]' '[vii]' | \
     amend_error_in_article 120 '\( any' '[vi] any' | \
     amend_error_in_article 120 'whetherpublic' 'whether public' | \
+    amend_error_in_article 120 'in relation to litter; include' 'in relation to litter, includes' | \
     #Article 121
     amend_error_in_article 121 'or.escaping onto the public place.:' 'or escaping onto the public place.' | \
     amend_error_in_article 121 'subsection\[2\]' 'subsection [2]' | \
     amend_error_in_article 121 'design \.' 'design' | \
+    amend_error_in_article 121 'Where it is shown that, excessive' 'Where it is shown that excessive' | \
     #Article 124
     amend_error_in_article 123 'Article \[124\]' '\n\n(124)' | \
     amend_error_in_article 123 'Occupiers of private land to clear.*$' '' | \
@@ -598,6 +656,9 @@ function amend_errors_in_articles {
     amend_error_in_article 130 '; _' ';' | \
     #Article 131
     amend_error_in_article 131 '-specifications-of chimneys and -gas controlling -devices .' 'specifications of chimneys and gas controlling devices' | \
+    amend_error_in_article 131 'taking into consideration of the wind' 'taking into consideration the wind' | \
+    #Article 132
+    amend_error_in_article 132 '\[e\]' '\n\n(e)' | \
     #Article 133
     amend_error_in_article 133 'Gaseous wastes from.*to hazardous waste ' '' | \
     amend_error_in_article 133 '_and_appropriate' 'and appropriate' | \
@@ -607,6 +668,7 @@ function amend_errors_in_articles {
     amend_error_in_article 134 'haz.mdous wms' 'hazardous wastes' | \
     amend_error_in_article 134 '-with' 'with' | \
     amend_error_in_article 134 'final-disposal' 'final disposal' | \
+    amend_error_in_article 134 'at all the time' 'at all times' | \
     #Article 135
     amend_error_in_article 135 'healt.,' 'health,' | \
     amend_error_in_article 135 'Regulations.,' 'Regulations.' | \
@@ -617,9 +679,11 @@ function amend_errors_in_articles {
     amend_error_in_article 137 '\[l\] The' '[1] The' | \
     amend_error_in_article 137 '\[w\]PSte~ .\*111d drugs' 'wastes and' | \
     amend_error_in_article 137 'includes but not' 'includes but is not' | \
+    amend_error_in_article 137 'coagulated blood wastes and' 'coagulated blood wastes and drugs' | \
     #Article 138
     amend_error_in_article 137 'Article \[138\]' '\n\n(138)' | \
     amend_error_in_article 137 'Movement of hazardous waste Environmental.*$' '' | \
+    amend_error_in_article 138 '\[t\]' '[f]' | \
     #Article 138
     amend_error_in_article 138 'froni ' 'from ' | \
     #Artilce 139
@@ -632,6 +696,8 @@ function amend_errors_in_articles {
     #Article 140
     amend_error_in_article 140 "'Committee" 'Committee' | \
     amend_error_in_article 140 "< '," '' | \
+    amend_error_in_article 140 '\[t\]' '[f]' | \
+    amend_error_in_article 140 'standard: \[2\]' 'standard. [2]' | \
     #Article 142
     amend_error_in_article 142 'the.Council may.-,: .. . .. .. -: ' 'the Council may:' | \
     amend_error_in_article 142 'aircraft"' 'aircraft' | \
@@ -641,6 +707,9 @@ function amend_errors_in_articles {
     amend_error_in_article 142 'Compliance with standards.*quality standards ' '' | \
     amend_error_in_article 142 'C:ouncil shall nuuntain close collaborat,ion' 'Council shall maintain close collaboration' | \
     amend_error_in_article 142 'gases' 'gasses' | \
+    amend_error_in_article 142 'may:\[a\]' 'may: [a]' | \
+    amend_error_in_article 142 'area premise' 'area, premise' | \
+    amend_error_in_article 142 'and criteria' '[2] Subject to the provisions of any other law, any person who pennits or causes to permit pollution or emission in excess of environmental quality standards and criteria' | \
     #Article 143
     amend_error_in_article 143 '-water for-' 'water for ' | \
     #Article 144
@@ -655,10 +724,11 @@ function amend_errors_in_articles {
     amend_error_in_article 147 'frcm soorces refurred to in paragrap:l \( e \)' 'from sources referred to in paragraph [e]' | \
     #Article 148
     amend_error_in_article 148 'detennination' 'determination' | \
+    amend_error_in_article 148 'issue, guidelines' 'issue guidelines' | \
     #Article 149
     amend_error_in_article 148 '\[149\]' '\n\n(149)' | \
     amend_error_in_article 148 'Standards for the control.*$' '' | \
-    amend_error_in_article 149 'shalls' 'shall:' | \
+    amend_error_in_article 149 'shalls' 'shall: ' | \
     amend_error_in_article 149 'for minimization of radiation Soil quality standards' '' | \
     amend_error_in_article 149 '  ' '' | \
     #Article 151
@@ -670,12 +740,14 @@ function amend_errors_in_articles {
     amend_error_in_article 151 'haz.ard' 'hazard' | \
     amend_error_in_article 151 'haz.ard' 'hazard' | \
     amend_error_in_article 151 '\[t\] prevent' '[f] prevent' | \
+    amend_error_in_article 151 'as may, enable' 'as may enable' | \
     #Article 152
     amend_error_in_article 151 '\[152\]:' '\n\n(152)' | \
     amend_error_in_article 152 'order,.within' 'order, within' | \
     amend_error_in_article 152 'h~ful' 'harmful' | \
     amend_error_in_article 152 'o6tained' 'obtained' | \
     amend_error_in_article 152 ' No. 20 Environmental Management' '' | \
+    amend_error_in_article 152 'in a manner, which' 'in a manner which' | \
     #Article 153 
     amend_error_in_article 153 'tenns' 'terms' | \
     amend_error_in_article 153 'ofcnvi:' 'or' | \
@@ -683,6 +755,7 @@ function amend_errors_in_articles {
     amend_error_in_article 153 'action tal ' 'action ' | \
     amend_error_in_article 153 "~:'\!oraharm " 'harm ' | \
     amend_error_in_article 153 'order order' 'order.' | \
+    amend_error_in_article 153 'harm has been or Service or is likely' 'harm has been or is likely' | \
     #Article 154
     amend_error_in_article 153 'Article \[154\]' '\n\n(154)' | \
     amend_error_in_article 154 'Advice ' '' | \
@@ -697,6 +770,7 @@ function amend_errors_in_articles {
     sed -E "s/particular.part ofit which is'burdened/particular part of it which is burdened/" | \
     sed -E 's/tenn of years/term of years/' | \
     sed -E 's/environmenprotection/environment protection/' | \
+    sed -E 's/satisfied that, the recommendation/satisfied that the recommendation/' | \
     #Article 157
     amend_error_in_article 157 'pe~n' 'person' | \
     amend_error_in_article 157 ".. . '• . -~ .. . ., . ..... '. . . : ' .. " '' | \
@@ -714,6 +788,7 @@ function amend_errors_in_articles {
     amend_error_in_article 159 'def me ' 'define ' | \
     #Article 160
     amend_error_in_article 160 'A.cquisi#onAct, 1967an4 ~e 4m~ A~, \[1999\] ' 'Acquisition Act, 1967 and the Land Act, 1999.\n\n' | \
+    sed -E 's/\[c\] Conservation/[c] conservation/' | \
     #Article 161
     amend_error_in_article 161 '~ent' 'an easement' | \
     amend_error_in_article 161 'l~d; Compensation.*\[h\]' 'land; [h]' | \
@@ -728,6 +803,7 @@ function amend_errors_in_articles {
     amend_error_in_article 164 'No. 20 Environmental Management' '' | \
     #Article 166
     amend_error_in_article 166 'CoW1cil' 'Council' | \
+    amend_error_in_article 166 'of the records' 'of the records.' | \
     #Article 167
     amend_error_in_article 166 'Record keeping of matters impacting on the environment Annual submission of records, \[167\],' '\n\n(167) ' | \
     amend_error_in_article 167 'Disclorequire' 'require' | \
@@ -796,12 +872,16 @@ function amend_errors_in_articles {
     #Article 184
     amend_error_in_article 184 'contrmy' 'contrary' | \
     amend_error_in_article 184 'thound' 'thousand' | \
+    amend_error_in_article 184 '86 \[1\]' '86[1]' | \
+    #Article 185
+    amend_error_in_article 185 'by: products' 'by-products' | \
     #Article 186
     amend_error_in_article 186 'person_who' 'person who' | \
     amend_error_in_article 186 '110 ' 'no ' | \
     amend_error_in_article 186 'fme ' 'fine ' | \
     amend_error_in_article 186 'Offences relating to records.*$' '' | \
     amend_error_in_article 186 'Offences relating to environmenta! impact assessment' '' | \
+    amend_error_in_article 186 'provided for; or' 'provided; or' | \
     #Article 187
     amend_error_in_article 187 'whorelating' 'who:' | \
     amend_error_in_article 187 'to pollu: dischatges' 'discharges' | \
@@ -809,9 +889,12 @@ function amend_errors_in_articles {
     amend_error_in_article 187 'environm.ent' 'environment' | \
     amend_error_in_article 187 '1:he' 'the' | \
     amend_error_in_article 187 'dischatges' 'discharges' | \
+    #Article 188
+    amend_error_in_article 188 'commits, an offence' 'commits an offence' | \
     #Article 189
     amend_error_in_article 189 'erivironmental' 'environmental' | \
     amend_error_in_article 189 '~d 103 ' '' | \
+    amend_error_in_article 189 'easement, issued' 'easement issued' | \
     #Article 190
     amend_error_in_article 189 '190,-' '\n\n(190) ' | \
     amend_error_in_article 190 '_ .... ' '' | \
@@ -819,18 +902,27 @@ function amend_errors_in_articles {
     amend_error_in_article 190 'shillings \[2\]' 'shillings. [2]' | \
     amend_error_in_article 190 '11,1ay' 'may' | \
     amend_error_in_article 190 'Offences relating to litter 104 ' '' | \
+    amend_error_in_article 190 'waste, \[e\]' 'waste; [e]' | \
+    amend_error_in_article 190 'remove it; or;' 'remove it; or' | \
+    amend_error_in_article 190 '121,or' '121; or' | \
+    amend_error_in_article 190 '122, or' '122; or' | \
+    amend_error_in_article 190 'imposing of penalty' 'imposing a penalty' | \
     #Article 191
     amend_error_in_article 190 ' General \[191\]' '\n\n(191)' | \
     amend_error_in_article 191 'Civil lia: ' '' | \
+    amend_error_in_article 191 'provision penalty of this Act' 'provision of this Act' | \
+    amend_error_in_article 191 'specifically provided for' 'specifically provided' | \
     #Article 192
     amend_error_in_article 192 'bility ' '' | \
     amend_error_in_article 192 'Forfeiture, cancellation, commu: nity service and other orders ' '' | \
+    amend_error_in_article 192 'under this Act, shall' 'under this Act shall' | \
     #Article 193
     amend_error_in_article 193 'chaiged' 'charged' | \
     amend_error_in_article 193 'ofin' 'of in' | \
     amend_error_in_article 193 '105 ' '' | \
     amend_error_in_article 193 '   ' ' ' | \
     amend_error_in_article 193 'accordances' 'accordance' | \
+    amend_error_in_article 193 'be or disposed of' 'be disposed of' | \
     #Article 194
     amend_error_in_article 194 'ac.cepting . ' 'accepting ' | \
     amend_error_in_article 194 'alticle' 'article' | \
@@ -840,6 +932,7 @@ function amend_errors_in_articles {
     amend_error_in_article 195 'ciroumstances' 'circumstances' | \
     amend_error_in_article 195 'emeigency' 'emergency' | \
     amend_error_in_article 195 'ofaday after the ~ ~ified inJhe ord~r' 'of a day after the date specified in the order' | \
+    amend_error_in_article 195 'subsection \[3\], commits' 'subsection [3] commits' | \
     #Article 196
     amend_error_in_article 196 'order on' 'order on:' | \
     amend_error_in_article 196 'measuresthat' 'measures that' | \
@@ -850,6 +943,11 @@ function amend_errors_in_articles {
     amend_error_in_article 196 'toa' 'to a' | \
     amend_error_in_article 196 '~~ng ' 'exceeding ' | \
     amend_error_in_article 196 'areview' 'a review' | \
+    amend_error_in_article 196 'subsection \[3\], commits' 'subsection [3] commits' | \
+    amend_error_in_article 196 'on \[a\] the' 'on: [a] the' | \
+    amend_error_in_article 196 '\[e\] to prevent' '[e] prevent' | \
+    amend_error_in_article 196 'is served, shall comply' 'is served shall comply' | \
+    amend_error_in_article 196 'subsection \[3\], commits' 'subsection [3] commits' | \
     #Article 197
     amend_error_in_article 196 '197 .-' '\n\n(197) ' | \
     amend_error_in_article 197 'discluuge' 'discharge' | \
@@ -858,21 +956,34 @@ function amend_errors_in_articles {
     amend_error_in_article 197 'Emergency protection order 108 Environmental compliance order ' '' | \
     amend_error_in_article 197 'fme' 'fine' | \
     amend_error_in_article 197 'or:der .~as' 'order has' | \
+    amend_error_in_article 197 'owner manager' 'owner, manager' | \
+    amend_error_in_article 197 'manager of person' 'manager or person' | \
+    amend_error_in_article 197 'subsection \[3\], commits' 'subsection [3] commits' | \
+    amend_error_in_article 197 'one hundred thousand shilling ' 'one hundred thousand shillings ' | \
     #Article 198
     amend_error_in_article 197 '198,-' '\n\n(198) ' | \
     amend_error_in_article 198 'breach.within' 'breach within' | \
     amend_error_in_article 198 '109 ' '' | \
     amend_error_in_article 198 'ifno ' 'if no ' | \
+    amend_error_in_article 198 'compliance order on: the' 'compliance order on the' | \
+    amend_error_in_article 198 'subsection \[4\], commits' 'subsection [4] commits' | \
+    amend_error_in_article 198 'one hundred thousand shilling ' 'one hundred thousand shillings ' | \
     #Article 199
     amend_error_in_article 199 '110 Offences in relation to environmental inspectors Liabiiity of managers of bodies corporate Article \[200\]' '\n\n(200)' | \
+    amend_error_in_article 199 'requirement Cost' 'requirement' | \
     #Article 200
     amend_error_in_article 200 "Act '" 'Act' | \
     amend_error_in_article 200 'tenn ' 'term ' | \
+    amend_error_in_article 200 'Act \[c\]' 'Act; [c]' | \
+    amend_error_in_article 200 'conviction, to a fine' 'conviction to a fine' | \
     #Article 201
     amend_error_in_article 201 '\[l\]Where a body corporatti colllll1its' '[1] Where a body corporate commits' | \
     amend_error_in_article 201 'pefSOn' 'person' | \
     amend_error_in_article 201 'tenn' 'term' | \
     amend_error_in_article 201 'No. 20 Environmental Management' '' | \
+    amend_error_in_article 201 'management of, a body' 'management of a body' | \
+    amend_error_in_article 201 'subsection \[2\], commits' 'subsection [2] commits' | \
+    amend_error_in_article 201 'shall, on conviction' 'shall on conviction' | \
     #Article 202
     amend_error_in_article 202 'provisionof' 'provision of' | \
     amend_error_in_article 202 'legal persons' "legal person's" | \
@@ -883,18 +994,21 @@ function amend_errors_in_articles {
     amend_error_in_article 204 '_;' ';' | \
     amend_error_in_article 204 'temt . ofthree' 'term of three' | \
     amend_error_in_article 204 'reappoin1rnent forJurther Qne temt' 'reappointment for further one term' | \
-    amend_error_in_article 204 'Right of individual and legal.*of the Tribunal ' '' | \
+    amend_error_in_article 204 'Right of individual and legal.*Tribunal Jurisdiction of the Tribunal ' '' | \
     amend_error_in_article 204 'which;are' 'which are' | \
     amend_error_in_article 204 '  ' ' ' | \
     #Article 206
     amend_error_in_article 206 'subsection \[2\]' 'subsection [2].' | \
     amend_error_in_article 206 'resbiction' 'restriction' | \
     amend_error_in_article 206 '113 ' '' | \
+    amend_error_in_article 206 '\[2\] \[2\]' '[2]. [2]' | \
+    amend_error_in_article 206 '\[2\].,' '[2],' | \
     #Article 207
     amend_error_in_article 207 '\[1967\]' '1967.' | \
     amend_error_in_article 207 'may,for' 'may, for' | \
-    amend_error_in_article 207 'Proceedings of the Tribunal Acts.*of the Tribunal ' '' | \
+    amend_error_in_article 207 'Proceedings of the Tribunal Acts.*Remuneration of members of the Tribunal ' '' | \
     amend_error_in_article 207 'under-this' 'under this' | \
+    amend_error_in_article 207 'sitting, \[b\]' 'sitting; [b]' | \
     #Article 208
     amend_error_in_article 207 '208~\{1\) Jbe' '\n\n(208) [1] The' | \
     #Article 210
@@ -909,6 +1023,7 @@ function amend_errors_in_articles {
     #Article 213
     amend_error_in_article 213 'inte~ational' 'international' | \
     amend_error_in_article 213 "mann'er" 'manner' | \
+    amend_error_in_article 213 'shall be paid, all moneys' 'shall be paid all moneys' | \
     #Article 214
     amend_error_in_article 213 '\[214\]:' '\n\n(214) ' | \
     amend_error_in_article 214 'Establishment of the National.*f2001 ' '' | \
@@ -926,6 +1041,7 @@ function amend_errors_in_articles {
     amend_error_in_article 218 'fulfilment' 'fulfillment' | \
     #Article 219
     amend_error_in_article 219 'Tanz.ania' 'Tanzania' | \
+    amend_error_in_article 219 'the opinion that, the public interest' 'the opinion that the public interest' | \
     #Article 220
     amend_error_in_article 220 'Sources of funds of.*$' '' | \
     #Article 222
@@ -942,6 +1058,7 @@ function amend_errors_in_articles {
     amend_error_in_article 227 'required bond' 'required.' | \
     amend_error_in_article 227 'Right to compensation the -Director ' 'the Director ' | \
     amend_error_in_article 227 'sub section \[5\],' 'subsection [5], it' | \
+    amend_error_in_article 227 'activities mental or processes' 'activities or processes' | \
     #Article 228
     amend_error_in_article 228 'Environ:' '' | \
     #Article 229
@@ -949,6 +1066,9 @@ function amend_errors_in_articles {
     amend_error_in_article 229 'instrusions' 'intrusions' | \
     amend_error_in_article 229 '121 ' '' | \
     amend_error_in_article 229 'ofland' 'of land' | \
+    amend_error_in_article 229 'management mental of' 'management of' | \
+    amend_error_in_article 229 'emergency preparedness \[a\]' '[a]' | \
+    amend_error_in_article 229 'refugees, and \[f\]' 'refugees; and [f]' | \
     #Article 230
     amend_error_in_article 230 'puipose of Regulatgiving' 'purpose of giving' | \
     amend_error_in_article 230 ' ions' '.' | \
@@ -971,30 +1091,30 @@ function amend_errors_in_articles {
 function amend_errors_in_headers {
   sed -E 's/PART I /PART I - /' | \
     sed -E 's/PART II GENERAL/\n\nPART II - GENERAL/' | \
-    sed -E 's/PARTill ADMINISTRATION AND INSTITUTIONAL ARRANGEMENT \[a\] National Environmental Advisory Committee/\n\nPART III - ADMINISTRATION AND INSTITUTIONAL ARRANGEMENT\n\n[a] National Environmental Advisory Committee/' | \
+    sed -E 's/PARTill ADMINISTRATION AND INSTITUTIONAL ARRANGEMENT \[a\] National Environmental Advisory Committee/\n\nPART III - ADMINISTRATION AND INSTITUTIONAL ARRANGEMENT\n\n(a) National Environmental Advisory Committee/' | \
     sed -E 's/PART IV ENvlR.ONMENTAL. PLANNING /\n\nPART IV - ENVIRONMENTAL PLANNING/' | \
-    sed -E 's/PARTV ENVIRONMENTAL MANAGEMENT \[a\] Environmental Protected Areas/\n\nPART V - ENVIRONMENTAL MANAGEMENT \n\n[a] Environmental Protected Areas/' | \
-    sed -E 's/\[b\] Environmental Management Plans for National Protected Areas/\n\n[b] Environmental Management Plans for National Protected Areas/' | \
-    sed -E 's/\[c\] Conservation and Protection/\n\n[c] Conservation and Protection/' | \
+    sed -E 's/PARTV ENVIRONMENTAL MANAGEMENT \[a\] Environmental Protected Areas/\n\nPART V - ENVIRONMENTAL MANAGEMENT \n\n(a) Environmental Protected Areas/' | \
+    sed -E 's/\[b\] Environmental Management Plans for National Protected Areas/\n\n(b) Environmental Management Plans for National Protected Areas/' | \
+    sed -E 's/\[c\] Conservation and Protection/\n\n(c) Conservation and Protection/' | \
     sed -E 's/PART VI ENvlRONMENTAL/\n\nPART VI - ENVIRONMENTAL/' | \
     sed -E 's/PARTVII/\n\nPART VII -/' | \
     sed -E 's/PARTVill/\n\nPART VIII -/' | \
-    sed -E 's/PART IX WASTE MANAGEMENT [a] Management of Solid Waste/\n\nPART IX - WASTE MANAGEMENT \n\n[a] Management of Solid Waste/' | \
-    sed -E 's/\[b\] Management of Litter/\n\n[b] Management of Litter/' | \
-    sed -E 's/\[c\] Management of Liquid Waste/\n\n[c] Management of Liquid Waste/' | \
-    sed -E 's/\[d\] Management of Gaseous Waste/\n\n[d] Management of Gaseous Waste/' | \
+    sed -E 's/PART IX WASTE MANAGEMENT [a] Management of Solid Waste/\n\nPART IX - WASTE MANAGEMENT \n\n(a) Management of Solid Waste/' | \
+    sed -E 's/\[b\] Management of Litter/\n\n(b) Management of Litter/' | \
+    sed -E 's/\[c\] Management of Liquid Waste/\n\n(c) Management of Liquid Waste/' | \
+    sed -E 's/\[d\] Management of Gaseous Waste/\n\n(d) Management of Gaseous Waste/' | \
     sed -E 's/\[e\] Management of Hazardous Waste/[e] Management of Hazardous Waste/' | \
     sed -E 's/PARTX ENvlR.ONMENTAL QUALITY STANDARDS/\n\nPART X - ENVIRONMENTAL QUALITY STANDARDS/' | \
-    sed -E 's/PART XI ENvlR.ONMENTAL RESTORATION, EASEMENTS AND CONSERVATION ORDERS \[a\] Restoration Orders/\n\nPART XI - ENVIRONMENTAL RESTORATION, EASEMENTS AND CONSERVATION ORDERS\n\n[a] Restoration Orders/' | \
-    sed -E 's/\[b\] Easements Orders _156.:/\n\n[b] Easements Order\n\n(156)/' | \
+    sed -E 's/PART XI ENvlR.ONMENTAL RESTORATION, EASEMENTS AND CONSERVATION ORDERS \[a\] Restoration Orders/\n\nPART XI - ENVIRONMENTAL RESTORATION, EASEMENTS AND CONSERVATION ORDERS\n\n(a) Restoration Orders/' | \
+    sed -E 's/\[b\] Easements Orders _156.:/\n\n(b) Easements Order\n\n(156)/' | \
     sed -E 's/PART XII ANALYSIS AND RECORDS/\n\nPART XII - ANALYSIS AND RECORDS/' | \
     sed -E 's/PARTXIll ENvlR.ONMENTAL INFORMATION, EDUCATION AND RESEARCH/\n\nPART XIII - ENVIRONMENTAL INFORMATION, EDUCATION AND RESEARCH/' | \
     sed -E 's/PART XIV PuBLIC PARTICIPATION IN ENvlRONMENTAL DECISION MAKING/\n\nPART XIV - PUBLIC PARTICIPATION IN ENVIRONMENTAL DECISION MAKING/' | \
-    sed -E 's/PART IX WASTE MANAGEMENT \[a\] Management of Solid Waste/\n\nPART IX - WASTE MANAGEMENT\n\n[a] Management of Solid Waste/' | \
+    sed -E 's/PART IX WASTE MANAGEMENT \[a\] Management of Solid Waste/\n\nPART IX - WASTE MANAGEMENT\n\n(a) Management of Solid Waste/' | \
     sed -E 's/PART XV INTERNATIONAL AGREEMENTS/\n\nPART XV - INTERNATIONAL AGREEMENTS/' | \
     sed -E 's/PART XVI COMPLIANCE AND ENFORCEMENT/\n\nPART XVI - COMPLIANCE AND ENFORCEMENT/' | \
     sed -E 's/PART XVII ENvlRONMENTAL APPEALS TRIBUNAL/\n\nPART XVII - ENVIRONMENTAL APPEALS TRIBUNAL/' | \
-    sed -E 's/PARTXVm NATIONAL ENvlRONMENTAL TR.UST FuNo/\n\nPART XV - NATIONAL ENVIRONMENTAL/' | \
+    sed -E 's/PARTXVm NATIONAL ENvlRONMENTAL TR.UST FuNo/\n\nPART XVIII - NATIONAL ENVIRONMENTAL/' | \
     sed -E 's/PART XIX FINANCIAL PROVISIONS/\n\nPART XIX - FINANCIAL PROVISIONS/' | \
     sed -E 's/PART XX GENERAL AND TRANSITIONAL PROVISIONS/\n\nPART XX - GENERAL AND TRANSITIONAL PROVISIONS/' 
 }
@@ -1250,6 +1370,6 @@ function preprocess_state_and_language_input_file {
     apply_common_transformations_to_stdin "$language" | \
     remove_all_text_after_last_article | \
     amend_errors_in_articles | \
-    amend_errors_in_headers | \
-    remove_and_reinsert_article_titles
+    amend_errors_in_headers 
+    #remove_and_reinsert_article_titles
 }
