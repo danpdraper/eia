@@ -207,6 +207,7 @@ function amend_errors_in_articles {
     amend_error_in_article 36 'by~laws' 'bylaws' | \
     amend_error_in_article 36 'FW1Ctions.*$' '' | \
     amend_error_in_article 36 'the Management Officer who shall be known' 'the Management Officer shall be known' | \
+    amend_error_in_article 36 'the Management Officer who shall be known as the District Environment Management Officer' 'the Management Officer shall be known as the District Environment Management Officer' | \
     #Article 37
     amend_error_in_article 37 'Commit: ' '' | \
     amend_error_in_article 37 'tees of ' '' | \
@@ -264,6 +265,7 @@ function amend_errors_in_articles {
     amend_error_in_article 49 '\[e\] benefit' '[d] benefit' | \
     amend_error_in_article 49 '\[t\] entrance' '[e] entrance' | \
     amend_error_in_article 49 '\[g\] any other' '[f] any other' | \
+    amend_error_in_article 49 '\[c\] conservation' '\n\n[c] Conservation' | \
     #Article 50
     sed -E 's/SO\./\n\n(50)/' | \
     #Article 51
@@ -294,7 +296,7 @@ function amend_errors_in_articles {
     amend_error_in_article 55 'any of the following activity' 'any of the following activities' | \
     amend_error_in_article 55 'lake or, lakeshore' 'lake or lakeshore' | \
     amend_error_in_article 55 'lakeshore shoreline' 'lakeshore, shoreline' | \
-    amend_error_in_article 55 'lake or; lakeshore ' 'lake or lakeshore ' | \
+    sed -E 's/lake or; lakeshore/lake or lakeshore/' | \
     #Article 56
     amend_error_in_article 56 'Declaration of protected wetlands 44 Prohibit:' '' | \
     #Article 57
@@ -579,6 +581,7 @@ function amend_errors_in_articles {
     amend_error_in_article 110 'writtentaw, theCouncttshatl' 'written law, the Council shall' | \
     amend_error_in_article 110 'measures \.' 'measures.' | \
     amend_error_in_article 110 'energy; \[b\] industries' 'energy industries; [b]' | \
+    amend_error_in_article 110 '\[b\], production' '[b] production' | \
     #Article 111
     amend_error_in_article 111 'Duty to keep.*or activity ' '' | \
     #Article 112
@@ -710,6 +713,7 @@ function amend_errors_in_articles {
     amend_error_in_article 142 'may:\[a\]' 'may: [a]' | \
     amend_error_in_article 142 'area premise' 'area, premise' | \
     amend_error_in_article 142 'and criteria' '[2] Subject to the provisions of any other law, any person who pennits or causes to permit pollution or emission in excess of environmental quality standards and criteria' | \
+    amend_error_in_article 142 'pennits' 'permits' | \
     #Article 143
     amend_error_in_article 143 '-water for-' 'water for ' | \
     #Article 144
@@ -788,7 +792,7 @@ function amend_errors_in_articles {
     amend_error_in_article 159 'def me ' 'define ' | \
     #Article 160
     amend_error_in_article 160 'A.cquisi#onAct, 1967an4 ~e 4m~ A~, \[1999\] ' 'Acquisition Act, 1967 and the Land Act, 1999.\n\n' | \
-    sed -E 's/\[c\] Conservation/[c] conservation/' | \
+    sed -E 's/\[c\] Conservation/(c) Conservation/' | \
     #Article 161
     amend_error_in_article 161 '~ent' 'an easement' | \
     amend_error_in_article 161 'l~d; Compensation.*\[h\]' 'land; [h]' | \
@@ -959,7 +963,7 @@ function amend_errors_in_articles {
     amend_error_in_article 197 'owner manager' 'owner, manager' | \
     amend_error_in_article 197 'manager of person' 'manager or person' | \
     amend_error_in_article 197 'subsection \[3\], commits' 'subsection [3] commits' | \
-    amend_error_in_article 197 'one hundred thousand shilling ' 'one hundred thousand shillings ' | \
+    sed -E 's/one hundred thousand shilling /one hundred thousand shillings /' | \
     #Article 198
     amend_error_in_article 197 '198,-' '\n\n(198) ' | \
     amend_error_in_article 198 'breach.within' 'breach within' | \
@@ -1114,7 +1118,7 @@ function amend_errors_in_headers {
     sed -E 's/PART XV INTERNATIONAL AGREEMENTS/\n\nPART XV - INTERNATIONAL AGREEMENTS/' | \
     sed -E 's/PART XVI COMPLIANCE AND ENFORCEMENT/\n\nPART XVI - COMPLIANCE AND ENFORCEMENT/' | \
     sed -E 's/PART XVII ENvlRONMENTAL APPEALS TRIBUNAL/\n\nPART XVII - ENVIRONMENTAL APPEALS TRIBUNAL/' | \
-    sed -E 's/PARTXVm NATIONAL ENvlRONMENTAL TR.UST FuNo/\n\nPART XVIII - NATIONAL ENVIRONMENTAL/' | \
+    sed -E 's/PARTXVm NATIONAL ENvlRONMENTAL TR.UST FuNo/\n\nPART XVIII - NATIONAL ENVIRONMENTAL TRUST FUND/' | \
     sed -E 's/PART XIX FINANCIAL PROVISIONS/\n\nPART XIX - FINANCIAL PROVISIONS/' | \
     sed -E 's/PART XX GENERAL AND TRANSITIONAL PROVISIONS/\n\nPART XX - GENERAL AND TRANSITIONAL PROVISIONS/' 
 }
@@ -1370,6 +1374,6 @@ function preprocess_state_and_language_input_file {
     apply_common_transformations_to_stdin "$language" | \
     remove_all_text_after_last_article | \
     amend_errors_in_articles | \
-    amend_errors_in_headers 
-    #remove_and_reinsert_article_titles
+    amend_errors_in_headers | \
+    remove_and_reinsert_article_titles
 }
