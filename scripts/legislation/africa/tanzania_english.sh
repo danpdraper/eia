@@ -265,7 +265,6 @@ function amend_errors_in_articles {
     amend_error_in_article 49 '\[e\] benefit' '[d] benefit' | \
     amend_error_in_article 49 '\[t\] entrance' '[e] entrance' | \
     amend_error_in_article 49 '\[g\] any other' '[f] any other' | \
-    amend_error_in_article 49 '\[c\] conservation' '\n\n[c] Conservation' | \
     #Article 50
     sed -E 's/SO\./\n\n(50)/' | \
     #Article 51
@@ -792,7 +791,7 @@ function amend_errors_in_articles {
     amend_error_in_article 159 'def me ' 'define ' | \
     #Article 160
     amend_error_in_article 160 'A.cquisi#onAct, 1967an4 ~e 4m~ A~, \[1999\] ' 'Acquisition Act, 1967 and the Land Act, 1999.\n\n' | \
-    sed -E 's/\[c\] Conservation/\n\n(c) Conservation/' | \
+    sed -E 's/\[c\] Conservation Orders/(c) Conservation Orders/' | \
     #Article 161
     amend_error_in_article 161 '~ent' 'an easement' | \
     amend_error_in_article 161 'l~d; Compensation.*\[h\]' 'land; [h]' | \
