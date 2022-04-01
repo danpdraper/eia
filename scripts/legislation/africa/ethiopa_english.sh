@@ -43,6 +43,7 @@ function amend_errors_in_articles {
     amend_error_in_article 2 'things.' 'things;' | \
     amend_error_in_article 2 'to, land atmosphere, whether' 'to land, atmosphere, whether' | \
     amend_error_in_article 2 '"Project" mans' '"Project" means' | \
+    amend_error_in_article 2 'whether and climate' 'weather and climate' | \
     #Article 3
     sed -E 's/Pro visions/Provisions/' | \
     sed -z 's/\nGeneral Provisions/General Provisions/' | \
@@ -66,6 +67,7 @@ function amend_errors_in_articles {
     sed -E 's/Duties of a Proponent/\n\nDuties of a Proponent\n(7)/' | \
     amend_error_in_article 7 'lR PBfYB' '\n\nlR PBfYB' | \
     amend_error_in_article 7 'fulfil1' 'fulfill' | \
+    amend_error_in_article 7 'incorporated the means' 'incorporate the means' | \
     #Article 8
     sed -E 's/\[I\] Environmental Impact Study Report/\n\nEnvironmental Impact Study Report\n(8)/' | \
     amend_error_in_article 8 '\[C\]' '[c]' | \
@@ -97,6 +99,7 @@ function amend_errors_in_articles {
     #Article 13
     sed -E 's/En vironmentallmpact Assessment ofpublic/Environmental Impact Assessment of Public/' | \
     amend_error_in_article 13 'enail' 'entail' | \
+    amend_error_in_article 13 'category as of public' 'category of public' | \
     #Article 14
     sed -z 's/\n\n\[2\] The regional/[2] The regional/' | \
     #Article 15
