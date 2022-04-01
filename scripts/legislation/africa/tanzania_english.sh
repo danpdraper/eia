@@ -792,7 +792,7 @@ function amend_errors_in_articles {
     amend_error_in_article 159 'def me ' 'define ' | \
     #Article 160
     amend_error_in_article 160 'A.cquisi#onAct, 1967an4 ~e 4m~ A~, \[1999\] ' 'Acquisition Act, 1967 and the Land Act, 1999.\n\n' | \
-    sed -E 's/\[c\] Conservation/(c) Conservation/' | \
+    sed -E 's/\[c\] Conservation/\n\n(c) Conservation/' | \
     #Article 161
     amend_error_in_article 161 '~ent' 'an easement' | \
     amend_error_in_article 161 'l~d; Compensation.*\[h\]' 'land; [h]' | \
@@ -851,6 +851,8 @@ function amend_errors_in_articles {
     amend_error_in_article 173 'trend.s' 'trends' | \
     amend_error_in_article 173 'co-ominate' 'co-ordinate' | \
     amend_error_in_article 173 '\[t\]' '[f]' | \
+    #Article 174
+    sed -E 's/operate a which/operate a Central Environmental Information System which/' | \
     #Article 176
     amend_error_in_article 176 "'._" '.' | \
     #Article 177
@@ -1297,7 +1299,7 @@ function remove_and_reinsert_article_titles {
     remove_and_reinsert_article_title 171 'Environmental records on mining activities ' | \
     remove_and_reinsert_article_title 172 'Freedom of access to environmental information ' | \
     remove_and_reinsert_article_title 173 'Powers of the Council to collect, analyse and disseminate environmental information ' | \
-    remove_and_reinsert_article_title 174 'Central Environmental Information System ' | \
+    sed -z 's/(174)/Central Environmental Information System\n(174)/' | \
     remove_and_reinsert_article_title 175 'State of the Environment Report ' | \
     remove_and_reinsert_article_title 176 'Environmental education and awareness ' | \
     remove_and_reinsert_article_title 177 'Environmental research ' | \
