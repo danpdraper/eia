@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function replace_bullet_point_like_characters_with_bullet_points {
   sed -E 's/\x01 /• /g'
 }
@@ -27,7 +25,7 @@ function amend_errors_in_articles {
     amend_error_in_article 15 'et tien ' 'et tient ' | \
     # Article 22
     amend_error_in_article 22 en-deça en-deçà | \
-    amend_error_in_article 22 "de d’administration" "de l’administration" | \
+    amend_error_in_article 22 "de d'administration" "de l'administration" | \
     # Article 30
     amend_error_in_article 30 'ne doit nuire' 'ne doivent nuire' | \
     # Article 31
@@ -60,7 +58,7 @@ function amend_errors_in_articles {
     # Article 82
     amend_error_in_article 82 soussols 'sous-sols' | \
     # Article 83
-    amend_error_in_article 83 "testes d’application" "textes d'application" | \
+    amend_error_in_article 83 "testes d'application" "textes d'application" | \
     # Article 88
     amend_error_in_article 88 '\(1\)' '[1]' | \
     # Article 90
@@ -76,10 +74,10 @@ function amend_errors_in_headers {
   sed -E 's/^(TITRE I.*)GENERALES/\1GÉNÉRALES/' | \
     sed -E 's/^(CHAPITRE I - DES )DEFINITIONS/\1DÉFINITIONS/' | \
     sed -E 's/^(CHAPITRE II - DES OBLIGATIONS )GENERALES/\1GÉNÉRALES/' | \
-    sed -E "s/^(TITRE II - DE L’)ELABORATION/\1ÉLABORATION/" | \
+    sed -E "s/^(TITRE II - DE L')ELABORATION/\1ÉLABORATION/" | \
     sed -E 's/^(CHAPITRE II - DES )ETUDES/\1ÉTUDES/' | \
     sed -E 's/^(CHAPITRE III .*)RECEPTEURS/\1RÉCEPTEURS/' | \
-    sed -E "s/^(SECTION I .*L’)ATMOSPHERE/\1ATMOSPHÈRE/" | \
+    sed -E "s/^(SECTION I .*L')ATMOSPHERE/\1ATMOSPHÈRE/" | \
     sed -E 's/^(SECTION V .*)ETABLISSEMENTS/\1ÉTABLISSEMENTS/' | \
     sed -E 's/^(CHAPITRE IV .*)CLASSEES(.*)ACTIVITES/\1CLASSÉES\2ACTIVITÉS/' | \
     sed -E 's/^(SECTION I .*)DECHETS/\1DÉCHETS/' | \

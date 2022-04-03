@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -E 's/ (Titre premier: Principes)/\n\1/' | \
     sed -n '/^Titre premier: Principes/,$p'
@@ -136,7 +134,7 @@ function amend_errors_in_articles {
     amend_error_in_article 21 'minimale assurer' 'minimale à assurer' | \
     # Article 22
     sed -E 's/^\(22\) (Permis de construire dans les zones affectées par le bruit)/\1\n(22) [1]/' | \
-    amend_error_in_article 22 'du 2e alinéa' "de l’alinéa [2]" | \
+    amend_error_in_article 22 'du 2e alinéa' "de l'alinéa [2]" | \
     amend_error_in_article 22 'dépassées\. Si' 'dépassées. [2] Si' | \
     # Article 23
     sed -E 's/^\(23\) (Valeurs de planification)/\1\n(23)/' | \
@@ -152,7 +150,7 @@ function amend_errors_in_articles {
     sed -E "s/^\(25\) (Construction d'installations fixes)/\1\n(25) [1]/" | \
     amend_error_in_article 25 'bruit\. Des' 'bruit. [2] Des' | \
     amend_error_in_article 25 '1128.*1984 ' '' | \
-    amend_error_in_article 25 'du 3e alinéa' "de l’alinéa [3]" | \
+    amend_error_in_article 25 'du 3e alinéa' "de l'alinéa [3]" | \
     amend_error_in_article 25 'dépassées\. Si' 'dépassées. [3] Si' | \
     amend_error_in_article 25 'mesures la' 'mesures à la' | \
     # Article 26
@@ -452,7 +450,7 @@ function amend_errors_in_articles {
     amend_error_in_article 66 'annuellement 10' 'annuellement à 10' | \
     amend_error_in_article 66 '\[a\] b\.' '[a]. [b]' | \
     amend_error_in_article 66 'routier\. Le' 'routier. [2] Le' | \
-    amend_error_in_article 66 'au ler alinéa, lettre \[a\].*$' "à l’alinéa [1], lettre [a]." | \
+    amend_error_in_article 66 'au ler alinéa, lettre \[a\].*$' "à l'alinéa [1], lettre [a]." | \
     sed -E '/^\(66\)/{N;s/^(\(66\).*)\n/\1/;P;D}' | \
     sed -E '/^\(66\)/{N;s/^(\(66\).*)\n\(4\)/\1 Article 4, alinéa [1] [1]/;P;D}' | \
     amend_error_in_article 66 'projets, compris' 'projets, y compris' | \

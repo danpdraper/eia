@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_l_between_article_literal_and_number {
   sed -E 's/(ARTICLE|article) L (PREMIER|[[0-9]+)/\1 \2/g'
 }

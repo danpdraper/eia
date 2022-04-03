@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -E 's/^REPUBLIQUE.*\[1\] (DES DEFINITIONS)/1. \1/'
 }

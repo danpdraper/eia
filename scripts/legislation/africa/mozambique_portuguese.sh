@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/^CAPITULO I /,$p'
 }
@@ -136,7 +134,7 @@ function amend_errors_in_articles {
     amend_error_in_article 1 'humanas 17' 'humanas. [17]' | \
     amend_error_in_article 1 'Legislo,ção Ambientql' 'Legislação Ambiental' | \
     amend_error_in_article 1 'ambiente 18' 'ambiente. [18]' | \
-    amend_error_in_article 1 'compoilente \[á\]nbiental' 'componente ambiental' | \
+    amend_error_in_article 1 'compoilente á\\nbiental' 'componente ambiental' | \
     amend_error_in_article 1 'específico 19' 'específico. [19]' | \
     amend_error_in_article 1 Padrdes Padrões | \
     amend_error_in_article 1 ad1111ssíve1s admissíveis | \

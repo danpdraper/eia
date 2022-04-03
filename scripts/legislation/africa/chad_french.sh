@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function replace_bullet_point_like_characters_with_bullet_points {
   sed -E 's/\x04|\x05|\x06|\x0b/•/g'
 }

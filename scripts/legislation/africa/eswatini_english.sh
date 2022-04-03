@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/^Swaziland Environment Authority/,$p' | \
     sed -n '/^PART I - INTRODUCTORY PROVISIONS/,$p' 
@@ -39,11 +37,11 @@ function amend_errors_in_articles {
     sed -E 's/Emalangeni \[([0-9]+)\]/Emalangeni \1/g' | \
     sed -E 's/sub-section/subsection/g' | \
     #Article 2
-    amend_error_in_article 2 ', “' '; “' | \
-    amend_error_in_article 2 '“Ministry “' '“Ministry”' | \
-    amend_error_in_article 2 '. “regulations,”' '; “regulations”' | \
+    amend_error_in_article 2 ', "' '; "' | \
+    amend_error_in_article 2 'Ministry "' 'Ministry"' | \
+    amend_error_in_article 2 '. "regulations,"' '; "regulations"' | \
     amend_error_in_article 2 '; \[2\]' '. [2]' | \
-    amend_error_in_article 2 'definition; “genetic resources”' 'definition, “genetic resources”' | \
+    amend_error_in_article 2 'definition; "genetic resources"' 'definition, "genetic resources"' | \
     #Article 11
     amend_error_in_article 11 'Schedule \[1\]' 'Schedule 1.' | \
     #Article 15

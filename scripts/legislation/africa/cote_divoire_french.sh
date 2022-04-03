@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -E 's/ (TITRE I )/\n\1- /' | \
     sed -n '/^TITRE I /,$p'
@@ -37,7 +35,7 @@ function amend_errors_in_articles {
     amend_error_in_article 36 'biologique Toute' 'biologique: Toute' | \
     amend_error_in_article 36 'naturelles Pour' 'naturelles: Pour' | \
     amend_error_in_article 36 'doivent êtres évités' 'doivent être évités' | \
-    amend_error_in_article 36 "“Pollueur-Payeur'' Toute" '"Pollueur-Payeur": Toute' | \
+    amend_error_in_article 36 "-Payeur'' Toute" '-Payeur": Toute' | \
     amend_error_in_article 36 'participation Toute' 'participation: Toute' | \
     amend_error_in_article 36 'Coopération Les' 'Coopération: Les' | \
     # Article 38

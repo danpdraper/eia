@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/^ENACTED by the House of Representatives of Zanzibar/,$p' | \
     sed -n '/^1/,$p' 
@@ -16,17 +14,17 @@ function replace_parentheses_around_article_delimiters_with_square_brackets {
 function amend_errors_in_articles {
   sed -E 's/ 1\]/ [1]/g' | \
     sed -E 's/ –/:/g' | \
-    sed -E "s/‘([A-z]+|[A-z]+ [A-z]+|[A-z]+ [A-z]+ [A-z]+)'/|\1|/g" | \
+    sed -E "s/'([A-z]+|[A-z]+ [A-z]+|[A-z]+ [A-z]+ [A-z]+)'/|\1|/g" | \
     sed -E 's/\|([A-z]+|[A-z]+ [A-z]+|[A-z]+ [A-z]+ [A-z]+)\|/"\1"/g' | \
     sed -E 's/ [0-9]{3} Law, Environment and Development Journal//g' | \
     sed -E 's/ [0-9]{3} The Environmental Management for Sustainable Development Act, 1996//g' | \
     #Article 2
-    amend_error_in_article 2 "‘institution responsible for the environment'" '"institution responsible for the environment"' | \
-    amend_error_in_article 2 "‘institution responsible for the national protected areas system'" '"institution responsible for the national protected areas system"' | \
-    amend_error_in_article 2 "‘institution responsible for nonrenewable natural resources'" '"institution responsible for nonrenewable natural resources"' | \
+    amend_error_in_article 2 "'institution responsible for the environment'" '"institution responsible for the environment"' | \
+    amend_error_in_article 2 "'institution responsible for the national protected areas system'" '"institution responsible for the national protected areas system"' | \
+    amend_error_in_article 2 "'institution responsible for nonrenewable natural resources'" '"institution responsible for nonrenewable natural resources"' | \
     amend_error_in_article 2 'substance. "' 'substance; "' | \
     amend_error_in_article 2 'resources. "' 'resources; "' | \
-    amend_error_in_article 2 '‘Minister ' '"Minister"' | \
+    amend_error_in_article 2 "'Minister " '"Minister"' | \
     amend_error_in_article 2 'day-today' 'day-to-day' | \
     amend_error_in_article 2 'characteristics handling' 'characteristic handling' | \
     amend_error_in_article 2 '"Minister"means' '"Minister" means' | \

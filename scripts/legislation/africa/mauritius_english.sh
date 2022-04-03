@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/^ENACTED by the Parliament of Mauritius, as follows -/,$p' | \
     sed -n '/^PART I/,$p'
@@ -96,7 +94,7 @@ function amend_errors_in_articles {
     sed -z 's/\n\n(910)/ [3] Article 910/' | \
     #Article 56A-E
     sed -E 's/56A. Interpretation/\n\nInterpretation\n(56A)/' | \
-    sed -E "s/manager'/manager\”/" | \
+    sed -E "s/manager'/manager\"/" | \
     sed -E 's/56B. Charge to environment protection fee/\n\nCharge to environment protection fee\n(56B)/' | \
     amend_error_in_article 56B 'Fifth Schedule \[3\]' 'Fifth Schedule. [3]' | \
     sed -E 's/month; \[b\] Where/month. [b] Where/' | \

@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/^CAPÍTULO I /,$p'
 }
@@ -16,7 +14,7 @@ function amend_errors_in_headers {
 }
 
 function amend_errors_in_articles {
-  sed -E 's/(\[[a-z]\] )([A-Z])/\1\L\2/g' | \
+  sed -E 's/(\[[a-z]\] )([[:upper:]])/\1\L\2/g' | \
     # Article 1
     amend_error_in_article 1 "70'1" 70 | \
     # Article 2

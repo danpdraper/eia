@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/^58. Short title and commencement/,$p' | \
     sed -n '/^PART I/,$p'

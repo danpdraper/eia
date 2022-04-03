@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/^TITRE I /,$p'
 }
@@ -814,7 +812,7 @@ function amend_errors_in_articles {
     amend_error_in_article 18 passe passé | \
     amend_error_in_article 18 'ministères,' 'ministères.' | \
     # Article 19
-    sed -E ':start;s/^(\(19\).*\] )([A-Z])/\1\L\2/;t start' | \
+    sed -E ':start;s/^(\(19\).*\] )([[:upper:]])/\1\L\2/;t start' | \
     amend_error_in_article 19 'territoire au d' 'territoire ou d' | \
     amend_error_in_article 19 'toutajustement au' 'tout ajustement ou' | \
     amend_error_in_article 19 révisionaintroduire 'révision à introduire' | \

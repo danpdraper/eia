@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function capitalize_title_chapter_and_section_literals {
   sed -E 's/TíTULO/TÍTULO/g' | \
     sed -E 's/CAPíTULO/CAPÍTULO/g' | \

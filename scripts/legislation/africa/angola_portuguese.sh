@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_degree_symbols {
   sed -E 's/n.º/número/g' | \
     sed -E 's/\.º//g'
@@ -10,7 +8,7 @@ function remove_all_text_before_first_chapter_header {
 }
 
 function move_article_titles_above_article_bodies {
-  sed -E 's/^(\([0-9]+\)) \(([A-Za-z ]+)\)/\2\n\1/g'
+  sed -E 's/^(\([0-9]+\)) \(([[:alpha:] ]+)\)/\2\n\1/g'
 }
 
 function amend_errors_in_articles {

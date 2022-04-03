@@ -1,11 +1,9 @@
-#!/bin/bash
-
 function remove_all_text_before_first_chapter_header {
   sed -n '/CHAPITRE PREMIER - DES DISPOSITIONS GENERALES /,$p'
 }
 
 function amend_errors_in_headers {
-  sed -E "s/^(Section [0-9]+ - [A-Za-z,' ]+)[^a-z]+Article ([0-9]+)(er)?:/\1\n\n(\2)/" | \
+  sed -E "s/^(Section [0-9]+ - [[:alpha:],' ]+)[^[:lower:]]+Article ([0-9]+)(er)?:/\1\n\n(\2)/" | \
     sed -E 's/CHAPITRE PREMIER - DES DISPOSITIONS GENERALES/CHAPITRE PREMIER - DES DISPOSITIONS GÉNÉRALES/' | \
     sed -E 's/Article premier:/\n\n(1)/' | \
     sed -E 's/^(CHAPITRE )I -l:/\1II -/' | \
