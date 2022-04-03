@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -E 's/ (Titre 1 )/\n\1/' | \
     sed -n '/^Titre 1 /,$p'

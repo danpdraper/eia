@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -o pipefail
 
@@ -282,10 +282,10 @@ function remove_unwanted_characters_prior_to_line_prefixes {
   local return_code="$?"
   if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
 
-  local first_regular_expression="([A-Za-z]+\.)[^A-Za-z]+"
+  local first_regular_expression="([[:alpha:]]+\.)[^[:alpha:]]+"
   first_regular_expression+="${line_prefix_regular_expression}"
 
-  local second_regular_expression="([A-Z][A-Za-z]+)[^A-Za-z,:.][^A-Za-z]+"
+  local second_regular_expression="([[:upper:]][[:alpha:]]+)[^[:alpha:],:.][^[:alpha:]]+"
   second_regular_expression+="${line_prefix_regular_expression}"
 
   echo "$stdin" | \
@@ -307,7 +307,7 @@ function add_newlines_before_headers_and_articles {
   local return_code="$?"
   if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
 
-  local regular_expression="([A-Z][A-Za-z]+|\.) ${line_prefix_regular_expression}"
+  local regular_expression="([[:upper:]][[:alpha:]]+|\.) ${line_prefix_regular_expression}"
 
   echo "$stdin" | sed -E ":start;s/${regular_expression}/\1\n\n\2 \3/;t start"
 }
@@ -419,14 +419,6 @@ function remove_space_before_colons_and_semicolons {
   sed -E 's/ (;|:)/\1/g'
 }
 
-function replace_double_angle_quotation_marks_with_quotation_marks {
-  sed -E 's/(« ?| ?»)/"/g'
-}
-
-function replace_forward_ticks_with_single_quotation_marks {
-  sed -E "s/’/'/g"
-}
-
 function remove_colon_from_headers {
   local stdin=$(</dev/stdin)
 
@@ -458,7 +450,7 @@ function replace_article_literals_with_numbers {
   local return_code="$?"
   if [ "$return_code" -ne 0 ] ; then return "$return_code" ; fi
 
-  echo "$stdin" | sed -E "s/^(${article_regular_expression}) ([0-9]+)[^A-Z0-9(]+/(\2) /"
+  echo "$stdin" | sed -E "s/^(${article_regular_expression}) ([0-9]+)[^[:upper:]0-9(]+/(\2) /"
 }
 
 function wrap_list_item_leading_characters {
@@ -474,6 +466,12 @@ function replace_œ_with_oe {
 
 function replace_réglement_with_règlement {
   sed -E 's/réglement/règlement/g'
+}
+
+function harmonize_quotation_marks {
+  sed -E 's/(« ?| ?»)/"/g' | \
+    sed -E 's/“|”/"/g' | \
+    sed -E "s/‘|’/'/g"
 }
 
 function apply_common_transformations_to_stdin {
@@ -500,13 +498,12 @@ function apply_common_transformations_to_stdin {
     replace_dashes_with_bullet_points_in_articles "$language" | \
     add_dash_to_headers "$language" | \
     remove_space_before_colons_and_semicolons | \
-    replace_double_angle_quotation_marks_with_quotation_marks | \
-    replace_forward_ticks_with_single_quotation_marks | \
     remove_colon_from_headers "$language" | \
     replace_article_literals_with_numbers "$language" | \
     wrap_list_item_leading_characters | \
     replace_œ_with_oe | \
-    replace_réglement_with_règlement
+    replace_réglement_with_règlement | \
+    harmonize_quotation_marks
 }
 
 function apply_common_transformations {

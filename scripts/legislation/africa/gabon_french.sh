@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_title_header {
   sed -E 's/ (TITRE I)/\n\1/' | \
     sed -n '/^TITRE I/,$p'
@@ -888,7 +886,7 @@ function amend_errors_in_articles {
     amend_error_in_article 87 a38 'à 38' | \
     amend_error_in_article 87 'relativesaux decnets' 'relatives aux déchets' | \
     amend_error_in_article 87 "a l'établissement" "à l'établissement" | \
-    amend_error_in_article 87 '"étude' "l’étude" | \
+    amend_error_in_article 87 '"étude' "l'étude" | \
     amend_error_in_article 87 '\[10]\lenon-respectdes' '[10] le non-respect des' | \
     amend_error_in_article 87 'furnees, poussleres et lurnieres' 'fumées, poussières et lumières' | \
     # Article 88

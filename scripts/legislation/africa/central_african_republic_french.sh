@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function replace_line_leading_dashes_with_bullet_points {
   sed -E 's/^-/•/g'
 }
@@ -9,7 +7,7 @@ function remove_all_text_before_first_title_header {
 }
 
 function amend_errors_in_headers {
-  sed -E "s/^(Section [0-9]+ - [A-Za-z,' ]+)[^a-z]+Art\. ([0-9]+):/\1\n\n(\2)/" | \
+  sed -E "s/^(Section [0-9]+ - [[:alpha:],' ]+)[^[:lower:]]+Art\. ([0-9]+):/\1\n\n(\2)/" | \
     sed -E 's/^(Section) I(.*) Art\. 103:/\1 1\2\n\n(103)/' | \
     sed -E 's/^(TITRE I .*)GENERALES/\1GÉNÉRALES/' | \
     sed -E 's/^(CHAPITRE I - DES )DEFINITIONS/\1DÉFINITIONS/' | \

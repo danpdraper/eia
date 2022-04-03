@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/^Interprelation/,$p' | \
     sed -n '/^PART I - PRELIMINARY/,$p'

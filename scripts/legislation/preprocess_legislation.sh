@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 common_file_name="common.sh"
 preprocessed_directory_name=preprocessed
@@ -62,7 +62,7 @@ function preprocess_legislation {
   if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     local execution_time="$((($(date +%s%N) - $start_time) / 1000000))"
   elif [[ "$OSTYPE" == "darwin"* ]]; then
-    local execution_time="$((($(date +%s) - $start_time) / 100000))"
+    local execution_time="$((($(date +%s) - $start_time) * 1000))"
   fi
 
   if [ "$return_code" -ne 0 ] ; then

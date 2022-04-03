@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/^\[Date of Commencement: 27th May, 2005\]/,$p' | \
     sed -n '/^PART I/,$p'

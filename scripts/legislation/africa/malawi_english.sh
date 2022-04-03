@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/^ ENACTED by the Parliament of Malawi as follows/,$p' | \
     sed -n '/^ PART I -/,$p'

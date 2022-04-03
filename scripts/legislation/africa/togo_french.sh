@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_article {
   sed -E 's/Article premier:/\n(1)/' | \
     sed -En '/^\(1\)/,$p'

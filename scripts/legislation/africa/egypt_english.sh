@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/^FINAL PROVISIONS (ARTICLES 102 to 104)/,$p' | \
     sed -n '/^PRELIMINARY PART/,$p'

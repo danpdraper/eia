@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/^ENACTED by the President and Parliament of Zimbabwe./,$p' | \
     sed -n '/^PART I/,$p'
@@ -45,7 +43,7 @@ function amend_errors_in_articles {
     sed -E 's/¾¾/:/g' | \
     sed -E 's/ \[•\]/:/g' | \
     sed -E 's/ ,/,/g' | \
-    sed -E 's/ ”/”/g' | \
+    sed -E 's/([[:alpha:]]) "/\1"/g' | \
     sed -E 's/\( f \)/[f]/g' | \
     sed -E 's/:Editor/—Editor/g' | \
     sed -E 's/a invasive/an invasive/g' | \
@@ -53,6 +51,8 @@ function amend_errors_in_articles {
     #Article 1
     amend_error_in_article 1 '\[S.I. 103.*$' '' | \
     #Article 2
+    amend_error_in_article 2 '" Council"' '"Council"' | \
+    amend_error_in_article 2 'processes\. "environment"' 'processes; "environment"' | \
     amend_error_in_article 2 'flowing,fresh,brackish' 'flowing, fresh, brackish' | \
     #ARTICLE 4
     amend_error_in_article 4 ' .' '.' | \
@@ -129,7 +129,7 @@ function amend_errors_in_articles {
     amend_error_in_article 77 '\[a\]; \[2\]' '[a]. [2]' | \
     #Article 79
     amend_error_in_article 79 '\[ ' '[' | \
-    amend_error_in_article 79 ' \[“bonus“ changed to read “booms“ –Editor\]' '' | \
+    amend_error_in_article 79 ' \["bonus" changed to read"booms" –Editor\]' '' | \
     #ARticle 83
     amend_error_in_article 83 '\( ' '(' | \
     amend_error_in_article 83 ' \)' ')' | \
@@ -182,6 +182,7 @@ function amend_errors_in_articles {
     amend_error_in_article 130 '\[The.*$' '' | \
     amend_error_in_article 130 'prescribed: Provided' 'prescribed, provided' | \
     #Article 132
+    amend_error_in_article 132 'as"an' 'as "an' | \
     amend_error_in_article 132 '\[k\] any' '[j] any' | \
     amend_error_in_article 132 'shall\(' 'shall (' | \
     amend_error_in_article 132 ' \)' ')' | \

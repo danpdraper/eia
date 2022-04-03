@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/ NOW THEREFORE/,$p' | \
     sed -n '/^PART I - PRELIMINARY/,$p'
@@ -29,7 +27,7 @@ function amend_errors_in_articles {
     amend_error_in_article 2 'become adapted;' 'become adapted.' | \
     amend_error_in_article 2 'Article 24' '24' | \
     amend_error_in_article 2 'or natural resource;' 'or natural resources;' | \
-    amend_error_in_article 2 'humanity “burdened' 'humanity; “burdened' | \
+    amend_error_in_article 2 'humanity "burdened' 'humanity; "burdened' | \
     #Article 3
     amend_error_in_article 3 'had the duty' 'has the duty' | \
     amend_error_in_article 3 'public officer \[c\]' 'public officer; [c]' | \

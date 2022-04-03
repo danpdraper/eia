@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed '0,/^TITRE I /d' | \
     sed -n '/^TITRE I /,$p'
@@ -27,21 +25,19 @@ function amend_errors_in_articles {
     # Article 5
     amend_error_in_article 5 '\. Ces' '; ces' | \
     # Article 18
-    amend_error_in_article 18 "‘‘sol''" '"sol"' | \
+    amend_error_in_article 18 "''sol''" '"sol"' | \
     # Article 45
-    sed -E ':start;s/^(\(45\).*)‘‘/\1"/;t start' | \
     sed -E ":start;s/^(\(45\).*)''/\1\"/;t start" | \
     # Article 54
     amend_error_in_article 54 'ci- dessous' 'ci-dessous' | \
     # Article 57
-    amend_error_in_article 57 "‘‘établissements humains''" '"établissements humains"' | \
+    amend_error_in_article 57 "''établissements humains''" '"établissements humains"' | \
     # Article 61
     amend_error_in_article 61 'classé, doit' 'classé doit' | \
     # Article 66
-    amend_error_in_article 66 "‘‘déchet''" '"déchet"' | \
+    amend_error_in_article 66 "''déchet''" '"déchet"' | \
     # Article 74
-    sed -E 's/^(\(74\).*)‘‘/\1"/' | \
-    sed -E "s/^(\(74\).*)''/\1\"/" | \
+    sed -E ":start;s/^(\(74\).*)''/\1\"/;t start" | \
     # Article 77
     amend_error_in_article 77 '\[76\]' '76.' | \
     # Article 82
@@ -50,11 +46,9 @@ function amend_errors_in_articles {
     amend_error_in_article 87 L '"L' | \
     sed -E "s/^(\(87\).*)''/\1\"/" | \
     # Article 94
-    sed -E 's/^(\(94\).*)‘‘/\1"/' | \
-    sed -E "s/^(\(94\).*)''/\1\"/" | \
+    sed -E ":start;s/^(\(94\).*)''/\1\"/;t start" | \
     # Article 96
-    sed -E 's/^(\(96\).*)‘‘/\1"/' | \
-    sed -E "s/^(\(96\).*)''/\1\"/" | \
+    sed -E ":start;s/^(\(96\).*)''/\1\"/;t start" | \
     # Article 102
     amend_error_in_article 102 "ad'hoc" 'ad hoc' | \
     # Article 113

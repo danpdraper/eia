@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/^Enacted by the Parliament of Lesotho\./,$p' | \
     sed -n '/^PART I/,$p' 
@@ -47,9 +45,10 @@ function amend_errors_in_articles {
     #Article 2
     amend_error_in_article 2 'unincorporate' 'unincorporated' | \
     amend_error_in_article 2 '1997 1' '1997' | \
-    amend_error_in_article 2 'Act”;' 'Act;' | \
-    amend_error_in_article 2 'Act;”' 'Act;' | \
+    amend_error_in_article 2 'Act";' 'Act;' | \
+    amend_error_in_article 2 'Act;"' 'Act;' | \
     amend_error_in_article 2 'restriction to which is subject to' 'restriction which is subject to' | \
+    amend_error_in_article 2 "spill' means" 'spill" means' | \
     amend_error_in_article 2 'or degraded the carrying capacity' 'or degrade the carrying capacity' | \
     #Article 3
     amend_error_in_article 3 'to prevent, any' 'to prevent any' | \

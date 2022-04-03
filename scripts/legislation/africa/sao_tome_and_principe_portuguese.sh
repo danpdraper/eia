@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function append_pipe_to_article_title {
   tr '\n' '\r' | sed -E 's/(Artigo[^\r]+\r)([^\r]+)/\1\2|/g' | tr '\r' '\n'
 }

@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_article {
   sed -E 's/ Art\. 1"\. -/\n(1)/' | \
     sed -En '/^\(1\)/,$p'
@@ -68,7 +66,7 @@ function amend_errors_in_articles {
     # Article 5
     amend_error_in_article 5 "I'utilisiltion" "l'utilisation" | \
     amend_error_in_article 5 "i'" "l'" | \
-    amend_error_in_article 5 'des non cultivées' "des végétaux d’espèces non cultivées" | \
+    amend_error_in_article 5 'des non cultivées' "des végétaux d'espèces non cultivées" | \
     amend_error_in_article 5 'semences ou' 'semences ou parties de plantes, dont la liste est fixée par arrêtés' | \
     amend_error_in_article 5 duministre 'conjoints du ministre' | \
     amend_error_in_article 5 'besoin\.' 'besoin,' | \

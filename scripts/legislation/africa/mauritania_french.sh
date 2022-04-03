@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -E 's/ TITRE I/\nTITRE I -/' | \
     sed -n '/^TITRE I /,$p'
@@ -310,7 +308,7 @@ function amend_errors_in_articles {
     # Article 3
     amend_error_in_article 3 politiquenationale 'politique nationale' | \
     amend_error_in_article 3 Jutte lutte | \
-    amend_error_in_article 3 '"amélioration' "l’amélioration" | \
+    amend_error_in_article 3 '"amélioration' "l'amélioration" | \
     amend_error_in_article 3 'fa protection' 'la protection' | \
     amend_error_in_article 3 développernent développement | \
     amend_error_in_article 3 ' CHAPITRE \/I' '\n\nCHAPITRE II -' | \
@@ -427,7 +425,7 @@ function amend_errors_in_articles {
     amend_error_in_article 18 "l'EI\.E\.\." "l'E.I.E." | \
     amend_error_in_article 18 'delà;' délai | \
     amend_error_in_article 18 observe observé | \
-    amend_error_in_article 18 renquste "l’enquête" | \
+    amend_error_in_article 18 renquste "l'enquête" | \
     amend_error_in_article 18 aétudier 'à étudier' | \
     amend_error_in_article 18 présentees présentées | \
     # Article 19
@@ -477,7 +475,7 @@ function amend_errors_in_articles {
     # Article 27
     amend_error_in_article 27 aqrernent agrément | \
     amend_error_in_article 27 '"amélioration' "l'amélioration" | \
-    amend_error_in_article 27 ralr "l’air" | \
+    amend_error_in_article 27 ralr "l'air" | \
     amend_error_in_article 27 locatites localités | \
     amend_error_in_article 27 batirnents bâtiments | \
     amend_error_in_article 27 amenaqes aménagés | \
@@ -658,7 +656,7 @@ function amend_errors_in_articles {
     sed -E ':start;s/^(\(57\).*)\. \[/\1; [/;t start' | \
     # Article 58
     amend_error_in_article 58 'cas ou un' 'cas où un' | \
-    amend_error_in_article 58 'ractivtte de \(' "l’activité de l" | \
+    amend_error_in_article 58 'ractivtte de \(' "l'activité de l" | \
     amend_error_in_article 58 "jusqu'a" "jusqu'à" | \
     amend_error_in_article 58 necessalres nécessaires | \
     amend_error_in_article 58 'ta fermeture' 'la fermeture' | \
@@ -866,7 +864,7 @@ function amend_errors_in_articles {
     amend_error_in_article 90 "al'article \[28\] 6\. E" "à l'article 28; \[6\] e" | \
     amend_error_in_article 90 'Loi\. \[7\] S' 'loi; [7] s' | \
     amend_error_in_article 90 "coupablesd'une" "coupables d'une" | \
-    amend_error_in_article 90 '"esthétique' "l’esthétique" | \
+    amend_error_in_article 90 '"esthétique' "l'esthétique" | \
     amend_error_in_article 90 "J'article76" "l'article 76" | \
     amend_error_in_article 90 'Lot\.' 'loi.' | \
     # Article 91

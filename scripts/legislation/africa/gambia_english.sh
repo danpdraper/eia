@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -n '/^27th May, 1994/,$p' | \
     sed -n '/^PART 1/,$p'
@@ -56,14 +54,14 @@ function amend_errors_in_articles {
     amend_error_in_article 2 'adapted, and' 'adapted; and' | \
     amend_error_in_article 2 'section \[16\]' 'section 16.' | \
     amend_error_in_article 2 'unless the context otherwise required' 'unless the context otherwise requires' | \
-    amend_error_in_article 2 'Section. “Developer”' 'Section 5; “Developer”' | \
+    amend_error_in_article 2 'Section. "Developer"' 'Section 5; "Developer"' | \
     amend_error_in_article 2 'such oil context' 'such oil content' | \
     amend_error_in_article 2 'premises; \[i\]' 'premises: [i]' | \
     amend_error_in_article 2 'ship r in the absence' 'ship or in the absence' | \
     amend_error_in_article 2 'every, tenure' 'every tenure' | \
-    amend_error_in_article 2 'generations “Sustainable' 'generations; “Sustainable' | \
+    amend_error_in_article 2 'generations "Sustainable' 'generations; "Sustainable' | \
     amend_error_in_article 2 'future generation;' 'future generations;' | \
-    amend_error_in_article 2 'Act. “Trade”' 'Act; “Trade”' | \
+    amend_error_in_article 2 'Act. "Trade"' 'Act; "Trade"' | \
     amend_error_in_article 2 'discharged emitted' 'discharged, emitted' | \
     #Article 3
     amend_error_in_article 3 'adversely. \[a\]' 'adversely: [a]' | \

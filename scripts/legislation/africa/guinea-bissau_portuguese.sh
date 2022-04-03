@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function append_pipe_to_article_title {
   sed -E '/^ARTIGO/{$!{N;s/(ARTIGO.*)\n(.*)/\1 \2|/;t;P;D}}'
 }
@@ -13,9 +11,7 @@ function remove_all_text_before_first_header {
 }
 
 function amend_errors_in_articles {
-  sed -E ':start;s/^\(([^5]|[0-9]{2})\)(.*\[[a-z]\] )([A-Z])/(\1)\2\L\3/;t start' | \
-    sed -E 's/“/"/g' | \
-    sed -E 's/”/"/g' | \
+  sed -E ':start;s/^\(([^5]|[0-9]{2})\)(.*\[[[:lower:]]\] )([[:upper:]])/(\1)\2\L\3/;t start' | \
     # Article 3
     amend_error_in_article 3 'comparáveis\.' 'comparáveis;' | \
     amend_error_in_article 3 'eficazes\.' 'eficazes;' | \
@@ -36,7 +32,7 @@ function amend_errors_in_articles {
     amend_error_in_article 6 'a Promoção' 'a promoção' | \
     amend_error_in_article 6 construido construído | \
     amend_error_in_article 6 'dos" impactes' 'dos "impactes' | \
-    amend_error_in_article 6 "‘'" '"' | \
+    amend_error_in_article 6 "''" '"' | \
     amend_error_in_article 6 "''" '"' | \
     # Article 7
     sed -E 's/^(\(7\).*) 6.*\[8\]º ([^|]+)\|( Ambientais Naturais)/\1\n\n\2\3\n(8)/' | \

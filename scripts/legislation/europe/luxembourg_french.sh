@@ -1,5 +1,3 @@
-#!/bin/bash
-
 function remove_all_text_before_first_header {
   sed -E 's/ (CHAPITRE 1)er (Objectifs)/\n\1 - \2/' | \
     sed -n '/^CHAPITRE 1 /,$p'
