@@ -103,15 +103,24 @@ def test_list_to_occurrences_returns_dict_containing_number_of_occurrences_of_ea
 
 
 def test_delete_punctuation_from_string_deletes_all_punctuation_from_provided_string():
-    string = 'Test, test; test: test. test-test "Test" , \'test\' ; tes\'t . test : test ? test - test'
-    expected_string = 'Test test test test testtest Test  test  tes\'t  test  test  test  test'
+    string = 'Test, test; test: test. test-test "Test" , \'test\' ; tes\'t . ' \
+        'test : test ? test - test test\\test test/test test \\ test test / test'
+    expected_string = 'Test test test test testtest Test  test  tes\'t  test  ' \
+        'test  test  test test test test test test   test test   test'
     actual_string = transformations.delete_punctuation_from_string(string)
     assert expected_string == actual_string
 
 
-def test_delete_punctuation_from_string_preserves_parentheses_and_brackets():
+def test_delete_punctuation_from_string_preserves_parentheses_and_brackets_around_provision_delimiters():
     string = '(1) [1] Test [2] test [i] test'
     expected_string = '(1) [1] Test [2] test [i] test'
+    actual_string = transformations.delete_punctuation_from_string(string)
+    assert expected_string == actual_string
+
+
+def test_delete_punctuation_from_string_deletes_parentheses_not_associated_with_provision_delimiters():
+    string = "I like walking to the park (but not when it's raining)"
+    expected_string = "I like walking to the park but not when it's raining"
     actual_string = transformations.delete_punctuation_from_string(string)
     assert expected_string == actual_string
 

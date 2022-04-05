@@ -1,14 +1,20 @@
+import logging
 import re
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 CAPITALIZED_REGEX = re.compile(r'(^|[a-z]| )([A-Z])')
 COMMA = ','
 EMPTY_STRING = ''
 LEADING_AND_TRAILING_WHITESPACE_REGEX = re.compile(r'^[ \n\t]+|[ \n\t]+$')
+PARENTHESES_REGEX = re.compile(r'\(|\)')
 PROVISION_DELIMITER_REGEX = re.compile(
     r'(^)\([0-9]+\)|(\n)\([0-9]+\)|(.)\[[A-Za-z0-9]+\]|(.)\[•\]')
 PUNCTUATION_REGEX = re.compile(r'[,;:.?\-"]| \'|\' ')
 SINGLE_SPACE = ' '
+SLASH_REGEX = re.compile(r'\\|/')
 SNAKE_CASE_REGEX = re.compile(r'(^|_)([a-z])')
 STATE_NAME_SNAKE_CASE_REGEX = re.compile(r'/([a-z_]+)_[a-z]+\.')
 TO_CAPITALIZED_REGEX = re.compile(r'(^|_)([a-z])')
@@ -77,10 +83,47 @@ def list_to_occurrences(list_to_transform):
     return occurrences
 
 
+def is_parenthesis_part_of_provision_delimiter(
+        provision_delimiter_character_ranges, parenthesis_match):
+    LOGGER.debug(
+        "Checking whether parenthesis at {} is in one of the following "
+        "character ranges: {}.".format(
+            parenthesis_match.start(),
+            COMMA.join(
+                "{}-{}".format(character_range[0], character_range[-1])
+                for character_range in provision_delimiter_character_ranges)))
+    return len(list(filter(
+        lambda character_range: parenthesis_match.start() in character_range,
+        provision_delimiter_character_ranges))) > 0
+
+
 def delete_punctuation_from_string(string):
+    string = re.sub(
+        SLASH_REGEX, SINGLE_SPACE,
+        re.sub(
+            PUNCTUATION_REGEX,
+            lambda match: SINGLE_SPACE if len(match.group(0)) == 2 else EMPTY_STRING,
+            string))
+
+    provision_delimiter_character_ranges = [
+        range(match.start(), match.start() + len(match.group()))
+        for match in PROVISION_DELIMITER_REGEX.finditer(string)]
+    LOGGER.debug(
+        "Identified the following provision delimiters and associated "
+        "character ranges: {}.".format(
+            COMMA.join(
+                map(
+                    lambda character_range: str((
+                        ''.join(string[character_range[0]:character_range[-1] + 1]),
+                        character_range[0],
+                        character_range[-1],
+                    )),
+                    provision_delimiter_character_ranges))))
+
     return re.sub(
-        PUNCTUATION_REGEX,
-        lambda match: SINGLE_SPACE if len(match.group(0)) == 2 else EMPTY_STRING,
+        PARENTHESES_REGEX,
+        lambda match: match.group() if is_parenthesis_part_of_provision_delimiter(
+            provision_delimiter_character_ranges, match) else EMPTY_STRING,
         string)
 
 
