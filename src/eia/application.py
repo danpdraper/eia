@@ -126,16 +126,20 @@ def traverse_row(
         if score_threshold and row[index] < score_threshold:
             continue
         working_provision_pair_group = base_provision_pair_group + [(row_index, index)]
-        logger.info("Processing provision pair group {}".format(
-            working_provision_pair_group))
         provisions_in_group = set([
             index for pair in working_provision_pair_group for index in pair
         ])
+        labels_of_provisions_in_group = {
+            labels[provision_index] for provision_index in provisions_in_group
+        }
+        logger.info(
+            "Processing provision pair group {}, which contains unique "
+            "provisions {}".format(
+                working_provision_pair_group, labels_of_provisions_in_group))
         min_heap.push(heap.ProvisionGroupHeapElement(
             calculate_scaled_average(
                 working_provision_pair_group, row, provisions_in_group),
-            len(working_provision_pair_group),
-            {labels[provision_index] for provision_index in provisions_in_group}))
+            len(working_provision_pair_group), labels_of_provisions_in_group))
         traverse_row(
             labels, row_index, row, min_heap, score_threshold,
             working_provision_pair_group, index + 1)
@@ -172,7 +176,7 @@ def highest_provision_group_scores(arguments):
         score_threshold = mean + arguments.score_threshold * standard_deviation
 
     min_heap = heap.SetBoundedMinHeap(
-        arguments.number_of_scores * (10 if arguments.reduce_redundancy_in_output else 1))
+        arguments.number_of_scores * (10000 if arguments.reduce_redundancy_in_output else 1))
     populate_heap(labels, matrix, min_heap, score_threshold)
     if arguments.reduce_redundancy_in_output:
         min_heap.consolidate()

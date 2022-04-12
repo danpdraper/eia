@@ -2,7 +2,7 @@ import re
 
 
 COMMA = ','
-STATE_AND_PROVISION_LABEL_REGEX = re.compile(r'^([A-Za-z ]+)( [0-9]+)?$')
+STATE_AND_PROVISION_LABEL_REGEX = re.compile(r'^([A-Za-z ]+)( [0-9L\.-]+)?$')
 
 
 def contains_comma(string):

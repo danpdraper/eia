@@ -30,6 +30,8 @@ function amend_errors_in_articles {
     amend_error_in_article 36 catégorie catégories | \
     # Article 39
     amend_error_in_article 39 agréés agréée | \
+    # Article 40
+    amend_error_in_article 40 'fabricants importateurs' 'fabricants, importateurs' | \
     # Article 41
     amend_error_in_article 41 conçu conçue | \
     # Article 56

@@ -130,10 +130,20 @@ def test_find_provision_contents_finds_contents_of_provided_provision_in_file_co
             '(1) First provision in State C French.\n'
             '(2) Second provision in State C French.\n'
         ),
+        # Provision identifiers that are not strictly numeric
+        'state_d_english.txt': (
+            '(L.100-1) First provision in State D English.\n'
+            '(L.100-2) Second provision in State D English.\n'
+        ),
+        os.path.join('nested', 'state_d_french.txt'): (
+            '(L.110-1) First provision in State D French.\n'
+            '(L.110-2) Second provision in State D French.\n'
+        ),
     }
 
     first_expected_provision = 'Second provision in State B English.'
     second_expected_provision = 'First provision in State C French.'
+    third_expected_provision = 'Second provision in State D French.'
 
     try:
         utilities.populate_test_directory(
@@ -144,11 +154,15 @@ def test_find_provision_contents_finds_contents_of_provided_provision_in_file_co
         # State C French provision 1
         second_actual_provision = text_files.find_provision_contents(
             test_directory_path, 'french', 'State C', 1)
+        # State D French provision 2
+        third_actual_provision = text_files.find_provision_contents(
+            test_directory_path, 'french', 'State D', 'L.110-2')
     finally:
         utilities.delete_test_directory(test_directory_path)
 
     assert first_expected_provision == first_actual_provision
     assert second_expected_provision == second_actual_provision
+    assert third_expected_provision == third_actual_provision
 
 
 def test_find_provision_contents_raises_runtime_error_when_more_or_less_than_one_file_concerning_state_and_language():
@@ -244,8 +258,8 @@ def populate_test_directory_for_input_text_generator_test(test_directory_path):
         ),
         'state_b_french.txt': (
             'Titre I - Dispositions générales\n'
-            "(1) J'aime passer du temps à l'extérieur: [a] quand il fait beau et [b] je suis de bonne humeur.\n"
-            "(2) Cela dit, marcher sous la pluie n'est pas si mal non plus.\n"
+            "(L.100-1) J'aime passer du temps à l'extérieur: [a] quand il fait beau et [b] je suis de bonne humeur.\n"
+            "(L.200-1) Cela dit, marcher sous la pluie n'est pas si mal non plus.\n"
         ),
         'state_c_spanish.txt': (
             'Título I - Disposiciones generales\n'
@@ -351,7 +365,7 @@ def test_input_text_generator_full_text_excludes_states_not_in_states_to_include
 def test_input_text_generator_yields_provisions_of_files_written_in_specified_language_when_scope_is_provision():
     test_directory_path = utilities.create_test_directory('test_text_files')
 
-    expected_labels_and_text = [
+    expected_english_labels_and_text = [
         ('State A 1', (
             'i enjoy spending time outdoors [a] when the weather is nice and '
             '[b] i am in a good mood'
@@ -364,16 +378,29 @@ def test_input_text_generator_yields_provisions_of_files_written_in_specified_la
         ('State D 2', 'also who wants to walk when you can drive'),
     ]
 
+    expected_french_labels_and_text = [
+        ('State B L.100-1', (
+            "j'aime passer du temps à l'extérieur [a] quand il fait beau et "
+            "[b] je suis de bonne humeur"
+        )),
+        ('State B L.200-1', "cela dit marcher sous la pluie n'est pas si mal non plus"),
+    ]
+
     try:
         populate_test_directory_for_input_text_generator_test(test_directory_path)
-        actual_labels_and_text = [
+        actual_english_labels_and_text = [
             label_and_text for label_and_text in text_files.input_text_generator(
                 scopes.PROVISION, languages.ENGLISH, test_directory_path, True)
+        ]
+        actual_french_labels_and_text = [
+            label_and_text for label_and_text in text_files.input_text_generator(
+                scopes.PROVISION, languages.FRENCH, test_directory_path, True)
         ]
     finally:
         utilities.delete_test_directory(test_directory_path)
 
-    assert expected_labels_and_text == actual_labels_and_text
+    assert expected_english_labels_and_text == actual_english_labels_and_text
+    assert expected_french_labels_and_text == actual_french_labels_and_text
 
 
 def test_input_text_generator_removes_delimiters_from_provisions_when_preserve_provision_delimiters_is_false():

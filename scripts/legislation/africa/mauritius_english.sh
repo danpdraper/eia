@@ -31,6 +31,8 @@ function amend_errors_in_articles {
     sed -E 's/([a-z])- /\1: /g' | \
     sed -E 's/5000/5,000/g' | \
     sed -E 's/ 000/,000/g' | \
+    #Article 1
+    amend_error_in_article 1 Act 'Act.' | \
     #Article 2
     amend_error_in_article 2 'means public' 'means a public' | \
     amend_error_in_article 2 ',means' ', means' | \

@@ -11,7 +11,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 COMMENT_LINE_PREFIX = '#'
-PROVISION_REGEX = re.compile(r'^\(([0-9]+)\) (.*)')
+PROVISION_REGEX = re.compile(r'^\(([^)]+)\) (.*)')
 STATE_REGEX = re.compile(r'^.*\/([a-z_]+)_[a-z]+\.txt$')
 
 
@@ -54,11 +54,11 @@ def find_provision_contents(
             "Expected to find one file corresponding to state {} and language "
             "{}, found: {}.".format(state_name, language, file_paths))
 
-    provision_number = int(provision_number)
+    provision_number = str(provision_number)
     provision_contents = list(map(
         lambda match: match.group(2),
         filter(
-            lambda match: match is not None and int(match.group(1)) == provision_number,
+            lambda match: match is not None and match.group(1) == provision_number,
             map(
                 lambda line: re.match(PROVISION_REGEX, line),
                 input_output.line_generator(file_paths[0])))))

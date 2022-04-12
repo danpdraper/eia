@@ -143,6 +143,7 @@ class SetBoundedMinHeap(object):
             heapq.heappush(self.heap, element)
         elif element > self.heap[0]:
             heapq.heappushpop(self.heap, element)
+        LOGGER.debug("The heap currently contains {} elements.".format(len(self.heap)))
 
     def to_list(self):
         return list(self.heap)

@@ -47,6 +47,8 @@ function amend_errors_in_articles {
     amend_error_in_article 36 'e recouvrir' recouvrir | \
     # Article 39
     amend_error_in_article 39 Equipement Équipement | \
+    # Article 41
+    amend_error_in_article 41 Code 'Code.' | \
     # Article 42
     amend_error_in_article 42 'industriels,commerciaux' 'industriels, commerciaux' | \
     # Article 43

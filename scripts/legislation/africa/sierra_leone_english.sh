@@ -495,7 +495,7 @@ function amend_errors_in_articles {
     amend_error_in_article 40 'copyof' 'copy of' | \
     amend_error_in_article 40 'maymake' 'may make' | \
     amend_error_in_article 40 'Cabinet \[5\]' 'Cabinet. [5]' | \
-    amend_error_in_article 40 '.me use of the Fund' 'the use of the Fund' | \
+    amend_error_in_article 40 '.me use of the Fund' 'the use of the Fund.' | \
     amend_error_in_article 40 'MInister' 'Minister' | \
     amend_error_in_article 40 '  \[2\]' ' [2]' | \
     amend_error_in_article 40 'records in Accounts and relation' 'records in relation' | \

@@ -26,6 +26,8 @@ function amend_errors_in_articles {
     amend_error_in_article 6 'publique\. \[' 'publique; [' | \
     # Article 20
     amend_error_in_article 20 'plastiques etc\.\.\.' 'plastiques, etc.' | \
+    # Article 27
+    amend_error_in_article 27 'notamment les déchets, notamment les déchets' 'notamment les déchets' | \
     # Article 31
     amend_error_in_article 31 'service\. 8' 'service.' | \
     # Article 36

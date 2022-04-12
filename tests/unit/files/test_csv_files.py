@@ -28,12 +28,18 @@ def test_state_and_provision_number_from_label_extracts_state_name_and_provision
     # Single-word state name and multi-digit provision number
     label = 'A 22'
     assert 'A', '22' == csv_files.state_and_provision_number_from_label(label)
+    # Single-word state name and provision identifier that is not strictly numeric
+    label = 'A L-100.1'
+    assert 'A', 'L-100.1' == csv_files.state_and_provision_number_from_label(label)
     # Multi-word state name and single-digit provision number
     label = 'State A 1'
     assert 'State A', '1' == csv_files.state_and_provision_number_from_label(label)
     # Multi-word state name and multi-digit provision number
     label = 'State A 22'
     assert 'State A', '22' == csv_files.state_and_provision_number_from_label(label)
+    # Multi-word state name and provision identifier that is not strictly numeric
+    label = 'State A L-200.2'
+    assert 'State A', 'L-200.2' == csv_files.state_and_provision_number_from_label(label)
 
 
 def test_state_and_provision_number_from_label_raises_value_error_when_provided_string_does_not_match_expected_format():

@@ -65,6 +65,8 @@ function amend_errors_in_articles {
     amend_error_in_article 15 ': ' ' ' | \
     #Article 17
     amend_error_in_article 17 "d'exploitation\.," "d'exploitation" | \
+    #Article 45
+    amend_error_in_article 45 II Il | \
     #Article 49
     amend_error_in_article 49 'transfrontière , \.' 'transfrontière;' | \
     #Article 53
@@ -72,6 +74,8 @@ function amend_errors_in_articles {
     amend_error_in_article 53 'zone ,' 'zone;' | \
     #Article 62
     amend_error_in_article 62 ' 20' '' | \
+    #Article 66
+    amend_error_in_article 66 II Il | \
     #Article 69
     amend_error_in_article 69 'Office,' 'Office' | \
     #Article 72
@@ -80,6 +84,10 @@ function amend_errors_in_articles {
     amend_error_in_article 73 ' 23' '' | \
     #Article 81 
     amend_error_in_article 81 ' 25' '' | \
+    #Article 82
+    amend_error_in_article 82 II Il | \
+    #Article 83
+    amend_error_in_article 83 II Il | \
     #Article 85 
     amend_error_in_article 85 ' 26' '' | \
     #Article 88

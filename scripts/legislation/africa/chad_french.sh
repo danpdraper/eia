@@ -114,6 +114,8 @@ function amend_errors_in_articles {
     amend_error_in_article 86 "projet L'étude" "projet. L'étude" | \
     # Article 93
     amend_error_in_article 93 '\. \[•\]' '; [•]' | \
+    # Article 97
+    amend_error_in_article 97 '\[•\] •' '[•]' | \
     # Article 103
     amend_error_in_article 103 'des mesure requises' 'des mesures requises' | \
     # Article 105

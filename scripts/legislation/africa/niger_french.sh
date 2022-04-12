@@ -38,7 +38,7 @@ function amend_errors_in_articles {
     #Article 42
     amend_error_in_article 42 ':' '' | \
     #Article 54
-    amend_error_in_article 54 'Article 55:' '\n\n(55)' | \
+    amend_error_in_article 54 ' Article 55:' '.\n\n(55)' | \
     #Article 56
     amend_error_in_article 56 'soussol' 'sous-sol' | \
     #Article 70
