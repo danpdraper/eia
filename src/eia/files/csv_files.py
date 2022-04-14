@@ -1,18 +1,45 @@
-import re
+import os
+
+import eia.files.input_output as input_output
+import eia.transformations as transformations
 
 
 COMMA = ','
-STATE_AND_PROVISION_LABEL_REGEX = re.compile(r'^([A-Za-z ]+)( [0-9L\.-]+)?$')
+EDGES_FILE_NAME = 'edges.csv'
+NODES_FILE_NAME = 'nodes.csv'
 
 
 def contains_comma(string):
     return COMMA in string
 
 
-def state_and_provision_number_from_label(label):
-    match = STATE_AND_PROVISION_LABEL_REGEX.match(label)
-    if not match:
-        raise ValueError(
-            "Label {} does not consist of a state name and optional provision "
-            "number.".format(label))
-    return match.group(1), match.group(2).lstrip(' ') if match.group(2) else match.group(2)
+def write_similarity_matrix(similarity_matrix_file_path, language, labels_and_rows):
+    input_output.write(similarity_matrix_file_path, ["language:{}".format(language)])
+    input_output.append(
+        similarity_matrix_file_path, map(
+            lambda value: transformations.label_and_row_tuple_to_comma_separated_string(value),
+            labels_and_rows))
+
+
+def write_nodes(nodes_directory_path, nodes):
+    nodes_file_path = os.path.join(nodes_directory_path, NODES_FILE_NAME)
+    input_output.write(
+        nodes_file_path,
+        ['ID,Label'] + [
+            "{},{}".format(index, node) for index, node in enumerate(sorted(nodes))
+        ])
+
+
+def write_edges(edges_directory_path, nodes, edges):
+    edges_file_path = os.path.join(edges_directory_path, EDGES_FILE_NAME)
+    sorted_nodes = sorted(list(nodes))
+    input_output.write(
+        edges_file_path,
+        ['ID,Source,Target,Type,Weight'] + [
+            "{},{},{},Undirected,{}".format(
+                index, sorted_nodes.index(edge[0]), sorted_nodes.index(edge[1]),
+                edge[2]) for index, edge in enumerate(
+                    sorted(
+                        sorted(edges, key=lambda edge: edge[1]),
+                        key=lambda edge: edge[0]))
+        ])

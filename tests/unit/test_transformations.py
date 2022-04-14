@@ -157,3 +157,147 @@ def test_reduce_whitespace_in_string_to_single_space_between_successive_words_de
     expected_string = 'Test test'
     actual_string = transformations.reduce_whitespace_in_string_to_single_space_between_successive_words(string)
     assert expected_string == actual_string
+
+
+def test_label_to_state_and_provision_identifier_extracts_state_name_and_provision_number_from_label():
+    # Single-word state name
+    label = 'A'
+    actual_label_and_provision = transformations.label_to_state_and_provision_identifier(label)
+    assert 'A' == actual_label_and_provision[0]
+    assert actual_label_and_provision[1] is None
+    # Multi-word state name
+    label = 'State A'
+    actual_label_and_provision = transformations.label_to_state_and_provision_identifier(label)
+    assert 'State A' == actual_label_and_provision[0]
+    assert actual_label_and_provision[1] is None
+    # Single-word state name and single-digit provision number
+    label = 'A 1'
+    assert 'A', '1' == transformations.label_to_state_and_provision_identifier(label)
+    # Single-word state name and multi-digit provision number
+    label = 'A 22'
+    assert 'A', '22' == transformations.label_to_state_and_provision_identifier(label)
+    # Single-word state name and provision identifier that is not strictly numeric
+    label = 'A L-100.1'
+    assert 'A', 'L-100.1' == transformations.label_to_state_and_provision_identifier(label)
+    # Multi-word state name and single-digit provision number
+    label = 'State A 1'
+    assert 'State A', '1' == transformations.label_to_state_and_provision_identifier(label)
+    # Multi-word state name and multi-digit provision number
+    label = 'State A 22'
+    assert 'State A', '22' == transformations.label_to_state_and_provision_identifier(label)
+    # Multi-word state name and provision identifier that is not strictly numeric
+    label = 'State A L-200.2'
+    assert 'State A', 'L-200.2' == transformations.label_to_state_and_provision_identifier(label)
+
+
+def test_label_to_state_and_provision_identifier_raises_value_error_when_string_does_not_match_expected_format():
+    # Provision number without state name
+    label = '1'
+    with pytest.raises(ValueError):
+        transformations.label_to_state_and_provision_identifier(label)
+
+
+def test_provision_groups_to_nodes_and_edges_converts_list_of_provision_groups_to_lists_of_nodes_and_edges():
+    provision_groups = [
+        ('A 1', 'B 1'),
+        ('A 1', 'B 2'),
+        ('A 1', 'C 1'),
+        ('A 1', 'C 2'),
+        ('A 2', 'B 1'),
+        ('A 2', 'B 2'),
+        ('A 2', 'C 1'),
+        ('A 2', 'C 2'),
+        ('B 1', 'C 1'),
+        ('B 1', 'C 2'),
+        ('B 2', 'C 1'),
+        ('B 2', 'C 2'),
+        ('A 1', 'B 1', 'C 1'),
+        ('A 1', 'B 1', 'C 2'),
+        ('A 1', 'B 2', 'C 1'),
+        ('A 1', 'B 2', 'C 2'),
+        ('A 2', 'B 1', 'C 1'),
+        ('A 2', 'B 1', 'C 2'),
+        ('A 2', 'B 2', 'C 1'),
+        ('A 2', 'B 2', 'C 2'),
+    ]
+    # The nodes should be states rather than combinations of state and provision
+    # identifier.
+    expected_nodes = {'A', 'B', 'C'}
+    # Each unique provision pair should only be counted once in the weight of
+    # the edge between the connected nodes. The list above contains sixteen
+    # groups consisting of a total of six provisions. Each provision shares
+    # three groups with each of the four provisions from the other two states.
+    # For example, provision 'A 1' shares three groups with each of 'B 1',
+    # 'B 2', 'C 1' and 'C 2'. The influence of a given provision pair on edge
+    # weight, however, is binary: if the provision pair does not feature in any
+    # provision groups, then the provision pair does not affect the
+    # corresponding edge weight; if the provision pair features in one or more
+    # provision groups, then the pair contributes one to the corresponding edge
+    # weight. As such, the contribution of the provision pair 'A 1,B 1' to the
+    # weight of the edge 'A,B', for example, is only one, even though that
+    # provision pair features in three provision groups.
+    expected_edges = [
+        ('A', 'B', 4),
+        ('A', 'C', 4),
+        ('B', 'C', 4),
+    ]
+    actual_nodes, actual_edges = transformations.provision_groups_to_nodes_and_edges(provision_groups)
+    assert expected_nodes == actual_nodes
+    assert expected_edges == actual_edges
+
+
+def test_provision_groups_to_nodes_and_edges_produces_undirectional_edges():
+    # The following groups strictly adhere to the following provision orders:
+    # 'A 1','B 1'
+    # 'B 2','A 1'
+    # 'A 1','C 1'
+    # 'C 2','A 1'
+    # 'A 2','B 1'
+    # 'B 2','A 2'
+    # 'A 2','C 1'
+    # 'C 2','A 2'
+    # 'B 1','C 1'
+    # 'C 2','B 1'
+    # 'B 2','C 1'
+    # 'C 2','B 2'
+    #
+    # These groups should be consolidated into edges with nodes ordered
+    # according to the first appearance of the nodes in the list of provision
+    # groups. For example, the node pair A,B first appears in 'A 1','B 1' so
+    # all subsequent groups involving provisions of that node pair should be
+    # consolidated into an edge with first node A and second node B, regardless
+    # of the order in which those two nodes appear in the provision group. As
+    # such, the provision group 'B 2','A 1' should be consolidated into the edge
+    # with first node A and second node B, rather than into a new edge with
+    # first node B and second node A.
+    provision_groups = [
+        ('A 1', 'B 1'),
+        ('B 2', 'A 1'),
+        ('A 1', 'C 1'),
+        ('C 2', 'A 1'),
+        ('A 2', 'B 1'),
+        ('B 2', 'A 2'),
+        ('A 2', 'C 1'),
+        ('C 2', 'A 2'),
+        ('B 1', 'C 1'),
+        ('C 2', 'B 1'),
+        ('B 2', 'C 1'),
+        ('C 2', 'B 2'),
+        ('A 1', 'B 1', 'C 1'),
+        ('C 2', 'A 1', 'B 1'),
+        ('B 2', 'A 1', 'C 1'),
+        ('C 2', 'B 2', 'A 1'),
+        ('A 2', 'B 1', 'C 1'),
+        ('C 2', 'A 2', 'B 1'),
+        ('B 2', 'A 2', 'C 1'),
+        ('C 2', 'B 2', 'A 2'),
+    ]
+    expected_nodes = {'A', 'B', 'C'}
+    expected_edges = [
+        ('A', 'B', 4),
+        ('A', 'C', 4),
+        ('B', 'C', 4),
+    ]
+    actual_nodes, actual_edges = transformations.provision_groups_to_nodes_and_edges(provision_groups)
+    assert expected_nodes == actual_nodes
+    assert expected_edges == actual_edges

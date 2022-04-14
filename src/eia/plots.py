@@ -6,7 +6,6 @@ import matplotlib.ticker as ticker
 import numpy
 import numpy.ma as ma
 
-import eia.files.csv_files as csv_files
 import eia.scopes as scopes
 import eia.transformations as transformations
 
@@ -36,15 +35,15 @@ def trim_data_for_full_text(data, row_labels, column_labels):
 
 
 def trim_data_for_provisions(data, row_labels, column_labels):
-    first_state_in_row_labels = csv_files.state_and_provision_number_from_label(
+    first_state_in_row_labels = transformations.label_to_state_and_provision_identifier(
         row_labels[0])[0]
     first_state_row_labels = list(filter(
-        lambda label: csv_files.state_and_provision_number_from_label(label)[0] == first_state_in_row_labels,
+        lambda label: transformations.label_to_state_and_provision_identifier(label)[0] == first_state_in_row_labels,
         row_labels))
-    last_state_in_column_labels = csv_files.state_and_provision_number_from_label(
+    last_state_in_column_labels = transformations.label_to_state_and_provision_identifier(
         column_labels[-1])[0]
     last_state_column_labels = list(filter(
-        lambda label: csv_files.state_and_provision_number_from_label(label)[0] == last_state_in_column_labels,
+        lambda label: transformations.label_to_state_and_provision_identifier(label)[0] == last_state_in_column_labels,
         column_labels))
 
     LOGGER.debug("First state row labels: {}".format(first_state_row_labels))
@@ -59,11 +58,11 @@ def trim_data_for_provisions(data, row_labels, column_labels):
     for row_index in range(len(first_state_row_labels), len(row_labels)):
         trimmed_row = []
         row_state, row_provision_number = \
-            csv_files.state_and_provision_number_from_label(
+            transformations.label_to_state_and_provision_identifier(
                 row_labels[row_index])
         for column_index in range(0, len(column_labels) - len(last_state_column_labels)):
             column_state, column_provision_number = \
-                csv_files.state_and_provision_number_from_label(
+                transformations.label_to_state_and_provision_identifier(
                     column_labels[column_index])
             # The first expression in the following predicate will evaluate to
             # True when column_state is equal to row_state (e.g. column_state =
@@ -182,14 +181,14 @@ def similarity_heatmap_for_full_text(
 
 def provision_numbers_from_labels(labels):
     return list(map(
-        lambda label: csv_files.state_and_provision_number_from_label(label)[1],
+        lambda label: transformations.label_to_state_and_provision_identifier(label)[1],
         labels))
 
 
 def unique_states_from_labels(labels):
     unique_states = []
     for label in labels:
-        state = csv_files.state_and_provision_number_from_label(label)[0]
+        state = transformations.label_to_state_and_provision_identifier(label)[0]
         if state not in unique_states:
             unique_states.append(state)
     return unique_states

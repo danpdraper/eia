@@ -1,7 +1,7 @@
 import heapq
 import logging
 
-import eia.files.csv_files as csv_files
+import eia.transformations as transformations
 
 
 LOGGER = logging.getLogger(__name__)
@@ -75,7 +75,7 @@ class ProvisionGroupHeapElement(SetHeapElement):
         symmetric_difference = self.union(other) - self.intersection(other)
         states_in_symmetric_difference = set()
         for provision in symmetric_difference:
-            state = csv_files.state_and_provision_number_from_label(provision)[0]
+            state = transformations.label_to_state_and_provision_identifier(provision)[0]
             if state in states_in_symmetric_difference:
                 return True
             states_in_symmetric_difference.add(state)

@@ -5,8 +5,23 @@ import eia.environment as environment
 import eia.tests.utilities as utilities
 
 
+def get_highest_provision_group_scores_and_nodes_and_edges(test_directory_path):
+    highest_provision_group_scores_file_path = os.path.join(
+        test_directory_path, 'highest_provision_group_scores.txt')
+    nodes_file_path = os.path.join(test_directory_path, 'nodes.csv')
+    edges_file_path = os.path.join(test_directory_path, 'edges.csv')
+    with open(highest_provision_group_scores_file_path, 'r') as file_object:
+        highest_provision_group_scores = file_object.read()
+    with open(nodes_file_path, 'r') as file_object:
+        nodes = file_object.read()
+    with open(edges_file_path, 'r') as file_object:
+        edges = file_object.read()
+    return highest_provision_group_scores, nodes, edges
+
+
 def execute_highest_similarity_scores_without_provision_contents_test(
-        number_of_scores, expected_output):
+        number_of_scores, expected_highest_provision_group_scores, expected_nodes,
+        expected_edges):
     '''
     Similarity matrix:
                 [ A 1  A 2  B 1  B 2  C 1  C 2  ]
@@ -85,6 +100,29 @@ def execute_highest_similarity_scores_without_provision_contents_test(
     A 1,C 1          0.210
     A 1,B 2          0.160
     A 1,B 1          0.110
+
+    The application should also identify all of the nodes and edges among the
+    provision groups, with each node representing a state and the weight of each
+    edge representing the number of unique combinations of provisions of the two
+    connected nodes that appear together in a group.
+
+    Among the provision groups above, there are only three nodes: A, B and C.
+    Each of those nodes appears in sixteen provision groups. Each provision of
+    each node appears in eight groups. Each provision of each node appears in
+    the same group as each of the other provisions (of different nodes) three
+    times. That said, there are only four unique combinations of provision pairs
+    of which each provision is a member. For example, provision 'A 1' is a
+    member of four unique combinations of provision pairs: 'A 1,B 1', 'A 1,B 2',
+    'A 1,C 1' and 'A 1,C 2'. As only two of those combinations involve a given
+    pair of nodes, the most that a given provision can contribute to the weight
+    of an edge in this case is four (two for each of the two provisions
+    associated with each node). The edge table corresponding to the list of
+    provision groups above thus takes the following form:
+
+    First node  Second node  Weight
+    A           B            4
+    A           C            4
+    B           C            4
     '''
 
     test_directory_path = utilities.create_test_directory('test_highest_similarity_scores')
@@ -109,7 +147,7 @@ def execute_highest_similarity_scores_without_provision_contents_test(
     try:
         utilities.populate_test_directory(
             test_directory_path, file_content_by_relative_path)
-        completed_process = subprocess.run(
+        subprocess.run(
             [
                 script_file_path,
                 '--debug',
@@ -117,16 +155,20 @@ def execute_highest_similarity_scores_without_provision_contents_test(
                 similarity_matrix_file_path,
                 str(number_of_scores),
             ],
-            capture_output=True, check=True, text=True)
+            check=True)
+        actual_highest_provision_group_scores, actual_nodes, actual_edges = \
+            get_highest_provision_group_scores_and_nodes_and_edges(test_directory_path)
     finally:
         utilities.delete_test_directory(test_directory_path)
 
-    assert expected_output in completed_process.stdout
+    assert expected_highest_provision_group_scores == actual_highest_provision_group_scores
+    assert expected_nodes == actual_nodes
+    assert expected_edges == actual_edges
 
 
 def test_highest_similarity_scores_without_provision_contents():
     # Six highest scores
-    expected_output = (
+    expected_highest_provision_group_scores = (
         'State A 2\n'
         'State B 2\n'
         'State C 1\n'
@@ -167,11 +209,23 @@ def test_highest_similarity_scores_without_provision_contents():
         'State C 2\n'
         'Scaled average: 1.000\n'
     )
+    expected_nodes = (
+        'ID,Label\n'
+        '0,State A\n'
+        '1,State B\n'
+        '2,State C\n'
+    )
+    expected_edges = (
+        'ID,Source,Target,Type,Weight\n'
+        '0,0,1,Undirected,3\n'
+        '1,0,2,Undirected,4\n'
+        '2,1,2,Undirected,4\n'
+    )
     execute_highest_similarity_scores_without_provision_contents_test(
-        6, expected_output)
+        6, expected_highest_provision_group_scores, expected_nodes, expected_edges)
 
     # Ten highest scores
-    expected_output += (
+    expected_highest_provision_group_scores += (
         '\n'
         '----------\n'
         '\n'
@@ -198,10 +252,10 @@ def test_highest_similarity_scores_without_provision_contents():
         'Scaled average: 0.790\n'
     )
     execute_highest_similarity_scores_without_provision_contents_test(
-        10, expected_output)
+        10, expected_highest_provision_group_scores, expected_nodes, expected_edges)
 
     # Fifteen highest scores
-    expected_output += (
+    expected_highest_provision_group_scores += (
         '\n'
         '----------\n'
         '\n'
@@ -235,11 +289,17 @@ def test_highest_similarity_scores_without_provision_contents():
         'State C 2\n'
         'Scaled average: 0.270\n'
     )
+    expected_edges = (
+        'ID,Source,Target,Type,Weight\n'
+        '0,0,1,Undirected,4\n'
+        '1,0,2,Undirected,4\n'
+        '2,1,2,Undirected,4\n'
+    )
     execute_highest_similarity_scores_without_provision_contents_test(
-        15, expected_output)
+        15, expected_highest_provision_group_scores, expected_nodes, expected_edges)
 
     # Twenty highest scores
-    expected_output += (
+    expected_highest_provision_group_scores += (
         '\n'
         '----------\n'
         '\n'
@@ -272,11 +332,12 @@ def test_highest_similarity_scores_without_provision_contents():
         'Scaled average: 0.110\n'
     )
     execute_highest_similarity_scores_without_provision_contents_test(
-        20, expected_output)
+        20, expected_highest_provision_group_scores, expected_nodes, expected_edges)
 
 
 def execute_highest_similarity_scores_without_provision_contents_but_with_score_threshold_test(
-        number_of_scores, expected_output):
+        number_of_scores, expected_highest_provision_group_scores,
+        expected_nodes, expected_edges):
     '''
     Similarity matrix:
                 [ A 1  A 2  B 1  B 2  C 1  C 2  ]
@@ -354,6 +415,43 @@ def execute_highest_similarity_scores_without_provision_contents_but_with_score_
     A 2,C 1          0.800
     B 2,C 1          0.790
     A 2,C 2          0.750
+    B 2,C 2          0.740
+
+    The application should also identify all of the nodes and edges among the
+    provision groups, with each node representing a state and the weight of each
+    edge representing the number of unique combinations of provisions of the two
+    connected nodes that appear together in a group.
+
+    Among the provision groups above, there are only three nodes: A, B and C.
+    Node A appears in six provision groups, while nodes B and C each appear in
+    five provision groups. The following table lists the number of times that
+    each provision pair appears in the same group together.
+
+    First provision  Second provision  Appearances in same group
+    A 2              B 1               1
+    A 2              B 2               3
+    A 2              C 1               2
+    A 2              C 2               2
+    B 2              C 1               2
+    B 2              C 2               1
+
+    While 'A 2' appears in the same group as each of the other provisions (of
+    different nodes) a total of seven times, there are only four unique
+    combinations of provision pairs of which provision 'A 2' is a member:
+    'A 2,B 1', 'A 2,B 2', 'A 2,C 1' and 'A 2,C 2'. Similarly, while 'B 2'
+    appears in the same group as the other provisions a total of six times,
+    there are only three unique combinations of provision pairs of which
+    provision 'B 2' is a member: 'A 2,B 2', 'B 2,C 1' and 'B 2,C 2'. Thus, in
+    total, there are six unique combinations of provisions ('A 2,B 2' is
+    included in both of the foregoing lists), two of which involve the node pair
+    'A,B', two of which involve the node pair 'A,C' and two of which involve the
+    node pair 'B,C'. Consequently, the edge table corresponding to the list of
+    provision groups above should take the following form:
+
+    First node  Second node  Weight
+    A           B            2
+    A           C            2
+    B           C            2
     '''
 
     test_directory_path = utilities.create_test_directory('test_highest_similarity_scores')
@@ -378,7 +476,7 @@ def execute_highest_similarity_scores_without_provision_contents_but_with_score_
     try:
         utilities.populate_test_directory(
             test_directory_path, file_content_by_relative_path)
-        completed_process = subprocess.run(
+        subprocess.run(
             [
                 script_file_path,
                 '--debug',
@@ -388,16 +486,20 @@ def execute_highest_similarity_scores_without_provision_contents_but_with_score_
                 '--score_threshold',
                 '0.5'
             ],
-            capture_output=True, check=True, text=True)
+            check=True)
+        actual_highest_provision_group_scores, actual_nodes, actual_edges = \
+            get_highest_provision_group_scores_and_nodes_and_edges(test_directory_path)
     finally:
         utilities.delete_test_directory(test_directory_path)
 
-    assert expected_output in completed_process.stdout
+    assert expected_highest_provision_group_scores == actual_highest_provision_group_scores
+    assert expected_nodes == actual_nodes
+    assert expected_edges == actual_edges
 
 
 def test_highest_similarity_scores_without_provision_contents_but_with_score_threshold():
     # Five highest scores
-    expected_output = (
+    expected_highest_provision_group_scores = (
         'Mean: 0.505\n'
         'Standard deviation: 0.305\n'
         'Mean + 0.5 * standard deviation: 0.658\n'
@@ -434,11 +536,23 @@ def test_highest_similarity_scores_without_provision_contents_but_with_score_thr
         'State C 1\n'
         'Scaled average: 0.800\n'
     )
+    expected_nodes = (
+        'ID,Label\n'
+        '0,State A\n'
+        '1,State B\n'
+        '2,State C\n'
+    )
+    expected_edges = (
+        'ID,Source,Target,Type,Weight\n'
+        '0,0,1,Undirected,2\n'
+        '1,0,2,Undirected,2\n'
+        '2,1,2,Undirected,2\n'
+    )
     execute_highest_similarity_scores_without_provision_contents_but_with_score_threshold_test(
-        5, expected_output)
+        5, expected_highest_provision_group_scores, expected_nodes, expected_edges)
 
     # Ten highest scores
-    expected_output += (
+    expected_highest_provision_group_scores += (
         '\n'
         '----------\n'
         '\n'
@@ -451,9 +565,15 @@ def test_highest_similarity_scores_without_provision_contents_but_with_score_thr
         'State A 2\n'
         'State C 2\n'
         'Scaled average: 0.750\n'
+        '\n'
+        '----------\n'
+        '\n'
+        'State B 2\n'
+        'State C 2\n'
+        'Scaled average: 0.740\n'
     )
     execute_highest_similarity_scores_without_provision_contents_but_with_score_threshold_test(
-        10, expected_output)
+        10, expected_highest_provision_group_scores, expected_nodes, expected_edges)
 
 
 def test_highest_similarity_scores_without_provision_contents_but_with_redundancy_reduction():
@@ -525,6 +645,29 @@ def test_highest_similarity_scores_without_provision_contents_but_with_redundanc
     A 1,B 2,C 2      1.000
     A 1,B 1,C 2      0.530
     A 1,B 1,C 1      0.430
+
+    The application should also identify all of the nodes and edges among the
+    provision groups, with each node representing a state and the weight of each
+    edge representing the number of unique combinations of provisions of the two
+    connected nodes that appear together in a group.
+
+    Among the provision groups above, there are only three nodes: A, B and C.
+    Each node appears in all eight provision groups. While each provision
+    appears in the same group as each of the other provisions (of different nodes)
+    twice, there are only four unique combinations of provision pairs of which
+    each provision is a member. For example, provision 'A 1' appears in the same
+    provision group as each of 'B 1', 'B 2', 'C 1' and 'C 2' twice, but is only
+    a member of four unique combinations of provision pairs: 'A 1,B 1',
+    'A 1,B 2', 'A 1,C 1' and 'A 1,C 2'. Two of the unique combinations involve
+    one of the two potential node pairs, while the other two unique combinations
+    involve the other potential node pair (i.e. 'A,B' and 'A,C' in the preceding
+    example). As there are two provisions per node, the edge table corresponding
+    to the list of provision groups above should take the following form:
+
+    First node  Second node  Weight
+    A           B            4
+    A           C            4
+    B           C            4
     '''
 
     test_directory_path = utilities.create_test_directory('test_highest_similarity_scores')
@@ -549,7 +692,7 @@ def test_highest_similarity_scores_without_provision_contents_but_with_redundanc
     try:
         utilities.populate_test_directory(
             test_directory_path, file_content_by_relative_path)
-        completed_process = subprocess.run(
+        subprocess.run(
             [
                 script_file_path,
                 '--debug',
@@ -558,11 +701,13 @@ def test_highest_similarity_scores_without_provision_contents_but_with_redundanc
                 '10',
                 '--reduce_redundancy_in_output'
             ],
-            capture_output=True, check=True, text=True)
+            check=True)
+        actual_highest_provision_group_scores, actual_nodes, actual_edges = \
+            get_highest_provision_group_scores_and_nodes_and_edges(test_directory_path)
     finally:
         utilities.delete_test_directory(test_directory_path)
 
-    expected_output = (
+    expected_highest_provision_group_scores = (
         'State A 2\n'
         'State B 2\n'
         'State C 1\n'
@@ -617,7 +762,21 @@ def test_highest_similarity_scores_without_provision_contents_but_with_redundanc
         'State C 1\n'
         'Scaled average: 0.430\n'
     )
-    assert expected_output in completed_process.stdout
+    expected_nodes = (
+        'ID,Label\n'
+        '0,State A\n'
+        '1,State B\n'
+        '2,State C\n'
+    )
+    expected_edges = (
+        'ID,Source,Target,Type,Weight\n'
+        '0,0,1,Undirected,4\n'
+        '1,0,2,Undirected,4\n'
+        '2,1,2,Undirected,4\n'
+    )
+    assert expected_highest_provision_group_scores == actual_highest_provision_group_scores
+    assert expected_nodes == actual_nodes
+    assert expected_edges == actual_edges
 
 
 def test_highest_similarity_scores_with_provision_contents():
@@ -699,6 +858,29 @@ def test_highest_similarity_scores_with_provision_contents():
     A 1,C 1          0.210
     A 1,B 2          0.160
     A 1,B 1          0.110
+
+    The application should also identify all of the nodes and edges among the
+    provision groups, with each node representing a state and the weight of each
+    edge representing the number of unique combinations of provisions of the two
+    connected nodes that appear together in a group.
+
+    Among the provision groups above, there are only three nodes: A, B and C.
+    Each of those nodes appears in sixteen provision groups. Each provision of
+    each node appears in eight groups. Each provision of each node appears in
+    the same group as each of the other provisions (of different nodes) three
+    times. That said, there are only four unique combinations of provision pairs
+    of which each provision is a member. For example, provision 'A 1' is a
+    member of four unique combinations of provision pairs: 'A 1,B 1', 'A 1,B 2',
+    'A 1,C 1' and 'A 1,C 2'. As only two of those combinations involve a given
+    pair of nodes, the most that a given provision can contribute to the weight
+    of an edge in this case is four (two for each of the two provisions
+    associated with each node). The edge table corresponding to the list of
+    provision groups above thus takes the following form:
+
+    First node  Second node  Weight
+    A           B            4
+    A           C            4
+    B           C            4
     '''
 
     test_directory_path = utilities.create_test_directory('test_highest_similarity_scores')
@@ -745,7 +927,7 @@ def test_highest_similarity_scores_with_provision_contents():
         test_directory_path, 'test_similarity_matrix.csv')
     legislation_directory_path = os.path.join(test_directory_path, 'legislation')
 
-    expected_output = (
+    expected_highest_provision_group_scores = (
         'State A 2\n'
         'State B 2\n'
         'State C 1\n'
@@ -821,13 +1003,24 @@ def test_highest_similarity_scores_with_provision_contents():
         'State B 2: Second provision in State B legislation\n'
         '\n'
         'State C 2: Second provision in State C legislation\n'
-
+    )
+    expected_nodes = (
+        'ID,Label\n'
+        '0,State A\n'
+        '1,State B\n'
+        '2,State C\n'
+    )
+    expected_edges = (
+        'ID,Source,Target,Type,Weight\n'
+        '0,0,1,Undirected,3\n'
+        '1,0,2,Undirected,4\n'
+        '2,1,2,Undirected,4\n'
     )
 
     try:
         utilities.populate_test_directory(
             test_directory_path, file_content_by_relative_path)
-        completed_process = subprocess.run(
+        subprocess.run(
             [
                 script_file_path,
                 '--legislation_directory_path',
@@ -838,11 +1031,15 @@ def test_highest_similarity_scores_with_provision_contents():
                 '6',
                 '--include_provision_contents_in_output',
             ],
-            capture_output=True, check=True, text=True)
+            check=True)
+        actual_highest_provision_group_scores, actual_nodes, actual_edges = \
+            get_highest_provision_group_scores_and_nodes_and_edges(test_directory_path)
     finally:
         utilities.delete_test_directory(test_directory_path)
 
-    assert expected_output in completed_process.stdout
+    assert expected_highest_provision_group_scores == actual_highest_provision_group_scores
+    assert expected_nodes == actual_nodes
+    assert expected_edges == actual_edges
 
 
 def test_highest_similarity_scores_with_provision_contents_and_score_threshold():
@@ -923,6 +1120,42 @@ def test_highest_similarity_scores_with_provision_contents_and_score_threshold()
     A 2,C 1          0.800
     B 2,C 1          0.790
     A 2,C 2          0.750
+
+    The application should also identify all of the nodes and edges among the
+    provision groups, with each node representing a state and the weight of each
+    edge representing the number of unique combinations of provisions of the two
+    connected nodes that appear together in a group.
+
+    Among the provision groups above, there are only three nodes: A, B and C.
+    Node A appears in six provision groups, while nodes B and C each appear in
+    five provision groups. The following table lists the number of times that
+    each provision pair appears in the same group together.
+
+    First provision  Second provision  Appearances in same group
+    A 2              B 1               1
+    A 2              B 2               3
+    A 2              C 1               2
+    A 2              C 2               2
+    B 2              C 1               2
+    B 2              C 2               1
+
+    While 'A 2' appears in the same group as each of the other provisions (of
+    different nodes) a total of seven times, there are only four unique
+    combinations of provision pairs of which provision 'A 2' is a member:
+    'A 2,B 1', 'A 2,B 2', 'A 2,C 1' and 'A 2,C 2'. Similarly, while 'B 2'
+    appears in the same group as the other provisions a total of six times,
+    there are only three unique combinations of provision pairs of which
+    provision 'B 2' is a member: 'A 2,B 2', 'B 2,C 1' and 'B 2,C 2'. Thus, in
+    total, there are six unique combinations of provisions ('A 2,B 2' is
+    included in both of the foregoing lists), two of which involve the node pair
+    'A,B', two of which involve the node pair 'A,C' and two of which involve the
+    node pair 'B,C'. Consequently, the edge table corresponding to the list of
+    provision groups above should take the following form:
+
+    First node  Second node  Weight
+    A           B            2
+    A           C            2
+    B           C            2
     '''
 
     test_directory_path = utilities.create_test_directory('test_highest_similarity_scores')
@@ -969,7 +1202,7 @@ def test_highest_similarity_scores_with_provision_contents_and_score_threshold()
         test_directory_path, 'test_similarity_matrix.csv')
     legislation_directory_path = os.path.join(test_directory_path, 'legislation')
 
-    expected_output = (
+    expected_highest_provision_group_scores = (
         'Mean: 0.505\n'
         'Standard deviation: 0.305\n'
         'Mean + 0.5 * standard deviation: 0.658\n'
@@ -1030,11 +1263,23 @@ def test_highest_similarity_scores_with_provision_contents_and_score_threshold()
         '\n'
         'State C 1: First provision in State C legislation\n'
     )
+    expected_nodes = (
+        'ID,Label\n'
+        '0,State A\n'
+        '1,State B\n'
+        '2,State C\n'
+    )
+    expected_edges = (
+        'ID,Source,Target,Type,Weight\n'
+        '0,0,1,Undirected,2\n'
+        '1,0,2,Undirected,2\n'
+        '2,1,2,Undirected,2\n'
+    )
 
     try:
         utilities.populate_test_directory(
             test_directory_path, file_content_by_relative_path)
-        completed_process = subprocess.run(
+        subprocess.run(
             [
                 script_file_path,
                 '--legislation_directory_path',
@@ -1047,11 +1292,15 @@ def test_highest_similarity_scores_with_provision_contents_and_score_threshold()
                 '--score_threshold',
                 '0.5',
             ],
-            capture_output=True, check=True, text=True)
+            check=True)
+        actual_highest_provision_group_scores, actual_nodes, actual_edges = \
+            get_highest_provision_group_scores_and_nodes_and_edges(test_directory_path)
     finally:
         utilities.delete_test_directory(test_directory_path)
 
-    assert expected_output in completed_process.stdout
+    assert expected_highest_provision_group_scores == actual_highest_provision_group_scores
+    assert expected_nodes == actual_nodes
+    assert expected_edges == actual_edges
 
 
 def test_highest_similarity_scores_with_provision_contents_and_redundancy_reduction():
@@ -1123,6 +1372,29 @@ def test_highest_similarity_scores_with_provision_contents_and_redundancy_reduct
     A 1,B 2,C 2      1.000
     A 1,B 1,C 2      0.530
     A 1,B 1,C 1      0.430
+
+    The application should also identify all of the nodes and edges among the
+    provision groups, with each node representing a state and the weight of each
+    edge representing the number of unique combinations of provisions of the two
+    connected nodes that appear together in a group.
+
+    Among the provision groups above, there are only three nodes: A, B and C.
+    Each node appears in all eight provision groups. While each provision
+    appears in the same group as each of the other provisions (of different nodes)
+    twice, there are only four unique combinations of provision pairs of which
+    each provision is a member. For example, provision 'A 1' appears in the same
+    provision group as each of 'B 1', 'B 2', 'C 1' and 'C 2' twice, but is only
+    a member of four unique combinations of provision pairs: 'A 1,B 1',
+    'A 1,B 2', 'A 1,C 1' and 'A 1,C 2'. Two of the unique combinations involve
+    one of the two potential node pairs, while the other two unique combinations
+    involve the other potential node pair (i.e. 'A,B' and 'A,C' in the preceding
+    example). As there are two provisions per node, the edge table corresponding
+    to the list of provision groups above should take the following form:
+
+    First node  Second node  Weight
+    A           B            4
+    A           C            4
+    B           C            4
     '''
 
     test_directory_path = utilities.create_test_directory('test_highest_similarity_scores')
@@ -1169,7 +1441,7 @@ def test_highest_similarity_scores_with_provision_contents_and_redundancy_reduct
         test_directory_path, 'test_similarity_matrix.csv')
     legislation_directory_path = os.path.join(test_directory_path, 'legislation')
 
-    expected_output = (
+    expected_highest_provision_group_scores = (
         'State A 2\n'
         'State B 2\n'
         'State C 1\n'
@@ -1272,11 +1544,23 @@ def test_highest_similarity_scores_with_provision_contents_and_redundancy_reduct
         '\n'
         'State C 1: First provision in State C legislation\n'
     )
+    expected_nodes = (
+        'ID,Label\n'
+        '0,State A\n'
+        '1,State B\n'
+        '2,State C\n'
+    )
+    expected_edges = (
+        'ID,Source,Target,Type,Weight\n'
+        '0,0,1,Undirected,4\n'
+        '1,0,2,Undirected,4\n'
+        '2,1,2,Undirected,4\n'
+    )
 
     try:
         utilities.populate_test_directory(
             test_directory_path, file_content_by_relative_path)
-        completed_process = subprocess.run(
+        subprocess.run(
             [
                 script_file_path,
                 '--legislation_directory_path',
@@ -1288,8 +1572,12 @@ def test_highest_similarity_scores_with_provision_contents_and_redundancy_reduct
                 '--include_provision_contents_in_output',
                 '--reduce_redundancy_in_output',
             ],
-            capture_output=True, check=True, text=True)
+            check=True)
+        actual_highest_provision_group_scores, actual_nodes, actual_edges = \
+            get_highest_provision_group_scores_and_nodes_and_edges(test_directory_path)
     finally:
         utilities.delete_test_directory(test_directory_path)
 
-    assert expected_output in completed_process.stdout
+    assert expected_highest_provision_group_scores == actual_highest_provision_group_scores
+    assert expected_nodes == actual_nodes
+    assert expected_edges == actual_edges

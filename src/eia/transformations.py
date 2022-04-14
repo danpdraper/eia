@@ -16,6 +16,7 @@ PUNCTUATION_REGEX = re.compile(r'[,;:.?\-"]| \'|\' ')
 SINGLE_SPACE = ' '
 SLASH_REGEX = re.compile(r'\\|/')
 SNAKE_CASE_REGEX = re.compile(r'(^|_)([a-z])')
+STATE_AND_PROVISION_LABEL_REGEX = re.compile(r'^([A-Za-z ]+)( [0-9L\.-]+)?$')
 STATE_NAME_SNAKE_CASE_REGEX = re.compile(r'/([a-z_]+)_[a-z]+\.')
 TO_CAPITALIZED_REGEX = re.compile(r'(^|_)([a-z])')
 UNDERSCORE = '_'
@@ -146,3 +147,51 @@ def reduce_whitespace_in_string_to_single_space_between_successive_words(string)
     return re.sub(
         LEADING_AND_TRAILING_WHITESPACE_REGEX, EMPTY_STRING,
         re.sub(WHITESPACE_REGEX, SINGLE_SPACE, string))
+
+
+def label_to_state_and_provision_identifier(label):
+    match = STATE_AND_PROVISION_LABEL_REGEX.match(label)
+    if not match:
+        raise ValueError(
+            "Label {} does not consist of a state name and optional provision "
+            "number.".format(label))
+    return match.group(1), match.group(2).lstrip(' ') if match.group(2) else match.group(2)
+
+
+def provision_groups_to_nodes_and_edges(provision_groups):
+    nodes = set()
+    edges = {}
+    for provision_group in provision_groups:
+        LOGGER.debug("Processing provision group {}.".format(provision_group))
+        for anchor_index, anchor_provision in enumerate(provision_group):
+            anchor_state, anchor_provision_identifier = \
+                label_to_state_and_provision_identifier(anchor_provision)
+            nodes.add(anchor_state)
+            for floating_provision in provision_group[anchor_index + 1:]:
+                floating_state, floating_provision_identifier = \
+                    label_to_state_and_provision_identifier(floating_provision)
+                nodes.add(floating_state)
+                forward_state_pair = (anchor_state, floating_state)
+                reverse_state_pair = (floating_state, anchor_state)
+                forward_provision_identifier_pair = \
+                    (anchor_provision_identifier, floating_provision_identifier)
+                reverse_provision_identifier_pair = \
+                    (floating_provision_identifier, anchor_provision_identifier)
+                if forward_state_pair not in edges and reverse_state_pair not in edges:
+                    state_pair = forward_state_pair
+                    edges[state_pair] = set()
+                    provision_identifier_pair = forward_provision_identifier_pair
+                elif forward_state_pair not in edges:
+                    state_pair = reverse_state_pair
+                    provision_identifier_pair = reverse_provision_identifier_pair
+                else:
+                    state_pair = forward_state_pair
+                    provision_identifier_pair = forward_provision_identifier_pair
+                LOGGER.debug(
+                    "Adding provision identifier pair {} to edge {}.".format(
+                        provision_identifier_pair, state_pair))
+                edges[state_pair].add(provision_identifier_pair)
+    return nodes, [
+        (state_pair[0], state_pair[1], len(provision_identifier_pairs))
+        for state_pair, provision_identifier_pairs in edges.items()
+    ]

@@ -6,7 +6,6 @@ import statistics
 
 import eia.environment as environment
 import eia.files.csv_files as csv_files
-import eia.files.input_output as input_output
 import eia.files.text_files as text_files
 import eia.heap as heap
 import eia.plots as plots
@@ -65,11 +64,8 @@ def matrix_and_plot(arguments):
             arguments.states_to_include_file_path)
     ]
 
-    input_output.write(output_file_path, ["language:{}".format(arguments.language)])
-    input_output.append(
-        output_file_path, map(
-            lambda value: transformations.label_and_row_tuple_to_comma_separated_string(value),
-            labels_and_rows))
+    csv_files.write_similarity_matrix(
+        output_file_path, arguments.language, labels_and_rows)
     logger.info("Wrote similarity matrix and labels to {}".format(output_file_path))
 
     if not arguments.matrix_only:
@@ -81,8 +77,8 @@ def matrix_and_plot(arguments):
 
 
 def is_same_state(first_label, second_label):
-    return csv_files.state_and_provision_number_from_label(first_label)[0] == \
-        csv_files.state_and_provision_number_from_label(second_label)[0]
+    return transformations.label_to_state_and_provision_identifier(first_label)[0] == \
+        transformations.label_to_state_and_provision_identifier(second_label)[0]
 
 
 def calculate_mean_and_standard_deviation(labels, matrix):
@@ -188,37 +184,52 @@ def highest_provision_group_scores(arguments):
             key=lambda heap_element: sorted(list(heap_element.provisions))),
         key=lambda heap_element: heap_element.scaled_average,
         reverse=True)[:arguments.number_of_scores]
+    logger.debug(
+        "Top {} heap elements: {}".format(
+            arguments.number_of_scores, heap_elements))
 
     language = similarity_matrix.get_language(arguments.matrix_file_path)
-    scores_and_provision_groups = map(
+    scores_and_provision_groups = list(map(
         lambda heap_element: (
             heap_element.scaled_average,
-            map(
+            sorted(list(map(
                 lambda provision: (provision,) + (
                     (text_files.find_provision_contents(
                         arguments.legislation_directory_path, language,
-                        *csv_files.state_and_provision_number_from_label(provision)),)
+                        *transformations.label_to_state_and_provision_identifier(provision)),)
                     if arguments.include_provision_contents_in_output else ()
                 ),
-                heap_element.provisions),
+                heap_element.provisions)),
+                key=lambda provision: provision[0]),
         ),
-        heap_elements)
+        heap_elements))
+    logger.debug(
+        "Transformed top {} heap elements into scores and provision groups "
+        "{}".format(arguments.number_of_scores, scores_and_provision_groups))
 
+    matrix_directory_path_components = arguments.matrix_file_path.split(os.path.sep)[:-1]
+    matrix_directory_path = (os.path.sep if matrix_directory_path_components[0] == '' else '') + os.path.join(
+        *matrix_directory_path_components)
     if arguments.score_threshold:
-        print("Mean: {:.3f}".format(mean))
-        print("Standard deviation: {:.3f}".format(standard_deviation))
-        print("Mean + {} * standard deviation: {:.3f}".format(
-            arguments.score_threshold,
-            mean + arguments.score_threshold * standard_deviation))
-        print('\n----------\n')
-    for index, score_and_provision_group in enumerate(scores_and_provision_groups):
-        if index > 0:
-            print('\n----------\n')
-        # Convert map to list to permit multiple traversals
-        provision_group = sorted(list(score_and_provision_group[1]))
-        for provision in provision_group:
-            print(provision[0])
-        print("Scaled average: {:.3f}".format(score_and_provision_group[0]))
-        for provision in provision_group:
-            if len(provision) > 1:
-                print("\n{}: {}".format(provision[0], provision[1]))
+        text_files.write_statistics_header(
+            matrix_directory_path, mean, standard_deviation,
+            arguments.score_threshold)
+    text_files.write_scores_and_provision_groups(
+        matrix_directory_path, scores_and_provision_groups)
+    logger.info("Wrote scores and provision groups {} to directory {}".format(
+        scores_and_provision_groups, matrix_directory_path))
+
+    nodes, edges = transformations.provision_groups_to_nodes_and_edges(
+        [
+            [
+                provision_and_contents[0] for provision_and_contents in
+                score_and_provision_group[1]
+            ] for score_and_provision_group in scores_and_provision_groups
+        ])
+    logger.debug(
+        "Transformed scores and provision groups {} into nodes {} and edges {}".format(
+            scores_and_provision_groups, nodes, edges))
+    csv_files.write_nodes(matrix_directory_path, nodes)
+    csv_files.write_edges(matrix_directory_path, nodes, edges)
+    logger.info("Wrote nodes {} and edges {} to directory {}".format(
+        nodes, edges, matrix_directory_path))

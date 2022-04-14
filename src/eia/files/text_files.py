@@ -11,6 +11,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 COMMENT_LINE_PREFIX = '#'
+HIGHEST_PROVISION_GROUP_SCORES_FILE_NAME = 'highest_provision_group_scores.txt'
 PROVISION_REGEX = re.compile(r'^\(([^)]+)\) (.*)')
 STATE_REGEX = re.compile(r'^.*\/([a-z_]+)_[a-z]+\.txt$')
 
@@ -145,3 +146,52 @@ def input_text_generator(
     LOGGER.debug(log_message)
     return INPUT_TEXT_GENERATOR_BY_SCOPE[scope](
         file_paths, preserve_provision_delimiters)
+
+
+def get_highest_provision_group_scores_file_path(
+        highest_provision_group_scores_file_directory_path):
+    return os.path.join(
+        highest_provision_group_scores_file_directory_path,
+        HIGHEST_PROVISION_GROUP_SCORES_FILE_NAME)
+
+
+def write_statistics_header(
+        highest_provision_group_scores_file_directory_path, mean,
+        standard_deviation, score_threshold):
+    highest_provision_group_scores_file_path = get_highest_provision_group_scores_file_path(
+        highest_provision_group_scores_file_directory_path)
+    input_output.write(
+        highest_provision_group_scores_file_path,
+        [
+            "Mean: {:.3f}".format(mean),
+            "Standard deviation: {:.3f}".format(standard_deviation),
+            "Mean + {} * standard deviation: {:.3f}".format(
+                score_threshold, mean + score_threshold * standard_deviation),
+            '',
+            '----------',
+            '',
+        ])
+
+
+def write_scores_and_provision_groups(
+        highest_provision_group_scores_file_directory_path,
+        scores_and_provision_groups):
+    highest_provision_group_scores_file_path = get_highest_provision_group_scores_file_path(
+        highest_provision_group_scores_file_directory_path)
+    for index, score_and_provision_group in enumerate(scores_and_provision_groups):
+        if index > 0:
+            input_output.append(
+                highest_provision_group_scores_file_path, ['\n----------\n'])
+        provision_group = sorted(score_and_provision_group[1])
+        input_output.append(
+            highest_provision_group_scores_file_path,
+            [provision[0] for provision in provision_group] +
+            ["Scaled average: {:.3f}".format(score_and_provision_group[0])])
+        provision_group_contents = []
+        for provision in provision_group:
+            if len(provision) > 1:
+                provision_group_contents += ['', "{}: {}".format(provision[0], provision[1])]
+        if len(provision_group_contents) > 0:
+            input_output.append(
+                highest_provision_group_scores_file_path,
+                provision_group_contents)

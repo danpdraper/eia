@@ -1,5 +1,4 @@
 import os
-
 import pytest
 
 import eia.files.text_files as text_files
@@ -452,3 +451,145 @@ def test_input_text_generator_provisions_excludes_states_not_in_states_to_includ
         utilities.delete_test_directory(test_directory_path)
 
     assert expected_labels_and_text == actual_labels_and_text
+
+
+def test_write_statistics_header_writes_mean_and_standard_deviation_and_calculated_threshold_to_provided_file_path():
+    test_directory_path = utilities.create_test_directory('test_text_files')
+    highest_provision_group_scores_file_path = os.path.join(
+        test_directory_path, 'highest_provision_group_scores.txt')
+
+    mean = 0.1
+    standard_deviation = 0.05
+    score_threshold = 5
+    expected_file_contents = (
+        'Mean: 0.100\n'
+        'Standard deviation: 0.050\n'
+        'Mean + 5 * standard deviation: 0.350\n'
+        '\n'
+        '----------\n'
+        '\n'
+    )
+
+    try:
+        text_files.write_statistics_header(
+            test_directory_path, mean, standard_deviation, score_threshold)
+        with open(highest_provision_group_scores_file_path, 'r') as file_object:
+            actual_file_contents = file_object.read()
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert expected_file_contents == actual_file_contents
+
+
+def test_write_scores_and_provision_groups_writes_labels_and_scaled_average_when_provision_contents_not_included():
+    test_directory_path = utilities.create_test_directory('test_text_files')
+    highest_provision_group_scores_file_path = os.path.join(
+        test_directory_path, 'highest_provision_group_scores.txt')
+
+    scores_and_provision_groups = [
+        (0.2, [('A 1',), ('B 1',), ('C 1',)]),
+        (0.4, [('A 2',), ('B 2',), ('C 2',)]),
+        (0.6, [('A 3',), ('B 3',), ('C 3',)]),
+    ]
+    expected_file_contents = (
+        'A 1\n'
+        'B 1\n'
+        'C 1\n'
+        'Scaled average: 0.200\n'
+        '\n'
+        '----------\n'
+        '\n'
+        'A 2\n'
+        'B 2\n'
+        'C 2\n'
+        'Scaled average: 0.400\n'
+        '\n'
+        '----------\n'
+        '\n'
+        'A 3\n'
+        'B 3\n'
+        'C 3\n'
+        'Scaled average: 0.600\n'
+    )
+
+    try:
+        text_files.write_scores_and_provision_groups(
+            test_directory_path, scores_and_provision_groups)
+        with open(highest_provision_group_scores_file_path, 'r') as file_object:
+            actual_file_contents = file_object.read()
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert expected_file_contents == actual_file_contents
+
+
+def test_write_scores_and_provision_groups_writes_labels_and_scaled_average_and_contents_when_contents_included():
+    test_directory_path = utilities.create_test_directory('test_text_files')
+    highest_provision_group_scores_file_path = os.path.join(
+        test_directory_path, 'highest_provision_group_scores.txt')
+
+    scores_and_provision_groups = [
+        (0.2, [
+            ('A 1', 'First provision in legislation of state A'),
+            ('B 1', 'First provision in legislation of state B'),
+            ('C 1', 'First provision in legislation of state C'),
+        ]),
+        (0.4, [
+            ('A 2', 'Second provision in legislation of state A'),
+            ('B 2', 'Second provision in legislation of state B'),
+            ('C 2', 'Second provision in legislation of state C'),
+        ]),
+        (0.6, [
+            ('A 3', 'Third provision in legislation of state A'),
+            ('B 3', 'Third provision in legislation of state B'),
+            ('C 3', 'Third provision in legislation of state C'),
+        ]),
+    ]
+    expected_file_contents = (
+        'A 1\n'
+        'B 1\n'
+        'C 1\n'
+        'Scaled average: 0.200\n'
+        '\n'
+        'A 1: First provision in legislation of state A\n'
+        '\n'
+        'B 1: First provision in legislation of state B\n'
+        '\n'
+        'C 1: First provision in legislation of state C\n'
+        '\n'
+        '----------\n'
+        '\n'
+        'A 2\n'
+        'B 2\n'
+        'C 2\n'
+        'Scaled average: 0.400\n'
+        '\n'
+        'A 2: Second provision in legislation of state A\n'
+        '\n'
+        'B 2: Second provision in legislation of state B\n'
+        '\n'
+        'C 2: Second provision in legislation of state C\n'
+        '\n'
+        '----------\n'
+        '\n'
+        'A 3\n'
+        'B 3\n'
+        'C 3\n'
+        'Scaled average: 0.600\n'
+        '\n'
+        'A 3: Third provision in legislation of state A\n'
+        '\n'
+        'B 3: Third provision in legislation of state B\n'
+        '\n'
+        'C 3: Third provision in legislation of state C\n'
+    )
+
+    try:
+        text_files.write_scores_and_provision_groups(
+            test_directory_path, scores_and_provision_groups)
+        with open(highest_provision_group_scores_file_path, 'r') as file_object:
+            actual_file_contents = file_object.read()
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert expected_file_contents == actual_file_contents
