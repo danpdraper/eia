@@ -65,6 +65,11 @@ class ArgumentParser(object):
             type=float)
         highest_scores_parser.add_argument(
             '--reduce_redundancy_in_output', action='store_true')
+        highest_scores_parser.add_argument(
+            '--deduplicate_transitive_similarity', action='store_true')
+        highest_scores_parser.add_argument(
+            '--enactment_years_file_path',
+            default=environment.ENACTMENT_YEARS_DEFAULT_FILE_PATH)
         highest_scores_parser.set_defaults(func=highest_provision_group_scores_function)
 
     def parse(self, arguments=None):

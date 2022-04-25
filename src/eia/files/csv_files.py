@@ -1,3 +1,4 @@
+import logging
 import os
 
 import eia.files.input_output as input_output
@@ -7,6 +8,9 @@ import eia.transformations as transformations
 COMMA = ','
 EDGES_FILE_NAME = 'edges.csv'
 NODES_FILE_NAME = 'nodes.csv'
+
+
+LOGGER = logging.getLogger(__name__)
 
 
 def contains_comma(string):
@@ -43,3 +47,13 @@ def write_edges(edges_directory_path, nodes, edges):
                         sorted(edges, key=lambda edge: edge[1]),
                         key=lambda edge: edge[0]))
         ])
+
+
+def get_enactment_years(enactment_years_file_path):
+    enactment_years = {}
+    for state_and_enactment_year in input_output.line_generator(enactment_years_file_path):
+        LOGGER.debug("Read {} from {}".format(
+            state_and_enactment_year, enactment_years_file_path))
+        state, enactment_year = state_and_enactment_year.split(COMMA)
+        enactment_years[state] = int(enactment_year)
+    return enactment_years

@@ -301,3 +301,155 @@ def test_provision_groups_to_nodes_and_edges_produces_undirectional_edges():
     actual_nodes, actual_edges = transformations.provision_groups_to_nodes_and_edges(provision_groups)
     assert expected_nodes == actual_nodes
     assert expected_edges == actual_edges
+
+
+def test_provision_groups_to_transitively_deduplicated_nodes_and_edges_only_includes_edges_involving_earliest_state():
+    provision_groups = [
+        ('A 1', 'B 1', 'C 1'),
+        ('A 1', 'B 1', 'C 2'),
+        ('A 1', 'B 2', 'C 1'),
+        ('A 1', 'B 2', 'C 2'),
+        ('A 2', 'B 1', 'C 1'),
+        ('A 2', 'B 1', 'C 2'),
+        ('A 2', 'B 2', 'C 1'),
+        ('A 2', 'B 2', 'C 2'),
+    ]
+    enactment_years = {
+        'A': 1995,
+        'B': 2000,
+        'C': 2005,
+    }
+    # The nodes should be states rather than combinations of state and provision
+    # identifier.
+    expected_nodes = {'A', 'B', 'C'}
+    # To begin with, each unique provision pair should only be counted once in
+    # the weight of the edge between the connected nodes. Furthermore,
+    # transitive deduplication should exclude contributions to edge weights from
+    # the constituent provision pairs of a given provision group that do not
+    # include the node with the earliest enactment year in the provision group.
+    # The list of provision groups above contains eight groups consisting of a
+    # total of six provisions. Each of those provision groups contains
+    # provisions from all three nodes. As node A's enactment year is the
+    # earliest of the three, the only edges to which each provision group should
+    # contribute are 'A,B' and 'A,C'. Each of the six provisions shares two
+    # groups with each of the four provisions from the other two nodes. As
+    # stated above, however, a given provision pair should only be counted in
+    # the corresponding edge's weight once, regardless of the number of times
+    # that provision pair appears in a provision group. Consequently, the four
+    # unique provision pairs involving provisions of A and B should only
+    # contribute four to the weight of the 'A,B' edge. The same is true of the
+    # four unique provision pairs involving provisions of A and C. The expected
+    # edges and weights are thus as follows:
+    expected_edges = [
+        ('A', 'B', 4),
+        ('A', 'C', 4),
+    ]
+    actual_nodes, actual_edges = \
+        transformations.provision_groups_to_transitively_deduplicated_nodes_and_edges(
+            provision_groups, enactment_years)
+    assert expected_nodes == actual_nodes
+    assert expected_edges == actual_edges
+
+
+def test_provision_groups_to_transitively_deduplicated_nodes_and_edges_includes_earliest_states_when_multiple():
+    provision_groups = [
+        ('A 1', 'B 1', 'C 1'),
+        ('A 1', 'B 1', 'C 2'),
+        ('A 1', 'B 2', 'C 1'),
+        ('A 1', 'B 2', 'C 2'),
+        ('A 2', 'B 1', 'C 1'),
+        ('A 2', 'B 1', 'C 2'),
+        ('A 2', 'B 2', 'C 1'),
+        ('A 2', 'B 2', 'C 2'),
+    ]
+    enactment_years = {
+        'A': 1995,
+        'B': 1995,
+        'C': 2000,
+    }
+    # The nodes should be states rather than combinations of state and provision
+    # identifier.
+    expected_nodes = {'A', 'B', 'C'}
+    # To begin with, each unique provision pair should only be counted once in
+    # the weight of the edge between the connected nodes. Furthermore,
+    # transitive deduplication should exclude contributions to edge weights from
+    # the constituent provision pairs of a given provision group that do not
+    # include the node with the earliest enactment year in the provision group.
+    # When multiple nodes share the earliest enactment year in a provision
+    # group, constituent provision pairs involving any of the nodes with the
+    # earliest enactment year should contribute to edge weights. The list of
+    # provision groups above contains eight groups consisting of a total of six
+    # provisions. Each of those provision groups contains provisions from all
+    # three nodes. As node A and node B share the earliest enactment year
+    # (1995), each provision group should contribute to the 'A,B', 'A,C' and
+    # 'B,C' edges. Each of the six provisions shares two groups with each of the
+    # four provisions from the other two nodes. As stated above, however, a
+    # given provision pair should only be counted in the corresponding edge's
+    # weight once, regardless of the number of times that provision pair appears
+    # in a provision group. Consequently, the four unique provision pairs
+    # involving provisions of A and B should only contribute four to the weight
+    # of the 'A,B' edge. The same is true of the four unique provision pairs
+    # involving provisions of A and C, and the four unique provision pairs
+    # involving provisions of B and C. The expected edges and weights are thus
+    # as follows:
+    expected_edges = [
+        ('A', 'B', 4),
+        ('A', 'C', 4),
+        ('B', 'C', 4),
+    ]
+    actual_nodes, actual_edges = \
+        transformations.provision_groups_to_transitively_deduplicated_nodes_and_edges(
+            provision_groups, enactment_years)
+    assert expected_nodes == actual_nodes
+    assert expected_edges == actual_edges
+
+
+def test_provision_groups_to_transitively_deduplicated_nodes_and_edges_produces_undirectional_edges():
+    # The following groups strictly adhere to the following provision orders:
+    # 'A 1','B 1'
+    # 'B 2','A 1'
+    # 'A 1','C 1'
+    # 'C 2','A 1'
+    # 'A 2','B 1'
+    # 'B 2','A 2'
+    # 'A 2','C 1'
+    # 'C 2','A 2'
+    # 'B 1','C 1'
+    # 'C 2','B 1'
+    # 'B 2','C 1'
+    # 'C 2','B 2'
+    #
+    # These groups should be consolidated into edges with nodes ordered
+    # according to the first appearance of the nodes in the list of provision
+    # groups. For example, the node pair A,B first appears in 'A 1','B 1','C 1'
+    # so all subsequent groups involving provisions of that node pair should be
+    # consolidated into an edge with first node A and second node B, regardless
+    # of the order in which those two nodes appear in the provision group. As
+    # such, the provision group 'B 2','A 1','C 1' should be consolidated into
+    # the edge with first node A and second node B, rather than into a new edge
+    # with first node B and second node A.
+    provision_groups = [
+        ('A 1', 'B 1', 'C 1'),
+        ('C 2', 'A 1', 'B 1'),
+        ('B 2', 'A 1', 'C 1'),
+        ('C 2', 'B 2', 'A 1'),
+        ('A 2', 'B 1', 'C 1'),
+        ('C 2', 'A 2', 'B 1'),
+        ('B 2', 'A 2', 'C 1'),
+        ('C 2', 'B 2', 'A 2'),
+    ]
+    enactment_years = {
+        'A': 1995,
+        'B': 2000,
+        'C': 2005,
+    }
+    expected_nodes = {'A', 'B', 'C'}
+    expected_edges = [
+        ('A', 'B', 4),
+        ('A', 'C', 4),
+    ]
+    actual_nodes, actual_edges = \
+        transformations.provision_groups_to_transitively_deduplicated_nodes_and_edges(
+            provision_groups, enactment_years)
+    assert expected_nodes == actual_nodes
+    assert expected_edges == actual_edges

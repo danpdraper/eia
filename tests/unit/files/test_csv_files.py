@@ -94,3 +94,33 @@ def test_write_edges_writes_identifiers_and_nodes_and_type_and_weight_and_header
         utilities.delete_test_directory(test_directory_path)
 
     assert expected_file_contents == actual_file_contents
+
+
+def test_get_enactment_years_returns_map_of_state_to_year_from_file_at_path():
+    test_directory_path = utilities.create_test_directory('test_csv_files')
+    test_file_path = os.path.join(test_directory_path, 'enactment_years.csv')
+    states_and_enactment_years = [
+        ('State A', 1995),
+        ('State B', 2000),
+        ('State C', 2005),
+        ('State D', 2010),
+    ]
+    with open(test_file_path, 'w') as file_object:
+        for state_and_enactment_year in states_and_enactment_years:
+            file_object.write("{},{}\n".format(
+                state_and_enactment_year[0],
+                state_and_enactment_year[1]))
+
+    expected_enactment_years = {
+        'State A': 1995,
+        'State B': 2000,
+        'State C': 2005,
+        'State D': 2010,
+    }
+
+    try:
+        actual_enactment_years = csv_files.get_enactment_years(test_file_path)
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert expected_enactment_years == actual_enactment_years

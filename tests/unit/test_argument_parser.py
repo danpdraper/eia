@@ -209,6 +209,9 @@ class TestArgumentParser(object):
             '--score_threshold',
             '0.5',
             '--reduce_redundancy_in_output',
+            '--deduplicate_transitive_similarity',
+            '--enactment_years_file_path',
+            '/path/to/enactment/years',
         ]
         expected_namespace = {
             'matrix_file_path': '/path/to/similarity/matrix',
@@ -218,6 +221,8 @@ class TestArgumentParser(object):
             'debug': True,
             'score_threshold': 0.5,
             'reduce_redundancy_in_output': True,
+            'deduplicate_transitive_similarity': True,
+            'enactment_years_file_path': '/path/to/enactment/years',
             'func': self.highest_provision_group_scores_function,
         }
         actual_namespace = vars(self.parser.parse(arguments))
@@ -235,6 +240,9 @@ class TestArgumentParser(object):
             '--score_threshold',
             '0.5',
             '--reduce_redundancy_in_output',
+            '--deduplicate_transitive_similarity',
+            '--enactment_years_file_path',
+            '/path/to/enactment/years',
         ]
         expected_function_output = 'highest_scores', {
             'matrix_file_path': '/path/to/similarity/matrix',
@@ -244,6 +252,8 @@ class TestArgumentParser(object):
             'debug': True,
             'score_threshold': 0.5,
             'reduce_redundancy_in_output': True,
+            'deduplicate_transitive_similarity': True,
+            'enactment_years_file_path': '/path/to/enactment/years',
             'func': self.highest_provision_group_scores_function,
         }
         parsed_arguments = self.parser.parse(arguments)
@@ -268,3 +278,14 @@ class TestArgumentParser(object):
     def test_parse_highest_scores_assigns_false_to_reduce_redunancy_in_output_when_argument_not_provided(self):
         arguments = ['highest_provision_group_scores', '/path/to/similarity/matrix', '5']
         assert self.parser.parse(arguments).reduce_redundancy_in_output is False
+
+    def test_parse_highest_scores_assigns_false_to_deduplicate_transitive_similarity_when_argument_not_provided(self):
+        arguments = ['highest_provision_group_scores', '/path/to/similarity/matrix', '5']
+        assert self.parser.parse(arguments).deduplicate_transitive_similarity is False
+
+    def test_parse_highest_scores_assigns_package_path_to_enactment_years_file_path_when_argument_not_provided(self):
+        arguments = ['highest_provision_group_scores', '/path/to/similarity/matrix', '5']
+        expected_enactment_years_file_path = environment.ENACTMENT_YEARS_DEFAULT_FILE_PATH
+        actual_enactment_years_file_path = \
+            self.parser.parse(arguments).enactment_years_file_path
+        assert expected_enactment_years_file_path == actual_enactment_years_file_path

@@ -7,7 +7,7 @@ if [ ! -f "$common_file_path" ] ; then
 fi
 source "$common_file_path"
 
-country_coordinates_file_path="$(cd "$(dirname $BASH_SOURCE)/../raw_data" && pwd)/country_coordinates.csv"
+country_coordinates_file_path="$(cd "$(dirname $BASH_SOURCE)/../configuration" && pwd)/country_coordinates.csv"
 if [ ! -f "$country_coordinates_file_path" ] ; then
   echo_error "File $country_coordinates_file_path does not exist."
   exit 1

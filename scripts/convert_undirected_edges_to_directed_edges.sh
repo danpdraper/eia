@@ -7,7 +7,7 @@ if [ ! -f "$common_file_path" ] ; then
 fi
 source "$common_file_path"
 
-enactment_years_file_path="$(cd "$(dirname $BASH_SOURCE)/../raw_data" && pwd)/enactment_years.csv"
+enactment_years_file_path="$(cd "$(dirname $BASH_SOURCE)/../configuration" && pwd)/enactment_years.csv"
 if [ ! -f "$enactment_years_file_path" ] ; then
   echo_error "File $enactment_years_file_path does not exist."
   exit 1

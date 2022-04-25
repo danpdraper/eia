@@ -158,11 +158,29 @@ def label_to_state_and_provision_identifier(label):
     return match.group(1), match.group(2).lstrip(' ') if match.group(2) else match.group(2)
 
 
-def provision_groups_to_nodes_and_edges(provision_groups):
+def get_earliest_enactment_states(provision_group, enactment_years):
+    earliest_enactment_year = -1
+    earliest_enactment_states = set()
+    for provision in provision_group:
+        state = label_to_state_and_provision_identifier(provision)[0]
+        if earliest_enactment_year == -1 or enactment_years[state] < earliest_enactment_year:
+            earliest_enactment_year = enactment_years[state]
+            earliest_enactment_states = {state}
+        elif enactment_years[state] == earliest_enactment_year:
+            earliest_enactment_states.add(state)
+    return earliest_enactment_states
+
+
+def provision_groups_to_nodes_and_edges(provision_groups, enactment_years=None):
     nodes = set()
     edges = {}
     for provision_group in provision_groups:
         LOGGER.debug("Processing provision group {}.".format(provision_group))
+        earliest_enactment_states = None
+        if enactment_years:
+            earliest_enactment_states = get_earliest_enactment_states(
+                provision_group, enactment_years)
+            LOGGER.debug("Earliest enactment state(s): {}.".format(earliest_enactment_states))
         for anchor_index, anchor_provision in enumerate(provision_group):
             anchor_state, anchor_provision_identifier = \
                 label_to_state_and_provision_identifier(anchor_provision)
@@ -170,6 +188,16 @@ def provision_groups_to_nodes_and_edges(provision_groups):
             for floating_provision in provision_group[anchor_index + 1:]:
                 floating_state, floating_provision_identifier = \
                     label_to_state_and_provision_identifier(floating_provision)
+                if earliest_enactment_states:
+                    if anchor_state not in earliest_enactment_states and \
+                            floating_state not in earliest_enactment_states:
+                        LOGGER.debug(
+                            "Excluding contribution of provision pair {},{} to "
+                            "edge {}-{} because neither state is in {}.".format(
+                                anchor_provision, floating_provision,
+                                anchor_state, floating_state,
+                                earliest_enactment_states))
+                        continue
                 nodes.add(floating_state)
                 forward_state_pair = (anchor_state, floating_state)
                 reverse_state_pair = (floating_state, anchor_state)
@@ -195,3 +223,8 @@ def provision_groups_to_nodes_and_edges(provision_groups):
         (state_pair[0], state_pair[1], len(provision_identifier_pairs))
         for state_pair, provision_identifier_pairs in edges.items()
     ]
+
+
+def provision_groups_to_transitively_deduplicated_nodes_and_edges(
+        provision_groups, enactment_years):
+    return provision_groups_to_nodes_and_edges(provision_groups, enactment_years)

@@ -219,13 +219,18 @@ def highest_provision_group_scores(arguments):
     logger.info("Wrote scores and provision groups {} to directory {}".format(
         scores_and_provision_groups, matrix_directory_path))
 
-    nodes, edges = transformations.provision_groups_to_nodes_and_edges(
+    provision_groups = [
         [
-            [
-                provision_and_contents[0] for provision_and_contents in
-                score_and_provision_group[1]
-            ] for score_and_provision_group in scores_and_provision_groups
-        ])
+            provision_and_contents[0] for provision_and_contents in
+            score_and_provision_group[1]
+        ] for score_and_provision_group in scores_and_provision_groups
+    ]
+    if arguments.deduplicate_transitive_similarity:
+        nodes, edges = transformations.provision_groups_to_transitively_deduplicated_nodes_and_edges(
+            provision_groups, csv_files.get_enactment_years(
+                arguments.enactment_years_file_path))
+    else:
+        nodes, edges = transformations.provision_groups_to_nodes_and_edges(provision_groups)
     logger.debug(
         "Transformed scores and provision groups {} into nodes {} and edges {}".format(
             scores_and_provision_groups, nodes, edges))
