@@ -174,7 +174,7 @@ class TestArgumentParser(object):
             self.parser.parse(arguments).legislation_directory_path
         assert expected_legislation_directory_path == actual_legislation_directory_path
 
-    def test_parse_matrix_and_plot_assigns_package_path_to_states_to_include_file_path_when_argument_not_provided(self):
+    def test_parse_matrix_and_plot_assigns_none_to_states_to_include_file_path_when_argument_not_provided(self):
         arguments = [
             'matrix_and_plot',
             'jaccard_index',
@@ -182,10 +182,9 @@ class TestArgumentParser(object):
             'english',
             '/path/to/output/directory',
         ]
-        expected_states_to_include_file_path = environment.STATES_TO_INCLUDE_DEFAULT_FILE_PATH
         actual_states_to_include_file_path = \
             self.parser.parse(arguments).states_to_include_file_path
-        assert expected_states_to_include_file_path == actual_states_to_include_file_path
+        assert actual_states_to_include_file_path is None
 
     def test_parse_matrix_and_plot_assigns_false_to_matrix_only_when_argument_not_provided(self):
         arguments = [

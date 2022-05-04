@@ -1,3 +1,4 @@
+import json
 import os
 import unittest.mock as mock
 
@@ -69,10 +70,6 @@ def test_row_generator_yields_tuples_of_row_label_and_row_with_provision_delimit
     algorithm.apply.side_effect = \
         lambda row_text, column_text: similarity_by_row_and_column_text[(row_text, column_text)]
 
-    states_to_include_file_path = os.path.join(
-        test_directory_path, 'states_to_include.txt')
-    open(states_to_include_file_path, 'w').close()
-
     expected_labels_and_rows = [
         ('State A', [1, 2, 3]),
         ('State B', [4, 5, 6]),
@@ -84,7 +81,7 @@ def test_row_generator_yields_tuples_of_row_label_and_row_with_provision_delimit
             test_directory_path, file_content_by_relative_path)
         row_generator = similarity_matrix.row_generator(
             algorithm, scopes.FULL_TEXT, languages.ENGLISH, test_directory_path,
-            True, states_to_include_file_path)
+            True)
         actual_labels_and_rows = [label_and_row for label_and_row in row_generator]
     finally:
         utilities.delete_test_directory(test_directory_path)
@@ -143,10 +140,6 @@ def test_row_generator_yields_tuples_of_row_label_and_row_without_provision_deli
     algorithm.apply.side_effect = \
         lambda row_text, column_text: similarity_by_row_and_column_text[(row_text, column_text)]
 
-    states_to_include_file_path = os.path.join(
-        test_directory_path, 'states_to_include.txt')
-    open(states_to_include_file_path, 'w').close()
-
     expected_labels_and_rows = [
         ('State A', [1, 2, 3]),
         ('State B', [4, 5, 6]),
@@ -158,7 +151,7 @@ def test_row_generator_yields_tuples_of_row_label_and_row_without_provision_deli
             test_directory_path, file_content_by_relative_path)
         row_generator = similarity_matrix.row_generator(
             algorithm, scopes.FULL_TEXT, languages.ENGLISH, test_directory_path,
-            False, states_to_include_file_path)
+            False)
         actual_labels_and_rows = [label_and_row for label_and_row in row_generator]
     finally:
         utilities.delete_test_directory(test_directory_path)
@@ -204,10 +197,14 @@ def test_row_generator_excludes_files_from_states_not_in_states_to_include_file(
         (transformed_state_c_contents, transformed_state_c_contents): 9,
     }
 
-    states_to_include_file_path = os.path.join(test_directory_path, 'states_to_include.txt')
+    states_to_include_file_path = os.path.join(test_directory_path, 'states_to_include.json')
     with open(states_to_include_file_path, 'w') as file_object:
-        file_object.write('state_a\n')
-        file_object.write('state_c\n')
+        json.dump(
+            {
+                'State A': {},
+                'State C': {},
+            },
+            file_object)
 
     algorithm = mock.Mock()
     algorithm.apply.side_effect = \
@@ -232,7 +229,7 @@ def test_row_generator_excludes_files_from_states_not_in_states_to_include_file(
         expected_labels_and_rows, actual_labels_and_rows)
 
 
-def test_row_generator_ignores_comments_in_states_to_include_file():
+def test_row_generator_excludes_provisions_not_in_states_to_include_file():
     test_directory_path = utilities.create_test_directory('test_similarity_matrix')
 
     file_content_by_relative_path = {
@@ -253,42 +250,122 @@ def test_row_generator_ignores_comments_in_states_to_include_file():
         ),
     }
 
-    transformed_state_b_contents = (
-        "title i general provisions (1) state b's first provision (2) state "
-        "b's second provision [1] is better than the first provision"
-    )
-    transformed_state_c_contents = (
-        "title i general provisions (1) state c's first provision (2) state "
-        "c's second provision [•] is better than the first provision"
-    )
+    transformed_state_a_first_provision_contents = "state a's first provision"
+    transformed_state_c_first_provision_contents = "state c's first provision"
+    transformed_state_c_second_provision_contents = "state c's second provision [•] is better than the first provision"
 
     similarity_by_row_and_column_text = {
-        (transformed_state_b_contents, transformed_state_b_contents): 5,
-        (transformed_state_b_contents, transformed_state_c_contents): 6,
-        (transformed_state_c_contents, transformed_state_b_contents): 8,
-        (transformed_state_c_contents, transformed_state_c_contents): 9,
+        (transformed_state_a_first_provision_contents, transformed_state_a_first_provision_contents): 1,
+        (transformed_state_a_first_provision_contents, transformed_state_c_first_provision_contents): 3,
+        (transformed_state_a_first_provision_contents, transformed_state_c_second_provision_contents): 5,
+        (transformed_state_c_first_provision_contents, transformed_state_a_first_provision_contents): 7,
+        (transformed_state_c_first_provision_contents, transformed_state_c_first_provision_contents): 9,
+        (transformed_state_c_first_provision_contents, transformed_state_c_second_provision_contents): 11,
+        (transformed_state_c_second_provision_contents, transformed_state_a_first_provision_contents): 13,
+        (transformed_state_c_second_provision_contents, transformed_state_c_first_provision_contents): 15,
+        (transformed_state_c_second_provision_contents, transformed_state_c_second_provision_contents): 17,
     }
 
-    states_to_include_file_path = os.path.join(test_directory_path, 'states_to_include.txt')
+    states_to_include_file_path = os.path.join(test_directory_path, 'states_to_include.json')
     with open(states_to_include_file_path, 'w') as file_object:
-        file_object.write('# state_a\n')
-        file_object.write('state_b\n')
-        file_object.write('state_c\n')
+        json.dump(
+            {
+                'State A': {
+                    'Provisions': ['1'],
+                },
+                'State C': {
+                    'Provisions': ['1', '2'],
+                },
+            },
+            file_object)
 
     algorithm = mock.Mock()
     algorithm.apply.side_effect = \
         lambda row_text, column_text: similarity_by_row_and_column_text[(row_text, column_text)]
 
     expected_labels_and_rows = [
-        ('State B', [5, 6]),
-        ('State C', [8, 9]),
+        ('State A 1', [1, 3, 5]),
+        ('State C 1', [7, 9, 11]),
+        ('State C 2', [13, 15, 17]),
     ]
 
     try:
         utilities.populate_test_directory(
             test_directory_path, file_content_by_relative_path)
         row_generator = similarity_matrix.row_generator(
-            algorithm, scopes.FULL_TEXT, languages.ENGLISH, test_directory_path,
+            algorithm, scopes.PROVISION, languages.ENGLISH, test_directory_path,
+            True, states_to_include_file_path)
+        actual_labels_and_rows = [label_and_row for label_and_row in row_generator]
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    compare_expected_and_actual_labels_and_rows(
+        expected_labels_and_rows, actual_labels_and_rows)
+
+
+def test_row_generator_treats_absence_of_provisions_key_as_equivalent_to_all_provisions_in_states_to_include_file():
+    test_directory_path = utilities.create_test_directory('test_similarity_matrix')
+
+    file_content_by_relative_path = {
+        'state_a_english.txt': (
+            "Title I - General Provisions\n"
+            "(1) State A's first provision.\n"
+            "(2) State A's second provision: [a] is better than the first provision.\n"
+        ),
+        'state_b_english.txt': (
+            "Title I - General Provisions\n"
+            "(1) State B's first provision.\n"
+            "(2) State B's second provision: [1] is better than the first provision.\n"
+        ),
+        'state_c_english.txt': (
+            "Title I - General Provisions\n"
+            "(1) State C's first provision.\n"
+            "(2) State C's second provision: [•] is better than the first provision.\n"
+        ),
+    }
+
+    transformed_state_a_first_provision_contents = "state a's first provision"
+    transformed_state_c_first_provision_contents = "state c's first provision"
+    transformed_state_c_second_provision_contents = "state c's second provision [•] is better than the first provision"
+
+    similarity_by_row_and_column_text = {
+        (transformed_state_a_first_provision_contents, transformed_state_a_first_provision_contents): 1,
+        (transformed_state_a_first_provision_contents, transformed_state_c_first_provision_contents): 3,
+        (transformed_state_a_first_provision_contents, transformed_state_c_second_provision_contents): 5,
+        (transformed_state_c_first_provision_contents, transformed_state_a_first_provision_contents): 7,
+        (transformed_state_c_first_provision_contents, transformed_state_c_first_provision_contents): 9,
+        (transformed_state_c_first_provision_contents, transformed_state_c_second_provision_contents): 11,
+        (transformed_state_c_second_provision_contents, transformed_state_a_first_provision_contents): 13,
+        (transformed_state_c_second_provision_contents, transformed_state_c_first_provision_contents): 15,
+        (transformed_state_c_second_provision_contents, transformed_state_c_second_provision_contents): 17,
+    }
+
+    states_to_include_file_path = os.path.join(test_directory_path, 'states_to_include.json')
+    with open(states_to_include_file_path, 'w') as file_object:
+        json.dump(
+            {
+                'State A': {
+                    'Provisions': ['1'],
+                },
+                'State C': {},
+            },
+            file_object)
+
+    algorithm = mock.Mock()
+    algorithm.apply.side_effect = \
+        lambda row_text, column_text: similarity_by_row_and_column_text[(row_text, column_text)]
+
+    expected_labels_and_rows = [
+        ('State A 1', [1, 3, 5]),
+        ('State C 1', [7, 9, 11]),
+        ('State C 2', [13, 15, 17]),
+    ]
+
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        row_generator = similarity_matrix.row_generator(
+            algorithm, scopes.PROVISION, languages.ENGLISH, test_directory_path,
             True, states_to_include_file_path)
         actual_labels_and_rows = [label_and_row for label_and_row in row_generator]
     finally:

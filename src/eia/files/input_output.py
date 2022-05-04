@@ -1,9 +1,17 @@
+import json
+
+
 NEWLINE = '\n'
 
 
 def read(file_path):
     with open(file_path, 'r') as file_object:
         return file_object.read()
+
+
+def read_json(file_path):
+    with open(file_path, 'r') as file_object:
+        return json.load(file_object)
 
 
 def line_generator(file_path):

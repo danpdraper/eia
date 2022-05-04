@@ -346,7 +346,40 @@ def test_input_text_generator_full_text_excludes_states_not_in_states_to_include
         )),
     ]
 
-    states_to_include = ['state_d']
+    states_to_include = {
+        'State D': {},
+    }
+
+    try:
+        populate_test_directory_for_input_text_generator_test(test_directory_path)
+        actual_labels_and_text = [
+            label_and_text for label_and_text in text_files.input_text_generator(
+                scopes.FULL_TEXT, languages.ENGLISH, test_directory_path, False,
+                states_to_include)
+        ]
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert expected_labels_and_text == actual_labels_and_text
+
+
+def test_input_text_generator_full_text_ignores_provisions_in_states_to_include_when_states_to_include_not_empty():
+    test_directory_path = utilities.create_test_directory('test_text_files')
+
+    expected_labels_and_text = [
+        ('State D', (
+            'title i general provisions '
+            'i do not enjoy spending time outdoors because '
+            'the sun hurts my skin and i would rather play video games '
+            'also who wants to walk when you can drive'
+        )),
+    ]
+
+    states_to_include = {
+        'State D': {
+            'Provisions': ['1'],
+        },
+    }
 
     try:
         populate_test_directory_for_input_text_generator_test(test_directory_path)
@@ -438,7 +471,38 @@ def test_input_text_generator_provisions_excludes_states_not_in_states_to_includ
         ('State D 2', 'also who wants to walk when you can drive'),
     ]
 
-    states_to_include = ['state_d']
+    states_to_include = {
+        'State D': {},
+    }
+
+    try:
+        populate_test_directory_for_input_text_generator_test(test_directory_path)
+        actual_labels_and_text = [
+            label_and_text for label_and_text in text_files.input_text_generator(
+                scopes.PROVISION, languages.ENGLISH, test_directory_path, False,
+                states_to_include)
+        ]
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert expected_labels_and_text == actual_labels_and_text
+
+
+def test_input_text_generator_provisions_excludes_provisions_not_in_states_to_include_when_not_empty():
+    test_directory_path = utilities.create_test_directory('test_text_files')
+
+    expected_labels_and_text = [
+        ('State D 1', (
+            'i do not enjoy spending time outdoors because the sun hurts my '
+            'skin and i would rather play video games'
+        )),
+    ]
+
+    states_to_include = {
+        'State D': {
+            'Provisions': ['1'],
+        },
+    }
 
     try:
         populate_test_directory_for_input_text_generator_test(test_directory_path)

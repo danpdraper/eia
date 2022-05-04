@@ -16,16 +16,14 @@ LOGGER = logging.getLogger(__name__)
 
 def row_generator(
         algorithm, scope, language, text_file_directory_path,
-        preserve_provision_delimiters, states_to_include_file_path):
-    states_to_include = list(filter(
-        lambda line: text_files.is_not_comment(line),
-        input_output.line_generator(states_to_include_file_path)))
+        preserve_provision_delimiters, states_to_include_file_path=None):
+    states_to_include = {}
+    if states_to_include_file_path:
+        states_to_include = input_output.read_json(states_to_include_file_path)
     if states_to_include:
         LOGGER.info(
             "Generating rows from legislation from the following states: "
-            "{}".format(COMMA_AND_SPACE.join(map(
-                lambda state: transformations.snake_case_string_to_capitalized(state),
-                states_to_include))))
+            "{}".format(COMMA_AND_SPACE.join(states_to_include.keys())))
     else:
         LOGGER.info('Generating rows from legislation from all discovered states.')
 

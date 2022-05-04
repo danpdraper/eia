@@ -13,6 +13,7 @@ LOGGER = logging.getLogger(__name__)
 COMMENT_LINE_PREFIX = '#'
 HIGHEST_PROVISION_GROUP_SCORES_FILE_NAME = 'highest_provision_group_scores.txt'
 PROVISION_REGEX = re.compile(r'^\(([^)]+)\) (.*)')
+PROVISIONS_KEY = 'Provisions'
 STATE_REGEX = re.compile(r'^.*\/([a-z_]+)_[a-z]+\.txt$')
 
 
@@ -95,7 +96,7 @@ def apply_transformations_to_input_text(
     return input_text
 
 
-def full_text_input_text_generator(file_paths, preserve_provision_delimiters):
+def full_text_input_text_generator(file_paths, preserve_provision_delimiters, states_to_include):
     for file_path in file_paths:
         LOGGER.debug("Generating input text from file {}".format(file_path))
         yield (
@@ -106,19 +107,25 @@ def full_text_input_text_generator(file_paths, preserve_provision_delimiters):
         )
 
 
-def provision_input_text_generator(file_paths, preserve_provision_delimiters):
+def provision_input_text_generator(file_paths, preserve_provision_delimiters, states_to_include):
     for file_path in file_paths:
         for line in input_output.line_generator(file_path):
             provision_match = PROVISION_REGEX.match(line)
             if not provision_match:
                 continue
+            capitalized_state_name = transformations.file_path_to_state_name_capitalized(file_path)
+            if capitalized_state_name in states_to_include and \
+                    PROVISIONS_KEY in states_to_include[capitalized_state_name] and \
+                    provision_match.group(1) not in states_to_include[capitalized_state_name][PROVISIONS_KEY]:
+                LOGGER.debug(
+                    "Not generating input text from provision {} in file {}".format(
+                        provision_match.group(1), file_path))
+                continue
             LOGGER.debug(
                 "Generating input text from provision {} in file {}".format(
                     provision_match.group(1), file_path))
             yield (
-                "{} {}".format(
-                    transformations.file_path_to_state_name_capitalized(file_path),
-                    provision_match.group(1)),
+                "{} {}".format(capitalized_state_name, provision_match.group(1)),
                 apply_transformations_to_input_text(
                     provision_match.group(2),
                     preserve_provision_delimiters).lower(),
@@ -133,19 +140,24 @@ INPUT_TEXT_GENERATOR_BY_SCOPE = {
 
 def input_text_generator(
         scope, language, text_file_directory_path,
-        preserve_provision_delimiters, states_to_include=[]):
+        preserve_provision_delimiters, states_to_include={}):
     file_paths = filter_file_paths_by_language(
         discover(text_file_directory_path), language)
     if states_to_include:
-        file_paths = filter_file_paths_by_state(file_paths, states_to_include)
+        file_paths = filter_file_paths_by_state(
+            file_paths,
+            [
+                transformations.capitalized_string_to_snake_case(state_to_include)
+                for state_to_include in states_to_include.keys()
+            ])
     log_message = "Found {} text files in language {} ".format(
         len(file_paths), language)
     if states_to_include:
-        log_message += "from states {} ".format(states_to_include)
+        log_message += "from states {} ".format(list(states_to_include.keys()))
     log_message += "in directory {}".format(text_file_directory_path)
     LOGGER.debug(log_message)
     return INPUT_TEXT_GENERATOR_BY_SCOPE[scope](
-        file_paths, preserve_provision_delimiters)
+        file_paths, preserve_provision_delimiters, states_to_include)
 
 
 def get_highest_provision_group_scores_file_path(

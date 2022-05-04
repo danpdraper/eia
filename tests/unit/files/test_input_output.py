@@ -1,3 +1,4 @@
+import json
 import os
 
 import eia.files.input_output as input_output
@@ -16,6 +17,45 @@ def test_read_returns_all_file_contents():
         utilities.populate_test_directory(
             test_directory_path, file_content_by_relative_path)
         actual_contents = input_output.read(file_path)
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert expected_contents == actual_contents
+
+
+def test_read_json_file_contents_returns_file_contents_as_dict():
+    test_directory_path = utilities.create_test_directory('test_input_output')
+    file_content_by_relative_path = {
+        'test_file.json': json.dumps(
+            {
+                'First key': 'First value',
+                'Second key': {
+                    'First nested key': 'First nested value',
+                    'Second nested key': 'Second nested value',
+                },
+                'Third key': [
+                    'First array value',
+                    'Second array value',
+                ],
+            }),
+    }
+    file_path = os.path.join(test_directory_path, 'test_file.json')
+    expected_contents = {
+        'First key': 'First value',
+        'Second key': {
+            'First nested key': 'First nested value',
+            'Second nested key': 'Second nested value',
+        },
+        'Third key': [
+            'First array value',
+            'Second array value',
+        ],
+    }
+
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        actual_contents = input_output.read_json(file_path)
     finally:
         utilities.delete_test_directory(test_directory_path)
 

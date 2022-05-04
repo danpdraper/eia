@@ -27,7 +27,3 @@ LEGISLATION_DIRECTORY_PATH = os.path.join(
 
 
 LOG_DIRECTORY_PATH = os.path.join(ENVIRONMENT_ROOT_PATH, 'logs')
-
-
-STATES_TO_INCLUDE_DEFAULT_FILE_PATH = os.path.join(
-    ENVIRONMENT_ROOT_PATH, 'configuration', 'states_to_include.txt')

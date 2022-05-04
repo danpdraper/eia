@@ -1,3 +1,4 @@
+import json
 import os
 import subprocess
 
@@ -1112,9 +1113,13 @@ def test_bigram_frequency_full_text_list_of_states_to_include():
 
     states_to_include_file_path = os.path.join(test_directory_path, 'states_to_include.txt')
     with open(states_to_include_file_path, 'w') as file_object:
-        file_object.write('state_a\n')
-        # Omit State B
-        file_object.write('state_c\n')
+        json.dump(
+            {
+                'State A': {},
+                # Omit State B
+                'State C': {},
+            },
+            file_object)
 
     script_file_path = os.path.join(
         environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity.py')
@@ -1647,224 +1652,133 @@ def test_bigram_frequency_provisions():
 def test_bigram_frequency_provisions_list_of_states_to_include():
     '''
     The values in column 'Bigram' in the following table represent the complete
-    set of bigrams in STATE_A_LEGISLATION_TEXT and STATE_C_LEGISLATION_TEXT. The
-    values in columns 'A_1', 'A_2', 'A_3', 'C_1', 'C_2' and 'C_3' represent the
-    number of occurrences of the values of column 'Bigram' in
-    STATE_A_LEGISLATION_TEXT provision 1, STATE_A_LEGISLATION_TEXT provision 2,
-    STATE_A_LEGISLATION_TEXT provision 3, STATE_C_LEGISLATION_TEXT provision 1,
-    STATE_C_LEGISLATION_TEXT provision 2 and STATE_C_LEGISLATION_TEXT provision
-    3 respectively.
+    set of bigrams in provisions 1 and 3 of STATE_A_LEGISLATION_TEXT and
+    provision 2 of STATE_C_LEGISLATION_TEXT. The values in columns 'A_1', 'A_3'
+    and 'C_2' represent the number of occurences of the values of column
+    'Bigram' in STATE_A_LEGISLATION_TEXT provision 1, STATE_A_LEGISLATION_TEXT
+    provision 3 and STATE_C_LEGISLATION_TEXT provision 2 respectively.
 
-    Bigram                     A_1  A_2  A_3  C_1  C_2  C_3
-    a healthy                   1    0    0    0    0    0
-    a national                  0    0    1    0    0    0
-    above creating              0    0    1    0    0    0
-    according to                0    0    0    1    0    0
-    achieve the                 0    0    1    0    0    0
-    action to                   0    0    0    0    0    1
-    administration sets         0    0    0    0    0    1
-    against all                 0    0    0    0    1    0
-    against forms               0    0    0    1    0    0
-    all citizens                1    0    0    0    0    0
-    all kinds                   0    0    0    0    1    0
-    and conservation            0    1    0    0    0    0
-    and enhance                 0    0    0    1    0    1
-    and having                  0    0    1    0    0    0
-    and improve                 0    0    0    1    0    0
-    and protected               0    0    0    1    0    0
-    and regulations             0    0    0    0    1    0
-    and specialized             0    0    1    0    0    0
-    and sustainable             1    0    0    0    0    0
-    and the                     0    1    0    0    1    0
-    and to                      1    0    0    0    1    0
-    associations is             0    0    0    0    1    0
-    be underestimated           0    1    0    0    0    0
-    benefits of                 1    0    0    0    0    0
-    better coordination         0    0    0    0    0    1
-    bodies for                  0    0    1    0    0    0
-    bodies necessary            0    0    0    0    0    1
-    brings together             0    0    0    0    0    1
-    cannot be                   0    1    0    0    0    0
-    citizen individually        0    0    0    0    1    0
-    citizens have               1    0    0    0    0    0
-    collaboration with          0    0    0    0    1    0
-    collectivities and          0    0    0    0    1    0
-    compliance with             0    0    0    0    1    0
-    concerned for               0    0    0    0    0    1
-    conditions of               0    0    0    1    0    0
-    conservation of             0    1    0    0    0    0
-    coordination of             0    0    0    0    0    1
-    country's natural           1    0    0    0    0    0
-    creating the                0    0    1    0    0    0
-    decentralized territorial   0    0    0    0    1    0
-    defense and                 1    0    0    0    0    0
-    degradation in              0    0    0    1    1    0
-    due to                      0    1    0    0    0    0
-    enhance natural             0    0    0    1    0    0
-    enhance the                 0    0    0    0    0    1
-    entire population           0    1    0    0    0    0
-    environment and             1    1    0    0    0    0
-    environment is              0    0    0    1    0    0
-    environmental degradation   0    0    0    0    1    0
-    environmental management    0    0    1    0    0    0
-    essential principles        0    0    0    1    0    0
-    establish the               0    0    0    1    0    0
-    every citizen               0    0    0    0    1    0
-    fight against               0    0    0    0    1    0
-    for better                  0    0    0    0    0    1
-    for the                     0    1    0    0    0    1
-    for this                    0    0    1    0    0    0
-    forms of                    0    0    0    1    0    0
-    framework of                0    0    0    0    1    0
-    have the                    1    0    0    0    0    0
-    having legislation          0    0    1    0    0    0
-    healthy environment         1    0    0    0    0    0
-    hence the                   1    0    0    0    0    0
-    implement a                 0    0    1    0    0    0
-    implementation of           0    0    0    0    0    1
-    improve the                 0    0    0    1    0    0
-    in a                        1    0    0    0    0    0
-    in collaboration            0    0    0    0    1    0
-    in compliance               0    0    0    0    1    0
-    in its                      1    0    0    0    0    0
-    in order                    0    0    0    1    0    0
-    in relation                 0    1    0    0    0    0
-    individually or             0    0    0    0    1    0
-    institutions or             0    0    0    0    1    0
-    is due                      0    1    0    0    0    0
-    is responsible              0    0    0    0    1    0
-    is sustainably              0    0    0    1    0    0
-    is the                      0    0    1    0    0    0
-    is to                       0    0    0    1    0    0
-    it brings                   0    0    0    0    0    1
-    it feasible                 0    0    1    0    0    0
-    it is                       0    1    1    0    0    0
-    its defense                 1    0    0    0    0    0
-    kinds of                    0    0    0    0    1    0
-    law is                      0    0    0    1    0    0
-    law it                      0    0    0    0    0    1
-    laws and                    0    0    0    0    1    0
-    legislation published       0    0    1    0    0    0
-    live in                     1    0    0    0    0    0
-    living conditions           0    0    0    1    0    0
-    local institutions          0    0    0    0    1    0
-    make it                     0    0    1    0    0    0
-    managed and                 0    0    0    1    0    0
-    management program          0    0    1    0    0    0
-    merely utilitarian          0    1    0    0    0    0
-    national environmental      0    0    1    0    0    0
-    natural resources           1    1    0    1    0    0
-    necessary for               0    0    0    0    0    1
-    necessary structures        0    0    1    0    0    0
-    objectives set              0    0    1    0    0    0
-    obligations to              1    0    0    0    0    0
-    of action                   0    0    0    0    0    1
-    of degradation              0    0    0    1    0    0
-    of natural                  0    1    0    0    0    0
-    of pollution                0    0    0    0    1    0
-    of the                      2    3    1    1    0    0
-    of this                     0    0    0    1    0    1
-    of traditional              0    0    0    0    1    0
-    or associations             0    0    0    0    1    0
-    or environmental            0    0    0    0    1    0
-    or within                   0    0    0    0    1    0
-    order to                    0    0    0    1    0    0
-    organizations concerned     0    0    0    0    0    1
-    out above                   0    0    1    0    0    0
-    participate in              1    0    0    0    0    0
-    pollution or                0    0    0    0    1    0
-    population the              0    1    0    0    0    0
-    preservation and            0    1    0    0    0    0
-    prevent and                 0    0    0    0    1    0
-    principles according        0    0    0    1    0    0
-    principles of               0    1    0    0    0    0
-    program to                  0    0    1    0    0    0
-    protect and                 0    0    0    0    0    1
-    protected against           0    0    0    1    0    0
-    protection preservation     0    1    0    0    0    0
-    published to                0    0    1    0    0    0
-    purpose and                 0    0    1    0    0    0
-    purpose of                  0    0    0    1    0    0
-    rational use                1    1    0    0    0    0
-    relation to                 0    1    0    0    0    0
-    resources and               0    0    0    1    0    0
-    resources hence             1    0    0    0    0    0
-    resources whose             0    1    0    0    0    0
-    respect for                 0    1    0    0    0    0
-    responsibility of           0    0    1    0    0    0
-    responsible in              0    0    0    0    1    0
-    right to                    1    0    0    0    0    0
-    safeguard and               0    0    0    1    0    0
-    set out                     0    0    1    0    0    0
-    sets up                     0    0    0    0    0    1
-    specialized bodies          0    0    1    0    0    0
-    state to                    0    0    1    0    1    0
-    structures and              0    0    1    0    0    0
-    sustainable use             1    0    0    0    0    0
-    sustainably managed         0    0    0    1    0    0
-    territorial collectivities  0    0    0    0    1    0
-    the administration          0    0    0    0    0    1
-    the benefits                1    0    0    0    0    0
-    the bodies                  0    0    0    0    0    1
-    the country's               1    0    0    0    0    0
-    the decentralized           0    0    0    0    1    0
-    the entire                  0    1    0    0    0    0
-    the environment             0    1    0    1    0    1
-    the essential               0    0    0    1    0    0
-    the framework               0    0    0    0    1    0
-    the implementation          0    0    0    0    0    1
-    the living                  0    0    0    1    0    0
-    the necessary               0    0    1    0    0    0
-    the objectives              0    0    1    0    0    0
-    the obligations             1    0    0    0    0    0
-    the organizations           0    0    0    0    0    1
-    the population              0    0    0    1    0    0
-    the principles              0    1    0    0    0    0
-    the protection              0    1    0    0    0    0
-    the purpose                 0    0    0    1    0    0
-    the rational                1    1    0    0    0    0
-    the responsibility          0    0    1    0    0    0
-    the right                   1    0    0    0    0    0
-    the state                   0    0    1    0    1    0
-    the wellbeing               0    1    0    0    0    0
-    this law                    0    0    0    1    0    1
-    this purpose                0    0    1    0    0    0
-    to achieve                  0    0    1    0    0    0
-    to establish                0    0    0    1    0    0
-    to fight                    0    0    0    0    1    0
-    to implement                0    0    1    0    0    0
-    to live                     1    0    0    0    0    0
-    to make                     0    0    1    0    0    0
-    to merely                   0    1    0    0    0    0
-    to participate              1    0    0    0    0    0
-    to prevent                  0    0    0    0    1    0
-    to protect                  0    0    0    0    0    1
-    to respect                  0    1    0    0    0    0
-    to safeguard                0    0    0    1    0    0
-    to the                      1    0    0    0    0    0
-    to which                    0    0    0    1    0    0
-    to work                     0    0    0    0    1    0
-    together the                0    0    0    0    0    1
-    traditional local           0    0    0    0    1    0
-    underestimated in           0    1    0    0    0    0
-    up the                      0    0    0    0    0    1
-    use of                      1    1    0    0    0    0
-    use respectively            1    0    0    0    0    0
-    utilitarian interests       0    1    0    0    0    0
-    values cannot               0    1    0    0    0    0
-    wellbeing of                0    1    0    0    0    0
-    which the                   0    0    0    1    0    0
-    whose values                0    1    0    0    0    0
-    with laws                   0    0    0    0    1    0
-    with the                    0    0    0    0    1    0
-    within the                  0    0    0    0    1    0
-    work to                     0    0    0    0    1    0
+    Bigram                     A_1  A_3  C_2
+    a healthy                   1    0    0
+    a national                  0    1    0
+    above creating              0    1    0
+    achieve the                 0    1    0
+    against all                 0    0    1
+    all citizens                1    0    0
+    all kinds                   0    0    1
+    and having                  0    1    0
+    and regulations             0    0    1
+    and specialized             0    1    0
+    and sustainable             1    0    0
+    and the                     0    0    1
+    and to                      1    0    1
+    associations is             0    0    1
+    benefits of                 1    0    0
+    bodies for                  0    1    0
+    citizen individually        0    0    1
+    citizens have               1    0    0
+    collaboration with          0    0    1
+    collectivities and          0    0    1
+    compliance with             0    0    1
+    country's natural           1    0    0
+    creating the                0    1    0
+    decentralized territorial   0    0    1
+    defense and                 1    0    0
+    degradation in              0    0    1
+    environment and             1    0    0
+    environmental degradation   0    0    1
+    environmental management    0    1    0
+    every citizen               0    0    1
+    fight against               0    0    1
+    for this                    0    1    0
+    framework of                0    0    1
+    have the                    1    0    0
+    having legislation          0    1    0
+    healthy environment         1    0    0
+    hence the                   1    0    0
+    implement a                 0    1    0
+    in a                        1    0    0
+    in collaboration            0    0    1
+    in compliance               0    0    1
+    in its                      1    0    0
+    individually or             0    0    1
+    institutions or             0    0    1
+    is responsible              0    0    1
+    is the                      0    1    0
+    it feasible                 0    1    0
+    it is                       0    1    0
+    its defense                 1    0    0
+    kinds of                    0    0    1
+    laws and                    0    0    1
+    legislation published       0    1    0
+    live in                     1    0    0
+    local institutions          0    0    1
+    make it                     0    1    0
+    management program          0    1    0
+    national environmental      0    1    0
+    natural resources           1    0    0
+    necessary structures        0    1    0
+    objectives set              0    1    0
+    obligations to              1    0    0
+    of pollution                0    0    1
+    of the                      2    1    0
+    of traditional              0    0    1
+    or associations             0    0    1
+    or environmental            0    0    1
+    or within                   0    0    1
+    out above                   0    1    0
+    participate in              1    0    0
+    pollution or                0    0    1
+    prevent and                 0    0    1
+    program to                  0    1    0
+    published to                0    1    0
+    purpose and                 0    1    0
+    rational use                1    0    0
+    resources hence             1    0    0
+    responsibility of           0    1    0
+    responsible in              0    0    1
+    right to                    1    0    0
+    set out                     0    1    0
+    specialized bodies          0    1    0
+    state to                    0    1    1
+    structures and              0    1    0
+    sustainable use             1    0    0
+    territorial collectivities  0    0    1
+    the benefits                1    0    0
+    the country's               1    0    0
+    the decentralized           0    0    1
+    the framework               0    0    1
+    the necessary               0    1    0
+    the objectives              0    1    0
+    the obligations             1    0    0
+    the rational                1    0    0
+    the responsibility          0    1    0
+    the right                   1    0    0
+    the state                   0    1    1
+    this purpose                0    1    0
+    to achieve                  0    1    0
+    to fight                    0    0    1
+    to implement                0    1    0
+    to live                     1    0    0
+    to make                     0    1    0
+    to participate              1    0    0
+    to prevent                  0    0    1
+    to the                      1    0    0
+    to work                     0    0    1
+    traditional local           0    0    1
+    use of                      1    0    0
+    use respectively            1    0    0
+    with laws                   0    0    1
+    with the                    0    0    1
+    within the                  0    0    1
+    work to                     0    0    1
 
-    Column 'A_1', column 'A_2', column 'A_3', column 'C_1', column 'C_2' and
-    column 'C_3' each represents a 203 x 1 bigram frequency vector. The similarity
-    of any of the pairs of provisions in STATE_A_LEGISLATION_TEXT and
-    STATE_C_LEGISLATION_TEXT can be calculated by taking the cosine of the angle
-    between the corresponding bigram frequency vectors.
+    Column 'A_1', column 'A_3' and column 'C_2' each represents a 113 x 1 bigram
+    frequency vector. The similarity of the pair STATE_A_LEGISLATION_TEXT
+    provision 1 and STATE_C_LEGISLATION_TEXT provision 2, or the pair
+    STATE_A_LEGISLATION_TEXT provision 3 and STATE_C_LEGISLATION_TEXT provision
+    2 can be calculated by taking the cosine of the angle between the
+    corresponding bigram frequency vectors.
 
     cosine(theta) = (BF1•BF2)/(|BF1||BF2|)
 
@@ -1874,43 +1788,22 @@ def test_bigram_frequency_provisions_list_of_states_to_include():
 
     Dot products:
         State A 1, State A 1: 37
-        State A 1, State A 2: 11
         State A 1, State A 3: 2
-        State A 1, State C 1: 3
         State A 1, State C 2: 1
-        State A 1, State C 3: 0
-        State A 2, State A 2: 46
-        State A 2, State A 3: 4
-        State A 2, State C 1: 5
-        State A 2, State C 2: 1
-        State A 2, State C 3: 2
         State A 3, State A 3: 38
-        State A 3, State C 1: 1
         State A 3, State C 2: 2
-        State A 3, State C 3: 0
-        State C 1, State C 1: 40
-        State C 1, State C 2: 1
-        State C 1, State C 3: 4
         State C 2, State C 2: 45
-        State C 2, State C 3: 0
-        State C 3, State C 3: 29
 
     Euclidean lengths:
         State A 1: 6.083
-        State A 2: 6.782
         State A 3: 6.164
-        State C 1: 6.325
         State C 2: 6.708
-        State C 3: 5.385
 
     Expected similiarity matrix:
-            [  A_1    A_2    A_3    C_1    C_2    C_3  ]
-    [ A_1 ] [ 1.000  0.267  0.053  0.078  0.025  0.000 ]
-    [ A_2 ] [ 0.267  1.000  0.096  0.117  0.022  0.055 ]
-    [ A_3 ] [ 0.053  0.096  1.000  0.026  0.048  0.000 ]
-    [ C_1 ] [ 0.078  0.117  0.026  1.000  0.024  0.117 ]
-    [ C_2 ] [ 0.025  0.022  0.048  0.024  1.000  0.000 ]
-    [ C_3 ] [ 0.000  0.055  0.000  0.117  0.000  1.000 ]
+            [  A_1    A_3    C_2  ]
+    [ A_1 ] [ 1.000  0.053  0.025 ]
+    [ A_3 ] [ 0.053  1.000  0.048 ]
+    [ C_2 ] [ 0.025  0.048  1.000 ]
     '''
 
     test_directory_path = utilities.create_test_directory('bigram_frequency_provisions')
@@ -1923,9 +1816,17 @@ def test_bigram_frequency_provisions_list_of_states_to_include():
 
     states_to_include_file_path = os.path.join(test_directory_path, 'states_to_include.txt')
     with open(states_to_include_file_path, 'w') as file_object:
-        file_object.write('state_a\n')
-        # Omit State B
-        file_object.write('state_c\n')
+        json.dump(
+            {
+                'State A': {
+                    'Provisions': ['1', '3'],
+                },
+                # Omit State B
+                'State C': {
+                    'Provisions': ['2'],
+                },
+            },
+            file_object)
 
     script_file_path = os.path.join(
         environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity.py')
@@ -1965,19 +1866,13 @@ def test_bigram_frequency_provisions_list_of_states_to_include():
 
     expected_similarity_matrix_labels = [
         'State A 1',
-        'State A 2',
         'State A 3',
-        'State C 1',
         'State C 2',
-        'State C 3',
     ]
     expected_similarity_matrix = [
-        [1.0, 0.267, 0.053, 0.078, 0.025, 0.0],
-        [0.267, 1.0, 0.096, 0.117, 0.022, 0.055],
-        [0.053, 0.096, 1.0, 0.026, 0.048, 0.0],
-        [0.078, 0.117, 0.026, 1.0, 0.024, 0.117],
-        [0.025, 0.022, 0.048, 0.024, 1.0, 0.0],
-        [0.0, 0.055, 0.0, 0.117, 0.0, 1.0],
+        [1.0, 0.053, 0.025],
+        [0.053, 1.0, 0.048],
+        [0.025, 0.048, 1.0],
     ]
 
     utilities.compare_expected_and_actual_similarity_matrix_labels(

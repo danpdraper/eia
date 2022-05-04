@@ -1,3 +1,4 @@
+import json
 import os
 import subprocess
 
@@ -741,9 +742,13 @@ def test_term_frequency_full_text_list_of_states_to_include():
 
     states_to_include_file_path = os.path.join(test_directory_path, 'states_to_include.txt')
     with open(states_to_include_file_path, 'w') as file_object:
-        file_object.write('state_a\n')
-        # Omit State B
-        file_object.write('state_c\n')
+        json.dump(
+            {
+                'State A': {},
+                # Omit State B
+                'State C': {},
+            },
+            file_object)
 
     script_file_path = os.path.join(
         environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity.py')
@@ -1143,145 +1148,99 @@ def test_term_frequency_provisions():
 def test_term_frequency_provisions_list_of_states_to_include():
     '''
     The values in column 'Term' in the following table represent the complete
-    set of words in STATE_A_LEGISLATION_TEXT and STATE_C_LEGISLATION_TEXT. The
-    values in columns 'A_1', 'A_2', 'A_3', 'C_1', 'C_2' and 'C_3' represent the
-    number of occurrences of the values of column 'Term' in
-    STATE_A_LEGISLATION_TEXT provision 1, STATE_A_LEGISLATION_TEXT provision 2,
-    STATE_A_LEGISLATION_TEXT provision 3, STATE_C_LEGISLATION_TEXT provision 1,
-    STATE_C_LEGISLATION_TEXT provision 2 and STATE_C_LEGISLATION_TEXT provision
-    3 respectively.
+    set of words in provisions 1 and 3 of STATE_A_LEGISLATION_TEXT and provision
+    2 of STATE_C_LEGISLATION_TEXT. The values in columns 'A_1', 'A_3' and 'C_2'
+    represent the number of occurences of the values of column 'Term' in
+    STATE_A_LEGISLATION_TEXT provision 1, STATE_A_LEGISLATION_TEXT provision 3
+    and STATE_C_LEGISLATION_TEXT provision 2 respectively.
 
-    Term           A_1  A_2  A_3  C_1  C_2  C_3
-    a               1    0    1    0    0    0
-    above           0    0    1    0    0    0
-    according       0    0    0    1    0    0
-    achieve         0    0    1    0    0    0
-    action          0    0    0    0    0    1
-    administration  0    0    0    0    0    1
-    against         0    0    0    1    1    0
-    all             1    0    0    0    1    0
-    and             2    2    2    3    3    1
-    associations    0    0    0    0    1    0
-    be              0    1    0    0    0    0
-    benefits        1    0    0    0    0    0
-    better          0    0    0    0    0    1
-    bodies          0    0    1    0    0    1
-    brings          0    0    0    0    0    1
-    cannot          0    1    0    0    0    0
-    citizen         0    0    0    0    1    0
-    citizens        1    0    0    0    0    0
-    collaboration   0    0    0    0    1    0
-    collectivities  0    0    0    0    1    0
-    compliance      0    0    0    0    1    0
-    concerned       0    0    0    0    0    1
-    conditions      0    0    0    1    0    0
-    conservation    0    1    0    0    0    0
-    coordination    0    0    0    0    0    1
-    country's       1    0    0    0    0    0
-    creating        0    0    1    0    0    0
-    decentralized   0    0    0    0    1    0
-    defense         1    0    0    0    0    0
-    degradation     0    0    0    1    1    0
-    due             0    1    0    0    0    0
-    enhance         0    0    0    1    0    1
-    entire          0    1    0    0    0    0
-    environment     1    1    0    1    0    1
-    environmental   0    0    1    0    1    0
-    essential       0    0    0    1    0    0
-    establish       0    0    0    1    0    0
-    every           0    0    0    0    1    0
-    feasible        0    0    1    0    0    0
-    fight           0    0    0    0    1    0
-    for             0    1    1    0    0    2
-    forms           0    0    0    1    0    0
-    framework       0    0    0    0    1    0
-    have            1    0    0    0    0    0
-    having          0    0    1    0    0    0
-    healthy         1    0    0    0    0    0
-    hence           1    0    0    0    0    0
-    implement       0    0    1    0    0    0
-    implementation  0    0    0    0    0    1
-    improve         0    0    0    1    0    0
-    in              2    1    0    1    2    0
-    individually    0    0    0    0    1    0
-    institutions    0    0    0    0    1    0
-    interests       0    1    0    0    0    0
-    is              0    1    1    2    1    0
-    it              0    1    2    0    0    1
-    its             1    0    0    0    0    0
-    kinds           0    0    0    0    1    0
-    law             0    0    0    1    0    1
-    laws            0    0    0    0    1    0
-    legislation     0    0    1    0    0    0
-    live            1    0    0    0    0    0
-    living          0    0    0    1    0    0
-    local           0    0    0    0    1    0
-    make            0    0    1    0    0    0
-    managed         0    0    0    1    0    0
-    management      0    0    1    0    0    0
-    merely          0    1    0    0    0    0
-    national        0    0    1    0    0    0
-    natural         1    1    0    1    0    0
-    necessary       0    0    1    0    0    1
-    objectives      0    0    1    0    0    0
-    obligations     1    0    0    0    0    0
-    of              2    4    1    3    2    2
-    or              0    0    0    0    3    0
-    order           0    0    0    1    0    0
-    organizations   0    0    0    0    0    1
-    out             0    0    1    0    0    0
-    participate     1    0    0    0    0    0
-    pollution       0    0    0    0    1    0
-    population      0    1    0    1    0    0
-    preservation    0    1    0    0    0    0
-    prevent         0    0    0    0    1    0
-    principles      0    1    0    1    0    0
-    program         0    0    1    0    0    0
-    protect         0    0    0    0    0    1
-    protected       0    0    0    1    0    0
-    protection      0    1    0    0    0    0
-    published       0    0    1    0    0    0
-    purpose         0    0    1    1    0    0
-    rational        1    1    0    0    0    0
-    regulations     0    0    0    0    1    0
-    relation        0    1    0    0    0    0
-    resources       1    1    0    1    0    0
-    respect         0    1    0    0    0    0
-    respectively    1    0    0    0    0    0
-    responsibility  0    0    1    0    0    0
-    responsible     0    0    0    0    1    0
-    right           1    0    0    0    0    0
-    safeguard       0    0    0    1    0    0
-    set             0    0    1    0    0    0
-    sets            0    0    0    0    0    1
-    specialized     0    0    1    0    0    0
-    state           0    0    1    0    1    0
-    structures      0    0    1    0    0    0
-    sustainable     1    0    0    0    0    0
-    sustainably     0    0    0    1    0    0
-    territorial     0    0    0    0    1    0
-    the             5    6    4    5    3    5
-    this            0    0    1    1    0    1
-    to              3    2    3    3    3    1
-    together        0    0    0    0    0    1
-    traditional     0    0    0    0    1    0
-    underestimated  0    1    0    0    0    0
-    up              0    0    0    0    0    1
-    use             2    1    0    0    0    0
-    utilitarian     0    1    0    0    0    0
-    values          0    1    0    0    0    0
-    wellbeing       0    1    0    0    0    0
-    which           0    0    0    1    0    0
-    whose           0    1    0    0    0    0
-    with            0    0    0    0    2    0
-    within          0    0    0    0    1    0
-    work            0    0    0    0    1    0
+    Term           A_1  A_3  C_2
+    a               1    1    0
+    above           0    1    0
+    achieve         0    1    0
+    against         0    0    1
+    all             1    0    1
+    and             2    2    3
+    associations    0    0    1
+    benefits        1    0    0
+    bodies          0    1    0
+    citizen         0    0    1
+    citizens        1    0    0
+    collaboration   0    0    1
+    collectivities  0    0    1
+    compliance      0    0    1
+    country's       1    0    0
+    creating        0    1    0
+    decentralized   0    0    1
+    defense         1    0    0
+    degradation     0    0    1
+    environment     1    0    0
+    environmental   0    1    1
+    every           0    0    1
+    feasible        0    1    0
+    fight           0    0    1
+    for             0    1    0
+    framework       0    0    1
+    have            1    0    0
+    having          0    1    0
+    healthy         1    0    0
+    hence           1    0    0
+    implement       0    1    0
+    in              2    0    2
+    individually    0    0    1
+    institutions    0    0    1
+    is              0    1    1
+    it              0    2    0
+    its             1    0    0
+    kinds           0    0    1
+    laws            0    0    1
+    legislation     0    1    0
+    live            1    0    0
+    local           0    0    1
+    make            0    1    0
+    management      0    1    0
+    national        0    1    0
+    natural         1    0    0
+    necessary       0    1    0
+    objectives      0    1    0
+    obligations     1    0    0
+    of              2    1    2
+    or              0    0    3
+    out             0    1    0
+    participate     1    0    0
+    pollution       0    0    1
+    prevent         0    0    1
+    program         0    1    0
+    published       0    1    0
+    purpose         0    1    0
+    rational        1    0    0
+    regulations     0    0    1
+    resources       1    0    0
+    respectively    1    0    0
+    responsibility  0    1    0
+    responsible     0    0    1
+    right           1    0    0
+    set             0    1    0
+    specialized     0    1    0
+    state           0    1    1
+    structures      0    1    0
+    sustainable     1    0    0
+    territorial     0    0    1
+    the             5    4    3
+    this            0    1    0
+    to              3    3    3
+    traditional     0    0    1
+    use             2    0    0
+    with            0    0    2
+    within          0    0    1
+    work            0    0    1
 
-    Column 'A_1', column 'A_2', column 'A_3', column 'C_1', column 'C_2' and
-    column 'C_3' each represents a 124 x 1 term frequency vector. The similarity
-    of any of the pairs of provisions in STATE_A_LEGISLATION_TEXT and
-    STATE_C_LEGISLATION_TEXT can be calculated by taking the cosine of the angle
-    between the corresponding term frequency vectors.
+    Column 'A_1', column 'A_3' and column 'C_2' each represents a 79 x 1 term
+    frequency vector. The similarity of the pair STATE_A_LEGISLATION_TEXT
+    provision 1 and STATE_C_LEGISLATION_TEXT provision 2, or the pair
+    STATE_A_LEGISLATION_TEXT provision 3 and STATE_C_LEGISLATION_TEXT provision
+    2 can be calculated by taking the cosine of the angle between the
+    corresponding term frequency vectors.
 
     cosine(theta) = (TF1•TF2)/(|TF1||TF2|)
 
@@ -1291,43 +1250,22 @@ def test_term_frequency_provisions_list_of_states_to_include():
 
     Dot products:
         State A 1, State A 1: 70
-        State A 1, State A 2: 56
         State A 1, State A 3: 36
-        State A 1, State C 1: 51
         State A 1, State C 2: 39
-        State A 1, State C 3: 35
-        State A 2, State A 2: 87
-        State A 2, State A 3: 42
-        State A 2, State C 1: 62
-        State A 2, State C 2: 41
-        State A 2, State C 3: 46
         State A 3, State A 3: 87
-        State A 3, State C 1: 42
         State A 3, State C 2: 32
-        State A 3, State C 3: 34
-        State C 1, State C 1: 81
-        State C 1, State C 2: 45
-        State C 1, State C 3: 41
         State C 2, State C 2: 76
-        State C 2, State C 3: 25
-        State C 3, State C 3: 54
 
     Euclidean lengths:
         State A 1: 8.367
-        State A 2: 9.327
         State A 3: 7.810
-        State C 1: 9.000
         State C 2: 8.718
-        State C 3: 7.348
 
     Expected similiarity matrix:
-            [  A_1    A_2    A_3    C_1    C_2    C_3  ]
-    [ A_1 ] [ 1.000  0.718  0.551  0.677  0.535  0.569 ]
-    [ A_2 ] [ 0.718  1.000  0.577  0.739  0.504  0.671 ]
-    [ A_3 ] [ 0.551  0.577  1.000  0.598  0.470  0.592 ]
-    [ C_1 ] [ 0.677  0.739  0.598  1.000  0.574  0.620 ]
-    [ C_2 ] [ 0.535  0.504  0.470  0.574  1.000  0.390 ]
-    [ C_3 ] [ 0.569  0.671  0.592  0.620  0.390  1.000 ]
+            [  A_1    A_3    C_2  ]
+    [ A_1 ] [ 1.000  0.551  0.535 ]
+    [ A_3 ] [ 0.551  1.000  0.470 ]
+    [ C_2 ] [ 0.535  0.470  1.000 ]
     '''
 
     test_directory_path = utilities.create_test_directory('term_frequency_provisions')
@@ -1340,9 +1278,17 @@ def test_term_frequency_provisions_list_of_states_to_include():
 
     states_to_include_file_path = os.path.join(test_directory_path, 'states_to_include.txt')
     with open(states_to_include_file_path, 'w') as file_object:
-        file_object.write('state_a\n')
-        # Omit State B
-        file_object.write('state_c\n')
+        json.dump(
+            {
+                'State A': {
+                    'Provisions': ['1', '3'],
+                },
+                # Omit State B
+                'State C': {
+                    'Provisions': ['2'],
+                },
+            },
+            file_object)
 
     script_file_path = os.path.join(
         environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity.py')
@@ -1382,19 +1328,13 @@ def test_term_frequency_provisions_list_of_states_to_include():
 
     expected_similarity_matrix_labels = [
         'State A 1',
-        'State A 2',
         'State A 3',
-        'State C 1',
         'State C 2',
-        'State C 3',
     ]
     expected_similarity_matrix = [
-        [1.0, 0.718, 0.551, 0.677, 0.535, 0.569],
-        [0.718, 1.0, 0.577, 0.739, 0.504, 0.671],
-        [0.551, 0.577, 1.0, 0.598, 0.470, 0.592],
-        [0.677, 0.739, 0.598, 1.0, 0.574, 0.620],
-        [0.535, 0.504, 0.470, 0.574, 1.0, 0.390],
-        [0.569, 0.671, 0.592, 0.620, 0.390, 1.0],
+        [1.0, 0.551, 0.535],
+        [0.551, 1.0, 0.470],
+        [0.535, 0.470, 1.0],
     ]
 
     utilities.compare_expected_and_actual_similarity_matrix_labels(

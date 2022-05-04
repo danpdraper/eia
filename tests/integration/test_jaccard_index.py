@@ -1,3 +1,4 @@
+import json
 import os
 import subprocess
 
@@ -299,9 +300,13 @@ def test_jaccard_index_full_text_list_of_states_to_include():
 
     states_to_include_file_path = os.path.join(test_directory_path, 'states_to_include.txt')
     with open(states_to_include_file_path, 'w') as file_object:
-        file_object.write('state_a\n')
-        # Omit State B
-        file_object.write('state_c\n')
+        json.dump(
+            {
+                'State A': {},
+                # Omit State B
+                'State C': {},
+            },
+            file_object)
 
     script_file_path = os.path.join(
         environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity.py')
@@ -592,26 +597,12 @@ def test_jaccard_index_provisions_list_of_states_to_include():
         rational, resources, respectively, right, sustainable, the, to, use)
     State A legislation provision 1 word set size: 26
 
-    State A legislation provision 2 word set:
-        (and, be, cannot, conservation, due, entire, environment, for, in,
-        interests, is, it, merely, natural, of, population, preservation,
-        principles, protection, rational, relation, resources, respect, the, to,
-        underestimated, use, utilitarian, values, wellbeing, whose)
-    State A legislation provision 2 word set size: 31
-
     State A legislation provision 3 word set:
         (a, above, achieve, and, bodies, creating, environmental, feasible, for,
         having, implement, is, it, legislation, make, management, national,
         necessary, objectives, of, out, program, published, purpose,
         responsibility, set, specialized, state, structures, the, this, to)
     State A legislation provision 3 word set size: 32
-
-    State C legislation provision 1 word set:
-        (according, against, and, conditions, degradation, enhance, environment,
-        essential, establish, forms, improve, in, is, law, living, managed,
-        natural, of, order, population, principles, protected, purpose,
-        resources, safeguard, sustainably, the, this, to, which)
-    State C legislation provision 1 word set size: 30
 
     State C legislation provision 2 word set:
         (against, all, and, associations, citizen, collaboration,
@@ -621,57 +612,23 @@ def test_jaccard_index_provisions_list_of_states_to_include():
         state, territorial, the, to, traditional, with, within, work)
     State C legislation provision 2 word set size: 35
 
-    State C legislation provision 3 word set:
-        (action, administration, and, better, bodies, brings, concerned,
-        coordination, enhance, environment, for, implementation, it, law,
-        necessary, of, organizations, protect, sets, the, this, to, together,
-        up)
-    State C legislation provision 3 word set size: 24
-
     Intersection word set sizes:
-        State A provision 1 and State A provision 2: 10
         State A provision 1 and State A provision 3: 5
-        State A provision 1 and State C provision 1: 8
         State A provision 1 and State C provision 2: 6
-        State A provision 1 and State C provision 3: 5
-        State A provision 2 and State A provision 3: 7
-        State A provision 2 and State C provision 1: 11
-        State A provision 2 and State C provision 2: 6
-        State A provision 2 and State C provision 3: 7
-        State A provision 3 and State C provision 1: 7
         State A provision 3 and State C provision 2: 7
-        State A provision 3 and State C provision 3: 9
-        State C provision 1 and State C provision 2: 8
-        State C provision 1 and State C provision 3: 8
-        State C provision 2 and State C provision 3: 4
 
     Union word set sizes:
-        State A provision 1 and State A provision 2: 47
         State A provision 1 and State A provision 3: 53
-        State A provision 1 and State C provision 1: 48
         State A provision 1 and State C provision 2: 55
-        State A provision 1 and State C provision 3: 45
-        State A provision 2 and State A provision 3: 56
-        State A provision 2 and State C provision 1: 50
-        State A provision 2 and State C provision 2: 60
-        State A provision 2 and State C provision 3: 48
-        State A provision 3 and State C provision 1: 55
         State A provision 3 and State C provision 2: 60
-        State A provision 3 and State C provision 3: 47
-        State C provision 1 and State C provision 2: 57
-        State C provision 1 and State C provision 3: 46
-        State C provision 2 and State C provision 3: 55
 
     Jaccard index = size of intersection / size of union
 
     Expected similarity matrix:
-                [  A_1   A_2   A_3   C_1   C_2   C_3  ]
-        [ A_1 ] [ 1.000 0.213 0.094 0.167 0.109 0.111 ]
-        [ A_2 ] [ 0.213 1.000 0.125 0.220 0.100 0.146 ]
-        [ A_3 ] [ 0.094 0.125 1.000 0.140 0.117 0.188 ]
-        [ C_1 ] [ 0.167 0.220 0.140 1.000 0.140 0.174 ]
-        [ C_2 ] [ 0.109 0.100 0.117 0.140 1.000 0.073 ]
-        [ C_3 ] [ 0.111 0.146 0.188 0.174 0.073 1.000 ]
+                [  A_1   A_3   C_2  ]
+        [ A_1 ] [ 1.000 0.094 0.109 ]
+        [ A_3 ] [ 0.094 1.000 0.117 ]
+        [ C_2 ] [ 0.109 0.117 1.000 ]
     '''
 
     test_directory_path = utilities.create_test_directory('jaccard_index_provisions')
@@ -684,9 +641,17 @@ def test_jaccard_index_provisions_list_of_states_to_include():
 
     states_to_include_file_path = os.path.join(test_directory_path, 'states_to_include.txt')
     with open(states_to_include_file_path, 'w') as file_object:
-        file_object.write('state_a\n')
-        # Omit State B
-        file_object.write('state_c\n')
+        json.dump(
+            {
+                'State A': {
+                    'Provisions': ['1', '3'],
+                },
+                # Omit State B
+                'State C': {
+                    'Provisions': ['2'],
+                },
+            },
+            file_object)
 
     script_file_path = os.path.join(
         environment.ENVIRONMENT_ROOT_PATH, 'scripts', 'similarity.py')
@@ -726,19 +691,13 @@ def test_jaccard_index_provisions_list_of_states_to_include():
 
     expected_similarity_matrix_labels = [
         'State A 1',
-        'State A 2',
         'State A 3',
-        'State C 1',
         'State C 2',
-        'State C 3',
     ]
     expected_similarity_matrix = [
-        [1.0, 0.213, 0.094, 0.167, 0.109, 0.111],
-        [0.213, 1.0, 0.125, 0.220, 0.1, 0.146],
-        [0.094, 0.125, 1.0, 0.127, 0.117, 0.191],
-        [0.167, 0.220, 0.127, 1.0, 0.140, 0.174],
-        [0.109, 0.1, 0.117, 0.140, 1.0, 0.073],
-        [0.111, 0.146, 0.191, 0.174, 0.073, 1.0],
+        [1.0, 0.094, 0.109],
+        [0.094, 1.0, 0.117],
+        [0.109, 0.117, 1.0],
     ]
 
     utilities.compare_expected_and_actual_similarity_matrix_labels(
