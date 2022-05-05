@@ -1,44 +1,42 @@
 function remove_all_text_before_first_header {
-  sed -E 's/(CHAPITRE I):/\n\1 -/' | \
-    sed -n '/^CHAPITRE I /,$p'
+  sed -E 's/(CHAPITRE 1):/\n\1 -/' | \
+    sed -n '/^CHAPITRE 1 /,$p'
 }
 
 function amend_errors_in_articles {
-  sed -E 's/Energie/Énergie/g' | \
-    # Article 1
-    amend_error_in_article 1 'physique, chimique, biologique' 'physiques, chimiques, biologiques' | \
-    # Article 10
-    amend_error_in_article 10 'domestiques comprennent' 'domestiques, comprennent' | \
-    # Article 14
-    amend_error_in_article 14 1er 1 | \
-    # Article 15
-    amend_error_in_article 15 'le présente' 'la présente' | \
-    amend_error_in_article 15 'Agriculture de' 'Agriculture, de' | \
-    amend_error_in_article 15 Agents agents | \
-    amend_error_in_article 15 'procès verbal' 'procès-verbal' | \
-    amend_error_in_article 15 'le fermeture' 'la fermeture' | \
-    # Article 16
-    amend_error_in_article 16 "200,000 à 1,200,000 F QU'A" '200.000 à 1.200.000 F CFA' | \
-    amend_error_in_article 16 'une des peines' 'une de ces peines' | \
-    # Article 17
-    amend_error_in_article 17 'le présente' 'la présente' | \
-    amend_error_in_article 17 '500,000 à 1,000,000' '500.000 à 1.000.000' | \
-    # Article 18
-    amend_error_in_article 18 '20,000 à 300,000' '20.000 à 300.000' | \
+  sed -E 's/Etat/État/g' | \
+    sed -E 's/^(Section .*) Article ([0-9]+):/\1\n\n(\2)/' | \
+    sed -E 's/([0-9]) ([0-9])/\1.\2/g' | \
+    # Article 2
+    sed -E ':start;s/^(\(2\).*\[[0-9]+\] )([A-Z])/\1\L\2/;t start' | \
+    sed -E ':start;s/^(\(2\).*: )([A-Z])/\1\L\2/;t start' | \
+    sed -E ':start;s/^(\(2\).*\[•\] )([A-Z])/\1\L\2/;t start' | \
+    amend_error_in_article 2 "a l'état" "à l'état" | \
+    amend_error_in_article 2 'environnement\. \[6\]' 'environnement; [6]' | \
+    amend_error_in_article 2 etude étude | \
+    amend_error_in_article 2 'direction Nationale' 'Direction Nationale' | \
     # Article 19
-    amend_error_in_article 19 '500,000 à 2,500,000' '500.000 à 2.500.000' | \
-    # Article 20
-    amend_error_in_article 20 astreint astreinte | \
-    amend_error_in_article 20 '200,000 à 1 200 000' '200.000 à 1.200.000' | \
-    # Article 22
-    amend_error_in_article 22 ' KOULOUBA.*$' ''
+    amend_error_in_article 19 "1'intérieur" "l'intérieur" | \
+    # Article 39
+    amend_error_in_article 39 'procès verbaux' 'procès-verbaux' | \
+    # Article 42
+    amend_error_in_article 42 'qui de par' 'qui par' | \
+    # Article 45
+    amend_error_in_article 45 000francs '000 francs' | \
+    # Article 51
+    amend_error_in_article 51 ' Bamako.*$' ''
 }
 
 function amend_errors_in_headers {
-  sed -E 's/DEFINITION/DÉFINITION/g' | \
-    sed -E 's/ELIMINATION/ÉLIMINATION/g' | \
+  sed -E 's/GENERAL/GÉNÉRAL/g' | \
+    sed -E 's/PROCEDURE/PROCÉDURE/g' | \
+    sed -E 's/ETUDE/ÉTUDE/g' | \
+    sed -E 's/ACCES/ACCÈS/g' | \
     sed -E 's/DECHET/DÉCHET/g' | \
-    sed -E 's/EMISSION/ÉMISSION/g'
+    sed -E 's/ATMOSPHERIQUE/ATMOSPHÉRIQUE/g' | \
+    sed -E 's/CIMETIERE/CIMETIÈRE/g' | \
+    sed -E 's/DECHARGE/DÉCHARGE/g' | \
+    sed -E 's/^CHAPITRE I -l:/CHAPITRE II -/'
 }
 
 function preprocess_state_and_language_input_file {
