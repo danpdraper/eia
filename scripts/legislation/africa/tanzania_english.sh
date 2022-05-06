@@ -147,16 +147,16 @@ function amend_errors_in_articles {
     amend_error_in_article 11 'members, specified' 'members specified' | \
     #Article 12
     amend_error_in_article 12 'it shall' 'it shall:' | \
-    amend_error_in_article 12 '\[b\] Minister Responsible for Environment' '\n\n(b) Minister Responsible for Environment' | \
+    amend_error_in_article 12 '\[b\] Minister Responsible for Environment ' '\n\nMinister Responsible for Environment' | \
     amend_error_in_article 12 ',where' ', where' | \
     #Article 13
-    amend_error_in_article 13 '\[c\] Director of Environment' '\n\n(c) Director of Environment' | \
+    amend_error_in_article 13 '\[c\] Director of Environment' '\n\nDirector of Environment' | \
     #Article 14
     amend_error_in_article 14 'Powers ofthe.*$' '' | \
     #Article 15
     amend_error_in_article 15 'coordinare issues relating to articulatioo' 'coordinate issues relating to the articulation' | \
     amend_error_in_article 15 'to articulation' 'to the articulation' | \
-    amend_error_in_article 15 '\[d\] National' '\n\n(d) National' | \
+    amend_error_in_article 15 '\[d\] National Environment Management Council ' '\n\nNational Environment Management Council' | \
     #Article 16
     amend_error_in_article 16 'naine' 'name' | \
     amend_error_in_article 16 'by acronym' 'by the acronym' | \
@@ -183,7 +183,7 @@ function amend_errors_in_articles {
     #Article 27
     amend_error_in_article 27 'Chainnan' 'Chairman' | \
     #Article 29
-    amend_error_in_article 29 '\[e\]' '\n\n(e)' | \
+    amend_error_in_article 29 '\[e\] ' '\n\n' | \
     amend_error_in_article 29 'Powers ofthe.*$' '' | \
     #Article 30
     amend_error_in_article 30 'otherwritten' 'other written' | \
@@ -199,9 +199,9 @@ function amend_errors_in_articles {
     #Article 33
     amend_error_in_article 33 '-shall' 'shall' | \
     amend_error_in_article 33 'mlling' 'falling' | \
-    amend_error_in_article 33 '\[I\] Regional Secretariat' '\n\n(f) Regional Secretariat' | \
+    amend_error_in_article 33 '\[I\] Regional Secretariat' '\n\nRegional Secretariat' | \
     #Article 35
-    amend_error_in_article 35 '\[g\] Local GovernmentAuthorities' '\n\n(g) Local Government Authorities' | \
+    amend_error_in_article 35 '\[g\] Local GovernmentAuthorities ' '\n\nLocal Government Authorities' | \
     #Article 36
     amend_error_in_article 36 'shall \[a\]' 'shall: [a]' | \
     amend_error_in_article 36 'by~laws' 'bylaws' | \
@@ -423,7 +423,7 @@ function amend_errors_in_articles {
     #Article 79
     amend_error_in_article 79 'stistmnable' 'sustainable' | \
     amend_error_in_article 79 'coµ.sumption' 'consumption' | \
-    amend_error_in_article 79 '. \[d\] Economic Instruments' '\n\n(d) Economic Instruments' | \
+    amend_error_in_article 79 '. \[d\] Economic Instruments ' '\n\nEconomic Instruments' | \
     #Article 80
     amend_error_in_article 80 'Promotion of cleaner.*Impact Assessm ent ' '' | \
     amend_error_in_article 80 '\[t\] encourage' '[f] encourage' | \
@@ -660,7 +660,7 @@ function amend_errors_in_articles {
     amend_error_in_article 131 '-specifications-of chimneys and -gas controlling -devices .' 'specifications of chimneys and gas controlling devices' | \
     amend_error_in_article 131 'taking into consideration of the wind' 'taking into consideration the wind' | \
     #Article 132
-    amend_error_in_article 132 '\[e\]' '\n\n(e)' | \
+    amend_error_in_article 132 '\[e\] Management of Hazardous Waste ' '\n\nManagement of Hazardous Waste' | \
     #Article 133
     amend_error_in_article 133 'Gaseous wastes from.*to hazardous waste ' '' | \
     amend_error_in_article 133 '_and_appropriate' 'and appropriate' | \
@@ -791,7 +791,7 @@ function amend_errors_in_articles {
     amend_error_in_article 159 'def me ' 'define ' | \
     #Article 160
     amend_error_in_article 160 'A.cquisi#onAct, 1967an4 ~e 4m~ A~, \[1999\] ' 'Acquisition Act, 1967 and the Land Act, 1999.\n\n' | \
-    sed -E 's/\[c\] Conservation Orders/(c) Conservation Orders/' | \
+    sed -E 's/\[c\] Conservation Orders/Conservation Orders/' | \
     #Article 161
     amend_error_in_article 161 '~ent' 'an easement' | \
     amend_error_in_article 161 'l~d; Compensation.*\[h\]' 'land; [h]' | \
@@ -1096,26 +1096,26 @@ function amend_errors_in_articles {
 function amend_errors_in_headers {
   sed -E 's/PART I /PART I - /' | \
     sed -E 's/PART II GENERAL/\n\nPART II - GENERAL/' | \
-    sed -E 's/PARTill ADMINISTRATION AND INSTITUTIONAL ARRANGEMENT \[a\] National Environmental Advisory Committee/\n\nPART III - ADMINISTRATION AND INSTITUTIONAL ARRANGEMENT\n\n(a) National Environmental Advisory Committee/' | \
+    sed -E 's/PARTill ADMINISTRATION AND INSTITUTIONAL ARRANGEMENT \[a\] National Environmental Advisory Committee /\n\nPART III - ADMINISTRATION AND INSTITUTIONAL ARRANGEMENT\n\nNational Environmental Advisory Committee/' | \
     sed -E 's/PART IV ENvlR.ONMENTAL. PLANNING /\n\nPART IV - ENVIRONMENTAL PLANNING/' | \
-    sed -E 's/PARTV ENVIRONMENTAL MANAGEMENT \[a\] Environmental Protected Areas/\n\nPART V - ENVIRONMENTAL MANAGEMENT \n\n(a) Environmental Protected Areas/' | \
-    sed -E 's/\[b\] Environmental Management Plans for National Protected Areas/\n\n(b) Environmental Management Plans for National Protected Areas/' | \
-    sed -E 's/\[c\] Conservation and Protection/\n\n(c) Conservation and Protection/' | \
+    sed -E 's/PARTV ENVIRONMENTAL MANAGEMENT \[a\] Environmental Protected Areas /\n\nPART V - ENVIRONMENTAL MANAGEMENT \n\nEnvironmental Protected Areas/' | \
+    sed -E 's/\[b\] Environmental Management Plans for National Protected Areas /\n\nEnvironmental Management Plans for National Protected Areas/' | \
+    sed -E 's/\[c\] Conservation and Protection /\n\nConservation and Protection/' | \
     sed -E 's/PART VI ENvlRONMENTAL/\n\nPART VI - ENVIRONMENTAL/' | \
     sed -E 's/PARTVII/\n\nPART VII -/' | \
     sed -E 's/PARTVill/\n\nPART VIII -/' | \
-    sed -E 's/PART IX WASTE MANAGEMENT [a] Management of Solid Waste/\n\nPART IX - WASTE MANAGEMENT \n\n(a) Management of Solid Waste/' | \
-    sed -E 's/\[b\] Management of Litter/\n\n(b) Management of Litter/' | \
-    sed -E 's/\[c\] Management of Liquid Waste/\n\n(c) Management of Liquid Waste/' | \
-    sed -E 's/\[d\] Management of Gaseous Waste/\n\n(d) Management of Gaseous Waste/' | \
-    sed -E 's/\[e\] Management of Hazardous Waste/[e] Management of Hazardous Waste/' | \
+    sed -E 's/PART IX WASTE MANAGEMENT [a] Management of Solid Waste /\n\nPART IX - WASTE MANAGEMENT \n\nManagement of Solid Waste/' | \
+    sed -E 's/\[b\] Management of Litter/\n\nManagement of Litter/' | \
+    sed -E 's/\[c\] Management of Liquid Waste /\n\nManagement of Liquid Waste/' | \
+    sed -E 's/\[d\] Management of Gaseous Waste/\n\nManagement of Gaseous Waste/' | \
+    sed -E 's/\[e\] Management of Hazardous Waste/Management of Hazardous Waste/' | \
     sed -E 's/PARTX ENvlR.ONMENTAL QUALITY STANDARDS/\n\nPART X - ENVIRONMENTAL QUALITY STANDARDS/' | \
-    sed -E 's/PART XI ENvlR.ONMENTAL RESTORATION, EASEMENTS AND CONSERVATION ORDERS \[a\] Restoration Orders/\n\nPART XI - ENVIRONMENTAL RESTORATION, EASEMENTS AND CONSERVATION ORDERS\n\n(a) Restoration Orders/' | \
-    sed -E 's/\[b\] Easements Orders _156.:/\n\n(b) Easements Order\n\n(156)/' | \
+    sed -E 's/PART XI ENvlR.ONMENTAL RESTORATION, EASEMENTS AND CONSERVATION ORDERS \[a\] Restoration Orders /\n\nPART XI - ENVIRONMENTAL RESTORATION, EASEMENTS AND CONSERVATION ORDERS\n\nRestoration Orders/' | \
+    sed -E 's/\[b\] Easements Orders _156.:/\n\nEasements Order\n\n(156)/' | \
     sed -E 's/PART XII ANALYSIS AND RECORDS/\n\nPART XII - ANALYSIS AND RECORDS/' | \
     sed -E 's/PARTXIll ENvlR.ONMENTAL INFORMATION, EDUCATION AND RESEARCH/\n\nPART XIII - ENVIRONMENTAL INFORMATION, EDUCATION AND RESEARCH/' | \
     sed -E 's/PART XIV PuBLIC PARTICIPATION IN ENvlRONMENTAL DECISION MAKING/\n\nPART XIV - PUBLIC PARTICIPATION IN ENVIRONMENTAL DECISION MAKING/' | \
-    sed -E 's/PART IX WASTE MANAGEMENT \[a\] Management of Solid Waste/\n\nPART IX - WASTE MANAGEMENT\n\n(a) Management of Solid Waste/' | \
+    sed -E 's/PART IX WASTE MANAGEMENT \[a\] Management of Solid Waste /\n\nPART IX - WASTE MANAGEMENT\n\nManagement of Solid Waste/' | \
     sed -E 's/PART XV INTERNATIONAL AGREEMENTS/\n\nPART XV - INTERNATIONAL AGREEMENTS/' | \
     sed -E 's/PART XVI COMPLIANCE AND ENFORCEMENT/\n\nPART XVI - COMPLIANCE AND ENFORCEMENT/' | \
     sed -E 's/PART XVII ENvlRONMENTAL APPEALS TRIBUNAL/\n\nPART XVII - ENVIRONMENTAL APPEALS TRIBUNAL/' | \

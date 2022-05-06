@@ -79,11 +79,11 @@ def test_write_edges_writes_identifiers_and_nodes_and_type_and_weight_and_header
     edges_file_path = os.path.join(test_directory_path, 'edges.csv')
     expected_file_contents = (
         'ID,Source,Target,Type,Weight\n'
-        '0,0,1,Undirected,2\n'
-        '1,0,2,Undirected,3\n'
-        '2,0,3,Undirected,5\n'
-        '3,1,2,Undirected,4\n'
-        '4,1,3,Undirected,1\n'
+        '0,0,1,Undirected,2.00000\n'
+        '1,0,2,Undirected,3.00000\n'
+        '2,0,3,Undirected,5.00000\n'
+        '3,1,2,Undirected,4.00000\n'
+        '4,1,3,Undirected,1.00000\n'
     )
 
     try:

@@ -179,6 +179,10 @@ def test_label_to_state_and_provision_identifier_extracts_state_name_and_provisi
     # Single-word state name and provision identifier that is not strictly numeric
     label = 'A L-100.1'
     assert 'A', 'L-100.1' == transformations.label_to_state_and_provision_identifier(label)
+    label = 'A 1A'
+    assert 'A', '1A' == transformations.label_to_state_and_provision_identifier(label)
+    label = 'A 11A'
+    assert 'A', '11A' == transformations.label_to_state_and_provision_identifier(label)
     # Multi-word state name and single-digit provision number
     label = 'State A 1'
     assert 'State A', '1' == transformations.label_to_state_and_provision_identifier(label)
@@ -188,6 +192,10 @@ def test_label_to_state_and_provision_identifier_extracts_state_name_and_provisi
     # Multi-word state name and provision identifier that is not strictly numeric
     label = 'State A L-200.2'
     assert 'State A', 'L-200.2' == transformations.label_to_state_and_provision_identifier(label)
+    label = 'State A 1A'
+    assert 'State A', '1A' == transformations.label_to_state_and_provision_identifier(label)
+    label = 'State A 11A'
+    assert 'State A', '11A' == transformations.label_to_state_and_provision_identifier(label)
 
 
 def test_label_to_state_and_provision_identifier_raises_value_error_when_string_does_not_match_expected_format():
@@ -451,5 +459,39 @@ def test_provision_groups_to_transitively_deduplicated_nodes_and_edges_produces_
     actual_nodes, actual_edges = \
         transformations.provision_groups_to_transitively_deduplicated_nodes_and_edges(
             provision_groups, enactment_years)
+    assert expected_nodes == actual_nodes
+    assert expected_edges == actual_edges
+
+
+def test_similarity_matrix_to_nodes_and_edges_consolidates_forward_and_reverse_edges_into_single_edge():
+    labels = [
+        'State A 1',
+        'State A 2',
+        'State A 3',
+        'State B 1',
+        'State B 2',
+        'State B 3',
+        'State C 1',
+        'State C 2',
+        'State C 3',
+    ]
+    matrix = [
+        [],
+        [0.01],
+        [0.02, 0.09],
+        [0.03, 0.10, 0.16],
+        [0.04, 0.11, 0.17, 0.22],
+        [0.05, 0.12, 0.18, 0.23, 0.27],
+        [0.06, 0.13, 0.19, 0.24, 0.28, 0.31],
+        [0.07, 0.14, 0.20, 0.25, 0.29, 0.32, 0.34],
+        [0.08, 0.15, 0.21, 0.26, 0.30, 0.33, 0.35, 0.36],
+    ]
+    expected_nodes = {'State A', 'State B', 'State C'}
+    expected_edges = {
+        ('State B', 'State A'): [0.03, 0.10, 0.16, 0.04, 0.11, 0.17, 0.05, 0.12, 0.18],
+        ('State C', 'State A'): [0.06, 0.13, 0.19, 0.07, 0.14, 0.20, 0.08, 0.15, 0.21],
+        ('State C', 'State B'): [0.24, 0.28, 0.31, 0.25, 0.29, 0.32, 0.26, 0.30, 0.33],
+    }
+    actual_nodes, actual_edges = transformations.similarity_matrix_to_nodes_and_edges(labels, matrix)
     assert expected_nodes == actual_nodes
     assert expected_edges == actual_edges

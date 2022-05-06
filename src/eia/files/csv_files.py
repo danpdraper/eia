@@ -40,7 +40,7 @@ def write_edges(edges_directory_path, nodes, edges):
     input_output.write(
         edges_file_path,
         ['ID,Source,Target,Type,Weight'] + [
-            "{},{},{},Undirected,{}".format(
+            "{},{},{},Undirected,{:.5f}".format(
                 index, sorted_nodes.index(edge[0]), sorted_nodes.index(edge[1]),
                 edge[2]) for index, edge in enumerate(
                     sorted(

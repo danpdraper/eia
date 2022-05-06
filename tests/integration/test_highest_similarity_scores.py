@@ -217,9 +217,9 @@ def test_highest_similarity_scores_without_provision_contents():
     )
     expected_edges = (
         'ID,Source,Target,Type,Weight\n'
-        '0,0,1,Undirected,3\n'
-        '1,0,2,Undirected,4\n'
-        '2,1,2,Undirected,4\n'
+        '0,0,1,Undirected,3.00000\n'
+        '1,0,2,Undirected,4.00000\n'
+        '2,1,2,Undirected,4.00000\n'
     )
     execute_highest_similarity_scores_without_provision_contents_test(
         6, expected_highest_provision_group_scores, expected_nodes, expected_edges)
@@ -291,9 +291,9 @@ def test_highest_similarity_scores_without_provision_contents():
     )
     expected_edges = (
         'ID,Source,Target,Type,Weight\n'
-        '0,0,1,Undirected,4\n'
-        '1,0,2,Undirected,4\n'
-        '2,1,2,Undirected,4\n'
+        '0,0,1,Undirected,4.00000\n'
+        '1,0,2,Undirected,4.00000\n'
+        '2,1,2,Undirected,4.00000\n'
     )
     execute_highest_similarity_scores_without_provision_contents_test(
         15, expected_highest_provision_group_scores, expected_nodes, expected_edges)
@@ -544,9 +544,9 @@ def test_highest_similarity_scores_without_provision_contents_but_with_score_thr
     )
     expected_edges = (
         'ID,Source,Target,Type,Weight\n'
-        '0,0,1,Undirected,2\n'
-        '1,0,2,Undirected,2\n'
-        '2,1,2,Undirected,2\n'
+        '0,0,1,Undirected,2.00000\n'
+        '1,0,2,Undirected,2.00000\n'
+        '2,1,2,Undirected,2.00000\n'
     )
     execute_highest_similarity_scores_without_provision_contents_but_with_score_threshold_test(
         5, expected_highest_provision_group_scores, expected_nodes, expected_edges)
@@ -770,9 +770,9 @@ def test_highest_similarity_scores_without_provision_contents_but_with_redundanc
     )
     expected_edges = (
         'ID,Source,Target,Type,Weight\n'
-        '0,0,1,Undirected,4\n'
-        '1,0,2,Undirected,4\n'
-        '2,1,2,Undirected,4\n'
+        '0,0,1,Undirected,4.00000\n'
+        '1,0,2,Undirected,4.00000\n'
+        '2,1,2,Undirected,4.00000\n'
     )
     assert expected_highest_provision_group_scores == actual_highest_provision_group_scores
     assert expected_nodes == actual_nodes
@@ -1012,9 +1012,9 @@ def test_highest_similarity_scores_with_provision_contents():
     )
     expected_edges = (
         'ID,Source,Target,Type,Weight\n'
-        '0,0,1,Undirected,3\n'
-        '1,0,2,Undirected,4\n'
-        '2,1,2,Undirected,4\n'
+        '0,0,1,Undirected,3.00000\n'
+        '1,0,2,Undirected,4.00000\n'
+        '2,1,2,Undirected,4.00000\n'
     )
 
     try:
@@ -1271,9 +1271,9 @@ def test_highest_similarity_scores_with_provision_contents_and_score_threshold()
     )
     expected_edges = (
         'ID,Source,Target,Type,Weight\n'
-        '0,0,1,Undirected,2\n'
-        '1,0,2,Undirected,2\n'
-        '2,1,2,Undirected,2\n'
+        '0,0,1,Undirected,2.00000\n'
+        '1,0,2,Undirected,2.00000\n'
+        '2,1,2,Undirected,2.00000\n'
     )
 
     try:
@@ -1552,9 +1552,9 @@ def test_highest_similarity_scores_with_provision_contents_and_redundancy_reduct
     )
     expected_edges = (
         'ID,Source,Target,Type,Weight\n'
-        '0,0,1,Undirected,4\n'
-        '1,0,2,Undirected,4\n'
-        '2,1,2,Undirected,4\n'
+        '0,0,1,Undirected,4.00000\n'
+        '1,0,2,Undirected,4.00000\n'
+        '2,1,2,Undirected,4.00000\n'
     )
 
     try:
@@ -1800,8 +1800,8 @@ def test_highest_similarity_scores_with_redundancy_reduction_and_transitive_simi
     )
     expected_edges = (
         'ID,Source,Target,Type,Weight\n'
-        '0,0,1,Undirected,4\n'
-        '1,0,2,Undirected,4\n'
+        '0,0,1,Undirected,4.00000\n'
+        '1,0,2,Undirected,4.00000\n'
     )
     assert expected_highest_provision_group_scores == actual_highest_provision_group_scores
     assert expected_nodes == actual_nodes

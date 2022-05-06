@@ -16,7 +16,7 @@ PUNCTUATION_REGEX = re.compile(r'[,;:.?\-"]| \'|\' ')
 SINGLE_SPACE = ' '
 SLASH_REGEX = re.compile(r'\\|/')
 SNAKE_CASE_REGEX = re.compile(r'(^|_)([a-z])')
-STATE_AND_PROVISION_LABEL_REGEX = re.compile(r'^([A-Za-z ]+)( [0-9L\.-]+)?$')
+STATE_AND_PROVISION_LABEL_REGEX = re.compile(r'^([A-Za-z ]+)( L\.[0-9]+-[0-9]+| [0-9]+[A-Z]| [0-9]+)?$')
 STATE_NAME_SNAKE_CASE_REGEX = re.compile(r'/([a-z_]+)_[a-z]+\.')
 TO_CAPITALIZED_REGEX = re.compile(r'(^|_)([a-z])')
 UNDERSCORE = '_'
@@ -173,7 +173,7 @@ def get_earliest_enactment_states(provision_group, enactment_years):
 
 def provision_groups_to_nodes_and_edges(provision_groups, enactment_years=None):
     nodes = set()
-    edges = {}
+    edges = dict()
     for provision_group in provision_groups:
         LOGGER.debug("Processing provision group {}.".format(provision_group))
         earliest_enactment_states = None
@@ -228,3 +228,27 @@ def provision_groups_to_nodes_and_edges(provision_groups, enactment_years=None):
 def provision_groups_to_transitively_deduplicated_nodes_and_edges(
         provision_groups, enactment_years):
     return provision_groups_to_nodes_and_edges(provision_groups, enactment_years)
+
+
+def similarity_matrix_to_nodes_and_edges(labels, matrix):
+    nodes = set()
+    edges = dict()
+
+    for row_index, row in enumerate(matrix):
+        row_state, _ = label_to_state_and_provision_identifier(labels[row_index])
+        nodes.add(row_state)
+        for column_index, similarity in enumerate(row):
+            column_state, _ = label_to_state_and_provision_identifier(labels[column_index])
+            nodes.add(column_state)
+            if row_state == column_state:
+                continue
+
+            LOGGER.debug(
+                "Processing row {} and column {}".format(
+                    labels[row_index], labels[column_index]))
+            edge = (row_state, column_state)
+            if edge not in edges:
+                edges[edge] = []
+            edges[edge].append(similarity)
+
+    return nodes, edges

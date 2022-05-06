@@ -238,3 +238,36 @@ def highest_provision_group_scores(arguments):
     csv_files.write_edges(matrix_directory_path, nodes, edges)
     logger.info("Wrote nodes {} and edges {} to directory {}".format(
         nodes, edges, matrix_directory_path))
+
+
+def graph(arguments):
+    configure_logging(arguments.debug)
+    logger = logging.getLogger(__name__)
+    logger.info(
+        "Starting application with the following parameters: "
+        "statistic = {}, "
+        "matrix_file_path = {}, "
+        "output_directory_path = {}, "
+        "debug = {}".format(
+            arguments.statistic, arguments.matrix_file_path,
+            arguments.output_directory_path, arguments.debug))
+
+    if not os.path.isdir(arguments.output_directory_path):
+        raise ValueError("{} is not a directory.".format(
+            arguments.output_directory_path))
+
+    nodes, edges = transformations.similarity_matrix_to_nodes_and_edges(
+        *similarity_matrix.from_file(arguments.matrix_file_path))
+    edges = [
+        (edge[0], edge[1], arguments.statistic.apply(similarity_scores))
+        for edge, similarity_scores in edges.items()
+    ]
+    logger.info(
+        "Generated nodes and edges from similarity matrix at {}".format(
+            arguments.matrix_file_path))
+
+    csv_files.write_nodes(arguments.output_directory_path, nodes)
+    csv_files.write_edges(arguments.output_directory_path, nodes, edges)
+    logger.info(
+        "Wrote nodes {} and edges {} to directory {}".format(
+            nodes, edges, arguments.output_directory_path))

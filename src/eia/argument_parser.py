@@ -4,6 +4,7 @@ import eia.algorithms as algorithms
 import eia.environment as environment
 import eia.languages as languages
 import eia.scopes as scopes
+import eia.statistics as statistics
 
 
 class AlgorithmAction(argparse.Action):
@@ -21,10 +22,15 @@ class LanguageAction(argparse.Action):
         setattr(namespace, self.dest, languages.LANGUAGES[values])
 
 
+class StatisticAction(argparse.Action):
+    def __call__(self, parser, namespace, values, option_string=None):
+        setattr(namespace, self.dest, statistics.STATISTICS[values])
+
+
 class ArgumentParser(object):
     def __init__(
             self, matrix_and_plot_function,
-            highest_provision_group_scores_function):
+            highest_provision_group_scores_function, graph_function):
         # Top-level parser
         self.argument_parser = argparse.ArgumentParser()
         self.argument_parser.add_argument('--debug', action='store_true')
@@ -50,7 +56,7 @@ class ArgumentParser(object):
         matrix_and_plot_parser.add_argument('--matrix_only', action='store_true')
         matrix_and_plot_parser.set_defaults(func=matrix_and_plot_function)
 
-        # Parser for 'highest_provision_group_scores'
+        # Parser for 'highest_provision_group_scores' command
         highest_scores_parser = subparsers.add_parser(
             'highest_provision_group_scores')
         highest_scores_parser.add_argument('matrix_file_path')
@@ -69,6 +75,21 @@ class ArgumentParser(object):
             '--enactment_years_file_path',
             default=environment.ENACTMENT_YEARS_DEFAULT_FILE_PATH)
         highest_scores_parser.set_defaults(func=highest_provision_group_scores_function)
+
+        # Parser for 'graph' command
+        graph_parser = subparsers.add_parser('graph')
+        graph_parser.add_argument(
+            'statistic', action=StatisticAction,
+            choices=[
+                'eightieth_percentile',
+                'mean',
+                'median',
+                'ninetieth_percentile',
+                'ninetyninth_percentile',
+            ])
+        graph_parser.add_argument('matrix_file_path')
+        graph_parser.add_argument('output_directory_path')
+        graph_parser.set_defaults(func=graph_function)
 
     def parse(self, arguments=None):
         if arguments is None:
