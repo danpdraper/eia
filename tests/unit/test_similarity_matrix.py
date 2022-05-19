@@ -509,3 +509,100 @@ def test_get_language_raises_runtime_error_when_more_or_less_than_one_language_i
             similarity_matrix.get_language(two_languages_file_path)
     finally:
         utilities.delete_test_directory(test_directory_path)
+
+
+def test_reduce_transitive_similarity_replaces_newer_values_with_zero_when_older_value_meets_or_exceeds_threshold():
+    test_directory_path = utilities.create_test_directory('test_similarity_matrix')
+
+    file_content_by_relative_path = {
+        'test_similarity_matrix.csv': (
+            'State A 1,1.00,0.99,0.98,0.97,0.96,0.95,0.94,0.93,0.92,0.91,0.90,0.89\n'
+            'State A 2,0.99,1.00,0.88,0.87,0.86,0.85,0.84,0.83,0.82,0.81,0.80,0.79\n'
+            'State A 3,0.98,0.88,1.00,0.78,0.77,0.76,0.75,0.74,0.73,0.72,0.71,0.70\n'
+            'State B 1,0.97,0.87,0.78,1.00,0.69,0.68,0.67,0.66,0.65,0.64,0.63,0.62\n'
+            'State B 2,0.96,0.86,0.77,0.69,1.00,0.61,0.60,0.59,0.58,0.57,0.56,0.55\n'
+            'State B 3,0.95,0.85,0.76,0.68,0.61,1.00,0.54,0.53,0.52,0.51,0.50,0.49\n'
+            'State C 1,0.94,0.84,0.75,0.67,0.60,0.54,1.00,0.48,0.47,0.46,0.45,0.44\n'
+            'State C 2,0.93,0.83,0.74,0.66,0.59,0.53,0.48,1.00,0.43,0.42,0.41,0.40\n'
+            'State C 3,0.92,0.82,0.73,0.65,0.58,0.52,0.47,0.43,1.00,0.39,0.38,0.37\n'
+            'State D 1,0.91,0.81,0.72,0.64,0.57,0.51,0.46,0.42,0.39,1.00,0.36,0.35\n'
+            'State D 2,0.90,0.80,0.71,0.63,0.56,0.50,0.45,0.41,0.38,0.36,1.00,0.34\n'
+            'State D 3,0.89,0.79,0.70,0.62,0.55,0.49,0.44,0.40,0.37,0.35,0.34,1.00\n'
+        ),
+    }
+    similarity_matrix_file_path = os.path.join(
+        test_directory_path, 'test_similarity_matrix.csv')
+    minimum_proportion = 0.4
+    enactment_years = {
+        'State A': 2005,
+        'State B': 2000,
+        'State C': 1995,
+        'State D': 2002,
+    }
+
+    expected_labels = (
+        'State A 1',
+        'State A 2',
+        'State A 3',
+        'State B 1',
+        'State B 2',
+        'State B 3',
+        'State C 1',
+        'State C 2',
+        'State C 3',
+        'State D 1',
+        'State D 2',
+        'State D 3',
+    )
+    expected_rows = [
+        [],
+        [0.99],
+        [0.98, 0.88],
+        [0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 0.69],
+        [0.0, 0.0, 0.0, 0.68, 0.61],
+        [0.94, 0.84, 0.75, 0.67, 0.6, 0.54],
+        [0.93, 0.83, 0.74, 0.66, 0.59, 0.53, 0.48],
+        [0.92, 0.82, 0.73, 0.65, 0.58, 0.52, 0.47, 0.43],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.46, 0.42, 0.39],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.45, 0.41, 0.38, 0.36],
+        [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.44, 0.4, 0.37, 0.35, 0.34],
+    ]
+
+    try:
+        utilities.populate_test_directory(
+            test_directory_path, file_content_by_relative_path)
+        actual_labels, actual_rows = similarity_matrix.reduce_transitive_similarity(
+            similarity_matrix_file_path, minimum_proportion, enactment_years)
+    finally:
+        utilities.delete_test_directory(test_directory_path)
+
+    assert expected_labels == actual_labels
+    assert expected_rows == actual_rows
+
+
+def test_add_diagonal_and_upper_triangle_to_matrix_creates_symmetric_matrix():
+    rows = [
+        [],
+        [0.01],
+        [0.02, 0.03],
+        [0.04, 0.05, 0.06],
+        [0.07, 0.08, 0.09, 0.1],
+        [0.11, 0.12, 0.13, 0.14, 0.15],
+        [0.16, 0.17, 0.18, 0.19, 0.2, 0.21],
+        [0.22, 0.23, 0.24, 0.25, 0.26, 0.27, 0.28],
+        [0.29, 0.3, 0.31, 0.32, 0.33, 0.34, 0.35, 0.36],
+    ]
+    expected_rows = [
+        [1.0, 0.01, 0.02, 0.04, 0.07, 0.11, 0.16, 0.22, 0.29],
+        [0.01, 1.0, 0.03, 0.05, 0.08, 0.12, 0.17, 0.23, 0.3],
+        [0.02, 0.03, 1.0, 0.06, 0.09, 0.13, 0.18, 0.24, 0.31],
+        [0.04, 0.05, 0.06, 1.0, 0.1, 0.14, 0.19, 0.25, 0.32],
+        [0.07, 0.08, 0.09, 0.1, 1.0, 0.15, 0.2, 0.26, 0.33],
+        [0.11, 0.12, 0.13, 0.14, 0.15, 1.0, 0.21, 0.27, 0.34],
+        [0.16, 0.17, 0.18, 0.19, 0.2, 0.21, 1.0, 0.28, 0.35],
+        [0.22, 0.23, 0.24, 0.25, 0.26, 0.27, 0.28, 1.0, 0.36],
+        [0.29, 0.3, 0.31, 0.32, 0.33, 0.34, 0.35, 0.36, 1.0],
+    ]
+    similarity_matrix.add_diagonal_and_upper_triangle_to_matrix(rows)
+    assert expected_rows == rows

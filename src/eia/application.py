@@ -13,6 +13,9 @@ import eia.similarity_matrix as similarity_matrix
 import eia.transformations as transformations
 
 
+PERIOD = '.'
+
+
 def configure_logging(debug):
     logging.basicConfig(
         datefmt='%Y-%m-%d %H:%M:%S',
@@ -271,3 +274,44 @@ def graph(arguments):
     logger.info(
         "Wrote nodes {} and edges {} to directory {}".format(
             nodes, edges, arguments.output_directory_path))
+
+
+def reduce_transitive_similarity(arguments):
+    configure_logging(arguments.debug)
+    logger = logging.getLogger(__name__)
+    logger.info(
+        "Starting application with the following parameters: "
+        "matrix_file_path = {}, "
+        "output_directory_path = {}, "
+        "minimum_proportion = {}, "
+        "enactment_years_file_path = {}, "
+        "debug = {}".format(
+            arguments.matrix_file_path, arguments.output_directory_path,
+            arguments.minimum_proportion, arguments.enactment_years_file_path,
+            arguments.debug))
+
+    if not os.path.isdir(arguments.output_directory_path):
+        raise ValueError("{} is not a directory.".format(
+            arguments.output_directory_path))
+    matrix_file_name, matrix_file_suffix = \
+        arguments.matrix_file_path.split(os.path.sep)[-1].split(PERIOD)
+    output_file_path = os.path.join(
+        arguments.output_directory_path,
+        "{}_reduced_transitive_similarity.{}".format(
+            matrix_file_name, matrix_file_suffix))
+
+    labels, rows = similarity_matrix.reduce_transitive_similarity(
+        arguments.matrix_file_path, arguments.minimum_proportion,
+        csv_files.get_enactment_years(arguments.enactment_years_file_path))
+    logger.info(
+        "Reduced transitive similarity in similarity matrix at {}".format(
+            arguments.matrix_file_path))
+    similarity_matrix.add_diagonal_and_upper_triangle_to_matrix(rows)
+
+    csv_files.write_similarity_matrix(
+        output_file_path,
+        similarity_matrix.get_language(arguments.matrix_file_path),
+        zip(labels, rows))
+    logger.info(
+        "Wrote labels and similarity matrix with reduced transitive similarity "
+        "to {}".format(output_file_path))

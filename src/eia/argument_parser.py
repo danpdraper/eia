@@ -30,7 +30,8 @@ class StatisticAction(argparse.Action):
 class ArgumentParser(object):
     def __init__(
             self, matrix_and_plot_function,
-            highest_provision_group_scores_function, graph_function):
+            highest_provision_group_scores_function, graph_function,
+            reduce_transitive_similarity_function):
         # Top-level parser
         self.argument_parser = argparse.ArgumentParser()
         self.argument_parser.add_argument('--debug', action='store_true')
@@ -90,6 +91,23 @@ class ArgumentParser(object):
         graph_parser.add_argument('matrix_file_path')
         graph_parser.add_argument('output_directory_path')
         graph_parser.set_defaults(func=graph_function)
+
+        # Parser for 'reduce_transitive_similarity' command
+        transitive_similarity_parser = subparsers.add_parser('reduce_transitive_similarity')
+        transitive_similarity_parser.add_argument('matrix_file_path')
+        transitive_similarity_parser.add_argument('output_directory_path')
+        transitive_similarity_parser.add_argument(
+            'minimum_proportion',
+            help=(
+                'Proportion of later similarity score below which earlier '
+                'similarity score will not trigger zeroing of later similarity '
+                'score'
+            ),
+            type=float)
+        transitive_similarity_parser.add_argument(
+            '--enactment_years_file_path',
+            default=environment.ENACTMENT_YEARS_DEFAULT_FILE_PATH)
+        transitive_similarity_parser.set_defaults(func=reduce_transitive_similarity_function)
 
     def parse(self, arguments=None):
         if arguments is None:

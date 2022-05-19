@@ -13,9 +13,11 @@ class TestArgumentParser(object):
         self.matrix_and_plot_function = lambda args: ('matrix_and_plot', vars(args))
         self.highest_provision_group_scores_function = lambda args: ('highest_scores', vars(args))
         self.graph_function = lambda args: ('graph', vars(args))
+        self.reduce_transitive_similarity_function = lambda args: ('reduce_transitive_similarity', vars(args))
         self.parser = argument_parser.ArgumentParser(
             self.matrix_and_plot_function,
-            self.highest_provision_group_scores_function, self.graph_function)
+            self.highest_provision_group_scores_function, self.graph_function,
+            self.reduce_transitive_similarity_function)
 
     def test_parse_matrix_and_plot_extracts_expected_arguments(self):
         arguments = [
@@ -380,3 +382,85 @@ class TestArgumentParser(object):
         actual_legislation_directory_path = \
             self.parser.parse(arguments).legislation_directory_path
         assert expected_legislation_directory_path == actual_legislation_directory_path
+
+    def test_parse_reduce_transitive_similarity_extracts_expected_arguments(self):
+        arguments = [
+            '--legislation_directory_path',
+            '/path/to/legislation/directory',
+            '--debug',
+            'reduce_transitive_similarity',
+            '/path/to/similarity/matrix',
+            '/path/to/output/directory',
+            '0.5',
+            '--enactment_years_file_path',
+            '/path/to/enactment/years',
+        ]
+        expected_namespace = {
+            'legislation_directory_path': '/path/to/legislation/directory',
+            'debug': True,
+            'matrix_file_path': '/path/to/similarity/matrix',
+            'output_directory_path': '/path/to/output/directory',
+            'minimum_proportion': 0.5,
+            'enactment_years_file_path': '/path/to/enactment/years',
+            'func': self.reduce_transitive_similarity_function,
+        }
+        actual_namespace = vars(self.parser.parse(arguments))
+        assert expected_namespace == actual_namespace
+
+    def test_parse_reduce_transitive_similarity_assigns_appropriate_function_to_argument_namespace(self):
+        arguments = [
+            '--legislation_directory_path',
+            '/path/to/legislation/directory',
+            '--debug',
+            'reduce_transitive_similarity',
+            '/path/to/similarity/matrix',
+            '/path/to/output/directory',
+            '0.5',
+            '--enactment_years_file_path',
+            '/path/to/enactment/years',
+        ]
+        expected_function_output = 'reduce_transitive_similarity', {
+            'legislation_directory_path': '/path/to/legislation/directory',
+            'debug': True,
+            'matrix_file_path': '/path/to/similarity/matrix',
+            'output_directory_path': '/path/to/output/directory',
+            'minimum_proportion': 0.5,
+            'enactment_years_file_path': '/path/to/enactment/years',
+            'func': self.reduce_transitive_similarity_function,
+        }
+        parsed_arguments = self.parser.parse(arguments)
+        actual_function_output = parsed_arguments.func(parsed_arguments)
+        assert expected_function_output == actual_function_output
+
+    def test_parse_reduce_transitive_similarity_assigns_false_to_debug_parameter_when_debug_argument_not_provided(self):
+        arguments = [
+            'reduce_transitive_similarity',
+            '/path/to/similarity/matrix',
+            '/path/to/output/directory',
+            '0.5',
+        ]
+        assert self.parser.parse(arguments).debug is False
+
+    def test_parse_reduce_transitive_similarity_assigns_package_path_to_legislation_path_when_no_argument(self):
+        arguments = [
+            'reduce_transitive_similarity',
+            '/path/to/similarity/matrix',
+            '/path/to/output/directory',
+            '0.5',
+        ]
+        expected_legislation_directory_path = environment.LEGISLATION_DIRECTORY_PATH
+        actual_legislation_directory_path = \
+            self.parser.parse(arguments).legislation_directory_path
+        assert expected_legislation_directory_path == actual_legislation_directory_path
+
+    def test_parse_reduce_transitive_similarity_assigns_package_path_to_enactment_years_path_when_no_argument(self):
+        arguments = [
+            'reduce_transitive_similarity',
+            '/path/to/similarity/matrix',
+            '/path/to/output/directory',
+            '0.5',
+        ]
+        expected_enactment_years_file_path = environment.ENACTMENT_YEARS_DEFAULT_FILE_PATH
+        actual_enactment_years_file_path = \
+            self.parser.parse(arguments).enactment_years_file_path
+        assert expected_enactment_years_file_path == actual_enactment_years_file_path
